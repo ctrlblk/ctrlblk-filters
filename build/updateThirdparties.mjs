@@ -1,0 +1,59 @@
+import { default as fs } from "fs/promises";
+
+import fg from "fast-glob";
+
+const filtersDir = "filters/thirdparty";
+const outDir = "dist/";
+
+
+async function parseRulesets() {
+    const files = await fg.glob([`${filtersDir}/**/rulesets.json`]);
+
+    let rulesets = []
+    for (let file of files) {
+
+        let src = await fs.readFile(file, "utf8");
+        let additionalRulesets = JSON.parse(src);
+
+        rulesets.push(...additionalRulesets);
+    }
+
+    return rulesets;
+}
+
+async function main() {
+
+    let rulesets = await parseRulesets();
+
+    for (let ruleset of rulesets) {
+        let { id, urls } = ruleset;
+
+        for (let url of urls) {
+            // urls may contain multiple backup urls pointing to the same list
+            // we try until successfull
+            let stack = Array.isArray(url) ? url.reverse() : [url];
+            let success = false;
+
+            for (let curUrl of stack) {
+                let response = await fetch(curUrl);
+
+                if (response.ok) {
+                    let txt = await response.text();
+                    await fs.writeFile(`${filtersDir}/${id.toLowerCase()}.txt`, txt, "utf8");
+                    // Break out if we had success
+                    success = true;
+                    break;
+                } else {
+                    console.warn(`Failed to download "${id}" from "${curUrl}", trying alternative source next.`);
+                }
+            }
+
+            // None of the urls worked and we didn't download the list
+            if (!success) {
+                throw Error(`Failed to download "${id}", tried:\n\n> ${stack.join("\n> ")}\n`);
+            }
+        }
+    }
+}
+
+await main();
