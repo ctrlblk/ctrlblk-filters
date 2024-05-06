@@ -1,6 +1,6 @@
 ! Title: 🏔️ Dandelion Sprouts nordiske filtre for ryddigere nettsider
 ! Title 🇬🇧: Dandelion Sprout's Nordic filters for tidier websites
-! Version: 01May2024v1
+! Version: 02May2024v2
 ! Expires: 18 hours
 ! Lisens / Licence: https://github.com/DandelionSprout/adfilt/blob/master/LICENSE.md
 ! Homepage: https://github.com/DandelionSprout/adfilt/blob/master/Wiki/General-info.md
@@ -764,6 +764,13 @@ reiseliv.no##a[href*=annonsorartikler][href*=aksje]
 kanalfrederikshavn.dk##table[width="620"]
 tv-kalundborg.dk##.flickity-viewport
 vgtv.no##.apnx-container
+tu.no,digi.no##div:first-of-type[class*=" "]:has(> div:empty)
+digi.no,tu.no###brandBoardTop
+digi.no,tu.no###brandBoardBottom
+digi.no,tu.no###brandBoardTopMobile
+digi.no,tu.no###skyscraperLeft
+digi.no,tu.no###skyscraperRight
+tu.no,digi.no##div[id^=brandboard i]:upward(1)
 abcnyheter.no##span[class*=-ad__]
 gulesider.no##.MuiContainer-root .MuiGrid-root + .MuiBox-root:has(div[id*=gpt])
 tv2.no##div[data-third-party-link^="\[\""]
@@ -1551,6 +1558,7 @@ contentMarketing$xhr,domain=sol.no
 ||spaniaidag.no/wp-content/uploads/*/Ceru-Design-Web-*.jpg^
 ||spaniaidag.no/wp-content/uploads/*/Kolstad-Gif-SI.gif^
 ||spanienidag.es/sites/default/files/patrocinadores^
+/^.*://w{3}\.(tu|d\ig\i)\.n\o/(\d|[a-zA-Z_-]){130,}$/$xhr,domain=no
 ||ssl.p.jwpcdn.com^*/freewheel.js$important,script,domain=eurosport.*
 ||ssl.p.jwpcdn.com^*/jwpsrv.js$important,script,domain=eurosport.*|gamereactor.*|vg.no
 ||ssl.p.jwpcdn.com^*/sharing.js$important,script,domain=eurosport.*|gamereactor.*
@@ -2147,7 +2155,119 @@ ekstrabladet.dk#@#body>div[id][style]
 @@||ad.amediakreativ.no/widgets/stillingskarusell^
 
 !
-!#include NorwegianExperimentalList%20alternate%20versions/AntiAdblockEntries.txt
+! Last updated: 18April2024v1-Extension
+! 🇳🇴: ——— Vindusviskere for betalte artikler (sånn at de nederste linjene i en forhåndsvisning ikke toner ut) ———
+! Takk til THEtomaso (https://github.com/THEtomaso) for de fleste av disse oppføringene.
+! 🇩🇰: ——— Vinduesviskere for betalte artikler (så de sidste par linjer i en forhåndsvisning ikke falder ud) ———
+! Tak til THEtomaso (https://github.com/THEtomaso) for de fleste af disse regler.
+! 🇬🇧: ——— De-blurrers for paid articles (so that the last few lines of a preview doesn't fade out) ———
+! Thanks to THEtomaso (https://github.com/THEtomaso) for most of these entries.
+##.Article-header-body::before
+##.paywall-fade:not(html, body)
+##.polarisSpid.widget::before
+aftenbladet.no,fvn.no##.overlay-wrap::before
+aftenposten.no##.widget-salesposter::before
+dagogtid.no##.dot-shorttext::before
+dinepenger.no##.article-body::after
+dn.no##.vrs-image-block__image-description-overlay
+fiskeribladet.no##.teaser_overlay
+information.dk##.greyed-text
+information.dk##.paywall-box:style(margin-top: 0px !important)
+mm.dk##.fadeout
+mm.dk##.promotion:style(top: 0px !important)
+morgenbladet.no##.preview-overlay
+nationen.no##.article-container.locked::after
+politiken.dk##.card.stopsign__article.stopsign::before
+vg.no##p[data-test-tag=lead-text] ~ p[class] ~ div[class]:not(.undefined):not([class^=creative_dark_feature])::before
+borsen.dk##.paywall:style(top: 0px !important)
+borsen.dk##.indent-wrapper > .overlay
+dknyt.dk,kommunen.dk##.fade-out
+vartoslo.no##.teaserContent::before
+h-a.no,lokal-avisa.no,ringsakern.no,stangeavisa.no##.faded-content::before
+h-a.no,lokal-avisa.no,ringsakern.no,stangeavisa.no##.faded-content:style(max-height: none !important)
+markedsforing.dk##.gradient-y-trans-to-white-95
+berlingske.dk##.paywall-wrapper::before
+berlingske.dk##.paywall-wrapper:style(top: unset !important)
+intrafish.no##.preview-gradient
+lydogbilde.no,lydogbillede.dk##.lbplussinfo
+||dagligvarehandelen.no/sites/all/themes/custom/ledelseas/gfx/veil.png$image
+information.dk###paywall:style(margin-top: 0px !important)
+digi.no###order-form::before
+aasavis.no,amta.no,an.no,ao.no,auraavis.no,austagderblad.no,avisenagder.no,ba.no,bygdebladet.no,bygdeposten.no,dalane-tidende.no,dt.no,eikerbladet.no,enebakkavis.no,f-b.no,finnmarkdagblad.no,finnmarken.no,firda.no,firdaposten.no,fremover.no,gbnett.no,gjengangeren.no,glomdalen.no,h-avis.no,ha-halden.no,hadeland.no,hardanger-folkeblad.no,helg.no,iharstad.no,indre.no,jarlsbergavis.no,jbl.no,kv.no,kvinnheringen.no,laagendalsposten.no,lierposten.no,lofotposten.no,lyngdalsavis.no,moss-avis.no,nettavisen.no,nidaros.no,noblad.no,nordhordland.no,nordlys.no,nt24.no,oa.no,oblad.no,op.no,ostlendingen.no,oyene.no,r-a.no,rablad.no,ranablad.no,rb.no,retten.no,rha.no,ringblad.no,ringsaker-blad.no,sa.no,sandeavis.no,sandnesposten.no,sb.no,smaalenene.no,sognavis.no,solabladet.no,solungavisa.no,strandbuen.no,svelviksposten.no,ta.no,tb.no,telen.no,tk.no,tvedestrandsposten.no,varingen.no,vestbyavis.no,merakerposten.no##amedia-include[src*="/incentive/"]:style(border: 10px !important; border-color: #CD5C5C !important; border-style: solid !important)
+aasavis.no,amta.no,an.no,ao.no,auraavis.no,austagderblad.no,avisenagder.no,ba.no,bygdebladet.no,bygdeposten.no,dalane-tidende.no,dt.no,eikerbladet.no,enebakkavis.no,f-b.no,finnmarkdagblad.no,finnmarken.no,firda.no,firdaposten.no,fremover.no,gbnett.no,gjengangeren.no,glomdalen.no,h-avis.no,ha-halden.no,hadeland.no,hardanger-folkeblad.no,helg.no,iharstad.no,indre.no,jarlsbergavis.no,jbl.no,kv.no,kvinnheringen.no,laagendalsposten.no,lierposten.no,lofotposten.no,lyngdalsavis.no,moss-avis.no,nettavisen.no,nidaros.no,noblad.no,nordhordland.no,nordlys.no,nt24.no,oa.no,oblad.no,op.no,ostlendingen.no,oyene.no,r-a.no,rablad.no,ranablad.no,rb.no,retten.no,rha.no,ringblad.no,ringsaker-blad.no,sa.no,sandeavis.no,sandnesposten.no,sb.no,smaalenene.no,sognavis.no,solabladet.no,solungavisa.no,strandbuen.no,svelviksposten.no,ta.no,tb.no,telen.no,tk.no,tvedestrandsposten.no,varingen.no,vestbyavis.no,merakerposten.no##amedia-incentive:style(top: 1600px !important)
+aasavis.no,amta.no,an.no,ao.no,auraavis.no,austagderblad.no,avisenagder.no,ba.no,bygdebladet.no,bygdeposten.no,dalane-tidende.no,dt.no,eikerbladet.no,enebakkavis.no,f-b.no,finnmarkdagblad.no,finnmarken.no,firda.no,firdaposten.no,fremover.no,gbnett.no,gjengangeren.no,glomdalen.no,h-avis.no,ha-halden.no,hadeland.no,hardanger-folkeblad.no,helg.no,iharstad.no,indre.no,jarlsbergavis.no,jbl.no,kv.no,kvinnheringen.no,laagendalsposten.no,lierposten.no,lofotposten.no,lyngdalsavis.no,moss-avis.no,nettavisen.no,nidaros.no,noblad.no,nordhordland.no,nordlys.no,nt24.no,oa.no,oblad.no,op.no,ostlendingen.no,oyene.no,r-a.no,rablad.no,ranablad.no,rb.no,retten.no,rha.no,ringblad.no,ringsaker-blad.no,sa.no,sandeavis.no,sandnesposten.no,sb.no,smaalenene.no,sognavis.no,solabladet.no,solungavisa.no,strandbuen.no,svelviksposten.no,ta.no,tb.no,telen.no,tk.no,tvedestrandsposten.no,varingen.no,vestbyavis.no,merakerposten.no##.aid-background-blur:style(filter: none !important)
+aasavis.no,amta.no,an.no,ao.no,auraavis.no,austagderblad.no,avisenagder.no,ba.no,bygdebladet.no,bygdeposten.no,dalane-tidende.no,dt.no,eikerbladet.no,enebakkavis.no,f-b.no,finnmarkdagblad.no,finnmarken.no,firda.no,firdaposten.no,fremover.no,gbnett.no,gjengangeren.no,glomdalen.no,h-avis.no,ha-halden.no,hadeland.no,hardanger-folkeblad.no,helg.no,iharstad.no,indre.no,jarlsbergavis.no,jbl.no,kv.no,kvinnheringen.no,laagendalsposten.no,lierposten.no,lofotposten.no,lyngdalsavis.no,moss-avis.no,nettavisen.no,nidaros.no,noblad.no,nordhordland.no,nordlys.no,nt24.no,oa.no,oblad.no,op.no,ostlendingen.no,oyene.no,r-a.no,rablad.no,ranablad.no,rb.no,retten.no,rha.no,ringblad.no,ringsaker-blad.no,sa.no,sandeavis.no,sandnesposten.no,sb.no,smaalenene.no,sognavis.no,solabladet.no,solungavisa.no,strandbuen.no,svelviksposten.no,ta.no,tb.no,telen.no,tk.no,tvedestrandsposten.no,varingen.no,vestbyavis.no,merakerposten.no###aid-overlay:style(background: none !important; height: 0px !important; min-height: unset !important)
+tv2.no##.login-wall__gradient
+canariavisen.no##.article-text-preview:style(-webkit-text-fill-color: black !important)
+sol.no##[class^=Body__Fade-sc-]
+www.aftenposten.no##body:style(overflow: auto !important)
+www.aftenposten.no#?#div[class^=hyperion-css-] > div[class^=hyperion-css-] > div[class^=hyperion-css-] > div[class^=hyperion-css-]:has([for="login label"])
+dn.no##div[style*=linear-gradient]
+alt.no##.aid-background-blur:style(filter: none !important)
+alt.no##amedia-include[manifest*=access-check i]
+ba.no###aid-overlay
+! 10/02/2024
+vg.no##.paywallTextFading
+kommunal-rapport.no##.paywall-fade-out::after
+kommunal-rapport.no##.paywall-fade-out:style(overflow-y: unset !important)
+kommunal-rapport.no##.paywall-login:style(margin-top: 30px !important)
+! https://github.com/DandelionSprout/adfilt/discussions/932#discussioncomment-8603702
+friflyt.no,jeger.no,landevei.no,norsk-klatring.no,terrengsykkel.no,utemagasinet.no##.teaser:style(mask-image: none !important)
+
+! dagbladet.no,elbil24.no
+##.CTA-body-faded:not(html, body)
+! digi.no, tu.no, medier24.no, porten.no
+##.faded-article-content::after
+! https://www.klikk.no/side3/vimenn/viggo-bloffet-hele-norge-6857944
+##.paywall-gradient:not(html, body)
+! https://www.vg.no/nyheter/i/y3Mka2/ (08/04/2020)
+vg.no##div[data-test-tag=timestamp] + div::before
+! https://www.vg.no/nyheter/innenriks/i/3JbRzv/ (09/04/2020)
+vg.no##div[data-test-tag=timestamp] + p + div::before
+
+! 🇳🇴/🇩🇰: ——— Anti-anti-reklameblokkering ———
+! 🇮🇸: ——— And-and-auglýsingshindrun ———
+! 🇬🇧: ——— Anti-anti-adblocking ———
+dagensbyggeri.dk##+js(std, (), 2500)
+eurosport.*##+js(aeld, contextmenu)
+techstart.dk##+js(set, adblock, false)
+tv2.no##+js(acis, adblockDetector)
+vg.no##+js(aeld, load, concat)
+||elderlyscissors.com^
+||vg.no/cnp-assets/src/sites/vg/components/AdblockModal$script,1p
+gamereactor.*##+js(set, adblockEnabled, noopFunc)
+gamereactor.*##+js(set, trackAdblock, noopFunc)
+gamereactor.*##+js(acis, AdsReloadConfig)
+!#if adguard
+gamereactor.*$$script[onError="adblockEnabled()"]
+!#endif
+!#if env_firefox
+gamereactor.*##^script[onError="adblockEnabled()"]
+!#endif
+! Also fixed in "uBlock Filters - Privacy", but is added to this list as well, because it serves to remove AAAB notices on various pages (especially when "uBlock Filters" is turned on).
+||googletagmanager.com/gtm.js^$domain=dk|bornholm.nu
+! aftenposten.no, abcnyheter.no, recordere.dk, gastrofun.dk, fyens.dk, tilbudsuken.no, viborg-folkeblad.dk, gaffa.dk, jv.dk
+##div[style^="bottom: 0px;"][style*="width: 10"][style*="z-index: 2147"]
+! https://github.com/uBlockOrigin/uAssets/issues/8648
+connery.dk##+js(set, adblockerAlert, noopFunc)
+! https://github.com/finnish-easylist-addition/finnish-easylist-addition/issues/305
+no##+js(ra, class, .dfp-loaded)
+! https://www.findroommate.dk/vaerelser/302142/stort-lyst-vaerelse-taet-paa-aarhus-i-viby-centrum (17/12/2021)
+findroommate.dk###frm-ablo-message
+!#if !adguard
+! https://github.com/uBlockOrigin/uAssets/issues/13495
+bold.dk##+js(acs, EventTarget.prototype.addEventListener, window.TextDecoder)
+bold.dk##+js(nofab)
+!#endif
+! The green "Abonner" button in the upper right appears to work perfectly even with this entry, and the entry does not cause the Plus article bodies to appear either, so I feel I'm on safe enough grounds on this one.
+||piano.io/xbuilder/experience/execute^$xhr,domain=www.digi.no|www.tu.no
+
+! 🇬🇧: ——— Not actually AAB, but would've caused fatal breakage in ABP ———
+playpilot.com##.takeover.modals
+playpilot.com##body:style(overflow: auto !important)
+
+!¤=☆=¤=☆=¤=☆=¤=☆=¤=☆=¤=☆=¤=☆=¤=☆=¤=☆=¤=☆=¤=☆=¤=☆=¤!
+
 
 ! 🇳🇴: ——— Forsøker å få nettleseren til å laste inn filer i HTTPS, dersom nettstedet ikke automatisk omdirigerer HTTP til dens HTTPS-versjon ———
 ! 🇬🇧: ——— Tries to make the web browser load files in HTTPS, if the website itself doesn't automatically redirect from HTTP to its HTTPS version ———
@@ -2897,24 +3017,479 @@ triplx.dk##.aff-inner-col
 ||trafikkskoleapp.no^
 
 !#if env_mobile
-!#include NorwegianExperimentalList%20alternate%20versions/NordicFilters-FirefoxAndroidUBOWorkaround.txt
+!#if ext_ublock
+!#if !env_mv3
+! This is an extension file, not an independent list.
+! Version: 29December2023v1-Extension
+! Description: Aims to _partially_ fix uBlock Origin's strange decision to turn off generic hiding rules by default on uBlock Origin on Firefox for Android. (See https://github.com/uBlockOrigin/uBlock-issues/issues/1554)
+
+no,dk,is,fo,translate.goog,web.archive.org###ad_superboard
+no,dk,is,fo,translate.goog,web.archive.org###ad_topp
+no,dk,is,fo,translate.goog,web.archive.org###adBlinkContainer
+no,dk,is,fo,translate.goog,web.archive.org###art-pomimuko
+no,dk,is,fo,translate.goog,web.archive.org###BannerEniro
+no,dk,is,fo,translate.goog,web.archive.org###ctl00_phMain_divParallax
+no,dk,is,fo,translate.goog,web.archive.org###ctl00_phMain_lnkAd
+no,dk,is,fo,translate.goog,web.archive.org###front-page-app .row > #box2-container
+no,dk,is,fo,translate.goog,web.archive.org###GoogleAdsenseFooter
+no,dk,is,fo,translate.goog,web.archive.org###GoogleAdsensePanorama
+no,dk,is,fo,translate.goog,web.archive.org###GoogleAdsenseWideSkyscraper
+no,dk,is,fo,translate.goog,web.archive.org###GoogleAdsenseWideSkyscraperLeft
+no,dk,is,fo,translate.goog,web.archive.org###innocode-ad
+no,dk,is,fo,translate.goog,web.archive.org###jobads-topbanner
+no,dk,is,fo,translate.goog,web.archive.org###junglebogen-left
+no,dk,is,fo,translate.goog,web.archive.org###junglebogen-right
+no,dk,is,fo,translate.goog,web.archive.org###mobiltoppbanner
+no,dk,is,fo,translate.goog,web.archive.org###newswire-banner
+no,dk,is,fo,translate.goog,web.archive.org###no-familieklubben-wde-front_topboard
+no,dk,is,fo,translate.goog,web.archive.org###ntwidget
+no,dk,is,fo,translate.goog,web.archive.org###reklamebolk1wrap
+no,dk,is,fo,translate.goog,web.archive.org###related-articles + div[class^=" hyperion-css-"]
+no,dk,is,fo,translate.goog,web.archive.org###sponsorstripe
+no,dk,is,fo,translate.goog,web.archive.org###sportspill-box-top
+no,dk,is,fo,translate.goog,web.archive.org###top-ads-container
+no,dk,is,fo,translate.goog,web.archive.org###topBanners
+no,dk,is,fo,translate.goog,web.archive.org###toppbanner
+no,dk,is,fo,translate.goog,web.archive.org###viewItemAdsenseBanner
+no,dk,is,fo,translate.goog,web.archive.org###viewItemEniroBanner
+no,dk,is,fo,translate.goog,web.archive.org###wallpaperAds
+no,dk,is,fo,translate.goog,web.archive.org##.ad-cookie:not(html,body,:empty)
+no,dk,is,fo,translate.goog,web.archive.org##.ad-front-310x400:not(html,body,:empty)
+no,dk,is,fo,translate.goog,web.archive.org##.ad-iframe-nt:not(html,body,:empty)
+no,dk,is,fo,translate.goog,web.archive.org##.ad-paied-cont-front:not(html,body,:empty)
+no,dk,is,fo,translate.goog,web.archive.org##.ad.text-center:not(html,body,:empty)
+no,dk,is,fo,translate.goog,web.archive.org##.ad.topBanner:not(html,body,:empty)
+no,dk,is,fo,translate.goog,web.archive.org##.ad[data-config-name]:not(html,body,:empty)
+no,dk,is,fo,translate.goog,web.archive.org##.ad[id^=netboard_]:not(html,body,:empty)
+no,dk,is,fo,translate.goog,web.archive.org##.ad[id^=skyscraper]:not(html,body,:empty)
+no,dk,is,fo,translate.goog,web.archive.org##.adform__text:not(html,body,:empty)
+no,dk,is,fo,translate.goog,web.archive.org##.adform__topbanner:not(html,body,:empty)
+no,dk,is,fo,translate.goog,web.archive.org##.adguru-modal-popup:not(html,body,:empty)
+no,dk,is,fo,translate.goog,web.archive.org##.adnuntius-ad:not(html,body,:empty)
+no,dk,is,fo,translate.goog,web.archive.org##.ads__grid-item:not(html,body,:empty)
+no,dk,is,fo,translate.goog,web.archive.org##.adsbymanatee:not(html,body,:empty)
+no,dk,is,fo,translate.goog,web.archive.org##.adunit-content-marketing:not(html,body,:empty)
+no,dk,is,fo,translate.goog,web.archive.org##.am-page-ad:not(html,body,:empty)
+no,dk,is,fo,translate.goog,web.archive.org##.annonceringBox:not(html,body,:empty)
+no,dk,is,fo,translate.goog,web.archive.org##.annonseheader:not(html,body,:empty)
+no,dk,is,fo,translate.goog,web.archive.org##.annonselenker:not(html,body,:empty)
+no,dk,is,fo,translate.goog,web.archive.org##.annonser:not(html,body,:empty)
+no,dk,is,fo,translate.goog,web.archive.org##.annonsetag:not(html,body,:empty)
+no,dk,is,fo,translate.goog,web.archive.org##.arcad-block-container:not(html,body,:empty)
+no,dk,is,fo,translate.goog,web.archive.org##.Article-header-body::before
+no,dk,is,fo,translate.goog,web.archive.org##.article__body > .article__adblock
+no,dk,is,fo,translate.goog,web.archive.org##.article__content > .article__adblock
+no,dk,is,fo,translate.goog,web.archive.org##.augl-container:not(html,body,:empty)
+no,dk,is,fo,translate.goog,web.archive.org##.auglysing_ticker:not(html,body,:empty)
+no,dk,is,fo,translate.goog,web.archive.org##.banner-container-monster-topscroll:not(html,body,:empty)
+no,dk,is,fo,translate.goog,web.archive.org##.bannerizor-banner:not(html,body,:empty)
+no,dk,is,fo,translate.goog,web.archive.org##.banners.post_sticky:not(html,body,:empty)
+no,dk,is,fo,translate.goog,web.archive.org##.bazaarSpinnerContainer:not(html,body,:empty)
+no,dk,is,fo,translate.goog,web.archive.org##.block > .adblock--panorama
+no,dk,is,fo,translate.goog,web.archive.org##.block-AnnonceBlocksAdform:not(html,body,:empty)
+no,dk,is,fo,translate.goog,web.archive.org##.clearfix.top_banner_container:not(html,body,:empty)
+no,dk,is,fo,translate.goog,web.archive.org##.commercial-teaser:not(html,body,:empty)
+no,dk,is,fo,translate.goog,web.archive.org##.container.container-topbanner:not(html,body,:empty)
+no,dk,is,fo,translate.goog,web.archive.org##.content-adunit:not(html,body,:empty)
+no,dk,is,fo,translate.goog,web.archive.org##.CTA-body-faded:not(html, body)
+no,dk,is,fo,translate.goog,web.archive.org##.currencyaugl:not(html,body,:empty)
+no,dk,is,fo,translate.goog,web.archive.org##.desktop-banner-widget:not(html,body,:empty)
+no,dk,is,fo,translate.goog,web.archive.org##.ehm-megaboard:not(html,body,:empty)
+no,dk,is,fo,translate.goog,web.archive.org##.eiker-adlabel:not(html,body,:empty)
+no,dk,is,fo,translate.goog,web.archive.org##.faded-article-content::after
+no,dk,is,fo,translate.goog,web.archive.org##.featuresplash-container:not(html,body,:empty)
+no,dk,is,fo,translate.goog,web.archive.org##.forum-ad-box:not(html,body,:empty)
+no,dk,is,fo,translate.goog,web.archive.org##.full-width-vevlysingar:not(html,body,:empty)
+no,dk,is,fo,translate.goog,web.archive.org##.full-width.daily-offers:not(html,body,:empty)
+no,dk,is,fo,translate.goog,web.archive.org##.gofollow:not([href*=nyhetsbrev], [href*=radio], html, body, :empty)
+no,dk,is,fo,translate.goog,web.archive.org##.googlepublisherpluginad:not(html,body,:empty)
+no,dk,is,fo,translate.goog,web.archive.org##.grid > div[class=flow-banner]
+no,dk,is,fo,translate.goog,web.archive.org##.hestesko-section:not(html,body,:empty)
+no,dk,is,fo,translate.goog,web.archive.org##.hringekja__wrapper:not(html,body,:empty)
+no,dk,is,fo,translate.goog,web.archive.org##.intersect-ads-load:not(html,body,:empty)
+no,dk,is,fo,translate.goog,web.archive.org##.jubii-adunit:not(html,body,:empty)
+no,dk,is,fo,translate.goog,web.archive.org##.lp_p2_api_ad:not(html,body,:empty)
+no,dk,is,fo,translate.goog,web.archive.org##.maelstrom-skyscraper:not(html,body,:empty)
+no,dk,is,fo,translate.goog,web.archive.org##.maelstrom-topbanner:not(html,body,:empty)
+no,dk,is,fo,translate.goog,web.archive.org##.main-article-right-container > div[id][style^="margin-bottom:"]
+no,dk,is,fo,translate.goog,web.archive.org##.mh-loop-ad:not(html,body,:empty)
+no,dk,is,fo,translate.goog,web.archive.org##.mobile-banner-widget:not(html,body,:empty)
+no,dk,is,fo,translate.goog,web.archive.org##.mowgli-inread:not(html,body,:empty)
+no,dk,is,fo,translate.goog,web.archive.org##.mowgli-right:not(html,body,:empty)
+no,dk,is,fo,translate.goog,web.archive.org##.multiple-vevlysingar:not(html,body,:empty)
+no,dk,is,fo,translate.goog,web.archive.org##.native-ad-kicker:not(html,body,:empty)
+no,dk,is,fo,translate.goog,web.archive.org##.native-advertisement:not(html,body,:empty)
+no,dk,is,fo,translate.goog,web.archive.org##.navigation__advertisement:not(html,body,:empty)
+no,dk,is,fo,translate.goog,web.archive.org##.nf-adholder:not(html,body,:empty)
+no,dk,is,fo,translate.goog,web.archive.org##.nf-c-adblock-title:not(html,body,:empty)
+no,dk,is,fo,translate.goog,web.archive.org##.nf-o-annonse:not(html,body,:empty)
+no,dk,is,fo,translate.goog,web.archive.org##.ntbox-btn:not(html,body,:empty)
+no,dk,is,fo,translate.goog,web.archive.org##.ntbox-tab.bg-primary:not(html,body,:empty)
+no,dk,is,fo,translate.goog,web.archive.org##.paywall-fade:not(html, body)
+no,dk,is,fo,translate.goog,web.archive.org##.paywall-gradient:not(html, body)
+no,dk,is,fo,translate.goog,web.archive.org##.polarisMarketing:not(html,body,:empty)
+no,dk,is,fo,translate.goog,web.archive.org##.polarisSpid.widget::before
+no,dk,is,fo,translate.goog,web.archive.org##.poster-placeholder:not(html,body,:empty)
+no,dk,is,fo,translate.goog,web.archive.org##.premium-spot:not(html,body,:empty)
+no,dk,is,fo,translate.goog,web.archive.org##.reklame-spot:not(html,body,:empty)
+no,dk,is,fo,translate.goog,web.archive.org##.rotating-junglebogen:not(html,body,:empty)
+no,dk,is,fo,translate.goog,web.archive.org##.row > div[class=top-fixed-wrapper]
+no,dk,is,fo,translate.goog,web.archive.org##.scrolling-side-ad-container:not(html,body,:empty)
+no,dk,is,fo,translate.goog,web.archive.org##.section-module.blog-frontpage-module.margin-top-10.row:not(html,body,:empty)
+no,dk,is,fo,translate.goog,web.archive.org##.single-adrotate:not(html,body,:empty)
+no,dk,is,fo,translate.goog,web.archive.org##.skille:not(html,body)
+no,dk,is,fo,translate.goog,web.archive.org##.skyscraper-ads-container:not(html,body,:empty)
+no,dk,is,fo,translate.goog,web.archive.org##.spklw-post-attr[data-recommendation-type=ad]:not(html,body,:empty)
+no,dk,is,fo,translate.goog,web.archive.org##.spklw-post-attr[data-recommendation-type=sprinkleit]:not(html,body,:empty)
+no,dk,is,fo,translate.goog,web.archive.org##.spklw-post-attr[data-type=ad]:not(html,body,:empty)
+no,dk,is,fo,translate.goog,web.archive.org##.splitblock__column > .block > .adblock
+no,dk,is,fo,translate.goog,web.archive.org##.splitblock__column--2 > .block > .adblock
+no,dk,is,fo,translate.goog,web.archive.org##.sponset-innlegg:not(html,body,:empty)
+no,dk,is,fo,translate.goog,web.archive.org##.sportspill-container[href*=lotto]:not(html,body,:empty)
+no,dk,is,fo,translate.goog,web.archive.org##.sub.menu-primary.default.polarisMenu.widget:not(html,body,:empty)
+no,dk,is,fo,translate.goog,web.archive.org##.tag-page-ad-container:not(html,body,:empty)
+no,dk,is,fo,translate.goog,web.archive.org##.ticker-ad-wrapper:not(html,body,:empty)
+no,dk,is,fo,translate.goog,web.archive.org##.ticker-ad:not(html,body)
+no,dk,is,fo,translate.goog,web.archive.org##.top-mowgli:not(html,body,:empty)
+no,dk,is,fo,translate.goog,web.archive.org##.tv2-ad:not(html,body,:empty)
+no,dk,is,fo,translate.goog,web.archive.org##.undirsidaad:not(html,body,:empty)
+no,dk,is,fo,translate.goog,web.archive.org##.vertical-x1-ad > .column--big
+no,dk,is,fo,translate.goog,web.archive.org##.wallpaper > .horseshoe
+no,dk,is,fo,translate.goog,web.archive.org##.wg-banner:not(html,body,:empty)
+no,dk,is,fo,translate.goog,web.archive.org##.widgerFullWidth:not(html,body,:empty)
+no,dk,is,fo,translate.goog,web.archive.org##[class^=AdWrapper]:not(html,body,:empty)
+no,dk,is,fo,translate.goog,web.archive.org##[id^=art-bazaarAd]
+no,dk,is,fo,translate.goog,web.archive.org##[type=advertisement]
+no,dk,is,fo,translate.goog,web.archive.org##a[data-bid="1"][href*="/linkout"]
+no,dk,is,fo,translate.goog,web.archive.org##a[href*="&do=advertisement&"]
+no,dk,is,fo,translate.goog,web.archive.org##a[href*="/?utm_source=strossle"]
+no,dk,is,fo,translate.goog,web.archive.org##a[href*="casinotop.com"]
+no,dk,is,fo,translate.goog,web.archive.org##a[href*="online.adservicemedia.dk"]
+no,dk,is,fo,translate.goog,web.archive.org##a[href*="onlinecasinoer.com"]
+no,dk,is,fo,translate.goog,web.archive.org##a[href*="sting.de17a.com"]
+no,dk,is,fo,translate.goog,web.archive.org##a[href^="https://click-dk.plista.com/csc?"]
+no,dk,is,fo,translate.goog,web.archive.org##a[title=LeoVegas]
+no,dk,is,fo,translate.goog,web.archive.org##amedia-include[src*="services.api.no/api/bazaar/"]
+no,dk,is,fo,translate.goog,web.archive.org##amedia-resizable-iframe[src*="/ad."]
+no,dk,is,fo,translate.goog,web.archive.org##article > div[class^=" hyperion-css-"]
+no,dk,is,fo,translate.goog,web.archive.org##bazaar-ad
+no,dk,is,fo,translate.goog,web.archive.org##div[class*=" advertory-" i]
+no,dk,is,fo,translate.goog,web.archive.org##div[class^=advertory- i]
+no,dk,is,fo,translate.goog,web.archive.org##div[data-adtext]
+no,dk,is,fo,translate.goog,web.archive.org##div[data-contenttype=ad]
+no,dk,is,fo,translate.goog,web.archive.org##div[data-object-type=ad]
+no,dk,is,fo,translate.goog,web.archive.org##div[data-placeholder*=placeholder_ad]
+no,dk,is,fo,translate.goog,web.archive.org##div[data-placeholder=lokalnative]
+no,dk,is,fo,translate.goog,web.archive.org##div[data-third-party-link*=".smartadserver.com/"]
+no,dk,is,fo,translate.goog,web.archive.org##div[id*=html-embedded-ad]
+no,dk,is,fo,translate.goog,web.archive.org##div[id^=adPlacement_]
+no,dk,is,fo,translate.goog,web.archive.org##div[id^=AdvPortlet]
+no,dk,is,fo,translate.goog,web.archive.org##div[id^=art-challengeAd-]
+no,dk,is,fo,translate.goog,web.archive.org##div[id^=webbannernetboard]
+no,dk,is,fo,translate.goog,web.archive.org##div[itemtype$=WPAdBlock]
+no,dk,is,fo,translate.goog,web.archive.org##div[style^="bottom: 0px;"][style*="width: 10"][style*="z-index: 2147"]
+no,dk,is,fo,translate.goog,web.archive.org##img[alt^="Annonse "]
+no,dk,is,fo,translate.goog,web.archive.org##img[src^="https://storage.googleapis.com/ad-campaigns/"]
+no,dk,is,fo,translate.goog,web.archive.org##optimus-element[linecount=undefined][width="480"]:first-of-type:nth-last-of-type(2)
+no,dk,is,fo,translate.goog,web.archive.org##optimus-element[linecount=undefined][width="980"]
+no,dk,is,fo,translate.goog,web.archive.org,~casino24.dk##a[href*="casino24.dk"]
+no,dk,is,fo,translate.goog,web.archive.org,~finn.no##a[href*="finn.no/realestate/newbuildings/ad.htm"]
+no,dk,is,fo,translate.goog,web.archive.org,~gratischancer.dk##a[href*="://gratischancer.dk/"]
+no,dk,is,fo,translate.goog,web.archive.org,~norges.casino##a[href*="norges.casino"]
+no,dk,is,fo,translate.goog,web.archive.org,~norsk-tipping.no,~tipster.no,~online.no,~epost.telenor.no##.norsk-tipping-widget:not(html,body,:empty)
+no,dk,is,fo,translate.goog,web.archive.org,~norsk-tipping.no,~tipster.no,~online.no,~epost.telenor.no##a[href*="nettavisen.no/sportspill/tipping/blir-du-mangemillionr-pa-onsdag"]
+no,dk,is,fo,translate.goog,web.archive.org,~norsk-tipping.no,~tipster.no,~online.no,~epost.telenor.no##a[href*="norsk-tipping.no/flax"]
+no,dk,is,fo,translate.goog,web.archive.org,~norsk-tipping.no,~tipster.no,~online.no,~epost.telenor.no##a[href*="norsk-tipping.no/lotteri/eurojackpot"]
+no,dk,is,fo,translate.goog,web.archive.org,~norsk-tipping.no,~tipster.no,~online.no,~epost.telenor.no##a[href*="norsk-tipping.no/lotteri/extra"]
+no,dk,is,fo,translate.goog,web.archive.org,~norsk-tipping.no,~tipster.no,~online.no,~epost.telenor.no##a[href*="norsk-tipping.no/lotteri/lotto"]
+no,dk,is,fo,translate.goog,web.archive.org,~norsk-tipping.no,~tipster.no,~online.no,~epost.telenor.no##a[href*="norsk-tipping.no/lotteri/viking-lotto"]
+no,dk,is,fo,translate.goog,web.archive.org,~norsk-tipping.no,~tipster.no,~online.no,~epost.telenor.no##a[href*="norsk-tipping.no/lotteri/vikinglotto"]
+no,dk,is,fo,translate.goog,web.archive.org,~norsk-tipping.no,~tipster.no,~online.no,~epost.telenor.no##a[href*="norsk-tipping.no/sales/validateCouponAndStoreToSession.json"]
+no,dk,is,fo,translate.goog,web.archive.org,~norsk-tipping.no,~tipster.no,~online.no,~epost.telenor.no##a[href*="tipping.pxf.io"][href*=oddstips i]
+no,dk,is,fo,translate.goog,web.archive.org,~nytid.no##.td-a-rec:not(html,body,:empty)
+no,dk,is,fo,translate.goog,web.archive.org,~prisguiden.no##.prisguidePost:not(html,body,:empty)
+no,dk,is,fo,translate.goog,web.archive.org,~rockefeller.no##.annonse:not(.article-entity)
+no,dk,is,fo,translate.goog,web.archive.org,~ut.no##.advertisement:not(html,body,:empty)
+!#endif
+!#endif
+
 !#endif
 
 
 !#if !env_firefox
 !+ NOT_OPTIMIZED
-!#include NorwegianExperimentalList%20alternate%20versions/NordicFilters-NotFirefox.txt
+! Version: 21July2021v1-Extension
+fla.de###top-banner
+fla.de##.index-banner
+
 !#endif
 
 
-!#include NorwegianExperimentalList%20alternate%20versions/NordicFilters-NotBrave.txt
+! 🇳🇴/🇩🇰: ——— Ikke for Brave Browser ———
+! 🇬🇧: ——— Not for Brave Browser ———
+! Last updated: 09February2022v1-Extension
+! https://github.com/brave/adblock-lists/issues/768 (Remove when Shield Standard Mode adds support for cosmetic filtering in default lists)
+||akamai.vgc.no/drfront3^$image
+
 
 
 !#if ext_ublock
-!#include NorwegianExperimentalList%20alternate%20versions/AdditionalGenericEntriesForUBO.txt
+! Generic entries that seem like they'd apply to the internet as a whole (Nordic sites included) that aren't in EasyList or uBlock Filters, but which are in AdGuard Base Filter.
+! An equivalent file also exists for AdGuard softwares.
+! Version: 20December2023v2-Extension
+###ad-fullbanner2-billboard-outer
+###ad-topper
+###ad_300X250
+###ad_336_singlebt
+###ad_728h
+###ad_google
+###advertRightTopPosition
+###adxtop
+###atvcap + #tvcap > .mnr-c > .commercial-unit-mobile-top
+###banner-top-right
+###BannerBox
+###bannerfloat22
+###bb_banner
+###blox-top-promo
+###bp_banner
+###campaign-banner
+###chp_ads_blocker-modal
+###chp_ads_blocker-overlay
+###close-fixedban
+###extensible-banner
+###fb_300x250
+###footer-banner
+###scorecard-ad
+###soldakayan
+###taw > .med + div > #tvcap > .mnr-c:not(.qs-ic) > .commercial-unit-mobile-top
+###topBanners
+###topstuff > #tads
+###total_banner
+###videopageadblock
+##.Ad__Wrapper:not(html,body,:empty)
+##.ad_register_prompt:not(html,body,:empty)
+##.ad_showthread_firstpost_start_placeholder:not(html,body,:empty)
+##.adace-popup-detector:not(html,body,:empty)
+##.add_300x250:not(html,body,:empty)
+##.adheader403:not(html,body,:empty)
+##.b-header-banner:not(html,body,:empty)
+##.baners_block:not(html,body,:empty)
+##.banner_header:not(html,body,:empty)
+##.banners-middle:not(html,body,:empty)
+##.banners_block:not(html,body,:empty)
+##.BetterJsPopOverlay:not(html,body,:empty)
+##.breakout-ad:not(html,body,:empty)
+##.commercial-unit-mobile-bottom:not(html,body,:empty)
+##.commercial-unit-mobile-top:not(html,body,:empty)
+##.commercial-unit-mobile-top .jackpot-main-content-container > .UpgKEd + .nZZLFc > .vci
+##.commercial-unit-mobile-top .jackpot-main-content-container > .UpgKEd + .nZZLFc > div > .vci
+##.commercial-unit-mobile-top > .v7hl4d
+##.commercial-unit-mobile-top > div[data-pla="1"]
+##.demo-wrapper[style="display:none;"] + div.fadeInDown[id]
+##.gmr-bannerpopup:not(html,body,:empty)
+##.happy-footer:not(html,body,:empty)
+##.happy-player-beside:not(html,body,:empty)
+##.idmuvi-topbanner:not(html,body,:empty)
+##.idmuvi-topbanner-aftermenu:not(html,body,:empty)
+##.innerBanner:not(html,body,:empty)
+##.jetblocker-wrapper:not(html,body,:empty)
+##.jetblocker_overlay:not(html,body,:empty)
+##.loop_google_ad:not(html,body,:empty)
+##.main_promo_image_container:not(html,body,:empty)
+##.menu-ads:not(html,body,:empty)
+##.puFloatLine > #puFloatDiv
+##.reclamTable:not(html,body,:empty)
+##.remove-spots:not(html,body,:empty)
+##.roxot-dynamic:not(html,body,:empty)
+##.SC_TBlock:not(html,body,:empty)
+##.sidebar-ads-container:not(html,body,:empty)
+##.special-ads:not(html,body,:empty)
+##.sponsor-div:not(html,body,:empty)
+##.sponsored-home-page-inner:not(html,body,:empty)
+##.sponsored-items:not(html,body,:empty)
+##.stripper > a[href*="istripper"] > img
+##.tjads:not(html,body,:empty)
+##.top-adv-app:not(html,body,:empty)
+##.top-banners:not(html,body,:empty)
+##.top-header-ads-mobile:not(html,body,:empty)
+##.top-r-ads:not(html,body,:empty)
+##.topbannerad:not(html,body,:empty)
+##.videojs-hero-overlay:not(html,body,:empty)
+##.widget-sidebar-right-banner:not(html,body,:empty)
+##.wpcnt > .wpa
+##body > div#fixedban
+##div[id^="teaser"][style^="width:autopx;"]
+##img[title^="advertisement"]
+/1betsson.png
+/1unibet.png
+/250x90_motortrend.gif
+/728xx90.jpg?sid=
+/_ra_lib.js
+/_ra_lib.php
+/ab-a.js?v=
+/ad-provider.
+/ads.criteo.com.js
+/ads/300.html
+/adsadclient
+/adsen.php
+/app/apx19.js
+/asset/default/player/plugins/vast-*.js
+/assets/jquery/jquery-1.4.1.min.js?v=2&type=adult
+/assets/jquery/jquery-1.4.2.min.js?v=2&type=adult
+/assets/jquery/jquery-1.4.3.min.js?v=2&type=adult
+/assets/jquery/jquery-2.4.3.min.js?v=2&type=adult
+/assets/jquery/jquery-3.2.min.js?v=2&type=adult
+/avo/includes/js/jquery.js
+/bannerpop/uploads/*
+/banners*swf
+/d3.php?*=s*&*&sadbl=
+/deity.php?*=s*&*&sadbl=
+/di3asdadasdadas.di3asdsa.js
+/doseofporn.com\/[a-z]{0,5}[1-9]{0,5}[a-z]{0,5}[1-9][s\S]*.js/
+/eroclick.js
+/fiets-banner_
+/getAditem
+/getMultiAdsStrategy
+/getStartPageAds
+/grgfbigo.js
+/heyboy/com/lazymolecule/*.js
+/hitfile_730_90.png
+/hy.js?q22
+/im/im.js?sk=
+/index.php?op=ad_click
+/js/popunderjs/init.js^
+/js/re-ads-
+/kasynos_online.png
+/loadme/com/coldvain/*.js
+/loadme/com/lazymolecule/*.js
+/loadmez/com/coldvain/*.js
+/local_su.js?t=
+/lvbet-tv.jpg
+/phantomPopunder.js|
+/prepare/ads^
+/pu/?psid=
+/q1.js?q22
+/redirect-ads.php
+/script/pop_packcpm.php
+/tc-under.min.js
+/xstat/ppjs?
+/xvideo.js|
+/zpp/zpp3.js
+
 !#endif
 
 
 !#if adguard
-!#include NorwegianExperimentalList%20alternate%20versions/AdditionalGenericEntriesForAdGuard.txt
+! Generic entries that seem like they'd apply to the internet as a whole (Nordic sites included) that aren't in EasyList or AdGuard Base Filter, but which are in either uBlock Filters Ads, uBlock Filters Unbreak, or uBlock Filters Badware Risks.
+! Version: 20December2023v1-Extension
+###ad_feature:not(:empty)
+###ad_img:not(:empty)
+###adContext:not(:empty)
+###adMid1:not(:empty)
+###adSpecial:not(:empty)
+###adtagfooter:not(:empty)
+###advert-header:not(:empty)
+###adzerk:not(:empty)
+###bt-ads
+###buy-sell-ads:not(:empty)
+###container > #footer ~ #go-to-top + div[id][class*=" "]
+###docmainad:not(:empty)
+###downloadAd:not(:empty)
+###ez-sidebar-wall-left
+###invid_call
+###invideo_2
+###invideo_data
+###invideo_new
+###iqadtile5:not(:empty)
+###leader_ad:not(:empty)
+###micast_ads
+###midadd:not(:empty)
+###myAd:not(:empty)
+###placeAds
+###playerOverlay[style="position:absolute; z-index:3"]
+###plban
+###sideadbox:not(:empty)
+###sidearm-adblock-modal
+###stop_ad
+###stop_ad2
+###tabVideo > .rmedia
+###topBannerAd:not(:empty)
+###topbannerad:not(:empty)
+###travel_ad:not(:empty)
+###video-id_fluid_html_on_pause
+###weatherad:not(:empty)
+##.aan_fake:not(html,body,:empty)
+##.aan_fake__video-units:not(html,body,:empty)
+##.adde_modal-overlay:not(html,body,:empty)
+##.adde_modal_detector:not(html,body,:empty)
+##.adsbyrunactive:not(html,body,:empty)
+##.advboxemb:not(html,body,:empty)
+##.aff-content-col:not(html,body,:empty)
+##.aff-inner-col:not(html,body,:empty)
+##.aff-item-list:not(html,body,:empty)
+##.amp-ad-inner:not(html,body,:empty)
+##.ark-ad-message:not(html,body,:empty)
+##.ave-pl:not(html,body,:empty)
+##.bloc-pub:not(html,body,:empty)
+##.bloc-pub2:not(html,body,:empty)
+##.bottom-hor-block:not(html,body,:empty)
+##.brs-block:not(html,body,:empty)
+##.dbanner:not(html,body,:empty)
+##.exo-horizontal:not(html,body,:empty)
+##.fints-block__row:not(html,body,:empty)
+##.glx-watermark-container:not(html,body,:empty)
+##.header-menu-bottom-ads:not(html,body,:empty)
+##.hor_banner:not(html,body,:empty)
+##.in_stream_banner:not(html,body,:empty)
+##.inplayer-ad:not(html,body,:empty)
+##.inplayer_banners:not(html,body,:empty)
+##.ninja-recommend-block:not(html,body,:empty)
+##.overlay-advertising-new:not(html,body,:empty)
+##.player-bns-block:not(html,body,:empty)
+##.preroll-blocker:not(html,body,:empty)
+##.rkads:not(html,body,:empty)
+##.rps_player_ads:not(html,body,:empty)
+##.stream-item-widget:not(html,body,:empty)
+##.trafficjunky-float-right:not(html,body,:empty)
+##.ytd-j:not(html,body,:empty)
+##.yxd-j:not(html,body,:empty)
+##.yxd-jd:not(html,body,:empty)
+##[class^="DisplayAd"]
+##[onclick*="postlnk.com"]
+##a[href*="/go.php?a_aid="]
+##a[href^="http://adtrack"]
+##a[href^="https://syndication.exdynsrv.com/splash.php"]
+##div[class*="displayAdRight"]
+/adpia_click_popup_after.js
+/ads/bid300*.aspx
+/all-for-adsense/*
+/asg_embed.js
+/click?pid=*&offer_id=
+/code/script/back.php|
+/ea/fl.js
+/ea2/fl.js
+/fp-interstitial.js
+/hy.js?q22q2q2
+/iframe.php?spotID=
+/istripper.js
+/js/acmsd/*
+/js/ppndr.
+/nativeads-v2.js
+/propeller-ads
+/pu-placer.js
+/s/s/js/m/im.js?
+/s/s/js/m/push.js?
+/s/s/sui.php
+/s/s/supv.php
+/safu/safu.js
+/splash.php?idzone=
+/sum.js?i=*&v=
+/t63fd79f7055.js
+/ta22f6590aec.js
+/tceb29242cf7.js
+/webtracking.min.js
+/zbs.kek.js
+/zlk/zlk.js
+/zone?pub
+
 !#endif
