@@ -1,4 +1,6 @@
 import { default as fs } from "fs/promises";
+import { dirname } from "path";
+
 
 import fg from "fast-glob";
 
@@ -21,6 +23,36 @@ async function parseRulesets() {
     return rulesets;
 }
 
+async function downloadFilterlistRecursive(url) {
+    let response = await fetch(url);
+
+    if (response.ok) {
+        let txt = await response.text();
+
+        let out = []
+        for (let line of txt.split("\n")) {
+            if (line.startsWith("!#include")) {
+
+                let includePath = line.split("!#include")[1].trim();
+
+                let baseUrl = new URL(url);
+                baseUrl.pathname = dirname(baseUrl.pathname) + "/" + includePath;
+
+                try {
+                    out.push(await downloadFilterlistRecursive(baseUrl.toString()));
+                } catch (error) {
+                    console.log("nested", error);
+                    throw Error(`Couldn't download: ${baseUrl.toString()}`)
+                }
+            } else {
+                out.push(line)
+            }
+        }
+        return out.join("\n");
+    }
+    throw Error(`Couldn't download: ${url}`)
+}
+
 async function main() {
 
     let rulesets = await parseRulesets();
@@ -35,15 +67,14 @@ async function main() {
             let success = false;
 
             for (let curUrl of stack) {
-                let response = await fetch(curUrl);
-
-                if (response.ok) {
-                    let txt = await response.text();
+                try {
+                    let txt = await downloadFilterlistRecursive(curUrl);
                     await fs.writeFile(`${filtersDir}/${id.toLowerCase()}.txt`, txt, "utf8");
                     // Break out if we had success
                     success = true;
                     break;
-                } else {
+                } catch (error) {
+                    //console.log(error);
                     console.warn(`Failed to download "${id}" from "${curUrl}", trying alternative source next.`);
                 }
             }
