@@ -1,0 +1,32 @@
+name: Update thirdparty filter lists
+
+on:
+  schedule:
+    - cron: "15 5 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  publish:
+    permissions:
+      contents: write
+    name: Update thirdparties
+    runs-on: ubuntu-latest
+    steps:
+      - name: Clone ctrblk-filters
+        uses: actions/checkout@v3
+      - name: Update thirdparties
+        run: |
+          npm install
+          npm run update-thirdparties
+      - name: Commit changes, if any
+        run: |
+          if [[ -n $(git diff) ]]; then
+            git config user.name "github-actions"
+            git config user.email "<>"
+            git add -u filters/thirdparty
+            git commit -m "Daily thirdparty filter lists update"
+            git push origin main
+          fi
