@@ -57,19 +57,23 @@ async function main() {
 
     let rulesets = await parseRulesets();
 
+    rulesets = rulesets.filter(e => e.id === "DEU-0");
+
     for (let ruleset of rulesets) {
         let { id, urls } = ruleset;
+
+        let txt = []
 
         for (let url of urls) {
             // urls may contain multiple backup urls pointing to the same list
             // we try until successfull
-            let stack = Array.isArray(url) ? url.reverse() : [url];
+            let stack = Array.isArray(url) ? url : [url];
+
             let success = false;
 
             for (let curUrl of stack) {
                 try {
-                    let txt = await downloadFilterlistRecursive(curUrl);
-                    await fs.writeFile(`${filtersDir}/${id.toLowerCase()}.txt`, txt, "utf8");
+                    txt.push(await downloadFilterlistRecursive(curUrl));
                     // Break out if we had success
                     success = true;
                     break;
@@ -83,7 +87,9 @@ async function main() {
             if (!success) {
                 throw Error(`Failed to download "${id}", tried:\n\n> ${stack.join("\n> ")}\n`);
             }
+
         }
+        await fs.writeFile(`${filtersDir}/${id.toLowerCase()}.txt`, txt.join("\n"), "utf8");
     }
 }
 

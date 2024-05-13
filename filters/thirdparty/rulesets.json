@@ -1,5 +1,74 @@
 [
     {
+        "id": "default",
+        "name": "Ads, trackers, miners, and more" ,
+        "enabled": true,
+        "urls": [
+            "https://ublockorigin.github.io/uAssets/filters/filters.min.txt",
+            "https://ublockorigin.github.io/uAssets/filters/badware.min.txt",
+            "https://ublockorigin.github.io/uAssets/filters/privacy.min.txt",
+            "https://ublockorigin.github.io/uAssets/filters/unbreak.min.txt",
+            "https://ublockorigin.github.io/uAssets/filters/quick-fixes.min.txt",
+            "https://ublockorigin.github.io/uAssets/filters/ubol-filters.txt",
+            "https://ublockorigin.github.io/uAssets/thirdparties/easylist.txt",
+            "https://ublockorigin.github.io/uAssets/thirdparties/easyprivacy.txt",
+            "https://pgl.yoyo.org/adservers/serverlist.php?hostformat=hosts&showintro=1&mimetype=plaintext"
+        ],
+        "homeURL": "https://github.com/uBlockOrigin/uAssets"
+    },
+    {
+        "id": "annoyances-cookies",
+        "name": "EasyList/uBO – Cookie Notices",
+        "group": "annoyances",
+        "enabled": false,
+        "urls": [
+            "https://ublockorigin.github.io/uAssets/thirdparties/easylist-cookies.txt",
+            "https://ublockorigin.github.io/uAssets/filters/annoyances-cookies.txt"
+        ],
+        "homeURL": "https://github.com/easylist/easylist#fanboy-lists"
+    },
+    {
+        "id": "annoyances-overlays",
+        "name": "EasyList/uBO – Overlay Notices",
+        "group": "annoyances",
+        "enabled": false,
+        "urls": [
+            "https://ublockorigin.github.io/uAssets/thirdparties/easylist-newsletters.txt",
+            "https://ublockorigin.github.io/uAssets/filters/annoyances-others.txt"
+        ],
+        "homeURL": "https://github.com/easylist/easylist#fanboy-lists"
+    },
+    {
+        "id": "annoyances-social",
+        "name": "EasyList – Social Widgets",
+        "group": "annoyances",
+        "enabled": false,
+        "urls": [
+            "https://ublockorigin.github.io/uAssets/thirdparties/easylist-social.txt"
+        ],
+        "homeURL": "https://github.com/easylist/easylist#fanboy-lists"
+    },
+    {
+        "id": "annoyances-widgets",
+        "name": "EasyList – Chat Widgets",
+        "group": "annoyances",
+        "enabled": false,
+        "urls": [
+            "https://ublockorigin.github.io/uAssets/thirdparties/easylist-chat.txt"
+        ],
+        "homeURL": "https://github.com/easylist/easylist#fanboy-lists"
+    },
+    {
+        "id": "annoyances-others",
+        "name": "EasyList – Other Annoyances",
+        "group": "annoyances",
+        "enabled": false,
+        "urls": [
+            "https://ublockorigin.github.io/uAssets/thirdparties/easylist-annoyances.txt"
+        ],
+        "homeURL": "https://github.com/easylist/easylist#fanboy-lists"
+    },
+    {
         "id": "ALB-0",
         "name": "🇦🇱al 🇽🇰xk: Adblock List for Albania",
         "group": "regions",
@@ -277,9 +346,7 @@
         "lang": "nb nn no da is",
         "enabled": false,
         "urls": [
-            [
-                "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/NorwegianList.txt"
-            ]
+            "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/NorwegianList.txt"
         ],
         "homeURL": "https://github.com/DandelionSprout/adfilt"
     },
@@ -312,9 +379,7 @@
         "lang": "ro",
         "enabled": false,
         "urls": [
-            [
-                "https://raw.githubusercontent.com/tcptomato/ROad-Block/master/road-block-filters-light.txt"
-            ]
+            "https://raw.githubusercontent.com/tcptomato/ROad-Block/master/road-block-filters-light.txt"
         ],
         "homeURL": "https://github.com/tcptomato/ROad-Block"
     },
