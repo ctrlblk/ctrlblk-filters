@@ -1,21 +1,19 @@
 [Adblock Plus 1.1]
-! Checksum: b2LSM1nOmT4a3s4dlQU/Ug
-! Version: 202405130521
+! Version: 202405131609
 ! Title: EasyList Germany
-! Last modified: 13 May 2024 05:21 UTC
+! Last modified: 13 May 2024 16:09 UTC
 ! Expires: 1 days (update frequency)
-! Homepage: https://easylist.github.io/
-! Licence: https://easylist.github.io/pages/licence.html
-!
-! EasyList Germany - Deutsche Ergänzung zu EasyList
-!
+! Homepage: https://easylist.to/
+! Licence: https://easylist.to/pages/licence.html
+! 
 ! Bitte melde ungeblockte Werbung und fälschlicherweise geblockte Dinge:
 ! Forum: https://forums.lanik.us/viewforum.php?f=90
 ! E-Mail: easylist.germany@gmail.com
-!
-!----------------Allgemeine Regeln zum Blockieren von Werbung-----------------!
+! GitHub issues: https://github.com/easylist/easylistgermany/issues
+! GitHub pull requests: https://github.com/easylist/easylistgermany/pulls
+! 
+! ----------------Allgemeine Regeln zum Blockieren von Werbung-----------------!
 ! *** easylistgermany:easylistgermany/easylistgermany_general_block.txt ***
-&werbemittel=
 -Bannerwerbung-
 -werb_hori.
 -werb_vert.
@@ -169,7 +167,7 @@ _Werbung260.
 _woz_banner_vote.
 ! *** easylistgermany:easylistgermany/easylistgermany_general_block_popup.txt ***
 ?popup:msp_$popup,third-party
-!--------Allgemeine Regeln zum Verstecken von Werbung(süberbleibseln)---------!
+! --------Allgemeine Regeln zum Verstecken von Werbung(süberbleibseln)---------!
 ! *** easylistgermany:easylistgermany/easylistgermany_general_hide.txt ***
 ###Ad_Win2day
 ###LxWerbeteaser
@@ -622,9 +620,9 @@ telekom.de#@#a[href^="https://track.adform.net/"]
 onvista.de,topdepot24.de#@#a[href^="https://www.financeads.net/tc.php?"]
 11freunde.de,manager-magazin.de#@#div[data-google-query-id]
 wetter.com#@#div[id^="div-gpt-"]
-!---------------------------Third-party Werbeserver---------------------------!
+! ---------------------------Third-party Werbeserver---------------------------!
 ! *** easylistgermany:easylistgermany/easylistgermany_adservers.txt ***
-!
+! 
 ||achmetsdoenerladen.de^
 ||alleswegenmicha.de^
 ||aluhutmafia.de^
@@ -638,7 +636,7 @@ wetter.com#@#div[id^="div-gpt-"]
 ||swissadserver.ch^
 ||wirverkaufennichts.de^
 ||wixnm.com^
-!
+! 
 ||4rm.de^$third-party
 ||4strokemedia.com^$third-party
 ||85.114.133.62^$third-party
@@ -924,7 +922,7 @@ wetter.com#@#div[id^="div-gpt-"]
 ||websc.org^$popup,third-party
 ||xtreff69.com^$popup
 ||zomap.de^$popup,third-party
-!-----------------------------Third-party Werbung-----------------------------!
+! -----------------------------Third-party Werbung-----------------------------!
 ! *** easylistgermany:easylistgermany/easylistgermany_thirdparty.txt ***
 ||1deluxe.eu/banner/
 ||213.133.100.18^*&clicktag=
@@ -1274,7 +1272,7 @@ wetter.com#@#div[id^="div-gpt-"]
 ||vulkanbet.pro^$popup
 ||vulkanbetting.biz^$popup
 ||vulkanvegas-de.com^$popup
-!-------------Seitenspezifische Regeln zum Blockieren von Werbung-------------!
+! -------------Seitenspezifische Regeln zum Blockieren von Werbung-------------!
 ! *** easylistgermany:easylistgermany/easylistgermany_specific_block.txt ***
 $stylesheet,subdocument,third-party,xmlhttprequest,domain=canna-power.to|canna.to
 /as1.php$domain=boerse.ai|boerse.am|boerse.im|boerse.kz|boerse.sx|boerse.tw
@@ -2580,11 +2578,11 @@ $stylesheet,subdocument,third-party,xmlhttprequest,domain=canna-power.to|canna.t
 ||zurzeit.at/wp-content/uploads/*/Alm-Werbung-
 ||zurzeit.at/wp-content/uploads/*/Banner-
 ||zwerg-am-berg.de/wp-content/uploads/*/Banner_
-!
+! 
 /^https?:\/\/.*\/[a-z0-9A-Z_]{2,15}\.(php|jx|jsx|1ph|jsf|jz|jsm|j$)/$image,script,subdocument,domain=beeg-pornos.com|besterpornos.com|deinesexfilme.com|deutsche-sexfilme.net|deutschetitten.com|deutschsex.com|deutschsex.mobi|einfachtitten.com|germanfucktube.com|gutesexfilme.com|hd-pornos.info|hd-sexfilme.com|lesbenhd.com|meinyouporn.com|nacktepaare.com|nurxxx.mobi|orgasmusporn.com|pornoaffe.com|pornoente.tv|pornofisch.com|pornohammer.com|pornohans.com|pornohirsch.net|pornojenny.com|pornoklinge.com|pornotom.com|pornotommy.com|pornozebra.com|reifporn.de|sexente.com|sexvideos-hd.com|spitzetitten.com|tube8-pornos.com|xhamster-sexvideos.com|xnxx-porno.com
 ! (/sw.js)
 /^https?:\/\/.*\/.*(sw[0-9a-z._-]|\.notify\.).*/$script,domain=hammerporno.xxx
-!
+! 
 /^https?:\/\/[0-9a-z]{8,}\.com\/.*/$~media,~subdocument,third-party,domain=190.115.18.20|aniworld.to|bs.to|burningseries.ac|burningseries.nz|burningseries.se|burningseries.sx|burningseries.vc|kinokiste.live|kinox.top|megakino.co|s.to|serien.cam|serienstream.to|streamcloud.movie|topstreamfilm.live
 /^https?:\/\/[0-9a-z]{8,}\.xyz\/.*/$~media,third-party,domain=kinoger.com|kinokiste.live|megakino.co|streamcloud.movie|topstreamfilm.live
 ! Specific filters necessary for sites using $genericblock filter option
@@ -2679,7 +2677,7 @@ connextra.com##iframe[src^="https://ssl.connextra.com"]
 ||linux-magazin.de/wp-content/uploads/*#$popup,domain=linux-magazin.de
 ||sexei.net/go.html$popup
 ||warez.cx^$popup,domain=ibooks.to
-!-----Seitenspezifische Regeln zum Verstecken von Werbung(süberbleibseln)-----!
+! -----Seitenspezifische Regeln zum Verstecken von Werbung(süberbleibseln)-----!
 ! *** easylistgermany:easylistgermany/easylistgermany_specific_hide.txt ***
 dtb.de###AD
 nd-aktuell.de###Ads
@@ -4815,6 +4813,7 @@ shop.rewe.de##div[class*="Product_productSpecialTile"]
 onlinehaendler-news.de##div[class*="adplacement_"]
 chartsurfer.de##div[class*="adszone-"]
 amazona.de##div[class*="fnetbr"]
+t-online.de##div[class] > img[referrerpolicy="unsafe-url"]
 homegate.ch##div[class^="AdSlotContainer_"]
 stol.it##div[class^="AdUnit_"]
 rnd.de##div[class^="Adstyled_"]
@@ -4859,6 +4858,7 @@ volksblatt.at##div[data-div-ratios="default:696_280|500:300_250"]
 t-online.de,www-t--online-de.cdn.ampproject.org##div[data-dy*="Partner:"]
 apfelpage.de##div[data-embed-provider="rcm-eu-amazon-adsystem-com"]
 de.motor1.com##div[data-entrypoint="heycar-search-widget"]
+t-online.de##div[data-external-sdi-mark="banner-placeholder"]
 ingolstadt-today.de##div[data-ez-block-id="3324017"]
 alles-mahlsdorf.de##div[data-id="904ffeb"]
 kleinanzeigen.de##div[data-liberty-ad-loaded="true"]
@@ -5427,7 +5427,7 @@ windowspro.de#?#article:-abp-has(:-abp-properties(content: "Anzeige";))
 winfuture-forum.de#?#div.ExtraPostBlock:-abp-has(div.post_block:-abp-contains(Anzeige)):not(.with_rep)
 zentrum-der-gesundheit.de#?#span:-abp-contains(/ANZ|EIGE/) + button
 zentrum-der-gesundheit.de#?#span:-abp-contains(/ANZ|EIGE/) + div
-!------------------Ausnahmeregeln zum Beheben von Problemen-------------------!
+! ------------------Ausnahmeregeln zum Beheben von Problemen-------------------!
 ! *** easylistgermany:easylistgermany/easylistgermany_allowlist.txt ***
 @@||a.bf-ad.net/adengine/chip/adengine.js$xmlhttprequest,domain=chip.de
 @@||acdn.adnxs.com/ast/ast.js$script,domain=finanzen.ch
@@ -5549,7 +5549,7 @@ zentrum-der-gesundheit.de#?#span:-abp-contains(/ANZ|EIGE/) + div
 @@||vox.de^$generichide
 @@||welt.de^$generichide
 @@||www.t-online.de^$generichide
-!
+! 
 @@||amazon-adsystem.com/aax2/amzn_ads.js$domain=autobild.de
 @@||g.doubleclick.net/gampad/ads?$script,xmlhttprequest,domain=brigitte.de|eltern.de
 @@||g.doubleclick.net/gampad/ads?$xmlhttprequest,domain=geo.de
