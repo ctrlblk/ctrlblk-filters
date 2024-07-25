@@ -57,7 +57,6 @@ async function main() {
 
     let rulesets = await parseRulesets();
 
-    rulesets = rulesets.filter(e => e.id === "DEU-0");
 
     for (let ruleset of rulesets) {
         let { id, urls } = ruleset;
