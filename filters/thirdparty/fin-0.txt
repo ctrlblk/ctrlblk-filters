@@ -2,7 +2,7 @@
 ! Title: Adblock List for Finland
 ! Description: Finnish adblock list
 ! Expires: 4 days
-! Last modified: Wed, 24 Apr 2024 13:25:17 +0000
+! Last modified: Tue, 23 Jul 2024 13:52:29 +0000
 ! Homepage: https://github.com/finnish-easylist-addition/finnish-easylist-addition
 ! License: https://unlicense.org/
 ! Raportoi mainoksenestoon liittyvistä ongelmista tai estämättömistä mainoksista täällä / Please report adblocking related issues or unblocked ads at:
@@ -122,6 +122,8 @@ mtv.fi,mtvuutiset.fi##.visit-advertiser-link
 ||cloudfront.net/creatives/assets/*.mp4$media,redirect=noop-0.1s.mp3,domain=mtv.fi|mtvuutiset.fi
 ||fi-mtv3.videoplaza.tv/proxy/distributor/*&xpb=1$xhr,important,domain=mtv.fi|mtvuutiset.fi
 @@||fwmrm.net/ad/g/*mtv$xhr,domain=mtv.fi|mtvuutiset.fi
+! for mobile, only works for short videos // disabled, seems to cause issues after all
+! mtv.fi,mtvuutiset.fi##+js(m3u-prune, .mp4, yospace.com)
 
 ! Waiting for EP to support uBO filters as well
 ! https://github.com/finnish-easylist-addition/finnish-easylist-addition/issues/433
@@ -344,6 +346,7 @@ avecmedia.fi##.front-page-ad-padding
 avecmedia.fi##.front-page-advertisement
 avplus.fi#?#.widget:has(.widget_advads_ad_widget)
 bbs.io-tech.fi##.structItem--thread[data-author=Mainos]
+bbs.io-tech.fi##[data-revive-zoneid]
 bbs.io-tech.fi#?#div.node-extra:has-text(Mainos)
 bbs.io-tech.fi#?#li.block-row:has-text(Mainos)
 bittiraha.fi###cm-banner
@@ -427,6 +430,7 @@ etlehti.fi,hyvaterveys.fi,soppa365.fi#?#.views-row:has(.is-commercial)
 etn.fi###annonsspalt
 etn.fi###leaderboard
 etn.fi##.annonspekare
+etuovi.com###spotlight-container-id
 etuovi.com,mikrobitti.fi,rantapallo.fi,talouselama.fi##div[id|=almad]
 etusuora.com#?#.pb30:has(.adsbygoogle)
 f1-forum.fi##.sponsoredrow
@@ -1311,6 +1315,7 @@ vuokraovi.com##.service-ad-panel
 webnode.fi##.wnd-free-stripe-link
 wizhdsports.fi##.widget_media_image
 www.io-tech.fi###text-7
+www.io-tech.fi##[data-revive-zoneid]
 www.io-tech.fi##aside.jimmx
 www.io-tech.fi#?#.artikkeli-slide:has(img[src*="-nostokuva"])
 www.io-tech.fi#?#.artikkeli-slide:has(img[src*="Ad-otsikko"])
@@ -1614,6 +1619,10 @@ tori.fi##.appnexus-container
 ! -----UNSORTED END-----
 ! -----UNBREAK-----
 
+! Unbreak kampanjat.hs.fi, the breaking filter should be checked
+! https://kampanjat.hs.fi/opiskelijatilaukset/
+kampanjat.hs.fi#@#div[class] > a[href^="https://tilaa.sanoma.fi/"]
+
 ! Exception to Lowe's list - it removes some boxes
 @@||conductrics.com^$script,domain=elisa.fi
 
@@ -1647,6 +1656,12 @@ classic.nettiauto.com,www.nettiauto.com#@##adv
 
 ! To fix the opening of dna.fi product links on hinta.fi
 @@||track.adform.net/*dna.fi/$document,domain=track.adform.net
+! To fix the opening of cdon.fi product links on kivasiivous.fi
+@@||clk.tradedoubler.com/click*cdon.fi$document,domain=clk.tradedoubler.com
+! To fix the opening of coolshop.fi product links on kivasiivous.fi
+@@||ad.doubleclick.net/ddm/clk/*coolshop.fi/tuote/$document,domain=ad.doubleclick.net
+! To fix the opening of kauppa.dna.fi product links on hintaseuranta.fi
+@@||track.adform.net^*https://kauppa.dna.fi/tuote/$popup,domain=hintaseuranta.fi
 
 ! Unbreak netstat.ayy.fi
 @@||netstat.ayy.fi^
@@ -1689,6 +1704,9 @@ www.seurakuntalainen.fi#@##CookieBanner
 ! https://srk.fi/fi/
 @@||srk.fi/*/cookielaw.js$script
 srk.fi#@##CookielawBanner
+
+! Lowe's list exception, chat needs cookies to be accepted
+@@||googletagmanager.com/gtm.js$domain=pohjanmaanhyvinvointi.fi
 
 ! -----UNBREAK END-----
 

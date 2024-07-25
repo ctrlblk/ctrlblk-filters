@@ -1,8 +1,8 @@
 [uBlock Origin]
-! Checksum: O2QI1otM1KSaW3Y7w0cYlw
-! Version: 202405070936
+! Checksum: oBjAnyv4XUOy4Qz8dMVkyw
+! Version: 202407232215
 ! Title: Hufilter for uBO
-! Last modified: 07 May 2024 09:36 UTC
+! Last modified: 23 Jul 2024 22:15 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://github.com/hufilter/hufilter/wiki
 ! Licence: CC-BY, see https://creativecommons.org/licenses/by/4.0/
@@ -253,8 +253,10 @@ borsonline.hu##A[href="/nyarimagazin"]
 borsonline.hu##a[target="_blank"][class="videa-wrapper"]
 borsonline.hu##iframe[src*="koponyeg.hu"]
 bpiautosok.hu###wpgtr_stickyads_textcss_container
-bpiautosok.hu##body > center:first-child
-bpiautosok.hu##body > center:first-child + br
+bpiautosok.hu##body > br:first-child
+bpiautosok.hu##body > br:first-child + center
+bpiautosok.hu##body > br:first-child + center + br
+bpiautosok.hu##footer + font, footer ~ br
 bpiautosok.hu##font + center
 budapestkornyeke.hu###custom_html-10
 budapestkornyeke.hu###custom_html-11
@@ -332,6 +334,7 @@ e-cars.hu##[class="td-a-rec td-a-rec-id-content_top  tdi_62 td_block_template_1"
 e-cars.hu##[class="td-a-rec td-a-rec-id-header  tdi_53 td_block_template_1"]
 ecoline.hu##[class^="ads"]
 ecoline.hu##[id*="_ad"]
+economx.hu##.hirdetes-block
 eduline.hu##[class*="ad_"]
 eduline.hu##[class*="ads"]
 eduline.hu##[class*="Advert"]
@@ -1063,6 +1066,7 @@ telekom.hu##.ads
 telex.hu##.banner-bottom
 telex.hu##.recommendation.recommendation--out
 telex.hu##.recommendation.recommendation--pr
+telex.hu##.title-section__sponsored
 teltlanyok.com##[id^="adchange"]
 terhesferfi.hu##div.banner
 termalfurdo.hu##.kiemelttartalombox_feher
@@ -1228,7 +1232,7 @@ nlc.hu#?#.m-breakingLayer:-abp-has(a[href*="nlc.hu/balkonfanatik"])
 prohardver.hu,mobilarena.hu,gamepod.hu,itcafe.hu,hardverapro.hu,fototrend.hu#?#div:-abp-has(>[style*="calc"])
 prohardver.hu,mobilarena.hu,itcafe.hu,gamepod.hu,logout.hu,hardverapro.hu#?#div:-abp-has(>h4 + div[style*="calc"])
 prohardver.hu,mobilarena.hu,itcafe.hu,gamepod.hu,logout.hu#?#div#center:-abp-has(div > div > p > a[style="color: #b42223;"])
-prohardver.hu,hardverapro.hu#?#div[class]:-abp-has(> h4:-abp-contains(Hirdetés) + div[class])
+prohardver.hu,hardverapro.hu#?#div[class]:-abp-has(> h4:-abp-contains(/(Hirdetés|[Hh].*i.*r.*d.*e.*t.*é.*s)/) + div[class])
 szeged365.hu#?#[id^="tie-block"]:-abp-has(.stream-title)
 ugytudjuk.hu#?#.row:-abp-has(.mainTopBnr)
 !-------------------------------------------------------------------------------!
@@ -1629,6 +1633,8 @@ iho.hu##.social-icon
 iho.hu##.newsletter-box
 ! adbook nagger
 iho.hu##.article-text > p
+infostart.hu##.am_targetvideo_container
+infostart.hu##.flyout
 infostart.hu##.notification-popup
 ! https://github.com/hufilter/hufilter-dev/issues/252
 infostart.hu###_ao-cmp-ui
@@ -1869,6 +1875,7 @@ videa.hu,videaloop.hu##.top-video-container-banner
 ||gravity.com^$third-party
 ||lo.v.liveperson.net^$third-party
 ||onesignal.com^$third-party
+||performax.cz^$third-party
 ||targetix.net^$third-party
 ||track306.info^$third-party
 ||trackingterrorism.org^$third-party
@@ -1971,11 +1978,8 @@ karpathir.com##+js(aopw, getComputedStyle)
 magyarhang.org,hang.hu##+js(acis, document.addEventListener, ai_run_)
 magyarhang.org,hang.hu##+js(acis, document.getElementById, ai_run_)
 ! https://github.com/hufilter/hufilter-dev/issues/427
-myonlineradio.hu##+js(aopw, FbTrack)
-myonlineradio.hu##+js(set, AddAdsV2I.disableAds, true)
-myonlineradio.hu##+js(set, AddAdsV2I.loadMainScript, noopFunc)
-myonlineradio.hu##+js(set, AddAdsV2I.showBackupAds, false)
-myonlineradio.hu##.topHorizontalBanner:style(position: absolute !important; left: -3000px !important;)
+myonlineradio.hu##+js(set-cookie.js, stpdsck, 1)
+myonlineradio.hu##+js(cookie-remover, adblock)
 pcworld.hu##+js(rc, have-ad, body)
 ! https://github.com/hufilter/hufilter/issues/15
 port.hu##+js(aopw, document.body.style)

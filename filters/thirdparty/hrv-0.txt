@@ -2,7 +2,7 @@
 ! Title: 🏀 Dandelion Sprout's Serbo-Croatian filters
 ! Title 🇭🇷: Srpskohrvatski filtri Dandelion Sprouta
 ! Title 🇷🇸: Српскохрватски филтери Dandelion Sprout-а
-! Version: 15February2024v1-Beta
+! Version: 06July2024v1-Beta
 ! Expires: 3 days
 
 ! Description: For the first time in known history, this is a filterlist for websites in Serbian, Montenegrin, Croatian, and Bosnian. This means that all significant language groups in Europe now have filterlists for them.
@@ -165,6 +165,11 @@ jutarnji.hr##div[class^=position_j]
 jutarnji.hr##div[id^=upscore-promo-]
 nicelocal.com.hr##.js-results-slot
 hcl.hr##.ponuda
+niskevesti.rs##.stream-item
+niskevesti.rs##.bgr-box
+niskevesti.rs###check-also-box
+niskevesti.rs##.sidebar
+niskevesti.rs#?#.tie-col-md-8:style(width: 100% !important)
 grazia.hr##.ad
 motori.hr##.vc_raw_html
 filmitv.rs###mvp-leader-wrap
@@ -259,7 +264,7 @@ rtl.hr##.banner
 net.hr##.article__listalica
 ||glasistre.hr/SliderBanner^
 ||avalaads.com^$third-party
-||linker.hr^$third-party
+||linker.hr^
 ||native.tportal.hr^$third-party
 ||lupon.media^$third-party
 ||a.mabipa.com^$third-party
@@ -271,6 +276,7 @@ net.hr##.article__listalica
 ||pcpress.rs/video/vesimpex/vesimpex.mp4^
 ||pcpress.rs/wp-content/baner^$image
 ||saznajnovo.com/*-baner.jpg^$image
+||html-load.com/loader.min.js^$domain=gloria.hr
 ||krajina.ba/wp-content/uploads/*/baner-$image
 ||opcinakupres.ba/images/stories/gsshbz.png^
 ||opcinakupres.ba/images/stories/Logo$image
@@ -291,9 +297,11 @@ net.hr##.article__listalica
 ||sk.rs/slike/baneri^
 ||redakcija.alo.rs^$image,third-party
 ||info-ks.net/assets/img/banners^
+|https://html-load.com^$script,third-party,domain=slobodnadalmacija.hr
 ||arhivanalitika.hr/*/uploads/*/ICAM_*x$image
 ||arhivanalitika.hr/*/uploads/*/Bon.hr-*x$image
 ||klik-slider.morgancode.com^$subdocument
+||cxpublic.com^$third-party
 ! ——————————
 ! Generic entries with sources
 ! 24sata.hr, vecernji.hr (19/10/2020)
@@ -397,3 +405,4 @@ domaceserije.net##[id^=MyAdsId]
 ||sultanovic.net/?*%$script
 ||zotabox.com^$domain=animesrbija.com
 ||widget.halooglasi.com/nekretnine.html$subdocument,third-party
+||eph-adsjutarnji.cdn.sysbee.net^

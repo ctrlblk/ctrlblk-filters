@@ -602,7 +602,7 @@ digi24.ro###category_b
 @@||scdn.cxense.com/cx.js$script,domain=digi24.ro
 @@||pubads.g.doubleclick.net/ssai/event/$xhr,domain=digi24.ro
 
-||rangfort.ro/resurse/rfhz.png$image
+||rangfort.ro/*/rfhz.png$image
 rangfort.ro##[href="https://renth.ro/index.php"]
 
 ||stream-aleph.m.ro^$domain=mediafax.ro
@@ -615,8 +615,8 @@ mediafax.ro##div.notif-bula.notif
 
 ||i.imgur.com/oj9G0zy.png
 
-! cspower.ro
-||i.postimg.cc/Vv2v9kdD/download.jpg$image
+cspower.ro##.container:has(> .part-right:has([href*="freakhosting.com"]))
+cspower.ro##.ipsWidget_inner:has([href*="freakhosting.com"])
 
 escortebucuresti.com##.banners-box
 escortebucuresti.com##.new_domain_r.block
@@ -769,6 +769,7 @@ lauralaurentiu.ro##.titluReclama
 lauralaurentiu.ro#?#.code-block:-abp-contains(PUB)
 
 ziare.com##.branding-container
+ziare.com##.banner-container
 ||ziare.com^*.gif$image
 @@||ziare.com^$ghide
 ziare.com##.banner
@@ -944,6 +945,9 @@ ziarulevenimentul.ro##[href*="/adclick.php"]
 ziarulevenimentul.ro##[href^="https://www.bursa.ro"]
 
 g4media.ro##.custom-html-widget
+g4media.ro##[data-ai-debug]:has([src*=pnl])
+g4media.ro##.code-block:has(.ad-header)
+g4media.ro##.post-review:has(.author-publicitate)
 
 ||investigatoria.ro/*banner$image
 investigatoria.ro##.code-block
@@ -1219,6 +1223,7 @@ mobilissimo.ro##.aboveDisqusBanners
 monitoruldevrancea.ro#?#.widget_rss:-abp-has([href*=".bursa.ro/"])
 monitoruldevrancea.ro##[class*="td-a-rec-id-custom_ad"]
 monitoruldevrancea.ro##[href="https://www.bursa.ro/"]
+monitoruldevrancea.ro##[class*="_ad_"]
 
 bursa.ro#?#.clearfix [href][target="_blank"][rel]:-abp-has([alt][title][style])
 bursa.ro##.banner
@@ -1512,7 +1517,6 @@ locals.md#?#.t-records:-abp-contains(arderea )
 kudika.ro#?#.article-view:-abp-contains(arderea tutunului)
 digi24.ro#?#.article:-abp-contains(arderea tutunului)
 dcmedical.ro#?#.ContentArticle:-abp-contains( tutunului)
-dcnews.ro#?#.page:-abp-contains(Philip Morris)
 
 stirilebzi.ro#?#.vc_column_inner > .vc_column-inner > .wpb_wrapper:-abp-has(.adsbygoogle)
 
@@ -1791,6 +1795,9 @@ turdainfo.ro##[href="https://app.aqmeter.com/"]
 turdainfo.ro##.module-inner
 turdainfo.ro##.banner
 
+! detection ziaruldeiasi
+@@||imasdk.googleapis.com/js/sdkloader/ima3.js$script,domain=ziaruldeiasi.ro
+
 [Adblock Plus 2.1]
 ! Title: Romanian specific uBO filters
 ! Expires: 3 days
@@ -1892,4 +1899,17 @@ lovendal.ro##+js(noeval-if, ads)
 
 ! ff netu player popups
 kimdesene.org##+js(nowoif)
+
+! https://github.com/uBlockOrigin/uAssets/issues/23860
+||sapi.emag.*/recommendations/*zones=adss$xhr,1p
+emag.*##.container:has([data-tracking-alias^="sponsored_products"])
+
+! image background
+gsp.ro##+js(rmnt, script, maxbet)
+
+! https://github.com/AdguardTeam/AdguardFilters/issues/183110
+||business24.ro/index.php?module=getActiveBlockerContent.ajxinternal
+business24.ro##.banner
+business24.ro##.branding-container
+business24.ro##div.banner-container
 
