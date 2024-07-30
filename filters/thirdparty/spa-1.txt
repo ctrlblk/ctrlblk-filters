@@ -1,10 +1,10 @@
 ![Adblock Plus 2.0]
-! Checksum: eclPHvqmwcsuiQALDmqU/g
-! Diff-Path: ../patches/9/9-s-1722091021-3600.patch
+! Checksum: OJ3pJMAJoFA5jNRpg2GM+A
+! Diff-Path: ../patches/9/9-s-1722267435-3600.patch
 ! Title: AdGuard Spanish/Portuguese filter
 ! Description: Filter list that specifically removes ads on websites in Spanish, Portuguese, and Brazilian Portuguese languages.
-! Version: 2.0.25.84
-! TimeUpdated: 2024-07-27T14:33:20+00:00
+! Version: 2.0.25.87
+! TimeUpdated: 2024-07-29T15:33:18+00:00
 ! Expires: 5 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -781,6 +781,8 @@ audiotools.in##+js(abort-current-script, EventTarget.prototype.addEventListener,
 ! https://github.com/AdguardTeam/AdguardFilters/issues/184038
 /asb1.js$domain=anitube.vip|hinatasoul.com
 anitube.vip,hinatasoul.com##+js(set-constant, detectedAdblock, noopFunc)
+anitube.vip,hinatasoul.com##+js(adjust-setTimeout, asdFHqwe, *, 0.001)
+anitube.vip,hinatasoul.com##+js(no-xhr-if, /pagead2\.googlesyndication\.com|outbrain\.com|adligature\.com|quantserve\.com|srvtrck\.com/)
 anitube.vip,hinatasoul.com##+js(no-fetch-if, /pagead2\.googlesyndication\.com|outbrain\.com|adligature\.com|quantserve\.com|srvtrck\.com/)
 ! https://github.com/AdguardTeam/AdguardFilters/issues/157756
 ! Link from anitube.vip
@@ -2156,8 +2158,9 @@ globo.com,amomeupet.org,cifras.com.br,gaz.com.br,placar.com.br,futebolinterior.c
 ! ##body .banner
 meiobit.com,brasilparalelo.com.br,tvonline.fan,laprensagrafica.com,ahoragranada.com,correio24horas.com.br,cnnespanol.cnn.com,motociclismo.es,sub100.com.br,theenemy.com.br,manhwas.net,rpp.pe,ambito.com,economipedia.com,informador.mx,elinformador.com.co,cronista.com,rionegro.com.ar,diariodecuyo.com.ar,voydeviaje.com.ar,guarda14.com,viapais.com.ar,agazeta.com.br,eleconomista.com.mx,metropolitanafm.com.br,tycsports.com,elespectador.com,bnews.com.br,migalhas.com.br,losandes.com.ar,lavoz.com.ar,mundo.sputniknews.com,omelete.com.br,lapoliticaonline.*,valenciaplaza.com,veneapp.com,dalealbo.cl,globo.com,defesanet.com.br,mibrujula.com,lyon.kim,26noticias.com.ar,auniao.com,clickpb.com.br,emagister.com,lanacion.com.ar,parana-online.com.br,r7.com,toxico-pc.com,uol.com.br##body .banner
 !
+metropoles.com##section[class^="PublicidadesWrapper"]
 cinelatino.net###rotator
-cine24h.net##.MovieList > li.TPostMv:has(> .TPost > a[href^="https://startgaming.net/" i])
+cine24h.online,cine24h.net##.MovieList > li.TPostMv:has(> .TPost > a[href^="https://startgaming.net/" i])
 gdrivelatinohd.net##.brave_popup--popup
 poseidonhd2.co##.got-dvr
 lavozdegalicia.es##div[class^="ad"]
@@ -2397,6 +2400,7 @@ clickpb.com.br##.adsHorizontal
 depor.com##div[class^="showTds"]
 ||visortmo.com/images/series.gif
 ||viralize.tv^$domain=visortmo.com
+visortmo.com##a[href^="https://click.betiexaff.com/"]
 visortmo.com#?#div[id^="pills-populars"] > div.row > div.element:has(> a[href^="https://visortmo.com/library/"] > .thumbnail:not(:has(> style)))
 visortmo.com#?#div[id^="pills-populars"] > div.row > div.element:has(> a[href^="https://visortmo.com/library/"] > .thumbnail:matches-css(before, background-image: /\/images\/.*_push|pplr\d+_|n.?..?_|_ex/))
 visortmo.com#?#div[id^="pills-populars"] > div.row > div.element:has(> a[href^="https://visortmo.com/library/"] > .thumbnail > :is(span, .thumbnail-title):contains(/cine|stream|atención|promo|netflix|ofert|deal|pack|\d+(\.|,)?\d+\$/i))
