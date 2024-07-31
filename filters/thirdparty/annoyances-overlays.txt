@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: EasyList – Newsletter Notices
-! Last modified: Mon, 29 Jul 2024 10:11:24 +0000
+! Last modified: Wed, 31 Jul 2024 02:39:06 +0000
 ! Expires: 7 days (update frequency)
 ! *** easylist:template_header.txt ***
 !
@@ -275,30 +275,21 @@
 ###newsletter-slideout
 ###newsletter-slider
 ###newsletter-strip
-###newsletter-subscribe-
 ###newsletter-subscribe-sidebar
 ###newsletter-subscription-inline
 ###newsletter-subscription-popup
 ###newsletter-teaser
 ###newsletter-toggle
-###newsletter-top-banner
-###newsletterFlyIn
 ###newsletterFooter
 ###newsletterFooterDiv
 ###newsletterLBContainer
 ###newsletterOverlay
 ###newsletterOverlayBg
-###newsletterPromo-outter
-###newsletterPromoModule
 ###newsletterPush
 ###newsletterPush-overlay
 ###newsletterSidebar
 ###newsletterSidebarBox
-###newsletterSignUpHeader
-###newsletterSignupPromo
 ###newsletterStickyBanner
-###newsletterSubContainer
-###newsletter_box_sidebar
 ###newsletter_form_3div
 ###newsletter_info_container
 ###newsletter_middle
@@ -323,7 +314,6 @@
 ###newsletters-footer-content
 ###newsletters-signup-sidebar
 ###newsletters_rdr
-###newspopup_overlay
 ###nl-fixed-bottom
 ###nlSliderSignup
 ###nl_popin
@@ -386,7 +376,6 @@
 ###subscribePopup
 ###subscribePopupform
 ###subscribeRect
-###subscribeToolBar
 ###subscribe_form_fixed
 ###subscribe_modal_container
 ###subscribe_overlay_container
@@ -412,9 +401,7 @@
 ##.BannerNewsletter
 ##.BoxNewsletter
 ##.CampaignType--popup.exit-intent
-##.Form-newsletter-breaker-wrapper
 ##.GRDC_newsletters
-##.GSOC_newsletterRegistration
 ##.Homepage-newsletter
 ##.MultiColorSubscribeWidget
 ##.NewsLetterLeftSide
@@ -429,10 +416,7 @@
 ##.a-newsletter
 ##.actions-newsletter
 ##.alo_easymail_widget
-##.anchored--newsletter
-##.ap-signup-inline
 ##.area-newsletter
-##.ars-newsletter-callbox
 ##.article-block--newsletter
 ##.article-bottom-newsletter
 ##.article-bottom-newsletter_box
@@ -451,7 +435,6 @@
 ##.article-subscribe-container
 ##.article-subscription-widget
 ##.article-tile-newsletter
-##.article-tools-newsletter
 ##.article_footer_newsletter
 ##.article_footer_subscribe
 ##.article_newsletter_signup
@@ -460,8 +443,6 @@
 ##.aside-common-subscribe
 ##.aside-little_newsletter
 ##.aside-subscribe-module
-##.aside__newsletter--footer__wrapper
-##.aside__newsletter__wrapper
 ##.at_nwletters
 ##.at_subscribe
 ##.b-email-popup
@@ -1361,7 +1342,6 @@
 ##div#NewsletterPromo
 ##div#inline-newsletter
 ##div#newsletter_signup_article
-##div.InArticleSignup
 ##div.article-newsletter-signup
 ##div.aside-newsletter
 ##div.aside-newsletter-box
@@ -1369,7 +1349,6 @@
 ##div.bloc_newsletter
 ##div.bs-mailchimp-newsletter
 ##div.c-newsletter-article
-##div.form_newsletter_signup
 ##div.newsletter-sign-up-popup
 ##div.newsletter-subscribe-widget
 ##div.newsletter-subscription-inline
@@ -1480,7 +1459,6 @@
 ||omnisnippet1.com^$domain=miuratakuya.store|yourcelebritymagazines.com
 ||p.ynet.co.il^$subdocument
 ||p2a.co/embed/widget/app/$domain=thefire.org
-||psyche.co/_next/static/chunks/PopupManager.
 ||researchnews.cc/subscribe.html
 ||scmp.com/misc/inkstone_sub_widget/
 ||sibforms.com/serve/$domain=maidenhead-advertiser.co.uk|sloughexpress.co.uk
@@ -1893,7 +1871,7 @@ wmagazine.com##.M0a
 meltingpot.com##.MPHomepageModalWidget
 coingape.com##.Mainads
 outdoorstatus.com##.Modal
-aeon.co##.NLFormInsertFromCMS
+aeon.co,psyche.co##.NLFormInsertFromCMS
 jagranjosh.com##.NewsLetterInlineHome
 earth.com##.NewsSubscribeLg_main__3THYS
 thefinancialdiet.com##.NewslBanner
@@ -1978,8 +1956,10 @@ geekwire.com##.announcement-box
 americanwirenews.com##.anw-subscribe
 asiaone.com##.ao-newsletter
 artofmanliness.com##.aom-subscribe
+advisorperspectives.com##.ap-signup-inline
 freevector.com##.app-footer
 thenetnaija.co##.app-subscribe
+arstechnica.com##.ars-newsletter-callbox
 christianitytoday.com##.article-body-newsletter
 hypebeast.com##.article-email-signup-wrapper
 manilatimes.net##.article-embedded-newsletter-form
@@ -2461,6 +2441,7 @@ heraldnet.com##.header-newsletter-btn
 techonomy.com##.header-newsletter-cta
 iflscience.com##.header-secondary
 scientificamerican.com##.headerText-EI4-q
+therecord.media##.header__cta
 rightwingwatch.org##.header__top
 forksoverknives.com,history-computer.com##.hello-bar
 a-z-animals.com##.hello-bar-container
@@ -2518,6 +2499,7 @@ boomlive.in##.info-container2
 swissinfo.ch##.infobox
 thebulletin.org##.infobox-icon-above-title
 nypost.com,pagesix.com##.inline-module--newsletter
+restofworld.org##.inline-newsletter
 businessinsider.com,ekathimerini.com,insider.com##.inline-newsletter-form
 bloomberg.com##.inline-newsletter-top
 themarshallproject.org,utilitydive.com##.inline-signup
@@ -2798,6 +2780,7 @@ usafacts.org##.newsletter__block
 gzeromedia.com##.newsletter__bottom-wrapper
 soaps.sheknows.com,theblaze.com##.newsletter__container
 usafacts.org##.newsletter__header
+advisorperspectives.com##.newsletter__signup-form
 greatbritishchefs.com##.newsletter__title-image-overlay
 fastcompany.com##.newsletter__widget
 agsiw.org##.newsletter__wrapper___14iH8
@@ -3382,11 +3365,8 @@ cepa.org##[data-block="newsletter"]
 plantbasednews.org##[data-class="support-us__wrapper"]
 charlieintel.com,dexerto.com##[data-cy*="Newsletter"]
 dexerto.com##[data-cy="SignupWidget"]
-psyche.co##[data-cy="layout-newsletter-signup"]
 digg.com##[data-cy="namespace-home-newsletter"]
-psyche.co##[data-ga-view-prompt="psyche_footer_banner_newsletter"]
-psyche.co##[data-ga-view-prompt="psyche_midarticle_insert_newsletter_oatmeal"]
-psyche.co##[data-ga-view-prompt="psyche_popup_rightcorner_newsletter_oatmeal"]
+psyche.co##[data-ga-view-prompt="psyche_cta_pop_up_subscribe"]
 nytimes.com##[data-gtm-element="newsletter_loaf_form"]
 wsj.com##[data-inset_type="newsletterinset"]
 insideottawavalley.com##[data-lpos="headlines-newsletter"]
@@ -3405,6 +3385,7 @@ oann.com##[href="/alerts"]
 tfn.scot##[href="/bulletin"]
 jewishworldreview.com##[href="/subs.php"]
 cosmosmagazine.com##[href="https://link.cosmosmagazine.com/JP4n"]
+sfgate.com##[href="https://link.sfgate.com/join/signup-sfgate"]
 techcabal.com##[href="https://techcabal.com/newsletter"]
 hackster.io##[href="https://www.hackster.io/newsletter/sign_up"]
 linuxiac.com##[href^="https://subscribe.linuxiac.com/"]
@@ -3474,6 +3455,7 @@ newswire.ca#?#.pull-right.inline-gallery-container:-abp-contains(Post this)
 notthebee.com#?#.bg-gray-50:-abp-contains(Want to stay informed)
 reclaimthenet.org#?#.elementor-section:-abp-contains(Subscribe for)
 reclaimthenet.org#?#.elementor-widget-container:-abp-contains(tired of censorship)
+salon.com#?#[style="text-align:center"]:-abp-contains(newsletter)
 skepticalraptor.com#?#.wp-block-group__inner-container:-abp-contains(Discover)
 taskandpurpose.com#?#.wp-block-quote:-abp-contains(inbox daily)
 theatlantic.com#?#.LostInventoryMessage_root__YllYq:-abp-contains(newsletter)
