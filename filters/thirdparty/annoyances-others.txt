@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: EasyList – Annoyances
-! Last modified: Fri, 02 Aug 2024 03:08:38 +0000
+! Last modified: Sat, 03 Aug 2024 03:59:50 +0000
 ! Expires: 7 days (update frequency)
 ! *** easylist:template_header.txt ***
 !
@@ -1811,7 +1811,6 @@ jns.org###XZSCFLEW
 investors.com###action_insert_15511419671934590
 forward.com###after-post-content-widget-wrapper
 knowablemagazine.org###alerts
-gameinformer.com###announcementBanner
 thurrott.com###announcment-banner
 democracynow.org###appeal
 wikihow.com###article_courses_banner
@@ -1821,6 +1820,7 @@ netzpolitik.org###banner-small
 leawo.org###banner-top-prom
 openculture.com###big-bottom-ad-single-posts
 pimylifeup.com###block-2
+thefrisc.com###block-23
 startpage.com###block-display
 apkmody.io###body-fixed-footer
 fflogs.com,warcraftlogs.com###bottom-banner-fallback
@@ -2142,7 +2142,6 @@ flyingmag.com##.get-magazine
 forums.opera.com##.get-opera
 artnews.com##.get-the-magazine__outer
 kyivindependent.com,readtangle.com,thecompanion.app##.gh-portal-triggerbtn-iframe
-gameinformer.com##.gi5-subscribe-banner
 slaynews.com##.give-embed-form-wrapper
 aeon.co##.gjJPGq
 insideedition.com##.got-tip
@@ -2343,6 +2342,7 @@ bitdegree.org##.sticky-bubble-wrp
 goodmorningamerica.com##.sticky-footer
 theintercept.com##.sticky-sidebar__donate
 scmp.com##.stickyLinks
+cyberscoop.com##.stickybar
 dcist.com##.story-appeal
 cryptorank.io##.styled__Wrapper-sc-1xbee9a-0
 lareviewofbooks.org##.styles_cta__rFpfQ
@@ -2536,7 +2536,7 @@ dailymail.co.uk##.swipe-bar
 aberdeenlive.news,belfastlive.co.uk,birminghammail.co.uk,bristolpost.co.uk,buckinghamshirelive.com,business-live.co.uk,buzz.ie,cambridge-news.co.uk,cheshire-live.co.uk,chroniclelive.co.uk,cornwalllive.com,coventrytelegraph.net,dailypost.co.uk,dailyrecord.co.uk,dailystar.co.uk,derbytelegraph.co.uk,devonlive.com,dorset.live,dublinlive.ie,edinburghlive.co.uk,essexlive.news,examinerlive.co.uk,gazettelive.co.uk,getsurrey.co.uk,glasgowlive.co.uk,gloucestershirelive.co.uk,grimsbytelegraph.co.uk,hertfordshiremercury.co.uk,hulldailymail.co.uk,insider.co.uk,irishmirror.ie,kentlive.news,lancs.live,leeds-live.co.uk,leicestermercury.co.uk,lincolnshirelive.co.uk,liverpoolecho.co.uk,manchestereveningnews.co.uk,mirror.co.uk,mylondon.news,norfolklive.co.uk,nottinghampost.com,ok.co.uk,oxfordshirelive.co.uk,plymouthherald.co.uk,somersetlive.co.uk,staffordshire-live.co.uk,stokesentinel.co.uk,walesonline.co.uk,wiltshirelive.co.uk##.swipe-prompt
 dailymail.co.uk##.swipe-tutorial
 ddtonline.com,northsidesun.com##.swipe_arrows
-bohemian.com,cinelinx.com,geopoliticalfutures.com,itmunch.com##.td-more-articles-box
+91mobiles.com,bohemian.com,cinelinx.com,geopoliticalfutures.com,itmunch.com##.td-more-articles-box
 twistedvoxel.com##.tt-shortcode-1
 yourstory.com##.unique-progress
 cheddar.com##.upnext-container
@@ -3126,6 +3126,9 @@ csmonitor.com##+js(set-local-storage-item, csm_unique_stories, $remove$)
 ! deepl.com (login nag and app popup)
 deepl.com##+js(set-local-storage-item, LMT_freeUserUsageBlock, $remove$)
 deepl.com##+js(set-local-storage-item, onboardingData, $remove$)
+! https://github.com/uBlockOrigin/uAssets/issues/24709
+yoreparo.com##.cta-bajo-pregunta + div[class^="div-block"]
+yoreparo.com##.post.blur:style(filter: none !important;)
 ! https://github.com/uBlockOrigin/uAssets/pull/20135
 github.com##button[data-testid="copilot-popover-button"]
 ! watchsomuchproxy.com
@@ -3531,6 +3534,7 @@ biografieonline.it,meglio.it##.section-footer-nl
 gianlucadimarzio.com##.skySportsRow
 motori.net,siciliaoggi.com,siciliapress.it,tavoloeditoriradio.it##.sm-up-container
 suedtirol.info##.sticky-overlay__content--nl-popup
+lindipendente.online##.tdm_block_call_to_action
 anothersound.it##.to_top
 neveitalia.it##.top-bar
 informazionefiscale.it##.top-page
