@@ -18,7 +18,7 @@
 artmusics.top,musicpars3.ir,musicguitars.ir,subf2m.ir,zeemusic.ir,najiremix.ir,musichi.ir,likeemusic.ir##+js(nowoif)
 
 ! rouydad24.ir, ibena.ir, tejaratemrouz.ir, irdc.ir
-/files/fa/adv^$image,1p,domain=ir|asriran.com|parsine.com|ana.press|niniban.com|vananews.com|barghnews.com
+/files/fa/adv^$image,1p,domain=ir|asriran.com|parsine.com|ana.press|niniban.com|vananews.com|barghnews.com|niniban.com|eghtesadonline.com
 
 ! meliyat.ir, aftabnews.ir, eghtesadgardan.ir, entekhab.ir, nabzefanavari.ir, boursenews.ir, snn.ir,
 !! basirat.ir, khootoot.ir, didarnews.ir, 598.ir
@@ -326,17 +326,14 @@ niloblog.com##bloglinksblock
 ||my-pishvaz.com^$3p
 
 ||pooye-ads.com^
-
 ||promizer.com^
-! ^ Example: eghtesadonline.com
-
 ||phonroid.com^
 ||popina.ir^
 ||popupdl.ir^
 ||popland.info^
 
 ||peyvandha.ir^$3p
-||10.10.34.$frame,3p
+||10.10.34.$all
 ! ^ Example: imovie-dl.org
 
 ||phoenixad.io^
@@ -1372,9 +1369,9 @@ e-teb.com##.ads
 brain.be-teb.com##.medicaldirectory-sidebar:nth-of-type(5) > .claims.sidebar-content > .cbp-l-project-details-title > span
 ravan.e-teb.com##div.medicaldirectory-sidebar:nth-of-type(6) > .claims.sidebar-content > .cbp-l-project-details-title > span
 
-entekhab.ir##.attention > header:has-text(وبگردی):upward(.attention)
-entekhab.ir##.news-web
 entekhab.ir##div.tabligh
+entekhab.ir##div.sp_ln_box_title:has-text(نیازمندیها)
+entekhab.ir##div.txt_adv_content
 
 ! https://github.com/AdguardTeam/AdguardFilters/issues/104314
 ||eghtesadnews.com^$removeparam=rssRedirect
@@ -1385,9 +1382,10 @@ eghtesadnews.com##.advs-wrapper
 ! https://github.com/AdguardTeam/AdguardFilters/issues/95321
 ! https://github.com/MasterKia/PersianBlocker/issues/85
 ! https://github.com/MasterKia/PersianBlocker/issues/223
-||media.eghtesadonline.com/d/*.gif^$image,1p
-eghtesadonline.com##section.ads
-eghtesadonline.com##section.box.list:has(> header > h2:has-text(وبگردی))
+eghtesadonline.com##div.ads-sec
+eghtesadonline.com##div.heightAds
+eghtesadonline.com##div.bottomTextAdv
+eghtesadonline.com##div.ads-sec-web
 
 elmefarda.com##+js(aeld, contextmenu)
 elmefarda.com##div#post p:style(-webkit-touch-callout: default !important; -webkit-user-select: text !important; -moz-user-select: text !important; -ms-user-select: text !important; user-select: text !important;)
@@ -2130,6 +2128,8 @@ lahzeakhar.com##+js(set, customnotify, noopFunc)
 ! ||lahzeakhar.com/sw.js
 
 ! >> M <<
+mastertest.ir##div.post-content > div.fusion-builder-row-1 > div.fusion-row:has(> div.fusion-layout-column a[data-wpel-link="external"])
+
 ! https://github.com/MasterKia/PersianBlocker/pull/243
 ||mihantrader.com/media/images/ad^$image,1p
 mihantrader.com##div.text-white:has(> div:has-text(AD))
@@ -2395,7 +2395,6 @@ nab-music.com##+js(aopr, vc_url)
 
 ! https://github.com/MasterKia/PersianBlocker/issues/72
 ! https://github.com/MasterKia/PersianBlocker/pull/81
-||niniban.com/files/fa/adv^$image,1p
 ||niniban.com/DaartAds.min$script,css,1p
 niniban.com##div.all_adv_mrg
 niniban.com##div.padding_news_right_adv
