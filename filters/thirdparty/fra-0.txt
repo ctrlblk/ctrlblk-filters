@@ -1,10 +1,10 @@
 ![Adblock Plus 2.0]
-! Checksum: XiVK1XEWiGKyNWYVKqyjrg
-! Diff-Path: ../patches/16/16-s-1722872249-3600.patch
+! Checksum: LN26jwOJmSe0tLVsAG06gw
+! Diff-Path: ../patches/16/16-s-1722962305-3600.patch
 ! Title: AdGuard French filter
 ! Description: Liste FR + AdGuard French filter. Filter list that specifically removes ads on websites in French language.
-! Version: 2.0.45.93
-! TimeUpdated: 2024-08-05T15:33:41+00:00
+! Version: 2.0.45.96
+! TimeUpdated: 2024-08-06T16:34:34+00:00
 ! Expires: 5 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -199,14 +199,10 @@ japscan.lol#@#.ad_slot
 japscan.lol#@##ad-img-slot
 japscan.lol#@##banner-top-right
 japscan.lol##.blur-background
-japscan.lol##.notice-message
 japscan.lol###promo.sticky-top
 japscan.lol##.text-center > a[target="_blank"] > img
 ||japscan.lol/imgs/jopy/best.gif
-japscan.lol##+js(addEventListener-defuser, DOMContentLoaded, /\)\(\)\s*;\s*\}.{400\\,500}$/)
-japscan.lol##+js(remove-node-text, script, /ApoZow|'(map'|\/imgs\/|ads?-\d+|ad-img-slot|ad_inview_area|div-leader-ad)|\['style'\]\['display'\]|\.length;var|\.substr\(0|\.reduce\(\(acc\, curr\)|g1hnttodBEe8apl|_adbn_|adheader|\"\/00|DklzSoz|Countdown|mpl=kdel|String.fromCharCode\(127\)|\"getComputedStyle\"|newImg|interstitial|&utm_medium/)
-! Fixes popups
-japscan.lol##+js(addEventListener-defuser, DOMContentLoaded, /\['classList'\][\s\S]*?\['target'\]/)
+japscan.lol##+js(abort-current-script, addEventListener, String.fromCharCode)
 ! Fixes incorrect blocking - search does not work
 ||japscan.lol/ujs/$script,badfilter
 ! https://github.com/AdguardTeam/AdguardFilters/issues/147701
@@ -875,6 +871,8 @@ $script,third-party,denyallow=authkong.com|rsc.cdn77.org|linkvertise.com|fastly.
 !
 !
 !
+futura-sciences.com##.ad-parent-billboard
+futura-sciences.com##.ad-parent-halfpage
 tvaplus.ca##div[data-testid="ad-container"]
 tesla-mag.com##.sidebar-inner-wrap > section[id^="block-"]
 dealabs.com##div[id$="FuseZonePortal"]
@@ -1615,6 +1613,8 @@ app.molotov.tv##+js(no-xhr-if, /ping?token=)
 !
 !
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/185291
+@@||sonar.viously.com/*/js$script,domain=futura-sciences.com
 ! https://github.com/AdguardTeam/AdguardFilters/issues/185148
 !+ NOT_PLATFORM(windows, mac, android, ext_chromium, ext_opera)
 @@||tdn.da-services.ch/current/lessentiel_durable.js$domain=lessentiel.lu
@@ -1837,7 +1837,7 @@ cifraclub.com.br#@#.pub_header
 ! https://github.com/AdguardTeam/AdguardFilters/issues/136986
 @@||search.cctv.com/js/pub.js
 ! https://github.com/AdguardTeam/AdguardFilters/issues/136537
-@@||downdetector.com/*/dist/adscript.js$domain=downdetector.*
+@@||downdetector.com/*/dist/adscript.js$domain=allestoringen.be|allestoringen.nl|xn--allestrungen-9ib.at|xn--allestrungen-9ib.ch|xn--allestrungen-9ib.de|downdetector.*
 ! https://github.com/AdguardTeam/AdguardFilters/issues/136841
 ! TODO: remove when it will be fixed in Liste FR
 ||klaviyo.com^$badfilter
