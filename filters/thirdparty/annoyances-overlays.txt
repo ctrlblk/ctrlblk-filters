@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: EasyList – Newsletter Notices
-! Last modified: Wed, 07 Aug 2024 16:09:40 +0000
+! Last modified: Fri, 09 Aug 2024 01:31:37 +0000
 ! Expires: 7 days (update frequency)
 ! *** easylist:template_header.txt ***
 !
@@ -274,6 +274,7 @@
 ###newsletter-subscription-popup
 ###newsletter-teaser
 ###newsletter-toggle
+###newsletter-wrapper
 ###newsletterFooter
 ###newsletterFooterDiv
 ###newsletterLBContainer
@@ -406,6 +407,7 @@
 ##.NewsletterSignupInset
 ##.NewsletterWidget--style-full-width
 ##.Sailthru_Subscribe
+##.StageNewsletterSimple
 ##._newsletterContentPromo
 ##.a-newsletter
 ##.actions-newsletter
@@ -2724,7 +2726,7 @@ mobilesyrup.com##.newsletter-article-container
 theintercept.com##.newsletter-block__content
 dailydot.com##.newsletter-button
 independent.co.uk##.newsletter-component
-thesun.co.uk##.newsletter-container-placeholder
+thesun.co.uk,thesun.ie##.newsletter-container-placeholder
 outdoorlife.com##.newsletter-content
 clubhouseforchefs.ca##.newsletter-cta-large-wrapper
 health.com,lifewire.com##.newsletter-dialog-header-link
@@ -3472,6 +3474,7 @@ businessinsider.in#?#.mx-auto.container:-abp-contains(NEWSLETTER)
 coder.com#?#.MuiBox-root:-abp-contains(Subscribe to our Newsletter)
 crunchydata.com#?#.bg-primary-dark:-abp-contains(newsletter)
 ctpost.com#?#.px20.pb32:-abp-contains(Sign up for)
+fastcompany.com#?#.pb-1.gap-4:-abp-contains(Sign up for)
 foxandbriar.com#?#.has-senary-background-color:-abp-contains(Email)
 foxandbriar.com#?#.has-tertiary-background-color:-abp-contains(Week)
 gript.ie#?#.v-card.v-card--flat:-abp-contains(Sign up to receive)
@@ -5197,7 +5200,7 @@ doctorofcredit.com#@#.wpdiscuz-subscribe-bar
 ! fanboy_newsletter_shopping_allowlist_general_hide.txt
 
 ! Title: uBlock filters – Other Annoyances
-! Last modified: Wed, 07 Aug 2024 19:54:17 +0000
+! Last modified: Thu, 08 Aug 2024 18:32:20 +0000
 ! Expires: 7 days
 ! Description: Filters optimized for uBlock Origin, to be used with EasyList's and/or Adguard's "Other Annoyances" list(s)
 ! License: https://github.com/uBlockOrigin/uAssets/blob/master/LICENSE
@@ -11013,7 +11016,7 @@ golfdigest.com##+js(aost, document.createElement, admiral)
 
 ! https://github.com/uBlockOrigin/uAssets/issues/15689
 ! https://github.com/uBlockOrigin/uAssets/issues/18077
-lofter.com##+js(aeld, , login)
+!lofter.com##+js(aeld, , login)
 lofter.com##+js(aeld, contextmenu)
 
 ! https://github.com/uBlockOrigin/uAssets/issues/15701
