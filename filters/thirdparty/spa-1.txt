@@ -1,10 +1,9 @@
 ![Adblock Plus 2.0]
-! Checksum: /0QQymjLw9NIw9fkiQLk1g
-! Diff-Path: ../patches/9/9-s-1723214263-3600.patch
+! Checksum: GIaRmknzDgCdMTSgjR5RHQ
 ! Title: AdGuard Spanish/Portuguese filter
 ! Description: Filter list that specifically removes ads on websites in Spanish, Portuguese, and Brazilian Portuguese languages.
-! Version: 2.0.26.2
-! TimeUpdated: 2024-08-09T14:33:31+00:00
+! Version: 2.0.26.7
+! TimeUpdated: 2024-08-12T12:33:17+00:00
 ! Expires: 5 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -268,6 +267,10 @@
 !
 !
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/186078
+gamesperu2021.blogspot.com#$##pbt { display: none !important; }
+gamesperu2021.blogspot.com#$#body { overflow: auto !important; }
+gamesperu2021.blogspot.com##+js(abort-current-script, document.createElement, adsbygoogle.js)
 ! https://github.com/AdguardTeam/AdguardFilters/issues/185569
 modescanlator.net##+js(no-fetch-if, pagead2.googlesyndication.com)
 ! https://github.com/uBlockOrigin/uAssets/issues/24632
@@ -783,8 +786,9 @@ audiotools.in##div[id^="chp_ads_blocker-"]
 audiotools.in##+js(abort-current-script, EventTarget.prototype.addEventListener, blocker_detector)
 ! https://github.com/AdguardTeam/AdguardFilters/issues/184038
 /asb1.js$domain=anitube.vip|hinatasoul.com
+@@||ads.anitube.vip^$xmlhttprequest,domain=anitube.vip|hinatasoul.com
+@@||popads.net/js/adblock.js$xmlhttprequest,domain=anitube.vip|hinatasoul.com
 anitube.vip,hinatasoul.com##+js(set-constant, detectedAdblock, noopFunc)
-anitube.vip,hinatasoul.com##+js(adjust-setTimeout, asdFHqwe, *, 0.001)
 anitube.vip,hinatasoul.com##+js(no-xhr-if, /pagead2\.googlesyndication\.com|outbrain\.com|adligature\.com|quantserve\.com|srvtrck\.com/)
 anitube.vip,hinatasoul.com##+js(no-fetch-if, /pagead2\.googlesyndication\.com|outbrain\.com|adligature\.com|quantserve\.com|srvtrck\.com/)
 ! Scriptlets are injected too late - https://github.com/AdguardTeam/AdguardBrowserExtension/issues/2855
@@ -1509,6 +1513,8 @@ peru21.pe#@#.adstop
 !------- JS rules ---------------------!
 !--------------------------------------!
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/186078
+gamesperu2021.blogspot.com##+js(abort-current-script, document.addEventListener, window.open)
 ! https://github.com/uBlockOrigin/uAssets/issues/24632
 cinelatino.net##+js(remove-attr, href, a[href]#clickfakeplayer)
 ! https://github.com/AdguardTeam/AdguardFilters/issues/181313
@@ -1558,10 +1564,11 @@ embedder.net##+js(abort-on-property-read, initPu)
 forodecostarica.com##+js(no-setTimeout-if, adJsView)
 ! https://github.com/AdguardTeam/AdguardFilters/issues/162520
 beautyskincarebrasil.com##+js(window.open-defuser)
+! https://github.com/AdguardTeam/AdguardFilters/issues/185949
 ! https://github.com/AdguardTeam/AdguardFilters/issues/177537
 ! https://github.com/AdguardTeam/AdguardFilters/issues/177524
 ! https://github.com/AdguardTeam/AdguardFilters/issues/161356
-receitasvegana.com,megacurioso.online,gastroponto.com,nossoprato.online,receitasdafazenda.com##+js(set-local-storage-item, last_ads, yes)
+infoinvest.org,receitastop.click,receitasvegana.com,megacurioso.online,gastroponto.com,nossoprato.online,receitasdafazenda.com##+js(set-local-storage-item, last_ads, yes)
 modsimuladores.com,assistirfilmesdaluna.com,vejaideias.com.br,jogoscompleto.xyz##+js(adjust-setTimeout, atualizar, *, 0.02)
 ! https://github.com/AdguardTeam/AdguardFilters/issues/161249
 fazercurriculo.online,usandoapp.com##+js(adjust-setTimeout, .delay, *, 0.001)
@@ -1836,6 +1843,8 @@ tuhentaionline.com##+js(abort-on-property-read, Pub2)
 !------- CSS fixes --------------------!
 !--------------------------------------!
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/185949
+infoinvest.org,receitastop.click#$#.hided { display: block !important; }
 ! https://github.com/AdguardTeam/AdguardFilters/issues/177517
 elmueble.com#$#header { top: 0 !important; }
 elmueble.com#$#.admobile { display: none !important; }
@@ -2165,6 +2174,9 @@ globo.com,amomeupet.org,cifras.com.br,gaz.com.br,placar.com.br,futebolinterior.c
 ! ##body .banner
 meiobit.com,brasilparalelo.com.br,tvonline.fan,laprensagrafica.com,ahoragranada.com,correio24horas.com.br,cnnespanol.cnn.com,motociclismo.es,sub100.com.br,theenemy.com.br,manhwas.net,rpp.pe,ambito.com,economipedia.com,informador.mx,elinformador.com.co,cronista.com,rionegro.com.ar,diariodecuyo.com.ar,voydeviaje.com.ar,guarda14.com,viapais.com.ar,agazeta.com.br,eleconomista.com.mx,metropolitanafm.com.br,tycsports.com,elespectador.com,bnews.com.br,migalhas.com.br,losandes.com.ar,lavoz.com.ar,mundo.sputniknews.com,omelete.com.br,lapoliticaonline.*,valenciaplaza.com,veneapp.com,dalealbo.cl,globo.com,defesanet.com.br,mibrujula.com,lyon.kim,26noticias.com.ar,auniao.com,clickpb.com.br,emagister.com,lanacion.com.ar,parana-online.com.br,r7.com,toxico-pc.com,uol.com.br##body .banner
 !
+superflixapi.dev##.embedder_especial
+todo-anime.net##a[href*="/aads.com/"]
+todo-anime.net##+js(abort-current-script, document.addEventListener, window.location;)
 generacionxbox.com#?#.theiaStickySidebar > div.widget:has(> div.textwidget > p > ins.adsbygoogle)
 tudn.com##div[class*="iconPromo"]
 tudn.com#?#.grid > div[class^="col-"]:has(> div[class^="mb-"] > div.flex > span:contains(En alianza con))

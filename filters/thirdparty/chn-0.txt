@@ -1,10 +1,10 @@
 ![Adblock Plus 2.0]
-! Checksum: 8ndSDUMZUFfOvteYpXJ7Jg
-! Diff-Path: ../patches/224/224-s-1723433834-3600.patch
+! Checksum: xqX5lZaICxiN2wQi7r6WmA
+! Diff-Path: ../patches/224/224-s-1723509297-3600.patch
 ! Title: AdGuard Chinese filter
 ! Description: EasyList China + AdGuard Chinese filter. Filter list that specifically removes ads on websites in Chinese language.
-! Version: 2.1.20.34
-! TimeUpdated: 2024-08-12T03:33:45+00:00
+! Version: 2.1.20.37
+! TimeUpdated: 2024-08-13T00:32:32+00:00
 ! Expires: 5 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -1123,6 +1123,8 @@ $script,third-party,denyallow=authkong.com|rsc.cdn77.org|linkvertise.com|fastly.
 !
 !
 !
+||static.olelive.com/upload/site/*/*.gif
+||olehdtv.com/index.php/index/userss|
 douyu.com##.layout-Main > section.layout-Customize
 huya.com###J_adBnM
 ||acg.youku.com/webfile/*.jpg
@@ -2790,7 +2792,6 @@ bilibili.com##.bili-video-card:has(.bili-video-card__info--ad) > .bili-video-car
 bilibili.com##.bili-video-card:has(.bili-video-card__info--creative-ad) > .bili-video-card__wrap
 bilibili.com#$#.bili-video-card:has(.bili-video-card__info--ad) > .bili-video-card__skeleton { visibility: visible !important; }
 bilibili.com#$#.bili-video-card:has(.bili-video-card__info--creative-ad) > .bili-video-card__skeleton { visibility: visible !important; }
-bilibili.com#$?#.vui_carousel > .vui_carousel__slides > div[class^="vui_carousel__slide"]:has(> div[class]:only-child a[href^="//cm.bilibili.com/cm/api/"]) { remove: true; }
 !
 ! nivod.tv (pairs .tv + .com)
 nivod9.tv,nivod8.tv,nivod7.tv##.nav-ads
@@ -3113,6 +3114,7 @@ nfmovies.com#@?#div[id]:-abp-has(>img[onclick="openurl()"])
 -1316632262.cos.
 -1316899192.cos.
 -1321533417.cos.
+-1325890192.cos.
 /k228.oss-
 -1688-wp-media/ads/
 -90mh-gg.
@@ -4801,11 +4803,17 @@ newduba.cn###jq_youxi
 ||38.33.15.*.gif
 ||67.21.92.*.gif
 ||cupfox.app^$third-party
+||pxqqytk.icu^
+||dshjbn.xyz^
+||shbzjkj.cn^
 ||weagehn.icu^
 ||eqygki.xyz^
 ||shbzjgs.cn^
 ||jgjyxf.xyz^
 ||jrutvnca.top^
+||baijs06.shop^
+||doujs06.shop^
+||ycwuoq.xyz^
 ||11dyw.com^
 ||irutvnco.top^
 ||diskaa.com^
