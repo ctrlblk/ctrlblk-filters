@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: EasyList – Newsletter Notices
-! Last modified: Fri, 16 Aug 2024 03:57:58 +0000
+! Last modified: Sat, 17 Aug 2024 04:39:41 +0000
 ! Expires: 7 days (update frequency)
 ! *** easylist:template_header.txt ***
 !
@@ -1797,7 +1797,7 @@ steakschool.com###text-11
 otakuusamagazine.com,powerlineblog.com###text-12
 christiannews.net,independent.com,sportsspectrum.com###text-15
 worthynews.com###text-19
-guides.wp-bullet.com,publicbooks.org,slightnorth.com###text-2
+christiesrealestate.com,guides.wp-bullet.com,publicbooks.org,slightnorth.com###text-2
 everydaycheapskate.com,nextplatform.com###text-26
 franklincounty-news.com,guides.wp-bullet.com,medcitynews.com###text-3
 nextplatform.com###text-36
@@ -2313,6 +2313,7 @@ thescoop.us##.essb_mailform
 unremarkable.ai##.esub-section-wrap
 tennesseestar.com##.et_bloom_below_post
 diycarserviceparts.co.uk,everybithelps.io,factkeepers.com,nutritioncare.net,online-tech-tips.com,onthegotours.com##.et_bloom_popup
+realestatemagazine.ca##.et_newsletter_area
 cocktailsaway.com##.et_pb_widget
 captainaltcoin.com##.exit-intent-acm
 bookmundi.com##.exit-modal
@@ -2447,6 +2448,7 @@ aclu.org##.has-background-yellow
 voiceofsandiego.org##.has-background.homepage-posts__style-7
 forkast.news##.has-blue-grey-very-light-background-color
 coloradosun.com##.has-light-gray-background-color
+theevreport.com##.has-over-sun-gradient-background
 healthyfitnessmeals.com##.has-quaternary-background-color
 favfamilyrecipes.com##.has-quinary-background-color
 aircargonext.com,baltimoremagazine.com,cargofacts.com,deseret.com,govtech.com,gvwire.com,interlochenpublicradio.org,interrupt.memfault.com,medcitynews.com##.hbspt-form
@@ -2856,7 +2858,6 @@ as.com##.nwl
 tnmt.com##.nwl-teaser__wrap
 lawandcrime.com##.o-callout__newsletter
 outsideonline.com##.o-content-cta
-ft.com##.o-message
 rtrfm.com.au##.offYourDial
 voxeurop.eu##.optin-form
 neurosciencenews.com##.optinforms-form-container
@@ -4229,6 +4230,8 @@ urbanoutfitters.com##+js(set-local-storage-item, modalViewed, 1)
 dollartree.com###email-signup-template
 dollartree.com##.modal-backdrop
 dollartree.com##body,html:style(overflow: auto !important; position: initial !important;)
+! virginvoyages.com
+virginvoyages.com##+js(set-session-storage-item, emailSignupModal_isShown, true)
 ! yvonnebennetti.com
 yvonnebennetti.com##+js(set-cookie, MCPopupClosed, yes)
 ! foliosociety.com
@@ -4553,7 +4556,7 @@ lakeside.com,ltdcommodities.com##.css-jh5v8h
 robinsonsshoes.com##.cta-modal
 pagani.co.nz##.curtain
 123ink.ca,primecables.ca##.customer-gift
-underground-england.com##.dialog-lightbox-widget
+elxis.com,underground-england.com##.dialog-lightbox-widget
 fruitarian.store,naturalsound.ca,shellsoul.com,sigav.com##.dialog-type-lightbox
 doitbest.com##.dib-footer-signupemail
 gourmetfoodstore.com##.divInterstitialBGCover
@@ -4771,6 +4774,7 @@ shopcjglobal.com##flashy-popup
 ! :has
 market.samm.com#?#.bg-light:-abp-contains(newsletter)
 recordcollectormag.com#?#.widget_text:-abp-contains(newsletter)
+rprealtyplus.com#?#.border.rounded.p-2:-abp-contains(news letter)
 ! smsbump-form-
 bergautodesign.com,braveandkindbooks.com,bwpsales.com,deal4.ca,fwdformnutrition.com,gizmogoober.com##[id^="smsbump-form-"]
 !! zavvi.
@@ -5109,6 +5113,7 @@ auto.it##div[class^="BoxNewsletter_"]
 auto.it##div[class^="ModalNewsletter_"]
 ilgiorno.it,ilrestodelcarlino.it,iltelegrafolivorno.it,lanazione.it,quotidiano.net##div[class^="Newsletter_"]
 ! Japanese
+somu-lier.jp##.popup-mailmaga
 shokuhin.net##.tdm-popup-modal-over-screen
 nyanpedia.com##a[href="https://info.ipet-ins.com/emagazine_subscribe_nyanpedia.html"] > img
 nikkei.com##div[data-newsletter-popup-container]
@@ -5242,7 +5247,7 @@ doctorofcredit.com#@#.wpdiscuz-subscribe-bar
 ! fanboy_newsletter_shopping_allowlist_general_hide.txt
 
 ! Title: uBlock filters – Other Annoyances
-! Last modified: Thu, 15 Aug 2024 01:29:06 +0000
+! Last modified: Fri, 16 Aug 2024 10:19:37 +0000
 ! Expires: 7 days
 ! Description: Filters optimized for uBlock Origin, to be used with EasyList's and/or Adguard's "Other Annoyances" list(s)
 ! License: https://github.com/uBlockOrigin/uAssets/blob/master/LICENSE
@@ -11920,7 +11925,6 @@ terramirabilis.ro##*:style(-webkit-touch-callout: default !important; -webkit-us
 ! https://www.reddit.com/r/uBlockOrigin/comments/1602t5t/
 ! https://github.com/uBlockOrigin/uAssets/issues/23772
 animesuge.to,aniwave.*,anix.*,flixhq.*,flixrave.to,hdtoday.so,hurawatch.bz,vidplay.site,vid2faf.site##+js(nostif, ||null)
-aniwave.*,bflix.io,flixhq.*,fmovies.*,f2movies.ru,movies2watch.ru,putlockernew.vc,swatchseries.ru,vidplay.site,vid2faf.site,vidstream.pro,mcloud.to##+js(nostif, 0x)
 animesuge.to,aniwave.*,anix.*,bflix.io,flixhq.*,fmovies.*,f2movies.ru,hdtoday.so,hurawatch.bz,movies2watch.ru,putlockernew.vc,swatchseries.ru,vidplay.site,vid2faf.site,vidstream.pro,mcloud.to##+js(aost, console.clear)
 animesuge.to,aniwave.*,anix.*,flixrave.to,hdtoday.so,hurawatch.bz,vidplay.*,vid2faf.site##+js(set, DisDevTool, undefined)
 

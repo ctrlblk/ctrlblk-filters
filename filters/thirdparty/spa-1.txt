@@ -1,10 +1,10 @@
 ![Adblock Plus 2.0]
-! Checksum: MZB9MEG96Kh3k+og9xTPUg
-! Diff-Path: ../patches/9/9-s-1723725406-3600.patch
+! Checksum: J03FAuQeXZkcZO33e7OLjw
+! Diff-Path: ../patches/9/9-s-1723808307-3600.patch
 ! Title: AdGuard Spanish/Portuguese filter
 ! Description: Filter list that specifically removes ads on websites in Spanish, Portuguese, and Brazilian Portuguese languages.
-! Version: 2.0.26.18
-! TimeUpdated: 2024-08-15T12:32:43+00:00
+! Version: 2.0.26.22
+! TimeUpdated: 2024-08-16T11:34:24+00:00
 ! Expires: 5 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -268,6 +268,9 @@
 !
 !
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/186247
+||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$script,redirect=noop.js,domain=turismando.net
+||turismando.net/wp-content/themes/Turismando/assets/js/jQdB.js
 ! https://github.com/AdguardTeam/AdguardFilters/issues/186364
 istigo.net##+js(no-fetch-if, pagead2.googlesyndication.com)
 ! https://github.com/AdguardTeam/AdguardFilters/issues/186243
@@ -1530,6 +1533,8 @@ peru21.pe#@#.adstop
 !------- JS rules ---------------------!
 !--------------------------------------!
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/186326
+megafilmeshd.si##+js(remove-attr, href, a[href]#clickfakeplayer)
 ! https://github.com/AdguardTeam/AdguardFilters/issues/186360
 brjogostorrents.com##+js(abort-on-property-read, popunder)
 ! https://github.com/AdguardTeam/AdguardFilters/issues/186362
@@ -1593,7 +1598,7 @@ beautyskincarebrasil.com##+js(window.open-defuser)
 ! https://github.com/AdguardTeam/AdguardFilters/issues/177537
 ! https://github.com/AdguardTeam/AdguardFilters/issues/177524
 ! https://github.com/AdguardTeam/AdguardFilters/issues/161356
-fomedereceitas.online,blog.whatsappgb.top,infoinvest.org,receitastop.click,receitasvegana.com,megacurioso.online,gastroponto.com,nossoprato.online,receitasdafazenda.com##+js(set-local-storage-item, last_ads, yes)
+investimentosfacil.online,fomedereceitas.online,blog.whatsappgb.top,infoinvest.org,receitastop.click,receitasvegana.com,megacurioso.online,gastroponto.com,nossoprato.online,receitasdafazenda.com##+js(set-local-storage-item, last_ads, yes)
 receitasnatural.com,financastop.online,cryptobr.biz,modsimuladores.com,assistirfilmesdaluna.com,vejaideias.com.br,jogoscompleto.xyz##+js(adjust-setTimeout, /atualizar|hided/, *, 0.001)
 ! https://github.com/AdguardTeam/AdguardFilters/issues/161249
 fazercurriculo.online,usandoapp.com##+js(adjust-setTimeout, .delay, *, 0.001)
@@ -1868,13 +1873,14 @@ tuhentaionline.com##+js(abort-on-property-read, Pub2)
 !------- CSS fixes --------------------!
 !--------------------------------------!
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/186354
 ! https://github.com/AdguardTeam/AdguardFilters/issues/185944
 ! https://github.com/AdguardTeam/AdguardFilters/issues/186159
 ! https://github.com/AdguardTeam/AdguardFilters/issues/186163
 ! https://github.com/AdguardTeam/AdguardFilters/issues/186165
 ! https://github.com/AdguardTeam/AdguardFilters/issues/185949
 ! TODO: consider to add generic rule, something like #$##colunas #framed > #player.hided { display: block !important; } or similar
-receitasnatural.com,fomedereceitas.online,financastop.online,blog.whatsappgb.top,cryptobr.biz,infoinvest.org,receitastop.click#$#.hided { display: block !important; }
+investimentosfacil.online,receitasnatural.com,fomedereceitas.online,financastop.online,blog.whatsappgb.top,cryptobr.biz,infoinvest.org,receitastop.click#$#.hided { display: block !important; }
 ! https://github.com/AdguardTeam/AdguardFilters/issues/177517
 elmueble.com#$#header { top: 0 !important; }
 elmueble.com#$#.admobile { display: none !important; }
@@ -2204,6 +2210,8 @@ globo.com,amomeupet.org,cifras.com.br,gaz.com.br,placar.com.br,futebolinterior.c
 ! ##body .banner
 meiobit.com,brasilparalelo.com.br,tvonline.fan,laprensagrafica.com,ahoragranada.com,correio24horas.com.br,cnnespanol.cnn.com,motociclismo.es,sub100.com.br,theenemy.com.br,manhwas.net,rpp.pe,ambito.com,economipedia.com,informador.mx,elinformador.com.co,cronista.com,rionegro.com.ar,diariodecuyo.com.ar,voydeviaje.com.ar,guarda14.com,viapais.com.ar,agazeta.com.br,eleconomista.com.mx,metropolitanafm.com.br,tycsports.com,elespectador.com,bnews.com.br,migalhas.com.br,losandes.com.ar,lavoz.com.ar,mundo.sputniknews.com,omelete.com.br,lapoliticaonline.*,valenciaplaza.com,veneapp.com,dalealbo.cl,globo.com,defesanet.com.br,mibrujula.com,lyon.kim,26noticias.com.ar,auniao.com,clickpb.com.br,emagister.com,lanacion.com.ar,parana-online.com.br,r7.com,toxico-pc.com,uol.com.br##body .banner
 !
+torrentjogos.com.br##+js(window.open-defuser, ?key=)
+audiolatinohd.com###info > a[class^="button"]
 fonte1.com,loucosporti.com#$##colunas { display: block !important; }
 /img/*/banners.js$domain=dicasgeeks.net|dicasdereceitas.net
 espn.com.br##.article-body > .float-r.inline-track:has(> p > a[href*="//dis.la/"])
