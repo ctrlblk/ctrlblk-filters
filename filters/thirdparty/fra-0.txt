@@ -1,10 +1,10 @@
 ![Adblock Plus 2.0]
-! Checksum: xxVbQhEdUgGLyYOv5O7Ocw
-! Diff-Path: ../patches/16/16-s-1724042164-3600.patch
+! Checksum: wb82PrYiNQqqa3erGNoINg
+! Diff-Path: ../patches/16/16-s-1724081827-3600.patch
 ! Title: AdGuard French filter
 ! Description: Liste FR + AdGuard French filter. Filter list that specifically removes ads on websites in French language.
-! Version: 2.0.46.13
-! TimeUpdated: 2024-08-19T04:32:32+00:00
+! Version: 2.0.46.16
+! TimeUpdated: 2024-08-19T15:33:14+00:00
 ! Expires: 5 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -202,6 +202,7 @@ ebookdz.com##+js(no-xhr-if, pagead2.googlesyndication.com)
 monumentum.fr##+js(abort-current-script, document.getElementById, Blocking Ads)
 ! https://github.com/AdguardTeam/AdguardFilters/issues/179837
 ! https://github.com/AdguardTeam/AdguardFilters/issues/147842
+@@||google.com^$image,domain=japscan.lol
 @@||japscan.lol^$image,xmlhttprequest,~third-party
 japscan.lol#@#[class^="copine"]
 @@||japscan.lol/adcount.js$~third-party
@@ -876,6 +877,7 @@ $script,third-party,denyallow=authkong.com|rsc.cdn77.org|linkvertise.com|fastly.
 !
 !
 !
+charentelibre.fr###main-before-content-container
 lemonde.fr##.services:not(:has(div[data-services-name*="Le Monde"][data-services-name$="Mémorable"]))
 lemonde.fr#?#.zone > div.area:has(> div.area__title > p:contains(Contenus partenaires))
 lefigaro.fr##.fig-partner
@@ -924,7 +926,8 @@ h2-mobile.fr#?##main-container .blog__content:has(> .title-wrap--pr > h3:contain
 h2-mobile.fr###main-container .blog__content:has(> .col-md-4 > div[id^="optidigital-adslot-"])
 cosmopolitan.fr##.External
 /japs/*_1200x2000_banner_fr.jpg$xmlhttprequest,domain=japscan.lol
-japscan.lol##a.donate[target="_blank"][rel="noopener noreferrer nofollow"] img
+japscan.lol##.Aikoi.donate
+japscan.lol##.aikoi.donate
 japscan.lol##.navbar-nav > li.nav-item:last-child > a.donate[target="_blank"][rel="noopener noreferrer nofollow"]
 japscan.lol###blur-inter
 japscan.lol###interstitial
@@ -1198,7 +1201,7 @@ lefigaro.fr##.fig-sticky-bottom-subscription-banner
 zeste.ca##.isPub
 zeste.ca##.wrapper-pub
 paroles2chansons.lemonde.fr##.fixme-container
-sudouest.fr,techno-science.net##.pub
+charentelibre.fr,sudouest.fr,techno-science.net##.pub
 techno-science.net###amazonLink
 ||v.fwmrm.net/ad/$important,domain=bfmtv.com
 paroles2chansons.lemonde.fr##div[style="min-height:280px;"]
@@ -1620,6 +1623,8 @@ app.molotov.tv##+js(no-xhr-if, /ping?token=)
 !
 !
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/186663
+$script,third-party,domain=waaw.to,badfilter
 ! https://github.com/AdguardTeam/AdguardFilters/issues/186222
 @@||uqload.to/embed-*.html$domain=cpasmieux.is
 ! https://github.com/AdguardTeam/AdguardFilters/issues/185291

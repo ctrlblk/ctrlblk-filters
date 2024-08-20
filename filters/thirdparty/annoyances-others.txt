@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: EasyList – Annoyances
-! Last modified: Mon, 19 Aug 2024 02:26:42 +0000
+! Last modified: Tue, 20 Aug 2024 02:25:53 +0000
 ! Expires: 7 days (update frequency)
 ! *** easylist:template_header.txt ***
 !
@@ -2049,6 +2049,7 @@ duckduckgo.com##.button_size-md__dS3Yr.button_secondary__DAail
 marketplace.org##.c-callout-banner
 marketplace.org##.c-donate-cta
 marketplace.org##.c-fetured-cards__card-freeform
+csswizardry.com##.c-highlight
 texastribune.org##.c-prompt-container
 marketplace.org##.c-splash-backdrop
 folha.uol.com.br##.c-subscribe-ads
@@ -2481,7 +2482,7 @@ stuff.co.nz#?#.common-html-frame.html-content:-abp-contains(how much)
 google.com##.Ryrdad:has-text(Please help us improve)
 ! youtube popups
 music.youtube.com#?#tp-yt-paper-dialog.ytmusic-popup-container:-abp-contains(/family plan|Premium|ad-free|background play|kept playing/)
-www.youtube.com#?#tp-yt-paper-dialog.ytd-popup-container:-abp-contains(/How are your|How interested|Live TV|Wish videos|background play|better TV|cable box|cable reimagined|hidden fees|of YouTube TV|on YouTube TV|unlimited DVR|with YouTube TV|without the ads/)
+www.youtube.com#?#tp-yt-paper-dialog.ytd-popup-container:-abp-contains(/How are your|How interested|Live TV|Wish videos|background play|better TV|cable box|cable reimagined|hidden fees|of YouTube TV|on YouTube TV|unlimited DVR|with YouTube TV|without the ads|try this feature/)
 ! Login popups
 aajtak.in,gnttv.com,indiatodayne.in##.tapBoxCls
 ! Paging overlays (previous/next page)
@@ -3645,7 +3646,7 @@ sofmap.com##.side_bnr
 sports.yahoo.co.jp##.topPage
 video.fc2.com##div[style^="position: fixed; transition: right 1s ease-out 0s; bottom: 165px; padding: 0px; margin: 0px; border: none; z-index: 999;"]
 ||api.popin.cc^$third-party
-||bot.agerun.jp/popup.min.js$domain=jingukan.co.jp
+||bot.agerun.jp^$third-party
 ||img.mixi.net^$third-party,domain=~mixi.jp
 ||medibot-image.s3.ap-northeast-1.amazonaws.com/medibot_lp_
 ||re-volver.net/visitor/
