@@ -1,10 +1,10 @@
 ![Adblock Plus 2.0]
-! Checksum: MnkOFQJYRQ4EQckNVyZy9A
-! Diff-Path: ../patches/9/9-s-1724085449-3600.patch
+! Checksum: uQ5g4QiztxLi6XPR0hmf3Q
+! Diff-Path: ../patches/9/9-s-1724171916-3600.patch
 ! Title: AdGuard Spanish/Portuguese filter
 ! Description: Filter list that specifically removes ads on websites in Spanish, Portuguese, and Brazilian Portuguese languages.
-! Version: 2.0.26.25
-! TimeUpdated: 2024-08-19T16:33:10+00:00
+! Version: 2.0.26.28
+! TimeUpdated: 2024-08-20T16:33:10+00:00
 ! Expires: 5 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -268,6 +268,10 @@
 !
 !
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/186815
+@@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$xmlhttprequest,domain=isekaibrasil.com
+@@||ads.anitube.vip^|$xmlhttprequest
+@@||ads.anitube.vip/?token=$xmlhttprequest
 ! https://github.com/uBlockOrigin/uAssets/issues/24938
 financeiropronto.vip##+js(set-local-storage-item, last_ads, yes)
 ! https://github.com/AdguardTeam/AdguardFilters/issues/186247
@@ -806,6 +810,11 @@ seriesretro.com##+js(abort-on-property-read, gothamBatAdblock)
 ! https://github.com/AdguardTeam/AdguardFilters/issues/80724
 audiotools.in##div[id^="chp_ads_blocker-"]
 audiotools.in##+js(abort-current-script, EventTarget.prototype.addEventListener, blocker_detector)
+! https://github.com/AdguardTeam/AdguardFilters/issues/186776
+caroloportunidades.com.br#$##player { display: block !important; }
+caroloportunidades.com.br##+js(no-xhr-if, popads.net)
+caroloportunidades.com.br##+js(no-setTimeout-if, hasAdblock)
+@@||popads.net/js/adblock.js$xmlhttprequest,domain=caroloportunidades.com.br
 ! https://github.com/AdguardTeam/AdguardFilters/issues/184038
 /asb1.js$domain=anitube.vip|hinatasoul.com
 @@||ads.anitube.vip^$xmlhttprequest,domain=anitube.vip|hinatasoul.com
@@ -3406,7 +3415,7 @@ tvprime.ig.com.br##div[class^="tvpri"]
 uol.com.br##.cardAd
 uol.com.br##.advertisementArea--showLabel
 ||baixartorrents.org/subs/popup.js
-biologianet.com,portugues.com.br##.pub-left
+peliculasyserieslatino.me,biologianet.com,portugues.com.br##.pub-left
 preparaenem.com,portugues.com.br##.pub-300x250
 portugues.com.br##.pub_insert_content
 portugues.com.br##.publicidade-cima-container
