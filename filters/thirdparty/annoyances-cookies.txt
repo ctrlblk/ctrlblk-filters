@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: EasyList – Cookie Notices
-! Last modified: Fri, 23 Aug 2024 03:56:43 +0000
+! Last modified: Fri, 23 Aug 2024 13:48:25 +0000
 ! Expires: 7 days (update frequency)
 ! *** easylist:template_header.txt ***
 !
@@ -18513,7 +18513,6 @@
 ||termly.io^$third-party
 ||thirdfloor.it^$third-party
 ||thisisdone.com/gdpr/$third-party
-||transcend-cdn.com^
 ||transcend.io^$third-party
 ||truendo.com^$third-party
 ||truevaultcdn.com^$third-party
@@ -18671,7 +18670,7 @@
 ||synology.com/js/syno/syno_cookie_element.js
 ||tags.tiqcdn.com^$script,domain=firstdirect.com|santander.pl|swisscom.ch
 ||terencehill.com/modules/hicookielaw/
-||transcend-cdn.com^$domain=shutterfly.com
+||transcend-cdn.com^$domain=anaconda.com|shutterfly.com
 ||transcendcdn.eventbrite.com^
 ||tvpworld.com/files/portale-v4/polityka-prywatnosci/js/tvp-tcfapi.js
 ||umich.edu/apis/umcookieconsent/
@@ -20847,6 +20846,7 @@ sparxmaths.uk##.select-school-footer
 solaxpower.com##.sep-cookies-boxs
 carrerajeans.com##.sessionnotification
 colormango.com##.setprivacy
+player.streamguys.com##.sg-gdpr
 mycharisma.com##.sgpb-popup-dialog-main-div-wrapper
 mycharisma.com##.sgpb-popup-overlay
 chitika.com##.sh-page-notice
@@ -21905,7 +21905,7 @@ citigroup.com,clearscore.com,voguescandinavia.com##div[class^="cookieNot"]
 !! #cookiemodal
 santam.co.za###cookiemodal
 !! .otPlaceholder
-baseball24.com,basketball24.com,cricket24.com,darts24.com,diretta.it,eredmenyek.com,flashresultats.fr,flashscore.ca,flashscore.co,flashscore.co.id,flashscore.co.kr,flashscore.co.uk,flashscore.co.za,flashscore.com,flashscore.com.br,flashscore.com.ua,flashscore.de,flashscore.es,flashscore.fi,flashscore.fr,flashscore.ge,flashscore.info,flashscore.it,flashscore.nl,flashscore.pt,flashscore.ru.com,flashscore.vn,flashscorekz.com,golflive24.com,handball24.com,horseracing24.com,icehockey24.com,livescore.in,livesport.com,livesport.cz,liveticker.com,motorsport24.com,scoreboard.com,soccer24.com,soccerstand.com,tennis24.com,volleyball24.com##.otPlaceholder
+baseball24.com,basketball24.com,cricket24.com,darts24.com,diretta.it,eredmenyek.com,flashresultats.fr,flashscore.ca,flashscore.co,flashscore.co.id,flashscore.co.kr,flashscore.co.uk,flashscore.co.za,flashscore.com,flashscore.com.br,flashscore.com.ua,flashscore.de,flashscore.es,flashscore.fi,flashscore.fr,flashscore.ge,flashscore.info,flashscore.it,flashscore.nl,flashscore.pt,flashscore.ru.com,flashscore.vn,flashscorekz.com,flashscoreusa.com,golflive24.com,handball24.com,horseracing24.com,icehockey24.com,livescore.in,livesport.com,livesport.cz,liveticker.com,motorsport24.com,scoreboard.com,soccer24.com,soccerstand.com,tennis24.com,volleyball24.com##.otPlaceholder
 ! .cp-popup
 foxandbriar.com##.cp-popup
 foxandbriar.com##.cp-popup-container
@@ -29854,7 +29854,7 @@ concursolutions.com,forbes.com,formula1.com,fortune.com,proximus.be,proximustv.b
 @@||zensus2022.de/SiteGlobals/Modules/CookieBanner/*/CookieBanner.json?$~third-party,xmlhttprequest
 
 ! Title: uBlock filters – Cookie Notices
-! Last modified: Fri, 23 Aug 2024 03:56:43 +0000
+! Last modified: Fri, 23 Aug 2024 11:05:42 +0000
 ! Expires: 7 days
 ! Description: Filters optimized for uBlock Origin, to be used with EasyList's and/or Adguard's "Cookie Notices" list(s)
 ! License: https://github.com/uBlockOrigin/uAssets/blob/master/LICENSE
@@ -30222,6 +30222,9 @@ vm.co.mz##+js(trusted-set-cookie, cookiePolicyAcceptedDate, $currentISODate$)
 ! https://www.blick.ch/
 blick.ch##+js(trusted-set-cookie, OptanonConsent, groups=C0004%3A0%2CC0005%3A0%2CC0003%3A1%2CC0002%3A0%2CC0001%3A1%2CV2STACK42%3A1, , , domain, blick.ch)
 blick.ch##+js(trusted-set-cookie, OptanonAlertBoxClosed, $currentDate$)
+! https://olympics.com/en/video/highlights-sport-climbing-olympic-qualifier-series-2024-boulder-qualification-rounds-shanghai?uxreference=playlist
+olympics.com##+js(trusted-set-cookie, OptanonConsent, groups=C0001%3A1%2CC0002%3A0%2CC0003%3A0%2CC0004%3A0%2CC0005%3A0, , , domain, olympics.com)
+olympics.com##+js(trusted-set-cookie, OptanonAlertBoxClosed, $currentDate$)
 
 
 !! Needs additional cookies
@@ -31294,10 +31297,6 @@ costcobusinessdelivery.com##+js(trusted-set-cookie, OptanonAlertBoxClosed, $curr
 
 ! https://github.com/uBlockOrigin/uAssets/issues/23727
 seznam.cz##+js(trusted-set-cookie, euconsent-v2, CP-wiwAP-wiwAD3ACLCSA1EsAP_gAEPgAATIJVwQgAAwAKAAsACAAFQALgAZAA6ACAAFAAKgAWgAyABoADmAIgAigBHACSAEwAJwAVQAtgBfgDCAMUAgACEgEQARQAjoBOAE6AL4AaQA4gB3ADxAH6AQgAkwBOACegFIAKyAWYAuoBgQDTgG0APkAjUBHQCaQE2gJ0AVIAtQBbgC8wGMgMkAZcA0oBqYDugHfgQHAhcBGYCTQEqwQugRQAKAAsACoAFwAQAAyABoAEQAI4ATAAqgBiAD8AISARABEgCOAE4AMsAZoA7gB-gEIAIsAXUA2gCbQFSALUAW4AvMBggDJAGXANTAhcAA.YAAAAAAAAWAA, , , domain, seznam.cz)
-
-! https://olympics.com/en/video/highlights-sport-climbing-olympic-qualifier-series-2024-boulder-qualification-rounds-shanghai?uxreference=playlist - functional + social media
-olympics.com##+js(trusted-set-cookie, OptanonConsent, groups=C0001%3A1%2CC0002%3A0%2CC0003%3A1%2CC0004%3A0%2CC0005%3A1, , , domain, olympics.com)
-olympics.com##+js(trusted-set-cookie, OptanonAlertBoxClosed, $currentDate$)
 
 ! https://github.com/uBlockOrigin/uAssets/issues/23809 - multimedia player
 issue-council.robertsspaceindustries.com##+js(trusted-set-cookie, pleaseFix.privacy, {%22analyticsCookie%22:false%2C%22personalisationCookie%22:false%2C%22targetedAdvertisingCookie%22:false%2C%22multimediaPlayerCookie%22:true})
