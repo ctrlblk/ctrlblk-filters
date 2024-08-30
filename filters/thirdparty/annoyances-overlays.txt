@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: EasyList – Newsletter Notices
-! Last modified: Thu, 29 Aug 2024 02:31:49 +0000
+! Last modified: Thu, 29 Aug 2024 10:58:40 +0000
 ! Expires: 7 days (update frequency)
 ! *** easylist:template_header.txt ***
 !
@@ -1731,6 +1731,7 @@ newsshopper.co.uk###po-inline-article-above
 angioproteomie.com,artdaily.cc,radioandmusic.com,researchnews.cc###popup
 focus-gesundheit.de###popup-background
 kyivindependent.com###popup-banner-subscription-ecom
+kyivindependent.com###popup-banner-subscription-store
 inhope.org###popup-home
 peoplesworld.org###popupModal
 nitrokey.com###popup_newsletter
@@ -5352,7 +5353,7 @@ doctorofcredit.com#@#.wpdiscuz-subscribe-bar
 ! fanboy_newsletter_shopping_allowlist_general_hide.txt
 
 ! Title: uBlock filters – Other Annoyances
-! Last modified: Fri, 23 Aug 2024 15:36:15 +0000
+! Last modified: Thu, 29 Aug 2024 06:38:20 +0000
 ! Expires: 7 days
 ! Description: Filters optimized for uBlock Origin, to be used with EasyList's and/or Adguard's "Other Annoyances" list(s)
 ! License: https://github.com/uBlockOrigin/uAssets/blob/master/LICENSE
@@ -6780,6 +6781,8 @@ m.youtube.com,music.youtube.com,tv.youtube.com,www.youtube.com,youtubekids.com##
 !www.youtube.com##ytd-browse[page-subtype="home"] :is(ytd-rich-grid-row, #contents.ytd-rich-grid-row):style(display: contents !important)
 ! https://www.reddit.com/r/uBlockOrigin/comments/1e6wrjx/youtube_tracking_in_on_session/
 ! youtube.com##+js(no-xhr-if, /\/youtubei\/v1\/log_event\?|play\.google\.com\/log|\/api\/stats\/qoe\?/)
+! https://m.youtube.com/ - background playback prevention
+m.youtube.com##+js(aeld, visibilitychange, /bgmobile|\{\w\.\w+\(\)\}/)
 
 ! https://github.com/NanoMeow/QuickReports/issues/1338
 buienradar.nl##+js(set, hideBannerBlockedMessage, true)

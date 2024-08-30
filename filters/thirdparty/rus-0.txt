@@ -13870,7 +13870,7 @@ inpot.ru###ezobann
 bitcryptonews.ru###faq-index
 turmush.kg###fb_bottom_like
 myparcels.ru###featured-wants
-vk.com,vk.ru#?##feed_rows > div[class^="feed_row "]:-abp-has(> .post > ._post_content > .PostHeader > .PostHeaderInfo > .PostHeaderSubtitle > .PostHeaderSubtitle__item:-abp-contains(/Community ad|Реклама |Рэклама | жарнама/))
+vk.com,vk.ru#?##feed_rows > div[class^="feed_row"]:-abp-has(> .post > ._post_content > .PostHeader > .PostHeaderInfo > .PostHeaderSubtitle > .PostHeaderSubtitle__item:-abp-contains(/Community ad|Реклама |Рэклама | жарнама/))
 itop-gear.ru###fguru
 partarium.ru###filter-form a[href^="/redirect/"][target="_blank"]
 city.ogo.ua###first-top-banner
@@ -16588,6 +16588,7 @@ loveradio.ru##.interactive__vk
 turkish-tv-series.ru##.intereso
 express-novosti.ru##.interesting-news
 etextlib.ru##.interestingly
+business-gazeta.ru##.interests-box
 businessman.ru,neva.today,syl.ru##.intext-block
 api.ekranka.tv,api.turk-sinema.ru,api.yadoma.tv##.invideo
 besplatnyeprogrammy.ru##.ip-motto
@@ -18696,6 +18697,7 @@ cq.ru##[class*="-odd"]
 vesti.kz##[class*="-top-btn"]
 oboz.ua##[class*="Banner"]
 igromania.ru,kanobu.ru##[class*="HeadingPage_most_discussed"]
+business-gazeta.ru##[class*="__advertising-"]
 libsib.ru##[class*="_a24"]
 cq.ru##[class*="_book"]
 kino-teatr.ru##[class*="_dobro"]
@@ -19304,7 +19306,7 @@ gurutestov.ru##a[href*="ecvator."]
 komapz.net##a[href*="epidems.net"]
 kubyshka.org,radiochief.ru,riperam.org,znamyuzl.ru##a[href*="epngo.bz"]
 cybersport.ru##a[href*="erid:"][target="_blank"]
-sport-express.ru##a[href*="erid="][target="_blank"]
+business-gazeta.ru,sport-express.ru##a[href*="erid="][target="_blank"]
 7ba.org,7ba.ru##a[href*="erotel.org"]
 forum.amit.ru##a[href*="evroremont.amit.ru"]
 ilenta.com,lelang.su,rutr.life,rutracker.lib,rutracker.net,rutracker.nl,rutracker.org,shopping.nv.ua##a[href*="fas.st/"]
@@ -21733,7 +21735,7 @@ https://*adtech_uid=$~third-party,xmlhttprequest,domain=lena-miro.ru|levik.blog|
 !||www.liveinternet.ru/users/$csp=script-src 'unsafe-inline' 'unsafe-eval' i.li.ru https://www.liveinternet.ru/cgi-bin/rpls.fcgi?list= https://www.liveinternet.ru/spell/spell.js https://www.liveinternet.ru/share/js/share.js https://www.liveinternet.ru/4Ek/JS/diary/main/nav/regoradd.js https://www.liveinternet.ru/4Ek/JS/diary/trans.js
 !||www.liveinternet.ru/|$csp=script-src 'unsafe-inline' 'unsafe-eval' i.li.ru https://www.liveinternet.ru/utf/lici.js https://www.liveinternet.ru/utf/li.js https://www.liveinternet.ru/utf/main_new.js
 ! Pikabu (ловушка для обфускации)
-||pikabu.ru/*?key=$xmlhttprequest,domain=pikabu.ru
+||pikabu.ru/*?say=$xmlhttprequest,domain=pikabu.ru
 ! селекторы
 anidub.vip,anidubonline.com##.plyr__menu
 anidub.vip,anidubonline.com##.plyr__progress__buffer
@@ -22879,13 +22881,13 @@ dzen.ru##[aria-label^="Рекл"]
 dzen.ru##[data-name="video-in-combo-zen-container"]
 dzen.ru##[id*="-teaser"] > div[id]
 dzen.ru#?#div:-abp-has(> .adv-skeleton___main)
-dzen.ru##div[class*=" card-with-ad__skeletonCard"]
 dzen.ru##div[class*="-top-ad-"]
 dzen.ru##div[class*="_position_articleBottom"]
 dzen.ru##div[class*="_position_feedSingleCard"]
 dzen.ru##div[class*="_rightAdWrapper"]
 dzen.ru##div[class*="_topBannerContainer"]
 dzen.ru##div[class*="card-widh-ad_"]
+dzen.ru##div[class*="card-with-ad__"]
 dzen.ru##div[class*="tsar__container"]
 dzen.ru##div[class^="advert-panel"]
 dzen.ru##div[class^="floor-card-rtb_"]
@@ -25968,6 +25970,7 @@ au-ok.com##p[style="border:3px solid #C1FF0A;background-color:#d5d5d1;padding:10
 ||storage.yandexcloud.net/sravni-affiliates-public/adblock/adblock_checker.js
 ||texnic.ru/jq/san.js
 ||under-prog.ru/wp-content/plugins/eazy-ad-unblocker/
+||vsthouse.ru/a-detector/
 ||webwintop.ru/wp-content/plugins/$script
 ||yagramotniy.ru/templates/edv/js/_extra/
 !
@@ -27088,15 +27091,12 @@ pikabu.ru##header > .header__main:style(background-color: var(--color--header__b
 ! ---
 pimpletv.ru##body > #branding:style(padding-top: 0 !important)
 ! ---
-playground.ru###foundationWrapper > *:style(pointer-events: auto !important)
-playground.ru###foundationWrapper > div:style(height: auto !important)
-playground.ru###foundationWrapper:style(background: #373737 !important; padding-top: 0 !important)
-playground.ru###foundationWrapper:style(pointer-events: none !important)
 playground.ru##.content_aside-container > .content-column:style(padding-left: 0 !important; padding-right: 40px !important)
 playground.ru##.content_aside-container:style(flex-direction: unset !important)
 playground.ru##body#userNotAuthorized .bonus-landing-page .panel-collapse > .panel-body:style(background-color: white !important)
 playground.ru##body#userNotAuthorized .bonus-landing-page .panel-default > .panel-heading:style(background-color: white !important)
 playground.ru##body#userNotAuthorized .bonus-landing-page-faq > .title:style(color: white !important)
+playground.ru##body:style(background: #242424 !important)
 ! исправление ошибок и косяков оригинальной вёрстки
 playground.ru##.gp-game-card .user-profile-sidebar:style(max-width: unset !important)
 ! ---
@@ -27782,7 +27782,7 @@ mail.ru##body > .grid > div[class^="grid"][class*="__header"] > .toolbar
 mail.ru##body > .zeropixel ~ * .balloon
 mail.ru##body > .zeropixel ~ * .stripe-wrapper
 mail.ru##body > .zeropixel ~ * div[class][style^="color:"][style$="background-size:auto 40px"]
-mail.ru##body > .zeropixel ~ div > style ~ div
+mail.ru##body > .zeropixel ~ div > style ~ div:style(pointer-events: none !important; opacity: 0 !important)
 mail.ru##body:not(.js-module) .searchContainer ~ div > a.dmb
 mail.ru##body:not(.js-module) .tabs + div[class] > :first-child:style(width: 100% !important)
 mail.ru##body:not(.js-module) .tabs + div[class]:style(min-width: fit-content !important)
@@ -28260,7 +28260,7 @@ dzen.ru,ya.ru,yandex.by,yandex.kz,yandex.ru,yandex.uz##[class*="mini-suggest__it
 dzen.ru,ya.ru,yandex.by,yandex.kz,yandex.ru,yandex.uz##[class*="mini-suggest__item"]:has(> a[href*="://yandex."][href*="/clck/"]):remove()
 dzen.ru,ya.ru,yandex.by,yandex.kz,yandex.ru,yandex.uz##[class*="mini-suggest__item"]:has(> a[href][target="_blank"]):remove()
 ozon.ru##[data-lcp-name*="anner-"]:matches-path(/my/reviews/promo):style(display: block !important)
-dzen.ru##[data-microappname="TopMicroApp" ] div[style*="height: 0;"]:style(padding-top: unset !important)
+dzen.ru##[data-microappname="TopMicroApp" ] div[style*="%"]:style(padding-top: unset !important)
 www.sports.ru##[data-noinit]
 online-fix.me##a.btn-success[href^="https://online-fix.me/ext/"]:remove-class(btn)
 24smi.org##a[href*="://24smi.org/"]:remove-attr(target)
@@ -30662,7 +30662,6 @@ bigpuzzle.ru##td[valign="top"][width="240px"][height="600"]
 ||rusnext.ru/advar.js$script
 ||shellcat.ru^$third-party
 ||vazhno.ru/cdn-cgi/apps/head/*.js
-||vsthouse.ru/a-detector/
 ! *** antiadblockfilters:antiadblockfilters/antiadblock_slovak.txt ***
 ! *** antiadblockfilters:antiadblockfilters/antiadblock_spanish.txt ***
 
