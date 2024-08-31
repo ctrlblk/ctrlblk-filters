@@ -12,7 +12,6 @@
 !
 ! ---------- Czech & Slovak generic blocking rules ---------- !
 !
--reklama.
 .com/bannery/
 .cz/ads/
 .cz/BAN/
@@ -323,6 +322,7 @@ vranovske.sk#@#.advertising-content
 ! ---------- Czech Site Specific Element hiding rules ---------- !
 !
 365tipu.cz##.wpa.top
+aktualne.cz##[class^="advert__"]
 appliste.cz##.banner-header
 autobazar.cz###biglink
 autoforum.cz###content-right > div[style]:first-of-type
@@ -412,6 +412,7 @@ itnetwork.cz##.reklama-background
 jaknaletenky.cz###social
 kaloricketabulky.cz##.bannLead
 kamsdetmi.com##div.banner_position
+kinobox.cz##div[class*="Commercial_container"]
 kladenskelisty.cz##.rleft
 kladenskelisty.cz##.rright
 kladenskelisty.cz##.tree
@@ -615,7 +616,6 @@ www.seznam.cz#?#div.dragging-enabled:-abp-has(div.gadget--reklama)
 ! ---------- uBlock Extended filters ---------- !
 !
 ||a.cele.cz^$3p
-||aktualne.cz^$csp=child-src *
 autozurnal.com##body:remove-class(modal-open)
 autozurnal.com##div:remove-class(with-active-branding)
 bombuj.si,serialy.bombuj.si##a[id*="zatvorit"]:remove-attr(href)
@@ -672,6 +672,8 @@ search.seznam.cz,clanky.seznam.cz##div[data-e-b-n*="advert"]
 sreality.cz##+js(nosiif, checkRods)
 super.cz##+js(ra, style, body)
 svetandroida.cz##+js(aopr, detectAdBlocker)
+titulky.com##+js(ra, style, div[id^="head"])
+||titulky.com/banalter/
 tn.nova.cz##+js(set, useSeznamAds, false)
 ||trackad.cz/adtrack.php$domain=nova.cz,script,redirect=noop.js
 uloz.to##div.l-wrapper:style(padding-top: 0px !important;)
