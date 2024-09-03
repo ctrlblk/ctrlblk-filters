@@ -11128,6 +11128,9 @@ igdz1.ru^$script,domain=igdz.ru
 ||compedu.ru^$domain=kopilkaurokov.ru
 ||consmed.ru/branding/
 ||consmed.ru/tizergen/
+||cont.ws/*/ads/meta/
+||cont.ws/*/partner-code-bundles/
+||cont.ws/*/safeframe-bundles/
 ||conversion.im/admin/ajax/banners/
 ||cookielaw.org^$domain=adme.media
 ||cookreactor.com^$subdocument
@@ -11954,6 +11957,7 @@ igdz1.ru^$script,domain=igdz.ru
 ||maw.ru/fp/ban/
 ||maxk2.ru/lady
 ||mayamskiechernila.club^$script
+||mazepa.to/styles/js/ed*.js
 ||mcrate.su/vip/
 ||mctop.su/media/img/b/
 ||mcuns.ru/*.php$script,domain=mcuns.ru
@@ -14012,7 +14016,6 @@ download-windows.org,softhome.ru###installpack-table > .center-wrapper
 keypro2.ru###interesting_articles
 cripo.com.ua###internetuacom
 argumenti.ru###invite_bottom-news
-mazepa.to###ipbwrapper > .blurBox > table > tbody > tr > td + td
 lr-club.com###ipbwrapper > table + #userlinks
 xboxland.net###ipd-msg-wrapper + br + center
 tomat-pomidor.com###ipsLayout_contentWrapper > div[style*="min-height:"]
@@ -20927,7 +20930,6 @@ matiz-club.com##div[id^="sape_links"]
 ne-kurim.ru##div[id^="sbs"]
 newsru.co.il##div[id^="section_"]
 sibnet.ru##div[id^="sibAd_"]
-mazepa.to#?#div[id^="sidebar"] > .ipsSideBlock:-abp-has(> h3:-abp-contains(еклам))
 photofuneditor.com#?#div[id^="sidebar"] div[id^="sidebar"]:-abp-has(div > [src*="pagead2."])
 realstream.space##div[id^="slice-"]
 1parazit.ru,24stoma.ru,alcogolizm.com,alkogolu.net,alkotraz.ru,big-stirka.ru,bolshoyulov.ru,cardiologiya.com,diabethelp.org,electric-220.ru,f4iwiki.ru,fastcarp.ru,firstfisher.ru,floradoma.com,kakbik.ru,literaguru.ru,luckyfamilyman.ru,medicina-kirov.ru,medotvet.com,mixednews.ru,moikolodets.ru,moyapechen.ru,mpsdoc.com,mr-build.ru,nosnebolit.ru,oprostatit.ru,samelectric.ru,selok.ru,silaman.ru,sustav.info,udermis.ru,vesdoloi.ru,villaved.ru,vitaminius.ru,wheeclamp.ru,youpk.ru##div[id^="slidebox"]
@@ -21742,7 +21744,7 @@ https://*adtech_uid=$~third-party,xmlhttprequest,domain=lena-miro.ru|levik.blog|
 !||www.liveinternet.ru/users/$csp=script-src 'unsafe-inline' 'unsafe-eval' i.li.ru https://www.liveinternet.ru/cgi-bin/rpls.fcgi?list= https://www.liveinternet.ru/spell/spell.js https://www.liveinternet.ru/share/js/share.js https://www.liveinternet.ru/4Ek/JS/diary/main/nav/regoradd.js https://www.liveinternet.ru/4Ek/JS/diary/trans.js
 !||www.liveinternet.ru/|$csp=script-src 'unsafe-inline' 'unsafe-eval' i.li.ru https://www.liveinternet.ru/utf/lici.js https://www.liveinternet.ru/utf/li.js https://www.liveinternet.ru/utf/main_new.js
 ! Pikabu (ловушка для обфускации)
-||pikabu.ru/*~*.*?*=$xmlhttprequest,domain=pikabu.ru
+||pikabu.ru/*=*~*?*=$xmlhttprequest,domain=pikabu.ru
 ! селекторы
 anidub.vip,anidubonline.com##.plyr__menu
 anidub.vip,anidubonline.com##.plyr__progress__buffer
@@ -22586,6 +22588,7 @@ sports.ru##.ad
 sports.ru##.columns__alt-column .frame
 sports.ru##.comment-ads
 sports.ru##.comments-list__ad-item
+sports.ru##.document-recommendations
 sports.ru##.fonbet-teaser
 sports.ru##.high-adload-container
 sports.ru##.in-read-placement
@@ -27907,7 +27910,7 @@ sinoptik.ua##+js(abort-on-property-read, SIN.AdsLoader)
 porngames.su,rintor.info,rintor.net##+js(abort-on-property-read, TotemToolsObject)
 castle-tv.com##+js(abort-on-property-read, WebSocket)
 100popugaev.ru,coderlessons.com,fixx.one,its-kids.ru,molitvy.guru,nizhny.ru,pro100hobbi.ru,publy.ru,samelectric.ru,svadba.expert,tehnobzor.ru,vibir.ru##+js(abort-on-property-read, XMLHttpRequest)
-3dnews.kz,3dnews.ru,avtovzglyad.ru,baby.ru,dni.ru,mamba.ru,pikabu.ru,pogoda.onliner.by,selflib.me,sm.news,sports.ru,tech.onliner.by,www.goha.ru##+js(abort-on-property-read, Ya)
+3dnews.kz,3dnews.ru,avtovzglyad.ru,baby.ru,cont.ws,dni.ru,mamba.ru,pikabu.ru,pogoda.onliner.by,selflib.me,sm.news,sports.ru,tech.onliner.by,www.goha.ru##+js(abort-on-property-read, Ya)
 comedy-radio.ru,radioromantika.ru,relax-fm.ru,veseloeradio.ru##+js(abort-on-property-read, __vasActiveTestIds)
 forum.overclockers.ua##+js(abort-on-property-read, a_urls)
 kufar.by,sm.news##+js(abort-on-property-read, aab)
@@ -28403,23 +28406,7 @@ e.mail.ru,octavius.mail.ru##+js(set-constant, Object.prototype.hasAdBlock, null)
 e.mail.ru,octavius.mail.ru##body > div > .letter-list-item-adv:style(display: block !important)
 e.mail.ru,octavius.mail.ru##body > div[style*="top:"][style*="position:"][style*="visibility:"] #app-canvas div:style(display: block !important)
 ! VK-брендинг
-otvet.mail.ru###portal-menu [title="Ответы Mail.ru"] > a > svg > g
-otvet.mail.ru###portal-menu [title="Ответы Mail.ru"] > a > svg:style(transform: none !important; padding-top: 16px !important)
-dobro.mail.ru##.pm-logo > .pm-logo__link + .pm-logo__link > .pm-logo__name__title:style(opacity: 1 !important; background-color: #005ff9 !important; top: 0 !important; right: -11px !important; height: 35px !important; width: 70px !important; z-index: 9999 !important; font-size: 0 !important; box-shadow: none !important)
-health.mail.ru,pets.mail.ru##.pm-logo > .pm-logo__link + .pm-logo__link > .pm-logo__name__title:style(opacity: 1 !important; background-color: #005ff9 !important; top: 0 !important; right: -1px !important; height: 35px !important; width: 75px !important; z-index: 9999 !important; font-size: 0 !important; box-shadow: none !important)
-news.mail.ru,sportmail.ru##.pm-logo > .pm-logo__link + .pm-logo__link > .pm-logo__name__title:style(opacity: 1 !important; background-color: #005ff9 !important; top: 0 !important; right: -9px !important; height: 35px !important; width: 70px !important; z-index: 9999 !important; font-size: 0 !important; box-shadow: none !important)
-pogoda.mail.ru##.pm-logo > .pm-logo__link + .pm-logo__link > .pm-logo__name__title:style(opacity: 1 !important; background-color: #005ff9 !important; top: 0 !important; right: -9px !important; height: 35px !important; width: 73px !important; z-index: 9999 !important; font-size: 0 !important; box-shadow: none !important)
-auto.mail.ru,deti.mail.ru##.pm-logo > .pm-logo__link + .pm-logo__link > .pm-logo__name__title:style(opacity: 1 !important; background-color: #005ff9 !important; top: 0 !important; right: -9px !important; height: 35px !important; width: 75px !important; z-index: 9999 !important; font-size: 0 !important; box-shadow: none !important)
-mail.ru##.pm-logo__link:has(> img[src*="/logo_2021_region"]):style(pointer-events: none !important)
-otvet.mail.ru##.pm-logo__link__pic:not([src*="/logo_ny/"]):style(height: 39px; display: none !important)
-mail.ru,sportmail.ru##.pm-menu__left__vk-logo
 light.mail.ru##.portal-menu__logo__link:style(width: 90px !important; !important; overflow: hidden !important)
-hi-tech.mail.ru##[alt="VK project logo"]
-calendar.mail.ru##[data-test-id="ecosystem-logo"]
-e.mail.ru##a[href^="/payment/center/"][class^="logo"]:style(width: 133px !important; !important; overflow: hidden !important)
-cloud.mail.ru,e.mail.ru,octavius.mail.ru##a[title="Экосистема VK"]
-todo.mail.ru##div[class^="Logo_base__"] > svg > g
-mail.ru##img[src*="/logo_2021_region"]
 ! Фикс для маленьких экранов
 mail.ru##.grid__header .ph-auth:matches-media((max-width: 1280px)):style(height: 37px !important)
 mail.ru##.grid__header .ph-container:matches-media((max-width: 1280px)):style(height: 40px !important)
