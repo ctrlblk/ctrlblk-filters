@@ -26353,8 +26353,9 @@ domovita.by##body.blocked > #modalCookies
 domovita.by##body.blocked > div[class*="modal-overlay"]
 domovita.by##body.blocked:style(overflow: auto !important)
 ! ---
-doramalive.ru##.block-content > .ageLimit
-doramalive.ru##.block-content > .ageLimit ~ .block-player:style(display: block !important)
+dorama.live##.block-content > .ageLimit
+dorama.live##.block-content > .ageLimit ~ .block-player:style(display: block !important)
+dorama.live##.block-content:style(min-height: unset !important)
 ! ---
 doramax.org##.wrapper.full:style(margin-top: 70px !important)
 ! ---
@@ -28000,6 +28001,7 @@ fm-app.ru,tvapp.su,yootv.ru##+js(addEventListener-defuser, /mouse/, cursorVisibl
 sibnet.ru##+js(addEventListener-defuser, DOMContentLoaded, /smartweek/)
 sports.ru##+js(addEventListener-defuser, DOMContentLoaded, 0x)
 cq.ru##+js(addEventListener-defuser, DOMContentLoaded, banners)
+litnet.com##+js(addEventListener-defuser, DOMContentLoaded, feedback)
 regnum.news,regnum.ru,tproger.ru##+js(addEventListener-defuser, click, , elements, a[href*="utm_campaign"])
 softonic.ru##+js(addEventListener-defuser, click, [native code])
 ~player.smotrim.ru,smotrim.ru##+js(addEventListener-defuser, click, matches)
@@ -28089,7 +28091,6 @@ fishki.net##+js(no-setTimeout-if, is_adblock)
 vseinstrumenti.ru##+js(no-setTimeout-if, removeJuristicNotification)
 testserver.pro##+js(no-setTimeout-if, saa)
 websdr.space##+js(no-setTimeout-if, setInterval, )
-litnet.com##+js(no-setTimeout-if, showDialogFeedbackTemplate)
 anime-chan.me##+js(no-setTimeout-if, sparkle)
 num-words.com,softportal.com##+js(no-setTimeout-if, toUTCString)
 liveinternet.ru##+js(no-xhr-if, /ad\.mail|adfox|adhigh|adriver|mc\.yandex|mediametrics|otm-r|static-mon/)
