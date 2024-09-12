@@ -1,10 +1,10 @@
 ![Adblock Plus 2.0]
-! Checksum: IlxRLeFRjwB/StVb+SOqaw
-! Diff-Path: ../patches/9/9-s-1725979038-3600.patch
+! Checksum: +vp/beBQin7GgqUSYf6zag
+! Diff-Path: ../patches/9/9-s-1726079820-3600.patch
 ! Title: AdGuard Spanish/Portuguese filter
 ! Description: Filter list that specifically removes ads on websites in Spanish, Portuguese, and Brazilian Portuguese languages.
-! Version: 2.0.26.54
-! TimeUpdated: 2024-09-10T14:33:27+00:00
+! Version: 2.0.26.57
+! TimeUpdated: 2024-09-11T18:33:08+00:00
 ! Expires: 5 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -820,12 +820,13 @@ caroloportunidades.com.br##+js(no-setTimeout-if, hasAdblock)
 @@||popads.net/js/adblock.js$xmlhttprequest,domain=caroloportunidades.com.br
 ! https://github.com/AdguardTeam/AdguardFilters/issues/186902
 ! https://github.com/AdguardTeam/AdguardFilters/issues/184038
-/asb1.js$domain=anitube.vip|hinatasoul.com
-@@||ads.anitube.vip^$xmlhttprequest,domain=anitube.vip|hinatasoul.com|dattebayo-br.com
-@@||popads.net/js/adblock.js$xmlhttprequest,domain=anitube.vip|hinatasoul.com|dattebayo-br.com
-@@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$xmlhttprequest,domain=anitube.vip|hinatasoul.com|dattebayo-br.com
-anitube.vip,hinatasoul.com##+js(set-constant, detectedAdblock, noopFunc)
-anitube.vip,hinatasoul.com##+js(no-fetch-if, /outbrain\.com|adligature\.com|quantserve\.com|srvtrck\.com/)
+/asb1.js$domain=anitube.vip|hinatasoul.com|anitube.us
+@@||ads.anitube.vip^$xmlhttprequest,domain=anitube.vip|hinatasoul.com|dattebayo-br.com|anitube.us
+@@||popads.net/js/adblock.js$xmlhttprequest,domain=anitube.vip|hinatasoul.com|dattebayo-br.com|anitube.us
+@@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$xmlhttprequest,domain=anitube.vip|hinatasoul.com|dattebayo-br.com|anitube.us
+@@||widgets.outbrain.com/outbrain.js$xmlhttprequest,domain=anitube.vip|hinatasoul.com|dattebayo-br.com|anitube.us
+anitube.us,anitube.vip,hinatasoul.com##+js(set-constant, detectedAdblock, noopFunc)
+anitube.us,anitube.vip,hinatasoul.com##+js(no-fetch-if, /outbrain\.com|adligature\.com|quantserve\.com|srvtrck\.com/)
 ! Fix for DNS filtering
 ! https://github.com/AdguardTeam/AdguardFilters/issues/157756
 ! Link from anitube.vip
@@ -2273,8 +2274,10 @@ todo-anime.net##+js(abort-current-script, document.addEventListener, window.loca
 generacionxbox.com#?#.theiaStickySidebar > div.widget:has(> div.textwidget > p > ins.adsbygoogle)
 tudn.com##div[class*="iconPromo"]
 tudn.com#?#.grid > div[class^="col-"]:has(> div[class^="mb-"] > div.flex > span:contains(En alianza con))
-yugenapp.lat##.fixed.left-0.min-h-\[250px\].min-w-\[250px\]
-yugenapp.lat##div[id][style^="min-width:250px;min-height:250px;"]
+yugenmangasbr.eltanews.com,yugenmangasbr.voblog.xyz###Content3
+yugenmangasbr.eltanews.com,yugenmangasbr.voblog.xyz###Content4
+yugenmangasbr.eltanews.com,yugenmangasbr.voblog.xyz###Content5
+yugenmangasbr.eltanews.com,yugenmangasbr.voblog.xyz##[contentid="Content1"]
 ||api-branch-handle.anroll.net/services/adcash/autotag
 eurosport.es##div[class*="-advert"]
 putinho.net###text-html-widget-2
@@ -2294,7 +2297,8 @@ lavozdegalicia.es#$#body { padding-top: 0 !important; }
 eltiempo.com##div[content-ad-type]
 portalbsd.com.br##.row > div[style^="height:"]:has(> div[class^="text-"] > a[href][target="_blank"] > img[src^="images/publicidade/"])
 portalbsd.com.br##.row > div.col-md-12:has(> div.panel > center > a[href][target="_blank"] > img[src^="images/publicidade/"])
-jobsibe.com##.body-wrap > div[class^="c-sidebar c-top-"]:not(:has(div[class*="widget-manga-popular"]))
+marcialhub.xyz##.sidebar-hidden > .ad + .c-sidebar
+marcialhub.xyz,jobsibe.com##.body-wrap > div[class^="c-sidebar c-top-"]:not(:has(div[class*="widget-manga-popular"]))
 pelisenhd.org###image_banner_turk_id
 elchapuzasinformatico.com###pc_sidebar_300x600_1
 elchapuzasinformatico.com##body .ads:not(#style_important)
