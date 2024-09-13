@@ -21741,7 +21741,7 @@ https://*adtech_uid=$~third-party,xmlhttprequest,domain=lena-miro.ru|levik.blog|
 !||www.liveinternet.ru/users/$csp=script-src 'unsafe-inline' 'unsafe-eval' i.li.ru https://www.liveinternet.ru/cgi-bin/rpls.fcgi?list= https://www.liveinternet.ru/spell/spell.js https://www.liveinternet.ru/share/js/share.js https://www.liveinternet.ru/4Ek/JS/diary/main/nav/regoradd.js https://www.liveinternet.ru/4Ek/JS/diary/trans.js
 !||www.liveinternet.ru/|$csp=script-src 'unsafe-inline' 'unsafe-eval' i.li.ru https://www.liveinternet.ru/utf/lici.js https://www.liveinternet.ru/utf/li.js https://www.liveinternet.ru/utf/main_new.js
 ! Pikabu (ловушка для обфускации)
-||pikabu.ru/*%*.*?*=$xmlhttprequest,domain=pikabu.ru
+||pikabu.ru/*.*=*?*=$xmlhttprequest,domain=pikabu.ru
 ! селекторы
 anidub.vip,anidubonline.com##.plyr__menu
 anidub.vip,anidubonline.com##.plyr__progress__buffer
@@ -22230,8 +22230,18 @@ mirtesen.ru##[id^="unit_"]
 ~mirtesen.ru,~smi2.ru##a[href*="://smi2.ru/newdata/news?ad="]
 ~smi2.ru##a[href*="://smi2.ru/newdata/news?ad="] *
 !
-! зеркала MySeria.NET
+! зеркала MySeria.NET https://vk.com/myserianet
+! частные
+fanserial.fun,fanserialstv.net##.article-aside-promo a[href][target="_blank"]
+fanserial.fun,fanserialstv.net##.flex-promo-series > .left-col > :not(#players):not(.serial-series-info)
+fanserial.fun,fanserialstv.net##.flex-promo-series > .right-col a[href][target="_blank"]
+! общие
+##.article-aside-promo a[href][target="_blank"]
 ##.flex-promo-series > .left-col > :not(#players):not(.serial-series-info)
+##.flex-promo-series > .right-col a[href][target="_blank"]
+! запросы
+.xml?rand=$domain=fanserial.fun|fanserialstv.net
+@@||v*.plrjs.org/*.xml?rand=$xmlhttprequest,domain=fanserial.fun|fanserialstv.net
 !
 ! Одноклассники
 ok.ru###hook_Block_AvatarPromoMenu
@@ -22760,7 +22770,7 @@ yandex.by,yandex.kz,yandex.ru,yandex.uz##.i-bem.b-timetable__row[onclick*="awaps
 yandex.by,yandex.kz,yandex.ru,yandex.uz##.i-bem.stripe_type_promo
 yandex.by,yandex.kz,yandex.ru,yandex.uz##.i-bem.tv-grid__item-adv
 yandex.by,yandex.kz,yandex.ru,yandex.uz##.i-bem.tv-sortable-item.tv-sortable-item_sortable_no
-ya.ru##.i-mini-bem.banner
+ya.ru##.i-mini-bem[class*="banner"]
 ya.ru,yandex.by,yandex.kz,yandex.ru,yandex.uz##.layout__banner
 market.yandex.by,market.yandex.kz,market.yandex.ru##.layout_type_search.headline__footer
 ya.ru,yandex.by,yandex.kz,yandex.ru,yandex.uz##.main__distr-popup
@@ -28297,8 +28307,8 @@ sawlive.tv##body[onclick^="closeMyAd"] > div[id][style*="position"][style*="back
 cq.ru##div[class]:not([class*="-"]):not([class*="_"]):matches-css(margin-top: 16px)
 ozon.ru##div[data-widget="banner"]:matches-path(/my/reviews/promo):style(display: block !important)
 pronpic.org##div[style="color:red;font-size:25px;"], .adblock_loock
+fanserial.fun,fanserialstv.net,hdrezka.*,rezka.*##+js(set-constant, Object.prototype.preroll, undefined)
 hdrezka.*,rezka.*##+js(abort-current-inline-script, document.getElementsByTagName, AMSP.loadAsset)
-hdrezka.*,rezka.*##+js(set-constant, Object.prototype.preroll, undefined)
 howdyho.*##+js(no-setInterval-if, _0x, 1000)
 howdyho.*##+js(set-attr, #progress-value, data-timer, 16)
 dzen.ru##iframe[style^="position:"][style*="absolute"][srcdoc]:remove()
@@ -28350,6 +28360,7 @@ kinoafisha.info##videotronic-player:remove-attr(data-video-autoplay)
 ||strm.yandex.ru^$media,redirect=empty,domain=1tv.ru|karaoke.ru|mediavitrina.ru|yastatic.net
 ||ts.kg/olol*.mp4$media,redirect=noop-0.1s.mp3
 ||u-stream.in/start/*&autoplay=1$subdocument,removeparam=|
+||v*.plrjs.org/*.xml$important,xmlhttprequest,redirect=noopvast-3.0
 ||v*.plrjs.org/*.xml|$important,xmlhttprequest,redirect=noop.txt
 ||video.matchtv.ru/iframe/feed/*autostart=1$subdocument,removeparam=autostart
 ||video.matchtv.ru/iframe/feed/*autostart=1$subdocument,removeparam=skin_name
