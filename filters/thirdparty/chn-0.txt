@@ -1,10 +1,10 @@
 ![Adblock Plus 2.0]
-! Checksum: /HCe1iHbA3aT4ijpLU6TEw
-! Diff-Path: ../patches/224/224-s-1726716999-3600.patch
+! Checksum: ZFmnx8CLlu0HqCGyrwr4HQ
+! Diff-Path: ../patches/224/224-s-1726799800-3600.patch
 ! Title: AdGuard Chinese filter
 ! Description: EasyList China + AdGuard Chinese filter. Filter list that specifically removes ads on websites in Chinese language.
-! Version: 2.1.22.13
-! TimeUpdated: 2024-09-19T03:33:24+00:00
+! Version: 2.1.22.21
+! TimeUpdated: 2024-09-20T02:33:29+00:00
 ! Expires: 5 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -76,6 +76,7 @@
 ! Bad: ||adssubdomain.legitwebsite.com^ (should be in adservers_firstparty.txt)
 !
 !
+||mm.wxc.cc^
 ||xn--mts60is5y5uk.com^
 ||dfqzah.xyz^
 ||lafacw.xyz^
@@ -309,6 +310,8 @@
 ! Bad: ||ad.doubleclick.net^ (should be in adservers.txt)
 !
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/189087
+hmanga.world##+js(no-fetch-if, method:HEAD)
 ! https://github.com/AdguardTeam/AdguardFilters/issues/183017
 fsbot.xyz##+js(no-fetch-if, pagead2.googlesyndication.com)
 ! https://github.com/AdguardTeam/AdguardFilters/issues/182114
@@ -1078,6 +1081,9 @@ $script,third-party,denyallow=authkong.com|rsc.cdn77.org|linkvertise.com|fastly.
 !
 !
 !
+news.cnyes.com##.content-main > div:empty
+news.cnyes.com##.content-main > div:has(> div[id^="div-gpt-"])
+news.cnyes.com##article > div:has(> div[id^="div-gpt-"])
 digitimes.com.tw##.edm-frame:has(> .adtext)
 ||bjxty88.com/js/foot.js
 damon624.pixnet.net##aside[data-advertisement="true"]
@@ -3199,7 +3205,7 @@ bmvc2020-conference.com#@#div[id][style="width: 100%;"] > iframe[scrolling="no"]
 /ab_my/pc_pf.js
 /ab_res/m/common.js
 /ab_res/pc/fixed/fixed.js
-/acmsd/*
+/acmsd/*$script
 /AD2v1.1.js
 /ad_unified_access?
 /adcg/*
@@ -4713,6 +4719,20 @@ newduba.cn###jq_youxi
 ||38.33.15.*.gif
 ||67.21.92.*.gif
 ||cupfox.app^$third-party
+||pmzlnt.xyz^
+||imusye.xyz^
+||bgbg00.fun^
+||fwsfwef2.fun^
+||vvadz.cc^
+||wpsbaq.xyz^
+||blinxmi.icu^
+||pjaihds.icu^
+||lkiterl.top^
+||dasda64.fun^
+||iffobi.xyz^
+||jauql.top^
+||okiterk.top^
+||786yfvedhcbxjk.top^
 ||ukitert.top^
 ||csdcfvgf4.fun^
 ||megydyk.icu^
