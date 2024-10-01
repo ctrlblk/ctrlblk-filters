@@ -1,7 +1,7 @@
 [uBlock Origin]
 ! Title: List-KR for uBlock Origin
 ! Description: List-KR for uBlock Origin. Maintained by the adblock community and AdGuard.
-! Version: 2024.0927.0
+! Version: 2024.0930.0
 ! Expires: 12 hours
 ! Homepage: https://github.com/List-KR/List-KR
 ! Support: https://list-kr-community.pages.dev/docs/
@@ -3020,6 +3020,9 @@ zzzz.lol#$?#.ent_wrapper.slide-vertical-effect .ent_news:not(:has(.ent_prefix:co
 ||amazon-adsystem.com/aax2/apstag.js$script,redirect=amazon_apstag.js
 ||googletagservices.com/tag/js/gpt.js$script,redirect=googletagservices_gpt.js
 ||securepubads.g.doubleclick.net/tag/js/gpt.js$script,redirect=googletagservices_gpt.js
+
+m.bunjang.co.kr#?#div[class^="sc-"] > div[class*=" "]:has(> a[href^="/products/"]):has-text(AD)
+m.bunjang.co.kr#?#div[class^="sc-"] > div[class*=" "]:has(> a[href^="https://"]):has-text(광고)
 search.tmon.co.kr#?#.deallist_wrap li[data-d].item:has(span[role="presentation"] > button:has-text(AD))
 namu.wiki#?#aside > div[class*=" "]:has(> img[class] ~ div[class]:has-text(광고))
 m.pay.naver.com#?##content > .recommend_section:has(> div[style^="padding:"] > #m_pay_deliverytracking):has-text(/^[ \n]+$/)
