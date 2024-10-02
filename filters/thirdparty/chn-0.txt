@@ -1,10 +1,10 @@
 ![Adblock Plus 2.0]
-! Checksum: U5/pflXf1ZHEbKb9CP7KaA
-! Diff-Path: ../patches/224/224-s-1727757403-3600.patch
+! Checksum: IEHSD2dMgsyOU6A8bn3fdw
+! Diff-Path: ../patches/224/224-s-1727843788-3600.patch
 ! Title: AdGuard Chinese filter
 ! Description: EasyList China + AdGuard Chinese filter. Filter list that specifically removes ads on websites in Chinese language.
-! Version: 2.1.22.88
-! TimeUpdated: 2024-10-01T04:33:14+00:00
+! Version: 2.1.22.98
+! TimeUpdated: 2024-10-02T04:33:15+00:00
 ! Expires: 5 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -76,6 +76,8 @@
 ! Bad: ||adssubdomain.legitwebsite.com^ (should be in adservers_firstparty.txt)
 !
 !
+||krbulhb.com^
+||wl.uqwjdhgv.top^
 ||mm.wxc.cc^
 ||xn--mts60is5y5uk.com^
 ||dfqzah.xyz^
@@ -1077,10 +1079,13 @@ ipv6.baidu.com,www.baidu.com,www1.baidu.com,xueshu.baidu.com###content_left > .r
 ! Incorrectly blocked domains can be excluded using regex(synchronize this regexp in all filters)
 /^(?!.*(authkong.com|rsc.cdn77.org|linkvertise.com|fastly.net|statically.io|sharecast.ws|b-cdn.net|bunnycdn.ru|bootstrapcdn.com|cdn.ampproject.org|cloudflare.com|cdn.staticfile.org|disqus.com|disquscdn.com|dmca.com|ebacdn.com|facebook.net|fastlylb.net|fbcdn.net|fluidplayer.com|fontawesome.com|github.io|google.com|googleapis.com|googletagmanager.com|gstatic.com|jquery.com|jsdelivr.net|jwpcdn.com|jwplatform.com|polyfill.io|recaptcha.net|shrink.pe|twitter.com|ulogin.ru|unpkg.com|userapi.com|vidazoo.com|(\/\/|\.)vk\.com|yandex.|yastatic.net|ytimg.com|zencdn.net|player|youtube.com|cackle.me|googleoptimize.com|vuukle.com|chatango.com|twimg.com|google-analytics.com|hcaptcha.com|raincaptcha.com|media-imdb.com|blogger.com|hwcdn.net|instagram.com|wp.com|imgsmail.ru|cloudflare.net|(\/\/|\.)x\.com)).*$/$third-party,script,_____,domain=manshuxs.com|yemancomic.com|qimiaoxiaoshuo.com|gaofuwu.org|nxpaaq.com|dengbi2.com|92hm.top|634.tv|myhaitang.cc|ckplayer.vip
 ! Similar to regexp above, but using the denyallow modifier
-$script,third-party,denyallow=authkong.com|rsc.cdn77.org|linkvertise.com|fastly.net|statically.io|sharecast.ws|b-cdn.net|bunnycdn.ru|bootstrapcdn.com|cdn.ampproject.org|cloudflare.com|cdn.staticfile.org|disqus.com|disquscdn.com|dmca.com|ebacdn.com|facebook.net|fastlylb.net|fbcdn.net|fluidplayer.com|fontawesome.com|github.io|google.com|googleapis.com|googletagmanager.com|gstatic.com|jquery.com|jsdelivr.net|jwpcdn.com|jwplatform.com|polyfill.io|recaptcha.net|shrink.pe|twitter.com|ulogin.ru|unpkg.com|userapi.com|vidazoo.com|vk.com|yastatic.net|ytimg.com|zencdn.net|youtube.com|cackle.me|googleoptimize.com|vuukle.com|chatango.com|twimg.com|google-analytics.com|hcaptcha.com|raincaptcha.com|media-imdb.com|blogger.com|hwcdn.net|instagram.com|wp.com|fastcomments.com|plyr.io|cloudflare.net|rabbitstream.net|x.com,_____,domain=wap.dmwenku.com|m.wfxs.tw|h.fkxs.net|wap.ishuquge.la|m.91zww.com|592mh.top|dubuxiaoshuo.com|clm410.buzz|bookbl.com|shuku99.com|qiyoudy2.com|1yydstxt178.com|rouman5.com|feijisu20.com|iqb5.org|wap.xkushu.com|spoilertop.com|booktxts.com|bixia33.com|rouwenwu19.com|91porny.com|yznnw.com|vodtw.la|ckplayer.vip|uuread.tw|fengchedmp.com|aeahsck.cc|xiaoshubao.net|69xx03608.xyz
+$script,third-party,denyallow=authkong.com|rsc.cdn77.org|linkvertise.com|fastly.net|statically.io|sharecast.ws|b-cdn.net|bunnycdn.ru|bootstrapcdn.com|cdn.ampproject.org|cloudflare.com|cdn.staticfile.org|disqus.com|disquscdn.com|dmca.com|ebacdn.com|facebook.net|fastlylb.net|fbcdn.net|fluidplayer.com|fontawesome.com|github.io|google.com|googleapis.com|googletagmanager.com|gstatic.com|jquery.com|jsdelivr.net|jwpcdn.com|jwplatform.com|polyfill.io|recaptcha.net|shrink.pe|twitter.com|ulogin.ru|unpkg.com|userapi.com|vidazoo.com|vk.com|yastatic.net|ytimg.com|zencdn.net|youtube.com|cackle.me|googleoptimize.com|vuukle.com|chatango.com|twimg.com|google-analytics.com|hcaptcha.com|raincaptcha.com|media-imdb.com|blogger.com|hwcdn.net|instagram.com|wp.com|fastcomments.com|plyr.io|cloudflare.net|rabbitstream.net|x.com,_____,domain=wap.dmwenku.com|m.wfxs.tw|h.fkxs.net|wap.ishuquge.la|m.91zww.com|592mh.top|dubuxiaoshuo.com|clm410.buzz|bookbl.com|shuku99.com|qiyoudy2.com|1yydstxt178.com|rouman5.com|feijisu20.com|iqb5.org|wap.xkushu.com|spoilertop.com|booktxts.com|bixia33.com|rouwenwu19.com|91porny.com|yznnw.com|vodtw.la|ckplayer.vip|uuread.tw|fengchedmp.com|aeahsck.cc|xiaoshubao.net|69xx03608.xyz|wap.yushuwu.cloud
 !
 !
 !
+||1688by.com/static/default/js/loadLM.js
+$websocket,domain=wap.yushuwu.cloud
+wap.yushuwu.cloud##+js(noeval-if, WebSocket)
 83novel.com##.page-content > div[style]:has(> script[src="https://a.magsrv.com/ad-provider.js"])
 koc.com.tw##.single_ads
 69xx03608.xyz##.jsv-layer
@@ -4748,7 +4753,19 @@ newduba.cn###jq_youxi
 ||38.33.15.*.gif
 ||67.21.92.*.gif
 ||cupfox.app^$third-party
+||kwurserd.top^
+##a[href*=".zxzjys.com/"]
+||zeryt111.fun^
 ||tuxpfiok.icu^
+||62zd0.icu^
+||jwursera.top^
+||oiuuuc.xyz^
+||oeryt111.fun^
+||ayalcid.icu^
+||mqwtgq.xyz^
+||vrdfxioe.icu^
+||ceryt111.fun^
+||kloojzn.icu^
 ||ieryt111.fun^
 ||cwwgqu.xyz^
 ||ckyriuf.icu^
@@ -13378,7 +13395,13 @@ hxsame.hexun.com$domain=~quote.hexun.com
 ||ads.yeeyi.com^
 /cuid/*$domain=colamanga.com
 ||tsdm39.com/img01/MP3/GG/
+||hdmoli.*/static/js/pop_promotion.
 szxx.com.cn###A0
+kmeiju.com##.ad
+wenxuecity.com###gg_viewBottom
+wenxuecity.com##.sharewechat + .otherposts
+ysgc.fun,ysgc.tv##.swiper-slide > a[target="_blank"]
+ysgc.fun,ysgc.tv##.myui-panel_bd > div > a[target="_blank"]
 msn.cn##gaming-discover-strip
 msn.cn##casual-games-carousel-card
 msn.cn##.game-advertise-container
@@ -18881,7 +18904,7 @@ weibo.com#?#.vue-recycle-scroller__item-view:-abp-has(img[class^="head-info_auth
 weibo.com#?#.vue-recycle-scroller__item-view:-abp-has(span[class^="wbpro-icon-search"]:-abp-contains(/商|上新|好物/))
 weibo.com#?#.wbpro-side-panel:-abp-has(span[class^="wbpro-icon-search"]:-abp-contains(商))
 weibo.com#?#tr:-abp-has(> .td-03 > .icon-txt-recommend)
-wenxuecity.com#?#div[class]:-abp-has(>.adlab_border)
+wenxuecity.com#?#div:-abp-has(>label[class^="adlab"])
 wezhicms.com#?#.card-main:-abp-has(.waimai-item-img)
 x6d.com#?#li:-abp-has(>.myad)
 yahoo.com#?#.js-stream-content:-abp-has(a[href*=".promotions."])
