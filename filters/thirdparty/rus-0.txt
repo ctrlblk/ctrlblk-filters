@@ -11142,7 +11142,7 @@ igdz1.ru^$script,domain=igdz.ru
 ||compedu.ru^$domain=kopilkaurokov.ru
 ||consmed.ru/branding/
 ||consmed.ru/tizergen/
-||cont.ws/js/test.js?cf=$script
+||cont.ws/js/*.js?cf=$script
 ||conversion.im/admin/ajax/banners/
 ||cookielaw.org^$domain=adme.media
 ||cookreactor.com^$subdocument
@@ -21752,7 +21752,7 @@ $csp=script-src-attr 'none',domain=eurointegration.com.ua|pravda.com.ua
 @@||ssp.rambler.ru/capirs_async.js|$script,domain=www.championat.com
 https://*adtech_uid=$~third-party,xmlhttprequest,domain=lena-miro.ru|levik.blog|livejournal.com|olegmakarenko.ru|periskop.su|shakko.ru|shiro-kino.ru|vadimrazumov.ru
 ||imgfrost.net^$third-party
-||pikabu.ru/ajax/*uy=$xmlhttprequest,domain=pikabu.ru
+||pikabu.ru/ajax/*uu=$xmlhttprequest,domain=pikabu.ru
 ||ritsatv.ru^$csp=script-src
 ||ritsatv.ru^$popup
 ||ritsatv.ru^$~document
@@ -21766,8 +21766,8 @@ https://*adtech_uid=$~third-party,xmlhttprequest,domain=lena-miro.ru|levik.blog|
 ! селекторы
 anidub.vip,anidubonline.com##.plyr__menu
 anidub.vip,anidubonline.com##.plyr__progress__buffer
-e.mail.ru##.react-async div[class]:empty
 pikabu.ru#?#.stories-feed__container > .story:-abp-has(div:-abp-properties(/min-height: 20.px|min-height: 29.px|min-height: 30.px|min-height: 300./))
+e.mail.ru##:not(.attach-thumb__thumb-elem) > .react-async div > div[class]:not([style]):not([data-test-id]):empty
 fonmod.com,howdyho.net,howdyho.pro,ritsatv.ru##:not(my-obnaruzhili-blokirovshchik)
 android-mafia.com,game4you.top,games-pc.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##:not(this-site-promotes-malware)
 @@||ozon.ru/highlight/kursk-$elemhide
@@ -21776,6 +21776,7 @@ www.drive2.ru##[data-container="outer"]
 liveinternet.ru,sdamgia.ru##[data-container]
 sdamgia.ru##[data-name="partial-container"]
 www.drive2.ru##[data-sticky-adtune]
+e.mail.ru##[data-styled="active"] + div
 www.drive2.ru##[data-test="AdKebabAndLabel--adLabelContent"]
 dzen.ru,liveinternet.ru##[data-wrapper]
 dzen.ru##[data_name]
@@ -21806,6 +21807,7 @@ liveinternet.ru##div[style*="!important; "]
 sdamgia.ru##div[style*="important;"][style*="width:"][style*="height:"] *
 www.drive2.ru##iframe[style="display: block; border-width: 0px;"]
 www.drive2.ru##iframe[style="opacity: 1;"]
+e.mail.ru##span[style*="--sidebar-column-width:"] > div > div ~ div ~ div
 e.mail.ru##span[style*="--sidebar-column-width:"] > div ~ div ~ div
 liveinternet.ru##style + div > div > div > div > div a
 !#endif
@@ -22169,6 +22171,7 @@ my.mail.ru##div[style^="position:"][style*=";display:"][style*=";opacity:1;visib
 ! Облако
 cloud.mail.ru##div[class*="advHeaderStatic"]
 cloud.mail.ru##div[class^="Folder__worm"]
+cloud.mail.ru##div[class^="ReactViewer__attachesSidebar"]
 cloud.mail.ru##div[class^="ReactViewer__bottominfoWrapper-"]
 cloud.mail.ru##div[class^="Worm__root-"]
 cloud.mail.ru##section > div[class^="Rightinfo__header"]
@@ -27870,7 +27873,6 @@ mail.ru##div:not(.grid__main-col) > div[slot="main-column"] .search-container:st
 cloud.mail.ru##div[class^="Datalistinfo__root"]
 cloud.mail.ru##div[class^="Public-desktop__rightCol-"]
 cloud.mail.ru##div[class^="Public__folderContent"]:style(padding-right: 0 !important)
-cloud.mail.ru##div[class^="ReactViewer__attachesSidebarinfo-"]
 cloud.mail.ru##div[class^="ReactViewer__attachesinfo-"]
 cloud.mail.ru##div[class^="ReactViewer__root-"]:style(--bottom-banner-height: 1px !important)
 my.mail.ru##div[class^="app-adv-"]
