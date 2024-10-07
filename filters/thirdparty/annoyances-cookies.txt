@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: EasyList – Cookie Notices
-! Last modified: Sun, 06 Oct 2024 02:13:29 +0000
+! Last modified: Sun, 06 Oct 2024 21:50:25 +0000
 ! Expires: 7 days (update frequency)
 ! *** easylist:template_header.txt ***
 !
@@ -20700,6 +20700,7 @@ schrack-seconet.com##.pageOverlay
 ticketmaster.ca##.page__legal-link
 advisto.com##.page_warning
 tickets.siampark.net##.panel_cookies
+bgci.org##.pastry
 maximapaints.com##.pb-sm.container
 ancientegyptmagazine.com,minervamagazine.com##.pcb
 appoutlet.github.io,touchstonerenard.com##.pcb__banner
@@ -22451,6 +22452,9 @@ uhrzeit123.de##+js(set-cookie, _u123_cc, yes)
 uhrzeit123.de##+js(set-cookie, ga-disable, true)
 marinelink.com##+js(set-cookie, GDPR, 9)
 againstdata.com##+js(set-cookie, dad_consent, true)
+spuntinoheathrow.com##+js(set-cookie, essential_cookies_enabled, true)
+spuntinoheathrow.com##+js(set-cookie, google_cookies_enabled, false)
+pzw.org.pl##+js(set-cookie, cookiepolicyinfo_new2, true)
 camra.org.uk##+js(set-cookie, camra_experience_cookie_consent, 1)
 parkguellonline.cat##+js(set-cookie, valCookie1, 1)
 stroga-festival.de##+js(set-cookie, third-party, required, , reload, 1)
@@ -23768,6 +23772,10 @@ tnt.it##.cookie-message
 puravita.ch###cookie-banner-modal
 puravita.ch##.modals-overlay
 puravita.ch##body:style(overflow: auto !important; position: initial !important;)
+! dw.com
+dw.com###cmpwrapper
+dw.com##body[style="overflow: hidden;"]:style(overflow: auto !important;)
+dw.com##+js(set, Object.prototype.hasConsent, trueFunc)
 !! .CookieModal
 coiffhair.com##.CookieModal
 coiffhair.com##.CookieContainerOverlay
@@ -30052,7 +30060,7 @@ concursolutions.com,forbes.com,formula1.com,fortune.com,proximus.be,proximustv.b
 @@||zensus2022.de/SiteGlobals/Modules/CookieBanner/*/CookieBanner.json?$~third-party,xmlhttprequest
 
 ! Title: uBlock filters – Cookie Notices
-! Last modified: Tue, 01 Oct 2024 07:50:41 +0000
+! Last modified: Mon, 07 Oct 2024 05:09:32 +0000
 ! Expires: 7 days
 ! Description: Filters optimized for uBlock Origin, to be used with EasyList's and/or Adguard's "Cookie Notices" list(s)
 ! License: https://github.com/uBlockOrigin/uAssets/blob/master/LICENSE
@@ -31550,7 +31558,9 @@ costcobusinessdelivery.com##+js(trusted-set-cookie, OptanonConsent, groups=BG117
 costcobusinessdelivery.com##+js(trusted-set-cookie, OptanonAlertBoxClosed, $currentDate$)
 
 ! https://github.com/uBlockOrigin/uAssets/issues/23727
+! https://github.com/uBlockOrigin/uAssets/issues/25509
 seznam.cz##+js(trusted-set-cookie, euconsent-v2, CP-wiwAP-wiwAD3ACLCSA1EsAP_gAEPgAATIJVwQgAAwAKAAsACAAFQALgAZAA6ACAAFAAKgAWgAyABoADmAIgAigBHACSAEwAJwAVQAtgBfgDCAMUAgACEgEQARQAjoBOAE6AL4AaQA4gB3ADxAH6AQgAkwBOACegFIAKyAWYAuoBgQDTgG0APkAjUBHQCaQE2gJ0AVIAtQBbgC8wGMgMkAZcA0oBqYDugHfgQHAhcBGYCTQEqwQugRQAKAAsACoAFwAQAAyABoAEQAI4ATAAqgBiAD8AISARABEgCOAE4AMsAZoA7gB-gEIAIsAXUA2gCbQFSALUAW4AvMBggDJAGXANTAhcAA.YAAAAAAAAWAA, , , domain, seznam.cz)
+cmp.seznam.cz##+js(trusted-click-element, .szn-cmp-dialog-container >>> button[data-testid="cw-button-non-targeted-ad"], , 1000)
 
 ! https://github.com/uBlockOrigin/uAssets/issues/23809 - multimedia player
 issue-council.robertsspaceindustries.com##+js(trusted-set-cookie, pleaseFix.privacy, {%22analyticsCookie%22:false%2C%22personalisationCookie%22:false%2C%22targetedAdvertisingCookie%22:false%2C%22multimediaPlayerCookie%22:true})
@@ -31817,3 +31827,14 @@ linternaute.com##body.appconsent_noscroll:style(overflow: auto !important;)
 
 ! essential only 
 visionapartments.com##+js(trusted-set-cookie, ota_ga_consent, eyJkYXRlIjoiMjAyNC0wOS0yOFQxODoyNToxMy40MjlaIiwibmVzY2Vzc2FyeSI6dHJ1ZSwicGVyZm9ybWFuY2UiOmZhbHNlLCJtYXJrZXRpbmciOmZhbHNlfQ==)
+
+! https://github.com/uBlockOrigin/uAssets/issues/25544
+dw.com##+js(set, Object.prototype.hasConsent, trueFunc)
+dw.com##+js(set, cmp_autoreject, true)
+
+! https://winfuture.de/videos/Spiele/New-World-Aeternum-Der-Launch-Trailer-laeutet-eine-neue-Aera-ein-26728.html
+winfuture.de##+js(set, Object.prototype.hasConsent, trueFunc)
+winfuture.de##+js(set, cmp_autoreject, true)
+winfuture.de##+js(nostif, checkPURLayerMustBeShown)
+winfuture.de##.videop em:not([data-video-src]):remove()
+winfuture.de##.videop em[data-video-src]:style(display: block !important;)
