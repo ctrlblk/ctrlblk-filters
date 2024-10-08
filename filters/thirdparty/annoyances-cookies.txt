@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: EasyList – Cookie Notices
-! Last modified: Sun, 06 Oct 2024 21:50:25 +0000
+! Last modified: Tue, 08 Oct 2024 02:08:56 +0000
 ! Expires: 7 days (update frequency)
 ! *** easylist:template_header.txt ***
 !
@@ -20226,7 +20226,7 @@ azimutyachts.com,azimutyachts.com.mt##.floatFooter
 3dslash.net##.floatPopup
 businessleadersmalta.com,maltatoday.com.mt##.floating-bar
 green-circle.co##.floating-group.FloatingGroup.bubble-element
-kerno.io,trophi.ai##.flowappz-cookie-consent
+kerno.io,tm3app.com,trophi.ai##.flowappz-cookie-consent
 novantas.com##.foobar-container
 cioapplicationseurope.com,doubleviking.com,fallentitans.com,peakd.com##.footer
 subzero-wolf.com##.footer-announcement
@@ -22455,6 +22455,7 @@ againstdata.com##+js(set-cookie, dad_consent, true)
 spuntinoheathrow.com##+js(set-cookie, essential_cookies_enabled, true)
 spuntinoheathrow.com##+js(set-cookie, google_cookies_enabled, false)
 pzw.org.pl##+js(set-cookie, cookiepolicyinfo_new2, true)
+livedoor.biz##+js(set-cookie, livedoor-blog-gdpr-agreed, 1)
 camra.org.uk##+js(set-cookie, camra_experience_cookie_consent, 1)
 parkguellonline.cat##+js(set-cookie, valCookie1, 1)
 stroga-festival.de##+js(set-cookie, third-party, required, , reload, 1)
@@ -27680,6 +27681,7 @@ legoschool.jp###cookie-config
 juken-mikata.net###cookieAlt
 tokyostarbank.co.jp###floatArea
 wisdom.nec.com###func-cookie
+blog.livedoor.jp###gdpr-banner
 jaa.or.jp###js-gdpr
 3ple.jp###layer_board_area
 olfa.co.jp###modal-content
@@ -30060,7 +30062,7 @@ concursolutions.com,forbes.com,formula1.com,fortune.com,proximus.be,proximustv.b
 @@||zensus2022.de/SiteGlobals/Modules/CookieBanner/*/CookieBanner.json?$~third-party,xmlhttprequest
 
 ! Title: uBlock filters – Cookie Notices
-! Last modified: Mon, 07 Oct 2024 05:09:32 +0000
+! Last modified: Tue, 08 Oct 2024 02:20:57 +0000
 ! Expires: 7 days
 ! Description: Filters optimized for uBlock Origin, to be used with EasyList's and/or Adguard's "Cookie Notices" list(s)
 ! License: https://github.com/uBlockOrigin/uAssets/blob/master/LICENSE
@@ -31821,9 +31823,12 @@ web.de##+js(trusted-click-element, button[data-id="save-all-pur"], , 1000)
 
 ! https://github.com/uBlockOrigin/uAssets/issues/25366
 ! https://www.linternaute.com/hightech/jeux-video/5995467-inzoi-quel-est-ce-jeu-aux-graphismes-hyper-realistes-qui-entend-concurrencer-les-sims/
-linternaute.com##+js(trusted-click-element, button.button__acceptAll)
-linternaute.com###appconsent:style(visibility: hidden !important;)
+linternaute.com##+js(trusted-click-element, button.button__skip)
+linternaute.com##+js(rpnt, script, typeof jQuery !==, '(()=>{window.addEventListener("load",(function(){if(window.localStorage.appconsent){const consents=window.JSON.parse(window.localStorage.appconsent);if(consents&&consents.consents&&consents.consents.vendors){for(vendor of consents.consents.vendors){if(vendor.name==="Facebook"&&vendor.status===1)return}}}let i=0;var intervalId=window.setInterval((function(){try{i+=1;if(typeof _gtm?.consent?.cm?.strategy?.updateExtraVendorStatus!=="function")return;["facebook","instagram","pinterest","twitter","youtube"].forEach((vendor=>{_gtm.consent.cm.strategy.updateExtraVendorStatus(vendor,!0)}))}catch(_){return}if(i===5)clearInterval(intervalId)}),1e3)}))})();typeof jQuery !==')
+linternaute.com##+js(set, _gtm.consent.cm.strategy.options.cmpay.enabled, false)
 linternaute.com##body.appconsent_noscroll:style(overflow: auto !important;)
+linternaute.com###appconsent:style(visibility: hidden !important;)
+linternaute.com##.ccminsert > .jEmbedTagPlaceholder.pending > .jEmbedTagPlaceholder__content
 
 ! essential only 
 visionapartments.com##+js(trusted-set-cookie, ota_ga_consent, eyJkYXRlIjoiMjAyNC0wOS0yOFQxODoyNToxMy40MjlaIiwibmVzY2Vzc2FyeSI6dHJ1ZSwicGVyZm9ybWFuY2UiOmZhbHNlLCJtYXJrZXRpbmciOmZhbHNlfQ==)
@@ -31838,3 +31843,8 @@ winfuture.de##+js(set, cmp_autoreject, true)
 winfuture.de##+js(nostif, checkPURLayerMustBeShown)
 winfuture.de##.videop em:not([data-video-src]):remove()
 winfuture.de##.videop em[data-video-src]:style(display: block !important;)
+
+! https://github.com/uBlockOrigin/uAssets/issues/25568
+consent.caminteresse.fr##+js(trusted-click-element, button.accept-button)
+caminteresse.fr##[id^="sp_message_container"]:style(visibility: hidden !important;)
+caminteresse.fr##.sp-message-open body:style(overflow: auto !important;)

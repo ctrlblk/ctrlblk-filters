@@ -1,7 +1,7 @@
 [uBlock Origin]
 ! Title: List-KR for uBlock Origin
 ! Description: List-KR for uBlock Origin. Maintained by the adblock community and AdGuard.
-! Version: 2024.0930.0
+! Version: 2024.1007.0
 ! Expires: 12 hours
 ! Homepage: https://github.com/List-KR/List-KR
 ! Support: https://list-kr-community.pages.dev/docs/
@@ -516,6 +516,7 @@ m.cafe.naver.com##.banner_add.bottom:matches-path(/ca-fe\\/web\\/cafes\\/(steami
 /data/banner.json?$domain=~nintendo.*
 /ad-manager.min.js
 !
+||imgdb.in/b/$domain=gnu.kilho.net
 ||moneypin.biz/_next/image/?url=https%3A%2F%2Fmoneypin-web.s3.ap-northeast-2.amazonaws.com%2Fbizno-ad%2F
 ||kilho.net/img/b/
 /partners/*$domain=kilho.net
@@ -1537,6 +1538,7 @@ eegosa.com##section[id*="_ads_"]
 ! ##div[id*="_AD"]
 sports.donga.com##div[id*="_AD"]
 !
+gnu.kilho.net##div[id^="detect"]
 moneypin.biz##.flex > a[href][target="_blank"]
 chzzk.naver.com##div[class^="popup_cheat_key_container__"]
 kilho.net###coupangModal
@@ -2666,6 +2668,7 @@ www.erdcloud.com##.erd-ads-area
 !
 ! DOMAIN-REFRESHER: START
 !
+sptv24.com,sptv25.com,sptv26.com,sptv27.com,sptv28.com,sptv29.com,sptv30.com,sptv31.com,sptv32.com,sptv33.com,sptv34.com,sptv35.com,sptv36.com,sptv37.com##.modal_contents
 torrentpi144.com,torrentpi145.com,torrentpi146.com,torrentpi147.com,torrentpi148.com,torrentpi149.com,torrentpi150.com,torrentpi151.com,torrentpi152.com,torrentpi153.com,torrentpi154.com,torrentpi155.com,torrentpi156.com##style ~ .basic-post-gallery
 avguri4.com,avguri5.com,avguri6.com,avguri7.com,avguri8.com,avguri9.com,avguri10.com,avguri11.com,avguri12.com,avguri13.com,avguri14.com,avguri15.com##div[id$="_bn"]
 avpink365.com,avpink366.com,avpink367.com,avpink368.com,avpink369.com,avpink370.com,avpink371.com,avpink372.com,avpink373.com###foogallery_widget-3

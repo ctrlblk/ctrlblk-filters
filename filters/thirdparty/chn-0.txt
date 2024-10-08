@@ -1,10 +1,10 @@
 ![Adblock Plus 2.0]
-! Checksum: /p51D27dO6MNQQ5wt14mTw
-! Diff-Path: ../patches/224/224-s-1728275811-3600.patch
+! Checksum: OWH0dT2GaYSoFmgfTUabCg
+! Diff-Path: ../patches/224/224-s-1728362163-3600.patch
 ! Title: AdGuard Chinese filter
 ! Description: EasyList China + AdGuard Chinese filter. Filter list that specifically removes ads on websites in Chinese language.
-! Version: 2.1.23.40
-! TimeUpdated: 2024-10-07T04:33:32+00:00
+! Version: 2.1.23.48
+! TimeUpdated: 2024-10-08T04:32:57+00:00
 ! Expires: 5 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -4742,6 +4742,8 @@ newduba.cn###jq_youxi
 ##style + .a-loading
 ##style + .need_grid_img
 ##style + .vdgdo
+##DIV[style=" max-width:990px; margin:0 auto;"] > A > IMG[height="120px"]
+##DIV[style=" max-width:990px; margin:0 auto;"] > A > IMG[height="60px"]
 ##table[style="border:#7D8C8E solid 1px;height: 30px;text-align: center;"]
 ##td[id^="td_"] > a[href^="/htmm/"]
 ##vg-pause-d
@@ -4762,6 +4764,18 @@ newduba.cn###jq_youxi
 ||67.21.92.*.gif
 ||cnzz.trafficmanager.net^
 ||cupfox.app^$third-party
+||wswxsk.xyz^
+||qpyrqg.xyz^
+||xvzcfh.xyz^
+||nqyrywn.icu^
+||oxkqeu.xyz^
+||ukkiftx.icu^
+||iwursero.top^
+||kvkcei.xyz^
+||i2wq4.icu^
+||uegsjnk.com^
+||hwurseru.top^
+||oaiqksi.top^
 ||edadmy.xyz^
 ||kgymoc.xyz^
 ||xlxehr.xyz^
@@ -4798,6 +4812,7 @@ newduba.cn###jq_youxi
 ||twurseri.top^
 ||d2tf0.icu^
 ||bedzbu.xyz^
+||hongi7ie8owiie03.site^
 ||baigh8eosmgie02.site^
 ||hongi7ie8owiie02.site^
 ||loveameng.top^
@@ -13475,6 +13490,7 @@ hxsame.hexun.com$domain=~quote.hexun.com
 ||zzz4.com/JS_AD/
 ||zzzyk.com/js/
 szxx.com.cn###A0
+wenxuecity.com##div[id*="gg_"]
 szxx.com.cn###A1
 szxx.com.cn###A2
 yahoo.com###ACT_crazy
@@ -14134,12 +14150,9 @@ xiazaizhijia.com###gg_2
 324324.cn###gg_468_60
 324324.cn###gg_728_90
 miniie.com,tisai.com###gg_content
-wenxuecity.com###gg_multitext
-wenxuecity.com###gg_rightside
 kukuw.com###gg_rl
 7654.com###gg_top
 shouji56.com###gg_top_banner
-wenxuecity.com###gg_viewBottom
 baidu.com###ggbtm
 wenku.baidu.com###ggbtm-ads
 huya.com###ggcomment
