@@ -21761,7 +21761,7 @@ $csp=script-src-attr 'none',domain=eurointegration.com.ua|pravda.com.ua
 @@||ssp.rambler.ru/capirs_async.js|$script,domain=www.championat.com
 https://*adtech_uid=$~third-party,xmlhttprequest,domain=lena-miro.ru|levik.blog|livejournal.com|olegmakarenko.ru|periskop.su|shakko.ru|shiro-kino.ru|vadimrazumov.ru
 ||imgfrost.net^$third-party
-||pikabu.ru/ajax/*&*bkr=$xmlhttprequest
+||pikabu.ru/ajax/*&*bkq=$xmlhttprequest
 ||ritsatv.ru^$csp=script-src
 ||ritsatv.ru^$popup
 ||ritsatv.ru^$~document
@@ -21795,16 +21795,15 @@ pikabu.ru##article.story[data-text-length="1"]
 kp.kg,kp.kz,kp.md,kp.ru#?#body > #app div:-abp-properties(background-color: rgb(225, 231, 235))
 www.e1.ru#?#body > script[src^="https://www.e1.ru/"] ~ #app [itemprop] > figure:-abp-has(span:-abp-contains(чуть-чуть и видео загрузится))
 www.ixbt.com#?#body > style:-abp-contains(margin-top) {remove:true;}
-~e.mail.ru,mail.ru,~octavius.mail.ru#?#body[style="overflow: unset; max-height: unset;"] article:-abp-has(> div div:-abp-contains(/реклама|Рeклама|Рекламa|Реклaма|Реклaмa|Рeкламa|Реĸлама|ԯ|қ|Рeклaмa|Pеклама|Peклама/i))
+~e.mail.ru,mail.ru,~octavius.mail.ru##body[style="overflow: unset; max-height: unset;"] > div > style + div[id^="b"] > :not(.closeWrapper)
 ~e.mail.ru,mail.ru,~octavius.mail.ru##body[style="overflow: unset; max-height: unset;"] article:empty
+~e.mail.ru,mail.ru,~octavius.mail.ru#?#body[style="overflow: unset; max-height: unset;"] div:-abp-has(> div > div[style="height: 200px;"])
+~e.mail.ru,mail.ru,~octavius.mail.ru##body[style="overflow: unset; max-height: unset;"] div[style="height: 200px;"]
 ~e.mail.ru,mail.ru,~octavius.mail.ru##body[style="overflow: unset; max-height: unset;"] div[style^="margin-left: 3"]
 ~e.mail.ru,mail.ru,~octavius.mail.ru##body[style="overflow: unset; max-height: unset;"] div[style^="width: 3"]
-~e.mail.ru,mail.ru,~octavius.mail.ru#?#body[style="overflow: unset; max-height: unset;"] p:-abp-has(> div div:-abp-contains(/реклама|Рeклама|Рекламa|Реклaма|Реклaмa|Рeкламa|Реĸлама|ԯ|қ|Рeклaмa|Pеклама|Peклама/i))
 ~e.mail.ru,mail.ru,~octavius.mail.ru##body[style="overflow: unset; max-height: unset;"] p:empty
-~e.mail.ru,mail.ru,~octavius.mail.ru#?#body[style="overflow: unset; max-height: unset;"] section:-abp-has(> div div:-abp-contains(/^реклама|Рeклама|Рекламa|Реклaма|Реклaмa|Рeкламa|Реĸлама|ԯ|қ|Рeклaмa|Pеклама|Peклама/i))
 ~e.mail.ru,mail.ru,~octavius.mail.ru##body[style="overflow: unset; max-height: unset;"] section:empty
 ~e.mail.ru,mail.ru,~octavius.mail.ru##body[style="overflow: unset; max-height: unset;"] span:empty:not(.ph-marusia)
-~e.mail.ru,mail.ru,~octavius.mail.ru#?#body[style="overflow: unset; max-height: unset;"] span:not(.ph-marusia):-abp-has(> div div:-abp-contains(/реклама|Рeклама|Рекламa|Реклaма|Реклaмa|Рeкламa|Реĸлама|ԯ|қ|Рeклaмa|Pеклама|Peклама/i))
 sdamgia.ru##center > div[id][style]
 dzen.ru#?#div:-abp-has(> div:first-child > style + div a span)
 cq.ru#?#div:-abp-properties(content: "Реклама")
@@ -21822,6 +21821,11 @@ sdamgia.ru##div[style*="important;"][style*="width:"][style*="height:"] *
 www.drive2.ru##iframe[style="display: block; border-width: 0px;"]
 www.drive2.ru##iframe[style="opacity: 1;"]
 liveinternet.ru##style + div > div > div > div > div a
+!
+~e.mail.ru,mail.ru,~octavius.mail.ru#?#body[style="overflow: unset; max-height: unset;"] article:-abp-has(> div div:-abp-contains(/реклама|Рeклама|Рекламa|Реклaма|Реклaмa|Рeкламa|Реĸлама|ԯ|қ|eклaмa|Pеклама|Peклама|Peклaма/i))
+~e.mail.ru,mail.ru,~octavius.mail.ru#?#body[style="overflow: unset; max-height: unset;"] p:-abp-has(> div div:-abp-contains(/реклама|Рeклама|Рекламa|Реклaма|Реклaмa|Рeкламa|Реĸлама|ԯ|қ|eклaмa|Pеклама|Peклама|Peклaма/i))
+~e.mail.ru,mail.ru,~octavius.mail.ru#?#body[style="overflow: unset; max-height: unset;"] section:-abp-has(> div div:-abp-contains(/^реклама|Рeклама|Рекламa|Реклaма|Реклaмa|Рeкламa|Реĸлама|ԯ|қ|eклaмa|Pеклама|Peклама|Peклaма/i))
+~e.mail.ru,mail.ru,~octavius.mail.ru#?#body[style="overflow: unset; max-height: unset;"] span:not(.ph-marusia):-abp-has(> div div:-abp-contains(/реклама|Рeклама|Рекламa|Реклaма|Реклaмa|Рeкламa|Реĸлама|ԯ|қ|eклaмa|Pеклама|Peклама|Peклaма/i))
 !#endif
 soyztreid.website##:not(my-obnaruzhili-blokirovshchik)
 ||liferoom.net^*.$third-party,popup
@@ -22203,6 +22207,7 @@ love.mail.ru##.link-ad
 ||an.mail.ru/count/$domain=~e.mail.ru|~o2.mail.ru
 ||banners.mail.ru^$third-party
 ||bs.mail.ru^$image,domain=mail.ru
+||help.mail.ru/mail/faq/adblock$popup,~third-party
 ||horo.mail.ru/*/fast-slot.js
 ||mamba.ru/images/*/promo/
 ||media-stat.mail.ru^
@@ -27841,6 +27846,7 @@ mail.ru###grid .widget__container > .progress-bar-widget
 mail.ru###grid div[class^="feed__"]
 my.mail.ru###history_container > div[class][style*="display: block!important"]
 minigames.mail.ru###like-buttons
+mail.ru###mailbox:not(#id):style(visibility: unset !important; pointer-events: unset !important)
 minigames.mail.ru###portal-headline:style(margin-top: auto !important)
 hi-tech.mail.ru###portal-menu:style(margin: 0 !important)
 mail.ru###user-settings-modal > .user-settings-container > .user-settings-types > .user-settings-types__item:first-child
@@ -27895,6 +27901,7 @@ mail.ru##div[slot="main-column"] .tabs:style(margin-top: 5px !important)
 mail.ru##div[slot="main-column"] > .header
 mail.ru##div[slot="main-column"] > .header ~ .swiper
 mail.ru##div[slot="main-column"] > .micro-widgets:style(height: auto !important; margin: auto !important)
+mail.ru##div[slot="main-column"] > :nth-child(-n+2) ~ [class] > [class]:style(visibility: unset !important; pointer-events: unset !important)
 my.mail.ru##html.window-loaded .b-video-backscreen
 my.mail.ru##html.window-loaded .b-video-controls__inside-play-button:style(visibility: visible !important; opacity: 0 !important; width: 100% !important; height: 100% !important; top: 0 !important; left: 0 !important)
 cloud.mail.ru##iframe[src^="https://o2.mail.ru/"] ~ div div[class^="ViewerHeader__closeIcon--"]
