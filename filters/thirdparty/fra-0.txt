@@ -1,10 +1,10 @@
 ![Adblock Plus 2.0]
-! Checksum: wZ3wILckA22nxAg2Jz8/fA
-! Diff-Path: ../patches/16/16-s-1728826574-3600.patch
+! Checksum: eDuWnJ87W9A1fPw+fnNI3w
+! Diff-Path: ../patches/16/16-s-1728967016-3600.patch
 ! Title: AdGuard French filter
 ! Description: Liste FR + AdGuard French filter. Filter list that specifically removes ads on websites in French language.
-! Version: 2.0.47.26
-! TimeUpdated: 2024-10-13T13:32:55+00:00
+! Version: 2.0.47.30
+! TimeUpdated: 2024-10-15T04:33:26+00:00
 ! Expires: 5 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -115,6 +115,8 @@ capital.fr#@#.plainAd
 !
 !
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/190815
+larvf.com#@#.AdsBox
 ! https://github.com/AdguardTeam/AdguardFilters/issues/188979
 sekai.one###adblock-modal
 ! https://github.com/AdguardTeam/AdguardFilters/issues/186309
@@ -208,7 +210,7 @@ ebookdz.com##+js(no-xhr-if, pagead2.googlesyndication.com)
 monumentum.fr##+js(abort-current-script, document.getElementById, Blocking Ads)
 ! https://github.com/AdguardTeam/AdguardFilters/issues/179837
 ! https://github.com/AdguardTeam/AdguardFilters/issues/147842
-japscan.lol##+js(remove-node-text, script, Ne\'+\'Si)
+japscan.lol##+js(remove-node-text, script, /N.{0\,10}e.{0\,10}S.{0\,10}i/)
 japscan.lol#$#.navbar-nav > li#navpromo2.nav-item > a[href^="https://www.origoclick.com"] { text-indent: -5000px !important; }
 japscan.lol##+js(addEventListener-defuser, DOMContentLoaded, (e)=>)
 $script,xmlhttprequest,redirect-rule=noop.js,domain=japscan.lol
@@ -899,6 +901,7 @@ $xmlhttprequest,third-party,denyallow=authkong.com|rsc.cdn77.org|linkvertise.com
 !
 !
 !
+larvf.com##.External.is-empty
 lexpress.mu#?#p.text-right:contains(/^Publicité$/)
 lexpress.mu#?#.place-items-center:has(> div:only-child:not([class],[id]) > p.text-right:contains(/^Publicité$/))
 lexpress.mu##.place-items-center:has(> div:only-child:not([class], [id]) > p.text-right ~ script[src^="https://adserve."])
