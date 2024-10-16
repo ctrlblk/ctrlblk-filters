@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: EasyList – Newsletter Notices
-! Last modified: Sun, 13 Oct 2024 21:50:08 +0000
+! Last modified: Tue, 15 Oct 2024 06:53:19 +0000
 ! Expires: 7 days (update frequency)
 ! *** easylist:template_header.txt ***
 !
@@ -1950,6 +1950,7 @@ brownstone.org##.astra-advanced-hook-7207
 atavist.com##.atavist-mailchimp
 winnipegfreepress.com##.atf-signup
 peoplesworld.org##.attachment-full
+thetechfactor.ca##.ays-pb-modals
 digitaltrends.com##.b-in-content-shortcode
 peanutbutterrunner.com##.b-modal
 cyberdaily.au##.b-sideSub
@@ -2572,6 +2573,7 @@ lifewire.com##.latest-issue-spotlight
 gearjunkie.com##.ldm-cta
 soaphub.com##.ldm-newsletter-promo-inner
 punchdrink.com,tastecooking.com##.lead-capture-campaign
+thetechfactor.ca##.lead-magnet
 simpleanalytics.com##.left-0
 cpr.org##.legacy-newsletter
 financialissues.org##.lepopup-form
@@ -3040,6 +3042,7 @@ dashbit.co,inquirer.net,offthebeatenpoints.com##.sib-form
 swissinfo.ch##.sib-form-container
 technology.org,tourscanner.com##.sib_signup_form
 worldcrunch.com##.side-bar-nl-wrap
+thetechfactor.ca##.side-newsletter
 metv.com##.side-newsletter-wrap
 mymodernmet.com##.side-subscribe
 opendemocracy.net##.sidebar--banner
@@ -5423,7 +5426,7 @@ doctorofcredit.com#@#.wpdiscuz-subscribe-bar
 ! fanboy_newsletter_shopping_allowlist_general_hide.txt
 
 ! Title: uBlock filters – Other Annoyances
-! Last modified: Sun, 13 Oct 2024 16:24:40 +0000
+! Last modified: Wed, 16 Oct 2024 02:03:19 +0000
 ! Expires: 7 days
 ! Description: Filters optimized for uBlock Origin, to be used with EasyList's and/or Adguard's "Other Annoyances" list(s)
 ! License: https://github.com/uBlockOrigin/uAssets/blob/master/LICENSE
@@ -13158,3 +13161,11 @@ yugenanime.sx##+js(set, devtoolsDetector, {})
 
 ! https://github.com/AdguardTeam/AdguardFilters/issues/190674
 cu.tbs.co.jp##+js(trusted-set-local-storage-item, lastViewTime, $currentDate$)
+
+! https://github.com/DandelionSprout/adfilt/discussions/163#discussioncomment-10269579
+! https://github.com/uBlockOrigin/uAssets/issues/25667
+/dp/*/ref=$doc,to=www.amazon.com,uritransform=/\/ref=\w+//
+
+! https://indahonline.com/ anti right click, devtools
+||indahonline.com/js/disable-devtool.js$script,1p
+indahonline.com##+js(aost, $, /mainseto.js:286:1)
