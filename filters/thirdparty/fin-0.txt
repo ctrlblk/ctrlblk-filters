@@ -2,7 +2,7 @@
 ! Title: Adblock List for Finland
 ! Description: Finnish adblock list
 ! Expires: 4 days
-! Last modified: Mon, 02 Sep 2024 20:34:14 +0000
+! Last modified: Thu, 17 Oct 2024 21:08:49 +0000
 ! Homepage: https://github.com/finnish-easylist-addition/finnish-easylist-addition
 ! License: https://unlicense.org/
 ! Raportoi mainoksenestoon liittyvistä ongelmista tai estämättömistä mainoksista täällä / Please report adblocking related issues or unblocked ads at:
@@ -106,6 +106,10 @@ aalto.fi##+js(set-cookie, cookiebot-consent--necessary, 1)
 aalto.fi##+js(set-cookie, cookiebot-consent--preferences, 1)
 aalto.fi##+js(set-cookie, cookiebot-consent--marketing, 0)
 aalto.fi##+js(set-cookie, cookiebot-consent--statistics, 0)
+
+! https://www.tek.fi/fi/palvelut-ja-edut/palkka/tilaa-palkkatietoa
+www.tek.fi##+js(set-cookie, tek-cookie-agreed, 2)
+!www.tek.fi##+js(set-cookie, tek-cookie-agreed-version, "1.0.0")
 
 ! -----SCRIPTS END-----
 
@@ -1712,6 +1716,9 @@ srk.fi#@##CookielawBanner
 
 ! Lowe's list exception, chat needs cookies to be accepted
 @@||googletagmanager.com/gtm.js$domain=pohjanmaanhyvinvointi.fi
+
+! https://www.tek.fi/fi/palvelut-ja-edut/palkka/tilaa-palkkatietoa
+@@/eu_cookie_compliance.min.js$script,domain=www.tek.fi
 
 ! -----UNBREAK END-----
 

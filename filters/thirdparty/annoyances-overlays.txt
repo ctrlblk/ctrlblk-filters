@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: EasyList – Newsletter Notices
-! Last modified: Wed, 16 Oct 2024 21:50:28 +0000
+! Last modified: Thu, 17 Oct 2024 09:50:16 +0000
 ! Expires: 7 days (update frequency)
 ! *** easylist:template_header.txt ***
 !
@@ -3545,6 +3545,7 @@ theverge.com##.duet--cta--newsletter
 ! :has
 businesstimes.com.sg##.border-gray-175:has-text(BT in your inbox)
 calgaryherald.com,edmontonjournal.com,montrealgazette.com,ottawacitizen.com,thestarphoenix.com##.callout:has-text(inbox)
+interestingengineering.com##.t-bg-surface-zero.t-p-6:has-text(Newsletter)
 advancedsciencenews.com#?#.et_pb_row_1_tb_body:-abp-contains(Sign up for our weekly newsletter)
 advancedsciencenews.com#?#.et_pb_section:-abp-contains(Sign up for our weekly newsletter)
 babylonbee.com#?#.bg-gray-50:-abp-contains(Fake news)
@@ -5433,7 +5434,7 @@ doctorofcredit.com#@#.wpdiscuz-subscribe-bar
 ! fanboy_newsletter_shopping_allowlist_general_hide.txt
 
 ! Title: uBlock filters – Other Annoyances
-! Last modified: Wed, 16 Oct 2024 15:04:21 +0000
+! Last modified: Thu, 17 Oct 2024 10:02:20 +0000
 ! Expires: 7 days
 ! Description: Filters optimized for uBlock Origin, to be used with EasyList's and/or Adguard's "Other Annoyances" list(s)
 ! License: https://github.com/uBlockOrigin/uAssets/blob/master/LICENSE
@@ -13177,3 +13178,6 @@ cu.tbs.co.jp##+js(trusted-set-local-storage-item, lastViewTime, $currentDate$)
 ! https://indahonline.com/ anti right click, devtools
 ||indahonline.com/js/disable-devtool.js$script,1p
 indahonline.com##+js(aost, $, /mainseto.js:286:1)
+
+! videocardz.com anti select
+videocardz.com##*:style(user-select: text !important; -ms-user-select: text !important; -moz-user-select: text !important; -khtml-user-select: text !important; -webkit-user-select: text !important; -webkit-touch-callout: default !important;)
