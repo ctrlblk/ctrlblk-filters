@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: EasyList – Cookie Notices
-! Last modified: Thu, 17 Oct 2024 21:50:20 +0000
+! Last modified: Fri, 18 Oct 2024 09:50:11 +0000
 ! Expires: 7 days (update frequency)
 ! *** easylist:template_header.txt ***
 !
@@ -23492,6 +23492,7 @@ nhnieuws.nl##+js(set-local-storage-item, psh:cookies-seen, true)
 nhnieuws.nl##+js(set-local-storage-item, psh:cookies-social, true)
 posthog.com##+js(set-local-storage-item, cookie_consent, no)
 mobilefuse.com##+js(set-local-storage-item, cookies_policy_acceptance, denied)
+safe.global##+js(set-local-storage-item, SAFE__analyticsPreference, false)
 data.carbonmapper.org##+js(set-local-storage-item, termsOfUseAccepted, true)
 avica.link##+js(set-local-storage-item, agreeCookie, true)
 madeiramadeira.com.br##+js(set-local-storage-item, lgpd-agree, 1)
@@ -30103,7 +30104,7 @@ concursolutions.com,forbes.com,formula1.com,fortune.com,proximus.be,proximustv.b
 @@||zensus2022.de/SiteGlobals/Modules/CookieBanner/*/CookieBanner.json?$~third-party,xmlhttprequest
 
 ! Title: uBlock filters – Cookie Notices
-! Last modified: Thu, 17 Oct 2024 09:35:50 +0000
+! Last modified: Sat, 19 Oct 2024 05:06:09 +0000
 ! Expires: 7 days
 ! Description: Filters optimized for uBlock Origin, to be used with EasyList's and/or Adguard's "Cookie Notices" list(s)
 ! License: https://github.com/uBlockOrigin/uAssets/blob/master/LICENSE
@@ -30208,7 +30209,7 @@ wetransfer.com##+js(trusted-click-element, .fides-consent-wall .fides-banner-but
 ! https://www.thetrainline.com/
 thetrainline.com##+js(trusted-set-cookie, OptanonConsent, groups=C0001%3A1%2CC0002%3A0%2CC0008%3A0, 1year)
 ! https://console.scaleway.com/login
-scaleway.com##+js(trusted-set-cookie, _scw_rgpd_hash, 408362395)
+scaleway.com##+js(trusted-set-cookie, _scw_rgpd_hash, 1813808441)
 ! https://all3dp.com/
 all3dp.com##+js(trusted-set-cookie, PUR_SUBSCRIPTION, PREMIUM)
 ! If necessary aren't accepted, choosing a favorite store won't work
@@ -30544,6 +30545,10 @@ bambaw.com##+js(trusted-set-cookie, cookieconsent_preferences_disabled, 'functio
 design.com##+js(trusted-set-cookie, brandcrowd-cookie-consent, %7B%22advertisingStorage%22%3Afalse%2C%22analyticsStorage%22%3Afalse%2C%22advertisingUserData%22%3Afalse%2C%22advertisingPersonalization%22%3Afalse%7D)
 ! refuse/1=time
 vous.sncf-connect.com##+js(trusted-set-cookie, ka3kaaa, $now$#REFUSE_ALL)
+! reject
+lilly.com##+js(trusted-click-element, button.cassie-reject-all, , 1000)
+! essential cookies only
+revolut.com##+js(trusted-set-cookie, rev_cookie_consent, {%22preferences%22:false%2C%22analytics%22:false%2C%22advertising%22:false}, , , domain, revolut.com)
 
 
 !! Needs additional cookies
@@ -31922,6 +31927,3 @@ florence.com.tr##+js(trusted-set-local-storage-item, cookieConsent, '{"requiredC
 ! idagio.com cookies
 app.idagio.com##+js(trusted-set-cookie, cookie-preferences, {%22necessary%22:true%2C%22marketingAndAnalytics%22:false%2C%22functional%22:false%2C%22advertising%22:false}, , , reload, 1, domain, app.idagio.com)
 www.idagio.com##+js(trusted-set-cookie, cookie-preferences, {%22necessary%22:true%2C%22marketingAndAnalytics%22:false%2C%22functional%22:false%2C%22advertising%22:false}, , , reload, 1, domain, www.idagio.com)
-
-! reject
-lilly.com##+js(trusted-click-element, button.cassie-reject-all, , 1000)
