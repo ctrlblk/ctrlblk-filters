@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: EasyList – Newsletter Notices
-! Last modified: Sat, 19 Oct 2024 02:06:13 +0000
+! Last modified: Sun, 20 Oct 2024 15:50:18 +0000
 ! Expires: 7 days (update frequency)
 ! *** easylist:template_header.txt ***
 !
@@ -2371,6 +2371,7 @@ sebgorka.com##.footer_newsletter_wrap
 gsmserver.com##.footer_subscribe_subscribe-wrap
 highsnobiety.com##.forUnit___ixF4Y
 devdiscourse.com,upi.com##.form-inline
+breakingenergy.com,breakinggov.com##.form-interruptor
 righto.com##.form-preview
 tech.co##.form-simple
 mychicagosteak.com##.form-version-cid-1
@@ -3372,7 +3373,7 @@ instaread.co##.widget-ad-container
 mygaming.co.za,printmag.com##.widget-area
 offshore-energy.biz##.widget-dynamic
 hackaday.com##.widget-had-subscribe
-deadline.com,deghi.it,insideevs.com,mlbtraderumors.com,motor1.com##.widget-newsletter
+breakingdefense.com,deadline.com,deghi.it,insideevs.com,mlbtraderumors.com,motor1.com##.widget-newsletter
 nextplatform.com##.widget-no-mobile
 bestlifeonline.com##.widget-postup-standalone-form
 theafricareport.com##.widget-signup
@@ -3672,7 +3673,7 @@ fakartany.com,iai.tv,loopchicago.com,loopnet.com,nintendonews.com,piccalil.li,tb
 !! .subscription-box
 borsonline.hu,faroutmagazine.co.uk,magyarnemzet.hu,metropol.hu,ripost.hu,thecaterer.com,veol.hu,vg.hu##.subscription-box
 !! .modal/.modal-backdrop (no broken scroll)
-adpri.org,answear.ua,ba-bamail.com,kenyabuzz.com,tinysociety.co,vogue.com##.modal
+adpri.org,answear.ua,ba-bamail.com,bbcearth.com,kenyabuzz.com,tinysociety.co,vogue.com##.modal
 ba-bamail.com,breakingdefense.com,nordvpn.com,poolsupplies.com,protel.co.nz,publish0x.com,pv-magazine.com,tinysociety.co##.modal-backdrop
 !! .form-newsletter
 exchangerates.org.uk,vozpopuli.com##.form-newsletter
@@ -4245,6 +4246,9 @@ strangeloopcanon.com,michaelmoore.com,persuasion.community,thebulwark.com,thecli
 strangeloopcanon.com,michaelmoore.com,persuasion.community,thebulwark.com,theclimatebrink.com,forkingpaths.co,gamefile.news,publicnotice.co,techemails.com,aisnakeoil.com,secretsofprivacy.com,moreisdifferent.blog,latent.space,statsignificant.com,noahpinion.blog,read.perspectiveship.com,newsletter.maartengrootendorst.com,newsletter.eng-leadership.com,blog.codingconfessions.com,afterbabel.com,theintrinsicperspective.com,elysian.press,experimental-history.com,thebignewsletter.com,honest-broker.com,henrikkarlsson.xyz,honest-broker.com,henrikkarlsson.xyz,computerenhance.com,friendlyatheist.com,unchartedterritories.tomaspueyo.com,construction-physics.com,sambowman.co,asiasentinel.com,understandingai.org,hamiltonnolan.com,aporiamagazine.com,garbageday.email,jacobwolf.report,semianalysis.com,dossier.today,engineeringleadership.xyz,piratewires.com,slowboring.com,flowstate.fm,popular.info,newsletter.banklesshq.com,antiracismnewsletter.com,racket.news,eugyppius.com,dkb.blog,duffelblog.com,theankler.com,fullstackeconomics.com,substack.com,platformer.news##._subscribeDialog_1h9fv_1
 ! thefederalist.com
 thefederalist.com##+js(set-cookie, pum-276000, true)
+! tweaktown.com
+tweaktown.com###newsletterModal
+tweaktown.com##+js(rc, modal-open, body, stay)
 ! 30seconds.com
 30seconds.com##+js(set-cookie, uf_signup_bar, 1)
 ! magnolia.com
@@ -5434,7 +5438,7 @@ doctorofcredit.com#@#.wpdiscuz-subscribe-bar
 ! fanboy_newsletter_shopping_allowlist_general_hide.txt
 
 ! Title: uBlock filters – Other Annoyances
-! Last modified: Thu, 17 Oct 2024 10:02:20 +0000
+! Last modified: Sun, 20 Oct 2024 14:49:58 +0000
 ! Expires: 7 days
 ! Description: Filters optimized for uBlock Origin, to be used with EasyList's and/or Adguard's "Other Annoyances" list(s)
 ! License: https://github.com/uBlockOrigin/uAssets/blob/master/LICENSE
@@ -7242,18 +7246,6 @@ ecosia.org##.result-snippet:style(-webkit-touch-callout: default !important; -we
 ! ctrl key https://github.com/uBlockOrigin/uAssets/issues/6621
 yusepjaelani.blogspot.com##+js(aopr, document.onkeydown)
 
-! ghanatvon .com right click
-ghanatvon.com##+js(acs, document.oncontextmenu)
-
-! https://github.com/uBlockOrigin/uAssets/issues/4910#issuecomment-560158237
-waaw.tv##+js(set, console.clear, trueFunc)
-
-! fanprojseries .com anti adb warning
-fanprojseries.com##+js(aopw, ai_adb_overlay)
-
-! sfweekly .com anti adb msg
-sfweekly.com##+js(aopw, ai_adb_overlay)
-
 ! right click https://www.reddit.com/r/uBlockOrigin/comments/e7db1o/prevent_a_script_from_running_that_contains/
 onlystream.tv##+js(aeld, contextmenu)
 
@@ -7267,9 +7259,6 @@ skidrowreloaded.com##^script:has-text(copyprotect)
 !#if !cap_html_filtering
 skidrowreloaded.com##+js(rmnt, script, copyprotect)
 !#endif
-
-! https://github.com/NanoMeow/QuickReports/issues/2465
-magyarhang.org##+js(aopw, ai_adb)
 
 ! adevarul .ro tricky copy text
 adevarul.ro##+js(aopr, addLink)
@@ -11516,7 +11505,7 @@ wallpaperaccess.com##+js(aeld, mousedown, dispatch)
 ! https://fc.freestreams-live1.tv/espn-sur/ 
 ! https://fc.freestreams-live1.tv/bein-sports-en/
 ! https://daddylivehd.sx/embed/stream-345.php
-/blast.js^$to=4kwebplay.xyz|claplivehdplay.ru|coolcast2.com|esportivos.fun|hocast4.com|lewblivehdplay.ru|ntuplay.xyz|qqwebplay.xyz|streamservicehd.click|stylisheleg4nt.com|tutlehd4.com|viwlivehdplay.ru
+/blast.js^$to=4kwebplay.xyz|claplivehdplay.ru|coolcast2.com|esportivos.fun|hocast4.com|lewblivehdplay.ru|ntuplay.xyz|qqwebplay.xyz|streamservicehd.click|stylisheleg4nt.com|tutlehd4.com|viwlivehdplay.ru|vodkapr3mium.com
 ntuplay.xyz##^script:has-text(_0x)
 ntuplay.xyz##+js(acs, document.onkeypress)
 ntuplay.xyz##body[oncontextmenu="return false"]:remove-attr(oncontextmenu)
