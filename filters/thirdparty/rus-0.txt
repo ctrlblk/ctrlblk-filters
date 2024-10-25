@@ -154,6 +154,7 @@
 ||7ad.media^$third-party
 ||7cipgmg8r6.ru^
 ||7fvdh40aoz.ru^$third-party
+||7kprtners.com^$third-party
 ||7nkbwdf1uq.ru^$third-party
 ||7offers.ru^$third-party
 ||7out.ru^$third-party
@@ -18913,6 +18914,7 @@ tgstat.com,tgstat.ru##[data-slick*="autoplay"]
 zr.ru##[data-slot-name]
 iphones.ru##[data-slug="damprodam"]
 mac.org.ua##[data-src*="bashmac"]
+drive2.ru#?#[data-target]:-abp-has(> div > h3 ~ [href*=".drom.ru/"])
 drive2.ru##[data-target^="drom_"]
 adme.media#?#[data-test-id$="-recommended"] > div > div > div:nth-child(-n+3):-abp-has(> div > div > div:empty)
 russia-tv.online#?#[data-test="channel-name-link"] ~ div:-abp-has(> div > div[id^="yandex_rtb"])
@@ -19149,6 +19151,7 @@ onliner.by##a[href*=".betera.by"]
 creativportal.ru##a[href*=".creativportal.ru"]
 fishingsib.ru,hunting.ru##a[href*=".fhserv.ru"]:not([href^="https://image.fhserv.ru"])
 2baksa.ws##a[href*=".htm"] > img
+onlineplayer.rudub.today##a[href*=".li"]
 texnic.ru##a[href*=".php?ad="]
 onliner.by##a[href*=".pm.by"]
 sport.tut.by##a[href*=".pm.by/"]
@@ -19240,7 +19243,7 @@ football.by##a[href*="://betonmobile.by"]
 bombardir.ru##a[href*="://bmbrdr.ru/"]
 programmersforum.ru#?#a[href*="://clck.ru/"] ~ *:-abp-contains(https://)
 kinobase.org##a[href*="://clcr.me/"]
-newstudio.tv,player.rudub.online##a[href*="://cutter.li"]
+newstudio.tv##a[href*="://cutter.li"]
 fast-torrent.tv##a[href*="://fast-torrent.tv/gomed.php"]
 players.com.ua##a[href*="://fav.bet/"]
 spys.one##a[href*="://fineproxy.org/"]
@@ -20202,7 +20205,6 @@ gdzguru.com,reshebnik.com#?#div:-abp-has(> [href*="://gdz-ru.work/"])
 blackwot.ru,dmod.cc,draug.ru,emdigital.ru,modsforwot.ru,pogodavtomske.ru#?#div:-abp-has(> [id^="yandex_rtb"])
 photofuneditor.com#?#div:-abp-has(> [src*="pagead2."])
 gdz.ninja,gdzotputina.club,gdzputina.net,reshebnik.com,spishi.fun,zoobrilka.net#?#div:-abp-has(> [src="/secret.png"])
-player.rudub.online#?#div:-abp-has(> a[href*="://bit.ly/"])
 drive2.ru#?#div:-abp-has(> a[href] > div > div > div > div)
 anwap.film#?#div:-abp-has(> a[href]:not([href^="/films/"]):not([href^="/serials/"]) > div)
 fragrantica.ru#?#div:-abp-has(> a[href^="/goto.php"])
@@ -21497,7 +21499,7 @@ forum.zoneofgames.ru#?#p:-abp-has(> [src*="trk.mail.ru/"]) + p[style]
 nashe.ru,radiojazzfm.ru,radioultra.ru,rockfm.ru#?#p:-abp-has(> a[href*="yandex."][href*="news"][href*="favid"])
 sm.news#?#p:-abp-has(> script:-abp-contains(smi2))
 new-magazine.ru#?#p:-abp-has(> strong > a[href*="//dzen.ru/"])
-player.rudub.online#?#p:-abp-has(> strong a[href*="://cutter.li"])
+onlineplayer.rudub.today#?#p:-abp-has(> strong a[href*=".li"])
 prsport.net#?#p:-abp-has(> strong:-abp-contains(/париматч/i))
 frenglish.ru##p[align="center"] > a[href] > img
 www.ruhim.ru##p[align="center"] > noindex > a[href][target="_blank"] > img
@@ -21769,7 +21771,7 @@ $csp=script-src-attr 'none',domain=eurointegration.com.ua|pravda.com.ua
 @@||ssp.rambler.ru/capirs_async.js|$script,domain=www.championat.com
 https://*adtech_uid=$~third-party,xmlhttprequest,domain=lena-miro.ru|levik.blog|livejournal.com|olegmakarenko.ru|periskop.su|shakko.ru|shiro-kino.ru|vadimrazumov.ru
 ||imgfrost.net^$third-party
-||pikabu.ru/ajax/*&*bkq=$xmlhttprequest
+||pikabu.ru/ajax/*&*ckq=$xmlhttprequest
 ||ritsatv.ru^$csp=script-src
 ||ritsatv.ru^$popup
 ||ritsatv.ru^$~document
@@ -21829,8 +21831,6 @@ sdamgia.ru##div[style*="important;"][style*="width:"][style*="height:"] *
 www.drive2.ru##iframe[style="display: block; border-width: 0px;"]
 www.drive2.ru##iframe[style="opacity: 1;"]
 liveinternet.ru##style + div > div > div > div > div a
-e.mail.ru##style:first-child + div[class]:not([id])
-e.mail.ru##style:first-child + div[class]:not([id]) ~ div[class]:not([id])
 !#endif
 soyztreid.website##:not(my-obnaruzhili-blokirovshchik)
 ||liferoom.net^*.$third-party,popup
@@ -28406,7 +28406,7 @@ ozon.ru##div[data-widget="banner"]:matches-path(/my/reviews/promo):style(display
 pronpic.org##div[style="color:red;font-size:25px;"], .adblock_loock
 fanserial.fun,fanserialstv.net,hdrezka.*,rezka.*##+js(set-constant, Object.prototype.preroll, undefined)
 hdrezka.*,rezka.*##+js(abort-current-inline-script, document.getElementsByTagName, AMSP.loadAsset)
-howdyho.*##+js(no-setInterval-if, 1e3)
+howdyho.*##+js(no-setInterval-if, 'height()')
 howdyho.*##+js(set-attr, #progress-value, data-timer, 16)
 dzen.ru##iframe[style^="position:"][style*="absolute"][srcdoc]:remove()
 m.rp5.*#@#.adsbygoogle
@@ -28516,6 +28516,7 @@ e.mail.ru##body:not(#id) > div[style="position: absolute; visibility: hidden; to
 ! newapp
 e.mail.ru,octavius.mail.ru##+js(addEventListener-defuser, /click|destroy|mousedown/, , elements, .html-fishing)
 e.mail.ru,octavius.mail.ru##+js(href-sanitizer, [data-cke-saved-href^="https://checklink.mail.ru/proxy?"])
+e.mail.ru,octavius.mail.ru##+js(no-setTimeout-if, MIMIC_FORCE)
 e.mail.ru,octavius.mail.ru##+js(no-setTimeout-if, _runBatch, 100)
 e.mail.ru,octavius.mail.ru##+js(set-constant, Object.prototype.hasAdBlock, null)
 e.mail.ru,octavius.mail.ru##body > div > .letter-list-item-adv:style(display: block !important)
