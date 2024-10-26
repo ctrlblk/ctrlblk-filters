@@ -21771,7 +21771,7 @@ $csp=script-src-attr 'none',domain=eurointegration.com.ua|pravda.com.ua
 @@||ssp.rambler.ru/capirs_async.js|$script,domain=www.championat.com
 https://*adtech_uid=$~third-party,xmlhttprequest,domain=lena-miro.ru|levik.blog|livejournal.com|olegmakarenko.ru|periskop.su|shakko.ru|shiro-kino.ru|vadimrazumov.ru
 ||imgfrost.net^$third-party
-||pikabu.ru/ajax/*&*ckq=$xmlhttprequest
+||pikabu.ru/ajax/*&*dkq=$xmlhttprequest
 ||ritsatv.ru^$csp=script-src
 ||ritsatv.ru^$popup
 ||ritsatv.ru^$~document
@@ -21791,6 +21791,10 @@ pikabu.ru#?#.stories-feed__container > .story:-abp-has(div:-abp-properties(/min-
 howdyho.net,howdyho.pro##:not(my-obnaruzhili-adblock)
 fonmod.com,ritsatv.ru##:not(my-obnaruzhili-blokirovshchik)
 android-mafia.com,game4you.top,games-pc.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##:not(this-site-promotes-malware)
+~e.mail.ru,mail.ru,~octavius.mail.ru##?#body[style="overflow: unset; max-height: unset;"] article [class]:not(button):not(a):-abp-properties(cursor: pointer)
+~e.mail.ru,mail.ru,~octavius.mail.ru##?#body[style="overflow: unset; max-height: unset;"] p [class]:not(button):not(a):-abp-properties(cursor: pointer)
+~e.mail.ru,mail.ru,~octavius.mail.ru##?#body[style="overflow: unset; max-height: unset;"] section [class]:not(button):not(a):-abp-properties(cursor: pointer)
+~e.mail.ru,mail.ru,~octavius.mail.ru##?#body[style="overflow: unset; max-height: unset;"] span [class]:not(button):not(a):-abp-properties(cursor: pointer)
 @@||ozon.ru/highlight/kursk-$elemhide
 dzen.ru#?#[class]:-abp-has(> a[href^="https://dzen.ru/"][class*="link"][class*="tabContent"] [class] > [class] > [class] > [class])
 drive2.ru##[data-container="outer"]
@@ -27643,6 +27647,7 @@ xsport.ua##.site:style(margin-top: 0 !important)
 ya.ru##.i-mini-bem[style]
 ya.ru,yandex.by,yandex.kz,yandex.uz##.link-bro
 ya.ru##.market-feed
+ya.ru##.multifeed
 ! афиша
 afisha.yandex.by,afisha.yandex.kz,afisha.yandex.ru,afisha.yandex.uz##div[class$="-banner"]
 afisha.yandex.by,afisha.yandex.kz,afisha.yandex.ru,afisha.yandex.uz##div[data-bem*="height"][data-bem*="R-A-"]
