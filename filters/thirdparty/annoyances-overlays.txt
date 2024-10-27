@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: EasyList – Newsletter Notices
-! Last modified: Fri, 25 Oct 2024 06:51:47 +0000
+! Last modified: Sun, 27 Oct 2024 02:13:48 +0000
 ! Expires: 7 days (update frequency)
 ! *** easylist:template_header.txt ***
 !
@@ -1317,6 +1317,7 @@
 ||outpostpublishingcoop.com/assets/v2/js/outpost-pub.js
 ||pico.tools/load/build.js
 ||popupsmart.com^$third-party
+||powr.io/popup/u/
 ||promio-connect.com/register/
 ||sample.dragonforms.com^$subdocument,third-party
 ||secondstreetapp.com/audience_signup_widgets/
@@ -1565,6 +1566,7 @@ modernretail.co###lead_newsletter
 sportsbusinessjournal.com###leaveSiteContainer
 rhino.com###lightboxWrapper
 chorus.fm###liner-notes
+unherd.com###login-form
 victorpest.com###ltkpopup-overlay
 audioholics.com###mail-list-button
 steamdeckhq.com###mailerlite-form_1
@@ -1595,6 +1597,8 @@ foodandwaterwatch.org###newsletter-block-bottom
 governing.com###newsletter-bottom-box
 austinchronicle.com###newsletter-box
 azoai.com,azobuild.com,azocleantech.com,azolifesciences.com,azom.com,azomining.com,azonano.com,azooptics.com,azoquantum.com,azorobotics.com,azosensors.com###newsletter-content-wrap
+hagerty.com###newsletter-custom-container
+hagerty.com###newsletter-custom-form-toast
 sltrib.com###newsletter-embed
 theamericanscholar.org###newsletter-homepage-right
 lapresse.ca###newsletter-hub-promo-box
@@ -2559,6 +2563,7 @@ usafacts.org##.js-newsletter--expand
 gamespot.com##.js-nlsub
 squaremeal.co.uk##.js-rewards-promo-float
 creditcards.com##.js-signup-visibility
+fashionmagazine.com##.js-sjmnmm-root
 highya.com##.js-swimingBlock-stoper
 qz.com##.js_qz_newsletter_signup_placeholder
 draxe.com##.ju_Con
@@ -3181,6 +3186,7 @@ fansided.com,lastnighton.com,netflixlife.com,stormininnorman.com,winteriscoming.
 salon.com##.sub_promo
 magnetomagazine.com##.subcribe-banner
 bolavip.com##.subs-block
+unherd.com##.subs-modal
 holyrood.com##.subs-popup
 live-adexchanger.pantheonsite.io##.subsciption
 3dprint.com##.subscribe--sidebar
@@ -3213,7 +3219,7 @@ spaceref.com##.subscribe-line-link
 media4growth.com##.subscribe-ltr
 techpout.com##.subscribe-medium
 ia.acs.org.au,meetup.com##.subscribe-modal
-gizmodo.com.au,kotaku.com.au,lifehacker.com.au##.subscribe-newsletter
+gizmodo.com.au,golem.de,kotaku.com.au,lifehacker.com.au##.subscribe-newsletter
 hawaiitribune-herald.com,wccftech.com,westhawaiitoday.com##.subscribe-now
 longislandpress.com,metro.us##.subscribe-now-box
 thecanary.co##.subscribe-panel
@@ -3553,8 +3559,10 @@ polygon.com,theverge.com##.duet--cta--newsletter
 ! theprovince.com/winnipegsun.com/canoe.com/o.canada.com/financialpost.com/nationalpost.com
 ##.newsletter-widget__new-story-page
 ! :has
+foxnews.com##.advanced.embed-media:has-text(Get a daily look)
 businesstimes.com.sg##.border-gray-175:has-text(BT in your inbox)
 calgaryherald.com,edmontonjournal.com,montrealgazette.com,ottawacitizen.com,thestarphoenix.com##.callout:has-text(inbox)
+cjr.org##.row > .entry-content > p:has-text(daily newsletter)
 interestingengineering.com##.t-bg-surface-zero.t-p-6:has-text(Newsletter)
 polygon.com##[class]:has(> .duet--cta--newsletter)
 advancedsciencenews.com#?#.et_pb_row_1_tb_body:-abp-contains(Sign up for our weekly newsletter)
@@ -5070,6 +5078,7 @@ freedert.online,rtde.tech##.Subscription-isReact
 studysmarter.de##.ab-feature-popup
 finom.co##.blog-subscribe-banner
 sn.at##.box-emarsys
+welt.de##.c-oembed
 bluray-disc.de##.daily-newsletter-anmeldung_r
 elektroauto-news.net##.elementor-element-b0ed665
 it-daily.net##.itd-nl-box
@@ -5449,7 +5458,7 @@ doctorofcredit.com#@#.wpdiscuz-subscribe-bar
 ! fanboy_newsletter_shopping_allowlist_general_hide.txt
 
 ! Title: uBlock filters – Other Annoyances
-! Last modified: Wed, 23 Oct 2024 02:11:05 +0000
+! Last modified: Sat, 26 Oct 2024 13:24:51 +0000
 ! Expires: 7 days
 ! Description: Filters optimized for uBlock Origin, to be used with EasyList's and/or Adguard's "Other Annoyances" list(s)
 ! License: https://github.com/uBlockOrigin/uAssets/blob/master/LICENSE
@@ -12235,6 +12244,7 @@ photopea.com##.confirm:has-text(AdBlocker)
 ||photopea.com/img/pp_wide.png^$image,1p
 ||photopea.com/img/pp_tall.png^$image,1p
 photopea.com##+js(set, console.clear, noopFunc)
+photopea.com##.bnotify
 
 ! https://deccanherald.com/india/delhi/people-detained-from-jantar-mantar-for-denouncing-israel-over-gaza-action-2728594 - Copy manipulation
 deccanherald.com##+js(aopr, document.oncopy)
