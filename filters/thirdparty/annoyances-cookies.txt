@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: EasyList – Cookie Notices
-! Last modified: Tue, 29 Oct 2024 02:09:39 +0000
+! Last modified: Wed, 30 Oct 2024 02:08:58 +0000
 ! Expires: 7 days (update frequency)
 ! *** easylist:template_header.txt ***
 !
@@ -19069,6 +19069,7 @@ all3dp.com###iubenda-cs-banner
 jetbeds.com###jb-notifications-container
 jif.com###jms__cookie-consent__screen
 playstation.com###js-SIEWS1lib-header-Base
+ebookrenta.com###js-ccpa-dialog
 police.uk###js-consent-banner
 lawrievetgroup.co.uk###js-consent-wrapper
 unbound.com###js-cookies
@@ -19696,6 +19697,7 @@ bagigia.com##.bica-content
 chlorophylle.com##.big-consent-modal
 config.figma.com##.bigmaker-cg-cookies-box
 theculturetrip.com##.billboard__BillboardStyled-pxsd1b-0
+fanatical.com##.biscuit-auth-collapsible
 latestdeals.co.uk##.bk3oq
 seikowatches.com##.blk-Disclaimer
 tnvacation.com##.block-cookie-acceptance-block
@@ -21180,6 +21182,7 @@ payback-ltd.com##[class*="cookiesPopUp"]
 noovo.ca##[class*="modalstyles__StyledModalContainer-"]
 weedmaps.com##[class*="styles__BannerContainer-"]
 getunleash.io##[class^="CookieControl"]
+marineserre.com##[class^="CookiePopin_"]
 bitbrain.com##[class^="CookiesManager"]
 btc-alpha.com##[class^="Cookies_container"]
 graphql.braintreepayments.com##[class^="GDPR-module_"]
@@ -29236,7 +29239,6 @@ ants.vn##.sg-popup-content
 ||browser-consent-front.coco.s-cloud.fi/js/$script
 ||cdn.gravito.net^$script
 ||cmp.tori.fi^
-||cms.finnair.com^*?view=fin-fragment-json$xmlhttprequest,domain=finnair.com
 ||cookielaw.org/scripttemplates/*/assets/*.json$xmlhttprequest,domain=elisa.fi
 ||cookielaw.org/scripttemplates/*/assets/otCommonStyles.css$xmlhttprequest,domain=elisa.fi
 ||elisa.fi/consent-management/
@@ -30115,7 +30117,7 @@ concursolutions.com,forbes.com,formula1.com,fortune.com,proximus.be,proximustv.b
 @@||zensus2022.de/SiteGlobals/Modules/CookieBanner/*/CookieBanner.json?$~third-party,xmlhttprequest
 
 ! Title: uBlock filters – Cookie Notices
-! Last modified: Sun, 27 Oct 2024 21:31:14 +0000
+! Last modified: Wed, 30 Oct 2024 03:33:11 +0000
 ! Expires: 7 days
 ! Description: Filters optimized for uBlock Origin, to be used with EasyList's and/or Adguard's "Cookie Notices" list(s)
 ! License: https://github.com/uBlockOrigin/uAssets/blob/master/LICENSE
@@ -30557,6 +30559,9 @@ vous.sncf-connect.com##+js(trusted-set-cookie, ka3kaaa, $now$#REFUSE_ALL)
 lilly.com##+js(trusted-click-element, button.cassie-reject-all, , 1000)
 ! essential cookies only
 revolut.com##+js(trusted-set-cookie, rev_cookie_consent, {%22preferences%22:false%2C%22analytics%22:false%2C%22advertising%22:false}, , , domain, revolut.com)
+! necessary - https://github.com/easylist/easylist/issues/20485
+finnair.com##+js(trusted-set-cookie, FINNAIR_COOKIE_CONSENTS, W3siY29uc2VudFRleHRJZCI6ImYtY29va2llcy1hbmFseXRpY3MiLCJlZmZlY3RpdmVGcm9tIjoxNzAxNjQwODAwMDAwLCJjb25zZW50U3RhdHVzIjoiZGVjbGluZWQifSx7ImNvbnNlbnRUZXh0SWQiOiJmLWNvb2tpZXMtcGVyc29uYWxpemF0aW9uIiwiZWZmZWN0aXZlRnJvbSI6MTUyMjUzMDAwMDAwMCwiY29uc2VudFN0YXR1cyI6ImRlY2xpbmVkIn0seyJjb25zZW50VGV4dElkIjoiZi1jb29raWVzLWFkdmVydGlzaW5nIiwiZWZmZWN0aXZlRnJvbSI6MTcwODYzOTIwMDAwMCwiY29uc2VudFN0YXR1cyI6ImRlY2xpbmVkIn1d)
+finnair.com##+js(trusted-set-cookie, FINNAIR_COOKIE_ID, l-d3a86210-7bdf-41eb-bc29-9c233e0f4c9c)
 
 
 !! Needs additional cookies
@@ -31745,6 +31750,8 @@ dailystar.co.uk,mirror.co.uk##+js(trusted-click-element, button[mode="primary"][
 ! US IP
 dailystar.co.uk,mirror.co.uk###CIPAConsentNotice:style(visibility: hidden !important;)
 dailystar.co.uk,mirror.co.uk##+js(trusted-click-element, button[class*="cipa-accept-btn"], , 1000)
+! https://github.com/uBlockOrigin/uAssets/issues/25759#issuecomment-2445393624
+@@||cmp.inmobi.com/GVL-$xhr,domain=dailystar.co.uk
 
 ! https://www.redbull.com/ - third party content
 redbull.com##+js(trusted-set-cookie, OptanonConsent, groups=C0001%3A1%2CC0002%3A0%2CC0003%3A1, , , domain, www.redbull.com)
