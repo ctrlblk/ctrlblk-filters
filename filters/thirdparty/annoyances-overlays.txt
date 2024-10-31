@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: EasyList – Newsletter Notices
-! Last modified: Wed, 30 Oct 2024 02:08:58 +0000
+! Last modified: Thu, 31 Oct 2024 03:51:48 +0000
 ! Expires: 7 days (update frequency)
 ! *** easylist:template_header.txt ***
 !
@@ -1421,6 +1421,7 @@ askleo.com###block-13
 askleo.com###block-14
 askleo.com,musically.com###block-15
 askleo.com###block-16
+primemovermag.com.au###block-17
 thefrisc.com###block-19
 airfactsjournal.com###block-2
 tmo.report###block-23
@@ -2810,6 +2811,7 @@ essemagazine.it,percona.com,poynter.org##.newsletter-section
 darkreading.com,everydayhealth.com,gamedeveloper.com,historyextra.com,radiotimes.com##.newsletter-sign-up
 audacy.com##.newsletter-sign-up--station
 capitaltransport.com##.newsletter-sign-up-wrapper
+dailymail.co.uk##.newsletter-sign-up_2K2O1Qev
 news24.com##.newsletter-signup--group
 foreignpolicy.com##.newsletter-signup-and-ads
 londonrestaurantfestival.com##.newsletter-signup-butt
@@ -5473,7 +5475,7 @@ doctorofcredit.com#@#.wpdiscuz-subscribe-bar
 ! fanboy_newsletter_shopping_allowlist_general_hide.txt
 
 ! Title: uBlock filters – Other Annoyances
-! Last modified: Tue, 29 Oct 2024 11:38:42 +0000
+! Last modified: Wed, 30 Oct 2024 17:28:24 +0000
 ! Expires: 7 days
 ! Description: Filters optimized for uBlock Origin, to be used with EasyList's and/or Adguard's "Other Annoyances" list(s)
 ! License: https://github.com/uBlockOrigin/uAssets/blob/master/LICENSE
@@ -12300,8 +12302,9 @@ sportando.basketball##.select-none:style(-webkit-touch-callout: default !importa
 ! https://github.com/uBlockOrigin/uAssets/issues/22899
 ymovies.vip,aniwatch.to,aniwatchtv.to,megacloud.tv,hianime.*,putlocker.vip,rapid-cloud.co,rabbitstream.net,pupupul.site##+js(set, devtoolsDetector.launch, noopFunc)
 ||9animetv.to/js/safe.ob.min.js$script
-myflixerz.to##+js(nostif, 0x)
+myflixerz.to,putlocker.pe,theflixertv.to##+js(nosiif, _0x)
 movie4kto.net##+js(nosiif, /DevTools|_0x/)
+grostembed.online,megacloud.tube,premiumembeding.cloud,venusembed.site##+js(set, console.clear, throwFunc)
 
 ! https://github.com/uBlockOrigin/uAssets/issues/20341
 lethalpanda.com##+js(aopr, b2a)
@@ -13219,3 +13222,6 @@ tweaktown.com##+js(aost, document.getSelection, inlineScript)
 volokit2.com##+js(aopw, document.oncontextmenu)
 volokit2.com##+js(aopw, document.ondragstart)
 volokit2.com##html:style(user-select: text !important; -ms-user-select: text !important; -moz-user-select: text !important; -khtml-user-select: text !important; -webkit-user-select: text !important; -webkit-touch-callout: default !important;)
+
+! duracell.de anti contextmenu
+duracell.de##+js(aeld, contextmenu)

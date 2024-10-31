@@ -1,6 +1,6 @@
 ! Title: 🏔️ Dandelion Sprouts nordiske filtre for ryddigere nettsider
 ! Title 🇬🇧: Dandelion Sprout's Nordic filters for tidier websites
-! Last modified: 10October2024v3
+! Last modified: 31October2024v2
 ! Expires: 18 hours
 ! Lisens / Licence: https://github.com/DandelionSprout/adfilt/blob/master/LICENSE.md
 ! Homepage: https://github.com/DandelionSprout/adfilt/blob/master/Wiki/General-info.md
@@ -512,7 +512,7 @@ vielskerserier.dk,udeoghjemme.dk##div.hidden.justify-center
 gunnarandreassen.com#?#a:has-text(/[kc]as\ino/i)
 parcferme.no##.code-block > p
 boligdebatten.dk###selvsalg-reklame
-tv3.dk##.channelHeaderLogo
+tv3.dk##.channelHeaderLogo:not(:empty)
 jn.fo##.lysingarspot
 kulturnet.dk##.col-md-4:has(a[href*=casino])
 dusken.no##.ad-in-column
@@ -1277,7 +1277,7 @@ byggeplads.dk,magasinetgulv.dk,officeplusdesign.dk##.region-sidebar-second > div
 midtjyllandsavis.dk,herningfolkeblad.dk,ikast-brandenyt.dk##main > .container:not([class*=" "])
 midtjyllandsavis.dk,herningfolkeblad.dk,ikast-brandenyt.dk##.container-spacer
 midtjyllandsavis.dk,herningfolkeblad.dk,ikast-brandenyt.dk##.container-outer-wrapper > .col-2:last-of-type
-mytastenor.com,mytastednk.com,tv3sport.dk##.panorama
+mytastenor.com,mytastednk.com,tv3sport.dk##.panorama:not(:empty)
 isabellas.dk,femina.dk,billedbladet.dk##div[data-type=ad]
 migogaarhus.dk,migogaalborg.dk,migogkbh.dk##.yb-top-spot
 startsidendin.no,iphoneluppen.dk,norskemagasinet.com##a[href*=gambling]
@@ -2115,6 +2115,8 @@ sykepleien.no##:is(.container--break,.content-extra__recommended-news):style(pad
 no##.tag-page:style(margin:0!important;padding:0!important)
 ! https://github.com/AdguardTeam/AdguardFilters/issues/189667
 feltet.dk##iframe + div[style*="height: 80vh"]:style(height: unset !important)
+! https://www•dagsavisen•no/sport/2024/10/31/kfum-oslo-var-uhyre-naer-et-finaleran/
+dagsavisen.no##:is(p,h2):has(> br:only-of-type:empty)
 
 ! 🇳🇴: ——— Distraherende bakgrunnsbilder ———
 ! 🇩🇰: ——— Distraherende baggrundsbilleder ———
@@ -2240,7 +2242,7 @@ ekstrabladet.dk#@#body>div[id][style]
 @@||ad.amediakreativ.no/widgets/stillingskarusell^
 
 !
-! Last updated: 24October2024v3-Extension
+! Last updated: 31October2024v2-Extension
 ! 🇳🇴: ——— Vindusviskere for betalte artikler (sånn at de nederste linjene i en forhåndsvisning ikke toner ut) ———
 ! Takk til THEtomaso (https://github.com/THEtomaso) for de fleste av disse oppføringene.
 ! 🇩🇰: ——— Vinduesviskere for betalte artikler (så de sidste par linjer i en forhåndsvisning ikke falder ud) ———
@@ -2275,7 +2277,7 @@ berlingske.dk##.paywall-wrapper:style(top: unset !important)
 intrafish.no##.preview-gradient
 lydogbilde.no,lydogbillede.dk##.lbplussinfo
 ||dagligvarehandelen.no/sites/all/themes/custom/ledelseas/gfx/veil.png$image
-information.dk###paywall:style(margin-top: 0 !important)
+information.dk###paywall:style(margin-top:0!important)
 digi.no###order-form::before
 aasavis.no,amta.no,an.no,ao.no,auraavis.no,austagderblad.no,avisenagder.no,ba.no,bygdebladet.no,bygdeposten.no,dalane-tidende.no,dt.no,eikerbladet.no,enebakkavis.no,f-b.no,finnmarkdagblad.no,finnmarken.no,firda.no,firdaposten.no,fremover.no,gbnett.no,gjengangeren.no,glomdalen.no,h-avis.no,ha-halden.no,hadeland.no,hardanger-folkeblad.no,helg.no,iharstad.no,indre.no,jarlsbergavis.no,jbl.no,kv.no,kvinnheringen.no,laagendalsposten.no,lierposten.no,lofotposten.no,lyngdalsavis.no,moss-avis.no,nettavisen.no,nidaros.no,noblad.no,nordhordland.no,nordlys.no,nt24.no,oa.no,oblad.no,op.no,ostlendingen.no,oyene.no,r-a.no,rablad.no,ranablad.no,rb.no,retten.no,rha.no,ringblad.no,ringsaker-blad.no,sa.no,sandeavis.no,sandnesposten.no,sb.no,smaalenene.no,sognavis.no,solabladet.no,solungavisa.no,strandbuen.no,svelviksposten.no,ta.no,tb.no,telen.no,tk.no,tvedestrandsposten.no,varingen.no,vestbyavis.no,merakerposten.no##amedia-include[src*="/incentive/"]:style(border: 10px !important; border-color: #CD5C5C !important; border-style: solid !important)
 aasavis.no,amta.no,an.no,ao.no,auraavis.no,austagderblad.no,avisenagder.no,ba.no,bygdebladet.no,bygdeposten.no,dalane-tidende.no,dt.no,eikerbladet.no,enebakkavis.no,f-b.no,finnmarkdagblad.no,finnmarken.no,firda.no,firdaposten.no,fremover.no,gbnett.no,gjengangeren.no,glomdalen.no,h-avis.no,ha-halden.no,hadeland.no,hardanger-folkeblad.no,helg.no,iharstad.no,indre.no,jarlsbergavis.no,jbl.no,kv.no,kvinnheringen.no,laagendalsposten.no,lierposten.no,lofotposten.no,lyngdalsavis.no,moss-avis.no,nettavisen.no,nidaros.no,noblad.no,nordhordland.no,nordlys.no,nt24.no,oa.no,oblad.no,op.no,ostlendingen.no,oyene.no,r-a.no,rablad.no,ranablad.no,rb.no,retten.no,rha.no,ringblad.no,ringsaker-blad.no,sa.no,sandeavis.no,sandnesposten.no,sb.no,smaalenene.no,sognavis.no,solabladet.no,solungavisa.no,strandbuen.no,svelviksposten.no,ta.no,tb.no,telen.no,tk.no,tvedestrandsposten.no,varingen.no,vestbyavis.no,merakerposten.no##amedia-incentive:style(top: 1600px !important)
@@ -2343,6 +2345,19 @@ bold.dk##+js(nofab)
 !#endif
 ! The green "Abonner" button in the upper right appears to work perfectly even with this entry, and the entry does not cause the Plus article bodies to appear either, so I feel I'm on safe enough grounds on this one.
 ||piano.io/xbuilder/experience/execute^$xhr,domain=www.digi.no|www.tu.no
+!#if !ext_ublock
+! Borrowed from "uBlock Filters — Ads" (31/10/2024)
+*$image,redirect-rule=1x1.gif,domain=maskinbladet.dk|fritidsmarkedet.dk
+@@||stokerpiller.dk^$ghide
+fritidsmarkedet.dk,maskinbladet.dk##+js(nostif, Check)
+fritidsmarkedet.dk,maskinbladet.dk##.skybanner
+fritidsmarkedet.dk,maskinbladet.dk##megaboard-inner
+mmm.dk##+js(set, adblockerAlert, noopFunc)
+rabo.no,pressemedie.dk##+js(noeval-if, /chp_?ad/)
+stokerpiller.dk##.adsbygoogle:style(max-height:1px!important)
+tobys.dk##+js(aopr, checkAds)
+tobys.dk#@#.abMessage
+!#endif
 
 ! 🇬🇧: ——— Not actually AAB, but would've caused fatal breakage in ABP ———
 playpilot.com##.takeover.modals
@@ -2480,7 +2495,7 @@ trendsales.dk##.top__banner
 vgtv.no##+js('json-prune', 'enabled', 'testhide')
 xn--bredbnd-ixa.dk##div[class^="speedtest-bg"] > a > img
 ||freewheel-mtgx-tv.akamaized.net/*.mp4$media,redirect=noopmp4-1s,domain=bold.dk
-||freewheel-mtgx-tv.akamaized.net^$media,domain=tv3sport.dk
+!!!||freewheel-mtgx-tv.akamaized.net^$media,domain=tv3sport.dk
 ||googletagservices.com/tag/js/gpt.js$script,redirect=googletagservices-gpt,domain=vegetarbloggen.no,important
 ||v.fwmrm.net/ad/g/$domain=ekstrabladet.dk,important
 ||vgc.no/cdn/js/libs/homad-config.json$xmlhttprequest,redirect=noopjson
