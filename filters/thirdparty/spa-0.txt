@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Checksum: 3wXT/21F2xGgQs+xupYmwA
-! Version: 202411040521
+! Checksum: AsuZZKdo9ZjRDv5j6WJDHA
+! Version: 202411050521
 ! Title: EasyList Spanish
-! Last modified: 04 Nov 2024 05:21 UTC
+! Last modified: 05 Nov 2024 05:21 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -405,6 +405,7 @@ hitfm.es#@#.publi
 ||unusualbrainlessshotgun.com^$popup,third-party
 ||wekiss.co^$popup,third-party
 ! *** easylistspanish:easylistspanish_adult/adult_adservers.txt ***
+||promocionesweb.com^$third-party
 ! *** easylistspanish:easylistspanish_adult/adult_adservers_popup.txt ***
 !-----------------------------Third-party adverts-----------------------------!
 ! *** easylistspanish:easylistspanish/easylistspanish_thirdparty.txt ***
@@ -951,6 +952,9 @@ $popup,third-party,domain=feurl.com|seriesyonkis.io|streamz.vg|supergoku.com|zen
 /^https?:\/\/.*\.(jpg|gif|png|php|svg|ico|js|txt)/$popup,domain=anime-flv.net|cuevanahd.net|divicast.com|doramasflixs.com|gnula.nu|gnula.se|ibb.co|jkanime.net|myflixertv.to|pelismartv.com|pelisplayer.xyz|pelisplus.io|pelisplus.top|pelisplushd.nu|pelispophd.com|seriesflix.live|seriesturcas.tv|tomatomatela.com
 ! *** easylistspanish:easylistspanish_adult/adult_specific_block.txt ***
 ||amaduras.com/img-publicidad/
+||doncolombia.com/data/siropu/
+||donlgbt.com/images/banner_
+||esaschicas.com/data/siropu/
 ||fucklouder.com/images/thumbs/banners/
 ||hispasexy.org/buttons/banner728.gif
 ||madlifes.com/tools/get_banner.php
@@ -977,9 +981,6 @@ $popup,third-party,domain=feurl.com|seriesyonkis.io|streamz.vg|supergoku.com|zen
 /^https?:\/\/.*\/[a-z0-9A-Z_]{2,15}\.(php|jx|jsx|1ph|jsf|jz|jsm|j$)/$image,script,subdocument,domain=elmundoporno.com|pasionchicas.com|pornoculazos.com|pornoespaniol.com|pornofakings.com|pornoincreible.com|teatrodelporno.com|teatroporno.com
 !!
 /^https?:\/\/[0-9a-z]{8,}\.com\/.*/$~media,third-party,domain=hentaiyt.net|hispasexy.org|pornotorrent.es|pornstarsyfamosas.es
-!!
-||paraisowebcam.com/*banner
-||paraisowebcam.com^$subdocument,third-party
 ! *** easylistspanish:easylistspanish_adult/adult_specific_block_popup.txt ***
 ||animejl.top/?redirect_$popup,domain=hentaijl.com
 !
@@ -2568,6 +2569,7 @@ mediotiempo.com##img[alt^="caliente.mx"]
 ! *** easylistspanish:easylistspanish_adult/adult_specific_hide.txt ***
 pulpo69.com###affiliate-livecam-widget-435
 hentaienesp.com###banner_float
+donlgbt.com###banner_publicitario
 madlifes.com,pepeporn.com###banners_footer
 pajilleros.com###camsFooter
 fucklouder.com###espacio-multi
@@ -2592,6 +2594,7 @@ pajilleros.com##.banner-bg
 freeones.es##.banner-placeholder
 eurogirlsescort.es##.banners
 pornogratisdiario.com##.bnfo
+maduras.xxx##.bnpub
 petardashd.com##.botonsponsor
 pajilleros.com##.camsHome
 pornocolombiano.net##.cnt-down
@@ -2602,6 +2605,7 @@ pampaporno.com##.hidden-under-920
 poringa.net##.home-native-patrocinado
 muyzorras.com##.i_sba
 jkhentai.net##.jk-300
+maduras.xxx##.join
 eurogirlsescort.es##.js-stt-click > picture
 conejox.com##.link_cams
 tupornogratis.xxx##.lst_ft_bn
@@ -2612,42 +2616,27 @@ zonavideosx.com##.popvidcnt
 canalporno.com##.publ11s-b0ttom
 canalporno.com##.r11ght-pl4yer-169
 pampaporno.com##.resumecard
+doncolombia.com,esaschicas.com##.samBannerUnit
 verpeliculasporno.gratis##.tpd
 videos.mrvideospornogratis.xxx##.vjs-producer
+famosateca.es##[href^="https://lustlia.co/?ref="]
 qporno.xxx##[href^="https://qp.erotilink.es"]
 comicxporn.com##a[href*="/comicxporntrafee.html"]
 fucklouder.com##a[href^="http://bit.ly/"]
 pajarracos.es##a[href^="http://www.fuegodevida.com/"]
+famosateca.es##a[href^="https://es.amateur.tv/"]
 muyzorras.com##a[href^="https://landings.videochatprovider.com/"]
 pajilleros.com##a[href^="https://www.amateur.tv/"]
 muyzorras.com##a[href^="https://www.fuegocams.com/"]
 muycerditas.com##a[href^="https://www.platanomelon.com/?rfsn="]
 cerdas.com##a[href^="https://www.pornogratis.online/"]
 pornogratisdiario.com##a[href^="https://www.webcampornoxxx.net/"]
+famosateca.es##div[align^="center"]
 videospornogratisx.net##img[width="300"]
 videospornogratisx.net##img[width="728"]
 ! Advanced element hiding rules for Adblock Plus
 muyzorras.com#?#.c.d1:-abp-has(div:-abp-contains(Más cosas interesantes))
 videospornogratisx.net#?#.block:-abp-has(>h3:-abp-contains(WEBCAM PORNO XXX))
-!!
-slumi.com###anuncio_pancarta_campaign
-donlgbt.com###banner-superior
-videosdemadurasx.com###pBrazzers
-videosdemadurasx.com###pSponsor
-videosporno.name##.bnfo
-maduras.xxx##.bnpub
-putalocura.com##.c-banner-webcams
-putalocura.com##.c-webcams
-xxxpornohq.com##.close-text
-mileroticos.com##.horizontal-webb
-xvideospanish.net##.inside-player-ad
-muyzorras.com##.pds
-doncolombia.com##.samBannerUnit
-torrentesx.com##.slide
-mileroticos.com##[data-l^=" pub"]
-esaschicas.com##a[href^="https://esaschicas.com/rbs_banner.php?"]
-selafollan.com##a[href^="https://telelatinotv.page.link/"]
-famosateca.es##div[align^="center"]
 !-----------------------Allowlists to fix broken sites------------------------!
 ! *** easylistspanish:easylistspanish/easylistspanish_allowlist.txt ***
 @@||20m.es/prebid/$script,domain=20minutos.es
