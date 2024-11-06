@@ -5476,7 +5476,7 @@ doctorofcredit.com#@#.wpdiscuz-subscribe-bar
 ! fanboy_newsletter_shopping_allowlist_general_hide.txt
 
 ! Title: uBlock filters – Other Annoyances
-! Last modified: Mon, 04 Nov 2024 04:34:11 +0000
+! Last modified: Wed, 06 Nov 2024 03:55:39 +0000
 ! Expires: 7 days
 ! Description: Filters optimized for uBlock Origin, to be used with EasyList's and/or Adguard's "Other Annoyances" list(s)
 ! License: https://github.com/uBlockOrigin/uAssets/blob/master/LICENSE
@@ -11533,7 +11533,8 @@ wallpaperaccess.com##+js(aeld, mousedown, dispatch)
 ! https://fc.freestreams-live1.tv/espn-sur/ 
 ! https://fc.freestreams-live1.tv/bein-sports-en/
 ! https://daddylivehd.sx/embed/stream-345.php
-/blast.js^$to=4kwebplay.xyz|claplivehdplay.ru|coolcast2.com|esportivos.fun|hocast4.com|ilovetoplay.xyz|lewblivehdplay.ru|ntuplay.xyz|qqwebplay.xyz|streamservicehd.click|stylisheleg4nt.com|tutlehd4.com|viwlivehdplay.ru|vodkapr3mium.com
+! https://thread.pfg.pw/#reddit/r/uBlockOrigin/comments/1gkmdcp/usatvgolive_adblocker_detected_overlay/
+/^https:\/\/[a-z0-9]+\.[a-z]{2,}\/blast\.js$/$script,1p,strict1p,to=~gov|~edu
 ilovetoplay.xyz##+js(rmnt, script, debugger)
 ntuplay.xyz##^script:has-text(_0x)
 ntuplay.xyz##+js(acs, document.onkeypress)
@@ -12980,10 +12981,11 @@ thehouseofportable.com###htp
 
 ! https://github.com/uBlockOrigin/uAssets/issues/23777
 ! https://github.com/uBlockOrigin/uAssets/issues/21830
-braflix.*,tv.verizon.com##+js(aeld, keydown, 123)
-braflix.*,tv.verizon.com##+js(set, console.clear, trueFunc)
-braflix.*,tv.verizon.com##+js(set, console.table, trueFunc)
-braflix.*,tv.verizon.com##+js(set, console.log, trueFunc)
+! https://www.reddit.com/r/uBlockOrigin/comments/1gk2o42/help_me_to_block_new_tab_popup/
+tv.verizon.com##+js(aeld, keydown, 123)
+moflix-stream.day,tv.verizon.com##+js(set, console.clear, trueFunc)
+moflix-stream.day,tv.verizon.com##+js(set, console.table, trueFunc)
+moflix-stream.day,tv.verizon.com##+js(set, console.log, trueFunc)
 
 ! https://dlhd.so/stream/stream-51.php anti right click on player iframes
 4kwebplay.xyz,qqwebplay.xyz,lewblivehdplay.ru,claplivehdplay.ru,tutlehd4.com,viwlivehdplay.ru##+js(ra, oncontextmenu)
@@ -13242,3 +13244,6 @@ japonhentai.com##^style:has-text(::selection)
 !#else
 japonhentai.com##+js(rmnt, style, ::selection)
 !#endif
+
+! https://github.com/uBlockOrigin/uAssets/issues/25926
+rutube.ru##+js(trusted-click-element, #app > #raichuLoaderTemplate [aria-label^="Остановить"])
