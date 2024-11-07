@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: EasyList – Newsletter Notices
-! Last modified: Mon, 04 Nov 2024 21:50:14 +0000
+! Last modified: Thu, 07 Nov 2024 02:06:19 +0000
 ! Expires: 7 days (update frequency)
 ! *** easylist:template_header.txt ***
 !
@@ -3539,6 +3539,7 @@ quantamagazine.org##a[href="#newsletter"]
 time.com##a[href^="https://cloud.newsletters.time.com/signup?"]
 thomasnet.com##appcues-container
 refinery29.com##aside
+decisiondeskhq.com##astro-island[component-url*="/_astro/Newsletter."]
 cars.com##cars-newsletter-signup
 blockworks.co##div > .p-10.gap-4
 nature.com##div.c-site-messages
@@ -4959,8 +4960,9 @@ shopcjglobal.com##flashy-popup
 market.samm.com#?#.bg-light:-abp-contains(newsletter)
 recordcollectormag.com#?#.widget_text:-abp-contains(newsletter)
 rprealtyplus.com#?#.border.rounded.p-2:-abp-contains(news letter)
-! wildcard
+!! top-level domain wildcard
 pricespy.*##.TopSection-sc-z3c0qx-11
+royalqueenseeds.*##.hubspot-widget-newsletter
 ! smsbump-form-
 bergautodesign.com,braveandkindbooks.com,bwpsales.com,deal4.ca,fwdformnutrition.com,gizmogoober.com##[id^="smsbump-form-"]
 !! zavvi.
@@ -5334,6 +5336,7 @@ auto.it##div[class^="ModalNewsletter_"]
 ilgiorno.it,ilrestodelcarlino.it,iltelegrafolivorno.it,lanazione.it,quotidiano.net##div[class^="Newsletter_"]
 ! Japanese
 bluetti.jp###dynamic-react-root + div:has(> div.needsclick input[id^="email_"])
+mastory.jp##.p-article-mail
 somu-lier.jp##.popup-mailmaga
 twilog.togetter.com##.subscription_banner
 shokuhin.net##.tdm-popup-modal-over-screen
