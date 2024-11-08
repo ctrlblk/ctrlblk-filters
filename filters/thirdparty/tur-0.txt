@@ -1,10 +1,10 @@
 ![Adblock Plus 2.0]
-! Checksum: N093XSL/uEooPNJQDnRHtA
-! Diff-Path: ../patches/13/13-s-1730468305-3600.patch
+! Checksum: u4FSJ2ZNZEXTK7HaaDppNg
+! Diff-Path: ../patches/13/13-s-1731004635-3600.patch
 ! Title: AdGuard Turkish filter
 ! Description: Filter list that specifically removes ads on websites in Turkish language.
-! Version: 2.0.54.4
-! TimeUpdated: 2024-11-01T13:34:35+00:00
+! Version: 2.0.54.7
+! TimeUpdated: 2024-11-07T18:33:35+00:00
 ! Expires: 5 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -76,6 +76,7 @@
 ! Bad: ||adssubdomain.legitwebsite.com^ (should be in adservers_firstparty.txt)
 !
 !
+||kops1.site^
 ||kingbaba.org^
 ||yelads2.life^
 ||dizimax2.com^
@@ -1067,7 +1068,6 @@ fullhdfilmizle.*##+js(set-constant, reklamsayisi, 0)
 fullhdfilmizle.*##+js(nano-setInterval-booster, reklam, *, 0.02)
 ! https://github.com/AdguardTeam/AdguardFilters/issues/139369
 search.donanimhaber.com##+js(json-prune, productAds)
-! https://github.com/AdguardTeam/AdguardFilters/issues/139304
 ! https://github.com/AdguardTeam/AdguardFilters/issues/138835
 tv8.com.tr##+js(no-xhr-if, spotxchange.com)
 ! https://github.com/AdguardTeam/AdguardFilters/issues/159524
@@ -1167,22 +1167,12 @@ tranimeizle.*##+js(abort-on-property-read, jsPopunder)
 aydindenge.com.tr##+js(set-constant, start, 1)
 ! https://github.com/AdguardTeam/AdguardFilters/issues/34999
 ! https://github.com/AdguardTeam/AdguardFilters/issues/18946
-! https://github.com/AdguardTeam/AdguardFilters/issues/16695
-! https://github.com/AdguardTeam/AdguardFilters/issues/16473
-! https://github.com/AdguardTeam/AdguardFilters/issues/16066
-! https://github.com/AdguardTeam/AdguardFilters/issues/15889
+milligazete.com.tr#$?#ul.row[role="tablist"] > li:has(> a[href^="/service/advertclick"]) { remove: true; }
+milligazete.com.tr#$?#div.slick-track > a[href^="/service/advertclick"] { remove: true; }
 ! https://github.com/AdguardTeam/AdguardFilters/issues/11430
 mobile.donanimhaber.com##+js(set-session-storage-item, pageCount, 0)
 ! https://github.com/AdguardTeam/AdguardFilters/issues/10975
-! https://github.com/AdguardTeam/AdguardFilters/issues/9804
-! https://forum.adguard.com/index.php?threads/resolved-t24-com-tr.26365/
-! https://forum.adguard.com/index.php?threads/yenisafak-com.22134/
-! https://forum.adguard.com/index.php?threads/akgazete-com-tr.20391/#post-131661
-! https://forum.adguard.com/index.php?threads/9745/
-!
-! https://forum.adguard.com/index.php?threads/24149/
 ! http://forum.adguard.com/showthread.php?7046
-! https://forum.adguard.com/index.php?threads/21052/
 !--------------------------------------!
 !------- CSS fixes --------------------!
 !--------------------------------------!
@@ -5574,6 +5564,8 @@ dizipal811.com,dizipal812.com,dizipal813.com,dizipal814.com,dizipal815.com,dizip
 dizipal811.com,dizipal812.com,dizipal813.com,dizipal814.com,dizipal815.com,dizipal816.com,dizipal817.com,dizipal818.com,dizipal819.com,dizipal820.com,dizipal821.com,dizipal822.com,dizipal823.com,dizipal824.com,dizipal825.com##a[target="_blank"][rel="nofollow"]
 dizipal811.com,dizipal812.com,dizipal813.com,dizipal814.com,dizipal815.com,dizipal816.com,dizipal817.com,dizipal818.com,dizipal819.com,dizipal820.com,dizipal821.com,dizipal822.com,dizipal823.com,dizipal824.com,dizipal825.com##.rounded.m-auto .bg-black > a[href][target="_blank"]
 dizipal811.com,dizipal812.com,dizipal813.com,dizipal814.com,dizipal815.com,dizipal816.com,dizipal817.com,dizipal818.com,dizipal819.com,dizipal820.com,dizipal821.com,dizipal822.com,dizipal823.com,dizipal824.com,dizipal825.com###header-o > .px-5:has(> a[target="_blank"])
+! dizipal*.com - frequently changed domains (probably another similar)
+!
 ! yabancidizi - frequently changed domains
 yabancidizi.*##+js(nano-setInterval-booster, timeleft, *, 0.02)
 yabancidizi.*#$#body > main#wrapper { margin-top: 0 !important; }
@@ -5719,11 +5711,14 @@ selcuksportshdamp5.xyz,selcuksportshd78.biz#$?#body { background-image: none !im
 ||selcuksportshd*.xyz/img/g/crtswp-s-min.png
 ||selcuksportshd*.xyz/img/*.gif
 ||selcuksportshd*.*/images/grnd/*.jpg
+[$domain=/(^\|.+\.)selcuksportshd\d+\.xyz/]##.banners
+[$domain=/(^\|.+\.)selcuksportshd\d+\.xyz/]##.container > aside.sidebar:has(> .banner)
 [$domain=/(^\|.+\.)selcuksportshd\d+\.xyz/]##.footer
 [$domain=/(^\|.+\.)selcuksportshd\d+\.xyz/]##.socials a:is(.meritroyal, .iptv, .streamradar)
-selcuksportshd1277.xyz,selcuksportshd1272.xyz,selcuksportshd1219.xyz,selcuksportshd1220.xyz,selcuksportshd1221.xyz,selcuksportshd1222.xyz,selcuksportshd1223.xyz,selcuksportshd1224.xyz,selcuksportshd1225.xyz,selcuksportshd1226.xyz,selcuksportshd1227.xyz,selcuksportshd1228.xyz,selcuksportshd1229.xyz,selcuksportshd1230.xyz,selcuksportshd1231.xyz,selcuksportshd1232.xyz,selcuksportshd1233.xyz,selcuksportshd1234.xyz,selcuksportshd1235.xyz,selcuksportshd1236.xyz,selcuksportshd1237.xyz,selcuksportshd1238.xyz,selcuksportshd1239.xyz,selcuksportshd1240.xyz,selcuksportshd1241.xyz,selcuksportshd1195.xyz,selcuksportshd891.xyz,selcuksportshd856.xyz,selcuksportshd857.xyz,selcuksportshd858.xyz,selcuksportshd859.xyz,selcuksportshd860.xyz,selcuksportshd861.xyz,selcuksportshd862.xyz,selcuksportshd863.xyz,selcuksportshd864.xyz,selcuksportshd865.xyz,selcuksportshd866.xyz,selcuksportshd867.xyz,selcuksportshd868.xyz,selcuksportshd869.xyz,selcuksportshd870.xyz,selcuksportshd871.xyz##.container > aside.sidebar:has(> .banner)
-selcuksportshd1277.xyz,selcuksportshd1272.xyz,selcuksportshd1219.xyz,selcuksportshd1220.xyz,selcuksportshd1221.xyz,selcuksportshd1222.xyz,selcuksportshd1223.xyz,selcuksportshd1224.xyz,selcuksportshd1225.xyz,selcuksportshd1226.xyz,selcuksportshd1227.xyz,selcuksportshd1228.xyz,selcuksportshd1229.xyz,selcuksportshd1230.xyz,selcuksportshd1231.xyz,selcuksportshd1232.xyz,selcuksportshd1233.xyz,selcuksportshd1234.xyz,selcuksportshd1235.xyz,selcuksportshd1236.xyz,selcuksportshd1237.xyz,selcuksportshd1238.xyz,selcuksportshd1239.xyz,selcuksportshd1240.xyz,selcuksportshd1241.xyz,selcuksportshd1195.xyz,selcuksportshd891.xyz,selcuksportshd856.xyz,selcuksportshd857.xyz,selcuksportshd858.xyz,selcuksportshd859.xyz,selcuksportshd860.xyz,selcuksportshd861.xyz,selcuksportshd862.xyz,selcuksportshd863.xyz,selcuksportshd864.xyz,selcuksportshd865.xyz,selcuksportshd866.xyz,selcuksportshd867.xyz,selcuksportshd868.xyz,selcuksportshd869.xyz,selcuksportshd870.xyz,selcuksportshd871.xyz##.footer
-selcuksportshd1277.xyz,selcuksportshd1272.xyz,selcuksportshd1219.xyz,selcuksportshd1220.xyz,selcuksportshd1221.xyz,selcuksportshd1222.xyz,selcuksportshd1223.xyz,selcuksportshd1224.xyz,selcuksportshd1225.xyz,selcuksportshd1226.xyz,selcuksportshd1227.xyz,selcuksportshd1228.xyz,selcuksportshd1229.xyz,selcuksportshd1230.xyz,selcuksportshd1231.xyz,selcuksportshd1232.xyz,selcuksportshd1233.xyz,selcuksportshd1234.xyz,selcuksportshd1235.xyz,selcuksportshd1236.xyz,selcuksportshd1237.xyz,selcuksportshd1238.xyz,selcuksportshd1239.xyz,selcuksportshd1240.xyz,selcuksportshd1241.xyz,selcuksportshd1195.xyz,selcuksportshd891.xyz,selcuksportshd856.xyz,selcuksportshd857.xyz,selcuksportshd858.xyz,selcuksportshd859.xyz,selcuksportshd860.xyz,selcuksportshd861.xyz,selcuksportshd862.xyz,selcuksportshd863.xyz,selcuksportshd864.xyz,selcuksportshd865.xyz,selcuksportshd866.xyz,selcuksportshd867.xyz,selcuksportshd868.xyz,selcuksportshd869.xyz,selcuksportshd870.xyz,selcuksportshd871.xyz##.socials a:is(.meritroyal, .iptv, .streamradar)
+selcuksportshd1464.xyz,selcuksportshd1465.xyz,selcuksportshd1466.xyz,selcuksportshd1467.xyz,selcuksportshd1468.xyz,selcuksportshd1469.xyz,selcuksportshd1470.xyz,selcuksportshd1471.xyz,selcuksportshd1472.xyz,selcuksportshd1473.xyz,selcuksportshd1474.xyz,selcuksportshd1475.xyz,selcuksportshd1476.xyz,selcuksportshd1477.xyz,selcuksportshd1478.xyz,selcuksportshd1479.xyz,selcuksportshd1480.xyz,selcuksportshd1481.xyz,selcuksportshd1482.xyz,selcuksportshd1483.xyz,selcuksportshd1484.xyz,selcuksportshd1485.xyz,selcuksportshd1486.xyz,selcuksportshd1487.xyz,selcuksportshd1488.xyz,selcuksportshd1489.xyz,selcuksportshd1490.xyz,selcuksportshd1491.xyz,selcuksportshd1492.xyz,selcuksportshd1493.xyz,selcuksportshd1494.xyz,selcuksportshd1495.xyz,selcuksportshd1496.xyz,selcuksportshd1497.xyz,selcuksportshd1498.xyz,selcuksportshd1499.xyz,selcuksportshd1500.xyz,selcuksportshd1501.xyz,selcuksportshd1502.xyz,selcuksportshd1503.xyz,selcuksportshd1504.xyz,selcuksportshd1505.xyz,selcuksportshd1506.xyz,selcuksportshd1507.xyz,selcuksportshd1508.xyz,selcuksportshd1509.xyz,selcuksportshd1510.xyz,selcuksportshd1511.xyz,selcuksportshd1512.xyz,selcuksportshd1513.xyz,selcuksportshd1514.xyz,selcuksportshd1515.xyz,selcuksportshd1516.xyz,selcuksportshd1517.xyz,selcuksportshd1518.xyz,selcuksportshd1519.xyz,selcuksportshd1520.xyz,selcuksportshd1521.xyz,selcuksportshd1522.xyz,selcuksportshd1523.xyz,selcuksportshd1524.xyz,selcuksportshd1525.xyz,selcuksportshd1526.xyz,selcuksportshd1527.xyz,selcuksportshd1528.xyz,selcuksportshd1529.xyz,selcuksportshd1530.xyz,selcuksportshd1531.xyz,selcuksportshd1532.xyz,selcuksportshd1533.xyz,selcuksportshd1534.xyz,selcuksportshd1535.xyz##.banners
+selcuksportshd1464.xyz,selcuksportshd1465.xyz,selcuksportshd1466.xyz,selcuksportshd1467.xyz,selcuksportshd1468.xyz,selcuksportshd1469.xyz,selcuksportshd1470.xyz,selcuksportshd1471.xyz,selcuksportshd1472.xyz,selcuksportshd1473.xyz,selcuksportshd1474.xyz,selcuksportshd1475.xyz,selcuksportshd1476.xyz,selcuksportshd1477.xyz,selcuksportshd1478.xyz,selcuksportshd1479.xyz,selcuksportshd1480.xyz,selcuksportshd1481.xyz,selcuksportshd1482.xyz,selcuksportshd1483.xyz,selcuksportshd1484.xyz,selcuksportshd1485.xyz,selcuksportshd1486.xyz,selcuksportshd1487.xyz,selcuksportshd1488.xyz,selcuksportshd1489.xyz,selcuksportshd1490.xyz,selcuksportshd1491.xyz,selcuksportshd1492.xyz,selcuksportshd1493.xyz,selcuksportshd1494.xyz,selcuksportshd1495.xyz,selcuksportshd1496.xyz,selcuksportshd1497.xyz,selcuksportshd1498.xyz,selcuksportshd1499.xyz,selcuksportshd1500.xyz,selcuksportshd1501.xyz,selcuksportshd1502.xyz,selcuksportshd1503.xyz,selcuksportshd1504.xyz,selcuksportshd1505.xyz,selcuksportshd1506.xyz,selcuksportshd1507.xyz,selcuksportshd1508.xyz,selcuksportshd1509.xyz,selcuksportshd1510.xyz,selcuksportshd1511.xyz,selcuksportshd1512.xyz,selcuksportshd1513.xyz,selcuksportshd1514.xyz,selcuksportshd1515.xyz,selcuksportshd1516.xyz,selcuksportshd1517.xyz,selcuksportshd1518.xyz,selcuksportshd1519.xyz,selcuksportshd1520.xyz,selcuksportshd1521.xyz,selcuksportshd1522.xyz,selcuksportshd1523.xyz,selcuksportshd1524.xyz,selcuksportshd1525.xyz,selcuksportshd1526.xyz,selcuksportshd1527.xyz,selcuksportshd1528.xyz,selcuksportshd1529.xyz,selcuksportshd1530.xyz,selcuksportshd1531.xyz,selcuksportshd1532.xyz,selcuksportshd1533.xyz,selcuksportshd1534.xyz,selcuksportshd1535.xyz##.container > aside.sidebar:has(> .banner)
+selcuksportshd1464.xyz,selcuksportshd1465.xyz,selcuksportshd1466.xyz,selcuksportshd1467.xyz,selcuksportshd1468.xyz,selcuksportshd1469.xyz,selcuksportshd1470.xyz,selcuksportshd1471.xyz,selcuksportshd1472.xyz,selcuksportshd1473.xyz,selcuksportshd1474.xyz,selcuksportshd1475.xyz,selcuksportshd1476.xyz,selcuksportshd1477.xyz,selcuksportshd1478.xyz,selcuksportshd1479.xyz,selcuksportshd1480.xyz,selcuksportshd1481.xyz,selcuksportshd1482.xyz,selcuksportshd1483.xyz,selcuksportshd1484.xyz,selcuksportshd1485.xyz,selcuksportshd1486.xyz,selcuksportshd1487.xyz,selcuksportshd1488.xyz,selcuksportshd1489.xyz,selcuksportshd1490.xyz,selcuksportshd1491.xyz,selcuksportshd1492.xyz,selcuksportshd1493.xyz,selcuksportshd1494.xyz,selcuksportshd1495.xyz,selcuksportshd1496.xyz,selcuksportshd1497.xyz,selcuksportshd1498.xyz,selcuksportshd1499.xyz,selcuksportshd1500.xyz,selcuksportshd1501.xyz,selcuksportshd1502.xyz,selcuksportshd1503.xyz,selcuksportshd1504.xyz,selcuksportshd1505.xyz,selcuksportshd1506.xyz,selcuksportshd1507.xyz,selcuksportshd1508.xyz,selcuksportshd1509.xyz,selcuksportshd1510.xyz,selcuksportshd1511.xyz,selcuksportshd1512.xyz,selcuksportshd1513.xyz,selcuksportshd1514.xyz,selcuksportshd1515.xyz,selcuksportshd1516.xyz,selcuksportshd1517.xyz,selcuksportshd1518.xyz,selcuksportshd1519.xyz,selcuksportshd1520.xyz,selcuksportshd1521.xyz,selcuksportshd1522.xyz,selcuksportshd1523.xyz,selcuksportshd1524.xyz,selcuksportshd1525.xyz,selcuksportshd1526.xyz,selcuksportshd1527.xyz,selcuksportshd1528.xyz,selcuksportshd1529.xyz,selcuksportshd1530.xyz,selcuksportshd1531.xyz,selcuksportshd1532.xyz,selcuksportshd1533.xyz,selcuksportshd1534.xyz,selcuksportshd1535.xyz##.footer
+selcuksportshd1464.xyz,selcuksportshd1465.xyz,selcuksportshd1466.xyz,selcuksportshd1467.xyz,selcuksportshd1468.xyz,selcuksportshd1469.xyz,selcuksportshd1470.xyz,selcuksportshd1471.xyz,selcuksportshd1472.xyz,selcuksportshd1473.xyz,selcuksportshd1474.xyz,selcuksportshd1475.xyz,selcuksportshd1476.xyz,selcuksportshd1477.xyz,selcuksportshd1478.xyz,selcuksportshd1479.xyz,selcuksportshd1480.xyz,selcuksportshd1481.xyz,selcuksportshd1482.xyz,selcuksportshd1483.xyz,selcuksportshd1484.xyz,selcuksportshd1485.xyz,selcuksportshd1486.xyz,selcuksportshd1487.xyz,selcuksportshd1488.xyz,selcuksportshd1489.xyz,selcuksportshd1490.xyz,selcuksportshd1491.xyz,selcuksportshd1492.xyz,selcuksportshd1493.xyz,selcuksportshd1494.xyz,selcuksportshd1495.xyz,selcuksportshd1496.xyz,selcuksportshd1497.xyz,selcuksportshd1498.xyz,selcuksportshd1499.xyz,selcuksportshd1500.xyz,selcuksportshd1501.xyz,selcuksportshd1502.xyz,selcuksportshd1503.xyz,selcuksportshd1504.xyz,selcuksportshd1505.xyz,selcuksportshd1506.xyz,selcuksportshd1507.xyz,selcuksportshd1508.xyz,selcuksportshd1509.xyz,selcuksportshd1510.xyz,selcuksportshd1511.xyz,selcuksportshd1512.xyz,selcuksportshd1513.xyz,selcuksportshd1514.xyz,selcuksportshd1515.xyz,selcuksportshd1516.xyz,selcuksportshd1517.xyz,selcuksportshd1518.xyz,selcuksportshd1519.xyz,selcuksportshd1520.xyz,selcuksportshd1521.xyz,selcuksportshd1522.xyz,selcuksportshd1523.xyz,selcuksportshd1524.xyz,selcuksportshd1525.xyz,selcuksportshd1526.xyz,selcuksportshd1527.xyz,selcuksportshd1528.xyz,selcuksportshd1529.xyz,selcuksportshd1530.xyz,selcuksportshd1531.xyz,selcuksportshd1532.xyz,selcuksportshd1533.xyz,selcuksportshd1534.xyz,selcuksportshd1535.xyz##.socials a:is(.meritroyal, .iptv, .streamradar)
 !
 ! tipobettv*.com - frequently changed domains
 ||tipobettv*.com/Uploads/*_pgskn.jpg

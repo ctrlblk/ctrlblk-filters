@@ -809,6 +809,10 @@ apktops.ir##[id^="linkcat"] > ul > li:not(:has(a[href*="apktops.ir"]))
 apktops.ir##.asiatech
 
 ! >> B <<
+!#if env_mobile
+balad.ir##div[class^="DownloadAppBanner_container"]
+!#endif
+
 behtaraneh.ir##+js(aeld, load, contextmenu)
 behtaraneh.ir##+js(remove-attr, onmousedown|onselectstart, body)
 
@@ -1559,6 +1563,7 @@ farsroid.com##section.homepage-slider > div.container > div.homepage-slider-wrap
 farsroid.com##div.mobile-sticky-banner:has(> a.farsroid-ads)
 !#endif
 farsroid.com##li.ads-download:style(position: absolute !important; top: -10000px !important;)
+farsroid.com##nav.site-top-nav > ul.grid-row > li:has(> a[rel="dofollow"])
 
 ||analysis.faradars.org
 
