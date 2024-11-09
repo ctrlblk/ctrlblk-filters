@@ -1,10 +1,10 @@
 ![Adblock Plus 2.0]
-! Checksum: KPe+46DBTLOcNJJKU+gw+Q
-! Diff-Path: ../patches/224/224-s-1731033443-3600.patch
+! Checksum: wa0u9kyLSmxsW/cA4lMvCA
+! Diff-Path: ../patches/224/224-s-1731126998-3600.patch
 ! Title: AdGuard Chinese filter
 ! Description: EasyList China + AdGuard Chinese filter. Filter list that specifically removes ads on websites in Chinese language.
-! Version: 2.1.25.46
-! TimeUpdated: 2024-11-08T02:33:39+00:00
+! Version: 2.1.25.55
+! TimeUpdated: 2024-11-09T04:33:34+00:00
 ! Expires: 5 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -4813,6 +4813,7 @@ newduba.cn###jq_youxi
 ##style + .need_grid_img
 ##.player-rm > a[href*=".umtrack.com"]
 ##style + .vdgdo
+##.relative > div > img[sizes="100vh"][width="0"]
 ##a[href^="/archives/"] > .post-card > .blog-background[style*="gif;base64"]
 ###banner_links.banner-container
 ##table[style="border:#7D8C8E solid 1px;height: 30px;text-align: center;"]
@@ -4834,6 +4835,17 @@ newduba.cn###jq_youxi
 ||67.21.92.*.gif
 ||cnzz.trafficmanager.net^
 ||cupfox.app^$third-party
+||avxonsp.icu^
+||58shuz.com^
+||trimmoits.com^
+||dn4qoz.com^
+||grirqaks.com^
+||xn--swt207gl1hzc.net^
+||68yscw.com^
+||tqanmatx.icu^
+||kxygsjv.icu^
+||41grk.icu^
+||eddcc.icu^
 ||dhukul.com^
 ||reisyxy.icu^
 ||yrarhzuq.xyz^
@@ -4841,7 +4853,10 @@ newduba.cn###jq_youxi
 ||trpyceq.cn^
 ||6gute.icu^
 ||q2usj.icu^
+||pheqae.com^
+||ittaels.com^
 ||tyaduqq.icu^
+||deafeningphone.com^
 ||gftefmt.icu^
 ||ygoibya.icu^
 ||herzotph.icu^
@@ -13248,8 +13263,8 @@ hxsame.hexun.com$domain=~quote.hexun.com
 ||synacast.com^
 ||syseen.com/content/uploadfile/*/hongbao.png
 ||sysin.org/img/promotion-
-||szaction.cc/public/*/plugins/
-||szaction.cc/public/1/assets/js/custom/tt.
+||51jiajiao.top/public/*/plugins/
+||51jiajiao.top/public/1/assets/js/custom/tt.
 ||szfcol.com/images/wxright240.jpg
 ||szfcol.com/js/siteAd.js
 ||szgpmy.com/js/
@@ -19529,6 +19544,8 @@ gohome.com.hk#@#div[id^="div-gpt-ad"]
 android-doc.com,apk.tw,chaojizhibo.net,chtoen.com,dizhishengcheng.com,doitwell.tw,epinv.com,ff14angler.com,fxpan.com,haoweichi.com,logi.im,lspdfrcn.com,moa.tw,moe48.com,numberempire.com,playok.com,reh.tw,shenfendaquan.com,vaptcha.com#@#ins.adsbygoogle
 android-doc.com,apk.tw,chaojizhibo.net,chtoen.com,dizhishengcheng.com,doitwell.tw,epinv.com,ff14angler.com,fxpan.com,haoweichi.com,logi.im,lspdfrcn.com,moa.tw,moe48.com,numberempire.com,playok.com,reh.tw,shenfendaquan.com,vaptcha.com#@#ins.adsbygoogle[data-ad-slot]
 @@.adserver.$domain=litv.tv
+@@||unpkg.com^$script,domain=happymh.com
+@@||cloudflare.com^$script,domain=happymh.com
 @@||am730.com.hk^$generichide
 @@.com/adv/$domain=my.ctrip.com
 @@.gif#$domain=b168.net|cnprint.org|huhupan.com|tgfcer.com|wgun.net
