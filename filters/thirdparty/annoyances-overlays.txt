@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: EasyList – Newsletter Notices
-! Last modified: Fri, 08 Nov 2024 06:50:56 +0000
+! Last modified: Mon, 11 Nov 2024 02:07:27 +0000
 ! Expires: 7 days (update frequency)
 ! *** easylist:template_header.txt ***
 !
@@ -3580,6 +3580,7 @@ polygon.com,theverge.com##.duet--cta--newsletter
 ! :has
 dailygalaxy.com###home-section3:has-text(Newsletter)
 foxnews.com##.advanced.embed-media:has-text(Get a daily look)
+balls.ie##.bg-left.bg-cover:has-text(Subscribe)
 businesstimes.com.sg##.border-gray-175:has-text(BT in your inbox)
 calgaryherald.com,edmontonjournal.com,montrealgazette.com,ottawacitizen.com,thestarphoenix.com##.callout:has-text(inbox)
 ffrfaction.org##.elementor-button-link:has-text(Sign Up)
@@ -5483,7 +5484,7 @@ doctorofcredit.com#@#.wpdiscuz-subscribe-bar
 ! fanboy_newsletter_shopping_allowlist_general_hide.txt
 
 ! Title: uBlock filters – Other Annoyances
-! Last modified: Sun, 10 Nov 2024 01:56:50 +0000
+! Last modified: Sun, 10 Nov 2024 14:43:21 +0000
 ! Expires: 7 days
 ! Description: Filters optimized for uBlock Origin, to be used with EasyList's and/or Adguard's "Other Annoyances" list(s)
 ! License: https://github.com/uBlockOrigin/uAssets/blob/master/LICENSE
@@ -5536,10 +5537,6 @@ brutal.io##+js(set, hasAdblock, false)
 
 ! https://github.com/uBlockOrigin/uAssets/issues/1447
 starve.io###trevda
-
-! https://github.com/uBlockOrigin/uAssets/issues/1454
-surviv.io##+js(aopw, adBlockDetected)
-surviv.io###ad-block-left
 
 ! https://github.com/uBlockOrigin/uAssets/issues/1582
 ! https://github.com/jspenguin2017/uBlockProtector/issues/974
@@ -7190,10 +7187,6 @@ gagetmatome.com##+js(aopr, document.oncontextmenu)
 gagetmatome.com##+js(acs, document.onselectstart)
 gagetmatome.com##*:style(-webkit-touch-callout: default !important; -webkit-user-select: text !important;-moz-user-select: text !important;-ms-user-select: text !important;user-select: text !important;)
 
-! https://github.com/uBlockOrigin/uAssets/issues/6461 + anti-adblock banner
-voxc.org##+js(aopw, document.oncontextmenu)
-voxc.org##.banner
-
 ! anisubindo.video right click, select, copy
 anisubindo.*##+js(aeld, keydown, preventDefault)
 anisubindo.*##+js(aopr, document.onkeydown)
@@ -7266,8 +7259,7 @@ dreamlandresort.com##+js(aopr, alert)
 ! https://github.com/NanoMeow/QuickReports/issues/2297
 hebrew4christians.com##+js(acs, document.oncontextmenu)
 hebrew4christians.com##+js(ra, onselectstart|ondragstart)
-hebrew4christians.com##+js(aopr, document.onselectstart)
-hebrew4christians.com##+js(aopw, disableSelection)
+hebrew4christians.com##+js(rmnt, script, disableSelection)
 
 ! https://github.com/uBlockOrigin/uAssets/issues/6594
 musixmatch.com##+js(ra, oncontextmenu, body, complete)
@@ -7280,9 +7272,6 @@ ecosia.org##.result-snippet:style(-webkit-touch-callout: default !important; -we
 
 ! ctrl key https://github.com/uBlockOrigin/uAssets/issues/6621
 yusepjaelani.blogspot.com##+js(aopr, document.onkeydown)
-
-! right click https://www.reddit.com/r/uBlockOrigin/comments/e7db1o/prevent_a_script_from_running_that_contains/
-onlystream.tv##+js(aeld, contextmenu)
 
 ! https://github.com/NanoMeow/QuickReports/issues/2454
 canondrivers.org##+js(acs, document.addEventListener)
@@ -7297,12 +7286,6 @@ skidrowreloaded.com##+js(rmnt, script, copyprotect)
 
 ! adevarul .ro tricky copy text
 adevarul.ro##+js(aopr, addLink)
-
-! https://github.com/NanoMeow/QuickReports/issues/2469
-mobilarena.hu##+js(nosiif, 0x)
-mobilarena.hu##+js(nostif, 0x)
-! https://github.com/uBlockOrigin/uAssets/issues/6714
-gamepod.hu,itcafe.hu,prohardver.hu##+js(nostif, , 7000)
 
 ! https://github.com/uBlockOrigin/uAssets/issues/6659
 hindipix.*,hqq.tv##+js(set, console.debug, trueFunc)
@@ -7450,10 +7433,6 @@ techopedia.com##.modal-open:style(overflow: auto !important; padding-top: 0 !imp
 ! https://github.com/uBlockOrigin/uAssets/issues/6848
 uta-net.com##+js(aeld, /contextmenu|selectstart|copy/)
 ||uta-net.com/reverse/user/phplib/img/1pix.gif$image
-sp.uta-net.com##+js(ra, oncontextmenu)
-sp.uta-net.com###kashi_layer
-sp.uta-net.com###kashi
-sp.uta-net.com##body:style(-webkit-touch-callout: default !important; -webkit-user-select: text !important; -moz-user-select: text !important; -ms-user-select: text !important; user-select: text !important;)
 
 ! https://github.com/NanoMeow/QuickReports/issues/2787
 hedgeaccordingly.com##+js(aopw, ABD)
@@ -7464,38 +7443,23 @@ downloadtutorials.net##+js(aeld, /contextmenu|selectstart|copy/)
 ! digitalsynopsis .com select, copy , f-keys
 ||digitalsynopsis.com^$csp=style-src *;script-src *
 
-! https://github.com/NanoMeow/QuickReports/issues/2791
-bacaan.id##+js(aeld, copy)
-
 ! https://github.com/NanoMeow/QuickReports/issues/2809
 dddance.party##+js(aeld, contextmenu)
 dddance.party##*:style(-webkit-touch-callout: default !important; -webkit-user-select: text !important; -moz-user-select: text !important; -ms-user-select: text !important; user-select: text !important;)
-
-! https://github.com/NanoMeow/QuickReports/issues/2811
-idmod.xyz##+js(acs, document.oncontextmenu)
 
 ! https://github.com/NanoMeow/QuickReports/issues/2816
 citpekalongan.com##+js(ra, oncontextmenu|ondragstart|onselectstart|onkeydown|onmousedown)
 citpekalongan.com##body:style(-webkit-touch-callout: default !important; -webkit-user-select: text !important; -moz-user-select: text !important; -ms-user-select: text !important; user-select: text !important;)
 
-! https://github.com/NanoMeow/QuickReports/issues/769#issuecomment-577762899
-gembel9.xyz##+js(ra, oncontextmenu|ondragstart|onselectstart|onkeydown|onmousedown)
-
 ! https://github.com/NanoMeow/QuickReports/issues/2818
 ! dramaqu. work
 dramaqu.*##+js(acs, $, contextmenu)
-
-! https://github.com/NanoMeow/QuickReports/issues/2830
-indcit.com##+js(acs, document.oncontextmenu)
 
 ! https://github.com/NanoMeow/QuickReports/issues/2831
 bisablog.com##*:style(-webkit-touch-callout: default !important; -webkit-user-select: text !important; -moz-user-select: text !important; -ms-user-select: text !important; user-select: text !important;)
 
 ! https://github.com/uBlockOrigin/uAssets/issues/6874
 atribuna.com.br##+js(ra, oncontextmenu|onkeydown)
-
-! https://github.com/NanoMeow/QuickReports/issues/2242
-ac-mo.com##+js(aopw, document.oncontextmenu)
 
 ! vinaurl .in blocked keys
 vinaurl.*##+js(ra, onkeydown)
@@ -7587,7 +7551,7 @@ mongri.net##+js(acs, document.oncontextmenu)
 mongri.net##+js(aopr, getSelection)
 
 ! https://github.com/NanoMeow/QuickReports/issues/2963 right click, select, ctrl-u
-oceanof-games.com##+js(aopr, document.oncontextmenu)
+oceanof-games.com##+js(set, document.oncontextmenu, undefined)
 oceanof-games.com##+js(aopr, document.onkeydown)
 oceanof-games.com##+js(aopr, document.onselectstart)
 oceanof-games.com##+js(aopr, disableSelection)
@@ -8857,8 +8821,8 @@ loginhit.com.ng###ays_tooltip
 123movies.*##+js(acs, document.oncontextmenu)
 123movies.*##*:style(-webkit-touch-callout: default !important; -webkit-user-select: text !important; -moz-user-select: text !important; -ms-user-select: text !important; user-select: text !important;)
 ! https://github.com/uBlockOrigin/uAssets/issues/9462
-123movies.*,2embed.ru##+js(nostif, _0x)
-123movies.*,2embed.ru##+js(set, console.clear, noopFunc)
+123movies.*##+js(nostif, _0x)
+123movies.*##+js(set, console.clear, noopFunc)
 
 ! json2csharp.com anti-adb
 *$script,redirect-rule=noopjs,domain=json2csharp.com
@@ -8925,9 +8889,6 @@ safetxt.net##+js(acs, $, contextmenu)
 1fichier.com##.ui-dialog[aria-describedby="modal-msg"]:has(a[href$="/console/abo.pl"][style^="text-decoration:underline"])
 1fichier.com##.ui-widget-overlay
 
-! abc .es anti adb warning
-! abc.es##+js(aopr, vocento.tracking)
-
 ! https://github.com/uBlockOrigin/uAssets/issues/8347#issuecomment-744394924
 forum.release-apk.com##.has-profile.post:first-child:has-text(/adblock/i)
 
@@ -8941,10 +8902,6 @@ blog.naver.com##*:style(-webkit-touch-callout: default !important; -webkit-user-
 ! https://github.com/AdguardTeam/AdguardFilters/issues/70398
 bendigoadvertiser.com.au##+js(nosiif, modal)
 
-! https://www.reddit.com/r/uBlockOrigin/comments/kh3ibf/how_would_one_go_to_block_inline_script_locking/
-watchmdh.to##+js(aopw, document.oncontextmenu)
-watchmdh.to##style:has-text(:not(input):not(textarea)):remove()
-
 ! fatgirlskinny.net overlay annoyance
 fatgirlskinny.net##.pum
 fatgirlskinny.net##html:style(overflow:auto !important)
@@ -8952,19 +8909,6 @@ fatgirlskinny.net##html:style(overflow:auto !important)
 ! anti select lightnovelworld .com
 ! https://www.reddit.com/r/uBlockOrigin/comments/1dkzbax/how_to_disable_special_style_with_ubo/
 lightnovelworld.*###chapter-article .chapter-content:style(user-select: text !important; -ms-user-select: text !important; -moz-user-select: text !important; -khtml-user-select: text !important; -webkit-user-select: text !important; -webkit-touch-callout: default !important;)
-
-! https://github.com/AdguardTeam/AdguardFilters/issues/70785
-salidzini.lv##+js(acs, setTimeout, offsetHeight)
-
-! https://github.com/AdguardTeam/AdguardFilters/issues/70801
-tusubtitulo.com###bannerAdBlock
-
-! cablegratis .online anti right click - select - drag
-cablegratis.online##+js(acs, document.oncontextmenu)
-cablegratis.online##+js(ra, oncontextmenu|ondragstart|ondrop|onselectstart)
-
-! animeidhentai.com dev tools
-||htstreaming.com/player/assets/debugger.js
 
 ! economica .net manipulated clipboard
 economica.net##+js(aeld, copy)
@@ -9027,18 +8971,8 @@ exclusifvoyages.com##*:style(-webkit-touch-callout: default !important; -webkit-
 ! experciencia .com anti select
 experciencia.com##+js(aopr, disableSelection)
 
-! ejobcircular-24.blogspot .com anti select
-ejobcircular-24.blogspot.com##*:style(-webkit-touch-callout: default !important; -webkit-user-select: text !important; -moz-user-select: text !important; -ms-user-select: text !important; user-select: text !important;)
-
-! elijahwood.altervista .org anti select
-elijahwood.altervista.org##+js(aopr, document.write)
-
 ! everydaynewinfo .com anti select
 everydaynewinfo.com##*:style(-webkit-touch-callout: default !important; -webkit-user-select: text !important; -moz-user-select: text !important; -ms-user-select: text !important; user-select: text !important;)
-
-! f1fastlap.blogspot .com anti right click, anti select
-f1fastlap.blogspot.com##+js(acs, document.oncontextmenu)
-f1fastlap.blogspot.com##+js(acs, document.onselectstart)
 
 ! fraudnavi.com right click, text selection
 fraudnavi.com##+js(ra, oncontextmenu)
@@ -9065,10 +8999,9 @@ tiktok.com##+js(aeld, contextmenu, preventDefault)
 polsatnews.pl##+js(aeld, copy)
 
 ! https://github.com/uBlockOrigin/uAssets/issues/8446
-9docu.org##body:style(-moz-user-select: auto !important;-ms-user-select: auto !important;-webkit-user-select: auto !important;-webkit-touch-callout: default !important;)
-
-! https://github.com/uBlockOrigin/uAssets/issues/8446
 android1pro.com##:not(input):not(textarea),img:style(-webkit-touch-callout: default !important; -webkit-user-select: text !important; -moz-user-select: text !important; -ms-user-select: text !important; user-select: text !important;)
+android1pro.com##+js(rmnt, script, /contextmenu|wpcp/)
+android1pro.com##style:has-text(@media print):remove()
 
 ! https://github.com/uBlockOrigin/uAssets/issues/8451
 world4.eu##+js(aopw, document.oncontextmenu)
