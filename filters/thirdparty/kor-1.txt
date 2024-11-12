@@ -1,7 +1,7 @@
 [uBlock Origin]
 ! Title: List-KR for uBlock Origin
 ! Description: List-KR for uBlock Origin. Maintained by the adblock community and AdGuard.
-! Version: 2024.1111.0
+! Version: 2024.1111.2
 ! Expires: 12 hours
 ! Homepage: https://github.com/List-KR/List-KR
 ! Support: https://list-kr-community.pages.dev/docs/
@@ -1542,6 +1542,9 @@ eegosa.com##section[id*="_ads_"]
 ! ##div[id*="_AD"]
 sports.donga.com##div[id*="_AD"]
 !
+zod.kr##a[class*="zod-banner"]
+zod.kr##.app-aside-content a[href^="https://link.coupang.com"]
+zod.kr##.app-main-banner
 isplus.com##.rightEnd > .section_inner > div[style]
 boardlife.co.kr##.promote-box
 dcinside.com##.trend-rank
@@ -3236,7 +3239,7 @@ t.hi098123.com#$#.tabad { top: -100px !important; }
 ! chzzk.naver.com##+js(trusted-replace-xhr-response, ',"adFree":false', ',"adFree":true', 'my-info')
 ! chzzk.naver.com##+js(nano-stb, noPingPong||(e.sendPing, *, 0.001)
 naver.com##+js(set-cookie, ba.uuid, 0, , domain, naver.com)
-@@||ssl.pstatic.net/tveta/libs/glad/prod/$script,domain=chzzk.naver.com
+@@||ssl.pstatic.net/tveta/libs/glad/prod/$script,xmlhttprequest,domain=chzzk.naver.com
 @@||nam.veta.naver.com/vas$xmlhttprequest,domain=chzzk.naver.com
 !
 boardlife.co.kr#$##top-sponsor { height: 60px !important; top: -60px !important; position: absolute !important; visibility: hidden !important; }

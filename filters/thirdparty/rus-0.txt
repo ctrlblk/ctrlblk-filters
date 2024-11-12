@@ -21783,7 +21783,7 @@ $csp=script-src-attr 'none',domain=eurointegration.com.ua|pravda.com.ua
 @@||ssp.rambler.ru/capirs_async.js|$script,domain=www.championat.com
 https://*adtech_uid=$~third-party,xmlhttprequest,domain=lena-miro.ru|levik.blog|livejournal.com|olegmakarenko.ru|periskop.su|shakko.ru|shiro-kino.ru|vadimrazumov.ru
 ||imgfrost.net^$third-party
-||pikabu.ru/ajax/*sllll=$xmlhttprequest
+||pikabu.ru/ajax/*2bcidk$xmlhttprequest
 ||ritsatv.ru^$csp=script-src
 ||ritsatv.ru^$popup
 ||ritsatv.ru^$~document
@@ -26487,9 +26487,9 @@ domovita.by##body.blocked > #modalCookies
 domovita.by##body.blocked > div[class*="modal-overlay"]
 domovita.by##body.blocked:style(overflow: auto !important)
 ! ---
-dorama.live##.block-content > .ageLimit
-dorama.live##.block-content > .ageLimit ~ .block-player:style(display: block !important)
-dorama.live##.block-content:style(min-height: unset !important)
+doramalive.news##.block-content > .ageLimit
+doramalive.news##.block-content > .ageLimit ~ [class$="-player"]:style(display: block !important)
+doramalive.news##.block-content:style(min-height: unset !important)
 ! ---
 doramax.org##.wrapper.full:style(margin-top: 70px !important)
 ! ---
