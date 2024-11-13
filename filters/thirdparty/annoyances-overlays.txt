@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: EasyList – Newsletter Notices
-! Last modified: Tue, 12 Nov 2024 03:50:23 +0000
+! Last modified: Wed, 13 Nov 2024 03:50:16 +0000
 ! Expires: 7 days (update frequency)
 ! *** easylist:template_header.txt ***
 !
@@ -2137,7 +2137,7 @@ thepostmillennial.com##.card-body
 finbold.com##.card-subscribe
 claimdepot.com##.case_newsletter
 neowin.net##.category-bar
-faithwire.com,just-food.com,naval-technology.com,railway-technology.com,retail-insight-network.com##.catfish
+faithwire.com,just-food.com,naval-technology.com,railway-technology.com,retail-insight-network.com,verdict.co.uk##.catfish
 3dprintingspot.com##.cb-box
 crazyforcrust.com,easypeasyfoodie.com,thetinylife.com##.cb-box__wrapper-center_modal
 mygermanyvacation.com##.cb-ready
@@ -2426,7 +2426,7 @@ quadraphonicquad.com##.gb-reg-modal-overlay
 gcaptain.com##.gcaptain-subscribe-modal
 goodreturns.in##.gd-newsletter-subscribe-box-outer
 goodreturns.in##.gd-newsletter-subscribe-container
-railway-technology.com,retail-insight-network.com##.gdm-company-profile-unit__profile-container
+railway-technology.com,retail-insight-network.com,verdict.co.uk##.gdm-company-profile-unit__profile-container
 thegatewaypundit.com##.get-our-newsletter
 kbb.com##.get-subscribe-form-wrap
 electronicintifada.net##.get-updates
@@ -3580,6 +3580,7 @@ polygon.com,theverge.com##.duet--cta--newsletter
 ! :has
 dailygalaxy.com###home-section3:has-text(Newsletter)
 foxnews.com##.advanced.embed-media:has-text(Get a daily look)
+us500.com##.bg-gray-600:has-text(Read the latest business news)
 balls.ie##.bg-left.bg-cover:has-text(Subscribe)
 businesstimes.com.sg##.border-gray-175:has-text(BT in your inbox)
 amgreatness.com##.border-gray-200:has-text(Get the news)
@@ -5486,7 +5487,7 @@ doctorofcredit.com#@#.wpdiscuz-subscribe-bar
 ! fanboy_newsletter_shopping_allowlist_general_hide.txt
 
 ! Title: uBlock filters – Other Annoyances
-! Last modified: Sun, 10 Nov 2024 14:43:21 +0000
+! Last modified: Tue, 12 Nov 2024 09:16:48 +0000
 ! Expires: 7 days
 ! Description: Filters optimized for uBlock Origin, to be used with EasyList's and/or Adguard's "Other Annoyances" list(s)
 ! License: https://github.com/uBlockOrigin/uAssets/blob/master/LICENSE
@@ -13186,3 +13187,6 @@ japonhentai.com##+js(rmnt, style, ::selection)
 
 ! https://github.com/uBlockOrigin/uAssets/issues/25926
 rutube.ru##+js(trusted-click-element, #app > #raichuLoaderTemplate [aria-label^="Остановить"])
+
+! https://github.com/uBlockOrigin/uAssets/issues/25990
+karistudio.com##div.confuse:remove()
