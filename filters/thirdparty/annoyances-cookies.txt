@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: EasyList – Cookie Notices
-! Last modified: Thu, 14 Nov 2024 02:07:03 +0000
+! Last modified: Thu, 14 Nov 2024 21:50:30 +0000
 ! Expires: 7 days (update frequency)
 ! *** easylist:template_header.txt ***
 !
@@ -21898,7 +21898,7 @@ batida.de,kuemmerling.de,lutter-und-wegner.de,menger-krug.de##.active.legacy
 !! .amgdprcookie-modal-template
 icko-apiculture.com##.amgdprcookie-modal-template
 !! .bottom-0.position-fixed
-carsharingi.ru,clipartsfree.net,jenner.com,kwebler.com,nmsu.edu,tech-america.com,waracle.com##.bottom-0.position-fixed
+carsharingi.ru,clipartsfree.net,jenner.com,kwebler.com,legiscope.com,nmsu.edu,tech-america.com,waracle.com##.bottom-0.position-fixed
 ! .bottom-0.left-0
 sprintersports.com##.bottom-0.left-0
 ! .bottom-0.right-0
@@ -22452,6 +22452,7 @@ funnycase.pl##+js(set-cookie, funnycase_cookie_policy_v2, 1, , reload, 1)
 vmake.ai##+js(set-cookie, VMAKE_COOKIE_POLICY, 0)
 gmr-foto.at##+js(set-cookie, fmalertcookies, true)
 shrapnel.com##+js(set-cookie, ConsentCookies, false)
+entail.ai##+js(set-cookie, cookie_consent_status, rejected, , reload, 1)
 wikiwand.com##+js(set-cookie, wikiwand.cookies.consent, true)
 athleticsreg.ca##+js(set-cookie, accepted_cookie_policy, false)
 marinelink.com##+js(set-cookie, GDPR, 9)
@@ -30091,7 +30092,7 @@ concursolutions.com,forbes.com,formula1.com,fortune.com,proximus.be,proximustv.b
 @@||zensus2022.de/SiteGlobals/Modules/CookieBanner/*/CookieBanner.json?$~third-party,xmlhttprequest
 
 ! Title: uBlock filters – Cookie Notices
-! Last modified: Wed, 13 Nov 2024 11:51:42 +0000
+! Last modified: Thu, 14 Nov 2024 07:44:58 +0000
 ! Expires: 7 days
 ! Description: Filters optimized for uBlock Origin, to be used with EasyList's and/or Adguard's "Cookie Notices" list(s)
 ! License: https://github.com/uBlockOrigin/uAssets/blob/master/LICENSE
@@ -31057,7 +31058,9 @@ viss.nu##+js(trusted-set-cookie, sv-cookie-consent, true, , , reload, 1)
 ! music.amazon. co.uk|de|fr cookies
 ! https://github.com/uBlockOrigin/uAssets/issues/20620
 music.amazon.*##+js(trusted-click-element, #dialogButton1)
-! music.amazon.*###overlay:has([href*="privacyprefs/"])
+! https://github.com/uBlockOrigin/uAssets/issues/20620#issuecomment-2465802971
+music.amazon.*##+js(trusted-click-element, #overlay > div > #banner:has([href*="privacyprefs/"]) music-button:last-of-type)
+music.amazon.*###overlay > div > #banner:has([href*="privacyprefs/"])
 
 
 ! https://github.com/uBlockOrigin/uAssets/issues/20551

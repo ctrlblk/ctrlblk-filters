@@ -3511,6 +3511,7 @@
 ||lounerr.com^$third-party
 ||lovad.pro^$third-party
 ||lp1block.com^$third-party
+||lp9.ru^$third-party
 ||lpirha.com^$third-party
 ||lpprza.com^$third-party
 ||lptiu.top^$third-party
@@ -20237,6 +20238,7 @@ football.kulichki.net#?#div:-abp-has(> table > tbody a[href*="kulichki.com/adver
 only-paper.ru#?#div:not(.adv-wrapper):-abp-has(> ins)
 glavagronom.ru#?#div:not([id]):not([class]):-abp-has(> div + div + section + section) > div:first-child + div > div:only-child > div:first-child + div:last-child
 tomat-pomidor.com##div:not([id]):not([class])[style^="min-height:"]
+vk.com,vk.ru##div[adchoiceview]
 gooool.tv,gooool365.org##div[align="center"] > .vk
 darkmoney.at##div[align="center"] > a[href] > img[src*=".gif"]
 igru-xbox.net,probiv.in,probiv.one##div[align="center"] > a[href][target="_blank"]
@@ -21783,7 +21785,7 @@ $csp=script-src-attr 'none',domain=eurointegration.com.ua|pravda.com.ua
 @@||ssp.rambler.ru/capirs_async.js|$script,domain=www.championat.com
 https://*adtech_uid=$~third-party,xmlhttprequest,domain=lena-miro.ru|levik.blog|livejournal.com|olegmakarenko.ru|periskop.su|shakko.ru|shiro-kino.ru|vadimrazumov.ru
 ||imgfrost.net^$third-party
-||pikabu.ru/ajax/*bcid$xmlhttprequest
+||pikabu.ru/ajax/*bbid$xmlhttprequest
 ||ritsatv.ru^$csp=script-src
 ||ritsatv.ru^$popup
 ||ritsatv.ru^$~document
@@ -28533,6 +28535,7 @@ news.mail.ru,pogoda.mail.ru,sportmail.ru##+js(set-constant, Object.prototype.use
 ~3igames.mail.ru,~account.mail.ru,~auto.mail.ru,~biz.mail.ru,~bonus.mail.ru,~calendar.mail.ru,~calls.mail.ru,~cloud.mail.ru,~connect.mail.ru,~deti.mail.ru,~dobro.mail.ru,~e.mail.ru,~finance.mail.ru,~gibdd.mail.ru,~health.mail.ru,~help.mail.ru,~hi-tech.mail.ru,~horo.mail.ru,~kino.mail.ru,~lady.mail.ru,~love.mail.ru,mail.ru,~mcs.mail.ru,~minigames.mail.ru,~my.mail.ru,~news.mail.ru,~o2.mail.ru,~octavius.mail.ru,~okminigames.mail.ru,~otvet.mail.ru,~pets.mail.ru,~player-smotri.mail.ru,~pogoda.mail.ru,~top.mail.ru,~touch.mail.ru,~tv.mail.ru,~vfokuse.mail.ru,~widgets.mail.ru##+js(set-constant, document.title, null)
 ~3igames.mail.ru,~account.mail.ru,~auto.mail.ru,~biz.mail.ru,~blog.mail.ru,~bonus.mail.ru,~calendar.mail.ru,~calls.mail.ru,~cloud.mail.ru,~connect.mail.ru,~deti.mail.ru,~dobro.mail.ru,~e.mail.ru,~finance.mail.ru,~gibdd.mail.ru,~health.mail.ru,~help.mail.ru,~hi-tech.mail.ru,~horo.mail.ru,~kino.mail.ru,~lady.mail.ru,~love.mail.ru,mail.ru,~mcs.mail.ru,~minigames.mail.ru,~my.mail.ru,~news.mail.ru,~o2.mail.ru,~octavius.mail.ru,~okminigames.mail.ru,~otvet.mail.ru,~pets.mail.ru,~player-smotri.mail.ru,~pogoda.mail.ru,~top.mail.ru,~touch.mail.ru,~tv.mail.ru,~vfokuse.mail.ru,~widgets.mail.ru##+js(set-constant, mr._mimic.locator.transform, undefined)
 touch.mail.ru##.page__content__slide > .messagelist > div:not([cid]):not([style]):not([id]):not([class])
+/2promo.octavius.bundle.js$domain=mail.ru
 /res/js/app/VideoAutoplayFlow_$domain=ok.ru
 ok.ru##[data-module*="banner"]
 mail.ru##[slot="main-column"] :matches-css(height: 90px)
