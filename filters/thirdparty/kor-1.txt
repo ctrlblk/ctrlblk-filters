@@ -1,7 +1,7 @@
 [uBlock Origin]
 ! Title: List-KR for uBlock Origin
 ! Description: List-KR for uBlock Origin. Maintained by the adblock community and AdGuard.
-! Version: 2024.1118.1
+! Version: 2024.1120.4
 ! Expires: 12 hours
 ! Homepage: https://github.com/List-KR/List-KR
 ! Support: https://list-kr-community.pages.dev/docs/
@@ -513,6 +513,7 @@ m.cafe.naver.com##.banner_add.bottom:matches-path(/ca-fe\\/web\\/cafes\\/(steami
 /data/banner.json?$domain=~nintendo.*
 /ad-manager.min.js
 !
+||photo.jtbc.co.kr/news/cms/etc/
 ||cdn.lol.ps/assets/img/bg-skins/
 ||firebasestorage.googleapis.com/v0/b/kimchi-premium.appspot.com/o/banner-imgs
 ||cdn.theddari.com/banner/
@@ -1546,6 +1547,9 @@ eegosa.com##section[id*="_ads_"]
 ! ##div[id*="_AD"]
 sports.donga.com##div[id*="_AD"]
 !
+news.jtbc.co.kr##.MuiBox-root > .MuiBox-root > .swiper-initialized.swiper-backface-hidden:has([target="_blank"])
+news.jtbc.co.kr###ednp_wrap
+news.jtbc.co.kr##aside div[class*="my-"].e1ecreks0.MuiBox-root:has(> .MuiBox-root > div[id$="_AD"])
 kimpga.com##.ad-slot-vertical
 theddari.com##div[class]:has(> a[aria-label="side-ads"])
 etoland.co.kr##div[style*="margin-top:"] > a[href*="?bo_table=store&wr_id="]
@@ -2685,6 +2689,10 @@ orbi.kr##a[href^="https://ads.orbi.kr/"]
 osen.mt.co.kr##div#close_mask
 www.erdcloud.com##.erd-ads-area
 tvroom5.org##div.banners_area
+gall.dcinside.com##tr.list_trend
+dcinside.com##div.dctrend_ranking
+dcinside.com##.key-trendbox
+m.dcinside.com##ul.detail-top-lst.trend
 !
 ! DOMAIN-REFRESHER: START
 !
