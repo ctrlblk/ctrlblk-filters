@@ -13901,7 +13901,8 @@ inpot.ru###ezobann
 bitcryptonews.ru###faq-index
 turmush.kg###fb_bottom_like
 myparcels.ru###featured-wants
-vk.com,vk.ru#?##feed_rows > div[class^="feed_row"]:-abp-has(> [id^="post-"] > ._post_content .PostHeader > .PostHeaderInfo > .PostHeaderSubtitle > .PostHeaderSubtitle__item:-abp-contains(/Community ad|Реклама |Рэклама | жарнама/))
+vk.com,vk.ru#?##feed_rows > div[class^="feed_row"]:-abp-has(> .page_block .mads_noClickarea)
+vk.com,vk.ru#?##feed_rows > div[class^="feed_row"]:-abp-has(> [id^="post-"] > ._post_content .PostHeader > .PostHeaderInfo > [class^="PostHeaderSubtitle"] > [class]:-abp-contains(/Community ad|Реклама|Рэклама|жарнама/))
 vk.com,vk.ru#?##feed_rows > div[class^="feed_row"]:-abp-has(> [id^="post-"] > ._post_content .PostHeader > .PostHeaderInfo [onclick*="ads_params:"])
 vk.com,vk.ru#?##feed_rows > div[class^="feed_row"]:-abp-has(> [id^="post-"] > ._post_content .PostHeader > .PostHeaderInfo [onmouseover*="AdsLight"])
 vk.com,vk.ru#?##feed_rows > div[class^="feed_row"]:-abp-has(> [id^="post-"] > ._post_content .PostHeader > .PostHeaderInfo span.PostHeaderSubtitle__item [class] [class] [class])
@@ -20953,6 +20954,7 @@ prostatitanet.com##div[id^="pg-aa-ad"]
 interfax.ru,sport-interfax.ru##div[id^="pl"][id*="_ban"]
 xn---2--mddxunv8a2esa.xn--p1ai##div[id^="post"] > .tech-info + :empty
 tavrijci.org##div[id^="post-"] > div[class="a-divide-entry"]
+vk.com,vk.ru##div[id^="post-"][onmousedown^="wall.postClickStat(event)"]
 minfin.com.ua##div[id^="premium-"]
 smartphone.ua##div[id^="premium-banner"]
 sm.news##div[id^="prog_adv_"]
@@ -21784,7 +21786,7 @@ $csp=script-src-attr 'none',domain=eurointegration.com.ua|pravda.com.ua
 @@||ssp.rambler.ru/capirs_async.js|$script,domain=www.championat.com
 https://*adtech_uid=$~third-party,xmlhttprequest,domain=lena-miro.ru|levik.blog|livejournal.com|olegmakarenko.ru|periskop.su|shakko.ru|shiro-kino.ru|vadimrazumov.ru
 ||imgfrost.net^$third-party
-||pikabu.ru/ajax/*?sllla=$xmlhttprequest
+||pikabu.ru/ajax/ahyuvhzruD0BEhtf.$xmlhttprequest
 ||ritsatv.ru^$csp=script-src
 ||ritsatv.ru^$popup
 ||ritsatv.ru^$~document
@@ -26050,6 +26052,7 @@ gibdd-gai.ru##.warning
 spletnik.ru##.z-adblock-message
 /*.js|$script,~third-party,domain=cyberpedia.su|infopedia.su|lektsii.org|megaobuchalka.ru|poisk-ru.ru|studopedia.info|studopedia.net|studopedia.org|studopedia.su
 /a-detector/$domain=docfilms.info|green-teatv.com|vesjoloevideo.ru
+/adsblocker.js$script,domain=jakondo.ru
 /fck-ab-code.js$domain=the-office.su
 /ggl/*$script,~third-party,domain=lektsii.org|megaobuchalka.ru|mydocx.ru|studopedia.com.ua|studopedia.net|studopedia.org|studopedia.ru|studopedia.su
 /javascript_adblockdetector/*$script,domain=baku365.com
@@ -27948,7 +27951,7 @@ mail.ru##body > .zeropixel ~ div > style ~ div:style(pointer-events: none !impor
 mail.ru##body:not(.js-module) .searchContainer ~ div > a.dmb
 mail.ru##body:not(.js-module) .tabs + div[class] > :first-child:style(width: 100% !important)
 mail.ru##body:not(.js-module) .tabs + div[class]:style(min-width: fit-content !important)
-mail.ru##body:not(.js-module) .tabs > .tabs__item:style(padding: 0 5px !important; font-size: 15px !important)
+mail.ru##body:not(.js-module) .tabs > .tabs__item:style(padding: 0 4px !important; font-size: 14px !important)
 mail.ru##div:not(.grid__main-col) > div[slot="main-column"] .search-container:style(margin-top: 4px !important; margin-bottom: 20px !important)
 cloud.mail.ru##div[class^="Datalistinfo__root"]
 cloud.mail.ru##div[class^="Public-desktop__rightCol-"]

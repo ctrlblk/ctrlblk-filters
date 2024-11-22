@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: EasyList – Cookie Notices
-! Last modified: Thu, 21 Nov 2024 02:12:14 +0000
+! Last modified: Fri, 22 Nov 2024 02:13:08 +0000
 ! Expires: 7 days (update frequency)
 ! *** easylist:template_header.txt ***
 !
@@ -629,6 +629,7 @@
 /gdpr_changes_v1.min.js
 /gdpr_consent.js
 /gdpr_consent.min.js
+/gdpr_cookie_consent.min.js
 /gdpr_cookies/cookies.js
 /gdpr_dfp.js
 /gdpr_footer.js
@@ -18643,7 +18644,7 @@
 ||synology.com/js/syno/syno_cookie_element.js
 ||tags.tiqcdn.com^$script,domain=firstdirect.com|santander.pl|swisscom.ch
 ||terencehill.com/modules/hicookielaw/
-||transcend-cdn.com^$domain=1password.com|anaconda.com|gofundme.com|kickstarter.com|lifetouch.com|shutterfly.com|vimeo.com
+||transcend-cdn.com^$domain=1password.com|anaconda.com|gofundme.com|kickstarter.com|lifetouch.com|patreon.com|shutterfly.com|vimeo.com
 ||transcendcdn.eventbrite.com^
 ||tvpworld.com/files/portale-v4/polityka-prywatnosci/js/tvp-tcfapi.js
 ||umich.edu/apis/umcookieconsent/
@@ -20013,6 +20014,7 @@ drafty.co.uk##.cpc-float
 deployhq.com##.crumbs-banner
 odds.am##.cs
 louisvuitton.com##.cs_banner
+kato-brand.com##.csm-cookie-consent
 filen.io##.css-11l9fez
 drive.filen.io##.css-13xwjmo
 mobian.dev##.css-14g2en8
@@ -22455,7 +22457,9 @@ toppy.be##+js(set-cookie, __toppy_consent, 1)
 uhrzeit123.de##+js(set-cookie, _u123_cc, yes)
 uhrzeit123.de##+js(set-cookie, ga-disable, true)
 billetterie.auditorium-lyon.com##+js(set-cookie, ga_consentement, 0)
+iconoclasts.blog##+js(set-cookie, gdpr_decline, 1)
 shopify.dev##+js(set-cookie, eu_cookies_acknowledged, true)
+oxide.computer##+js(set-cookie, ox-accept-tracking, false)
 funnycase.pl##+js(set-cookie, funnycase_cookie_policy_v2, 1, , reload, 1)
 vmake.ai##+js(set-cookie, VMAKE_COOKIE_POLICY, 0)
 gmr-foto.at##+js(set-cookie, fmalertcookies, true)
@@ -23492,6 +23496,7 @@ posthog.com##+js(set-local-storage-item, cookie_consent, no)
 shop.ba.com##+js(set-local-storage-item, iag-targeting-consent, "no")
 shop.ba.com##+js(set-local-storage-item, iag-performance-consent, "no")
 greubelforsey.com##+js(set-local-storage-item, rgpd.consent, 1)
+lukify.app##+js(set-local-storage-item, _lukCookieAgree, 2)
 studiobookr.com##+js(set-local-storage-item, cookiesAllowed, false)
 getgrass.io##+js(set-local-storage-item, cookiePreference, 1)
 popcornmovies.to##+js(set-local-storage-item, cookiePolicy, true)
@@ -23685,7 +23690,7 @@ gronkh.tv##+js(set-local-storage-item, grnk-cookies-accepted, true)
 parrotsec.org##+js(set-local-storage-item, cookieConsent, true)
 deribit.com,dorkgpt.com##+js(set-local-storage-item, cookieConsent, false)
 adfilteringdevsummit.com##+js(set-local-storage-item, acceptCookies, no)
-dsworks.ru##+js(set-local-storage-item, acceptCookies, true)
+dailyrevs.com,dsworks.ru##+js(set-local-storage-item, acceptCookies, true)
 daraz.com##+js(set-local-storage-item, has-dismissed, 1)
 learngerman.dw.com##+js(set-local-storage-item, hasAcceptedGdpr, true)
 leeway.tech##+js(set-local-storage-item, lw-accepts-cookies, true)
@@ -28166,6 +28171,7 @@ portugalglobal.pt###barramensagem
 assertivasolucoes.com.br###ck-container
 cliper.pt###cook
 ipn.pt###cookie-law-panel
+staples.pt###cookie-new-cconsent-bar
 klminfo.com.br###cookiesmodal
 millenniumbcp.pt###ctl00_PoliticaCookies_divCookiesMsg
 doramogo.com,goyabu.to,mangazim.com,superhentai.online###disclaimer
@@ -30108,7 +30114,7 @@ concursolutions.com,forbes.com,formula1.com,fortune.com,proximus.be,proximustv.b
 @@||zensus2022.de/SiteGlobals/Modules/CookieBanner/*/CookieBanner.json?$~third-party,xmlhttprequest
 
 ! Title: uBlock filters – Cookie Notices
-! Last modified: Tue, 19 Nov 2024 12:50:06 +0000
+! Last modified: Thu, 21 Nov 2024 08:29:27 +0000
 ! Expires: 7 days
 ! Description: Filters optimized for uBlock Origin, to be used with EasyList's and/or Adguard's "Cookie Notices" list(s)
 ! License: https://github.com/uBlockOrigin/uAssets/blob/master/LICENSE
@@ -31136,13 +31142,9 @@ snowandrock.com##+js(trusted-set-cookie, consent_identifier, 16f69085-c6f2-42f6-
 snowandrock.com##+js(trusted-set-cookie, consent_setting, analytics%3A0%7Cfunctional%3A1%7Cmarketing%3A0)
 
 ! racingnews365.com
-racingnews365.com##+js(trusted-set-cookie, __cmpcccu33611, aBP1oXvjgABbQABAAIABYADQAJgAXAA0AB4AEQAKAAXAA0gCAAIIASgAmwBWAFcALIAXgAwACHAFsAMcAaYA5AB2AD4AH6AQCAhQCFgEQgI4AjoBJACUAEwAKIAUcApIBSwCngFXALMAX4AwYBjgDIgGcANEAaUA3YBvgDogHbAPYAfoBAcCFwIYAQ8AiQBGACOQEegJGASSAksBKICVgE6gJ9AUGApQBT4CpAFUwKvArABXACvQFgQLDAsQBcIC8QF-AMoAZeAzUBnwDSQGqgNbAa8A2IBwQDiQHbAPLAe2BBwCaAFLwLAgWiAxxBoUGkgNsAbtA3iBvkDfoHBAOHAcUA4sByoDlgHLgOZQc8Bz0DoIHRwOlAdMA6eB1QDroHZAOzgdpA7iB4EDyIHlgPQAelA9YB7gD54H0QPuAffA_GB-YD9AH6gP_AgMBAkCBsEDoIJgQVggtBBiCDQEHAIPAQiAhGhCSEJcIUAhRBDCCGQEOwIeARAAiVBEwCKQEU4I8oSCBIMCQsEioJJ4SXBJeCTYEnQJRgSlAlNBKiCVYErIJXQUaAAoBdA)
-racingnews365.com##+js(trusted-set-cookie, __cmpconsent33611, CP1lmTAP1lmTAAfVnBFIAbEgAIAAAAAAAAigIjQBgBBgJVATOAuIB3IERgRGgDACDASqAmcBcQDuQIjAAA)
 ! New solution when the next stable version becomes widely used. https://github.com/uBlockOrigin/uBlock-issues/issues/2971
 ! All store information on device cookies
-! racingnews365.com##+js(trusted-click-element, '#cmpwrapper >>> .cmptxt_btn_settings, #cmpwrapper >>> [data-cmp-purpose="1"][aria-checked="false"], #cmpwrapper >>> .cmptxt_btn_save')
-! racingnews365.com###cmpwrapper
-! racingnews365.com##body.contentItem[style="overflow: hidden;"]:style(overflow: auto !important)
+dw.com,winfuture.de,lippu.fi,racingnews365.com##+js(trusted-click-element, #cmpwrapper >>> #cmpbntyestxt, , 1000)
 
 ! https://www.zdf.de/ - Functional + social
 zdf.de##+js(trusted-set-cookie, zdf_cmp_client, '{%22version%22:%22v1%22%2C%22iteration%22:1%2C%22consents%22:[{%22id%22:%22personalisierung%22%2C%22value%22:false}%2C{%22id%22:%22socialMedia%22%2C%22value%22:true}%2C{%22id%22:%22instagram%22%2C%22value%22:true}%2C{%22id%22:%22twitter%22%2C%22value%22:true}%2C{%22id%22:%22facebook%22%2C%22value%22:true}%2C{%22id%22:%22drittsysteme%22%2C%22value%22:true}%2C{%22id%22:%22erforderlich%22%2C%22value%22:true}%2C{%22id%22:%22erfolgsmessung%22%2C%22value%22:true}]}')
@@ -31988,3 +31990,9 @@ klm.*##+js(trusted-set-cookie, bw_cookie_banner, '{"1":true,"2":false,"3":false}
 
 ! reject/date=1
 lancaster.ac.uk##+js(trusted-set-cookie, luCookieConsent, '{"analyticsConsent":false,"marketingConsent":false,"expires":"1"}')
+
+! refinery29.com
+cdn.privacy-mgmt.com##+js(trusted-click-element, button[title="Dismiss"])
+
+! just allow google maps
+wavecon.de##+js(trusted-set-cookie, _pm_datenschutz_cookie, 80ce7170aa:false;4b086eb24b:true;3a0521a8ad:false, , , reload, 1)
