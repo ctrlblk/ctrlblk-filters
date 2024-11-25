@@ -1,7 +1,7 @@
 [uBlock Origin]
 ! Title: List-KR for uBlock Origin
 ! Description: List-KR for uBlock Origin. Maintained by the adblock community and AdGuard.
-! Version: 2024.1121.0
+! Version: 2024.1125.0
 ! Expires: 12 hours
 ! Homepage: https://github.com/List-KR/List-KR
 ! Support: https://list-kr-community.pages.dev/docs/
@@ -247,6 +247,7 @@
 !
 ! DOMAIN-REFRESHER: END
 
+||aedi.ai^$third-party
 ||mobon.net^$third-party
 ||nhnace.com^$third-party
 ||splash-ad.classting.com^
@@ -2689,10 +2690,15 @@ orbi.kr##a[href^="https://ads.orbi.kr/"]
 osen.mt.co.kr##div#close_mask
 www.erdcloud.com##.erd-ads-area
 tvroom5.org##div.banners_area
+tvroom5.org##div.banner_l
 gall.dcinside.com##tr.list_trend
 dcinside.com##div.dctrend_ranking
-dcinside.com##.key-trendbox
+m.dcinside.com##div.key-trendbox
+dcinside.com##div.key_trendbox
 m.dcinside.com##ul.detail-top-lst.trend
+clien.net##div:has(> div[class="ad_banner"])
+etoland.co.kr##div#super_store_skin_v1
+etoland.co.kr##div.my_880_100_wrap
 !
 ! DOMAIN-REFRESHER: START
 !
