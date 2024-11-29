@@ -1,7 +1,7 @@
 [uBlock Origin]
 ! Title: List-KR for uBlock Origin
 ! Description: List-KR for uBlock Origin. Maintained by the adblock community and AdGuard.
-! Version: 2024.1128.0
+! Version: 2024.1128.4
 ! Expires: 12 hours
 ! Homepage: https://github.com/List-KR/List-KR
 ! Support: https://list-kr-community.pages.dev/docs/
@@ -247,6 +247,7 @@
 !
 ! DOMAIN-REFRESHER: END
 
+||planad.net^
 ||aedi.ai^$third-party
 ||mobon.net^$third-party
 ||nhnace.com^$third-party
@@ -514,6 +515,8 @@ m.cafe.naver.com##.banner_add.bottom:matches-path(/ca-fe\\/web\\/cafes\\/(steami
 /data/banner.json?$domain=~nintendo.*
 /ad-manager.min.js
 !
+||theceluv.com/banner/
+||celuvmedia.com/ad/
 ||blog.kakaocdn.net/dn/$image,domain=heye.kr
 ||ibb.co^$domain=heye.kr,image
 ||photo.jtbc.co.kr/news/cms/etc/
@@ -1551,6 +1554,13 @@ eegosa.com##section[id*="_ads_"]
 ! ##div[id*="_AD"]
 sports.donga.com##div[id*="_AD"]
 !
+m.celuvmedia.com##.main_bnr
+m.celuvmedia.com###container > div[style="margin-top:10px"]
+celuvmedia.com###CmAdContent  > table[style]
+www.chosun.com##article.layout__article-main > .box--pad-bottom-lg
+www.chosun.com##article.layout__article-main > .box--pad-top-xl.box--hidden-sm:has(> .box--border-xs)
+chaoscube.co.kr##div[ad-size]
+chaoscube.co.kr##.venatus-container
 news.jtbc.co.kr##.MuiBox-root > .MuiBox-root > .swiper-initialized.swiper-backface-hidden:has([target="_blank"])
 news.jtbc.co.kr###ednp_wrap
 news.jtbc.co.kr##aside div[class*="my-"].e1ecreks0.MuiBox-root:has(> .MuiBox-root > div[id$="_AD"])
