@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: EasyList – Newsletter Notices
-! Last modified: Sat, 30 Nov 2024 02:11:26 +0000
+! Last modified: Sun, 01 Dec 2024 02:31:25 +0000
 ! Expires: 7 days (update frequency)
 ! *** easylist:template_header.txt ***
 !
@@ -2434,6 +2434,7 @@ thechurchnews.com##.form__wrapper
 cnevpost.com,prettysimplesweet.com,saabplanet.com,valuewalk.com##.formkit-form
 notthathardtohomeschool.com##.formkit-sticky-bar
 algemeiner.com##.formnews
+labrujulaverde.com##.formulariosuscripcion
 neurologyadvisor.com,ophthalmologyadvisor.com,optometryadvisor.com##.fr-dialogmodal
 prodvana.io##.framer-2ydke7-container
 wholesomeyum.com##.free-food-bar
@@ -5351,11 +5352,13 @@ eurocampings.nl,weerplaza.nl##.newsletter-subscribe
 gezondheidsnet.nl##.nieuwsbrief
 gva.be,nieuwsblad.be##.optinboxWrapper
 micazu.nl##.rh-footer-newsletter
+ct.nl##.sidebar-basedriver
 eurogamer.nl##.signup-promo
 israeltoday.nl##.single_post_sub_form
 mejudice.nl##.widget-news-letter-subscribe
 shespot.nl##.widget_budgetmailer_widget_subscribe
 automobielmanagement.nl,carwashpro.nl,fleet-mobility.nl,infrasite.nl,mobiliteit.nl,rijschoolpro.nl,schuttevaer.nl,spoorpro.nl,tankpro.nl,taxipro.nl,zelfrijdendvervoer.nl##.widget_ymlp
+ct.nl##.wpbd-form
 deondernemer.nl##[id^="newsletter_"]
 id.nl##div[class*="newsletter_content-side_"]
 ! Finnish
@@ -5595,7 +5598,7 @@ doctorofcredit.com#@#.wpdiscuz-subscribe-bar
 ! fanboy_newsletter_shopping_allowlist_general_hide.txt
 
 ! Title: uBlock filters – Other Annoyances
-! Last modified: Sat, 30 Nov 2024 01:32:24 +0000
+! Last modified: Sun, 01 Dec 2024 05:08:00 +0000
 ! Expires: 7 days
 ! Description: Filters optimized for uBlock Origin, to be used with EasyList's and/or Adguard's "Other Annoyances" list(s)
 ! License: https://github.com/uBlockOrigin/uAssets/blob/master/LICENSE
@@ -7419,9 +7422,9 @@ mangaku.*##+js(aeld, contextmenu)
 gamebanana.com##+js(aopr, adBlockDetected)
 
 ! https://github.com/uBlockOrigin/uAssets/issues/10888#issuecomment-1523943368
-||www.redditstatic.com/shreddit/*/xpromo-nsfw-blocking-modal-$script
+||redditstatic.com/shreddit/*/xpromo-nsfw-blocking-modal-$script
 ! https://www.reddit.com/r/uBlockOrigin/comments/1dzrnq3/remove_popups_from_reddit_mobile/
-reddit.com##xpromo-nsfw-blocking-container:shadow(.prompt:has(> .viewInApp))
+reddit.com##div.prompt:has(> .viewInApp)
 ! https://github.com/easylist/easylist/issues/17354
 !#if !env_mobile
 reddit.com#@#body:not(.with-listing-chooser):style(overflow: visible !important; position: static !important;)
@@ -11952,9 +11955,6 @@ tumblr.com##+js(nostif, Premium)
 ! ||assets.tumblr.com/pop/js/modern/async-login-wall
 tumblr.com##+js(set-cookie, logged_in, 1, , reload, 1)
 
-! https://github.com/uBlockOrigin/uAssets/issues/19020
-bestx.stream##+js(set, devtoolsDetector, {})
-
 ! oploverz anti right click & text selection, etc
 oploverz.*##+js(rmnt, script, contextmenu)
 oploverz.*##+js(rmnt, style, user-select)
@@ -12316,9 +12316,12 @@ anascrie.ro##+js(rmnt, script, /document.onkeydown|document.ondragstart/)
 anascrie.ro##*:style(-webkit-touch-callout: default !important; -webkit-user-select: text !important; -khtml-user-select: text !important; -moz-user-select: text !important; -ms-user-select: text !important; user-select: text !important; -webkit-tap-highlight-color: revert !important; cursor: revert !important;)
 anascrie.ro##style:has-text(@media print):remove()
 
+! https://github.com/uBlockOrigin/uAssets/issues/19020
 ! https://github.com/uBlockOrigin/uAssets/issues/20747
 moviesapi.club,bestx.stream,watchx.top##+js(rmnt, script, devtoolsDetector)
 moviesapi.club,bestx.stream,watchx.top##+js(set, devtoolsDetector, {})
+! https://github.com/uBlockOrigin/uAssets/issues/26254
+||bestx.stream/assets/js/devtools-detector.js
 
 ! https://github.com/uBlockOrigin/uAssets/issues/20790
 streambuddy.net##+js(rmnt, script, oncontextmenu)
@@ -13241,3 +13244,15 @@ streamruby.com##+js(rmnt, script, /devtool|debugger/)
 ! https://embasic.pro/videos/universe-league-2024-episode-1
 embasic.pro,dlions.pro##+js(trusted-suppress-native-method, Function.prototype.constructor, '"debugger"', abort)
 d0000d.com##+js(set, console.clear, undefined)
+
+! https://github.com/uBlockOrigin/uAssets/issues/26245 anti devtools, contextmenu, ctrl keys
+sussytoons.site##+js(nosiif, /devtool|console\.clear/)
+sussytoons.site##+js(aeld, keydown, 123)
+sussytoons.site##+js(set, Object.prototype.disableMenu, false)
+
+! https://github.com/uBlockOrigin/uAssets/issues/26250 - anti right click, devtools
+!#if cap_html_filtering
+mostream.us##^script:has-text(/devtoolsDetector|keyCode|preventDefault/)
+!#else
+mostream.us##+js(rmnt, script, /devtoolsDetector|keyCode|preventDefault/)
+!#endif

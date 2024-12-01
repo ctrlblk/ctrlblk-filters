@@ -1,10 +1,10 @@
 ![Adblock Plus 2.0]
-! Checksum: nto83757FqGuYd2VLl2nqw
-! Diff-Path: ../patches/224/224-s-1732937871-3600.patch
+! Checksum: Pgz6PcQ9LKLMrxVI7pGT0A
+! Diff-Path: ../patches/224/224-s-1733024285-3600.patch
 ! Title: AdGuard Chinese filter
 ! Description: EasyList China + AdGuard Chinese filter. Filter list that specifically removes ads on websites in Chinese language.
-! Version: 2.1.26.83
-! TimeUpdated: 2024-11-30T03:34:33+00:00
+! Version: 2.1.26.90
+! TimeUpdated: 2024-12-01T03:34:48+00:00
 ! Expires: 5 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -4840,6 +4840,8 @@ newduba.cn###jq_youxi
 ##style + .need_grid_img
 ##.player-rm > a[href*=".umtrack.com"]
 ##style + .vdgdo
+##.tg-m.tg-site
+##.tg-pc.tg-site
 ##.relative > div > img[sizes="100vh"][width="0"]
 ##a[href^="/archives/"] > .post-card > .blog-background[style*="gif;base64"]
 ###banner_links.banner-container
@@ -4862,8 +4864,17 @@ newduba.cn###jq_youxi
 ||67.21.92.*.gif
 ||cnzz.trafficmanager.net^
 ||cupfox.app^$third-party
+||jcwlsofn.icu^
+||brircel.com^
+||af6s.icu^
+||edamcsw.top^
+||e8d7.icu^
 ||ruqaks.com^
 ||bmhtwefv.icu^
+||olkoins.com^
+||w59g.icu^
+||sdamcsb.top^
+||ao1201kas.top^
 ||igabcgnh.icu^
 ||saizih.com^
 ||1gtp.icu^
@@ -14065,6 +14076,7 @@ hxsame.hexun.com$domain=~quote.hexun.com
 ||cdncg.com^*/kangmey
 ||twkan.com/js/otherad
 ||element-plus.org/images/sponsors/
+cn.bing.com#?#.sb_form_placeholder:-abp-has(>.ad-ghost-slug)
 cn.bing.com#?#.b_algo:-abp-has(p[class^="b_lineclamp2 b_algoSlug "])
 szxx.com.cn###A0
 mydrivers.com#?#li:-abp-has(>.titl+:-abp-contains(好 物))
@@ -18129,7 +18141,6 @@ cmsky.com##.textwidget a[href^="http"]:not([href*="cmsky"])
 10fang.com##.tfy-ab
 bmlink.com##.tg
 acgbuster.moe##.tg-inner
-526bt.com,daniao.org,eroacg.com,laod.cn,myqqjd.com,ninpang.com##.tg-site
 so.com##.tg-wrap-async
 e0575.com##.tg1
 e0575.com##.tg2
@@ -21831,7 +21842,7 @@ $image,third-party,domain=258zw.com
 :6607/qy/$script,third-party
 _rony.js$script,third-party
 ||lalabaos1*.top/$script,third-party
-||ao11*kas.top/$script,third-party
+||ao1*kas.top/$script,third-party
 /\.[a-z]oubli[a-z].top\//$script,third-party
 /\.[a-z]yjqgp[a-z].top\//$script,third-party
 ||aoao11*iis.top/$script,third-party
