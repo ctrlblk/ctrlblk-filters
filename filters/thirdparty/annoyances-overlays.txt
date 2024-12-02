@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: EasyList – Newsletter Notices
-! Last modified: Sun, 01 Dec 2024 02:31:25 +0000
+! Last modified: Mon, 02 Dec 2024 03:56:26 +0000
 ! Expires: 7 days (update frequency)
 ! *** easylist:template_header.txt ***
 !
@@ -2870,6 +2870,7 @@ frontofficesports.com##.newsletter-sticky-bar
 peoplematters.in##.newsletter-sub-fixed
 neh.gov##.newsletter-subscribe-block-container
 theasianparent.com##.newsletter-subscribe-card-warp
+itnews.com.au##.newsletter-subscribe-container
 newyorker.com##.newsletter-subscribe-form
 essence.com##.newsletter-subscribe-inline
 youcouldtravel.com##.newsletter-subscription-block
@@ -2931,6 +2932,7 @@ maketecheasier.com##.newsub-box
 worldcrunch.com##.nl-container
 wtatennis.com##.nl-footer__inner
 searchengineland.com##.nl-inline-form
+newyorkhauntedhouses.com##.nl-modal
 theadvocate.com##.nl-right-rail-module
 hilltimes.com##.nl-signup-container
 investigativepost.org##.nl-small-cta
@@ -4174,6 +4176,8 @@ capx.co##.pum
 capx.co##div#wrapper:style(filter: none !important)
 ! newsletter popup
 lowpass.cc,readergrev.com,objectivebayesian.com,monopoly.marketecture.tv,jointhefollowup.com##+js(set-cookie, popup_closed, true)
+! streamily.com
+streamily.com##+js(set-cookie, email_modal, true)
 ! revolvermag.com
 revolvermag.com##.emma-show
 revolvermag.com##body,html:style(height: auto !important; overflow: auto !important)
@@ -5598,7 +5602,7 @@ doctorofcredit.com#@#.wpdiscuz-subscribe-bar
 ! fanboy_newsletter_shopping_allowlist_general_hide.txt
 
 ! Title: uBlock filters – Other Annoyances
-! Last modified: Sun, 01 Dec 2024 05:08:00 +0000
+! Last modified: Sun, 01 Dec 2024 15:24:27 +0000
 ! Expires: 7 days
 ! Description: Filters optimized for uBlock Origin, to be used with EasyList's and/or Adguard's "Other Annoyances" list(s)
 ! License: https://github.com/uBlockOrigin/uAssets/blob/master/LICENSE
