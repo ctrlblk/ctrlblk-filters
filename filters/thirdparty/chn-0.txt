@@ -1,10 +1,10 @@
 ![Adblock Plus 2.0]
-! Checksum: lk543cDJAR7Dk5H64LFddA
-! Diff-Path: ../patches/224/224-s-1733287088-3600.patch
+! Checksum: IYHM3iUo+IBkHcU2tpVB3Q
+! Diff-Path: ../patches/224/224-s-1733373472-3600.patch
 ! Title: AdGuard Chinese filter
 ! Description: EasyList China + AdGuard Chinese filter. Filter list that specifically removes ads on websites in Chinese language.
-! Version: 2.1.27.12
-! TimeUpdated: 2024-12-04T04:34:26+00:00
+! Version: 2.1.27.21
+! TimeUpdated: 2024-12-05T04:34:21+00:00
 ! Expires: 5 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -76,6 +76,9 @@
 ! Bad: ||adssubdomain.legitwebsite.com^ (should be in adservers_firstparty.txt)
 !
 !
+||ig65.vip^
+||ig66.vip^
+||ig67.vip^
 ||avspda.xyz^$third-party
 ||666hh999gg.com^
 ||776.jstatic.xyz^
@@ -1111,6 +1114,8 @@ $script,third-party,denyallow=fastlycdn.com|doodcdn.co|intensedebate.com|vixclou
 !
 ! NOTE: Specific rules
 !
+4hu.tv##.wrap > div.mod > div.row > dl:has(> dt > a[target="_blank"]:not([href^="/html/"]) > img)
+4hu.tv##.couplet-left
 52niuyan.cc##.top_fixed
 52niuyan.cc##a[onclick][rel][style*="toutiaoimg.com"]
 $script,third-party,denyallow=unpkg.zhihu.com,domain=52niuyan.cc
@@ -4864,6 +4869,11 @@ newduba.cn###jq_youxi
 ||67.21.92.*.gif
 ||cnzz.trafficmanager.net^
 ||cupfox.app^$third-party
+||eatnontf.icu^
+||khesuts.com^
+||mdamcsx.top^
+||m6d.icu^
+||4i1.icu^
 ||vokzqgjp.icu^
 ||sokars.com^
 ||grerzieds.com^
@@ -4879,6 +4889,12 @@ newduba.cn###jq_youxi
 ||d5r.icu^
 ||fo0.icu^
 ||nuvaioqds.com^
+||olqead.com^
+||1yj.icu^
+||burniecrepes.com^
+||infantilecombination.com^
+||yrhxttwa.xyz^
+||bdamcsv.top^
 ||sconat.com^
 ||cidhmxxb.icu^
 ||ig69.vip^
@@ -14106,6 +14122,7 @@ hxsame.hexun.com$domain=~quote.hexun.com
 ||twkan.com/js/otherad
 ||element-plus.org/images/sponsors/
 b0d8a0f6.com##DIV[id^="content_"]
+cn.bing.com#?#.b_algo:-abp-has(.cico>img[src*="bing.com/th?id=O"])
 cn.bing.com#?#.sb_form_placeholder:-abp-has(>.ad-ghost-slug)
 cn.bing.com#?#.b_algo:-abp-has(.cico.siteicon.rms_img[src*="bing.com/th?id=O"])
 szxx.com.cn###A0
