@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: EasyList – Newsletter Notices
-! Last modified: Thu, 05 Dec 2024 03:55:27 +0000
+! Last modified: Fri, 06 Dec 2024 02:17:09 +0000
 ! Expires: 7 days (update frequency)
 ! *** easylist:template_header.txt ***
 !
@@ -2168,10 +2168,12 @@ mygermanyvacation.com##.cb-ready
 newsline.ccc.govt.nz##.ccc__newsline__models__newslinenewslettersignupcontentblock
 consumerreports.org##.cda-newsletter
 classicsdujour.com##.cdj-vip
-sputnikglobe.com##.cell-subscribe
 thenextweb.com##.channel-cta
 arcamax.com##.channel-subscribe
+childrenshealthdefense.org##.chd-defender-article__signup
+childrenshealthdefense.org##.chd-defender-widget--sms-alerts
 childrenshealthdefense.org##.chd-defender__sign-up
+childrenshealthdefense.org##.chd-shortcode-news-tips
 androidpcreview.com,raptitude.com,thelittlekitchen.net##.ck_form_container
 iliketomakestuff.com##.ck_vertical_subscription_form
 aseannow.com##.cl-dialog
@@ -2253,6 +2255,7 @@ scworld.com##.daily-scan-form
 democracynow.org##.daily_digest
 beermenus.com##.dark-gradient-bg
 thenationalnews.com##.defaultstyled__StyledNewsletterForm-sc-1n48v8y-8
+childrenshealthdefense.org##.defender-home-signup-bar
 defiantamerica.com##.defia-right-rail-newsletter
 redlandsdailyfacts.com##.dfm-sidebar-top-flex-container
 dailyfx.com##.dfx-inHouseGuideBannerComponent
@@ -3520,6 +3523,7 @@ plantpowercouple.com##.wp-block-aweber-signupform-block-aweber-shortcode
 creepycatalog.com##.wp-block-cata-newsletter
 astronomy.com##.wp-block-cover[style="padding-top:0;padding-bottom:0"]
 eugeneweekly.com##.wp-block-eugene-weekly-newsletter-signup
+destructoid.com##.wp-block-gamurs-newsletter
 gearpatrol.com##.wp-block-gearpatrol-newsletter-signup
 themom100.com##.wp-block-group-is-layout-flow
 cookingwithjanica.com##.wp-block-group__inner-container
@@ -3684,6 +3688,7 @@ businesstimes.com.sg##.border-gray-175:has-text(BT in your inbox)
 amgreatness.com##.border-gray-200:has-text(Get the news)
 amgreatness.com##.border-secondary-900:has-text(Get the news)
 calgaryherald.com,edmontonjournal.com,montrealgazette.com,ottawacitizen.com,thestarphoenix.com##.callout:has-text(inbox)
+aspentimes.com,craigdailypress.com,postindependent.com,skyhinews.com,steamboatpilot.com,vaildaily.com##.card-body:has-text(Daily Newsletter)
 chron.com,sfgate.com##.col1span3:has-text(Newsletters)
 hellmanns.com##.content-panel-container:has-text(Get recipes)
 ffrfaction.org##.elementor-button-link:has-text(Sign Up)
@@ -3709,6 +3714,7 @@ brooklynvegan.com##.sidebar-form:has-text(Sign Up For Our Newsletter)
 interestingengineering.com##.t-bg-surface-zero.t-p-6:has-text(Newsletter)
 ensemblemagazine.co.nz##.w-embed:has-text(Sign up now)
 systemsapproach.org##.wp-block-column > .is-layout-flow.wp-block-group:has-text(Subscribe)
+creepycatalog.com##.wp-block-cover-is-layout-flow:has-text(Get our newsletter)
 iheartrecipes.com##.wp-block-genesis-blocks-gb-columns:has-text(Subscribe by Email)
 iheartrecipes.com##.wp-block-genesis-blocks-gb-container:has-text(Free Email Guide)
 lemonblossoms.com##.wp-block-group-is-layout-flow.has-background.has-base-background-color:has-text(Email Me This For Later)
@@ -4071,6 +4077,10 @@ travelcaffeine.com##.featherlight
 travelcaffeine.com##body,html:style(overflow: auto !important; position: initial !important;)
 ! sfstandard.com
 sfstandard.com##body:style(height: auto !important; overflow: auto !important)
+! theverge.com
+theverge.com##.zephr-overlay
+theverge.com##.zephr-zone-footer
+theverge.com##body:style(height: auto !important; overflow: auto !important)
 ! freshbooks.com
 freshbooks.com##.trackingSection-modal
 freshbooks.com##.modal-backdrop
@@ -5609,7 +5619,7 @@ doctorofcredit.com#@#.wpdiscuz-subscribe-bar
 ! fanboy_newsletter_shopping_allowlist_general_hide.txt
 
 ! Title: uBlock filters – Other Annoyances
-! Last modified: Wed, 04 Dec 2024 19:00:52 +0000
+! Last modified: Fri, 06 Dec 2024 04:26:52 +0000
 ! Expires: 7 days
 ! Description: Filters optimized for uBlock Origin, to be used with EasyList's and/or Adguard's "Other Annoyances" list(s)
 ! License: https://github.com/uBlockOrigin/uAssets/blob/master/LICENSE
@@ -11467,7 +11477,10 @@ substack.com##article.post > div[class*="frontend-components-SubscribePrompt-mod
 ! substack.com - Cursor
 substack.com##body:style(cursor: initial !important;)
 ! https://www.reddit.com/r/uBlockOrigin/comments/1fhvrxt/blockbypass_intro_page_for_substack_sites/
-!entra.news,microsoftsecurityinsights.com,substack.com##+js(trusted-set-cookie, intro_popup_last_hidden_at, $currentDate$, , , reload, 1)
+! https://github.com/uBlockOrigin/uAssets/issues/26299
+entra.news,microsoftsecurityinsights.com,substack.com##[class*="_coverTheme"]:has(> .intro-popup)
+entra.news,microsoftsecurityinsights.com,substack.com##html.show-intro-popup:remove-class(show-intro-popup)
+entra.news,microsoftsecurityinsights.com,substack.com##+js(trusted-set-cookie, intro_popup_last_hidden_at, $currentDate$)
 
 ! https://wallpaperaccess.com/fifa23 - Install our addon annoyance, right click blocked
 wallpaperaccess.com##+js(aeld, mousedown, dispatch)
@@ -13224,6 +13237,9 @@ rds.live##*:style(user-select: text !important; -ms-user-select: text !important
 ||amazon.com/s/ref=$doc,uritransform=/\/ref=[^\/?#]+//
 /gp/*/ref=$doc,uritransform=/\/ref=[^\/?#]+//,to=www.amazon.*
 /^https:\/\/www\.primevideo\.com\/(?:detail|help|offers)[^=]*?\/ref=/$doc,to=primevideo.com,uritransform=/\/ref=[^\/?#]+//
+
+! https://www.bhphotovideo.com/c/product/1405061-REG/samsung_u32j590_31_5_4k_uhd.html/BI/865/KBID/1173/SID/dbd77874b38811ef8f447ae1da200b850INT
+||bhphotovideo.com/c/product/*.html/$doc,uritransform=/\.html\/[^?#]+/.html/
 
 ! https://github.com/uBlockOrigin/uAssets/issues/26192
 coomer.su,kemono.su##[href="https://github.com/easylist/easylist/issues"]
