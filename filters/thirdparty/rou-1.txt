@@ -829,6 +829,8 @@ romaniataramea.com##.wpsd-master-wrapper
 ||focuspress.ro/wp-content/uploads/*/ad$image
 ||focuspress.ro/*banner$image
 focuspress.ro##.td_spot_img_all
+focuspress.ro##.widget_media_image
+focuspress.ro##[data-widget_type="image.default"]
 focuspress.ro##aside.widget_media_image.widget.td_block_template_1
 @@||focuspress.ro/*/logo-600x90-constanta.png
 
@@ -1474,6 +1476,7 @@ dexonline.net##[href="https://creditrapid.ro/"]
 
 actualitateavranceana.ro##[href="https://www.sipotehnokaronline.com/"]
 actualitateavranceana.ro##[href^="https://www.sviatoacademy.ro/"]
+actualitateavranceana.ro##.widget_media_image
 ||florariafocsani.ro/image/catalog/ADV/$image,third-party
 
 fileshare.ro#?#td[width="250"]:not(*:-abp-has([href*="fileshare.ro"]))
@@ -1630,6 +1633,7 @@ bzb.ro##.banners
 info1tv.ro##[href="http://www.april91.ro/"]
 info1tv.ro#?#[id^="custom_html"]:-abp-has([alt^="Agentie"])
 info1tv.ro##.widget_custom_html.side-widget.widget_text
+||info1tv.ro/*banner
 
 stiriardeal.ro##.custom-html-widget.textwidget
 stiriardeal.ro##.widget-title
@@ -1820,6 +1824,10 @@ bihon.ro##[href^="https://www.melindainstal.ro/"]
 
 ! popunders
 ||gonowx.com/*?filmexxx.live$script,domain=filmexxx.live
+
+/wp-content/plugins/custom-banner-plugin/$~third-party,domain=ro
+
+jurnaldevrancea.ro##[alt="spot_img"]
 
 [Adblock Plus 2.1]
 ! Title: Romanian specific uBO filters

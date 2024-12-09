@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: EasyList – Annoyances
-! Last modified: Sat, 07 Dec 2024 06:52:02 +0000
+! Last modified: Mon, 09 Dec 2024 02:21:41 +0000
 ! Expires: 7 days (update frequency)
 ! *** easylist:template_header.txt ***
 !
@@ -2509,6 +2509,7 @@ scribd.com##div[data-testid="sticky-wrapper"]
 softwarekeep.com##img[alt="Banner"]
 gettr.com##img[alt="GETTR coin"]
 ! :has
+airfry.pro##.bg-gradient-to-br:has-text(Cookbook)
 nzherald.co.nz##.element-action-button:has-text(SHARE YOUR STORY)
 laravel-news.com##.mt-10:has-text(Laravel Jobs)
 theintercept.com##.text-\[18px\]:has-text(Support Us)
@@ -2526,7 +2527,7 @@ google.com##div[jsname="wA2P2b"]:has-text(How helpful were the results)
 www.youtube.com###content > .ytd-rich-section-renderer:has-text(YouTube Playables)
 ! youtube popups
 www.youtube.com##.YtdTalkToRecsFlowRendererHost:has-text(What hobbies are you interested in developing?)
-www.youtube.com##tp-yt-paper-dialog.ytd-popup-container:has-text(/Become a member|How are your|How interested|Live TV|Wish videos|background play|better TV|cable box|cable reimagined|hidden fees|of YouTube TV|on YouTube TV|unlimited DVR|with YouTube TV|without the ads|try this feature/)
+www.youtube.com##tp-yt-paper-dialog.ytd-popup-container:has-text(/Become a member|Free trial|How are your|How interested|Live TV|Wish videos|background play|better TV|cable box|cable reimagined|hidden fees|of YouTube TV|on YouTube TV|unlimited DVR|with YouTube TV|without the ads|try this feature|Terms apply/)
 music.youtube.com##tp-yt-paper-dialog.ytmusic-popup-container:has-text(/family plan|Premium|ad-free|background play|kept playing/)
 ! Login popups
 aajtak.in,gnttv.com,indiatodayne.in##.tapBoxCls
@@ -2675,6 +2676,7 @@ youtube.com###yt-feedback
 youtube.com###yt-hitchhiker-feedback
 sportsnet.ca##.Feedback__cont
 startrek.com##.Layout_tabContainer__ZNCCp
+airfry.pro##.bottom-4.fixed
 nationaltoday.com##.c-holidayPlug
 decider.com,nypost.com,pagesix.com##.comments-inline-cta
 pbs.org##.comments__btn-feedback
@@ -2927,6 +2929,7 @@ nsfw.xxx##.scrolltop-button
 microchip.com##.scrolltotop
 cryptonomist.ch,globalguideline.com,iogames.onl,isanek.com##.scrollup
 theolivepress.es##.scrollup__placeholder
+taylorfrancis.com##.show-scroll-to-top
 tiktok.com##.show-top
 pbtech.co.nz,pbtech.com##.showUp
 grundig.com##.site-footer__up
@@ -2934,6 +2937,7 @@ niwa.co.nz##.site__footer__back-to-top
 tennesseestar.com,themichiganstar.com,theminnesotasun.com,theohiostar.com##.sm-up-container
 motoringnz.com##.sp-back-to-top
 fiftytwo.in##.story__arrow
+wiki-topia.com##.ta_upscr
 jstage.jst.go.jp##.take-on-top
 sears.com##.tap-top
 nasilemaktech.com##.td-read-down
@@ -3114,6 +3118,8 @@ opensecrets.org##+js(rc, js-no-scroll, html, stay)
 ! kartable.fr
 kartable.fr##push-more-content
 kartable.fr##body,html:style(overflow: auto !important; position: initial !important;)
+! gmap-pedometer.com
+gmap-pedometer.com##+js(set-cookie, patreonAnnouncementShown, true)
 ! scribd.com
 scribd.com##._2kkM6y:style(padding-top: unset !important;)
 scribd.com##.exit_modal
