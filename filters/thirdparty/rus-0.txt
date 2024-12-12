@@ -10629,6 +10629,7 @@ $xmlhttprequest,domain=happy-biock.info|happy-block.info|howto-news.info|mschist
 =http%3A%2F%2Fazaza.torent-telik.
 =js/api/w*.js$~third-party,domain=itc.ua|mezha.media|mychooz.com
 ?subid=$third-party,xmlhttprequest,domain=aniqit.com|kodik.cc|kodik.info|kodikdb.com
+_banner&configs=$domain=uchi.ru
 igdz1.ru^$script,domain=igdz.ru
 |http://$third-party,script,domain=1torrent-tv.ru|avcore.ru|carproff.ru|cccp.ipb.su|cloudriverz.ru|creativportal.ru|diabethelp.org|dnvidov.ru|dokak.ru|dolgoe.net|dsvload.net|ee-mag.ru|enterologia.ru|every-holiday.ru|fotohood.ru|free1img.ru|gfsdgds.website|girlstop.info|golkom.ru|heliograph.ru|herbaldoc.ru|hfufgdlkd.pw|kinobanda.net|kinogo-hd.net|kinomass.ru|kinotut.tv|krasakarpat.com|labudnu.ru|labzan.com|last2images.ru|limonasel.xyz|luxpic.ru|mega-pic.org|misseva.ru|monkeypx.ru|monkeypxl.ru|monkeypxls.ru|monpxls.ru|moonpix.ru|mp3sort.biz|namenu.ru|newkavkaz.ipb.su|nod32-key2017.ru|onlyf.tk|platimzafoto.ru|polochka.net|popadenec.ru|pornotorrent.net|publicagent.ru|pxshares.ru|rapidzona.tv|reebok-ru.ru|relizer.net|remake.net.ru|respektkniga.com|rogoff.club|russianporno911.ru|rustorrents.net|serialrussian.ru|slovoprosvity.org|smrtphone.ru|soft-portal.club|srv11.tutupl.ru|topvideo.tj|vedmochka.net|woman365.ru|wwmmw.xyz|wwvvw.xyz|wwxww.ru|wwxxww.ru|wwxxxww.ru|xn----jtbkliccqarf.xn--p1ai|xn--m1ah5a.net|xtubeporno.net|xxpix.xyz|xxzxx.xyz|yandex51.ru|zebracc.xyz|zvondrobyndl.ru
 |http://$third-party,script,subdocument,domain=catcut.net|lider-as.ru|traht.org|yangteacher.ru
@@ -13914,6 +13915,7 @@ inpot.ru###ezobann
 bitcryptonews.ru###faq-index
 turmush.kg###fb_bottom_like
 myparcels.ru###featured-wants
+vk.com,vk.ru#?##feed_rows > div[class^="feed_row"]:-abp-has(> .page_block .__vkfeed_adchoices)
 vk.com,vk.ru#?##feed_rows > div[class^="feed_row"]:-abp-has(> .page_block .adaptive_ad)
 vk.com,vk.ru#?##feed_rows > div[class^="feed_row"]:-abp-has(> .page_block .ads_ad_action_menu_item_icon)
 vk.com,vk.ru#?##feed_rows > div[class^="feed_row"]:-abp-has(> .page_block .ads_ad_snippet)
@@ -14218,6 +14220,7 @@ the-ebook.org###new-adver-promo
 the-ebook.org###new-header > #leftQuote
 the-ebook.org###new-header > #rightQuote
 bookskeeper.ru#?##news-arch:-abp-has(h4:-abp-contains(/Реклама|Партнеры/i))
+www.zoneofgames.ru#?##news-list > .news-item:-abp-has(> .news-content > div > p[style] > span)
 interesniy.com###news-partner
 7days.ru###news-widget
 football24.ua###newsRightColumn .right-column-divider
@@ -15619,6 +15622,7 @@ programma-peredach.com##.blockSns
 aktobeinfo.kz##.block[id*="-banners-"]
 gooool.tv,gooool365.org##.block_d
 thelastupd.org#?#.block_down:-abp-has(> .itemdown_nottorent_sub)
+byrutgame.org##.block_down_game > .block_down ~ .block_down
 openssource.biz##.block_left
 chatadelic.net,db.chgk.info,dsvload.net,forzajuve.ru,gubkabob.net,imageban.ru,kak-spasti-mir.ru,moi-detsad.ru,podrobno.uz,prostomac.com,rap-text.ru,recensent.ru,seriatv.ru,volomy.ru##.block_links
 electrik.org##.block_r
@@ -21824,7 +21828,7 @@ $csp=script-src-attr 'none',domain=eurointegration.com.ua|pravda.com.ua
 @@||ssp.rambler.ru/capirs_async.js|$script,domain=www.championat.com
 https://*adtech_uid=$~third-party,xmlhttprequest,domain=lena-miro.ru|levik.blog|livejournal.com|olegmakarenko.ru|periskop.su|shakko.ru|shiro-kino.ru|vadimrazumov.ru
 ||imgfrost.net^$third-party
-||pikabu.ru/ajax/A3k8Z1pQw7tX9mB.$xmlhttprequest
+||pikabu.ru/ajax/G7h4K9j2L1mQ8nX.$xmlhttprequest
 ||ritsatv.ru^$csp=script-src
 ||ritsatv.ru^$popup
 ||ritsatv.ru^$~document
@@ -27888,7 +27892,7 @@ znak.com##.wrapper > header:style(margin-top: 15px !important)
 www.zoneofgames.ru###columns > .transparent:style(background-color: transparent !important)
 www.zoneofgames.ru##.branding:style(background: none !important; height: auto !important)
 www.zoneofgames.ru##.logo:style(background: none !important; height: auto !important)
-www.zoneofgames.ru##body[style^="padding-top:"][style*="250px"][style*="!important"]:style(margin-top: -250px !important)
+www.zoneofgames.ru##body[style^="padding-top:"][style*="250px"][style*="!important"] > #mkwrapper:style(margin-top: -250px !important)
 www.zoneofgames.ru##html > body:not(#id):style(background-color: #3a3a3a !important)
 ! ---
 zr.ru##.rotate-block:style(display: table !important)
@@ -28315,7 +28319,7 @@ kvadratmetr.uz,oligarx.uz,tehnar.net.ua##+js(noeval-if, adsBlocked)
 i-ua.tv##+js(remove-attr, autoplay, [data-video-player="small"], stay)
 cnews.ru,gfycat.com,inter.ua,obozrevatel.com,platformcraft.ru,protv.md,rg.ru,rusvesna.su,tv8.md,xsport.ua##+js(remove-attr, autoplay, video, stay)
 u24.ua##+js(remove-attr, autoplay|loop, .watch-live__link > video, stay)
-afisha.ru,byruthub.org,film.ru,filmpro.ru,thelastupd.org##+js(remove-attr, autoplay|loop, video, stay)
+afisha.ru,film.ru,filmpro.ru,thelastupd.org##+js(remove-attr, autoplay|loop, video, stay)
 lenta.ru##+js(remove-attr, class, .js-video-box__container)
 svoboda.org##+js(remove-attr, data-autoplay, video)
 myshared.ru##+js(remove-attr, disabled, .uk-modal-footer > button)
