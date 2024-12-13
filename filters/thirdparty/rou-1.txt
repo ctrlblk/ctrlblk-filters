@@ -212,6 +212,9 @@ portalsm.ro#?#.st-sidebar-widget:-abp-has([src*="publicitate"])
 ||presasm.ro/*reclama$image
 presasm.ro#?#.widget:not(*:-abp-has([href*="presasm.ro"])):not(*:-abp-has([data-href*="facebook"]))
 presasm.ro##.wp-image-179110
+presasm.ro##.header-banner
+presasm.ro##.code-block
+presasm.ro##.ttpAds
 
 ||satumareonline.ro/*reclame$image
 satmareanul.net##.widget_custom_html
@@ -1833,6 +1836,20 @@ observatorconstanta.ro##.gofollow > [data-eio-rwidth="728"]
 
 ||antena3constanta.ro/*/*728x90px.gif$image
 
+servuspress.ro##[id^="text-"] img
+servuspress.ro###custom_html-5
+servuspress.ro###text-169
+
+obiectiv.net##.widget[id^="media_image"]
+obiectiv.net##.widget_custom_html
+
+||cdn.knd.ro/media/*/common/placeholders/$image
+wowbiz.ro,kanald.ro,kanald2.ro##.afis
+
+transilvania365.ro##.td-ss-main-sidebar > aside > .wp-block-image
+
+punctul.ro##.content-widget-before
+
 [Adblock Plus 2.1]
 ! Title: Romanian specific uBO filters
 ! Expires: 3 days
@@ -1952,4 +1969,7 @@ epochtimes-romania.com##body:style(overflow: unset !important)
 
 ! stream player anti-adblock
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$xhr,method=get,domain=tvonline123.com
+
+! video player anti-adb
+||imasdk.googleapis.com/js/sdkloader/ima3.js$script,redirect=google-ima.js,domain=kanald2.ro
 
