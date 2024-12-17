@@ -1,10 +1,10 @@
 ![Adblock Plus 2.0]
-! Checksum: ajq90fD2ne/bUL3Hj9vTxA
-! Diff-Path: ../patches/9/9-s-1734111735-3600.patch
+! Checksum: wnEoY9ll4bvWNqy7yJBKuw
+! Diff-Path: ../patches/9/9-s-1734410299-3600.patch
 ! Title: AdGuard Spanish/Portuguese filter
 ! Description: Filter list that specifically removes ads on websites in Spanish, Portuguese, and Brazilian Portuguese languages.
-! Version: 2.0.27.82
-! TimeUpdated: 2024-12-13T17:37:58+00:00
+! Version: 2.0.27.87
+! TimeUpdated: 2024-12-17T04:34:17+00:00
 ! Expires: 5 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -278,8 +278,6 @@ sussytoons.site##+js(no-fetch-if, www3.doubleclick.net)
 mundolucha.com#@#.ad-box:not(#ad-banner):not(:empty)
 mundolucha.com##+js(no-setTimeout-if, siteAccessPopup())
 ! https://github.com/AdguardTeam/AdguardFilters/issues/193608
-cursomecanet.com##+js(abort-on-property-read, pushmaster)
-cursomecanet.com##+js(abort-on-stack-trace, document.open, eval)
 ! https://github.com/AdguardTeam/AdguardFilters/issues/193070
 ! https://github.com/AdguardTeam/AdguardFilters/issues/156973
 ! Link from wolfmax4k.com
@@ -603,13 +601,6 @@ netcine.*,netcine3.la##+js(abort-on-stack-trace, history.go, eval)
 antoniomote.com#$#[id].adsbox.doubleclick.ad-placement { display: block !important; }
 ! https://github.com/AdguardTeam/AdguardFilters/issues/142266
 oliberal.com##+js(abort-current-script, $, blockWall)
-! https://github.com/AdguardTeam/AdguardFilters/issues/141995
-aiyumangascanlation.com#@#.ad-placement
-aiyumangascanlation.com#@#.ad-placeholder
-aiyumangascanlation.com#@#.body-top-ads
-aiyumangascanlation.com#@#.c-ads
-aiyumangascanlation.com#@#.wall-ads-control
-aiyumangascanlation.com#@#.wall-ads-right
 ! https://github.com/AdguardTeam/AdguardFilters/issues/141256
 ||tag.easycontent.com/app.js
 ! https://github.com/AdguardTeam/AdguardFilters/issues/141370
@@ -1160,9 +1151,6 @@ sapo.pt#@#.adslot
 @@.png#$domain=tv-onlinehd.com
 !+ NOT_PLATFORM(windows, mac, android)
 @@||tv-onlinehd.com^$generichide
-! https://github.com/AdguardTeam/AdguardFilters/issues/20259
-!+ PLATFORM(ext_ff, ext_opera, ios, ext_android_cb, ext_ublock)
-@@||textflix.us^$generichide
 ! https://github.com/AdguardTeam/AdguardFilters/issues/20041
 @@/advert.js$domain=gamevicio.com
 ! https://github.com/AdguardTeam/AdguardFilters/issues/20407
@@ -1988,8 +1976,6 @@ dicadesaude.online#$##colunas { display: block !important; }
 receitasdalu.net#$##colunas { display: block !important; }
 ! https://github.com/AdguardTeam/AdguardFilters/issues/118602
 bolsadevalores.club#$##colunas { display: block !important; }
-! https://github.com/AdguardTeam/AdguardFilters/issues/118600
-cheirinhobao.com#$##colunas { display: block !important; }
 ! https://github.com/AdguardTeam/AdguardFilters/issues/118491
 dicasfinanceirasbr.com#$##colunas { display: block !important; }
 ! https://github.com/AdguardTeam/AdguardFilters/issues/118489
@@ -2004,8 +1990,6 @@ receitasdochico.life#$##colunas { display: block !important; }
 knightnoscanlation.com#$##manga-title { height: unset !important; }
 ! https://github.com/AdguardTeam/AdguardFilters/issues/115299
 futlances.net#$##colunas { display: block !important; }
-! https://github.com/AdguardTeam/AdguardFilters/issues/115228
-gastronomiabrasileira.net#$##colunas { display: block !important; }
 ! https://github.com/uBlockOrigin/uAssets/issues/12640
 elchapuzasinformatico.com#$#body { background-image: none !important; }
 ! https://github.com/AdguardTeam/AdguardFilters/issues/114881
@@ -2029,10 +2013,10 @@ gamevicio.com#$#.hasBgApb { margin-top: 0 !important; }
 ! https://github.com/AdguardTeam/AdguardFilters/issues/81534
 infobae.com#$#.content_section > .top { margin-top: 100px !important; }
 ! https://github.com/AdguardTeam/AdguardFilters/issues/76850
-resenhasglobais.com,tecword.info,manualdamulher.net,smartdoing.tech,manchetehoje.xyz,noticiastecnologica.online,vivercomsaude.online,empregovaga.com,financashoje.online,blotz.me,cardapiodavovo.online,financasnow.online,vidadeatletas.com,belezaedieta.net,tudoemprego.online,turismoeviagem.com#$##framed > #player { display: block !important; }
-resenhasglobais.com,tecword.info,manualdamulher.net,smartdoing.tech,manchetehoje.xyz,noticiastecnologica.online,vivercomsaude.online,empregovaga.com,financashoje.online,blotz.me,cardapiodavovo.online,financasnow.online,vidadeatletas.com,belezaedieta.net,tudoemprego.online,turismoeviagem.com,tecnologiaonline.site,muitasreceitas.site,fazendorendaextra.xyz,grandnoticias.com#$##framed { display: block !important; }
-resenhasglobais.com,tecword.info,manualdamulher.net,smartdoing.tech,manchetehoje.xyz,noticiastecnologica.online,vivercomsaude.online,empregovaga.com,financashoje.online,blotz.me,cardapiodavovo.online,financasnow.online,vidadeatletas.com,belezaedieta.net,tudoemprego.online,turismoeviagem.com,tecnologiaonline.site,muitasreceitas.site,fazendorendaextra.xyz,grandnoticias.com#$#.content > #el-02 { display: none !important; }
-empregovaga.com,financashoje.online,financasnow.online#$#.content > div[id^="el-02"] { display: none !important; }
+resenhasglobais.com,tecword.info,manualdamulher.net,smartdoing.tech,manchetehoje.xyz,noticiastecnologica.online,vivercomsaude.online,empregovaga.com,financashoje.online,blotz.me,cardapiodavovo.online,vidadeatletas.com,belezaedieta.net,tudoemprego.online,turismoeviagem.com#$##framed > #player { display: block !important; }
+resenhasglobais.com,tecword.info,manualdamulher.net,smartdoing.tech,manchetehoje.xyz,noticiastecnologica.online,vivercomsaude.online,empregovaga.com,financashoje.online,blotz.me,cardapiodavovo.online,vidadeatletas.com,belezaedieta.net,tudoemprego.online,turismoeviagem.com,tecnologiaonline.site,muitasreceitas.site,fazendorendaextra.xyz,grandnoticias.com#$##framed { display: block !important; }
+resenhasglobais.com,tecword.info,manualdamulher.net,smartdoing.tech,manchetehoje.xyz,noticiastecnologica.online,vivercomsaude.online,empregovaga.com,financashoje.online,blotz.me,cardapiodavovo.online,vidadeatletas.com,belezaedieta.net,tudoemprego.online,turismoeviagem.com,tecnologiaonline.site,muitasreceitas.site,fazendorendaextra.xyz,grandnoticias.com#$#.content > #el-02 { display: none !important; }
+empregovaga.com,financashoje.online#$#.content > div[id^="el-02"] { display: none !important; }
 ! https://github.com/AdguardTeam/AdguardFilters/issues/67978
 tudogostoso.com.br#$#body { padding-top: 0 !important; }
 tudogostoso.com.br#$#body > header { top: 0 !important; }
@@ -2789,7 +2773,7 @@ timeout.pt##div[class^="_footer_ad_wrap_"]
 timeout.pt##div[class^="_inlineAdWrapper_"]
 cnnportugal.iol.pt##.patrocinadosWrapper
 cnnportugal.iol.pt##.pubWrapper
-tvi.iol.pt,versa.iol.pt,cnnportugal.iol.pt##.pub-outer-wrapper
+selfie.iol.pt,tvi.iol.pt,versa.iol.pt,cnnportugal.iol.pt##.pub-outer-wrapper
 ||cdn.iol.pt/js/utils/Modules/IOLComercial/dist/iol.comercial.js
 luxwoman.pt##.theiaStickySidebar
 luxwoman.pt##.feat-ad-wrap
@@ -2961,7 +2945,6 @@ oliberal.com##.bgbanner
 oliberal.com###bgbanner
 oliberal.com##.banner-container-sticky
 futebolatino.lance.com.br##.elementor-widget-container a[data-wpel-link="external"] > img
-aiyumangascanlation.com##.c-container-fluid > div.c-row
 noblessetranslations.com###hades-push-slideup
 noblessetranslations.com###adsBottomFixed
 tangerina.uol.com.br##div[class*="_AdsWrapper"]
@@ -3259,7 +3242,6 @@ servertwo.xyz,megaseriesonline.pro##div[style^="position: absolute;"][style*="z-
 eldiadezamora.es##.baterybanner
 eldiadezamora.es##.BANNER-image
 ||genshinpro.com.br/wp-content/uploads/*/*/Exit-lag-*x*-*.gif
-mangapt.com##.body-wrap > .c-top-sidebar
 kimovil.com###user-sidebar div.kau
 raulprietofernandez.net###k2Container > div[class^="item"] div[style*="background-color"]
 beachcam.meo.pt##.beachPartners
@@ -3378,7 +3360,6 @@ universoformulas.com##span[style="font-size: 6pt"]
 uol.com.br##.model-base-bnr
 uol.com.br##.slot-m + #magazine-cover
 uol.com.br##.bannersticky-wrapper.fixed
-||futbolfullenvivo.com/logos/barnerfull.png
 marca.com##.news-item ~ section.row-layout:empty
 oantagonista.uol.com.br##.container_assine
 pelispedia-v2.wtf##.fg1 > a[target="_blank"].snd
@@ -3413,8 +3394,6 @@ oplanetatv.clickgratis.com.br##.block-ads-wrapper
 oplanetatv.clickgratis.com.br##.ads:not(.prebid)
 oplanetatv.clickgratis.com.br##.ads-block:not(.prebid)
 comoacaba.com##.aawp
-mangapt.com##.body-wrap > .c-bottom-sidebar
-mangapt.com##.body-wrap > .c-top-second-sidebar
 diariodenavarra.es##.sticky_horizontal
 melhoresdestinos.com.br##div[class*="banner"]
 escolakids.uol.com.br##.wrapper-bnr
@@ -3512,7 +3491,7 @@ gmconline.com.br##.banner-item
 gmconline.com.br##.section-banner-topo
 xchica.com##td[width="360"] > center
 escolhasegura.com##.adsense
-tecnoscann.com,mhscans.com,aiyumangascanlation.com,mangacrab.com,ahstudios.net,animerikosuper.blogspot.com,emperorscan.com,taurusfansub.com,miauscan.com,knightnoscanlation.com,pelisplaygratis.info###fixedban
+tecnoscann.com,mhscans.com,mangacrab.com,ahstudios.net,animerikosuper.blogspot.com,emperorscan.com,taurusfansub.com,miauscan.com,knightnoscanlation.com,pelisplaygratis.info###fixedban
 pelisplaygratis.info##.mvic-btn > a.btn-successful
 uol.com.br##.obx-ad
 observatoriodatv.uol.com.br##.BannerUOLPlay__Container
@@ -5452,8 +5431,6 @@ gauchazh.clicrbs.com.br#?#.gzh-content > section:has(> div.l-row > div.ads-area)
 climaaovivo.com.br#?#.MuiGrid-root > div[class^="style__Container"]:has(> span:contains(Publicidade))
 climaaovivo.com.br#?#.MuiGrid-root > div[style] >div[class^="style__Container-sc-"]:has(> span.vertical:contains(Publicidade))
 genshinpro.com.br#?#.vc_col-sm-4 .wpb_wrapper > .sc_content_bordered:has(a[href="http://exitl.ag/genshinpro"])
-mangapt.com#?#div[id^="block-"]:has(> .widget__inner > .widget-content > .adsbygoogle)
-mangapt.com#?#div[id^="custom_html-"]:has(> .widget__inner > .widget-content > .textwidget > .adsbygoogle)
 adrenaline.com.br#?#.main > div[style*="height: 250px;"]
 adrenaline.com.br#?#.text-center > small:contains(/Publicidade|publicidade/)
 estadao.com.br#?#div[class^="styles__Container-"]:has(> p.ads-placeholder-label)
