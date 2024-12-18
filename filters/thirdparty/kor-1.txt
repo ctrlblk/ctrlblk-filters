@@ -1,7 +1,7 @@
 [uBlock Origin]
 ! Title: List-KR for uBlock Origin
 ! Description: List-KR for uBlock Origin. Maintained by the adblock community and AdGuard.
-! Version: 2024.1216.0
+! Version: 2024.1218.0
 ! Expires: 12 hours
 ! Homepage: https://github.com/List-KR/List-KR
 ! Support: https://list-kr-community.pages.dev/docs/
@@ -1575,7 +1575,7 @@ kimpga.com##.ad-slot-vertical
 theddari.com##div[class]:has(> a[aria-label="side-ads"])
 etoland.co.kr##div[style*="margin-top:"] > a[href*="?bo_table=store&wr_id="]
 zod.kr##a[class*="zod-banner"]
-zod.kr##.app-aside-content a[href^="https://link.coupang.com"]
+zod.kr##div.app-aside-content > div:has(> a.zod-banner--reward)
 zod.kr##.app-main-banner
 isplus.com##.rightEnd > .section_inner > div[style]
 boardlife.co.kr##.promote-box
