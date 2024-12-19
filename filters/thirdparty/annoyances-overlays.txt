@@ -5651,7 +5651,7 @@ doctorofcredit.com#@#.wpdiscuz-subscribe-bar
 ! fanboy_newsletter_shopping_allowlist_general_hide.txt
 
 ! Title: uBlock filters – Other Annoyances
-! Last modified: Mon, 16 Dec 2024 01:58:22 +0000
+! Last modified: Wed, 18 Dec 2024 16:42:21 +0000
 ! Expires: 7 days
 ! Description: Filters optimized for uBlock Origin, to be used with EasyList's and/or Adguard's "Other Annoyances" list(s)
 ! License: https://github.com/uBlockOrigin/uAssets/blob/master/LICENSE
@@ -8899,9 +8899,6 @@ gomovies.*##*:style(-webkit-touch-callout: default !important; -webkit-user-sele
 ! https://www.reddit.com/r/uBlockOrigin/comments/k3x8ta/antiadblock_popup_on_proboards/
 *$script,redirect-rule=noopjs,domain=forums.lostmediawiki.com
 
-! https://www.reddit.com/r/uBlockOrigin/comments/k44in0/techoreelscom_detecting_adblock_other_issues_too/
-techoreels.com##+js(ra, oncontextmenu, body)
-
 ! https://github.com/uBlockOrigin/uAssets/issues/8299
 promobit.com.br##+js(aeld, mouseout)
 
@@ -10752,9 +10749,6 @@ gmarket.co.kr##+js(set, document.onmousedown, noopFunc)
 ||digital.elmercurio.com/assets/js/detectPrivateMode.js$script,1p
 
 ! https://www.thetodaypost.com/365-days-2020-hindi-dubbed/ anti right click + dev tools
-thetodaypost.com##+js(set, document.oncontextmenu, trueFunc)
-thetodaypost.com##+js(set, document.onkeydown, trueFunc)
-thetodaypost.com##+js(set, document.onselectstart, trueFunc)
 dlmovies.link##+js(acs, console.clear, contextmenu)
 
 ! https://github.com/uBlockOrigin/uAssets/issues/13066
@@ -13339,3 +13333,10 @@ baomidou.com##astro-island[opts^="{\"name\":\"CheckAdBlocked\""]
 
 ! https://github.com/uBlockOrigin/uAssets/issues/26478
 wallpapercat.com##+js(nano-sib, counter, 1000, 0.001)
+
+! https://media.cm/d/ezu1uydqcv8x anti devtools
+||media.cm/dev.js
+
+! https://github.com/uBlockOrigin/uAssets/issues/26511
+||images.nintendolife.com^$frame
+nintendolife.com##.insert-blocker
