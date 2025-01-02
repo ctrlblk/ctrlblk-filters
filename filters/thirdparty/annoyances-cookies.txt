@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: EasyList – Cookie Notices
-! Last modified: Wed, 01 Jan 2025 02:14:06 +0000
+! Last modified: Thu, 02 Jan 2025 03:50:13 +0000
 ! Expires: 7 days (update frequency)
 ! *** easylist:template_header.txt ***
 !
@@ -71,7 +71,6 @@
 /am2-gdpr-public.js
 /amasty/amgdpr/cookie.js
 /amasty/amgdpr/main.js
-/amasty_gdprfrontendui/*
 /amCookieApproval.min.js
 /amds-cookies.js
 /amp-consent-
@@ -1650,7 +1649,6 @@
 ###ac_cookie_bar
 ###ac_cookiebanner
 ###ac_cookiesvalidation
-###acb-banner
 ###accept-cookie-bar
 ###accept-cookie-box
 ###accept-cookie-compliance-section
@@ -18136,6 +18134,7 @@ peterchristian.co.uk,peterchristianoutfitters.com###cookie-acceptancce
 shop.naturtrend.com###cookie-appliance-popup-box
 velosure.co.uk###cookie-bar-template
 dnschecker.org###cookie-box
+perplexity.ai###cookie-consent
 yousign.com###cookie-consent-app
 store.azeron.eu###cookie-consent-background
 chicagobooth.edu,github.com###cookie-consent-banner
@@ -21770,7 +21769,7 @@ pangleglobal.com##+js(set-cookie, cookie_banner_preference, reject)
 goindex.lt##+js(set-cookie, user_cookie_consent, 1)
 bigbank.nl##+js(set-cookie, _ck_decision, 1)
 berkeleygroup.digital##+js(set-cookie, BGDESKTOP_TERMS, 1)
-ally.com##+js(set-cookie, allycc, OK)
+ally.com##+js(set-cookie, allyccb, OK)
 rega.ch##+js(set-cookie, consentcookierega, 0)
 couplechallenge.com,gavelo.com,allgaeuer-wanderimkerei.de,kristallkraft-pferdefutter.de,everjump.fit,okimono.nl,snocks.com,pureness.se,quiet-books.com,pfotenmond.de,dynmcyou.com,geurwolkje.nl,hodalump-ratschkatl.de,mamm.ch,saricurls.de,snockscoffee.com,hodalump.com,alljigsawpuzzles.*##+js(set-cookie, _pandectes_gdpr, 1)
 shop.kurhessen-therme.de##+js(set-cookie, cookies_mandatory, true)
@@ -23514,8 +23513,9 @@ vivantis.it,vivantis-shop.at,vivantis.hu,vivantis.ro,vivantis.cz,vivantis.sk##bo
 bulk.com##.amgdprjs-bar-template
 bulk.com##body,html:style(overflow: auto !important; position: initial !important;)
 ! #cookieModal
-argos-tradein.co.uk,maandag.be,flixable.com,nmsu.edu,higcapital.es###cookieModal
-argos-tradein.co.uk,maandag.be,flixable.com,nmsu.edu,higcapital.es##body,html:style(overflow: auto !important; position: initial !important;)
+argos-tradein.co.uk,limogeshabitat.fr###cookieModal
+argos-tradein.co.uk,limogeshabitat.fr##.modal-backdrop
+argos-tradein.co.uk,limogeshabitat.fr##body,html:style(overflow: auto !important; position: initial !important;)
 !! .sgpb-popup-overlay
 ematic.co.za##.sgpb-popup-overlay
 ematic.co.za##.sgpb-popup-dialog-main-div-wrapper
@@ -24746,10 +24746,6 @@ lovebookonline.com,varma.fi##body,html:style(overflow: auto !important; position
 ! lekarenvkocke.sk
 lekarenvkocke.sk##.modal
 lekarenvkocke.sk##.modal-backdrop
-! limogeshabitat.fr (using #cookieModal instead of modal to prevent fp)
-limogeshabitat.fr##.modal-backdrop
-limogeshabitat.fr###cookieModal
-limogeshabitat.fr##body,html:style(overflow: auto !important; position: initial !important;)
 ! kanalsportowy.pl
 kanalsportowy.pl##.app-cmp
 kanalsportowy.pl##body:style(overflow: auto !important; position: initial !important;)
@@ -29342,7 +29338,6 @@ concursolutions.com,forbes.com,formula1.com,fortune.com,proximus.be,proximustv.b
 @@||se.com/myschneider/assets/onetrust.$~third-party
 @@||securiti.ai^$script,domain=alaskaair.com|hertz.at|hertz.co.uk|hertz.de|hertz.es|hertz.fi|hertz.fr|hertz.ie|hertz.it|hertz.no|hertz.pt|hertz.se
 @@||shop.bora-sauna.de/components/cookieconsent2/build/cookieconsent.min.js
-@@||shop.tudelft.nl/*/Amasty_GdprFrontendUi/$script,~third-party
 @@||sonnenverlauf.de/scripts/cookieconsent.min.js$~third-party
 @@||sourcepoint.mgr.consensu.org^$domain=t3n.de
 @@||sourcepointcmp.bloomberg.*/mms/get_site_data?$domain=bloomberg.co.jp|bloomberg.com
@@ -29447,7 +29442,6 @@ concursolutions.com,forbes.com,formula1.com,fortune.com,proximus.be,proximustv.b
 @@||my.sevdesk.de/shared/components/CookieConsent/CookieConsentModal.html$xmlhttprequest
 @@||myequals.net^*/cookiesConsent.json$~third-party
 @@||mymuesli.com/assets/js/cookiespopup.js$script
-@@||newbalance.co.id/static/*/Amasty_GdprFrontendUi/js/cookies.js$script,~third-party
 @@||nowegumy.pl/cookiecuttr.js
 @@||openai.com/compliance/cookie_consent/$~third-party
 @@||orangeclickmedia.com/tech/libs/js.cookie.min.js$domain=protothema.gr
@@ -29486,7 +29480,7 @@ concursolutions.com,forbes.com,formula1.com,fortune.com,proximus.be,proximustv.b
 @@||zensus2022.de/SiteGlobals/Modules/CookieBanner/*/CookieBanner.json?$~third-party,xmlhttprequest
 
 ! Title: uBlock filters – Cookie Notices
-! Last modified: Mon, 30 Dec 2024 15:23:16 +0000
+! Last modified: Wed, 01 Jan 2025 13:28:14 +0000
 ! Expires: 7 days
 ! Description: Filters optimized for uBlock Origin, to be used with EasyList's and/or Adguard's "Cookie Notices" list(s)
 ! License: https://github.com/uBlockOrigin/uAssets/blob/master/LICENSE
@@ -31537,3 +31531,9 @@ vu.lt##+js(trusted-click-element, a.cc-btn.cc-allow, , 1000)
 krungsriasset.com##+js(trusted-set-cookie, CookieConsentResult, $currentDate$)
 krungsriasset.com##+js(set-cookie, CMSCookieLevel, 0)
 krungsriasset.com##+js(set-cookie, CookieConsentPerformance, 0)
+
+! cmp.inmobi.com exceptions (Accept)
+adnkronos.com,cornwalllive.com,cyprus-mail.com,informazione.it,mymovies.it,tuttoeuropei.com,video.lacnews24.it##.qc-cmp2-container
+adnkronos.com,cornwalllive.com,cyprus-mail.com,informazione.it,mymovies.it,tuttoeuropei.com,video.lacnews24.it##+js(trusted-click-element, .qc-cmp2-summary-buttons > button[mode="primary"], , 2000)
+! US IP (accept)
+adnkronos.com,cornwalllive.com,cyprus-mail.com,informazione.it,mymovies.it,tuttoeuropei.com,video.lacnews24.it##+js(trusted-click-element, button[class*="cipa-accept-btn"], , 2000)
