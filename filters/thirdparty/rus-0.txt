@@ -21843,6 +21843,7 @@ https://*adtech_uid=$~third-party,xmlhttprequest,domain=lena-miro.ru|levik.blog|
 !||www.liveinternet.ru/|$csp=script-src 'unsafe-inline' 'unsafe-eval' i.li.ru https://www.liveinternet.ru/utf/lici.js https://www.liveinternet.ru/utf/li.js https://www.liveinternet.ru/utf/main_new.js
 ! селекторы
 growhow.in.ua###custom-background-css {remove:true;}
+playground.ru###dfpPrerollDelay {remove:true;}
 e.mail.ru##.layout__column_right-indented
 mail.ru,sportmail.ru##.media-ui-slider-track > div:last-child [data-qa="Loader"]
 anidub.vip,anidubonline.com##.plyr__menu
@@ -22395,9 +22396,8 @@ ok.ru##div[data-place*="BANNER"]
 ! Очень однобокая реклама Хрома + очень часто просят удалить
 ok.ru##.update-browser_container
 ! Блокировка
-/res/js/b/p_*.js$domain=ok.ru
-/res/js/nativeHooks_*.js$domain=ok.ru
 ||st.mycdn.me/res/i/anonym/jakobs/$image
+||st.okcdn.ru/res/assets/Smokescreen$script,domain=ok.ru
 ! Реклама, встроенная расширением OkTools)
 ok.ru##iframe[src^="//oktools.ru/page/static/"]
 ||oktools.ru/page/static/
@@ -28048,6 +28048,7 @@ dzen.ru###LayoutTopMicroRoot div[style*="%"]:style(padding-top: unset !important
 gazeta.ru###_id_flowup
 tapochek.net###aposnow
 growhow.in.ua###custom-background-css:remove()
+playground.ru###dfpPrerollDelay:remove()
 myshared.ru###download_form > .modal-body
 vm.ru###onair > img[data-src="/img/player_cover.svg"]
 inoreader.com###reader_pane:style(padding-right: unset !important)
@@ -28610,9 +28611,10 @@ ok.ru,touch.mail.ru##+js(json-prune, result.body.direct)
 okminigames.mail.ru##+js(set-constant, NO_ADV, 1)
 otvet.mail.ru##+js(set-constant, Object.prototype._Mimic, undefined)
 player-smotri.mail.ru##+js(set-constant, Object.prototype.autoPlayParams, false)
+ok.ru##+js(set-constant, Object.prototype.detectAdBlock, undefined)
 finance.mail.ru,news.mail.ru,sportmail.ru,vfokuse.mail.ru##+js(set-constant, Object.prototype.enableMimic, noopFunc)
 ~calls.mail.ru,~e.mail.ru,~finance.mail.ru,mail.ru,~my.mail.ru,~news.mail.ru,~o2.mail.ru,~octavius.mail.ru,~sportmail.ru,~touch.mail.ru,~vfokuse.mail.ru##+js(set-constant, Object.prototype.mimic, undefined)
-ok.ru##+js(set-constant, Object.prototype.obfuscate, noopFunc)
+ok.ru##+js(set-constant, Object.prototype.obfuscateParams, undefined)
 my.mail.ru##+js(set-constant, Object.prototype.runMimic, noopFunc)
 pogoda.mail.ru##+js(set-constant, Object.prototype.useMimic, noopFunc)
 news.mail.ru##+js(set-constant, __PHS._.props.html, {})
