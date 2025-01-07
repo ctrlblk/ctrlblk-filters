@@ -1,7 +1,7 @@
 [uBlock Origin]
 ! Title: List-KR for uBlock Origin
 ! Description: List-KR for uBlock Origin. Maintained by the adblock community and AdGuard.
-! Version: 2025.0106.0
+! Version: 2025.0106.3
 ! Expires: 12 hours
 ! Homepage: https://github.com/List-KR/List-KR
 ! Support: https://list-kr-community.pages.dev/docs/
@@ -1586,6 +1586,7 @@ zod.kr##.app-main-banner
 isplus.com##.rightEnd > .section_inner > div[style]
 boardlife.co.kr##.promote-box
 dcinside.com##.trend-rank
+gall.dcinside.com##tr[data-type="icon_fnews"]
 gnu.kilho.net##div[id^="detect"]
 moneypin.biz##.flex > a[href][target="_blank"]
 chzzk.naver.com##div[class^="popup_cheat_key_container__"]
@@ -1631,6 +1632,7 @@ lee-master.tistory.com##.contents_style > blockquote:has(img[src*="coupangcdn.co
 lee-master.tistory.com##.contents_style > blockquote:has(img[src*="coupangcdn.com/image/affiliate/banner/"])
 damoang.net##a[data-dd-action-name*="Ads"]
 damoang.net##div[class$="banner"]
+damoang.net##li.list-group-item:has(a[href*="promotion"])
 ggeal.com###body_read > div[style^="margin:"] > div[class=""][style*="width:"]
 sejonghub.com##div[id^="carousel_"].carousel.carousel-fade
 ssodam.com##div[class^="col-lg-offset-"] > div[style*="height:"].hidden-xs
@@ -3116,7 +3118,6 @@ dailymedipharm.com#?#table:has(> tbody > tr > td:has-text(bannerManager):not(:ha
 eggrank.com#?##right-sidebar > .inside-right-sidebar > div[class]:not(:has-text(Hi there, I\'m EGG.))
 2cpu.co.kr#?#tr:has(> td > a[href^="../ad_board/"]:has-text(광고))
 2cpu.co.kr#?#ul > li:has(> a[href^="./ad_board/"]:has-text(광고))
-game.dcinside.com,gall.dcinside.com#?#table.gall_list tr:not([data-type][data-no]):has(td:has-text(AD))
 2cpu.co.kr#?#tr.is_notice:has(span:has-text((광고)))
 arca.live#?#.topbar-area:has(> .badge:has-text(뉴스))
 newreop.com#?#.app-board-section > ul.app-board-template-list > li.notice:has(> a[href] > span > font[color]:has-text(AD))
