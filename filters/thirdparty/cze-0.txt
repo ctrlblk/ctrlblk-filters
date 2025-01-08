@@ -268,7 +268,6 @@ novinky.cz#@#.g_ad
 www.parabola.cz#@#.rklm
 skrblik.cz#@##adsense
 sluzebnik.cz#@##adverts
-titulky.com#@##AdBigBox
 !
 ! ---------- Slovak Whitelisted blocking rules ------------ !
 !
@@ -505,9 +504,7 @@ super.cz##a[data-dot="c_pozadi"]
 telekomunikace.cz##.Flagrow-Ads-under-header
 tipcars.com##.amalker
 tiscali.cz##.bbtitle
-titulky.com###martevax1
-titulky.com###martevax2
-titulky.com###martevax3
+titulky.com###martevax001541112909
 titulky.com###bnn_nu300x300
 topzine.cz###vyjizdeciBoxikDiv
 tryhard.cz##[class*="sda-"]
@@ -689,9 +686,10 @@ search.seznam.cz,clanky.seznam.cz##div[data-e-b-n*="advert"]
 sreality.cz##+js(nosiif, checkRods)
 super.cz##+js(ra, style, body)
 svetandroida.cz##+js(aopr, detectAdBlocker)
-titulky.com##+js(set, sssp, trueFunc)
+titulky.com##+js(set, sssp, {})
 titulky.com##+js(set, errSZ, undefined)
-titulky.com##+js(set, showFairUser001, true)
+titulky.com##+js(spoof-css, #martevax001541112909, display, block)
+titulky.com##+js(spoof-css, #bnn_nu300x300, display, block)
 tn.nova.cz##+js(set, useSeznamAds, false)
 ||trackad.cz/adtrack.php$domain=nova.cz,script,redirect=noop.js
 uloz.to##div.l-wrapper:style(padding-top: 0px !important;)
