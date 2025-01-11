@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: EasyList – Cookie Notices
-! Last modified: Fri, 10 Jan 2025 03:50:10 +0000
+! Last modified: Sat, 11 Jan 2025 03:49:59 +0000
 ! Expires: 7 days (update frequency)
 ! *** easylist:template_header.txt ***
 !
@@ -14118,7 +14118,6 @@
 ##.js-cmp-cookiesBar
 ##.js-consent-banner
 ##.js-consent-bar
-##.js-consent-form
 ##.js-consent-notice
 ##.js-consent-panel
 ##.js-consent-popup
@@ -16599,7 +16598,6 @@
 ##.x-cookie-disclaimer
 ##.x-cookie-open
 ##.x-cookies
-##.x-cookies-modal
 ##.x-danone-cookies
 ##.x-lgpd-popup
 ##.xcookie
@@ -16783,77 +16781,38 @@
 ##cookies-warning
 ##div[data-banner="cookies"]
 ##div[data-borlabs-cookie-wrap]
-##div[data-box-name="cookie policy"]
-##div[data-cmp-no-consent]
 ##div[data-component="cookie-policy"]
-##div[data-component="cookieContent"]
 ##div[data-cookie-notification]
 ##div[data-cookie-path]
-##div[data-cookie-warning]
 ##div[data-cookiebanner]
 ##div[data-cookiebar]
-##div[data-cookielayer-init]
 ##div[data-id="cookieBar"]
 ##div[data-id="cookie_dialog"]
 ##div[data-is-cookieinfo]
 ##div[data-module="cookie_banner"]
-##div[data-notificationid="cookie"]
-##div[data-pov-accept-cookies-message]
-##div[data-privacy-consent]
 ##div[data-react-class="CookieNotice"]
 ##div[data-role="cookie-policy-banner"]
-##div[data-section-type="CookiesBanner"]
-##div[data-selen-group="cookies-bar"]
-##div[data-selenium="CookieBanner"]
-##div[data-test="cookie-policy-banner"]
-##div[data-testid="cookie-disclaimer"]
 ##dk-cookie-warning
-##ea-truste-consent-bar
 ##edn-cookie
 ##eo-cookie-bar
 ##epaas-consent-drawer-shell
-##esn-cookie-disclaimer
-##eu-cookie-compliance
-##form[name="FormLeggeCookies"]
-##gdpr-consent
 ##gdpr-cookies
-##gj-cookie-prompt
-##hma-cookie-notification
 ##iframe[name="googlefcPresent"]
 ##kuma-cookie-bar
 ##lgpd-cookie
-##lgpd-cookie-terms
 ##loop-cookie
-##md-toast.cookies-toast
 ##nl-cookie-notice
-##nosid-cookie-banner
-##ns-cookie-privacy-tip
 ##o-cookie-law
-##ocaso-global-modal
 ##of-cookies-notice
 ##ofi-cookie-box-widget
 ##onl-cookie
-##pd-cookie-banner
-##pdo-cookies-policy
-##pp-cookie-dialog
-##privacy-policy-toast
-##rtk-cookies-notice
 ##s72-cookie-consent
 ##sd-cookies-widget
 ##sj-cookie-banner
 ##son-cookie-consent
-##tag-cookie-banner
 ##thor-cookies
-##tui-cookie-bar
 ##tui-cookie-consent
-##ugc-cookie-banner
-##ux-cookie-layer
 ##veiss-cookies
-##vls-cookie-banner
-##voc-cookie-warning
-##wc-cookies
-##yd-cookie-notice
-##yg-cookie-confirm
 ##ytd-consent-bump-renderer
 ##ytd-mealbar-promo-renderer
 ##ytg-notification-footer
@@ -17404,7 +17363,6 @@
 ||cookiecode.nl/dist/latest.js
 ||cookieconsent.com^$third-party
 ||cookieconsent.dfikir.com^$third-party
-||cookiefirst.com^$third-party
 ||cookieform.pl^$third-party
 ||cookiehub.net^$~stylesheet,third-party
 ||cookieinformation.com^$third-party
@@ -17597,7 +17555,6 @@
 ||consent.23g.io^
 ||consent.canalboat.co.uk^
 ||consent.cmp.oath.com^
-||consent.cookiefirst.com^
 ||consent.lifetouch.com^
 ||consent.nationalworld.com^
 ||consent.pdf24.org^
@@ -18486,6 +18443,7 @@ talixo.com##.FloatingBoxesContainerBottom
 blonded.co##.FooterNotice
 kyivindependent.com##.Footer_cookies__3_gEh
 debenhams.com##.FqVeA
+icodrops.com##.Ftr-Note
 aapfalsestarts.com,onebrandssweepstakes.com,tjc.co.uk##.GDPR
 support.meduza.io##.GDPRPanel_root__MhcjB
 atoocall.com##.GDPRPopup-module--popup--3chjm
@@ -19095,7 +19053,7 @@ drafty.co.uk##.cpc-float
 deployhq.com##.crumbs-banner
 odds.am##.cs
 louisvuitton.com##.cs_banner
-kato-brand.com,talkingtables.co.uk##.csm-cookie-consent
+kato-brand.com,talkingtables.co.uk,urban-planet.com##.csm-cookie-consent
 mobian.dev##.css-14g2en8
 amperecomputing.com##.css-16qvp27
 onedayonly.co.za##.css-1gx7o2j
@@ -20203,6 +20161,7 @@ mooseknucklescanada.com##.z-1000
 mudpie.com##.z-30
 pizzahut.co.uk##.z-600
 tapas.io##.z-cookiePopup
+dropstab.com##.z-gdpr
 docs.nordicsemi.com##.zDocsPopupBox
 starlingbank.com##.zYsLEJxzmfBA2Jbfgv8V
 dnb.com##.za43bb12b864a3f8d_privacyBanner
@@ -20407,6 +20366,7 @@ redd.it,reddit.com##shreddit-async-loader[bundlename="reddit_cookie_banner"]
 reddit.com##shreddit-cookie-banner
 remotehub.com##smp-cookies-banner
 truecaller.com##span > .max-w-md.shadow-lg
+trumpf.com##ux-cookie-layer
 pacificpower.net,rockymountainpower.net##wcss-cookie-banner
 web.dev##web-snackbar
 wirexapp.com##wx-cookie-policy-notification
@@ -21595,8 +21555,8 @@ uhrzeit123.de##+js(set-cookie, ga-disable, true)
 skymsen.com##+js(set-cookie, purecookieDismiss, 1)
 neokyo.com##+js(set-cookie, __cookie_consent, false)
 roofingmegastore.co.uk##+js(set-cookie, cookienotice, true)
-figshare.wesleyan.edu,data.lib.vt.edu,openaccess.wgtn.ac.nz,kikapu.uwc.ac.za,figshare.arts.ac.uk,figshare.manchester.ac.uk,repository.lincoln.ac.uk,researchrepository.ul.ie,curate.nd.edu,yabelana.ukzn.ac.za,indigo.uic.edu,dhs-publicaccess.st.dhs.gov,rshare.library.torontomu.ca,orda.shef.ac.uk,datahub.hku.hk,drum.um.edu.mt,scholarship-exchange.open.ac.uk,ordo.open.ac.uk,drs.britishmuseum.org,data.dtu.dk,scholardata.sun.ac.za,researchdata.smu.edu.sg,irr.singaporetech.edu.sg,aura.american.edu,data.bathspa.ac.uk,figshare.com,portal.sds.ox.ac.uk,zivahub.uct.ac.za,rdr.ucl.ac.uk,figshare.unimelb.edu.au##+js(set-cookie, figshare-cookies-essential, true)
-figshare.wesleyan.edu,data.lib.vt.edu,openaccess.wgtn.ac.nz,kikapu.uwc.ac.za,figshare.arts.ac.uk,figshare.manchester.ac.uk,repository.lincoln.ac.uk,researchrepository.ul.ie,curate.nd.edu,yabelana.ukzn.ac.za,indigo.uic.edu,dhs-publicaccess.st.dhs.gov,rshare.library.torontomu.ca,orda.shef.ac.uk,datahub.hku.hk,drum.um.edu.mt,scholarship-exchange.open.ac.uk,ordo.open.ac.uk,drs.britishmuseum.org,data.dtu.dk,scholardata.sun.ac.za,researchdata.smu.edu.sg,irr.singaporetech.edu.sg,aura.american.edu,data.bathspa.ac.uk,figshare.com,portal.sds.ox.ac.uk,zivahub.uct.ac.za,rdr.ucl.ac.uk,figshare.unimelb.edu.au##+js(set-cookie, figshareCookiesAccepted, true)
+publications.cispa.de,figshare.wesleyan.edu,data.lib.vt.edu,openaccess.wgtn.ac.nz,kikapu.uwc.ac.za,figshare.arts.ac.uk,figshare.manchester.ac.uk,repository.lincoln.ac.uk,researchrepository.ul.ie,curate.nd.edu,yabelana.ukzn.ac.za,indigo.uic.edu,dhs-publicaccess.st.dhs.gov,rshare.library.torontomu.ca,orda.shef.ac.uk,datahub.hku.hk,drum.um.edu.mt,scholarship-exchange.open.ac.uk,ordo.open.ac.uk,drs.britishmuseum.org,data.dtu.dk,scholardata.sun.ac.za,researchdata.smu.edu.sg,irr.singaporetech.edu.sg,aura.american.edu,data.bathspa.ac.uk,figshare.com,portal.sds.ox.ac.uk,zivahub.uct.ac.za,rdr.ucl.ac.uk,figshare.unimelb.edu.au##+js(set-cookie, figshare-cookies-essential, true)
+publications.cispa.de,figshare.wesleyan.edu,data.lib.vt.edu,openaccess.wgtn.ac.nz,kikapu.uwc.ac.za,figshare.arts.ac.uk,figshare.manchester.ac.uk,repository.lincoln.ac.uk,researchrepository.ul.ie,curate.nd.edu,yabelana.ukzn.ac.za,indigo.uic.edu,dhs-publicaccess.st.dhs.gov,rshare.library.torontomu.ca,orda.shef.ac.uk,datahub.hku.hk,drum.um.edu.mt,scholarship-exchange.open.ac.uk,ordo.open.ac.uk,drs.britishmuseum.org,data.dtu.dk,scholardata.sun.ac.za,researchdata.smu.edu.sg,irr.singaporetech.edu.sg,aura.american.edu,data.bathspa.ac.uk,figshare.com,portal.sds.ox.ac.uk,zivahub.uct.ac.za,rdr.ucl.ac.uk,figshare.unimelb.edu.au##+js(set-cookie, figshareCookiesAccepted, true)
 yambits.co.uk##+js(set-cookie, acceptcookies, no, , reload, 1)
 domeny.art.pl##+js(set-cookie, artpl_cmp_cookies, accepted, , reload, 1)
 investmap.pl##+js(set-cookie, rodo, 1, , reload, 1)
@@ -22641,7 +22601,7 @@ filen.io##+js(set-cookie, cookieConsent, yes, domain, .filen.io)
 shopping.copaair.com##+js(set-cookie, gdprcm, true)
 app.filen.io##+js(set-cookie, cookieConsent, accept, , domain, app.filen.io)
 purspot.com,leotrippi.com,restaurantclub.pl,context.news,queisser.de##+js(set-cookie, cookieConsent, true)
-cloud.kaspersky.com##+js(trusted-set-cookie, B2BCloudTracking, Disabled, , , reload, 1)
+cloud.kaspersky.com##+js(set-cookie, B2BCloudTracking, Disabled, , , reload, 1)
 grandprixradio.dk,grandprixradio.nl,grandprixradio.be##+js(set-cookie, analytics_cookies, 0)
 grandprixradio.dk,grandprixradio.nl,grandprixradio.be##+js(set-cookie, cookies_accepted, 1, , reload, 1)
 grandprixradio.dk,grandprixradio.nl,grandprixradio.be##+js(set-cookie, tracking_cookies, 0)
@@ -26753,6 +26713,7 @@ ertflix.gr##.CookiePolicyInfo__container___2ddi-
 norlib.gr##.alertbanner
 voi-noi.gr##.bottombar
 dimotisnews.gr##.cc_obx
+welcomestores.gr##.consent-sticky-bar
 electroholic.gr##.fix-bottom
 neurocenter.gr##.gdprpop
 dustandcream.gr##.modals-wrapper
@@ -27057,6 +27018,7 @@ mimprendo.it##div[style="background-color:#E2E2E2;float:left;position:fixed;top:
 enerpoint.it##div[style="padding:10px;background:#f77900;text-align:center;font-size:12px;margin-bottom:15px;"]
 gomme-auto.it##div[style="position: fixed; z-index: 999; bottom: 0px; left: 0px; right: 0px; margin: 0px auto; max-width: 960px; min-width: 360px; overflow: hidden;"]
 buydifferent.it##div[style^="position: fixed; bottom:"]
+acim.it##form[name="FormLeggeCookies"]
 email.it##script + div[style^="background: #000000;"]
 ! ---------- Japanese ----------
 lintec.co.jp###FooterPolicy
@@ -27973,6 +27935,7 @@ chaynikam.info##div[style^="position: fixed; bottom: 0px;"]
 delimobil.ru##footer
 mvideo.ru##mvid-cookie-notification
 postnauka.ru##notifications
+remontnik.ru##rtk-cookies-notice
 kion.ru##ui-web-alert
 ! ---------- Serbian ----------
 elakolije.rs###kolacic
@@ -29312,10 +29275,8 @@ concursolutions.com,forbes.com,formula1.com,fortune.com,proximus.be,proximustv.b
 @@||cmpv2.cookist.it/embed2/rmi/1.2.5|$subdocument
 @@||cmpv2.fanpage.it/embed2/rmi/1.2.5|$subdocument
 @@||components2.rcsobjects.it/rcs_cpmt/v1/distro/youreporter_ct.js$domain=youreporter.it
-@@||consent.cookiefirst.com/banner.js$domain=betten.de
 @@||content.unicredit.it/etc/designs/ucpublic/it/*/informativa_cookie.js$script,stylesheet,~third-party
 @@||content.unicredit.it/etc/designs/ucpublic/it/css/cookie/main.css
-@@||cookiefirst.com^$domain=hemmersbach.com|proaurum.de
 @@||cyrk-zalewski.com.pl^*/CookieInfo.js$script
 @@||ebok.vectra.pl/components/layout/cookie-bar/
 @@||firkloveren.no/skin/$script,stylesheet
@@ -29379,7 +29340,7 @@ concursolutions.com,forbes.com,formula1.com,fortune.com,proximus.be,proximustv.b
 @@||zensus2022.de/SiteGlobals/Modules/CookieBanner/*/CookieBanner.json?$~third-party,xmlhttprequest
 
 ! Title: uBlock filters – Cookie Notices
-! Last modified: Thu, 09 Jan 2025 19:04:38 +0000
+! Last modified: Fri, 10 Jan 2025 22:52:01 +0000
 ! Expires: 7 days
 ! Description: Filters optimized for uBlock Origin, to be used with EasyList's and/or Adguard's "Cookie Notices" list(s)
 ! License: https://github.com/uBlockOrigin/uAssets/blob/master/LICENSE
@@ -29839,6 +29800,8 @@ aimigo.coach,gymglish.com##+js(trusted-set-cookie, a9_cookie_control_prefs_v2, %
 planningportal.co.uk##+js(trusted-set-cookie, cookie_preferences, {%22performance%22:false%2C%22marketing%22:false%2C%22necessary%22:true})
 ! https://www.skandia.se/
 skandia.se##+js(trusted-set-cookie, SK_CONSENT, {%22hasAccepted%22:true%2C%22functional%22:false%2C%22necessary%22:true%2C%22statistics%22:false}, , , domain, skandia.se)
+! https://www.welcomestores.gr/el/
+welcomestores.gr##+js(trusted-set-cookie, ConsentChecked, '{"userHasSetCookies":true,"functionalityCookies":false,"statisticCookies":false,"marketingCookies":false}')
 
 
 !! Needs additional cookies
@@ -30315,13 +30278,6 @@ stadtmobil.de##+js(trusted-set-cookie, CookieConsent, {stamp:%27Uv9YOAVP5djCBw71
 coinbase.com##+js(trusted-set-cookie, cm_default_preferences, {%22consent%22:[%22necessary%22%2C%22functional%22]%2C%22region%22:%22DEFAULT%22})
 coinbase.com##+js(trusted-set-cookie, cm_eu_preferences, {%22consent%22:[%22necessary%22%2C%22functional%22]%2C%22region%22:%22EU%22})
 
-! https://github.com/uBlockOrigin/uAssets/issues/20274
-cmpv2.fanpage.it##+js(trusted-set-local-storage-item, euconsent, CP0N6vnP0N6wKA6AoBENDbCsAP_AAH_AABCYJtNV_H__bW9r8X7_aft0eY1P9_j77uQxBhfJE-4F3LvW_JwXx2E5NF36tqoKmRoEu3ZBIUNlHJHUTVmwaogVryHsakWcpTNKJ6BkkFMRM2dYCF5vm4tjeQKY5_p_d3fx2D-t_dv839zzz8VHn3c5f--0-PCdU5-9Dfn9fRfb-9IP9_78v8v8_l_rk2_eT13_pcvr_D--f_87_XW-9wTYAJMNC4gC7AgJCbQMIoEAIwrCAigUAAAAkDRAQAuDAp2BgEusBEAIEUABwQAhABRkACAAACABCIAJAigQAAQCAQAAgAQCAQAEDAAKACwEAgABAdAxTCgAUCwgSIyIhTAhCgSCAlsqEEoKhBXCAIssAKARGwUACAAARWAAICxeAwBICVCQQJdQbQAAEACAUUoVCCT0wADgkbLUHgiAAAAA.YAAAAAAAAAAA)
-cmpv2.fanpage.it##+js(trusted-set-local-storage-item, fpconsent, NTglMkM0MCUyQzElMkMxNjk4MjE5MTEx|JTA2JTAxJTAxJTA1JTAxJTE2JTAxJTE1JTAxJTA0JTAxJTA4JTAx|JTAw)
-! https://github.com/uBlockOrigin/uAssets/issues/20371
-cmpv2.geopop.it##+js(trusted-set-local-storage-item, euconsent, CP0N6vnP0N6wKA6AoBENDbCsAP_AAH_AABCYJtNV_H__bW9r8X7_aft0eY1P9_j77uQxBhfJE-4F3LvW_JwXx2E5NF36tqoKmRoEu3ZBIUNlHJHUTVmwaogVryHsakWcpTNKJ6BkkFMRM2dYCF5vm4tjeQKY5_p_d3fx2D-t_dv839zzz8VHn3c5f--0-PCdU5-9Dfn9fRfb-9IP9_78v8v8_l_rk2_eT13_pcvr_D--f_87_XW-9wTYAJMNC4gC7AgJCbQMIoEAIwrCAigUAAAAkDRAQAuDAp2BgEusBEAIEUABwQAhABRkACAAACABCIAJAigQAAQCAQAAgAQCAQAEDAAKACwEAgABAdAxTCgAUCwgSIyIhTAhCgSCAlsqEEoKhBXCAIssAKARGwUACAAARWAAICxeAwBICVCQQJdQbQAAEACAUUoVCCT0wADgkbLUHgiAAAAA.YAAAAAAAAAAA)
-cmpv2.geopop.it##+js(trusted-set-local-storage-item, fpconsent, NTglMkM0MCUyQzElMkMxNjk4MjE5MTEx|JTA2JTAxJTAxJTA1JTAxJTE2JTAxJTE1JTAxJTA0JTAxJTA4JTAx|JTAw)
-
 ! https://go-e.com/en/ - Functional
 go-e.com##+js(trusted-set-cookie, gdpr, {%22version%22:%221.0_tracking%22%2C%22options%22:{%22typo3%22:true%2C%22gdpr%22:true%2C%22openstreetmap%22:true%2C%22vimeo%22:true%2C%22youtube%22:true%2C%22recaptcha%22:true%2C%22googlemaps%22:true%2C%22tracking%22:false}})
 
@@ -30425,6 +30381,8 @@ snowandrock.com##+js(trusted-set-cookie, consent_setting, analytics%3A0%7Cfuncti
 ! New solution when the next stable version becomes widely used. https://github.com/uBlockOrigin/uBlock-issues/issues/2971
 ! All store information on device cookies
 dw.com,kinepolis.*,winfuture.de,lippu.fi,racingnews365.com##+js(trusted-click-element, #cmpwrapper >>> #cmpbntyestxt, , 1000)
+! I do not accept
+news.slashdot.org##+js(trusted-click-element, span#cmpbntnotxt, , 1000)
 
 ! https://www.zdf.de/ - Functional + social
 zdf.de##+js(trusted-set-cookie, zdf_cmp_client, '{%22version%22:%22v1%22%2C%22iteration%22:1%2C%22consents%22:[{%22id%22:%22personalisierung%22%2C%22value%22:false}%2C{%22id%22:%22socialMedia%22%2C%22value%22:true}%2C{%22id%22:%22instagram%22%2C%22value%22:true}%2C{%22id%22:%22twitter%22%2C%22value%22:true}%2C{%22id%22:%22facebook%22%2C%22value%22:true}%2C{%22id%22:%22drittsysteme%22%2C%22value%22:true}%2C{%22id%22:%22erforderlich%22%2C%22value%22:true}%2C{%22id%22:%22erfolgsmessung%22%2C%22value%22:true}]}')
@@ -30585,9 +30543,6 @@ oxxio.nl##+js(set-cookie, privacyConsent, false)
 oxxio.nl##+js(trusted-set-cookie, qubitconsent, Declined)
 oxxio.nl##+js(trusted-set-cookie, qubitconsent_version, 2.0.0)
 oxxio.nl##+js(trusted-set-cookie, privacyConsent_type, explicit)
-
-! https://github.com/uBlockOrigin/uAssets/issues/22002
-geopop.it,fanpage.it##+js(trusted-click-element, '.gdpr-btn.small-right, .thirdlayer .gdpr-btn-lbl')
 
 ! reject pref/analsis/behavioral
 solvia.es##+js(trusted-set-local-storage-item, solvia-consents, '{"tec":true,"pers":false,"ana":false,"publi":false}')
@@ -31511,6 +31466,8 @@ sp-manager-magazin-de.manager-magazin.de##+js(trusted-click-element, button[titl
 
 ! agree timeout.com (EU IP)
 cdn.privacy-mgmt.com##+js(trusted-click-element, button[title="Accept all"], , 1000)
+! timeout.com (with GPC enabled browser) US IP
+cdn.privacy-mgmt.com##+js(trusted-click-element, button[title="Save & Exit"], , 1000)
 
 ! karlsruhe-insider.de, accept&close
 cdn.privacy-mgmt.com##+js(trusted-click-element, button[title="Akzeptieren & Schließen"], , 1000)
@@ -31523,3 +31480,6 @@ centrum24.pl##+js(trusted-click-element, button.button-reject, , 1000)
 ! https://github.com/uBlockOrigin/uAssets/issues/26787
 @@||cdn.jsdelivr.net/gh/*/cookieconsent@v*/dist/cookieconsent.js$from=webtic.it
 webtic.it##+js(trusted-set-cookie, cc_cookie, '{"categories":["necessary"],"level":["necessary"],"revision":0,"data":null,"rfc_cookie":false,"consent_date":"$currentISODate$","consent_uuid":"a3cbbb35-63e1-4ee9-ab8c-b327fd3a863e","last_consent_update":"$currentISODate$"}')
+
+! https://github.com/uBlockOrigin/uAssets/issues/26797
+cookist.it,fanpage.it,geopop.it,lexplain.it##+js(trusted-click-element, '.gdpr-modal .gdpr-btn--secondary, .gdpr-modal .gdpr-modal__box-bottom-dx > button.gdpr-btn--br:first-child')
