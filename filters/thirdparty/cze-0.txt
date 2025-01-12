@@ -67,7 +67,6 @@
 ||jiskra-benesov.cz/images/branding/
 ||jiskra-benesov.cz/webloader/jsloader-*.js
 ||js.tipcars.com/js/*/_view/amalker/amalker.js
-||krimi-plzen.cz/media/partners/
 ||kurzy.cz/e/adv?
 ||img.kurzy.cz/og
 ||kurzy.cz/l/s_back.js
@@ -369,7 +368,10 @@ dotekomanie.cz##div#highlitesAds
 drbna.cz##.layoutTop
 e15.cz##.gallery-advertisement
 e15.cz###topSite
-e-mostecko.cz###g-top-bannery
+e-mostecko.cz##.container.banner
+e-mostecko.cz###section1 .mod-custom.custom
+e-mostecko.cz###mod-custom301
+e-mostecko.cz###main-body .mod-custom.custom
 echo24.cz##div[class*="adcontainer"]
 echo24.cz##.intent-exit-box.l-row
 echo24.cz##.js-popup-quest.intent-exit-popup--quest.intent-exit-popup
@@ -394,14 +396,13 @@ livesport.cz###box-over-content-a
 login.szn.cz###ad
 lupa.cz,root.cz##.design-box--jobs
 lupa.cz,root.cz##.design-advert-placeholder
-ewrc.cz###invelt
 extra.cz##div.klik--leaderboard
 fdb.cz###blackfooter
 filmporno.cz##.topbanners
 filmporno.cz,isport.blesk.cz##.ads
 finance.cz###box.mb
 finance.cz##.arr-red
-finance.cz,motoforum.cz###ahead
+finance.cz###ahead
 firstclass.cz###stOverlay
 firstclass.cz##.promobox
 forum.root.cz##.body_message--ad
@@ -428,11 +429,17 @@ kinobox.cz##div[class*="Commercial_container"]
 kladenskelisty.cz##.rleft
 kladenskelisty.cz##.rright
 kladenskelisty.cz##.tree
+kladenskelisty.cz##.rek
+kladenskelisty.cz##.faderandom
 kniha.cz##div[id^="banner"]
 konzolista.cz##.ad
 konzolista.cz##.v-card.mb-6
-krimi-plzen.cz##a[rel="sponsored"]
-krimi-plzen.cz##[class*="partnеr"]
+krimi-plzen.cz##.partnｅr-bοx
+krimi-plzen.cz##.article-list-partnｅr-slіder
+krimi-plzen.cz##.article-list-partnｅr-slіder-label
+krimi-plzen.cz##.article-list-partnｅr-slіder-controls
+krimi-plzen.cz##.article-partnｅr-bοx
+krimi-plzen.cz##.ad-seznam-responsive
 kupi.cz##.top_background
 kurzy.cz##[id^="adv_"]
 kurzy.cz###z990x200
@@ -453,6 +460,8 @@ medop.cz###block-nodesinblock-0
 menicka.cz##.header_banner
 meteoprog.cz##div[id^="mp_banner_"]
 mladypodnikatel.cz##.scroll_banner
+motoforum.cz##img[alt="Reklama"]
+motoforum.cz##.advert
 motorkari.cz##a[trgurl],a[href*="relocate.php"]
 motorkari.cz##.banner,.left-side-banner,.right-side-banner
 mrk.cz##.komerce
@@ -643,6 +652,7 @@ enigmaplus.cz,epochaplus.cz##img[src^="/upload/data/"]:upward(3)
 enigmaplus.cz##img[src*="/img/atlas"]:upward(3)
 epochaplus.cz##img[alt="casopis"]:upward(3)
 epochaplus.cz##body:style(padding-top:0px !important;)
+ewrc.cz##+js(set, checkAdsBlocked, noopFunc)
 games.tiscali.cz##+js(aopr, HTMLIFrameElement.prototype.contentWindow)
 ||h.seznam.cz^$badfilter
 hokej.cz##+js(set, canRunAds, true)

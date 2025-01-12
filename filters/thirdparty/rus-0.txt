@@ -21826,8 +21826,10 @@ ictv.ua,vikna.tv##div[id^="div-gpt-ad-"]
 ! Правила для ресурсов, которые их создатели сделали несовместимыми с адблоком
 !#if ext_abp
 ! запросы
-! ловушка для обфускации, новости дзена
-||dzen.ru/news$csp=script-src 'unsafe-inline' 'unsafe-eval' data: static.dzeninfra.ru yandex.ru/ads/ vk.com/dist/ vk.com/js/api/videoplayer.js
+! ловушка для обфускации, статьи и новости дзена
+||dzen.ru/a/$csp=script-src 'unsafe-inline' 'unsafe-eval' data: static.dzeninfra.ru/react/ static.dzeninfra.ru/s3/zen-lib/ yandex.ru/ads/ vk.com/dist/ vk.com/js/api/videoplayer.js vk.com/dist/public/api/
+||dzen.ru/articles$csp=script-src 'unsafe-inline' 'unsafe-eval' data: static.dzeninfra.ru/react/ static.dzeninfra.ru/s3/zen-lib/ yandex.ru/ads/ vk.com/dist/ vk.com/js/api/videoplayer.js vk.com/dist/public/api/
+||dzen.ru/news$csp=script-src 'unsafe-inline' 'unsafe-eval' data: static.dzeninfra.ru/react/ static.dzeninfra.ru/s3/zen-lib/ yandex.ru/ads/ vk.com/dist/ vk.com/js/api/videoplayer.js vk.com/dist/public/api/
 !
 $csp=script-src-attr 'none',domain=eurointegration.com.ua|pravda.com.ua
 /^https?://24smi\.org/*[/]*[/][^\s]{8,}/$xmlhttprequest,domain=24smi.org
@@ -22293,7 +22295,7 @@ cloud.mail.ru##div[class*="advHeaderStatic"]
 cloud.mail.ru##div[class^="Folder__worm"]
 cloud.mail.ru##div[class^="ReactViewer__attachesSidebar"]
 cloud.mail.ru##div[class^="ReactViewer__bottominfoWrapper-"]
-doc.mail.ru##div[class^="Sidebarinfo__root"]
+cloud.mail.ru,doc.mail.ru##div[class^="Sidebarinfo__root"]
 cloud.mail.ru,doc.mail.ru##div[class^="Worm__root-"]
 cloud.mail.ru##section > div[class^="Rightinfo__header"]
 ! Дом
