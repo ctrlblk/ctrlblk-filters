@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: EasyList – Newsletter Notices
-! Last modified: Mon, 13 Jan 2025 02:12:03 +0000
+! Last modified: Mon, 13 Jan 2025 09:50:29 +0000
 ! Expires: 7 days (update frequency)
 ! *** easylist:template_header.txt ***
 !
@@ -4294,6 +4294,8 @@ huckmag.com##+js(set-cookie, huck-newsletter-popup, true)
 ! greencarreports.com https://github.com/uBlockOrigin/uAssets/issues/26767
 greencarreports.com##.sign-up-overlay
 greencarreports.com##.newsletter-signup:style(max-height:0px;visibility: hidden !important;)
+! egopowerplus.com
+egopowerplus.com##+js(set-cookie, newsletterModal, true)
 ! explorersweb.com
 explorersweb.com###newsletterModal
 explorersweb.com##.modal-backdrop
@@ -5690,7 +5692,7 @@ doctorofcredit.com#@#.wpdiscuz-subscribe-bar
 ! fanboy_newsletter_shopping_allowlist_general_hide.txt
 
 ! Title: uBlock filters – Other Annoyances
-! Last modified: Sat, 11 Jan 2025 03:46:16 +0000
+! Last modified: Mon, 13 Jan 2025 21:25:21 +0000
 ! Expires: 7 days
 ! Description: Filters optimized for uBlock Origin, to be used with EasyList's and/or Adguard's "Other Annoyances" list(s)
 ! License: https://github.com/uBlockOrigin/uAssets/blob/master/LICENSE
@@ -13428,3 +13430,7 @@ nihongoaz.com##body:style(-webkit-touch-callout: default !important; -webkit-use
 
 ! https://github.com/uBlockOrigin/uAssets/issues/26805
 ||bitchute.com/*/play_$media,1p,redirect=noopmp3-0.1s
+
+! espressocafe. ro anti select, right click
+espressocafe.ro##+js(rmnt, script, contextmenu)
+espressocafe.ro##*:style(-webkit-touch-callout: default !important; -webkit-user-select: text !important; -khtml-user-select: text !important; -moz-user-select: text !important; -ms-user-select: text !important; user-select: text !important; -webkit-tap-highlight-color: revert !important; cursor: revert !important;)

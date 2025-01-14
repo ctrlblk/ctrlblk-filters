@@ -1,7 +1,7 @@
 [uBlock Origin]
 ! Title: List-KR for uBlock Origin
 ! Description: List-KR for uBlock Origin. Maintained by the adblock community and AdGuard.
-! Version: 2025.0111.0
+! Version: 2025.0114.4
 ! Expires: 12 hours
 ! Homepage: https://github.com/List-KR/List-KR
 ! Support: https://list-kr-community.pages.dev/docs/
@@ -11,6 +11,7 @@
 !
 
 !#if ext_ublock
+||ad-creative.pstatic.net^
 ||centaurs-rest.coupang.com^
 ||ad.cashdoc.io^
 ||sv.govkorea24.com^
@@ -1306,6 +1307,7 @@ m.cafe.naver.com##.banner_add.bottom:matches-path(/ca-fe\\/web\\/cafes\\/(steami
 !
 ! DOMAIN-REFRESHER: START
 !
+||tvwiki*.com/AD
 ||media.cokcok.vip/assets/images/
 /https:\/\/tvwiki[0-9]+\.com\/AD\//$domain=tvwiki4.com|tvwiki5.com|tvwiki6.com|tvwiki7.com|tvwiki8.com|tvwiki9.com|tvwiki10.com|tvwiki11.com|tvwiki12.com|tvwiki13.com|tvwiki14.com|tvwiki15.com|tvwiki16.com|tvwiki17.com
 ||rj.filesbest.xyz/r/
@@ -1388,7 +1390,7 @@ m.cafe.naver.com##.banner_add.bottom:matches-path(/ca-fe\\/web\\/cafes\\/(steami
 ||xn--h10b90b998c.*/img/$domain=xn--h10b90b998c.*
 ||i.imgur.com^$domain=newtoki.*
 ||newtoki.*/banner*/$domain=newtoki.*
-||i.imgur.com^$domain=torrentqq332.com|torrentqq333.com|torrentqq334.com|torrentqq335.com|torrentqq336.com|torrentqq337.com|torrentqq338.com|torrentqq339.com|torrentqq340.com|torrentqq341.com|torrentqq342.com|torrentqq343.com|torrentqq344.com|torrentqq345.com|torrentqq346.com
+||i.imgur.com^$domain=torrentqq350.com|torrentqq351.com|torrentqq352.com|torrentqq353.com|torrentqq354.com|torrentqq355.com|torrentqq356.com|torrentqq357.com|torrentqq358.com|torrentqq359.com|torrentqq360.com|torrentqq361.com|torrentqq362.com|torrentqq363.com|torrentqq364.com
 ||cdn.jjun.live/BANNER/*.gif
 ||tvmon.*/img/ba
 ||tvmon.*/AD/
@@ -1554,6 +1556,7 @@ eegosa.com##section[id*="_ads_"]
 ! ##div[id*="_AD"]
 sports.donga.com##div[id*="_AD"]
 
+search.naver.com###sub_pack > .brand_new_ui.searching_view
 url.kr##body > header ~ .py-4 ~ .container:has(~  .mt-5)
 url.kr##.alert-danger ~ .container
 m.search.naver.com##ul[data-adlog].shop_default_list > ._product:has(._ad_icon)
@@ -2733,6 +2736,7 @@ koreaminecraft.net##tr.notice:not(:has(.wst_member_title))
 !
 ! DOMAIN-REFRESHER: START
 !
+tvmon14.org,tvmon15.org,tvmon16.org,tvmon17.org,tvmon18.org,tvmon19.org,tvmon20.org,tvmon21.org,tvmon22.org,tvmon23.org,tvmon24.org,tvmon25.org,tvmon26.org,tvmon27.org,tvmon28.org##.row-banner
 tvroom5.org##div.banners_area
 tvroom5.org##div.banner_l
 tvroom5.org##.pop-up.iziModal
@@ -2780,12 +2784,12 @@ tvchak77.com,tvchak78.com,tvchak79.com,tvchak80.com,tvchak81.com,tvchak82.com,tv
 tvchak77.com,tvchak78.com,tvchak79.com,tvchak80.com,tvchak81.com,tvchak82.com,tvchak83.com,tvchak84.com,tvchak85.com,tvchak86.com,tvchak87.com,tvchak88.com,tvchak89.com,tvchak90.com,tvchak91.com,tvchak92.com,tvchak93.com,tvchak94.com,tvchak95.com,tvchak96.com,tvchak97.com,tvchak98.com##.banner-box
 cokcok.*##.custom_banner_item
 agit359.com,agit360.com,agit361.com,agit362.com,agit363.com,agit364.com,agit365.com,agit367.com,agit368.com,agit369.com,agit370.com,agit371.com,agit372.com,agit373.com,agit374.com,agit375.com##.banner
-torrentqq332.com,torrentqq333.com,torrentqq334.com,torrentqq335.com,torrentqq336.com,torrentqq337.com,torrentqq338.com,torrentqq339.com,torrentqq340.com,torrentqq341.com,torrentqq342.com,torrentqq343.com,torrentqq344.com,torrentqq345.com,torrentqq346.com##.at-banner
+torrentqq350.com,torrentqq351.com,torrentqq352.com,torrentqq353.com,torrentqq354.com,torrentqq355.com,torrentqq356.com,torrentqq357.com,torrentqq358.com,torrentqq359.com,torrentqq360.com,torrentqq361.com,torrentqq362.com,torrentqq363.com,torrentqq364.com##.at-banner
 tvhot.*##div[id*="-banner-"]
 tvhot.*###body_wrap > div[class][style^="margin:"]
 sonagitv.*##a[href][target="_blank"] > img[src^="/images/banner/"]:not([src^="/images/banner/webtoon_"])
 newtoki.*##.ba_test
-torrentqq332.com,torrentqq333.com,torrentqq334.com,torrentqq335.com,torrentqq336.com,torrentqq337.com,torrentqq338.com,torrentqq339.com,torrentqq340.com,torrentqq341.com,torrentqq342.com,torrentqq343.com,torrentqq344.com,torrentqq345.com,torrentqq346.com##.row-banner
+torrentqq350.com,torrentqq351.com,torrentqq352.com,torrentqq353.com,torrentqq354.com,torrentqq355.com,torrentqq356.com,torrentqq357.com,torrentqq358.com,torrentqq359.com,torrentqq360.com,torrentqq361.com,torrentqq362.com,torrentqq363.com,torrentqq364.com##.row-banner
 sonagitv.*##.popup_warp
 kr.bb-tv.co##.banner
 torrenttip125.com,torrenttip126.com,torrenttip127.com,torrenttip128.com,torrenttip129.com,torrenttip130.com,torrenttip131.com,torrenttip132.com,torrenttip133.com,torrenttip134.com,torrenttip135.com,torrenttip136.com,torrenttip137.com,torrenttip138.com##a[href*="/ad/"]

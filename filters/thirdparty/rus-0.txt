@@ -10226,7 +10226,7 @@ drukarnia.com.ua##header ~ section[role="dialog"]
 ! CSP and Header filters
 $csp=script-src-attr 'none',domain=volyn.com.ua
 .infox.sg^$csp=script-src
-.softoroom.org^$csp=default-src 'unsafe-inline'
+.softoroom.org^$csp=default-src 'unsafe-inline',domain=~gzip.softoroom.org|~m.softoroom.org
 /gateway/aHR0c$csp=script-src
 |http*//fastpic.org/$csp=frame-src 'self'
 |http*//fastpic.org/$csp=script-src 'self' 'unsafe-inline' 'unsafe-eval' static.fastpic.org
@@ -20213,6 +20213,7 @@ samopoznanie.ru##center > a[style][href][target="_blank"]
 inmoment.ru,megaonlines.net##center > a[target="_blank"]
 narodclub.net##center > a[target="_blank"][rel="nofollow"]
 dating.trans-admirer.com##center > b:nth-of-type(3)
+nnmclub.ro,nnmclub.to##center > big
 allmmorpg.ru##center > div > a[rel*="nofollow"][target="_blank"]
 hack-tool.org##center > div > noindex
 sibmail.com##center > div[style*="200px;"]
@@ -21847,7 +21848,7 @@ https://*adtech_uid=$~third-party,xmlhttprequest,domain=lena-miro.ru|levik.blog|
 ||imgfrost.net^$third-party
 ||liveinternet.ru/utf/lici.js?
 ||news.mail.ru/-/*.js?
-||pikabu.ru/ajax/*shK1W.$xmlhttprequest
+||pikabu.ru/ajax/*shK1$xmlhttprequest
 ||ritsatv.ru^$csp=script-src
 ||ritsatv.ru^$popup
 ||ritsatv.ru^$~document
@@ -28160,6 +28161,7 @@ kufar.by,sm.news##+js(abort-on-property-read, aab)
 bstudy.net,ozlib.com,studbooks.net,studme.org,studref.com,studwood.net,vuzlit.com,xstud.org##+js(abort-on-property-read, abl)
 vgtimes.ru##+js(abort-on-property-read, adblock_availability_check)
 upload.ee##+js(abort-on-property-read, adcashMacros)
+versia.ru##+js(abort-on-property-read, addLink)
 bb.lv##+js(abort-on-property-read, adjustBackground)
 footboom.com,footboom.kz##+js(abort-on-property-read, admiral)
 electric-house.ru##+js(abort-on-property-read, ads)
