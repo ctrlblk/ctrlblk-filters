@@ -1,10 +1,10 @@
 ![Adblock Plus 2.0]
-! Checksum: E1KjJv2nGQkKpkP9MB5heA
-! Diff-Path: ../patches/224/224-s-1736909029-3600.patch
+! Checksum: L6MzUxphwg+FJBkxYSMP3Q
+! Diff-Path: ../patches/224/224-s-1737002506-3600.patch
 ! Title: AdGuard Chinese filter
 ! Description: EasyList China + AdGuard Chinese filter. Filter list that specifically removes ads on websites in Chinese language.
-! Version: 2.1.29.97
-! TimeUpdated: 2025-01-15T02:40:24+00:00
+! Version: 2.1.30.3
+! TimeUpdated: 2025-01-16T04:38:22+00:00
 ! Expires: 5 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -349,6 +349,9 @@
 ! Bad: ||ad.doubleclick.net^ (should be in adservers.txt)
 !
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/196174
+||174.127.195.98/bbs/include/javascript/adblock.js
+174.127.195.98##+js(abort-on-property-write, checkAdblock)
 ! https://github.com/AdguardTeam/AdguardFilters/issues/194998
 colamanga.com#@#.ADFooter
 colamanga.com#@#.ADInfo
@@ -3213,6 +3216,7 @@ bmvc2020-conference.com#@#div[id][style="width: 100%;"] > iframe[scrolling="no"]
 !---------------------------------------------------------------------------!
 -*-*-*-*.alpha^$script,third-party
 -*-*-*-*.as^$script,third-party
+.xyz:*?x=$script,third-party
 -*-*-*-*.panda^$script,third-party
 .tv/gg/
 /webAdvert.php?ad_name=
@@ -4923,9 +4927,17 @@ newduba.cn###jq_youxi
 ||23.231.151.252^
 ||38.33.15.*.gif
 ||51tongji.trafficmanager.net^
+||trafficmanager.net/o.js
 ||67.21.92.*.gif
 ||cnzz.trafficmanager.net^
 ||cupfox.app^$third-party
+||ztgha.xyz^
+||djsxm.xyz^
+||0vc.fun^
+||cralphal.com^
+||ptrmnx.icu^
+||iwpkp.xyz^
+||4gu.fun^
 ||zxpaa.xyz^
 ||etallkiq.com^
 ||tbyfz.xyz^
@@ -4934,6 +4946,8 @@ newduba.cn###jq_youxi
 ||17282.org^
 ||btcili.top^
 ||04o.fun^
+||nagvaxvy.com^
+||epxlt.xyz^
 ||lazzrv.icu^
 ||geinkroll.com^
 ||wusfa.xyz^
@@ -13027,7 +13041,6 @@ mydrivers.com###track-link
 eastmoney.com##div[style^="position: fixed; z-index: 100000; top:"]
 mydrivers.com##.i1vbApifa5
 mydrivers.com##.HSsRgYjfNn
-siguyy.tv##[style^="position: fixed;"]
 szxx.com.cn###A1
 szxx.com.cn###A2
 yahoo.com###ACT_crazy

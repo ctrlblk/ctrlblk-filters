@@ -489,7 +489,11 @@ parabola.cz##.nav_sloupec h3.ridr
 parabola.cz##.nav_sloupec h3.ridr + a
 parabola.cz##.main_menu5 > .clear_both ~ a
 parabola.cz##.main_menu5 > .clear_both ~ img
+parlamentnilisty.cz###aoleaderboard
+parlamentnilisty.cz###aowallpaperone
 pctuning.cz##[class*="sda-"]
+playzone.cz##.aab-alert-wrap
+playzone.cz###ad-top-second
 pravidla.cz##.advtick
 pravopisne.cz,pravopisne.sk##.advert
 prehrajto.cz##.ad-leaderboard-alt-wrapper
@@ -550,6 +554,9 @@ webtrh.cz##.banner
 www.seznam.cz##div.ogm-sticky-repeater
 www.seznam.cz##div.ad-exclusive
 zakonyprolidi.cz##.SkyLeft.Banner
+zdopravy.cz##.otherAds
+zdopravy.cz##.otherAds#gm-outstream+div
+zdopravy.cz##ins.adsbygoogle
 zena-in.cz##div.main-top
 zena-in.cz##div.site-reklama
 zing.cz##[class*="sda-"]
@@ -693,8 +700,6 @@ navratdoreality.cz##+js(aeld, ended)
 navratdoreality.cz##+js(nobab)
 onlajny.com##+js(acis, $, PartnerRedirectAction)
 parlamentnilisty.cz##+js(aopr, Ads)
-||playzone.cz^$csp=child-src *
-playzone.cz##+js(set-cookie, pl_aab_hide, 1)
 podcasty.seznam.cz##+js(set, sssp.config, noopFunc)
 podcasty.seznam.cz##+js(set, sssp, {})
 pppeter.shop##body:remove-class(modal-open)
@@ -714,9 +719,9 @@ svetandroida.cz##+js(aopr, detectAdBlocker)
 titulky.com##+js(set, sssp, {})
 titulky.com##+js(set, errSZ, undefined)
 titulky.com##+js(spoof-css, #bnn_nu300x300, display, block)
-titulky.com###martevax1:style(height:1px!important;overflow:hidden) 
-titulky.com###martevax2:style(height:1px!important;overflow:hidden) 
-titulky.com###martevax3:style(height:1px!important;overflow:hidden) 
+titulky.com###martevax1:style(width:1px!important;overflow:hidden) 
+titulky.com###martevax2:style(width:1px!important;overflow:hidden) 
+titulky.com###martevax3:style(width:1px!important;overflow:hidden) 
 tn.nova.cz##+js(set, useSeznamAds, false)
 ||trackad.cz/adtrack.php$domain=nova.cz,script,redirect=noop.js
 uloz.to##div.l-wrapper:style(padding-top: 0px !important;)
@@ -730,7 +735,7 @@ youradio.cz##+js(nofab)
 zing.cz##div.jeg_topbar:style(margin-bottom: 0px !important;)
 zive.cz##+js(acis, window.addEventListener, :visible)
 zdopravy.cz##+js(aopr, atob)
-zdopravy.cz##+js(aopr, adBlockEnabled)
+zdopravy.cz##+js(set, hasUserActiveSubscription, true)
 
 @@||sbazar.cz^$ghide
 @@||seznam.cz^$ghide
