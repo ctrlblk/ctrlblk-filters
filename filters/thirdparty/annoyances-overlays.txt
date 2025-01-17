@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: EasyList – Newsletter Notices
-! Last modified: Wed, 15 Jan 2025 03:50:18 +0000
+! Last modified: Fri, 17 Jan 2025 02:02:51 +0000
 ! Expires: 7 days (update frequency)
 ! *** easylist:template_header.txt ***
 !
@@ -1642,6 +1642,7 @@ sciencefocus.com,trains.com###newsletterContainer
 ginospizza.ca###newsletterSignUp
 usafacts.org###newsletter__sticky
 messengernews.net,miningjournal.net,minotdailynews.com,salemnews.net###newsletter_article
+religionnews.com###newsletter_sidebar_widget-3
 core77.com###newsletter_signup
 91mobiles.com###newsletter_subscribe
 rigzone.com###newsletter_subscription
@@ -2629,6 +2630,7 @@ atlasobscura.com##.js-email-ask-form
 premierchristian.news##.js-esend-user
 duckduckgo.com,duckduckgogg42xjoc72x3sjasowoarfbgcmvfimaftt6twagswzczad.onion##.js-footer-card
 reviewed.usatoday.com##.js-inline-email-cta
+agbi.com##.js-mailchimp
 datacenterdynamics.com##.js-mktoFormBlock
 usafacts.org##.js-newsletter--expand
 gamespot.com##.js-nlsub
@@ -5117,6 +5119,7 @@ sweetwater.com##.site-footer-col--subscribe
 navafresh.com##.site-footer-newsletter__one-half
 jaysresales.com##.site-footer__item-inner--newsletter
 prohockeylife.com##.site-newsletter-bar
+wildturkeybourbon.com##.sn_crm_forms
 wolverine.com##.social-box-sign-up
 teepop.com##.spin-modal
 lambland.co.uk,solestop.com##.springbot-overlay
@@ -5694,7 +5697,7 @@ doctorofcredit.com#@#.wpdiscuz-subscribe-bar
 ! fanboy_newsletter_shopping_allowlist_general_hide.txt
 
 ! Title: uBlock filters – Other Annoyances
-! Last modified: Wed, 15 Jan 2025 13:23:53 +0000
+! Last modified: Thu, 16 Jan 2025 17:40:49 +0000
 ! Expires: 7 days
 ! Description: Filters optimized for uBlock Origin, to be used with EasyList's and/or Adguard's "Other Annoyances" list(s)
 ! License: https://github.com/uBlockOrigin/uAssets/blob/master/LICENSE
@@ -5781,6 +5784,12 @@ pinterest.*##div[class="Closeup__wrapper"] > div > div[style^="cursor: default"]
 pinterest.*##div[class="GrowthUnauthPinImage__imageDim"]
 pinterest.*##.GrowthUnauthPinImage > a > div[class^="Jea"]:has(button[class^="noButtonStyles "])
 pinterest.*##.Hsu.iyn.zI7:nth-of-type(2) > div > .FullPageModal__scroller
+! https://www.reddit.com/r/uBlockOrigin/comments/1hzblue/how_to_bypass_pinterest_forced_register/
+pinterest.*##+js(set-local-storage-item, DWEB_PIN_IMAGE_CLICK_COUNT, $remove$)
+pinterest.*##+js(trusted-replace-argument, Storage.prototype.setItem, 0, json:"DWEB", condition, DWEB_PIN_IMAGE_CLICK_COUNT)
+! "Sign Up to download"
+pinterest.*##+js(set-local-storage-item, unauthDownloadCount, $remove$)
+pinterest.*##+js(trusted-replace-argument, Storage.prototype.setItem, 0, json:"", condition, unauthDownloadCount)
 
 ! flickr.com "Upgrade to Flickr Pro to hide these ads" 
 flickr.com##.moola-search-view:has-text(hide these ads)
