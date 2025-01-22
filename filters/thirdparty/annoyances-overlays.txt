@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: EasyList – Newsletter Notices
-! Last modified: Mon, 20 Jan 2025 21:50:07 +0000
+! Last modified: Tue, 21 Jan 2025 21:50:15 +0000
 ! Expires: 7 days (update frequency)
 ! *** easylist:template_header.txt ***
 !
@@ -1759,6 +1759,7 @@ catholicculture.org###subscribe_container
 mediapost.com###subscribe_form
 fsf.org###subscribeblock
 musictimes.com,tripstodiscover.com###subscription
+cleanmymac.com###subscription-faq-article
 kbb.com###subscription-overlay
 classpop.com###subscriptionform
 ted.com###talk-marketing-banner
@@ -2989,7 +2990,7 @@ tnmt.com##.nwl-teaser__wrap
 lawandcrime.com##.o-callout__newsletter
 outsideonline.com,triathlete.com##.o-content-cta
 rtrfm.com.au##.offYourDial
-fierce-network.com##.omeda-newsletter-block
+fierce-network.com,fiercebiotech.com##.omeda-newsletter-block
 voxeurop.eu##.optin-form
 neurosciencenews.com##.optinforms-form-container
 evonomics.com##.optshorts
@@ -3573,6 +3574,7 @@ san.com##.wp-block-san-sidebar-cta__content
 vice.com##.wp-block-savage-platform-beehiiv-form
 techcrunch.com##.wp-block-tc23-newsletter-signup-compact
 techcrunch.com##.wp-block-techcrunch-newsletter-signup-compact
+whitehouse.gov##.wp-block-whitehouse-newsletter
 minnpost.com##.wp-elements-6af074a2b773903132682d24a9a289ae
 visualcapitalist.com##.wp-image-1216
 lifeinnorway.net##.wp-image-9836
@@ -3756,6 +3758,7 @@ aarp.org##.recommendationSection:has-text(Newsletter)
 cjr.org##.row > .entry-content > p:has-text(daily newsletter)
 brooklynvegan.com##.sidebar-form:has-text(Sign Up For Our Newsletter)
 interestingengineering.com##.t-bg-surface-zero.t-p-6:has-text(Newsletter)
+heatpumped.org##.text-wt-background:has-text(Subscribe)
 autonews.com##.u-space-y-6.u-items-center:has-text(Staying current)
 ensemblemagazine.co.nz##.w-embed:has-text(Sign up now)
 systemsapproach.org##.wp-block-column > .is-layout-flow.wp-block-group:has-text(Subscribe)
@@ -4826,6 +4829,7 @@ ringkestore.com##body:style(overflow: auto !important; position: initial !import
 
 ! *** easylist:fanboy-addon/fanboy_newsletter_shopping_specific_hide.txt ***
 alldayshirts.com###GeneralSaleBanner
+firstclasswatches.co.uk###OuiOverlay
 edikted.com###SMSBump-Modal
 shop.ordnancesurvey.co.uk###_lpSurveyPopover
 celticwebmerchant.co.uk###abandonednewsletter
@@ -5705,7 +5709,7 @@ doctorofcredit.com#@#.wpdiscuz-subscribe-bar
 ! fanboy_newsletter_shopping_allowlist_general_hide.txt
 
 ! Title: uBlock filters – Other Annoyances
-! Last modified: Mon, 20 Jan 2025 03:15:56 +0000
+! Last modified: Tue, 21 Jan 2025 08:12:13 +0000
 ! Expires: 7 days
 ! Description: Filters optimized for uBlock Origin, to be used with EasyList's and/or Adguard's "Other Annoyances" list(s)
 ! License: https://github.com/uBlockOrigin/uAssets/blob/master/LICENSE
@@ -12281,10 +12285,10 @@ thejakartapost.com##+js(rmnt, script, /$.*ready.*setInterval/)
 oreilly.com##+js(aeld, mouseout, cookie)
 
 ! https://github.com/uBlockOrigin/uAssets/issues/20027
-fullxh.com,galleryxh.site,hamsterix.*,megaxh.com,movingxh.world,seexh.com,unlockxh4.com,valuexh.life,xhaccess.com,xhadult2.com,xhadult3.com,xhadult4.com,xhadult5.com,xhamster.*,xhamster1.*,xhamster10.*,xhamster11.*,xhamster12.*,xhamster13.*,xhamster14.*,xhamster15.*,xhamster16.*,xhamster17.*,xhamster18.*,xhamster19.*,xhamster20.*,xhamster2.*,xhamster3.*,xhamster4.*,xhamster42.*,xhamster46.com,xhamster5.*,xhamster7.*,xhamster8.*,xhamsterporno.mx,xhbig.com,xhbranch5.com,xhchannel.com,xhchannel2.com,xhdate.world,xhday.com,xhday1.com,xhlease.world,xhmoon5.com,xhofficial.com,xhopen.com,xhplanet1.com,xhplanet2.com,xhreal2.com,xhreal3.com,xhspot.com,xhtab2.com,xhtab4.com,xhtotal.com,xhtree.com,xhvictory.com,xhwebsite.com,xhwebsite2.com,xhwebsite5.com,xhwide1.com,xhwide2.com,xhwide5.com,xhxh3.xyz##+js(set, initials.urls.bannerCheckUrl, '')
+fullxh.com,galleryxh.site,hamsterix.*,megaxh.com,movingxh.world,seexh.com,unlockxh4.com,valuexh.life,xhaccess.com,xhadult2.com,xhadult3.com,xhadult4.com,xhadult5.com,xhamster.*,xhamster1.*,xhamster10.*,xhamster11.*,xhamster12.*,xhamster13.*,xhamster14.*,xhamster15.*,xhamster16.*,xhamster17.*,xhamster18.*,xhamster19.*,xhamster20.*,xhamster2.*,xhamster3.*,xhamster4.*,xhamster42.*,xhamster46.com,xhamster5.*,xhamster7.*,xhamster8.*,xhamsterporno.mx,xhbig.com,xhbranch5.com,xhchannel.com,xhchannel2.com,xhdate.world,xhday.com,xhday1.com,xhlease.world,xhmoon5.com,xhofficial.com,xhopen.com,xhplanet1.com,xhplanet2.com,xhreal2.com,xhreal3.com,xhspot.com,xhtab2.com,xhtab4.com,xhtotal.com,xhtree.com,xhvictory.com,xhwebsite.com,xhwebsite2.com,xhwebsite5.com,xhwide1.com,xhwide2.com,xhwide5.com,xhxh3.xyz##+js(set, initials.layout.layoutPromoProps.promoMessagesWrapperProps.bannerCheckUrl, '')
 ! https://github.com/uBlockOrigin/uAssets/issues/4747#issuecomment-1691485028
 ! https://github.com/uBlockOrigin/uAssets/issues/26838
-fullxh.com,galleryxh.site,hamsterix.*,megaxh.com,movingxh.world,seexh.com,unlockxh4.com,valuexh.life,xhaccess.com,xhadult2.com,xhadult3.com,xhadult4.com,xhadult5.com,xhamster.*,xhamster1.*,xhamster10.*,xhamster11.*,xhamster12.*,xhamster13.*,xhamster14.*,xhamster15.*,xhamster16.*,xhamster17.*,xhamster18.*,xhamster19.*,xhamster20.*,xhamster2.*,xhamster3.*,xhamster4.*,xhamster42.*,xhamster46.com,xhamster5.*,xhamster7.*,xhamster8.*,xhamsterporno.mx,xhbig.com,xhbranch5.com,xhchannel.com,xhchannel2.com,xhdate.world,xhday.com,xhday1.com,xhlease.world,xhmoon5.com,xhofficial.com,xhopen.com,xhplanet1.com,xhplanet2.com,xhreal2.com,xhreal3.com,xhspot.com,xhtab2.com,xhtab4.com,xhtotal.com,xhtree.com,xhvictory.com,xhwebsite.com,xhwebsite2.com,xhwebsite5.com,xhwide1.com,xhwide2.com,xhwide5.com,xhxh3.xyz##+js(no-fetch-if, url:/en/banner method:HEAD)
+fullxh.com,galleryxh.site,hamsterix.*,megaxh.com,movingxh.world,seexh.com,unlockxh4.com,valuexh.life,xhaccess.com,xhadult2.com,xhadult3.com,xhadult4.com,xhadult5.com,xhamster.*,xhamster1.*,xhamster10.*,xhamster11.*,xhamster12.*,xhamster13.*,xhamster14.*,xhamster15.*,xhamster16.*,xhamster17.*,xhamster18.*,xhamster19.*,xhamster20.*,xhamster2.*,xhamster3.*,xhamster4.*,xhamster42.*,xhamster46.com,xhamster5.*,xhamster7.*,xhamster8.*,xhamsterporno.mx,xhbig.com,xhbranch5.com,xhchannel.com,xhchannel2.com,xhdate.world,xhday.com,xhday1.com,xhlease.world,xhmoon5.com,xhofficial.com,xhopen.com,xhplanet1.com,xhplanet2.com,xhreal2.com,xhreal3.com,xhspot.com,xhtab2.com,xhtab4.com,xhtotal.com,xhtree.com,xhvictory.com,xhwebsite.com,xhwebsite2.com,xhwebsite5.com,xhwide1.com,xhwide2.com,xhwide5.com,xhxh3.xyz##+js(no-fetch-if, url:/en/ad/widget method:HEAD)
 
 ! https://github.com/uBlockOrigin/uAssets/issues/20084
 270towin.com##+js(set-session-storage-item, fs.adb.dis, 1)
@@ -13451,3 +13455,12 @@ espressocafe.ro##*:style(-webkit-touch-callout: default !important; -webkit-user
 
 ! https://github.com/uBlockOrigin/uAssets/issues/26840
 @@||u.gg^$ghide
+
+! https://abstream.to/7u23aksi148u - anti-devtools
+||abstream.to/js/devtools-detector.js
+abstream.to##+js(acs, document.onkeydown)
+
+! astoryofmasasstruggles.com anti right-click, select, print
+astoryofmasasstruggles.com##+js(rmnt, script, /contextmenu|reEnable/)
+astoryofmasasstruggles.com##*:style(-webkit-touch-callout: default !important; -webkit-user-select: text !important; -khtml-user-select: text !important; -moz-user-select: text !important; -ms-user-select: text !important; user-select: text !important; -webkit-tap-highlight-color: revert !important; cursor: revert !important;)
+astoryofmasasstruggles.com##style:has-text(@media print):remove()
