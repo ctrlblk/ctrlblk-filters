@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: EasyList – Newsletter Notices
-! Last modified: Tue, 21 Jan 2025 21:50:15 +0000
+! Last modified: Thu, 23 Jan 2025 03:50:02 +0000
 ! Expires: 7 days (update frequency)
 ! *** easylist:template_header.txt ***
 !
@@ -4801,6 +4801,10 @@ assos.com##+js(set-cookie, popup-newsletter, true)
 ! .fancybox-container
 headphonebar.com,jolinne.com##.fancybox-container
 headphonebar.com,jolinne.com##body:style(overflow: auto !important; position: initial !important;)
+! house.suntory.com
+house.suntory.com##.overlay-newsletter
+house.suntory.com##.modal-backdrop
+house.suntory.com##body,html:style(overflow: auto !important; position: initial !important;)
 ! partsinmotion.co.uk
 partsinmotion.co.uk###fancybox-overlay
 partsinmotion.co.uk##body,html:style(overflow: auto !important; position: initial !important;)
@@ -4825,7 +4829,7 @@ temu.com###bg_pc_benefit_download_modal_container_id
 temu.com##body:style(overflow: auto !important; position: initial !important;)
 ! ringkestore.com
 ringkestore.com##pop-up
-ringkestore.com##body:style(overflow: auto !important; position: initial !important;)
+ringkestore.com##body,html:style(overflow: auto !important; position: initial !important;)
 
 ! *** easylist:fanboy-addon/fanboy_newsletter_shopping_specific_hide.txt ***
 alldayshirts.com###GeneralSaleBanner
@@ -5191,7 +5195,7 @@ awables.com,camerawholesalers.com,flight-model.com,p2nstore.co.uk,simcoeav.ca###
 !! #shopify-section-popup
 backroadslondon.com,bazaar-foods.co.uk,fsaproshop.com,modify71.co.uk,ownsilent.international,roughandreadywholefoods.co.uk,vibergboot.eu,vulkit.com###shopify-section-popup
 !! .newsletter
-1stplace4trophies.co.uk,a2zphoneselectronics.com,arcade1up.com,bigmammagroup.com,bodybuildingwarehouse.co.uk,crazysales.com.au,deichmann.com,ditano.com,electroeshop.com,everymarket.com,grandandtoy.com,jdpower.com,kippersrijssen.nl,libreriascolastica.it,libreriauniversitaria.it,madeincucina.com,pinkluna.com.br,primainfanzia.it,qualitymobilevideo.com,ramim.com.br,roguefitness.com,sapstjean.com,scarpescarpestore.com,servers4less.com,skyairline.com,surveillance-video.com,technologygalaxy.com,teksavvy.com,thewolseley.com,tuffshop.co.uk##.newsletter
+1stplace4trophies.co.uk,a2zphoneselectronics.com,arcade1up.com,bigmammagroup.com,bodybuildingwarehouse.co.uk,crazysales.com.au,deichmann.com,ditano.com,electroeshop.com,everymarket.com,grandandtoy.com,jdpower.com,kippersrijssen.nl,libreriascolastica.it,libreriauniversitaria.it,madeincucina.com,niepoort.pt,pinkluna.com.br,primainfanzia.it,qualitymobilevideo.com,ramim.com.br,roguefitness.com,sapstjean.com,scarpescarpestore.com,servers4less.com,skyairline.com,surveillance-video.com,technologygalaxy.com,teksavvy.com,thewolseley.com,tuffshop.co.uk##.newsletter
 !! #ps__widget_container
 comfortoneshoes.com,getrawnutrition.com,groovelife.com,mypatriotsupply.com,myvidaorigins.com,revivesups.com###ps__widget_container
 !! a[href*="/newsletter"]
@@ -5709,7 +5713,7 @@ doctorofcredit.com#@#.wpdiscuz-subscribe-bar
 ! fanboy_newsletter_shopping_allowlist_general_hide.txt
 
 ! Title: uBlock filters – Other Annoyances
-! Last modified: Tue, 21 Jan 2025 08:12:13 +0000
+! Last modified: Thu, 23 Jan 2025 04:48:10 +0000
 ! Expires: 7 days
 ! Description: Filters optimized for uBlock Origin, to be used with EasyList's and/or Adguard's "Other Annoyances" list(s)
 ! License: https://github.com/uBlockOrigin/uAssets/blob/master/LICENSE
@@ -13464,3 +13468,7 @@ abstream.to##+js(acs, document.onkeydown)
 astoryofmasasstruggles.com##+js(rmnt, script, /contextmenu|reEnable/)
 astoryofmasasstruggles.com##*:style(-webkit-touch-callout: default !important; -webkit-user-select: text !important; -khtml-user-select: text !important; -moz-user-select: text !important; -ms-user-select: text !important; user-select: text !important; -webkit-tap-highlight-color: revert !important; cursor: revert !important;)
 astoryofmasasstruggles.com##style:has-text(@media print):remove()
+
+! https://www.pokeos.com/ - anti-adb banners
+pokeos.com##+js(no-fetch-if, doubleclick)
+||pokeos.com/pokeos-uploads/ads/adblock/$image
