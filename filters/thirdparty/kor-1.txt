@@ -1,7 +1,7 @@
 [uBlock Origin]
 ! Title: List-KR for uBlock Origin
 ! Description: List-KR for uBlock Origin. Maintained by the adblock community and AdGuard.
-! Version: 2025.0121.1
+! Version: 2025.0123.0
 ! Expires: 12 hours
 ! Homepage: https://github.com/List-KR/List-KR
 ! Support: https://list-kr-community.pages.dev/docs/
@@ -3316,6 +3316,7 @@ naver.com##+js(set-cookie, ba.uuid, 0, , domain, naver.com)
 @@||ssl.pstatic.net/tveta/libs/glad/prod/$script,xmlhttprequest,domain=chzzk.naver.com
 @@||nam.veta.naver.com/vas$xmlhttprequest,domain=chzzk.naver.com
 !
+eftlibrary.com##+js(no-fetch-if, www3.doubleclick.net)
 dinfo.3dpchip.com##+js(set, linkPass, true)
 boardlife.co.kr#$##top-sponsor { height: 60px !important; top: -60px !important; position: absolute !important; visibility: hidden !important; }
 klauncher.kr##+js(aeld, load, _0x)

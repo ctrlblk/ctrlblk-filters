@@ -1,10 +1,10 @@
 ![Adblock Plus 2.0]
-! Checksum: Nw/JxbBG7Fhjpv+rpeNyhA
-! Diff-Path: ../patches/16/16-s-1737607545-3600.patch
+! Checksum: 8T5zIMiQCOldNpkG5Pmp/g
+! Diff-Path: ../patches/16/16-s-1737693704-3600.patch
 ! Title: AdGuard French filter
 ! Description: Liste FR + AdGuard French filter. Filter list that specifically removes ads on websites in French language.
-! Version: 2.0.49.64
-! TimeUpdated: 2025-01-23T04:41:18+00:00
+! Version: 2.0.49.68
+! TimeUpdated: 2025-01-24T04:38:06+00:00
 ! Expires: 5 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -872,8 +872,11 @@ cnews.fr###block-cnews-pubsidebarsticky300x600
 masculin.com##body div[data-actirise-slot][class$="ads"]
 magazine-avantages.fr##.External:has(> .googleAd)
 magazine-avantages.fr#$#.BodyContent { margin-top: 0 !important; }
-anime-sama.fr###sousBlocDroite > *
-anime-sama.fr###sousBlocGauche > *
+anime-sama.fr###squBot
+anime-sama.fr###bannBot
+anime-sama.fr###bannLeft
+anime-sama.fr###bannRight
+anime-sama.fr##a[href^="https://www.polybuzz.ai/"]
 anime-sama.fr#?#.items-center > p.text-sm:contains(/^Cliquer sur une pub est le meilleur moyen de nous soutenir.$/)
 turbo.fr#$##Banniere-Haute { min-height: 0 !important; visibility: hidden !important; }
 maison-travaux.fr,bibamagazine.fr,doctissimo.fr,autoplus.fr##.rwad-with-placeholder
@@ -11547,7 +11550,7 @@ $stylesheet,third-party,domain=1fichier.com|7-up.net|9xupload.me|adshr.ink|adshr
 ||capital.fr^*/boutons-pub-header/
 ||careerbuilder.fr/lts/jobstreamintl.aspx?
 ||carrefoune.com^$script
-||carrefour.fr/api/v1/recommendations?
+||carrefour.fr/api/advertising/
 ||carrefour.fr/js-ssr/footer-partner-banner.
 ||carrosseriemagazine.com/image/carrosserie/pub/
 ||casavie.com/images/index_logo.gif
@@ -17036,7 +17039,6 @@ orientation-chabab.com##.footer
 lavenir.net##.footer--partners
 jeunesfooteux.com##.footer-actuly
 pixelads.fr##.footer-partner
-carrefour.fr##.footer-partner-banner
 bx1.be,lephoceen.fr##.footer-partners
 tube8.fr##.footerBanner
 gameblog.fr##.footer__partners
@@ -17128,6 +17130,7 @@ automobile-magazine.fr##.js-bloc-reezocar-event
 dealabs.com##.js-idealo-section
 trovit.fr##.js-loadPremium
 cdiscount.com##.jsNoPrdtBloc
+boulanger.com##.kaminoBillboard
 vivastreet.com##.kiwii-box-300x250
 boulanger.com,darty.com,fnac.com##.kmino-ad
 fnac.com##.kmino-component
@@ -17295,6 +17298,7 @@ strastv.com##.post_pub
 leparking-moto.fr,leparking.fr##.premium
 kelkoo.fr##.priceminister
 buzzporn.net##.privacylinks
+boulanger.com##.product-list__item-sponsored-products
 sport-equipements.fr##.product-photo
 lanutrition.fr##.product-shop
 nitrotype.com##.profile-ad
@@ -17547,6 +17551,7 @@ uploaded.net##[class*="pico-"]
 winamax.fr##[class][onclick]
 voyageforum.com##[class^="adShadow"]
 narkive.com,tourte.org##[class^="ads_"]
+carrefour.fr##[class^="advertising-placeholder"]
 webstar-electro.com##[class^="banner"]
 agroligne.com,auto-utilitaire.com,mobilealgerie.com##[class^="banner_"]
 sofoot.com##[class^="bloc-partenaires"]
@@ -17562,6 +17567,7 @@ reverso.net##[class^="vda-"]
 korben.info##[data-cfpa]
 jeu.fr##[data-fallback-type="image"]
 tripadvisor.fr##[data-feed-reason="SPONSORED"]
+leboncoin.fr##[data-test-id^="advertising"]
 lessentiel.lu##[data-testid="Ad"]
 qwantjunior.com##[data-testid="autopromoJuniorLink"]
 toutvendre.fr##[href*=".kelkoogroup.net/"]
@@ -17573,6 +17579,7 @@ delhaize.be##[id*="sponsored_products"]
 blick.ch##[id^="appnexus-placement"]
 comarketing-news.fr##[id^="comar-"]
 boulanger.com##[id^="criteo_pageListe"]
+carrefour.fr##[id^="data-advertising"]
 3dnatives.com##[id^="dnati-"]
 commentcamarche.com,commentcamarche.net,free.fr,journaldesfemmes.com,orange.fr,turf-fr.com##[id^="lig_"]
 agate-france.com##[id^="pbad_"]
