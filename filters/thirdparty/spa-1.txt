@@ -1,10 +1,10 @@
 ![Adblock Plus 2.0]
-! Checksum: /ZHnV7rgXFA6oBxeqc9BLA
-! Diff-Path: ../patches/9/9-s-1737892027-3600.patch
+! Checksum: ZqHhcdRgEa6JRZk4alJ/kQ
+! Diff-Path: ../patches/9/9-s-1737974689-3600.patch
 ! Title: AdGuard Spanish/Portuguese filter
 ! Description: Filter list that specifically removes ads on websites in Spanish, Portuguese, and Brazilian Portuguese languages.
-! Version: 2.0.28.45
-! TimeUpdated: 2025-01-26T11:42:43+00:00
+! Version: 2.0.28.48
+! TimeUpdated: 2025-01-27T10:40:08+00:00
 ! Expires: 5 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -588,9 +588,9 @@ suaads.com,reidoplacar.com,suaurl.com##+js(abort-current-script, document.addEve
 impactoespananoticias.com##+js(set-constant, canRunAds, true)
 @@||impactoespananoticias.com/static/plugins/ads-prebid.js
 ! https://github.com/AdguardTeam/AdguardFilters/issues/137471
-! https://github.com/AdguardTeam/AdguardFilters/issues/136826
-legendei.net#@#.adsBanner
-legendei.net##+js(set-constant, eazy_ad_unblocker_msg_var, '')
+! https://github.com/AdguardTeam/AdguardFilters/issues/197068
+legendei.net###nonono
+||legendei.net/traduzidocodenew.min.js
 ! https://github.com/AdguardTeam/AdguardFilters/issues/136480
 @@||phoenixkiller.com/assets/js/ad-provider.js$domain=csrevo.com
 csrevo.com##+js(abort-current-script, $, !document.getElementById()
@@ -782,9 +782,10 @@ audiotools.in##+js(abort-current-script, EventTarget.prototype.addEventListener,
 ! https://github.com/AdguardTeam/AdguardFilters/issues/186776
 ! https://github.com/AdguardTeam/AdguardFilters/issues/115301
 ! hinatasoul.com, anitube.biz
+@@||foodiesgallery.com^$generichide
 receitasdaora.online,foodiesgallery.com,caroloportunidades.com.br#$##player { display: block !important; }
 receitasdaora.online,foodiesgallery.com,caroloportunidades.com.br##+js(no-xhr-if, popads.net)
-receitasdaora.online,foodiesgallery.com,caroloportunidades.com.br##+js(no-setTimeout-if, hasAdblock)
+receitasdaora.online,foodiesgallery.com,caroloportunidades.com.br##+js(no-setTimeout-if, /hasAdblock|window\.getComputedStyle/)
 @@||popads.net/js/adblock.js$xmlhttprequest,domain=caroloportunidades.com.br|foodiesgallery.com|receitasdaora.online
 ! https://github.com/AdguardTeam/AdguardFilters/issues/190058
 ! https://github.com/AdguardTeam/AdguardFilters/issues/186902
@@ -2164,6 +2165,7 @@ c5n.com,t13.cl,solowrestling.mundodeportivo.com,todojujuy.com,mendozapost.com,me
 !
 ! NOTE: Specific rules
 !
+ver-peliculas-online.org##.content a[class^="button"][target="_blank"]
 anime-latino.com##.dce-animations:has(> .elementor-button-wrapper > a[target="_blank"])
 publico.pt##html > body .pubHorz:not(#style_important)
 infopedia.pt##.books-authors-widget
@@ -2461,7 +2463,7 @@ rdnews.com.br##body > .header-mb-full.hidden-xs:has(> div[id^="div-gpt-"])
 swisscows.com##.item-a8r-web
 okpeliz.com##+js(window.open-defuser)
 mirandogratis.com##a[target="_blank"] > img
-yaske.org,zpelis.com,locopelis.com##div[class^="adsbutt_"]
+pelisxd.com,yaske.org,zpelis.com,locopelis.com##div[class^="adsbutt_"]
 hardwaresfera.com##.widget_aawp_widget_bestseller
 verseriehd.cc##.movie-xpb > a[rel]
 onlinegratis.cc,seriesgratis.cloud,seriesonline.cloud,veronline.*,verseries.cc,streamgratis.biz##.movie-xyz > a[rel]
