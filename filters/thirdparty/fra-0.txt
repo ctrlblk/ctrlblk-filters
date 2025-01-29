@@ -1,10 +1,10 @@
 ![Adblock Plus 2.0]
-! Checksum: qWx9KNG5oo48cS39kChTFA
-! Diff-Path: ../patches/16/16-s-1737945783-3600.patch
+! Checksum: LG7iLlZNHU2l7oCnH+00Ew
+! Diff-Path: ../patches/16/16-s-1738125804-3600.patch
 ! Title: AdGuard French filter
 ! Description: Liste FR + AdGuard French filter. Filter list that specifically removes ads on websites in French language.
-! Version: 2.0.49.79
-! TimeUpdated: 2025-01-27T02:39:19+00:00
+! Version: 2.0.49.84
+! TimeUpdated: 2025-01-29T04:38:55+00:00
 ! Expires: 5 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -188,7 +188,6 @@ ebookdz.com##+js(no-xhr-if, pagead2.googlesyndication.com)
 monumentum.fr##+js(abort-current-script, document.getElementById, Blocking Ads)
 ! https://github.com/AdguardTeam/AdguardFilters/issues/179837
 ! https://github.com/AdguardTeam/AdguardFilters/issues/147842
-japscan.lol##:matches-path(/\/.+/)body > div.container > div#intePromo[style*="block"]
 japscan.lol##:matches-path(/\/.+/)body > div.container > div#blir-nter[style*="visible"]
 japscan.lol#@#div.container > [href]
 japscan.lol#@##main > .card:has(a[href*="/manga/?type="][href*="&content="][target="_blank"])
@@ -870,6 +869,7 @@ $xmlhttprequest,third-party,denyallow=fastlycdn.com|doodcdn.co|intensedebate.com
 !
 !
 !
+europe1.fr##.lmn-container
 cnews.fr##.wrapper-ads
 cnews.fr##div[id^="dm_ads_"]
 cnews.fr###block-cnews-pubsidebarsticky300x600
@@ -954,7 +954,6 @@ cookomix.com##.AdMB
 h2-mobile.fr#?##main-container .blog__content:has(> .title-wrap--pr > h3:contains(Annonces))
 h2-mobile.fr###main-container .blog__content:has(> .col-md-4 > div[id^="optidigital-adslot-"])
 cosmopolitan.fr##.External
-japscan.lol##body > style + .container > .row > #main.col-md-9 > .card > .card-body.rounded-0 > .card-body[style^="margin: 0px auto; display: block;"] > iframe[id^="__clb-"][id$="_container"][style^="display: inline-block; width: 300px; height: 100px;"][sandbox="allow-same-origin allow-popups allow-popups-to-escape-sandbox allow-forms allow-scripts allow-top-navigation-to-custom-protocols"][scrolling="no"]
 japscan.lol##body > .container.text-center > .mb-2.mt-2[style="margin: 0px auto; display: block;"] > iframe[id^="__clb-"][id$="_container"][style^="display: inline-block; width: 300px; height: 100px;"][sandbox="allow-same-origin allow-popups allow-popups-to-escape-sandbox allow-forms allow-scripts allow-top-navigation-to-custom-protocols"][scrolling="no"]
 japscan.lol##body > style + .container > .row > #main + #sidebar.col-md-3 > .card.mt-1 > .card[style="margin: 0px auto; display: block;"] > iframe[id^="__clb-"][id$="_container"][style^="display: inline-block; width: 300px; height: 250px;"][sandbox="allow-same-origin allow-popups allow-popups-to-escape-sandbox allow-forms allow-scripts allow-top-navigation-to-custom-protocols"][scrolling="no"]
 japscan.lol##body > style + .container > .row > #main.col-md-9 > .card > .card-body[style="margin: 0px auto; display: block;"] > iframe[id^="__clb-"][id$="_container"][style^="display: inline-block; width: 300px; height: 100px;"][sandbox="allow-same-origin allow-popups allow-popups-to-escape-sandbox allow-forms allow-scripts allow-top-navigation-to-custom-protocols"][scrolling="no"]
@@ -1642,6 +1641,8 @@ app.molotov.tv##+js(no-xhr-if, /ping?token=)
 !
 !
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/197151
+gotsport.com#@#.pub-container
 ! https://github.com/AdguardTeam/AdguardFilters/issues/196703
 cuisineactuelle.fr#@#[data-ads-core]
 ! https://github.com/AdguardTeam/AdguardFilters/issues/196604
@@ -1882,6 +1883,7 @@ geo.fr#@#[data-ads-core]
 @@||securepubads.g.doubleclick.net/pagead/ppub_config?$domain=ozap.com
 @@||securepubads.g.doubleclick.net/gampad/ads?$domain=ozap.com
 ! https://github.com/AdguardTeam/AdguardFilters/issues/145593
+@@||demoui.asus.com/popup.js
 @@||asusrouter.com/popup.js
 ! https://github.com/AdguardTeam/AdguardFilters/issues/143136
 ikea.cn#@#.pub-text
@@ -3174,6 +3176,7 @@ alfresco-holidays.com,alfresco-holidays.nl,alfresco-camping.de,eurocamp.co.uk#@#
 /zone?pub=*&zone_id=
 /zoneads/*
 /zones?zone=$subdocument
+://a.*/display?zone_id=
 ://a.*/interstitial?id=$script
 ://a.*/loader?*&keywords=$third-party
 ://acces.*/a.php?
@@ -3214,6 +3217,7 @@ alfresco-holidays.com,alfresco-holidays.nl,alfresco-camping.de,eurocamp.co.uk#@#
 ://block.*/rotator/*.js|$script
 ://bn.*.php?*&block=
 ://ca.ads.
+://cdn.*/p/?zid=
 ://cdn.ad.
 ://cdn.ads.
 ://click.*/get_camp.
@@ -3589,6 +3593,7 @@ _werbebanner_
 /install.*&clickid=$popup
 /jump/next.php?$popup
 /out.php?link=t$popup
+/pop.go?spaceid=$popup
 /pu/?*&site=$popup
 /s2iurl.php?$popup
 /splash.*?idzone=$popup
@@ -4839,6 +4844,7 @@ _build=iclick-$popup
 ||79383a549a.com^
 ||7a2cb45927.com^
 ||7a8490057c.com^
+||7b5f77dbb5.com^
 ||7d03443cb7.com^
 ||7dfbef87b6.com^
 ||7f3adt.com^
@@ -4863,8 +4869,11 @@ _build=iclick-$popup
 ||8e403e6714.com^
 ||8ea2468d09.com^
 ||8f70f539ce.com^
+||917c626609.com^
 ||91a8a068d5.com^
 ||92c04d81dd.com^
+||932dbf2491.com^
+||938b97e5ba.com^
 ||947a482789.com^
 ||94870bbbc9.com^
 ||970824fa47.com^
@@ -5525,6 +5534,7 @@ _build=iclick-$popup
 ||assistimplemented.com^
 ||assumeditch.com^
 ||assurancedangerous.com^
+||astonishing-service.com^
 ||astylararsines.com^
 ||atchshipsmotor.com^
 ||atdhobsb.com^
@@ -5579,9 +5589,12 @@ _build=iclick-$popup
 ||avwjyvzeyeov.top^
 ||avzwkkmzkawyr.top^
 ||awaitingdate.com^
+||awaitinggirl.net^
+||awaitinggirls.com^
 ||awarenesstack.com^
 ||awavjblaaebqv.top^
 ||awavjblaaezbb.top^
+||awdeliverynet.com^
 ||awexjtozogod.com^
 ||aweyqalylqqr.top^
 ||awgbrojzdpesxx.com^
@@ -6406,9 +6419,11 @@ _build=iclick-$popup
 ||fae2ea855a.com^
 ||faeotkeyoj.xyz^
 ||fainsflavory.shop^
+||faint-personality.com^
 ||faipeeji.com^
 ||fairfeeling.com^
 ||fairlyleadingenquiry.com^
+||fairyllove.net^
 ||faishoar.com^
 ||faistouy.net^
 ||faksofta.net^
@@ -6424,6 +6439,7 @@ _build=iclick-$popup
 ||fasder12.store^
 ||fastgnmx.com^
 ||fastlycdn.com^
+||fat-flex.ru^
 ||fatemedflat.live^
 ||fattyeccentric.com^
 ||faufainive.com^
@@ -6439,6 +6455,7 @@ _build=iclick-$popup
 ||fdc02736b4.com^
 ||fdqdwujnyoavj.xyz^
 ||fdsur.com^
+||fe433129dc.com^
 ||fe70a4ad4b.com^
 ||feasteddemeans.shop^
 ||februaryinjectionproudly.com^
@@ -7039,6 +7056,7 @@ _build=iclick-$popup
 ||loovufaiboo.net^
 ||lopije.ru^
 ||losital.ru^
+||losobo.xyz^
 ||lostdidest.com^
 ||lotebsansiz.net^
 ||lousoozi.net^
@@ -8211,6 +8229,7 @@ _build=iclick-$popup
 ||trustedpubs.com^
 ||trusteverything.de^
 ||trustiseverything.de^
+||tryonline.bid^
 ||ttsycqxjvgrya.xyz^
 ||tubadthy.live^
 ||tubebrand.com^
@@ -8230,6 +8249,7 @@ _build=iclick-$popup
 ||tubetob.com^
 ||tubevideos.biz^
 ||tubfurryhen.com^
+||tuesdaysale.bid^
 ||tunnedlehua.com^
 ||turbo-cdn.net^
 ||turkstench.com^
@@ -8239,6 +8259,7 @@ _build=iclick-$popup
 ||twk20rw5v1.com^
 ||twrences.xyz^
 ||txkenpbuvmxgjg.xyz^
+||typhondeck.com^
 ||tyranhorrid.com^
 ||tyrfd.ovh^
 ||tzimmescantara.com^
@@ -8260,6 +8281,7 @@ _build=iclick-$popup
 ||unfamiiiiardate.com^
 ||unfamiiiiardate.net^
 ||unfamiiiiardates.net^
+||unfamiiilardate.com^
 ||unfamiiilardates.com^
 ||unfamiiilardates.net^
 ||unfamiillardate.com^
@@ -8270,11 +8292,16 @@ _build=iclick-$popup
 ||unfamiliiardates.com^
 ||unfamiliiardates.net^
 ||unfamilliardates.com^
+||unfamilllardate.com^
 ||unfamilllardates.net^
+||unfamliliardate.com^
 ||unfamliliardate.net^
 ||unfamliliardates.com^
+||unfamlliiardate.com^
 ||unfamlliiardates.com^
 ||unfamlliiardates.net^
+||unfamllliardate.net^
+||unfamllliardates.com^
 ||unhoaryawonder.com^
 ||unimportant-pleasure.com^
 ||unlockads.com^
@@ -8487,6 +8514,7 @@ _build=iclick-$popup
 ||xfmlp.com^
 ||xfuck.com^
 ||xhydh39.xyz^
+||xihubo.click^
 ||xjwgsirruyfwli.xyz^
 ||xoilcsfvgjiw.xyz^
 ||xu2.com^
@@ -9239,6 +9267,7 @@ _build=iclick-$popup
 ||trbx-l1.online^$popup
 ||tribalfusion.com^$popup,third-party
 ||trmnsite.com^$popup,third-party
+||trmzum.com^$popup
 ||trustedpubs.com^$popup,third-party
 ||trynectar.ai^$popup,third-party
 ||uaadi.com^$popup,third-party
