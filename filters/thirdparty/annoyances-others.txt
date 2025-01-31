@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: EasyList – Annoyances
-! Last modified: Wed, 29 Jan 2025 15:50:14 +0000
+! Last modified: Fri, 31 Jan 2025 02:04:11 +0000
 ! Expires: 7 days (update frequency)
 ! *** easylist:template_header.txt ***
 !
@@ -2481,6 +2481,7 @@ chicagoreporter.com##.widget-support-tcr
 religionnews.com##.widget.post-donation-callout-container
 factcheck.org##.widget_factcheck_donate_widget
 lithub.com##.widget_media_image
+firstthings.com##.widget_support_work
 grist.org##.wp-block-article-donation
 humanists.uk##.wp-block-humanists-uk-bootstrap-campaigns-block
 humanists.uk##.wp-block-humanists-uk-bootstrap-notes-block
@@ -2847,6 +2848,7 @@ help.x.com##.b17-scroll-top-button
 albertsons.com,celebritycruises.com,dl.acm.org,err.ee,giantfreakinrobot.com,mygenefood.com,nzherald.co.nz,onthegotours.com,savoredjourneys.com,stanfordreview.org,wanderlustcrew.com##.back-to-top
 mangatoto.com##.back-to-top-bot
 dealnews.com##.back-to-top-outer
+skadden.com##.back-to-top-trigger
 atozmath.com##.backToTop33
 topuniversities.com##.back_top
 zerosette.it##.backto
@@ -3246,6 +3248,8 @@ theolivepress.es##+js(remove-cookie, issuem_lp)
 ! plough.com
 plough.com##.article-paywall 
 plough.com##+js(remove-cookie, ArticlePaywallList)
+! article counter
+firstthings.com##+js(set-cookie, pum_popup_14631_page_views, 1)
 ! mutualart.com login wall 
 ||mutualart.com/Ajax/AjaxLoader/Popup
 mutualart.com##.modal-backdrop
@@ -3812,6 +3816,9 @@ uservoice.com#@##uservoice-feedback
 uservoice.com#@##uservoice-feedback-tab
 cnn.com#@#.OUTBRAIN
 dell.com#@#.back-to-top-container
+skadden.com#@#.back-to-top:not(body):not(html)
 realme.com#@#.btn-back-to-top
 ixbt.com#@#.glyphicon-arrow-up
+skadden.com#@#.js-back-to-top
 sagepub.com#@#.scrollToTop
+skadden.com#@#a[href="#back-to-top"]
