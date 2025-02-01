@@ -1,10 +1,10 @@
 ![Adblock Plus 2.0]
-! Checksum: jufbtlZUIHHCSYZc6XySVg
-! Diff-Path: ../patches/16/16-s-1738212146-3600.patch
+! Checksum: 4T/75N0h9ZJHq5zHqqkY7w
+! Diff-Path: ../patches/16/16-s-1738381384-3600.patch
 ! Title: AdGuard French filter
 ! Description: Liste FR + AdGuard French filter. Filter list that specifically removes ads on websites in French language.
-! Version: 2.0.49.87
-! TimeUpdated: 2025-01-30T04:38:49+00:00
+! Version: 2.0.49.89
+! TimeUpdated: 2025-02-01T03:39:23+00:00
 ! Expires: 5 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -953,7 +953,6 @@ cookomix.com##.AdMB
 h2-mobile.fr#?##main-container .blog__content:has(> .title-wrap--pr > h3:contains(Annonces))
 h2-mobile.fr###main-container .blog__content:has(> .col-md-4 > div[id^="optidigital-adslot-"])
 cosmopolitan.fr##.External
-japscan.lol##body > style + .container > .row > #main + #sidebar.col-md-3 > .card.mt-1 > .card[style="margin: 0px auto; display: block;"] > iframe[id^="__clb-"][id$="_container"][style^="display: inline-block; width: 300px; height: 250px;"][sandbox="allow-same-origin allow-popups allow-popups-to-escape-sandbox allow-forms allow-scripts allow-top-navigation-to-custom-protocols"][scrolling="no"]
 ||japscan.lol^$csp=sandbox allow-forms allow-same-origin allow-scripts allow-modals allow-orientation-lock allow-pointer-lock allow-presentation allow-top-navigation
 japscan.lol##body > .container.text-center > .mb-2.mt-2[style="margin: 0px auto; display: block;"] > .text-center > a.donate[href^="http"][target="_blank"][rel="noopener noreferrer nofollow"]:not([href^="http://japscan.lol"]) > img
 japscan.lol##body > style + .container > .row > #main + #sidebar.col-md-3 > .card.mt-1 > .card[style="margin: 0px auto; display: block;"] > a.aikoi.donate[href^="http"][target="_blank"][rel="noopener noreferrer nofollow"]:not([href^="http://japscan.lol"]) > img
@@ -2996,183 +2995,37 @@ alfresco-holidays.com,alfresco-holidays.nl,alfresco-camping.de,eurocamp.co.uk#@#
 /regie_pub.
 /regiepub/*
 /reloadads.
-/sales/*_leaderboard_
-/sas-banner-
-/script.*?partnerid=
 /script.packed.
-/script.packed_
 /script/*&cbiframe=*&cbkeywords=
-/script/*?ban=
-/script/Pub.php?id=
-/script/suurl.php?r=
-/scriptPub.
-/scriptPub_
-/scripts-pub.
 /scripts/adv_
-/scripts/pu_
-/sda-randomizer.
-/sdaAmi.min.
-/sdk-ads.
-/sdk-ads/*
 /sdkconfig.ad.
-/search_caf.php?
-/secure-ads.
-/separatore-pub.
-/serv.*/delivery/*
-/serve?inline=*&w=*&h=
 /servedby.$script
-/servepop.
-/service-worker.js?*%2B
-/servlet/banner?id=
 /servlet/effi.show?
-/set_popup.
-/setAds.
-/sex_ad.
-/sex_ads.
-/sfibanners.
-/SGPMPopup.
 /shareaholic.js
-/shareaholic/*
-/shared/ad/*
-/shopify_rolling_
-/shopping/?widget=
-/shortest-miner-
-/show_adv.
 /show_i.php?b=$subdocument
-/show_next_ads.
-/show_std.php?
-/showads?
-/side-pub.
-/sidebar-ad.
-/sidebar/partner-$image
 /similarClickAds|
 /simple/ads.js
-/siteMarketingbanner/*
 /skipad.
-/skynet_ads.
-/slide_banner/*
-/slidegirlad.
-/sliders/dfp/*
-/smartclick.js
-/smartrotator.*?referrer=
-/sp2popup.
-/spaceadd.gif
-/sponsored_positions?
-/sponsors/banner_
-/square-ads.
-/src/ads.
-/src/adv_
-/srv.php?size=300x250
-/srv.php?size=315x300
-/static-adrum.
-/static-ads.
 /static.ads-
-/store/mfbanners/*
-/streamroot/ads.
-/supersonicads-
-/supplypartners/*
 /sw.*.js?promo=
-/sw/pub.js
 /syndication.*&idzone=
-/syndication/pub/*
 /trackads.
-/traffic/?target=
-/trafic468.
-/travelAds.
-/ttn_adspaces
 /twitter-ads.
 /txt_publi_vert.
-/type_c_ads/*
-/underpopup.
-/update.adsvertisement.
-/upld/ads/*
 /upload/ad/*
-/upload/adv/*
 /uploads/*/ads-
 /uploads/*/ads.
-/uponit.js
-/urlreplacer-fc.
-/userAds.
 /userfiles/ads/*
 /userfiles/banners/*
 /va/ads/*
-/vast.xml?key=
-/vaxadserver.
-/vbs-ads.
-/video/pub-
-/videojs-ads/*
-/videojs.adss.
-/view/468/*$script,subdocument
-/view/728/*$script,subdocument
-/virtuagirl-
-/vivads_
-/votre_pub_
-/vpaidad.
-/vpn160.gif
-/vpn468.gif
-/vstadb.xml
-/vykingAd/*
-/vykingAd?
-/vyprad.$image
-/w120h600/*
-/w160h60/*
-/w300h250/*
-/w468h60/*
-/w728h90/*
-/wads-blank.
-/wadsAdsLoaded/*
-/watch?*&zone_key=
-/watch?site_key=
-/wbdds.
 /web/bannieres/*
-/Web_Ad.
-/Web_Ad_
-/Web_banner_
-/WebAd_
-/webediads/*
-/webmaster_banner_
-/webmaster_iframe.
-/websie-ads2.
+/web_ad_
+/web_banner_
 /werbe-banner/*
-/werbe_banner.
-/werbebanner-ad.
 /wgAds.
-/widget.advertisement.
-/widget_ads/*
-/widget_mntzm.
-/widgets-bazarchic-
-/widgets-zoom-annonce-shopping.
-/widgets-zoom-mytravelchic.
 /widgets.stackcommerce.com/*
-/wigetmedia.js
-/wish_list_product_$script
-/wmadv.
-/wordcoin-ad-
-/wpra-ad.
-/wpxtube/*
-/wwcAliAff/*
-/xads/publisher_
-/xbanner_728-
-/xbanniere-pub-
-/xdirect.html?
-/xenforo/banner/*
-/xiacai/ad/*
-/XnewadsX/*
-/xplayer-ads.
-/xpops.js
-/xpopunder/*
 /xpopup.
-/z728.html
-/zeturf250.
-/zeturf520x
-/zeturf_250x250.
-/zone.*&pubid=
-/zone/*/?autocamp=
-/zone/ads.
-/zone?*&random=
 /zone?pub=*&zone_id=
-/zoneads/*
-/zones?zone=$subdocument
 ://a.*/display?zone_id=
 ://a.*/interstitial?id=$script
 ://a.*/loader?*&keywords=$third-party

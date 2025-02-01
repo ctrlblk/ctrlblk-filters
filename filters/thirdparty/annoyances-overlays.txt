@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: EasyList – Newsletter Notices
-! Last modified: Thu, 30 Jan 2025 02:02:25 +0000
+! Last modified: Fri, 31 Jan 2025 13:02:17 +0000
 ! Expires: 7 days (update frequency)
 ! *** easylist:template_header.txt ***
 !
@@ -5457,6 +5457,7 @@ iex.nl###ctl00_ctl00_footer_newsletter_UpdateForm
 tostrams.nl###ctl00_ctl00_newsletter_UpdateForm
 tostrams.nl###ctl00_newsletter_UpdateForm
 dutchcowboys.nl###mp-popupwrapper1
+onzetaal.nl###mp-popupwrapper8
 carwashpro.nl,infrasite.nl,rijschoolpro.nl,spoorpro.nl,tankpro.nl,taxipro.nl,zelfrijdendvervoer.nl###overlay-container
 weekbladparty.nl###reusableblockswidget-16
 weekend-online.nl###reusableblockswidget-9
@@ -5739,7 +5740,7 @@ doctorofcredit.com#@#.wpdiscuz-subscribe-bar
 ! fanboy_newsletter_shopping_allowlist_general_hide.txt
 
 ! Title: uBlock filters – Other Annoyances
-! Last modified: Wed, 29 Jan 2025 19:34:36 +0000
+! Last modified: Fri, 31 Jan 2025 09:01:56 +0000
 ! Expires: 7 days
 ! Description: Filters optimized for uBlock Origin, to be used with EasyList's and/or Adguard's "Other Annoyances" list(s)
 ! License: https://github.com/uBlockOrigin/uAssets/blob/master/LICENSE
@@ -13515,3 +13516,9 @@ animekai.to##+js(set, console.clear, throwFunc)
 
 ! https://github.com/uBlockOrigin/uAssets/issues/27010
 loverslab.com##+js(nano-sib)
+
+! https://github.com/uBlockOrigin/uAssets/issues/16606
+!#if !env_mv3
+/akam/13/*$script,xhr,1p,domain=easyjet.com|ing.nl,important
+easyjet.com,ing.nl##+js(cookie-remover, ak_bmsc, when, scroll keydown)
+!#endif
