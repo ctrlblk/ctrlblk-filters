@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: EasyList – Newsletter Notices
-! Last modified: Fri, 31 Jan 2025 13:02:17 +0000
+! Last modified: Mon, 03 Feb 2025 13:02:49 +0000
 ! Expires: 7 days (update frequency)
 ! *** easylist:template_header.txt ***
 !
@@ -3474,7 +3474,7 @@ drivencarguide.co.nz##.tw-text-white.tw-bg-gray-900
 texasobserver.org##.txo-newsletter__outer
 wwd.com##.u-width-300.lrv-u-background-color-black
 alamocitygolftrail.com##.uabb-modal-parent-wrapper
-processengineering.co.uk##.ub-emb-container
+commonwealmagazine.org,processengineering.co.uk##.ub-emb-container
 techmeme.com##.ubub
 biztechmagazine.com,iclg.co.uk,ptitchef.com##.ui-dialog
 bestreviews.com,biztechmagazine.com,madewell.com,ptitchef.com##.ui-widget-overlay
@@ -5740,7 +5740,7 @@ doctorofcredit.com#@#.wpdiscuz-subscribe-bar
 ! fanboy_newsletter_shopping_allowlist_general_hide.txt
 
 ! Title: uBlock filters – Other Annoyances
-! Last modified: Sun, 02 Feb 2025 12:59:24 +0000
+! Last modified: Tue, 04 Feb 2025 05:18:55 +0000
 ! Expires: 7 days
 ! Description: Filters optimized for uBlock Origin, to be used with EasyList's and/or Adguard's "Other Annoyances" list(s)
 ! License: https://github.com/uBlockOrigin/uAssets/blob/master/LICENSE
@@ -13524,3 +13524,10 @@ easyjet.com,ing.nl##+js(cookie-remover, ak_bmsc, when, scroll keydown)
 
 ! https://forums.lanik.us/viewtopic.php?t=48667-www-cowcotland-com
 cowcotland.com##+js(rmnt, script, /adbl/i)
+
+! GliaCloud
+||player.gliacloud.com^$3p
+##.gliaplayer-container
+appget.com###side_right > div[style="margin: 0 0 20px 25px;"]
+ejje.weblio.jp##.mainBlock[style="min-height: 270px;"]
+weblio.jp##.firstDictVideoAd
