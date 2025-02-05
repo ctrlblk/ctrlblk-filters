@@ -1,10 +1,10 @@
 ![Adblock Plus 2.0]
-! Checksum: fGTK53tx+GeHe5Dacyf6pQ
-! Diff-Path: ../patches/9/9-s-1738611780-3600.patch
+! Checksum: Q9UsEcKUrBRSQJDEySU1WQ
+! Diff-Path: ../patches/9/9-s-1738683914-3600.patch
 ! Title: AdGuard Spanish/Portuguese filter
 ! Description: Filter list that specifically removes ads on websites in Spanish, Portuguese, and Brazilian Portuguese languages.
-! Version: 2.0.28.54
-! TimeUpdated: 2025-02-03T19:38:31+00:00
+! Version: 2.0.28.56
+! TimeUpdated: 2025-02-04T15:39:51+00:00
 ! Expires: 5 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -2168,6 +2168,11 @@ c5n.com,t13.cl,solowrestling.mundodeportivo.com,todojujuy.com,mendozapost.com,me
 !
 ! NOTE: Specific rules
 !
+bolsamania.com##.ads-parent
+bolsamania.com##.fixed-300
+noticias3d.com##div[id^="banner"]
+culturageek.com.ar##a[href^="https://www.iplan.com.ar/"] > img
+culturageek.com.ar##a[href^="https://www.corsair.com/"] > img
 diez.hn##.refinery-ad
 motorsport.uol.com.br#$#body[data-edtn="br"] > .root { margin-top: 0px !important; }
 motorsport.uol.com.br###page_skin_top
@@ -2175,6 +2180,8 @@ motorsport.uol.com.br##.ms-apb
 motorsport.uol.com.br##.ms-ap-native
 ||lectortaurus.com/wp-content/cache/min/1/tag.min.js
 ntn24.com##div[id^="gpt-ad-"]
+otempo.com.br##.inreadads
+otempo.com.br##.ads-anchor
 ver-peliculas-online.org##.content a[class^="button"][target="_blank"]
 anime-latino.com##.dce-animations:has(> .elementor-button-wrapper > a[target="_blank"])
 publico.pt##html > body .pubHorz:not(#style_important)
