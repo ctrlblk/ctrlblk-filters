@@ -1,10 +1,10 @@
 ![Adblock Plus 2.0]
-! Checksum: Q9UsEcKUrBRSQJDEySU1WQ
-! Diff-Path: ../patches/9/9-s-1738683914-3600.patch
+! Checksum: kYYWP+7E2yCY8daNNT0WKw
+! Diff-Path: ../patches/9/9-s-1738795411-3600.patch
 ! Title: AdGuard Spanish/Portuguese filter
 ! Description: Filter list that specifically removes ads on websites in Spanish, Portuguese, and Brazilian Portuguese languages.
-! Version: 2.0.28.56
-! TimeUpdated: 2025-02-04T15:39:51+00:00
+! Version: 2.0.28.60
+! TimeUpdated: 2025-02-05T22:39:12+00:00
 ! Expires: 5 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -313,7 +313,7 @@ descargas2024gratis.blogspot.com##+js(no-fetch-if, pagead2.googlesyndication.com
 sinensistoon.com##+js(no-fetch-if, adskeeper.com)
 @@||jsc.adskeeper.com/site/$xmlhttprequest,domain=sinensistoon.com
 ! https://github.com/AdguardTeam/AdguardFilters/issues/178615
-goyabu.to#@#.ad-placeholder
+goyabu.to#@#.ad-placeholder:not(#filter_ads_by_classname):not(#detect_ad_empire):not(#detect):not(.adsbox)
 goyabu.to##div[class^="adblock-"]
 ! https://github.com/AdguardTeam/AdguardFilters/issues/178176
 ||packsmega.info/abs.js
@@ -2168,6 +2168,18 @@ c5n.com,t13.cl,solowrestling.mundodeportivo.com,todojujuy.com,mendozapost.com,me
 !
 ! NOTE: Specific rules
 !
+||player.gnulahd.nu/player/vast_mx_
+||gnulahd.nu/win.js
+||twobluescans.com/wp-content/uploads/2025/01/400_150.gif
+twobluescans.com##.c-sidebar:has(> div.container a[href^="https://www.polybuzz.ai/"])
+twobluescans.com##.row > div.widget:has(> div.c-widget-wrap iframe[id^="google_ads"])
+twobluescans.com##div[id^="ad-container"]
+elsiglodedurango.com.mx##.col-4 > .h-900:has(> .pub)
+estadiodeportes.mx###__next > div.grid:has(> div.content > div.module > header + div.bannercover)
+estadiodeportes.mx##.bannercover
+portafolio.co##.gpt-slot-satelite-container
+portafolio.co##div[class^="articulo__pauta"]
+portafolio.co##.col1:has(> .articulo__pauta)
 bolsamania.com##.ads-parent
 bolsamania.com##.fixed-300
 noticias3d.com##div[id^="banner"]
@@ -5028,7 +5040,7 @@ ig.com.br##.previsaoTempoBox
 kiosko.net##.promo
 hotelius.com##.promocines
 planetadeagostini.es##.promocion
-t13.cl,flip.pt,elsiglodetorreon.com.mx,cifraclub.com.br,clix.pt,destak.pt,iol.pt,lavozdegalicia.es,publico.pt,sapo.pt##.pub
+elsiglodedurango.com.mx,t13.cl,flip.pt,elsiglodetorreon.com.mx,cifraclub.com.br,clix.pt,destak.pt,iol.pt,lavozdegalicia.es,publico.pt,sapo.pt##.pub
 ig.com.br##.pub-island.fl
 telanon.info##.pub-large
 iol.pt##.pub-line

@@ -1,10 +1,10 @@
 ![Adblock Plus 2.0]
-! Checksum: rYjx7sZoDbFJhc1PgP3MYg
-! Diff-Path: ../patches/7/7-s-1738647790-3600.patch
+! Checksum: jQT3WOg7YrOvYVtNx9jLYQ
+! Diff-Path: ../patches/7/7-s-1738813595-3600.patch
 ! Title: AdGuard Japanese filter
 ! Description: Filter that enables ad blocking on websites in Japanese language.
-! Version: 2.0.61.79
-! TimeUpdated: 2025-02-04T05:38:33+00:00
+! Version: 2.0.61.83
+! TimeUpdated: 2025-02-06T03:42:24+00:00
 ! Expires: 5 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -810,7 +810,7 @@ applion.jp#$##adcheck.ads-ad { display: block!important; }
 ! https://github.com/AdguardTeam/AdguardFilters/issues/22654
 video.tv-tokyo.co.jp#@##adspace
 video.tv-tokyo.co.jp#@#.adspace
-video.tv-tokyo.co.jp#@#.ad-placeholder
+video.tv-tokyo.co.jp#@#.ad-placeholder:not(#filter_ads_by_classname):not(#detect_ad_empire):not(#detect):not(.adsbox)
 @@||video.tv-tokyo.co.jp/common/js/pc/ads.js
 @@||imasdk.googleapis.com/js/sdkloader/ima3.js$domain=video.tv-tokyo.co.jp
 @@||pubads.g.doubleclick.net/gampad/ads?*/video.tv-tokyo.co.jp$domain=video.tv-tokyo.co.jp
@@ -1742,6 +1742,8 @@ gundamlog.com###more > iframe[src^="https://richlink.blogsys.jp"]
 !
 ! NOTE: Specific rules
 !
+navitime.co.jp##.marketplace-lp-list
+navitime.co.jp##div[style="margin: 20px 0; text-align: center"]
 money-plan.net##.clear[style$="height:296px;"]
 shogi-sanpo.com##.ad_200
 jumpmatome2ch.biz##.kakomi3
@@ -1952,6 +1954,7 @@ pref.yamaguchi.lg.jp###police_banner_kokoku_list_wrap
 ||city.tsuchiura.lg.jp/data/banner/
 omosoku-r.com##.left-container > .left-column-inner
 gundamlog.com##.res_body:has(.amazon)
+peing.net##div[id^="ad-container"]
 peing.net#$#div[id^="ad-in"] { display: none !important; }
 peing.net#$#body[style="overflow: hidden;"] { overflow: auto !important; }
 koe-koe.com##div[style="min-height:80"]
@@ -6692,7 +6695,7 @@ tripnote.jp##.same_theme
 tripnote.jp##div[style="border:1px solid #aaa; border-radius:10px; padding:0px 15px; margin:0px auto 10px; width:90%; max-width:700px;"]
 tripnote.jp##div[style="width:970px; height:90px; margin:20px auto 30px;"]
 jp-weathernews.com,keimusho.net,billionwallet.com##.adsense_center
-onlinegamer.jp,gamer.ne.jp,entax.news,mbs.jp,ushigyu.net##div[class^="ad-"]
+esse-online.jp,onlinegamer.jp,gamer.ne.jp,entax.news,mbs.jp,ushigyu.net##div[class^="ad-"]
 news.biglobe.ne.jp##.news-cpl
 biglobe.ne.jp###join-bnr
 kai-you.net##.l-pc_top_itiran_1st
@@ -9029,6 +9032,7 @@ famitsu.com##.banner-footer-rect-container
 syosetu.org##div[id^="ad_"]
 syosetu.org##div[data-cptid][style]
 syosetu.org##div[style$="height:90px; width:728px;"]
+syosetu.org##div[style^="display:block;margin:0 auto;padding:0 10px;height:250px"]
 syosetu.org##div[style^="margin:0 auto;height:"][style$="px;"]
 ||syosetu.com/sub/yomouview/js/ad_scroll.js
 ||jartic.or.jp/d/banner/substitute/$subdocument
@@ -10844,7 +10848,7 @@ blog.livedoor.jp##div[class^="article-body"] > dt.net[id] > span[style="backgrou
 blog.livedoor.jp##.fluct-2ad
 blog.livedoor.jp###pickrightcon > .right-container-ads
 blog.livedoor.jp##.kiziue > #product-container
-blog.livedoor.jp##.ads_more ~ .article-main2 > div[style*="margin:"][style*="#"]:has(img[src*="amazon."])
+blog.livedoor.jp##div[class^="article"] > div[class^="article-"] ~ div[class^="article-"] > dl + div[style^="margin:"][style*="#f"]
 javtheater.com##div[class^="chatbanner"]
 mensnonno.jp##.inarticle-ad
 blog.livedoor.jp#?##sidebar > div.scroll > div.side-ad:upward(1)
