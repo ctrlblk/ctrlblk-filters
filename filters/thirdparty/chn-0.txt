@@ -1,10 +1,10 @@
 ![Adblock Plus 2.0]
-! Checksum: 8P1mfPIOeAmIOzPQ0lleng
-! Diff-Path: ../patches/224/224-s-1738802592-3600.patch
+! Checksum: vGM/rLtSEOHN4obZyBQH/A
+! Diff-Path: ../patches/224/224-s-1738903317-3600.patch
 ! Title: AdGuard Chinese filter
 ! Description: EasyList China + AdGuard Chinese filter. Filter list that specifically removes ads on websites in Chinese language.
-! Version: 2.1.31.6
-! TimeUpdated: 2025-02-06T00:39:30+00:00
+! Version: 2.1.31.14
+! TimeUpdated: 2025-02-07T04:38:20+00:00
 ! Expires: 5 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -776,7 +776,7 @@ m.91zww.com##+js(abort-on-property-write, delCookie)
 ! https://github.com/AdguardTeam/AdguardFilters/issues/150387
 pornbest.org##+js(abort-current-script, jQuery, injectPops)
 ! https://github.com/AdguardTeam/AdguardFilters/issues/141657
-axutongxue.net##+js(no-setTimeout-if, checkCookie)
+axutongxue.com,axutongxue.net##+js(no-setTimeout-if, checkCookie)
 ! https://github.com/AdguardTeam/AdguardFilters/issues/135612
 hamivideo.hinet.net##+js(set-constant, myPlayer.adDisplay, undefined)
 ! https://github.com/AdguardTeam/AdguardFilters/issues/134441
@@ -1096,6 +1096,8 @@ $script,third-party,denyallow=fastlycdn.com|doodcdn.co|intensedebate.com|vixclou
 !
 ! NOTE: Specific rules
 !
+nikkansports.com###headerAdBnr2022
+nikkansports.com##div[id^="adUnit"]
 papalah.com##.sponsor-outer
 ||4275.com/css/91kf.gif
 4275.com##div[style="width:580px;margin:0 auto;"]
@@ -1699,7 +1701,7 @@ wnflb2023.com##.GzList
 bdys03.com##.artplayer-plugin-ads
 ||u10*.com/*.gif$domain=bhuai.top
 ||ll.ibiqiuge.com/m.js
-axutongxue.net##body > div[id]:has(> ul[class] > li > img.icon + a[href])
+axutongxue.com,axutongxue.net##body > div[id]:has(> ul[class] > li > img.icon + a[href])
 sstv.pw##.container > a > img[style="width: 100%;"]
 cupfox.app##.t-img-box > a[target="_blank"] > img
 olevod.com##div[class^="ad"][style="margin-top: 0.05rem;"]
@@ -3182,6 +3184,7 @@ bmvc2020-conference.com#@#div[id][style="width: 100%;"] > iframe[scrolling="no"]
 !--------------- EasyList China rules --------------------------------------!
 !---------------------------------------------------------------------------!
 -*-*-*-*.alpha^$script,third-party
+.xyz/z/*/code.js$script,third-party
 -*-*-*-*.as^$script,third-party
 .xyz:*?x=$script,third-party
 -*-*-*-*.panda^$script,third-party
@@ -4898,10 +4901,18 @@ newduba.cn###jq_youxi
 ||67.21.92.*.gif
 ||cnzz.trafficmanager.net^
 ||cupfox.app^$third-party
+||xtdvvp.icu^
+||vbllxaaj.icu^
+||apk02070oo.xyz^
+||pcqhe.cn^
+||wdinmae.top^
 ||fagrirtn.com^
 ||rqhajf.icu^
 ||trellq.com^
 ||tjvcffap.icu^
+||mtfc8.com^
+||apk02061oo.xyz^
+||edinmaw.top^
 ||rrptnkao.icu^
 ||is02050qqp.xyz^
 ||is02041qqp.xyz^
@@ -20801,6 +20812,7 @@ _rony.js$script,third-party
 .is0*qqp.xyz/$script,third-party
 .as0*kkp.xyz/$script,third-party
 .012*sop.xyz/$script,third-party
+.apk0*oo.xyz/$script,third-party
 .okpp0*.xyz/$script,third-party
 .com:1*/static/lbsite/*/*.js?v=$script,third-party
 .com:2*/static/lbsite/*/*.js?v=$script,third-party
@@ -20967,6 +20979,9 @@ wnacg.com##script + div > a > img
 ||hdapp1003-a.akamaihd.net^
 ||hdapp1008-a.akamaihd.net^
 ||hdsrc-a.akamaihd.net^
+quark.cn#@#.open-share
+quark.cn#@#.share-btns
+quark.cn#@#.share-save
 eastday.com#@##leftShare
 189.cn#@##linkShare
 gfan.com,gfan.net.cn#@##shareBox
@@ -21077,7 +21092,7 @@ fqsousou.com,kengso.com#@#.user-share
 @@/iplookup.$domain=cankaoxiaoxi.com|dongfeng-nissan.com.cn|huomao.com|loldk.com|sina.com.cn
 @@/log/report/*$script,domain=bilibili.com
 @@/sensorsdata-$domain=aixiaoyuan.cn|zkh.com
-@@/sensorsdata.$domain=36kr.com|binance.com|by56.com|canon.com.cn|chuanglan.com|fenbi.com|guancha.cn|imooc.com|kuque.com|modian.com|saicskoda.com.cn|shanbay.com|tianyancha.com|ttcdw.cn|xinrenxinshi.com|zzjiasuqi.com
+@@/sensorsdata.$domain=36kr.com|53zaixian.com|binance.com|by56.com|canon.com.cn|chuanglan.com|fenbi.com|guancha.cn|imooc.com|kuque.com|modian.com|saicskoda.com.cn|shanbay.com|tianyancha.com|ttcdw.cn|xinrenxinshi.com|zzjiasuqi.com
 @@/setCookie?$domain=ctrip.com|ctrip.com.hk|pinyin.cn
 @@/urchin.js$domain=on.cc
 @@||10010.com/mall/common/js/fa.js?referer=
