@@ -5741,7 +5741,7 @@ doctorofcredit.com#@#.wpdiscuz-subscribe-bar
 ! fanboy_newsletter_shopping_allowlist_general_hide.txt
 
 ! Title: uBlock filters – Other Annoyances
-! Last modified: Fri, 07 Feb 2025 12:18:57 +0000
+! Last modified: Sun, 09 Feb 2025 20:10:21 +0000
 ! Expires: 7 days
 ! Description: Filters optimized for uBlock Origin, to be used with EasyList's and/or Adguard's "Other Annoyances" list(s)
 ! License: https://github.com/uBlockOrigin/uAssets/blob/master/LICENSE
@@ -8026,7 +8026,7 @@ therealdeal.com##.async-hide:style(opacity:1!important)
 intergate.info##+js(set, document.oncontextmenu, null)
 
 ! Steady anti adb warning
-handball-world.news,mobiflip.de,titanic-magazin.de,mimikama.org,langweiledich.net,der-postillon.com,perlentaucher.de,lwlies.com,serieslyawesome.tv,critic.de,mediotejo.net,nahrungsmittel-intoleranz.com,madeinbocholt.de,goodnews-magazin.de##+js(nostif, steady-adblock)
+handball-world.news,mobiflip.de,titanic-magazin.de,mimikama.org,langweiledich.net,der-postillon.com,perlentaucher.de,lwlies.com,serieslyawesome.tv,critic.de,mediotejo.net,nahrungsmittel-intoleranz.com,madeinbocholt.de,goodnews-magazin.de,wallauonline.de##+js(nostif, steady-adblock)
 handball-world.news##small
 
 ! https://github.com/uBlockOrigin/uAssets/issues/7238
@@ -13546,3 +13546,7 @@ weblio.jp##.firstDictVideoAd
 whoisnovel.com##+js(acs, document.oncontextmenu)
 whoisnovel.com##*::selection:style(background-color:#338FFF!important)
 whoisnovel.com##*:style(-webkit-touch-callout: default !important; -webkit-user-select: text !important; -khtml-user-select: text !important; -moz-user-select: text !important; -ms-user-select: text !important; user-select: text !important; -webkit-tap-highlight-color: revert !important; cursor: revert !important;)
+
+! https://github.com/uBlockOrigin/uAssets/issues/27143
+zabawkahurtownia.pl##+js(rmnt, script, /oncontextmenu|disableselect/)
+zabawkahurtownia.pl##*:style(-webkit-touch-callout: default !important; -webkit-user-select: text !important; -khtml-user-select: text !important; -moz-user-select: text !important; -ms-user-select: text !important; user-select: text !important; -webkit-tap-highlight-color: revert !important; cursor: revert !important;)
