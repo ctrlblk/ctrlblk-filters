@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: EasyList – Newsletter Notices
-! Last modified: Fri, 07 Feb 2025 09:50:29 +0000
+! Last modified: Tue, 11 Feb 2025 02:05:38 +0000
 ! Expires: 7 days (update frequency)
 ! *** easylist:template_header.txt ***
 !
@@ -34,7 +34,6 @@
 /hustle/assets/hustle-ui/js/hustle-ui.min.js
 /iscriviti-newsletter.css
 /jetpack-plugin/moon/modules/subscriptions/subscribe-modal/subscribe-modal.js
-/klaviyo_subscribe.js
 /layout/newsletter.png
 /leadin-subscribe.min.js
 /mailup-email-and-newsletter-subscription-form/*
@@ -5598,6 +5597,7 @@ twilog.togetter.com##.subscription_banner
 shokuhin.net##.tdm-popup-modal-over-screen
 nyanpedia.com##a[href="https://info.ipet-ins.com/emagazine_subscribe_nyanpedia.html"] > img
 nikkei.com##div[data-newsletter-popup-container]
+gendai.media##main > .max-w-screen-frau-lg:has(> .text-earth > a[href="https://id.contentdata.co.jp/register_frausdgs"])
 !! Norwegian
 ! Polish
 nawozy.eu###fm-pu-container
@@ -5721,7 +5721,6 @@ minfin.com.ua##.mail-subscribe-user
 ! *** easylist:fanboy-addon/fanboy_newsletter_allowlist.txt ***
 @@||e24.no/cnp-assets/components-NewsletterWidget.$~third-party
 @@||el-vidas.nl^*/phpcuong_newsletter/$script
-@@||klaviyo.com/media/js/public/klaviyo_subscribe.js$domain=burner.pro
 @@||lightboxcdn.com/vendor/$script,domain=rydercup.com
 @@||list-manage.com/subscribe/post-json?
 @@||lumingerie.com/min/$script,~third-party
@@ -5741,7 +5740,7 @@ doctorofcredit.com#@#.wpdiscuz-subscribe-bar
 ! fanboy_newsletter_shopping_allowlist_general_hide.txt
 
 ! Title: uBlock filters – Other Annoyances
-! Last modified: Sun, 09 Feb 2025 20:10:21 +0000
+! Last modified: Mon, 10 Feb 2025 15:10:21 +0000
 ! Expires: 7 days
 ! Description: Filters optimized for uBlock Origin, to be used with EasyList's and/or Adguard's "Other Annoyances" list(s)
 ! License: https://github.com/uBlockOrigin/uAssets/blob/master/LICENSE
@@ -13523,14 +13522,6 @@ loverslab.com##+js(nano-sib)
 /akam/13/*$script,xhr,1p,domain=easyjet.com|ing.nl,important
 easyjet.com,ing.nl##+js(cookie-remover, ak_bmsc, when, scroll keydown)
 !#endif
-
-! https://www.apple.com/shop/buy-iphone/iphone-16
-! https://github.com/easylist/easylist/commit/182f5516f27a1c0b30e6c6f0f9484458d73ad43f
-||store.storeimages.cdn-apple.com^*/appmeasurement.js^$domain=apple.com,important
-||store.storeimages.cdn-apple.com/*/store.apple.com/static-resources/rs-analytics-*/rel/analytics.js^$script
-apple.com##+js(set, asMetrics, {})
-apple.com##+js(set, asMetrics.update, noopFunc)
-apple.com##+js(set, asMetrics.fireMicroEvent, noopFunc)
 
 ! https://forums.lanik.us/viewtopic.php?t=48667-www-cowcotland-com
 cowcotland.com##+js(rmnt, script, /adbl/i)
