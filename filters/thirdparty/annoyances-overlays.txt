@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: EasyList – Newsletter Notices
-! Last modified: Tue, 11 Feb 2025 02:05:38 +0000
+! Last modified: Tue, 11 Feb 2025 06:50:03 +0000
 ! Expires: 7 days (update frequency)
 ! *** easylist:template_header.txt ***
 !
@@ -3766,6 +3766,7 @@ interestingengineering.com##.t-bg-surface-zero.t-p-6:has-text(Newsletter)
 heatpumped.org##.text-wt-background:has-text(Subscribe)
 autonews.com##.u-space-y-6.u-items-center:has-text(Staying current)
 ensemblemagazine.co.nz##.w-embed:has-text(Sign up now)
+wareable.com##.widget_custom_html:has-text(substack)
 systemsapproach.org##.wp-block-column > .is-layout-flow.wp-block-group:has-text(Subscribe)
 creepycatalog.com##.wp-block-cover-is-layout-flow:has-text(Get our newsletter)
 iheartrecipes.com##.wp-block-genesis-blocks-gb-columns:has-text(Subscribe by Email)
@@ -5740,7 +5741,7 @@ doctorofcredit.com#@#.wpdiscuz-subscribe-bar
 ! fanboy_newsletter_shopping_allowlist_general_hide.txt
 
 ! Title: uBlock filters – Other Annoyances
-! Last modified: Mon, 10 Feb 2025 15:10:21 +0000
+! Last modified: Tue, 11 Feb 2025 12:12:39 +0000
 ! Expires: 7 days
 ! Description: Filters optimized for uBlock Origin, to be used with EasyList's and/or Adguard's "Other Annoyances" list(s)
 ! License: https://github.com/uBlockOrigin/uAssets/blob/master/LICENSE
@@ -5790,6 +5791,12 @@ resourcepack.net##+js(aopw, disableSelection)
 programegratuitepc.com##+js(aopr, disableSelection)
 programegratuitepc.com##+js(aopr, document.oncontextmenu)
 programegratuitepc.com##.unselectable:style(-webkit-touch-callout: default !important; -webkit-user-select: text !important; -moz-user-select: text !important; -ms-user-select: text !important; user-select: text !important;)
+
+! https://github.com/uBlockOrigin/uAssets/issues/27167
+kolnovel.org##+js(acs, addEventListener, /disable_|wccp/)
+kolnovel.org##+js(ra, onmousedown|onselectstart,  #kol_content, complete)
+kolnovel.org##style[id^="wccp_pro_"]:remove()
+||kolnovel.org/wp-content/plugins/wccp-pro/
 ! END: Anti copy, right-click etc.
 
 ! START: Anti-adblock

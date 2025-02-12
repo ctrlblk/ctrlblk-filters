@@ -1,7 +1,7 @@
 [uBlock Origin]
 ! Title: List-KR for uBlock Origin
 ! Description: List-KR for uBlock Origin. Maintained by the adblock community and AdGuard.
-! Version: 2025.0211.0
+! Version: 2025.0212.0
 ! Expires: 12 hours
 ! Homepage: https://github.com/List-KR/List-KR
 ! Support: https://list-kr-community.pages.dev/docs/
@@ -11,6 +11,7 @@
 !
 
 !#if ext_ublock
+||recoshopping.naver.com^
 ||ad-creative.pstatic.net^
 ||centaurs-rest.coupang.com^
 ||ad.cashdoc.io^
@@ -517,6 +518,7 @@ m.cafe.naver.com##.banner_add.bottom:matches-path(/ca-fe\\/web\\/cafes\\/(steami
 /data/banner.json?$domain=~nintendo.*
 /ad-manager.min.js
 !
+||www.naver.com/nvhaproxy/*/lazy?*&target=PC-MEDIA-SHOPPING-TODAY
 ||content.livesportmedia.eu/media?name=
 ||10000recipe.com/common/sc_banner.html
 ||url.kr/banner/admin/uploads/banners/
@@ -2669,7 +2671,7 @@ m.naver.com##div.brick-vowel > div[data-block-code="AD-SMART-CHANNEL"].MM_DA_SMA
 m.coupang.com##.plp-default__item.search-product__cmg-badge
 m.coupang.com##div[data-page-type="brandSDP"][id$="carousel-products"]
 slist.kr##.ad-template
-sports-g.com,goodmorningcc.com,daily.hankooki.com,slist.kr###wingBanner
+popsci.co.kr,sports-g.com,goodmorningcc.com,daily.hankooki.com,slist.kr###wingBanner
 fow.kr##.neo_top_center
 ggoorr.net###content > div.bd > div.bd_lst_wrp > center
 ggoorr.net##.content > div.bd > div.clear > div > center
@@ -3119,7 +3121,7 @@ zzzz.lol#$?#.ent_wrapper.slide-vertical-effect .ent_news:not(:has(.ent_prefix:co
 ||amazon-adsystem.com/aax2/apstag.js$script,redirect=amazon_apstag.js
 ||googletagservices.com/tag/js/gpt.js$script,redirect=googletagservices_gpt.js
 ||securepubads.g.doubleclick.net/tag/js/gpt.js$script,redirect=googletagservices_gpt.js
-
+www.naver.com#?#ul[class^="ContentHeaderView-"][role="tablist"] > li:has(> a:has-text(쇼핑투데이))
 m.bunjang.co.kr#?#div[class^="sc-"] > div[class*=" "]:has(> a[href^="/products/"]):has-text(AD)
 m.bunjang.co.kr#?#div[class^="sc-"] > div[class*=" "]:has(> a[href^="https://"]):has-text(광고)
 search.tmon.co.kr#?#.deallist_wrap li[data-d].item:has(span[role="presentation"] > button:has-text(AD))
