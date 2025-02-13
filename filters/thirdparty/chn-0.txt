@@ -1,10 +1,10 @@
 ![Adblock Plus 2.0]
-! Checksum: SINQi/b9sUjNj9dpp6G76Q
-! Diff-Path: ../patches/224/224-s-1739335511-3600.patch
+! Checksum: 1CAWi5tvmkzgf71AdlkfbA
+! Diff-Path: ../patches/224/224-s-1739414522-3600.patch
 ! Title: AdGuard Chinese filter
 ! Description: EasyList China + AdGuard Chinese filter. Filter list that specifically removes ads on websites in Chinese language.
-! Version: 2.1.31.43
-! TimeUpdated: 2025-02-12T04:40:52+00:00
+! Version: 2.1.31.48
+! TimeUpdated: 2025-02-13T02:38:28+00:00
 ! Expires: 5 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -512,12 +512,10 @@ pcbeta.com##+js(abort-on-stack-trace, document.createElement, make_rand_div)
 ruanyifeng.com##+js(no-setTimeout-if, checker)
 ! https://github.com/AdguardTeam/AdguardFilters/issues/52546
 pansci.asia#@#.ad-container
-! https://github.com/AdguardTeam/AdguardFilters/issues/198349
 ! https://github.com/AdguardTeam/AdguardFilters/issues/185856
 ! https://github.com/AdguardTeam/AdguardFilters/issues/166247
 ! https://github.com/AdguardTeam/AdguardFilters/issues/120356
 ! https://github.com/AdguardTeam/AdguardFilters/issues/26883
-@@||linetv.tw^$generichide
 linetv.tw##+js(no-xhr-if, pagead2.googlesyndication.com)
 linetv.tw##+js(no-fetch-if, pagead2.googlesyndication.com)
 linetv.tw##.aspect-ratio > img.object-cover + .aspect-ratio-content + div[class^="absolute inset-"][class*="bg-brand"]
@@ -4897,6 +4895,16 @@ newduba.cn###jq_youxi
 ||67.21.92.*.gif
 ||cnzz.trafficmanager.net^
 ||cupfox.app^$third-party
+||strelgrell.com^
+||h8ne.com^
+||jcinmaa.top^
+||uhi02130uik.xyz^
+||uhi02121uik.xyz^
+||bypllv.icu^
+||bhelzun.com^
+||fafvvt.icu^
+||gukviels.com^
+||kcinmad.top^
 ||traukvan.com^
 ||20wx.com^
 ||vitqzd.icu^
@@ -20759,18 +20767,22 @@ _rony.js$script,third-party
 /\.[a-z]yjqgp[a-z].top\//$script,third-party
 ||aoao1*iis.top/$script,third-party
 ||gmso1*oka.top/$script,third-party
+/\.[a-z]cinma[a-z].top\//$script,third-party
 /\.[a-z]dinma[a-z].top\//$script,third-party
 /\.[a-z]dinmi[a-z].top\//$script,third-party
 /\.[a-z]weisi[a-z].top\//$script,third-party
 /\.[a-z]dyurli[a-z].top\//$script,third-party
 /\.[a-z]domsi[a-z].top\//$script,third-party
 .okpp1*.xyz/$script,third-party
+.com/TA390hz2.js$script,third-party
+.com/by389.js$script,third-party
 .cn/TA390hz2.js$script,third-party
 .cn/by389.js$script,third-party
 .fun/TA390hz2.js
 .fun/by389.js
 .pw/TA390hz2.js
 .pw/by389.js
+.uhi*uik.xyz/$script,third-party
 .xxaks*sspao.xyz/$script,third-party
 .is0*qqp.xyz/$script,third-party
 .as0*kkp.xyz/$script,third-party
