@@ -1,7 +1,7 @@
 [uBlock Origin]
 ! Title: List-KR for uBlock Origin
 ! Description: List-KR for uBlock Origin. Maintained by the adblock community and AdGuard.
-! Version: 2025.0218.2
+! Version: 2025.0219.2
 ! Expires: 12 hours
 ! Homepage: https://github.com/List-KR/List-KR
 ! Support: https://list-kr-community.pages.dev/docs/
@@ -1317,6 +1317,7 @@ m.cafe.naver.com##.banner_add.bottom:matches-path(/ca-fe\\/web\\/cafes\\/(steami
 !
 ! DOMAIN-REFRESHER: START
 !
+||365tvda.com/data/file/bojng/
 ||xn--hy1bm2ltmr.com/img/banner/
 ||xn--9i2bm5b28j1sr.com/img/banner/
 /^https:\/\/aniwolf\.com\/storage\/[A-Za-z0-9]+\./$domain=aniwolf.*
@@ -1572,6 +1573,9 @@ eegosa.com##section[id*="_ads_"]
 ! ##div[id*="_AD"]
 sports.donga.com##div[id*="_AD"]
 
+biz.heraldcorp.com##.hbanner
+ohmynews.com##.aside > div[style^="height:"]
+dealsite.co.kr##a[class^="main-banner"]
 m.humoruniv.com###read > div[style*="z-index"]:not([class],[id],[style="clear:both;"])
 m.humoruniv.com###read > div[id]:has(> p[class=""]:first-child + div[id*="_div"])
 m.humoruniv.com##body > #read_ok_desc_div ~ div[id][style^="min-height:"]
