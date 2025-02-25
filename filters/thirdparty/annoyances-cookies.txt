@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: EasyList – Cookie Notices
-! Last modified: Mon, 24 Feb 2025 02:11:19 +0000
+! Last modified: Mon, 24 Feb 2025 18:51:20 +0000
 ! Expires: 7 days (update frequency)
 ! *** easylist:template_header.txt ***
 !
@@ -4807,7 +4807,6 @@
 ###cookies.popup
 ###cookies.py-2
 ###cookies.row
-###cookies.show
 ###cookies.sticky
 ###cookies.toplayer
 ###cookies.ver
@@ -12275,7 +12274,6 @@
 ##.cookies.print-hidden
 ##.cookies.privacyLaw
 ##.cookies.row
-##.cookies.show:not(html):not(body)
 ##.cookies.site-msg
 ##.cookies.slideInUp
 ##.cookies.sv-layout
@@ -21022,6 +21020,8 @@ autotrader.ca##+js(set-cookie, cbnr, 1)
 harry-gerlach.de,schulze-immobilien.de##+js(set-cookie, privacyPolicyAccept, 0, , reload, 1)
 benvenuti.com##+js(set-cookie, CakeCookie[cookie_consent], 1)
 jobs2work.*,magdeleyns.be,omniwood.be,sandboxservices.be##+js(set-cookie, cookiesallowedbyuser, 1, , ,reload, 1)
+rewardgateway.co.uk##+js(set-cookie, cookie_preferences, 10)
+rewardgateway.co.uk##+js(set-cookie, cookie_consent_status, allow)
 doz.pl,dozapteka.pl##+js(set-cookie, consent-granted, 1, , reload, 1)
 doz.pl,dozapteka.pl##+js(set-cookie, consent-granted-version, 23)
 valadie-immobilier.com##+js(set-cookie, slc_vitrine_cookies-date-submitted, 1)
@@ -21622,6 +21622,7 @@ galaxy.com##+js(set-cookie, bannerDissmissal, true, ,reload, 1)
 petdesk.com,inmuebles24.com##+js(set-cookie, allowCookies, true)
 ivyexec.com##+js(set-cookie, COOKIE-POLICY-ACCEPT, true)
 railtech.com##+js(set-cookie, gdpr, accept)
+nhif.bg##+js(set-cookie, gdpr, 1)
 lottehotel.com##+js(set-cookie, essentialCookie, Y)
 lottehotel.com##+js(set-cookie, checkCookie, Y)
 lottehotel.com##+js(set-cookie, analyticsCookie, N)
@@ -22471,6 +22472,7 @@ nhnieuws.nl##+js(set-local-storage-item, psh:cookies-seen, true)
 nhnieuws.nl##+js(set-local-storage-item, psh:cookies-social, true)
 posthog.com##+js(set-local-storage-item, cookie_consent, no)
 springmerchant.com##+js(set-local-storage-item, modal_cookies, 1)
+veed.io##+js(set-local-storage-item, trainingDataConsent, true)
 varusteleka.com##+js(set-local-storage-item, cookieConsent, false)
 zoho.com##+js(set-local-storage-item, zglobal_Acookie_optOut, 3)
 femibion.rs##+js(set-local-storage-item, cookie, true)
@@ -22865,7 +22867,7 @@ dukh.dk,lekiaviation.com,boligbeton.dk,ordblindenetvaerket.dk##.lbOuterWrapper
 dukh.dk,lekiaviation.com,boligbeton.dk,ordblindenetvaerket.dk##.lbOverlay
 dukh.dk,lekiaviation.com,boligbeton.dk,ordblindenetvaerket.dk##body:style(overflow: auto !important; position: initial !important;)
 !! onetrust scroll fix
-nascar.com,woodmagazine.com,realsimple.com,simplyrecipes.com,shape.com,southernliving.com,thesprucecrafts.com,thespruceeats.com,seriouseats.com,allrecipes.com,tripsavvy.com,midwestliving.com,mydomaine.com,allpeoplequilt.com,travelandleisure.com,verywellfit.com,verywellmind.com,foodandwine.com,lifewire.com,verywellhealth.com,health.com,thoughtco.com,dailypaws.com,agriculture.com,marthastewart.com,ew.com,people.com,investopedia.com,grundig.com,zurbrueggen.de,ilsole24ore.com##body,html:style(overflow: auto !important; position: initial !important;)
+byrdie.com,nascar.com,woodmagazine.com,realsimple.com,simplyrecipes.com,shape.com,southernliving.com,thesprucecrafts.com,thespruceeats.com,seriouseats.com,allrecipes.com,tripsavvy.com,midwestliving.com,mydomaine.com,allpeoplequilt.com,travelandleisure.com,verywellfit.com,verywellmind.com,foodandwine.com,lifewire.com,verywellhealth.com,health.com,thoughtco.com,dailypaws.com,agriculture.com,marthastewart.com,ew.com,people.com,investopedia.com,grundig.com,zurbrueggen.de,ilsole24ore.com##body,html:style(overflow: auto !important; position: initial !important;)
 !! .current 
 ejot.de,ejot.at,ejot.cn,ejot.co.uk,ejot.com,bingen-ruedesheimer.de,rainfordsolutions.com,stevensbikes.de,vehicle-certification-agency.gov.uk,bikesale.de,perfectingpilates.com,shirtee.com,ppfeurope.com,defencediscountservice.co.uk,peter-berger.info##.current
 ejot.de,ejot.at,ejot.cn,ejot.co.uk,ejot.com,bingen-ruedesheimer.de,rainfordsolutions.com,stevensbikes.de,vehicle-certification-agency.gov.uk,bikesale.de,perfectingpilates.com,shirtee.com,ppfeurope.com,defencediscountservice.co.uk,peter-berger.info##body,html:style(overflow: auto !important; position: initial !important;)
@@ -27479,7 +27481,7 @@ concursolutions.com,forbes.com,formula1.com,fortune.com,proximus.be,proximustv.b
 @@||zensus2022.de/SiteGlobals/Modules/CookieBanner/*/CookieBanner.json?$~third-party,xmlhttprequest
 
 ! Title: uBlock filters – Cookie Notices
-! Last modified: Sun, 23 Feb 2025 21:01:04 +0000
+! Last modified: Mon, 24 Feb 2025 21:27:41 +0000
 ! Expires: 7 days
 ! Description: Filters optimized for uBlock Origin, to be used with EasyList's and/or Adguard's "Cookie Notices" list(s)
 ! License: https://github.com/uBlockOrigin/uAssets/blob/master/LICENSE
@@ -29372,7 +29374,7 @@ glamino.com##+js(trusted-set-cookie, preference, '"necessary,preferences"')
 ! just necessary 
 schindelhauerbikes.com##+js(trusted-set-cookie, consent, '{"ad_storage":"denied","analytics_storage":"denied","functionality_storage":"granted","personalization_storage":"granted","security_storage":"granted"}')
 ! necessary
-fletcherhotelscheveningen.nl##+js(trusted-set-cookie, acceptCookies, '{"necessary":true,"preferences":false,"statistics":false,"marketing":false}')
+fletcherhotelscheveningen.nl,fletcherlandgoedhotelrenesse.nl##+js(trusted-set-cookie, acceptCookies, '{"necessary":true,"preferences":false,"statistics":false,"marketing":false}')
 
 ! reject
 prada.com##+js(trusted-set-cookie, PRADACONSENT_V3, c1:0|c3:0|c6:0|c9:1|ts:1732678796088|consent:true|id:01936bb4433700035e746aa2453d0406f002006700995)
@@ -30256,7 +30258,7 @@ refurbed.*##+js(trusted-click-element, button#acceptNecessaryCookiesBtn, , 1000)
 lanxshoes.com##+js(trusted-set-cookie, _consentik_cookie, '[{"categoriesSelected":["necessary"]}]')
 
 ! deny
-flyingtiger.com,borgomontecedrone.it##+js(trusted-click-element, a.cc-deny, , 1000)
+flyingtiger.com,borgomontecedrone.it,recaro-shop.com##+js(trusted-click-element, a.cc-deny, , 1000)
 
 ! necessary
 proteincompany.fi,proteinbolaget.se,proteincompany.no##+js(trusted-set-cookie, air_cookie_consent, '{"1":true,"2":false,"3":false,"4":false}')
@@ -30386,6 +30388,9 @@ beobank.be##+js(set-cookie, measure, false)
 ! reject
 atu.de,atu-flottenloesungen.de,but.fr,fortuneo.fr,maif.fr,sparkasse.at##+js(trusted-click-element, button#popin_tc_privacy_button_2, , 1000)
 
+! reject
+dpdgroup.com,dpd.fr,dpd.com##+js(trusted-click-element, button#popin_tc_privacy_button_3, , 1000)
+
 ! dismiss
 bstrongoutlet.pt##+js(trusted-click-element, span[aria-label="dismiss cookie message"], , 1000)
 
@@ -30397,7 +30402,7 @@ finlayson.fi,cowaymega.ca##+js(trusted-click-element, a[aria-label="settings coo
 finlayson.fi,cowaymega.ca##+js(trusted-click-element, a[onclick="Pandectes.fn.savePreferences()"], , 750)
 
 ! agree
-arktis.de,desktronic.de,dockin.de,dryrobe.com,hairtalk.se,hallmark.co.uk,loopearplugs.com,peopleofshibuya.com,sanctum.shop,tartanblanketco.com##+js(trusted-click-element, a[aria-label="allow cookies"], , 1000)
+arktis.de,desktronic.de,belleek.com,dockin.de,dryrobe.com,formswim.com,hairtalk.se,hallmark.co.uk,loopearplugs.com,peopleofshibuya.com,sanctum.shop,tartanblanketco.com##+js(trusted-click-element, a[aria-label="allow cookies"], , 1000)
 
 ! close
 universcine.com##+js(trusted-set-cookie, COOKIE_CONSENT, '{"technical-cookies":true,"analytics":false,"ads":false}')
@@ -30540,7 +30545,7 @@ raja.fr,rajarani.de,rajapack.*##+js(trusted-click-element, button.ot-btn-deny, ,
 rajapack.*##+js(trusted-click-element, button.js-ot-deny, , 1000)
 
 ! deny
-avery-zweckform.com,1xinternet.de,futterhaus.de,dasfutterhaus.at,frischeparadies.de,fmk-steuer.de##+js(trusted-click-element, button.cn-decline, , 1000)
+avery-zweckform.com,1xinternet.de,futterhaus.de,dasfutterhaus.at,frischeparadies.de,fmk-steuer.de,selgros.de##+js(trusted-click-element, button.cn-decline, , 1000)
 
 ! refuse
 mediapart.fr##+js(trusted-click-element, button#js-gateaux-secs-deny, , 1500)
@@ -30708,8 +30713,8 @@ elavon.*##+js(trusted-set-cookie, cookiesPolicy, '{"analytics":false,"marketing"
 elavon.co.uk,elavon.ie##+js(trusted-set-cookie, gdpr_preferences, '{"consent":false,"pref":{"analytics":0,"targeting":0,"thirdparty":0},"ts":1}')
 
 ! reject
-dibaq.com##+js(set-cookie, _pCookiesP, 1)
-dibaq.com##+js(trusted-set-cookie, _pCookies, '["2","3","1"]')
+dibaq.com,garante.es##+js(set-cookie, _pCookiesP, 1)
+dibaq.com,garante.es##+js(trusted-set-cookie, _pCookies, '["2","3","1"]')
 
 ! closed
 rki.de##+js(trusted-set-cookie, gsbbanner, closed)
@@ -30845,7 +30850,7 @@ strumentimusicali.net##+js(trusted-click-element, div#cookiescript_button_contin
 maisonmargiela.com##+js(trusted-click-element, div.modal-close, , 1000)
 
 ! reject / version=1 timedate=1
-evac.nl##+js(trusted-set-local-storage-item, cookiefirst-consent, '{"necessary":true,"performance":false,"functional":false,"advertising":false,"timestamp":1,"type":"category","version":"1"}')
+evac.nl,prenatal.nl##+js(trusted-set-local-storage-item, cookiefirst-consent, '{"necessary":true,"performance":false,"functional":false,"advertising":false,"timestamp":1,"type":"category","version":"1"}')
 
 ! reject
 webfleet.com##+js(trusted-click-element, button#wi-CookieConsent_Selection, , 1000)
@@ -30967,6 +30972,56 @@ koempf24.ch,teichitekten24.de,koempf24.de,wolff-finnhaus-shop.de##+js(trusted-cl
 ! deny (added [style] to avoid infinite reload)
 asnbank.nl,snsbank.nl##+js(trusted-click-element, .cookie-overlay[style] .cookie-consent .cookie-button-group .cookie-buttons #cookie-deny, , 1000)
 
+! basic
+vulcan.net.pl##+js(trusted-click-element, button#show-settings-button, , 650)
+vulcan.net.pl##+js(trusted-click-element, button#save-settings-button, , 800)
+
+! timestamp=1 / essential only
+wideroe.no##+js(trusted-set-cookie, CookieConsent, '{"timestamp":1,"marketing":false,"personalization":false,"statistics":false}')
+
+! reject
+ogresnovads.lv##+js(trusted-click-element, div.cookie-reject, , 1000)
+
+! essential
+pre-flight-shopping.com##+js(trusted-set-cookie, COOKIES, 1|)
+
+! denied
+aghotelspa.com,bookings.rnsportscentre.com##+js(trusted-set-cookie, neoCookieConsent, '{"functionality_storage":"granted","analytics_storage":"denied","ad_storage":"denied","ad_user_data":"denied","ad_personalization":"denied","personalization_storage":"denied","security_storage":"denied"}')
+
+! functional
+heckenpflanzen-heijnen.de##+js(trusted-set-cookie, cookies-preferences, '{"functionalCookies":true,"analyticalCookies":false,"marketingCookies":false}')
+
+! refuse
+partenamut.be##+js(trusted-click-element, li#sdgdpr_modal_buttons-decline, , 1000)
+
+! dismiss
+pitviper.*##+js(trusted-set-cookie, _consentik_cookie, '[{"categoriesSelected":[]}]')
+
+! close window
+pirelli.com##+js(trusted-click-element, div#cookieCloseIcon, , 1000)
+
+! accept
+unicredit.it##+js(trusted-click-element, button#cookieAccepted, , 1000)
+
+! reject
+pqs.app##+js(trusted-set-cookie, cookiebar, '{"analytics_storage":"denied","ad_storage":"denied","personalization_storage":"denied"}')
+
+! accept
+effector.pl##+js(trusted-click-element, button#cookieAccept, , 1000)
+
+! save settings / basic
+zikodermo.pl##+js(trusted-click-element, div.show-more-options, , 500)
+zikodermo.pl##+js(trusted-click-element, div.save-options, , 650)
+
+! uuid/time=1
+stadtwerke-bonn.de##+js(trusted-set-cookie, ppw-cookie, '{"consents":[12],"uuid":"1","acceptance-time":"1"}')
+
+! required
+wassererleben.ch##+js(trusted-click-element, button#btn-accept-required-banner, , 1000)
+
+! refuse
+inkasso.de##+js(trusted-set-cookie, orejime, '{"system":false,"google-analytics":false}')
+
 ! reject
 devolksbank.nl##+js(trusted-click-element, button#elc-decline-all-link, , 1000)
 
@@ -31011,6 +31066,8 @@ swiss-sport.tv##+js(trusted-click-element, #cookiescript_reject, , 500)
 
 ! Necessary + functional
 rieker-shop.fi##+js(trusted-set-cookie, cookiefirst-consent, %7B%22necessary%22%3Atrue%2C%22performance%22%3Afalse%2C%22functional%22%3Atrue%2C%22advertising%22%3Afalse%2C%22type%22%3A%22category%22%7D, 1year)
+keiju.fi##+js(trusted-set-cookie, cookiefirst-consent, %7B%22necessary%22%3Atrue%2C%22performance%22%3Afalse%2C%22functional%22%3Atrue%2C%22advertising%22%3Afalse%2C%22type%22%3A%22category%22%7D, 1year)
+masku.com##+js(trusted-set-cookie, cookiefirst-consent, %7B%22necessary%22%3Atrue%2C%22performance%22%3Afalse%2C%22functional%22%3Atrue%2C%22advertising%22%3Afalse%2C%22type%22%3A%22category%22%7D, 1year)
 
 ! https://github.com/uBlockOrigin/uAssets/issues/20628#issuecomment-2657400856
 cadenaser.com##+js(trusted-click-element, #redesignCmpWrapper > div > div > a[href^="https://cadenaser.com/"])
@@ -31023,3 +31080,6 @@ offistore.fi##+js(trusted-click-element, '#cookietoggle, input[id="CookieFunctio
 
 ! Necessary + preferences
 martelaoutlet.fi##+js(trusted-set-cookie, cookiehub, eyJhbnN3ZXJlZCI6dHJ1ZSwicmV2aXNpb24iOjEsImRudCI6ZmFsc2UsImFsbG93U2FsZSI6dHJ1ZSwiaW1wbGljdCI6ZmFsc2UsInJlZ2lvbiI6IiIsInRva2VuIjoiRGxJaWVvNzVCWmNubFQ1eHlPRmNlaUV4cjZnWVROajhjQVd6OWdVQW9IT1pGSzhyNGlyMDZiYjhTNkNuOWc0bCIsInRpbWVzdGFtcCI6IjIwMjUtMDItMjNUMjA6NTc6MzkuMzYyWiIsImFsbEFsbG93ZWQiOmZhbHNlLCJjYXRlZ29yaWVzIjpbMSwyXSwidmVuZG9ycyI6W10sInNlcnZpY2VzIjpbXX0=, 1year)
+
+! Necessary + functional
+chillamo.com##+js(trusted-set-cookie, _pandectes_gdpr, eyJzdGF0dXMiOiJjdXN0b20iLCJ0aW1lc3RhbXAiOjE3NDA0MjY0MjksInByZWZlcmVuY2VzIjo2LCJpZCI6IjY3YmNjY2JkYTNmMTg5MGNkMGQ1Mjk2YyJ9, 1year)
