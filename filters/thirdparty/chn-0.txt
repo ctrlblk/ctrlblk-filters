@@ -1,10 +1,10 @@
 ![Adblock Plus 2.0]
-! Checksum: sw6bu2fYRxC7dYMQs9l9DQ
-! Diff-Path: ../patches/224/224-s-1740451314-3600.patch
+! Checksum: Ez4X7G11LImNjw1zLxIFxw
+! Diff-Path: ../patches/224/224-s-1740534117-3600.patch
 ! Title: AdGuard Chinese filter
 ! Description: EasyList China + AdGuard Chinese filter. Filter list that specifically removes ads on websites in Chinese language.
-! Version: 2.1.32.14
-! TimeUpdated: 2025-02-25T02:37:58+00:00
+! Version: 2.1.32.20
+! TimeUpdated: 2025-02-26T01:38:00+00:00
 ! Expires: 5 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -2342,8 +2342,6 @@ ettoday.net###adsense-matched-content
 ettoday.net##.content-container > .iframe-ad
 ettoday.net##.sharebox:not([id]) ~ .iframe-ad
 85tube.com##.block-video > .table
-||85tube.com/player/html.php?aid=*_html&video_id=*&*&referer
-||85tube.com/player/html.php?aid=*_html&video_id=*&*&referer$redirect=noop.txt,image,media,subdocument,stylesheet,script,xmlhttprequest,other
 ||r3sub.com/posters/00698128.jpg
 weihemenye.com###popup_bottom
 dmhy.org##div[id$="_ad"] > a[onclick*="'ad'"][target="_blank"]
@@ -4922,6 +4920,10 @@ newduba.cn###jq_youxi
 ||67.21.92.*.gif
 ||cnzz.trafficmanager.net^
 ||cupfox.app^$third-party
+||zlzgfj.icu^
+||lnptph.icu^
+||pisb.cn^
+||dyyygyg.top^
 ||druqodrly.com^
 ||bidotz.icu^
 ||nktydx.icu^
@@ -4930,6 +4932,12 @@ newduba.cn###jq_youxi
 ||znlvhnej.icu^
 ||okwjmii.top^
 ||onjncgq.top^
+||o02260aokk.com^
+||o02251aokk.com^
+||pheidheat.com^
+||thampheth.com^
+||vtrrxqbi.xyz^
+||kqgn.cn^
 ||dfhthh.icu^
 ||chuundads.com^
 ||xvvfpsmp.icu^
@@ -20555,6 +20563,7 @@ _rony.js$script,third-party
 .fun/by389.js
 .pw/TA390hz2.js
 .pw/by389.js
+.o0*aokk.com/iis.$script,third-party
 .uhi*uik.xyz/$script,third-party
 .xxaks*sspao.xyz/$script,third-party
 .is0*qqp.xyz/$script,third-party
