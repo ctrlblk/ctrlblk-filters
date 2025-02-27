@@ -243,6 +243,7 @@
 ||adluxe.ru^$third-party
 ||admag.pro^$third-party
 ||admail.am^$third-party
+||admaster.click^$third-party
 ||admaxer.ru^$third-party
 ||admediator.ru^$third-party
 ||admelon.ru^$third-party
@@ -754,6 +755,7 @@
 ||bfgvqx.com^$third-party
 ||bg1kfdzzsq.ru^$third-party
 ||bgaeedihjgbachfecj.ru^$third-party
+||bgajeddhdcjhbijhgaj.world^$third-party
 ||bgclck.me^$third-party
 ||bgdmmb.com^$third-party
 ||bget.ru/adblock$third-party
@@ -829,6 +831,7 @@
 ||blendac.com^
 ||blessdi.com^
 ||blikas.site^$third-party
+||blkmyco.com^$third-party
 ||blogis.org^$third-party
 ||bloglive.ru^$third-party
 ||blogsdas.ru^$third-party
@@ -8030,6 +8033,7 @@ _verified.php?code=*&server=runetki.com
 /news.php?sid=*&bn=$third-party,script
 /newsanons/*?advert[]=
 /nodelmag/ytjs.php
+/onCl1ckCU/?_=
 /out.php?sid=$script
 /output/index/*$third-party,script
 /ovp.php?ver=*&autoplay=$third-party,subdocument
@@ -10132,7 +10136,7 @@ asienda.ru,diets.ru,mycharm.ru,myjane.ru,povarenok.ru,stranamam.ru##div[class^="
 rutvet.ru##div[data-type="anti-abp"]
 kinobb.net##div[id$="odalWin"]
 techmusic.ru##div[id^="_uwndTop"]
-pornhub.com##div[id^="age"][id*="erification"]
+pornhub.com,pornhub.org##div[id^="age"][id*="erification"]
 wuzzup.ru##div[id^="arevicofancy-"]
 fishki.net##div[id^="b-close"]
 formulalubvi.com##div[id^="custom_fan_gate_overlay"]
@@ -14078,7 +14082,7 @@ world-mmo.com###header-wrapper
 nikvesti.com###header-wrapper noindex > a[href][target="_blank"]
 sysadminblog.ru###header2
 fisher.spb.ru###headerBanners
-pornhub.com###headerUpgradePremiumBtn
+pornhub.com,pornhub.org###headerUpgradePremiumBtn
 arigato.tv###header[style] #header:not([style])
 zaxid.net###header_advt-wrapper
 tr.anidub.com###header_b
@@ -21888,7 +21892,7 @@ https://*adtech_uid=$~third-party,xmlhttprequest,domain=lena-miro.ru|levik.blog|
 ||imgfrost.net^$third-party
 ||liveinternet.ru/utf/lici.js?
 ||news.mail.ru/-/*.js?
-||pikabu.ru/ajax/*?L37df=$xmlhttprequest
+||pikabu.ru/ajax/*?rIO8m=$xmlhttprequest
 ||ritsatv.ru^$csp=script-src
 ||ritsatv.ru^$popup
 ||ritsatv.ru^$~document
@@ -22825,18 +22829,16 @@ utro.ru##div[class^="partners-block"]
 ||zoom.cnews.ru/inc/bpic/
 !
 ! Spaces и зеркала
-strip2.in,strip2.xxx,usersporn.com###sidebar > div[class]:last-child
-google-cloud.services,strip2.in,strip2.xxx,usersporn.com###siteContent > div:not([id]):not([class]) ~ div[class]
-gdespaces.com,gdespaces.net,spac.me,spac.run,spac.wtf,spac1.com,spac1.info,spac1.me,spac1.net,spac1.org,spac1.ru,spaces-blogs.com,spaces.im,spcs-files.xyz,spcs.bio,spcs.global,spcs.life,spcs.me,spcs.network,spcs.news,spcs.pro,spcs.pub,spcs.reviews,spcs.social,strip2.in,strip2.xxx,usersporn.com##.rightbar__reklama
-gdespaces.com,gdespaces.net,google-cloud.services,spac.me,spac.run,spac.wtf,spac1.com,spac1.info,spac1.me,spac1.net,spac1.org,spac1.ru,spaces-blogs.com,spaces.im,spcs-files.xyz,spcs.bio,spcs.global,spcs.life,spcs.me,spcs.mobi,spcs.network,spcs.news,spcs.pro,spcs.pub,spcs.reviews,spcs.social,strip2.in,strip2.xxx,usersporn.com##.tiled_cap
-strip2.in,strip2.xxx,usersporn.com##.tiles_wrapper > .js-file_item ~ div:not([class*="tiled"])
-/^(?!.*(spac.me)).*$/$third-party,script,domain=gdespaces.com|gdespaces.net|google-cloud.services|spac.me|spac.run|spac.wtf|spac1.com|spac1.info|spac1.me|spac1.net|spac1.org|spac1.ru|spaces-blogs.com|spaces.im|spcs-files.xyz|spcs.bio|spcs.global|spcs.life|spcs.me|spcs.mobi|spcs.network|spcs.news|spcs.pro|spcs.pub|spcs.reviews|spcs.social|strip2.in|strip2.xxx|usersporn.com
-gdespaces.com,gdespaces.net,spac.me,spac.run,spac.wtf,spac1.com,spac1.info,spac1.me,spac1.net,spac1.org,spac1.ru,spaces-blogs.com,spaces.im,spcs-files.xyz,spcs.bio,spcs.global,spcs.life,spcs.me,spcs.mobi,spcs.network,spcs.news,spcs.pro,spcs.pub,spcs.reviews,spcs.social#?#div[class]:-abp-has(> a[title] ~ a[title] > div[class])
-gdespaces.com,gdespaces.net,google-cloud.services,spac.me,spac.run,spac.wtf,spac1.com,spac1.info,spac1.me,spac1.net,spac1.org,spac1.ru,spaces-blogs.com,spaces.im,spcs-files.xyz,spcs.bio,spcs.global,spcs.life,spcs.me,spcs.mobi,spcs.network,spcs.news,spcs.pro,spcs.pub,spcs.reviews,spcs.social,strip2.in,strip2.xxx,usersporn.com##div[id][class][style="min-height:150px"]
-!#if ext_abp
+strip2.club,strip2.in,strip2.xxx,usersporn.com###sidebar > div[class]:last-child
+google-cloud.services,strip2.club,strip2.in,strip2.xxx,usersporn.com###siteContent > div:not([id]):not([class]) ~ div[class]
+gdespaces.com,gdespaces.net,spac.me,spac.run,spac.wtf,spac1.com,spac1.net,spac1.org,spaces-blogs.com,spaces.im,spcs-files.xyz,spcs.bio,spcs.life,spcs.me,spcs.network,spcs.pro,spcs.reviews,spcs.social,strip2.club,strip2.in,strip2.xxx,usersporn.com##.rightbar__reklama
+gdespaces.com,gdespaces.net,google-cloud.services,spac.me,spac.run,spac.wtf,spac1.com,spac1.net,spac1.org,spaces-blogs.com,spaces.im,spcs-files.xyz,spcs.bio,spcs.life,spcs.me,spcs.mobi,spcs.network,spcs.pro,spcs.reviews,spcs.social,strip2.club,strip2.in,strip2.xxx,usersporn.com##.tiled_cap
+strip2.club,strip2.in,strip2.xxx,usersporn.com##.tiles_wrapper > .js-file_item ~ div:not([class*="tiled"])
+/^(?!.*(spac.me)).*$/$third-party,script,domain=gdespaces.com|gdespaces.net|google-cloud.services|spac.me|spac.run|spac.wtf|spac1.com|spac1.net|spac1.org|spaces-blogs.com|spaces.im|spcs-files.xyz|spcs.bio|spcs.life|spcs.me|spcs.mobi|spcs.network|spcs.pro|spcs.reviews|spcs.social|strip2.club|strip2.in|strip2.xxx|usersporn.com
+gdespaces.com,gdespaces.net,spac.me,spac.run,spac.wtf,spac1.com,spac1.net,spac1.org,spaces-blogs.com,spaces.im,spcs-files.xyz,spcs.bio,spcs.life,spcs.me,spcs.mobi,spcs.network,spcs.pro,spcs.reviews,spcs.social#?#div[class]:-abp-has(> a[title] ~ a[title] > div[class])
+gdespaces.com,gdespaces.net,google-cloud.services,spac.me,spac.run,spac.wtf,spac1.com,spac1.net,spac1.org,spaces-blogs.com,spaces.im,spcs-files.xyz,spcs.bio,spcs.life,spcs.me,spcs.mobi,spcs.network,spcs.pro,spcs.reviews,spcs.social,strip2.club,strip2.in,strip2.xxx,usersporn.com##div[id][class][style="min-height:150px"]
 ! Temporary rule, until denyallow in ABP-MV3 is implemented
-||world/$third-party,script,domain=gdespaces.com|gdespaces.net|google-cloud.services|spac.me|spac.run|spac.wtf|spac1.com|spac1.info|spac1.me|spac1.net|spac1.org|spac1.ru|spaces-blogs.com|spaces.im|spcs-files.xyz|spcs.bio|spcs.global|spcs.life|spcs.me|spcs.mobi|spcs.network|spcs.news|spcs.pro|spcs.pub|spcs.reviews|spcs.social|strip2.in|strip2.xxx|usersporn.com
-!#endif
+||world/$third-party,script,domain=gdespaces.com|gdespaces.net|google-cloud.services|spac.me|spac.run|spac.wtf|spac1.com|spac1.net|spac1.org|spaces-blogs.com|spaces.im|spcs-files.xyz|spcs.bio|spcs.life|spcs.me|spcs.mobi|spcs.network|spcs.pro|spcs.reviews|spcs.social|strip2.club|strip2.in|strip2.xxx|usersporn.com
 !
 ! Sports.ru, а также by.tribuna.com, ua.tribuna.com
 sports.ru###top-ad
@@ -26132,7 +26134,7 @@ zhurnaly.biz#@#.ad-block
 zhurnaly.biz#@#.item-ads
 !
 ! - hide & block
-pornhub.com###abAlert
+pornhub.com,pornhub.org###abAlert
 d3ward.github.io###ad_ctd
 seolik.ru###alert_top_site
 tvvse.my1.ru###cont-i > span[style*="color:red"]
@@ -27928,6 +27930,7 @@ yandex.by,yandex.kz,yandex.ru,yandex.uz##.sidebar-container div[class^="banner-p
 yandex.by,yandex.kz,yandex.ru,yandex.uz##a[href^="/maps/"][href*="/tinkoff_has_offer"]
 ! ---
 ! кью
+yandex.ru##body[class*="page_q"] .top-root > div:style(min-height: 0 !important)
 yandex.ru##div > .banner-root ~ .page-root > #page > div[class]:first-child > div[class]:first-child + div + div > div[style] > div[style] > div > div:last-child div:style(min-height: 0 !important)
 yandex.ru##div > .banner-root ~ .page-root > #page > div[class]:first-child > div[class]:first-child + div > section > div[class]:first-child ~ div > div > div:style(min-height: 0 !important)
 yandex.ru##div > .banner-root ~ .page-root > #page > div[class]:first-child > div[class]:first-child + div > section > div[class]:first-child ~ div > div > span ~ div > div[class]:style(min-height: 0 !important)
@@ -28175,7 +28178,7 @@ fenglish.site,mp3spy.cc##+js(abort-current-inline-script, JSON.parse, atob)
 draug.ru,modsforwot.ru##+js(abort-current-inline-script, Math.floor, AdSense)
 agroreview.com##+js(abort-current-inline-script, Object.defineProperty, rcBuf)
 filmisub.com,kinofen.net##+js(abort-current-inline-script, XMLHttpRequest, document.querySelectorAll)
-gdespaces.com,gdespaces.net,google-cloud.services,spac.me,spac.run,spac.wtf,spac1.com,spac1.info,spac1.me,spac1.net,spac1.org,spac1.ru,spaces-blogs.com,spaces.im,spcs-files.xyz,spcs.bio,spcs.global,spcs.life,spcs.me,spcs.network,spcs.news,spcs.pro,spcs.pub,spcs.reviews,spcs.social,strip2.in,strip2.xxx,usersporn.com##+js(abort-current-inline-script, __require, /clickunder/)
+gdespaces.com,gdespaces.net,google-cloud.services,spac.me,spac.run,spac.wtf,spac1.com,spac1.net,spac1.org,spaces-blogs.com,spaces.im,spcs-files.xyz,spcs.bio,spcs.me,spcs.network,spcs.pro,spcs.reviews,spcs.social,strip2.club,strip2.in,strip2.xxx,usersporn.com##+js(abort-current-inline-script, __require, /clickunder/)
 fastpic.org,~new.fastpic.org##+js(abort-current-inline-script, addEventListener, DOMContentLoaded)
 allboxing.ru##+js(abort-current-inline-script, atob, void)
 pravvest.ru##+js(abort-current-inline-script, clickExplorer)
@@ -28221,7 +28224,7 @@ www.kinopoisk.ru##+js(abort-on-property-read, Object.prototype.bannerOptions)
 gorodrabot.by,gorodrabot.ru##+js(abort-on-property-read, Object.prototype.direct)
 fishki.net##+js(abort-on-property-read, Object.prototype.fakeDetect)
 reshu.by,reshuent.kz,reshuolymp.ru,sdamgia.ru##+js(abort-on-property-read, Object.prototype.getAdUsageStorage)
-gdespaces.com,gdespaces.net,google-cloud.services,spac.me,spac.run,spac.wtf,spac1.com,spac1.info,spac1.me,spac1.net,spac1.org,spac1.ru,spaces-blogs.com,spaces.im,spcs-files.xyz,spcs.bio,spcs.global,spcs.life,spcs.me,spcs.network,spcs.news,spcs.pro,spcs.pub,spcs.reviews,spcs.social,strip2.in,strip2.xxx,usersporn.com##+js(abort-on-property-read, Object.prototype.initOnPlay)
+gdespaces.com,gdespaces.net,google-cloud.services,spac.me,spac.run,spac.wtf,spac1.com,spac1.net,spac1.org,spaces-blogs.com,spaces.im,spcs-files.xyz,spcs.bio,spcs.me,spcs.network,spcs.pro,spcs.reviews,spcs.social,strip2.club,strip2.in,strip2.xxx,usersporn.com##+js(abort-on-property-read, Object.prototype.initOnPlay)
 rbc.ru##+js(abort-on-property-read, Object.prototype.isApplySticky)
 e1.ru,nova.rambler.ru,pikabu.ru##+js(abort-on-property-read, Object.prototype.loadBanner)
 ya.ru##+js(abort-on-property-read, Object.prototype.marketFeedMix)
@@ -28327,7 +28330,7 @@ phys-kids.com##+js(abort-on-property-write, fetch)
 gamemag.ru##+js(abort-on-property-write, keepAdblock)
 kakprosto.ru##+js(abort-on-property-write, window.yaProxy)
 tvzvezda.ru##+js(abort-on-stack-trace, Object.prototype.autoplay, assets)
-vk.com,vk.ru##+js(abort-on-stack-trace, Object.prototype.checkMrc, /feed|set/)
+vk.com,vk.ru##+js(abort-on-stack-trace, Object.prototype.checkOvv, /feed|set/)
 blackwot.ru##+js(abort-on-stack-trace, document.getElementsByTagName, adsBlocked)
 forums.rusmedserv.com##+js(abort-on-stack-trace, fetch, eval)
 7days.ru##+js(addEventListener-defuser, /^(?:contextmenu|keydown)$/)

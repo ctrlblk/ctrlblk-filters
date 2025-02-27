@@ -1,10 +1,10 @@
 ![Adblock Plus 2.0]
-! Checksum: C5UshM4bi6xA07J3yhRUlQ
-! Diff-Path: ../patches/9/9-s-1740505343-3600.patch
+! Checksum: WdNyWsWaELCTs7MfeRuUkQ
+! Diff-Path: ../patches/9/9-s-1740570343-3600.patch
 ! Title: AdGuard Spanish/Portuguese filter
 ! Description: Filter list that specifically removes ads on websites in Spanish, Portuguese, and Brazilian Portuguese languages.
-! Version: 2.0.29.5
-! TimeUpdated: 2025-02-25T17:37:53+00:00
+! Version: 2.0.29.8
+! TimeUpdated: 2025-02-26T11:40:19+00:00
 ! Expires: 5 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -2181,6 +2181,9 @@ c5n.com,t13.cl,solowrestling.mundodeportivo.com,todojujuy.com,mendozapost.com,me
 !
 ! NOTE: Specific rules
 !
+jornaldocentro.pt##div[data-element_type="container"] > div.elementor-element:has(> .elementor-widget-container:contains(pub))
+jornaldocentro.pt##.e-con-inner > div.elementor-element:has(> .elementor-widget-container:contains(pub))
+jornaldocentro.pt##div[data-elementor-type="wp-page"] > .elementor-element:not([data-settings]):has(> .e-con-inner >[data-element_type="container"] > .elementor-element > .elementor-widget-container > .adsbygoogle)
 concursosnobrasil.com##.concur-categorias-topo
 concursosnobrasil.com##.continua
 concursosnobrasil.com##.alinhads
@@ -3012,7 +3015,8 @@ motor.es##section[data-provider="taboola"]
 motor.es##div[class^="megabanner"]
 motor.es##div[class$=" "].hueco-publicidad
 europafm.com##.addContainer
-mhscans.com##.c-top-sidebar
+lectoremperor.com,mhscans.com##.c-top-sidebar
+lectoremperor.com###media_image-19
 mxcity.mx##.ads_citi
 mxcity.mx###banner-top
 autobild.es##div[class^="wrapper_mega_"]
