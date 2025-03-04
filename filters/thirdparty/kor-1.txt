@@ -1,7 +1,7 @@
 [uBlock Origin]
 ! Title: List-KR for uBlock Origin
 ! Description: List-KR for uBlock Origin. Maintained by the adblock community and AdGuard.
-! Version: 2025.0228.1
+! Version: 2025.0304.3
 ! Expires: 12 hours
 ! Homepage: https://github.com/List-KR/List-KR
 ! Support: https://list-kr-community.pages.dev/docs/
@@ -1553,7 +1553,7 @@ mediatoday.co.kr,newsworker.co.kr##div[id^="AD"]
 ! ##div[class^="Banner"]
 moyoplan.com##div[class^="Banner"]
 ! ##div[class*="_ad"]
-kyeongin.com,www.daum.net,m.health.chosun.com,hani.co.kr,asiatime.co.kr,kizmom.hankyung.com,cgv.co.kr,zum.com,kyeonggi.com,medicaltimes.com,kpanews.co.kr,donga.com,busan.com,fnnews.com,m.munhwa.com,m.kmib.co.kr##div[class*="_ad"]
+kyeongin.com,www.daum.net,m.health.chosun.com,hani.co.kr,asiatime.co.kr,kizmom.hankyung.com,www.cgv.co.kr,zum.com,kyeonggi.com,medicaltimes.com,kpanews.co.kr,donga.com,busan.com,fnnews.com,m.munhwa.com,m.kmib.co.kr##div[class*="_ad"]
 ! ##div[id*="Banner"]
 evape.kr,kin.naver.com##div[id*="Banner"]
 ! ##div[class*="_AD"]
@@ -2936,6 +2936,7 @@ manatoki464.net,manatoki465.net,manatoki466.net,manatoki467.net,manatoki468.net,
 @@||cdn.kbmaeil.com/bannerpop/uploads/js/976.js
 @@||cdn.kbmaeil.com/bannerpop/uploads/image/16224295341851316158.png
 @@||whosaeng.com/data/whosaeng_com/banner/2024010357483891
+@@||fortune-api.adop.cc^$domain=asp.jeomsin.co.kr
 @@||ssl.pstatic.net/tveta/libs/ssp-video/prod/ssp.web.sdk_$script,domain=weverse.io
 @@||www.besteleven.com/bannerpop/uploads/image/
 besteleven.com#@#img[src^="/bannerpop/"]
@@ -3360,17 +3361,6 @@ aagag.com#$#.la { height: 75px !important; width: 75px !important; visibility: h
 t.hi098123.com#@#ins.adsbygoogle[data-ad-slot]
 @@||googletagmanager.com/gtag/js$domain=t.hi098123.com,script
 t.hi098123.com#$#.tabad { top: -100px !important; }
-! chzzk.naver.com
-! The tusted scriptlet rule should be rechecked after https://github.com/AdguardTeam/Scriptlets/issues/419 is resolved.
-! Check that PIP of a live streaming and chatting management of a channel work.
-! chzzk.naver.com##+js(trusted-replace-xhr-response, ',"adFree":false', ',"adFree":true', 'my-info')
-! chzzk.naver.com##+js(nano-stb, noPingPong||(e.sendPing, *, 0.001)
-chzzk.naver.com##+js(no-xhr-if, veta.naver.com/gfp)
-chzzk.naver.com##+js(no-xhr-if, veta.naver.com/call)
-chzzk.naver.com##+js(no-xhr-if, veta.naver.com/vas)
-naver.com##+js(set-cookie, ba.uuid, 0, , domain, naver.com)
-@@||ssl.pstatic.net/tveta/libs/glad/prod/$script,xmlhttprequest,domain=chzzk.naver.com
-@@||nam.veta.naver.com/vas$xmlhttprequest,domain=chzzk.naver.com
 !
 tabriz.kr#@##AdHeader
 tabriz.kr#@##AD_Top
