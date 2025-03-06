@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: EasyList – Newsletter Notices
-! Last modified: Mon, 03 Mar 2025 09:50:13 +0000
+! Last modified: Wed, 05 Mar 2025 21:50:09 +0000
 ! Expires: 7 days (update frequency)
 ! *** easylist:template_header.txt ***
 !
@@ -1752,6 +1752,7 @@ usrtk.org###subscribe-modal
 thefabricator.com###subscribe-pop-wrapper
 intomore.com###subscribe-wide-side
 fivebooks.com###subscribeButton
+gamcore.com###subscribeForm
 digg.com###subscribePromotion
 forbes.com###subscribeToNewsLetters
 wined.co.za###subscribeWrapper
@@ -4152,9 +4153,9 @@ sfstandard.com##body:style(height: auto !important; overflow: auto !important)
 ! https://github.com/uBlockOrigin/uAssets/issues/26337
 action.com##+js(set-local-storage-item, newsletterPopupCount, 1)
 ! theverge.com
-theverge.com##.zephr-overlay
-theverge.com##.zephr-zone-footer
-theverge.com##body:style(height: auto !important; overflow: auto !important)
+!theverge.com##.zephr-overlay
+!theverge.com##.zephr-zone-footer
+!theverge.com##body:style(height: auto !important; overflow: auto !important)
 ! newbalance.co.id
 newbalance.co.id###popup-newsletter
 newbalance.co.id##.modals-wrapper
@@ -5758,7 +5759,7 @@ doctorofcredit.com#@#.wpdiscuz-subscribe-bar
 ! fanboy_newsletter_shopping_allowlist_general_hide.txt
 
 ! Title: uBlock filters – Other Annoyances
-! Last modified: Tue, 04 Mar 2025 21:47:17 +0000
+! Last modified: Wed, 05 Mar 2025 12:42:47 +0000
 ! Expires: 7 days
 ! Description: Filters optimized for uBlock Origin, to be used with EasyList's and/or Adguard's "Other Annoyances" list(s)
 ! License: https://github.com/uBlockOrigin/uAssets/blob/master/LICENSE
@@ -7606,7 +7607,7 @@ gamebanana.com##+js(aopr, adBlockDetected)
 www.reddit.com###nsfw-desktop-auth-blocking-modal-dialog,#nsfw-desktop-auth-blocking-modal-overlay-element
 www.reddit.com##body:style(overflow:auto !important)
 ! https://www.reddit.com/r/uBlockOrigin/comments/1dzrnq3/remove_popups_from_reddit_mobile/
-reddit.com##div.prompt:has(> .viewInApp)
+www.reddit.com##div.prompt:has(slot[name="view-in-app-button"])
 ! https://www.reddit.com/r/uBlockOrigin/comments/1i3b2kv/preventing_reddit_unreviewed_content_popup/
 ||redditstatic.com/shreddit/*/xpromo-untagged-content-blocking-modal-$script
 ! https://github.com/easylist/easylist/issues/17354
