@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: EasyList – Newsletter Notices
-! Last modified: Thu, 06 Mar 2025 21:50:12 +0000
+! Last modified: Sat, 08 Mar 2025 01:42:52 +0000
 ! Expires: 7 days (update frequency)
 ! *** easylist:template_header.txt ***
 !
@@ -842,7 +842,6 @@
 ##.newsletter-inline-widget
 ##.newsletter-inline-wrapper
 ##.newsletter-interstitial
-##.newsletter-intro
 ##.newsletter-introtext
 ##.newsletter-l
 ##.newsletter-l-modal
@@ -1462,6 +1461,8 @@ film-news.co.uk,game-news.co.uk,music-news.com,theatre-news.com###buy-tickets
 dreambigtravelfarblog.com,englandexplore.com,founderreports.com,interacnetwork.com,unexpectedlydomestic.com###cbox
 gatestoneinstitute.org,globalvoices.org,ibtimes.com.au,sinya.com.tw,westhawaiitoday.com###cboxOverlay
 gatestoneinstitute.org###cboxWrapper
+holdthecarbs.ca###chated-iframe
+holdthecarbs.ca###chated-overlay
 ambcrypto.com###cm-embed_signup
 saveur.com###cm-popup-overlay
 cpr.org###coWondersWrapper
@@ -2057,6 +2058,7 @@ cidrap.umn.edu##.block-cidrap-persistent-newsletter
 frommybowl.com##.block-cookbook
 africacheck.org##.block-cta-block
 eatingbirdfood.com,joyfoodsunshine.com,spendwithpennies.com##.block-ebook
+visordown.com##.block-echobox-subscriber-blockvisordown-newsletter
 acouplecooks.com,dinneratthezoo.com,eatyourselfskinny.com,gimmedelicious.com,inquiringchef.com,lilluna.com,noracooks.com,simplifylivelove.com,studyfinds.org,tastesbetterfromscratch.com,therecipecritic.com,tutti-dolci.com,veggiekinsblog.com,vindulge.com##.block-email
 budgetbytes.com,latenighter.com##.block-email-subscribe
 humanesociety.org##.block-email-subscription-block
@@ -3096,7 +3098,7 @@ newsweek.com##.promo-link
 themarkup.org##.promotion--newsletter
 simpurelife.com##.proof-factor-app
 slate.com##.prudie-google-form
-celebrityaccess.com,eastasiaforum.org,mag.toyota.co.uk##.pum-overlay
+celebrityaccess.com,eastasiaforum.org,flowmountainbike.com,mag.toyota.co.uk##.pum-overlay
 thebaltimorebanner.com##.push-notification-inline-cta
 sprintmedical.in##.py-8.bg-gradient
 levernews.com##.py-\[60px\]
@@ -3604,7 +3606,7 @@ visualcapitalist.com##.wpforms-ajax-form
 addapinch.com,budgetbytes.com,diethood.com,dinnerthendessert.com,eatingonadime.com,eatyourselfskinny.com,feelgoodfoodie.net,kristineskitchenblog.com,meaningfuleats.com,playswellwithbutter.com,selfproclaimedfoodie.com,thecookierookie.com,themom100.com,thestayathomechef.com,tonisrecipes.com,vacationstravel.com,wellplated.com,yellowblissroad.com##.wpforms-container
 vegrecipesofindia.com##.wpforms-location-newsletter
 autocar.co.nz,health-e.org.za##.wpforms-widget
-nintendosoup.com,politik.co.nz,thehappyfoodie.co.uk##.wppopups-whole
+base-mag.com,nintendosoup.com,politik.co.nz,thehappyfoodie.co.uk##.wppopups-whole
 aspicyperspective.com,damndelicious.net##.wprm-call-to-action
 tastesbetterfromscratch.com##.wprm-custom-cta
 recipetineats.com##.wprm-entry-footer
@@ -4833,6 +4835,9 @@ house.suntory.com##body,html:style(overflow: auto !important; position: initial 
 ! eileenscookieshighlandsranch.com
 eileenscookieshighlandsranch.com##.leadform-popup-widget
 eileenscookieshighlandsranch.com##body,html:style(overflow: auto !important; position: initial !important;)
+! nfm.com
+nfm.com###att_lightbox_email
+nfm.com##body,html:style(overflow: auto !important; position: initial !important;)
 ! suzukicycles.com
 suzukicycles.com##.popup-promo
 suzukicycles.com##.modal-backdrop
@@ -4870,7 +4875,6 @@ edikted.com###SMSBump-Modal
 mercato.com###ZipEmailModal
 shop.ordnancesurvey.co.uk###_lpSurveyPopover
 celticwebmerchant.co.uk###abandonednewsletter
-nfm.com###att_lightbox_email
 gpulive.com###automizely_marketing_popup_bars
 misterworker.com###block_footer_custom
 thegoodguys.com.au###catalogueDrawer
@@ -5761,7 +5765,7 @@ doctorofcredit.com#@#.wpdiscuz-subscribe-bar
 ! fanboy_newsletter_shopping_allowlist_general_hide.txt
 
 ! Title: uBlock filters – Other Annoyances
-! Last modified: Thu, 06 Mar 2025 15:09:30 +0000
+! Last modified: Fri, 07 Mar 2025 12:17:51 +0000
 ! Expires: 7 days
 ! Description: Filters optimized for uBlock Origin, to be used with EasyList's and/or Adguard's "Other Annoyances" list(s)
 ! License: https://github.com/uBlockOrigin/uAssets/blob/master/LICENSE
@@ -7608,6 +7612,7 @@ gamebanana.com##+js(aopr, adBlockDetected)
 ! https://github.com/uBlockOrigin/uAssets/issues/10888#issuecomment-1523943368
 www.reddit.com###nsfw-desktop-auth-blocking-modal-dialog,#nsfw-desktop-auth-blocking-modal-overlay-element
 www.reddit.com##body:style(overflow:auto !important)
+||redditstatic.com/shreddit/en-US/xpromo-nsfw-bypassable-modal-desktop-$script
 ! https://www.reddit.com/r/uBlockOrigin/comments/1dzrnq3/remove_popups_from_reddit_mobile/
 www.reddit.com##div.prompt:has(slot[name="view-in-app-button"])
 ! https://www.reddit.com/r/uBlockOrigin/comments/1i3b2kv/preventing_reddit_unreviewed_content_popup/
