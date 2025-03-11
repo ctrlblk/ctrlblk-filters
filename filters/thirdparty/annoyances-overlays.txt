@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: EasyList – Newsletter Notices
-! Last modified: Mon, 10 Mar 2025 01:48:46 +0000
+! Last modified: Tue, 11 Mar 2025 03:52:14 +0000
 ! Expires: 7 days (update frequency)
 ! *** easylist:template_header.txt ***
 !
@@ -5547,6 +5547,7 @@ moottori.fi#?#.item.sidebar.reader-comp.main-gray-bg:-abp-has(a[href="/tilaa-moo
 ! Greek
 epoliteia.gr##.dialog-lightbox-widget
 cosmotetv.gr##.newsletter-popup-overlay
+hrpro.gr##.newsletter-wrapper
 ! Hebrew
 10dakot.co.il##.aside_subscribe
 mekomit.co.il##.newsletter-popup
@@ -5780,7 +5781,7 @@ doctorofcredit.com#@#.wpdiscuz-subscribe-bar
 ! fanboy_newsletter_shopping_allowlist_general_hide.txt
 
 ! Title: uBlock filters – Other Annoyances
-! Last modified: Sat, 08 Mar 2025 16:18:23 +0000
+! Last modified: Mon, 10 Mar 2025 13:59:15 +0000
 ! Expires: 7 days
 ! Description: Filters optimized for uBlock Origin, to be used with EasyList's and/or Adguard's "Other Annoyances" list(s)
 ! License: https://github.com/uBlockOrigin/uAssets/blob/master/LICENSE
@@ -13560,7 +13561,8 @@ pokeos.com##+js(no-fetch-if, doubleclick)
 lemon8-app.com##+js(trusted-click-element, .seo-landing-modal-cancel-btn .design-system-button-container, , 500)
 
 ! animekai.to anti-devtools
-animekai.to##+js(set, console.clear, throwFunc)
+animekai.to##+js(aeld, keydown, e1)
+animekai.to,megaup.cc##+js(set, console.clear, throwFunc)
 
 ! https://github.com/uBlockOrigin/uAssets/issues/27010
 loverslab.com##+js(nano-sib)

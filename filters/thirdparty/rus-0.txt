@@ -16052,6 +16052,9 @@ papillomy.com##.content .custom-block
 igra.life#?#.content > #info:nth-of-type(1):-abp-has(> .textos)
 list-org.com#?#.content > .card ~ div:-abp-has(> center > [id^="adfox_"])
 mos.news##.content > .comment-block[style^="margin"]
+dtf.ru#?#.content > .content-header:-abp-has(> .author > [href="/br"]) ~ .content__body a[href][target="_blank"][rel]
+dtf.ru#?#.content > .content-header:-abp-has(> .author > [href="/luchshii-rating"]) ~ .content__body a[href][target="_blank"][rel]
+dtf.ru#?#.content > .content-header:-abp-has(> .author > [href="/toprate"]) ~ .content__body a[href][target="_blank"][rel]
 seasonvar.one#?#.content > .content-wrap:-abp-has(.pgs-head:-abp-contains(Интересное))
 www.i.ua##.content > .news > div > #news_cont ~ [class]
 poimel.live##.content > .text-block.form-wrap
@@ -18496,7 +18499,6 @@ korrespondent.net##.unit-side-banner
 korrespondent.net##.unit-top-banner
 korrespondent.net##.unit-top-dark-banner
 eurointegration.com.ua##.unit_header-banner
-business-gazeta.ru##.unitindent
 hibiny.ru##.up-pek-top
 lelang.su##.up_b
 101.ru##.uracy
@@ -18957,6 +18959,7 @@ doska.ykt.ru##[data-adurl]
 teknoblog.ru##[data-advadstrackid]
 bryansknovosti.ru,novozybkov.su#?#[data-alias="Copyright"] .widget-area > .widget_text:not(:last-child):-abp-has(script)
 vc.ru##[data-analytics*="native"]
+shuba.life#?#[data-article] > [data-feed-gallery]:-abp-has(a[href*="utm_campai"])
 bobr.by,buhonline.ru,zakon.ru##[data-banner-id]
 lena-miro.ru,levik.blog,livejournal.com,olegmakarenko.ru,periskop.su,shakko.ru,shiro-kino.ru,vadimrazumov.ru##[data-banner-place-id]
 focus.ua,sovets.net,tvtver.ru##[data-banner]
@@ -18976,6 +18979,7 @@ itc.ua##[data-course]
 starhit.ru##[data-creative]
 banki.ru##[data-dfp-container]
 briefly.ru##[data-disclaimer*="Реклама"]
+shuba.life##[data-discount-banner]
 basaru.net.ru,gooool365.org,lexxs.us,redheadsound.studio,superkarate.ru,topfile.tj,uzmov.net,weblance.com.ua##[data-dlebclicks]
 arguments.kyiv.ua,dailynews.kyiv.ua,elegantwoman.kyiv.ua,glamour.kyiv.ua,lady.kyiv.ua,medicalanswers.com.ua,news24.in.ua,ua-novosti.info,ua-vestnik.com,useti.org.ua,womanlife.kyiv.ua,zhenskiy.kyiv.ua##[data-element_type="widget"] a[rel="nofollow"]
 gdetraffic.com##[data-gcat="ads"]
@@ -19323,6 +19327,7 @@ dota2.ru##a[href*="/gobet/"]
 gig-torrent.ru##a[href*="/gobtn.php"]
 black-warez.ru##a[href*="/goto.php?file="]
 newsyou.info##a[href*="/goto/"][target]
+shuba.life##a[href*="/ingredients/buy"]
 mixsoft.org,soccer24.top,sportlive365.net,zfilm-hd.org,zfilme-hd1.site,zserials.cc##a[href*="/is.gd/"]
 posudaa.ru##a[href*="/offer/"]
 profootball.ua##a[href*="/php/rotator/goto.php?id="]
@@ -21911,7 +21916,7 @@ https://*adtech_uid=$~third-party,xmlhttprequest,domain=lena-miro.ru|levik.blog|
 ||imgfrost.net^$third-party
 ||liveinternet.ru/utf/lici.js?
 ||news.mail.ru/-/*.js?
-||pikabu.ru/ajax/*?vO0ke=$xmlhttprequest
+||pikabu.ru/ajax/*?o39oD=$xmlhttprequest
 ||ritsatv.ru^$csp=script-src
 ||ritsatv.ru^$popup
 ||ritsatv.ru^$~document
@@ -23134,8 +23139,9 @@ yandex.ru##.pharmacy-page-view__top-banner
 yandex.ru##.turbo-advert
 yandex.ru##div[id^="R-I-"]
 ! Яндекс.Игры
-yandex.ru##.stack > .aab-adv
-yandex.ru##.stack > .promo
+yandex.ru,yandex.*##.grid-list__game-item_adv
+yandex.ru,yandex.*##.stack > .promo
+yandex.ru,yandex.*##div[class^="FeedAdvBlockRenderer-critical-module__banner"]:empty
 ! Яндекс.Музыка
 music.yandex.ru,music.yandex.*##.bar__driver-container
 music.yandex.ru,music.yandex.*##[class^="audio-advert"]
@@ -26229,6 +26235,7 @@ spletnik.ru##.z-adblock-message
 /adsblocker.js$script,domain=jakondo.ru
 /fck-ab-code.js$domain=the-office.su
 /ggl/*$script,~third-party,domain=lektsii.org|megaobuchalka.ru|mydocx.ru|studopedia.com.ua|studopedia.net|studopedia.org|studopedia.ru|studopedia.su
+/help?ajax=1&name=about_cookie$xmlhttprequest,domain=reshu.by|reshuent.kz|sdamgia.ru
 /javascript_adblockdetector/*$script,domain=baku365.com
 /js/1.js|$script,~third-party,domain=3dsmaxvideo.ru|archicadvideo.ru|autocadvideo.ru|coreldrawvideo.ru|excelvideo.ru|kompasvideo.ru|photoshopvideo.ru|solidworksvideo.ru|wordvideo.ru
 /js/include_name.js|$script,~third-party,domain=3dsmaxvideo.ru|archicadvideo.ru|autocadvideo.ru|coreldrawvideo.ru|excelvideo.ru|kompasvideo.ru|photoshopvideo.ru|solidworksvideo.ru|wordvideo.ru
@@ -26636,6 +26643,7 @@ coub.com##header[class="header -transparent"]:style(background: #e0e0e0 !importa
 cpa.rip###page-wrapper > header:style(margin-bottom: auto !important)
 ! ---
 cq.ru##.box[class*="content"]:style(margin-top: auto !important)
+cq.ru##article[data-post-url^="https://cq.ru/articles/tech/"] .cq-code-block a[href][rel="nofollow"]:not([href^="/"]):not([href^="https://cq.ru/"]):style(pointer-events: none !important; color: inherit !important)
 ! ---
 creativportal.ru##.pocaz:style(width: 10px !important; height: 10px !important; position: fixed !important; top:-100px !important)
 ! ---
@@ -28406,6 +28414,7 @@ lifehacker.ru##+js(href-sanitizer, a[href][rel*="sponsored"][target="_blank"], ?
 hot.game##+js(href-sanitizer, a[href][target="_blank"][rel="nofollow"], ?ulp)
 www.ixbt.com##+js(href-sanitizer, a[href^="//www.ixbt.com/click/?c="], [title])
 wotspeak.org##+js(href-sanitizer, a[href^="/engine/dwn"], ?xf)
+dtf.ru##+js(href-sanitizer, a[href^="https://api.dtf.ru/"][href*="/redirect?to="], ?to)
 pikabu.ru##+js(href-sanitizer, a[href^="https://pikabu.ru/"][href*="?u=http"], ?u)
 nsportal.ru##+js(href-sanitizer, a[href^="https://www.google.com/url?q="])
 youtube.com##+js(href-sanitizer, a[href^="https://www.youtube.com/redirect?event="][href*="&q=http"], ?q)
