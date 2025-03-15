@@ -1,10 +1,10 @@
 ![Adblock Plus 2.0]
-! Checksum: fV26Q4nEjUG6qLML/wMD7w
-! Diff-Path: ../patches/16/16-s-1741891326-3600.patch
+! Checksum: 0VTtfqs6/0ZhCwH1yGzJPg
+! Diff-Path: ../patches/16/16-s-1742013360-3600.patch
 ! Title: AdGuard French filter
 ! Description: Liste FR + AdGuard French filter. Filter list that specifically removes ads on websites in French language.
-! Version: 2.0.50.97
-! TimeUpdated: 2025-03-13T18:37:25+00:00
+! Version: 2.0.51.2
+! TimeUpdated: 2025-03-15T04:32:14+00:00
 ! Expires: 5 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -874,6 +874,7 @@ $xmlhttprequest,third-party,denyallow=fastlycdn.com|doodcdn.co|intensedebate.com
 !
 !
 !
+campingcarlesite.com##div[id^="fancybox-"]
 ||bnbchain.org^$domain=observalgerie.com
 observalgerie.com##+js(abort-current-script, fetch, Uint8Array)
 fsmirror93.lol###ad-banner
@@ -1656,6 +1657,8 @@ app.molotov.tv##+js(no-xhr-if, /ping?token=)
 !
 !
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/200191
+$popup,domain=vidply.com,badfilter
 ! https://github.com/AdguardTeam/AdguardFilters/issues/200517
 $popup,domain=vidmoly.to,badfilter
 ! https://github.com/AdguardTeam/AdguardFilters/issues/198955
@@ -2725,6 +2728,7 @@ alfresco-holidays.com,alfresco-holidays.nl,alfresco-camping.de,eurocamp.co.uk#@#
 -970x250.
 -ad-content-
 -banner-728.
+-banners/ads/
 -content-ads-
 -iframe/?zoneId=
 -native-ad-
@@ -10730,6 +10734,7 @@ $stylesheet,third-party,domain=1fichier.com|7-up.net|9xupload.me|adshrinks.com|a
 ||1maxdegay.com^$subdocument,~third-party
 ||1movies.*/site/$xmlhttprequest
 ||1parrainage.com/logos/habillage
+||2ememain.be/lrp/api/complementary-listings?
 ||3dnatives.com/wp-content/uploads/$script
 ||3dnatives.com/wp-content/uploads/*-bannie
 ||3dnatives.com/wp-content/uploads/*/banniere
@@ -16118,6 +16123,7 @@ quick-tutoriel.com###the-post .warning
 phpsources.org###titre_librairie
 plancul-gratuit.fr,plancul-gratuit.org###toast-container
 viewsurf.com###top-ban
+2ememain.be###top-banner-root
 liligo.fr###top-banner-smart
 webgirondins.com###top-pub-header
 itele.fr###topBanner
@@ -16263,6 +16269,7 @@ bismirabbika.com,orientation-chabab.com##.bann
 jizzbunker.com##.banner-popup
 lareclame.fr##.banner-url
 judgehype.com##.bannerATF_container
+2ememain.be##.bannerContainerLoading
 darjadida.com##.banner_125x125
 wheregoes.com##.banner_leaderboard
 roadsexe.com##.banner_right
@@ -16492,6 +16499,7 @@ valeursactuelles.com##.horizons-va-sidebar
 clubpronostics.com##.horizontal-banner
 meteosun.com##.hotelteaser
 rakuten.com##.hp--categories-populaires--pub
+2ememain.be##.hz-Banner
 vide-greniers.org##.iad
 lexpress.fr##.immo
 pagesblanches.be,rtbf.be##.imu
@@ -16972,7 +16980,6 @@ delhaize.be##[id*="sponsored_products"]
 blick.ch##[id^="appnexus-placement"]
 comarketing-news.fr##[id^="comar-"]
 boulanger.com##[id^="criteo_pageListe"]
-carrefour.fr##[id^="data-advertising"]
 3dnatives.com##[id^="dnati-"]
 commentcamarche.com,commentcamarche.net,free.fr,journaldesfemmes.com,orange.fr,turf-fr.com##[id^="lig_"]
 jeuxvideomoinschers.fr,tahiti-infos.com##[id^="pub_"]
@@ -17341,8 +17348,11 @@ nocibe.fr##.product-grid-column:has(.product-tile__sponsored)
 frandroid.com##.sticky-content:has([class^="HalfpageAd"])
 20min.ch#?#.clusterTop:-abp-has(.teaser:-abp-has(h3:-abp-contains(Paid Post)))
 2ememain.be#?#.hz-Listing--list-item:-abp-has(.hz-Listing-priority:-abp-contains(Pub au top))
+2ememain.be#?#.hz-Listing--list-item:-abp-has(.hz-Listing-seller-link:-abp-contains(Visiter le site internet))
+boulanger.com##[class*="kamino"]:has(.product-list__product-sponsored)
 cleanrider.com##[class*="min-h-"]:has([id^="optidigital-ad"])
 fr.shopping.rakuten.com##[data-productid]:has([class^="style_sponsoredAds"])
+boulanger.com##[id*="kamino"]:has(.product-list__product-sponsored)
 algerie-eco.com#?#.td_block_wrap:-abp-has(.block-title:-abp-contains(sponsorisés))
 aliexpress.com,aliexpress.us#?#._2FypS:-abp-has(._1rKqn:-abp-contains(/AD|Annonce|إعلان/))
 aliexpress.com,aliexpress.us#?#.search-item-card-wrapper-gallery:-abp-has([class^="multi--ax"]:-abp-contains(/AD|Annonce|إعلان/))
