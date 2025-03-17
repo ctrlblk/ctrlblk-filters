@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: EasyList – Newsletter Notices
-! Last modified: Thu, 13 Mar 2025 13:13:27 +0000
+! Last modified: Mon, 17 Mar 2025 02:15:16 +0000
 ! Expires: 7 days (update frequency)
 ! *** easylist:template_header.txt ***
 !
@@ -3653,8 +3653,6 @@ driving.ca##[data-aqa="widget-breaking-banner"]
 cepa.org##[data-block="newsletter"]
 plantbasednews.org##[data-class="support-us__wrapper"]
 abc.com.au,abc.net.au##[data-component="Newsletter"]
-charlieintel.com,dexerto.com##[data-cy*="Newsletter"]
-dexerto.com##[data-cy="SignupWidget"]
 digg.com##[data-cy="namespace-home-newsletter"]
 nationalpost.com##[data-evt-val*="author_newsletter"]
 psyche.co##[data-ga-view-prompt="psyche_cta_pop_up_subscribe"]
@@ -3781,6 +3779,7 @@ babylonbee.com##.hidden:has-text(Fake news)
 esports.gg##.inset-0.fixed:has-text(Sign up)
 autonews.com##.lg\:u-max-w-\[345px\]:has-text(Sign up)
 mensjournal.com##.m-detail--body > p:has-text(Sign up for the)
+dexerto.com##.mb-16:has-text(Sign up)
 commoncog.com##.md\:px-2.py-10:has-text(Subscribe to the newsletter)
 businessinsider.in##.mx-auto.container:has-text(NEWSLETTER)
 bakerbynature.com##.optin:has-text(Sign Up)
@@ -5783,7 +5782,7 @@ doctorofcredit.com#@#.wpdiscuz-subscribe-bar
 ! fanboy_newsletter_shopping_allowlist_general_hide.txt
 
 ! Title: uBlock filters – Other Annoyances
-! Last modified: Sat, 15 Mar 2025 05:12:42 +0000
+! Last modified: Sun, 16 Mar 2025 22:04:05 +0000
 ! Expires: 7 days
 ! Description: Filters optimized for uBlock Origin, to be used with EasyList's and/or Adguard's "Other Annoyances" list(s)
 ! License: https://github.com/uBlockOrigin/uAssets/blob/master/LICENSE
@@ -12911,9 +12910,9 @@ pendulumedu.com##body:remove-attr(/oncopy|oncut|onpaste/)
 
 ! https://github.com/uBlockOrigin/uAssets/issues/22220
 !#if cap_html_filtering
-puzzle-loop.com,puzzle-words.com,puzzle-chess.com,puzzle-thermometers.com,puzzle-norinori.com,puzzle-minesweeper.com,puzzle-slant.com,puzzle-lits.com,puzzle-galaxies.com,puzzle-tents.com,puzzle-battleships.com,puzzle-pipes.com,puzzle-hitori.com,puzzle-heyawake.com,puzzle-shingoki.com,puzzle-masyu.com,puzzle-stitches.com,puzzle-aquarium.com,puzzle-tapa.com,puzzle-star-battle.com,puzzle-kakurasu.com,puzzle-skyscrapers.com,puzzle-futoshiki.com,puzzle-shakashaka.com,puzzle-kakuro.com,puzzle-jigsaw-sudoku.com,puzzle-killer-sudoku.com,puzzle-binairo.com,puzzle-nonograms.com,puzzle-sudoku.com,puzzle-light-up.com,puzzle-bridges.com,puzzle-shikaku.com,puzzle-nurikabe.com,puzzle-dominosa.com##^script:has-text(ab927c49cf1b)
+puzzle-loop.com,puzzle-words.com,puzzle-chess.com,puzzle-thermometers.com,puzzle-norinori.com,puzzle-minesweeper.com,puzzle-slant.com,puzzle-lits.com,puzzle-galaxies.com,puzzle-tents.com,puzzle-battleships.com,puzzle-pipes.com,puzzle-hitori.com,puzzle-heyawake.com,puzzle-shingoki.com,puzzle-masyu.com,puzzle-stitches.com,puzzle-aquarium.com,puzzle-tapa.com,puzzle-star-battle.com,puzzle-kakurasu.com,puzzle-skyscrapers.com,puzzle-futoshiki.com,puzzle-shakashaka.com,puzzle-kakuro.com,puzzle-jigsaw-sudoku.com,puzzle-killer-sudoku.com,puzzle-binairo.com,puzzle-nonograms.com,puzzle-sudoku.com,puzzle-light-up.com,puzzle-bridges.com,puzzle-shikaku.com,puzzle-nurikabe.com,puzzle-dominosa.com,puzzle-yin-yang.com##^script:has-text(ab927c49cf1b)
 !#else
-puzzle-loop.com,puzzle-words.com,puzzle-chess.com,puzzle-thermometers.com,puzzle-norinori.com,puzzle-minesweeper.com,puzzle-slant.com,puzzle-lits.com,puzzle-galaxies.com,puzzle-tents.com,puzzle-battleships.com,puzzle-pipes.com,puzzle-hitori.com,puzzle-heyawake.com,puzzle-shingoki.com,puzzle-masyu.com,puzzle-stitches.com,puzzle-aquarium.com,puzzle-tapa.com,puzzle-star-battle.com,puzzle-kakurasu.com,puzzle-skyscrapers.com,puzzle-futoshiki.com,puzzle-shakashaka.com,puzzle-kakuro.com,puzzle-jigsaw-sudoku.com,puzzle-killer-sudoku.com,puzzle-binairo.com,puzzle-nonograms.com,puzzle-sudoku.com,puzzle-light-up.com,puzzle-bridges.com,puzzle-shikaku.com,puzzle-nurikabe.com,puzzle-dominosa.com##+js(rmnt, script, ab927c49cf1b)
+puzzle-loop.com,puzzle-words.com,puzzle-chess.com,puzzle-thermometers.com,puzzle-norinori.com,puzzle-minesweeper.com,puzzle-slant.com,puzzle-lits.com,puzzle-galaxies.com,puzzle-tents.com,puzzle-battleships.com,puzzle-pipes.com,puzzle-hitori.com,puzzle-heyawake.com,puzzle-shingoki.com,puzzle-masyu.com,puzzle-stitches.com,puzzle-aquarium.com,puzzle-tapa.com,puzzle-star-battle.com,puzzle-kakurasu.com,puzzle-skyscrapers.com,puzzle-futoshiki.com,puzzle-shakashaka.com,puzzle-kakuro.com,puzzle-jigsaw-sudoku.com,puzzle-killer-sudoku.com,puzzle-binairo.com,puzzle-nonograms.com,puzzle-sudoku.com,puzzle-light-up.com,puzzle-bridges.com,puzzle-shikaku.com,puzzle-nurikabe.com,puzzle-dominosa.com,puzzle-yin-yang.com##+js(rmnt, script, ab927c49cf1b)
 !#endif
 
 ! https://animefire.plus/ anti right-click, ondragstart
@@ -13474,7 +13473,10 @@ hotleak.vip,hotleaks.tv,topfaps.com##+js(aeld, keydown, 123)
 astro-cric.pages.dev,crichype.*,jio.pftv.ws,shz.al,tnt2-cricstreaming.pages.dev,wlo-cricstreamiing.pages.dev##+js(set, confirm, noopFunc)
 
 ! https://github.com/uBlockOrigin/uAssets/issues/26426
-fandom.com##+js(trusted-set-cookie, leftPanelOpen, 0)
+fandom.com##+js(set-cookie, leftPanelOpen, 0)
+!#if env_mobile
+fandom.com##+js(set-cookie, mdpsc, 1)
+!#endif
 
 ! https://github.com/uBlockOrigin/uAssets/issues/26435
 baomidou.com##astro-island[opts^="{\"name\":\"CheckAdBlocked\""]
@@ -13628,3 +13630,10 @@ dropbox.com##+js(trusted-click-element, .dig-Modal:has(div[data-testid="digTrunc
 
 ! https://www.rottentomatoes.com/browse/movies_at_home/affiliates:apple-tv-plus
 ||rottentomatoes.com/*/affiliates:$doc,uritransform=/\/affiliates:[^\/?#]+//
+
+! amorlatinochat.com anti devtools
+||jsdelivr.net/npm/disable-devtool@latest/disable-devtool.min.js
+||404le.com/js/disable-devtool.min.js
+
+! https://github.com/uBlockOrigin/uAssets/issues/26995
+pawastreams.pro##+js(nostif, debugger)
