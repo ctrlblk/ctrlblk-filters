@@ -7,9 +7,9 @@
 ! Works best with EasyList - be sure to subscribe it as well!
 ! Działa najlepiej z EasyList - pamiętaj aby zasubskrybować!
 !   Patronite ==> https://patronite.pl/polskiefiltry
-! Last modified: 12 March 2025
+! Last modified: 21 March 2025
 ! Expires: 1 day
-! Version: 2025031201
+! Version: 2025032101
 ! Support:
 !   Email >> errorsfilters@certyficate.it
 !   Github >> https://github.com/MajkiIT/polish-ads-filter/issues
@@ -17,7 +17,7 @@
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright © 2025 Certyficate IT
 ! Najnowsza wersja zawsze na: https://www.certyficate.it/adblock
-! v.2025031201 aktualizacja: sr, 12 marzec 2025, 14:00:00
+! v.2025032101 aktualizacja: ptk, 21 marzec 2025, 15:15:00
 !
 !
 !1#-----------------------General advert blocking filters-----------------------!
@@ -4307,6 +4307,10 @@ dlapacjenta.pl##.banner-link
 dlapacjenta.pl###drawer
 www.nowafarmacja.pl##div#ulixes-background.fixed > .right
 www.nowafarmacja.pl##div#ulixes-background.fixed > .left
+www.swiatleku.pl##.banner-link
+www.mp.pl##.bazalekow-top-banner
+www.mp.pl###top-board
+www.gdziepolek.pl##.lazy-load-image-loaded.opacity.lazy-load-image-background
 !
 !10#----------------------Specific advert blocking filters-----------------------!
 /*300x300$image,domain=portalgwiazd.pl
@@ -5873,9 +5877,9 @@ avanti24.pl,czterykaty.pl,edziecko.pl,g.pl,gazeta.pl,haps.pl,hapsvod.pl,magazyn-
 ! Wsparcie:
 !   Patronite ==> https://patronite.pl/polskiefiltry
 !   PayPal ==> https://www.paypal.com/pools/c/87zNJ8OJ3I
-! Last modified: 29 January 2025
+! Last modified: 21 March 2025
 ! Expires: 1 day
-! Version: 2025012902
+! Version: 2025032101
 ! Support:
 !   Email >> errorsfilters@certyficate.it
 !   Github >> https://github.com/MajkiIT/polish-ads-filter/issues
@@ -5883,7 +5887,7 @@ avanti24.pl,czterykaty.pl,edziecko.pl,g.pl,gazeta.pl,haps.pl,hapsvod.pl,magazyn-
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright © 2025 Certyficate IT
 ! Najnowsza wersja zawsze na: https://www.certyficate.it/adblock
-! v.2025012901 aktualizacja: sr, 29 stycznia 2025, 17:05:00
+! v.2025032101 aktualizacja: ptk, 21 marca 2025, 15:15:00
 !
 !
 !--------------------------Rules only to uBlock-------------!
@@ -6066,6 +6070,9 @@ abczdrowie.pl,autokult.pl,echirurgia.pl,film.wp.pl,fotoblogia.pl,gadzetomania.pl
 sportowefakty.wp.pl##+js(aopr, Object.prototype.bodyCode)
 open.fm##+js(set, Object.prototype.gafSlot, undefined)
 open.fm##body:style(pointer-events: auto!important;)
+open.fm#@#+js(set-constant, Object.prototype.gafSlot, undefined)
+||criteo.net^$script,redirect=noopjs,domain=open.fm
+||doubleclick.net^$image,redirect=1x1.gif,domain=open.fm
 abczdrowie.pl#@#+js(no-setTimeout-if, visibility, 0)
 www.money.pl###app > div > div:matches-css(background-image: /^url\(.https:\/\/v\.wpimg\.pl/)
 pogoda.wp.pl##.grid-right > div:matches-css(background-image: /data:image\/png;base64,/)
@@ -6443,9 +6450,9 @@ ppe.pl##+js(ac, box_active, #hot_1)
 ! Wsparcie:
 !   Patronite ==> https://patronite.pl/polskiefiltry
 !   PayPal ==> https://www.paypal.com/pools/c/87zNJ8OJ3I
-! Last modified: 29 January 2025
+! Last modified: 1 Match 2025
 ! Expires: 1 day
-! Version: 2025012902
+! Version: 2025032101
 ! Support:
 !   Email >> errorsfilters@certyficate.it
 !   Github >> https://github.com/MajkiIT/polish-ads-filter/issues
@@ -6453,7 +6460,7 @@ ppe.pl##+js(ac, box_active, #hot_1)
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Copyright © 2025 Certyficate IT
 ! Najnowsza wersja zawsze na: https://www.certyficate.it/adblock
-! v.2025012902 aktualizacja: sr, 29 stycznia 2025, 17:05:00
+! v.2025032101 aktualizacja: ptk, 21 marca 2025, 15:15:00
 !
 !
 ! gahe.pl
@@ -6736,5 +6743,8 @@ tekstowo.pl#$##advSong { visibility: hidden !important }
 tekstowo.pl#@#[class^="adv-"]
 tekstowo.pl#$#.teledysk { flex: 0 0 100% !important; max-width: 100% !important; }
 !
+open.fm#@#+js(set-constant, Object.prototype.gafSlot, undefined)
+||criteo.net^$script,redirect=noopjs,domain=open.fm
+||doubleclick.net^$image,redirect=1x1.gif,domain=open.fm
 
 !#endif

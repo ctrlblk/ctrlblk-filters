@@ -1,10 +1,10 @@
 ![Adblock Plus 2.0]
-! Checksum: W7uhMIZRbu67nL9FPLzQCw
-! Diff-Path: ../patches/9/9-s-1742503028-3600.patch
+! Checksum: rX1qIb8o8Noyx07Tw9ZnMw
+! Diff-Path: ../patches/9/9-s-1742582221-3600.patch
 ! Title: AdGuard Spanish/Portuguese filter
 ! Description: Filter list that specifically removes ads on websites in Spanish, Portuguese, and Brazilian Portuguese languages.
-! Version: 2.0.29.29
-! TimeUpdated: 2025-03-20T20:32:05+00:00
+! Version: 2.0.29.32
+! TimeUpdated: 2025-03-21T18:32:03+00:00
 ! Expires: 5 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -2189,6 +2189,8 @@ c5n.com,t13.cl,solowrestling.mundodeportivo.com,todojujuy.com,mendozapost.com,me
 !
 ! NOTE: Specific rules
 !
+br.op.gg##tr.ad
+tabelafipebrasil.com##div:has(> ins.adsbygoogle)
 olx.com.br##div[class^="Advertising"]
 hentaijl.com##+js(window.open-defuser)
 hentaijl.com##+js(abort-current-script, EventTarget.prototype.addEventListener, window.open)
@@ -3872,7 +3874,7 @@ lapoliticaonline.*###header-banner-wrapper
 onepieceex.net##.banner-resposivo
 tecmundo.com.br##p > a[href^="https://bit.ly/"][target="_blank"] > span > img
 ||img.ibxk.com.br/*/banner-*.png$domain=tecmundo.com.br
-redgol.cl,lapaginamillonaria.com,e-noticies.cat,econodata.com.br,edatv.news,tomatazos.com,wapa.pe,sicnoticias.pt,g24.gal,levelup.com,eldiario.es,tuasaude.com,globo.com,eltiempo.com,gauchazh.clicrbs.com.br,hobbyconsolas.com,larepublica.pe,vozpopuli.com##.ad-container
+contaspoupanca.pt,redgol.cl,lapaginamillonaria.com,e-noticies.cat,econodata.com.br,edatv.news,tomatazos.com,wapa.pe,sicnoticias.pt,g24.gal,levelup.com,eldiario.es,tuasaude.com,globo.com,eltiempo.com,gauchazh.clicrbs.com.br,hobbyconsolas.com,larepublica.pe,vozpopuli.com##.ad-container
 hobbyconsolas.com##div[class^="ad-slot_"]
 hobbyconsolas.com##div[class^="placeholder_placeholder"]
 vozpopuli.com##.home_1_ad
