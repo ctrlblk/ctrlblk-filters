@@ -1,7 +1,7 @@
 [uBlock Origin]
 ! Title: List-KR for uBlock Origin
 ! Description: List-KR for uBlock Origin. Maintained by the adblock community and AdGuard.
-! Version: 2025.0323.2
+! Version: 2025.0323.5
 ! Expires: 12 hours
 ! Homepage: https://github.com/List-KR/List-KR
 ! Support: https://list-kr-community.pages.dev/docs/
@@ -1679,6 +1679,8 @@ hankookilbo.com##div[class*="-ad-"]:not(data-el)
 mininote.co.kr##rs-fullwidth-wrap[style^="margin-top:"]
 mininote.co.kr##rs-module-wrap[id^="rev_slider_"]
 muko.kr##.xe-widget-wrapper > div[style]:has(a[href^="/ad"])
+banhub.xyz##div.fixed:has(> div.container)
+banhub.xyz##div.hidden[class*="xl:block"]
 m.gmarket.co.kr##.js-impressionable
 gmarket.co.kr###login-banner-box
 www.naver.com###shortcutArea .shortcut_item:has( > a[href*="veta.naver.com"] > i.ico_ad)
@@ -2805,6 +2807,7 @@ koreaminecraft.net##tr.notice:not(:has(.wst_member_title))
 !
 ! DOMAIN-REFRESHER: START
 !
+itrulli.com##div.elementor-widget-shortcode
 avjoa69.com##img[onclick]
 avjoa69.com##.happy-header
 jusokorea5.com,jusokorea6.com,jusokorea7.com,jusokorea8.com,jusokorea9.com,jusokorea10.com,jusokorea11.com,jusokorea12.com,jusokorea13.com,jusokorea14.com,jusokorea15.com,jusokorea16.com,jusokorea17.com,jusokorea18.com##div[class*="-ad-banner"]
@@ -3168,6 +3171,7 @@ ponh.info#$?#div[data-mesh-id][data-testid] > div[id^="comp-"]:has(form[id][clas
 algumon.com#$?#.nav-mobile:matches-css(display: none) ~ .base > .main { width: calc(100% - 290px) !important; }
 5donews.co.kr#$?#.body > .content.xe_content:not(:has(article)) { width: auto !important; }
 mule.co.kr#$?#.section-lefttop-center:has(> .mule-today) { width: 100% !important; }
+banhub.xyz#$#html{ overflow: visible !important; }
 !
 ! DOMAIN-REFRESHER: START
 !
@@ -3256,6 +3260,7 @@ zum.com##+js(set, _ads_zum_main_initbanner_750_zum_main_br_widget_336, true)
 watchfreejavonline.co##+js(acis, popMagic.init)
 ! https://github.com/uBlockOrigin/uBlock-issues/issues/2130#issuecomment-1621684566
 apycsports.com##*[class*="not_cookie"]:remove-class(not_cookie)
+banhub.xyz##*[class*="backdrop-blur-lg"]:remove-class(backdrop-blur-lg)
 ! m.humoruniv.com
 m.humoruniv.com##+js(set, list_end_run_read_top_boom, noopFunc)
 m.humoruniv.com##+js(set, list_end_run_pds_notice_boom, noopFunc)
