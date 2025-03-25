@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: EasyList – Newsletter Notices
-! Last modified: Mon, 24 Mar 2025 03:54:16 +0000
+! Last modified: Tue, 25 Mar 2025 03:53:34 +0000
 ! Expires: 7 days (update frequency)
 ! *** easylist:template_header.txt ***
 !
@@ -2219,6 +2219,7 @@ richmondfed.org##.comp-subscribe
 vogue.com##.component-cnid-modal-backdrop
 judicialwatch.org##.component-daily-update-sticky
 investmentexecutive.com##.component-quick-subscribe-newsletters
+news.artnet.com##.condensed-newsletter-signup
 citizen.org##.connect1
 nfib.com##.connected
 wired.com##.consumer-marketing-unit--cm-footer
@@ -3108,7 +3109,7 @@ newsweek.com##.promo-link
 themarkup.org##.promotion--newsletter
 simpurelife.com##.proof-factor-app
 slate.com##.prudie-google-form
-celebrityaccess.com,eastasiaforum.org,flowmountainbike.com,mag.toyota.co.uk##.pum-overlay
+campblessing.org,celebrityaccess.com,eastasiaforum.org,flowmountainbike.com,mag.toyota.co.uk##.pum-overlay
 thebaltimorebanner.com##.push-notification-inline-cta
 sprintmedical.in##.py-8.bg-gradient
 levernews.com##.py-\[60px\]
@@ -3331,6 +3332,7 @@ semafor.com##.styles_newsletterSection__6CWXE
 thehackernews.com,yardbarker.com##.sub-button
 fansided.com,lastnighton.com,netflixlife.com,stormininnorman.com,winteriscoming.net##.sub-footer-container
 stuff.co.nz##.sub-nl-container
+emarketer.com##.subToDaily
 salon.com##.sub_promo
 magnetomagazine.com##.subcribe-banner
 bolavip.com##.subs-block
@@ -3843,6 +3845,7 @@ newswire.ca#?#.pull-right.inline-gallery-container:-abp-contains(Post this)
 notateslaapp.com#?#.mobile-only-on-col-ab:-abp-contains(Subscribe)
 notthebee.com#?#.bg-gray-50:-abp-contains(Want to stay informed)
 officialcharts.com#?#.border-brand-pink:-abp-contains(inbox)
+theatlantic.com##p.ArticleParagraph_root__4mszW > small:has-text(Sign up)
 slate.com##p.slate-paragraph > em:has-text(Sign up for)
 pcmag.com#?#.md\:decorative-horizontal-lines:-abp-contains(subscribe)
 people.com#?#strong:-abp-contains(daily newsletter)
@@ -3983,7 +3986,6 @@ breakingdefense.com,colombiapress.co,deadline.com,deghi.it,insideevs.com,mlbtrad
 androidauthority.com#?#div[class^="-_"] > form:-abp-contains(newsletters)
 cultofmac.com#?#.section > .wrapper:-abp-contains(Newsletters)
 ! Generichide
-news.artnet.com###ouibounce-modal
 calgaryherald.com,edmontonjournal.com,montrealgazette.com,ottawacitizen.com,thestarphoenix.com###pn-newsletter-signup
 merriam-webster.com##.footer-subscribe-block
 soccity.net##.newsletter-block
@@ -5801,7 +5803,7 @@ doctorofcredit.com#@#.wpdiscuz-subscribe-bar
 ! fanboy_newsletter_shopping_allowlist_general_hide.txt
 
 ! Title: uBlock filters – Other Annoyances
-! Last modified: Mon, 24 Mar 2025 03:25:35 +0000
+! Last modified: Mon, 24 Mar 2025 17:55:13 +0000
 ! Expires: 7 days
 ! Description: Filters optimized for uBlock Origin, to be used with EasyList's and/or Adguard's "Other Annoyances" list(s)
 ! License: https://github.com/uBlockOrigin/uAssets/blob/master/LICENSE
@@ -13661,3 +13663,6 @@ sporttotal.tv##+js(set, HTMLImageElement.prototype.onerror, undefined)
 
 ! https://bcs16.ro/ - anti-contextmenu
 bcs16.ro##+js(aopw, document.oncontextmenu)
+
+! kunststoffe.de anti adblock annoyance
+@@||kunststoffe.de/ads_tracking.js$xhr,1p
