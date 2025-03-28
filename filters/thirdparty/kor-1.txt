@@ -1,7 +1,7 @@
 [uBlock Origin]
 ! Title: List-KR for uBlock Origin
 ! Description: List-KR for uBlock Origin. Maintained by the adblock community and AdGuard.
-! Version: 2025.0326.2
+! Version: 2025.0328.1
 ! Expires: 12 hours
 ! Homepage: https://github.com/List-KR/List-KR
 ! Support: https://list-kr-community.pages.dev/docs/
@@ -521,6 +521,7 @@ m.cafe.naver.com##.banner_add.bottom:matches-path(/ca-fe\\/web\\/cafes\\/(steami
 /data/banner.json?$domain=~nintendo.*
 /ad-manager.min.js
 !
+||c.011st.com/img/common/sprites/sp_ad_2x.png
 ||conist-cdn.com/*/iV/BO/
 ||conist-cdn.com/*/9j/4A/
 ||conist-cdn.com/dd/ad/
@@ -2809,6 +2810,11 @@ koreaminecraft.net##tr.notice:not(:has(.wst_member_title))
 !
 ! DOMAIN-REFRESHER: START
 !
+yako.gg##.banner_grid
+v119.com##.zone-right > *:has(~ .no-pd):not(:has(> .tabbox))
+v119.com##.at-boxed .zone-center > .widget-box ~ *
+! aglint-disable-next-line
+newtoki359.com,newtoki360.com,newtoki361.com,newtoki362.com,newtoki363.com,newtoki364.com,newtoki365.com,newtoki366.com,newtoki367.com,newtoki368.com,newtoki369.com,newtoki370.com,newtoki371.com,newtoki372.com,newtoki373.com,newtoki374.com,newtoki375.com##img[title="소울_뉴토끼_이벤트_배너"]
 itrulli.com##div.elementor-widget-shortcode
 avjoa69.com##img[onclick]
 avjoa69.com##.happy-header
@@ -3422,7 +3428,8 @@ sysnet.pe.kr##+js(nostif, banner_book)
 @@||new-in.pmirnc.com/public/fingerprint2.js$script
 @@||cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js$script,domain=typing.works
 ||ssl.pstatic.net/tveta/libs/glad/prod/gfp-core.js$script,domain=m.search.naver.com,redirect=noop.js
-avdbs.com##+js(aopr, ad_blk)
+avdbs.com##+js(scis, ad_blk)
+avdbs.com#@#.ad-btn
 genshin.gamedot.org##+js(nostif, blockCheck2022)
 errornight.com##+js(aost, alert, chk_adBlock)
 ||ssl.pstatic.net/tveta/libs/ssp-video/prod/ssp.web.sdk_$script,redirect=noop.js,domain=m.sports.naver.com
