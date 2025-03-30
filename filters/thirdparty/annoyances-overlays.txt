@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: EasyList – Newsletter Notices
-! Last modified: Sat, 29 Mar 2025 02:13:09 +0000
+! Last modified: Sun, 30 Mar 2025 02:21:46 +0000
 ! Expires: 7 days (update frequency)
 ! *** easylist:template_header.txt ***
 !
@@ -1144,7 +1144,6 @@
 ##.subscribe-slide
 ##.subscribe-widget-container
 ##.subscribe-widget-sidebar
-##.subscribePopup
 ##.subscribeShortcodeContainer
 ##.subscribeWidget
 ##.subscribeWidgetContainer
@@ -1276,6 +1275,12 @@
 ##div[data-newsletter-2]
 ##gannett-atoms-component-newsletter-cta
 ##journey-inline-newsletter
+! floodlightnews.org
+##.gh-footer-signup
+##.gh-outer.gh-cta
+##.gh-portal-triggerbtn-iframe
+##.gh-post-page-cta
+##.outpost-pub-container
 ! stltoday.com/buffalonews.com
 ##div[id^="pu-email-form-"]
 ! beursduivel.be,debeurs.nl,belegger.nl
@@ -2519,10 +2524,7 @@ socialistworker.co.uk##.gform_fields
 businessinsider.nl,catholicherald.co.uk,centralmaine.com,childrenshealthdefense.org,kusc.org,mondoweiss.net,motoring.com.au,navyhistory.au,pv-magazine-usa.com,sumptuousliving.net,sunjournal.com,thecollegefix.com,threatpost.com,trendingpolitics.com,tylerwoodgroup.com,whoprofits.org,womensagenda.com.au,wvexplorer.com,yellowhammernews.com##.gform_widget
 atlanticcouncil.org,dictionary.com,eiwittrends.nl,pressherald.com,pv-magazine.com,reason.com,revolvermag.com,thefinancialbrand.com,trendingpolitics.com,undark.org,vtdigger.org##.gform_wrapper
 platformer.news,therage.co##.gh-cta
-broadbandbreakfast.com,disconnect.blog,platformer.news,spacebar.news,therage.co##.gh-footer-signup
 platformer.news##.gh-header
-evinfocus.com,kyivindependent.com,readtangle.com,thecompanion.app##.gh-portal-triggerbtn-iframe
-techloy.com,thepickool.com##.gh-post-page-cta
 team17.com##.global-newsletterBanner
 usatoday.com##.gnt_m_th_em
 marketbeat.com##.gradient-purple
@@ -5809,7 +5811,7 @@ doctorofcredit.com#@#.wpdiscuz-subscribe-bar
 ! fanboy_newsletter_shopping_allowlist_general_hide.txt
 
 ! Title: uBlock filters – Other Annoyances
-! Last modified: Sat, 29 Mar 2025 04:21:28 +0000
+! Last modified: Sat, 29 Mar 2025 05:32:02 +0000
 ! Expires: 7 days
 ! Description: Filters optimized for uBlock Origin, to be used with EasyList's and/or Adguard's "Other Annoyances" list(s)
 ! License: https://github.com/uBlockOrigin/uAssets/blob/master/LICENSE
@@ -6979,13 +6981,9 @@ keybr.com##.Placeholder
 ! https://forums.lanik.us/viewtopic.php?f=62&t=38298
 kitguru.net##+js(acs, addEventListener, adsbygoogle.length)
 
-! https://github.com/AdguardTeam/AdguardFilters/issues/72222
 ! https://github.com/AdguardTeam/AdguardFilters/issues/72225
-! https://github.com/AdguardTeam/AdguardFilters/issues/72227
 ! https://github.com/AdguardTeam/AdguardFilters/issues/72228
-! https://github.com/AdguardTeam/AdguardFilters/issues/72229
-2hbn.com,bilgisentezi.com,farklifarkli.com,readingclock.com##.adace-popup
-bilgisentezi.com##.adace-slideup-slot-wrap
+2hbn.com,farklifarkli.com##.adace-popup
 
 ! https://www.reddit.com/r/uBlockOrigin/comments/kzrus8/adblock_detected/
 *$script,redirect-rule=noopjs,domain=mail.inbox.lv
