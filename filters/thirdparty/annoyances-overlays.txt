@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: EasyList – Newsletter Notices
-! Last modified: Sun, 30 Mar 2025 02:21:46 +0000
+! Last modified: Mon, 31 Mar 2025 03:54:56 +0000
 ! Expires: 7 days (update frequency)
 ! *** easylist:template_header.txt ***
 !
@@ -1368,14 +1368,14 @@
 ||omnisnippet1.com^$domain=miuratakuya.store|yourcelebritymagazines.com
 ||p.ynet.co.il^$subdocument
 ||p2a.co/embed/widget/app/$domain=thefire.org
-||piano.io^$domain=bbc.com|bbcgoodfood.com|billboard.com|deadline.com|nationalobserver.com|npr.org|prospectmagazine.co.uk|rawstory.com|refinery29.com|rollingstone.com|sifted.eu|telegraph.co.uk|the42.ie|thedailybeast.com|theintercept.com|thelogic.co|thenation.com|wwd.com
+||piano.io^$domain=artnews.com|bbc.com|bbcgoodfood.com|billboard.com|deadline.com|nationalobserver.com|npr.org|prospectmagazine.co.uk|rawstory.com|refinery29.com|rollingstone.com|sifted.eu|telegraph.co.uk|the42.ie|thedailybeast.com|theintercept.com|thelogic.co|thenation.com|wwd.com
 ||researchnews.cc/subscribe.html
 ||scmp.com/misc/inkstone_sub_widget/
 ||sibforms.com/serve/$domain=maidenhead-advertiser.co.uk|sloughexpress.co.uk
 ||subscriptions.cbc.ca^$xmlhttprequest
 ||theintercept.com/xbuilder/$script
 ||thejewishstar.com/images/enews-ad.png
-||tinypass.com^$domain=bbc.com|bbcgoodfood.com|billboard.com|deadline.com|nationalobserver.com|npr.org|prospectmagazine.co.uk|rawstory.com|refinery29.com|rollingstone.com|sifted.eu|telegraph.co.uk|the42.ie|thedailybeast.com|theintercept.com|thelogic.co|thenation.com|wwd.com
+||tinypass.com^$domain=artnews.com|bbc.com|bbcgoodfood.com|billboard.com|deadline.com|nationalobserver.com|npr.org|prospectmagazine.co.uk|rawstory.com|refinery29.com|rollingstone.com|sifted.eu|telegraph.co.uk|the42.ie|thedailybeast.com|theintercept.com|thelogic.co|thenation.com|wwd.com
 ||waterfordwhispersnews.com/wp-content/themes/therex-child/js/_newsletter-article-signup.js
 ||wisepops.com^$domain=grist.org|prospect.org
 
@@ -5811,7 +5811,7 @@ doctorofcredit.com#@#.wpdiscuz-subscribe-bar
 ! fanboy_newsletter_shopping_allowlist_general_hide.txt
 
 ! Title: uBlock filters – Other Annoyances
-! Last modified: Sat, 29 Mar 2025 05:32:02 +0000
+! Last modified: Sun, 30 Mar 2025 07:22:48 +0000
 ! Expires: 7 days
 ! Description: Filters optimized for uBlock Origin, to be used with EasyList's and/or Adguard's "Other Annoyances" list(s)
 ! License: https://github.com/uBlockOrigin/uAssets/blob/master/LICENSE
@@ -6590,8 +6590,8 @@ almasdarnews.com##+js(acs, jQuery, ai_adb)
 
 ! https://github.com/AdguardTeam/AdguardFilters/issues/78541
 *$xhr,redirect-rule=noopjs,domain=maxedtech.com
-@@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$script,domain=maxedtech.com
-@@||googlesyndication.com^$xhr,domain=maxedtech.com
+maxedtech.com##+js(no-fetch-if, googlesyndication)
+maxedtech.com##+js(no-xhr-if, googlesyndication)
 
 ! https://github.com/AdguardTeam/AdguardFilters/issues/49311
 nmac.to##.alert-errors.in.fade.alert
@@ -7685,6 +7685,10 @@ sporttotal.tv##+js(set, HTMLImageElement.prototype.onerror, undefined)
 
 ! kunststoffe.de anti adblock annoyance
 @@||kunststoffe.de/ads_tracking.js$xhr,1p
+
+! https://github.com/uBlockOrigin/uAssets/issues/26042
+time.is###attention
+time.is##html:style(overflow: auto !important;)
 
 ! END: Anti-adblock
 
