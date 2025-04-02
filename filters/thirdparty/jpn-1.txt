@@ -1,10 +1,10 @@
 ![Adblock Plus 2.0]
-! Checksum: ONMFO0oa4EeQlOeH/pqHpA
-! Diff-Path: ../patches/7/7-s-1743354575-3600.patch
+! Checksum: WBBKIQMQL8k0/8HqzsSP3Q
+! Diff-Path: ../patches/7/7-s-1743513498-3600.patch
 ! Title: AdGuard Japanese filter
 ! Description: Filter that enables ad blocking on websites in Japanese language.
-! Version: 2.0.63.27
-! TimeUpdated: 2025-03-30T17:06:03+00:00
+! Version: 2.0.63.31
+! TimeUpdated: 2025-04-01T13:14:15+00:00
 ! Expires: 5 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -1514,6 +1514,9 @@ jikayosha.jp#$#.wym-v2022__header.is-scroll-up ~ .wym-v2022__footer-fixed.is-pc-
 /wp-content/uploads/2024/09/fanza_ad$image
 !
 ! Malware/Phishing
+?ph0nq=010$document
+?ph0ne=(050)-$document
+||web.core.windows.net/media/jp.mp4
 ://dhl-*/portal_login_exp/getQuoteTab/$document
 .com/ETGate/accountData?redirectToken=$document
 ://apple-*.cn/account_int/
@@ -1675,6 +1678,7 @@ _ap/signin*?_encoding=UTF8&openid.assoc_handle=jpflex&openid.claimed_id=&action=
 /?Rfunccode=*&nextfunc=$document,to=cn|top
 /brand/detail/m*.html?zenid=$document,to=cfd|fun|shop|space|top|xyz
 /shopping/item/m*/?zenid=$document,to=cfd|fun|shop|space|top|xyz
+/mall/*.html?zenid=$document,to=cfd|fun|shop|space|top|xyz
 /mart/*.html?zenid=$document,to=cfd|fun|shop|space|top|xyz
 /^https:\/\/(?!www)[a-z]{3,5}\.[a-z]{4,10}\.[a-z]{2,6}\/item-(?:(?=[a-z]*\d)[0-9a-z]{10}|\d{8})\.html$/$document,match-case,to=art|baby|biz|blog|cc|cfd|click|cloud|club|eu|fit|fun|hair|homes|info|ink|lat|life|lol|me|mom|my|one|online|sbs|shop|site|skin|space|store|top|world|xyz
 /^https?:\/\/(?!www)[a-z]{3,5}\.[0-9a-z]{4,10}\.[a-z]{2,6}\/[a-z]{3,15}\/(?=[a-z]{0,9}[0-9A-Z])[0-9A-z]{10}\.html$/$document,match-case,to=art|baby|biz|blog|cc|cfd|click|cloud|club|eu|fit|fun|hair|homes|info|ink|lat|life|lol|me|mom|my|one|online|sbs|shop|site|skin|space|store|top|world|xyz|~livedoor.biz|~livedoor.blog
@@ -1754,6 +1758,8 @@ gundamlog.com###more > iframe[src^="https://richlink.blogsys.jp"]
 !
 ! NOTE: Specific rules
 !
+three-pc.co.jp##.pum-overlay[data-popmake*="\"delay\":\"500\""]
+||three-pc.co.jp/column/wp-content/uploads/2023/10/popup2-
 ||2219.net/js/adbata_
 ||2219.net/js/index_adbata_
 ||hdouga.com/wordpress/wp-content/uploads/side2_01.gif
@@ -2519,7 +2525,6 @@ minkabu.jp##.h120p
 kasioda.com##.o--ads-area
 ||zutool.jp/img/468_366_otenki_20221005.jpg
 ||pinkylip.net/wp-content/uploads/2024/03/suppin.jpg
-www6.plala.or.jp##.ninja_onebutton + hr + a[href^="http://www.amazon.co.jp/gp/aw/rd.html"]
 emuokunmaster.com##div[style="width: 815px; height: 250px; margin: auto; text-align: center;"]
 ||emuokunmaster.com/wp-content/uploads/*160_600
 tousatusin.com##.elogch_blogparts_iframe
@@ -9474,11 +9479,6 @@ iphone-mania.jp##.single_pr_ad_all
 iphone-mania.jp##.app_banner > a:not([href^="https://iphone-mania.jp/"])
 ||sexpixbox.com/fbwax/cute/coupon.html?affid=
 hosyusokuhou.jp##body .abox
-srad.jp##.ads-leaderbord
-srad.jp###ads-index-text
-srad.jp###gpt-sd_other_rec
-srad.jp###gpt-sd_index_rec
-srad.jp##.srad-contentad-banner
 hamakei.com##.box.pr
 hamakei.com##.partner
 matometanews.com##.related-articles
@@ -9729,7 +9729,7 @@ watch.impress.co.jp##aside[id$="-amazon-ranking"]
 tabkul.com,gagetmatome.com###ad-bottom-oya
 seesaa.jp##.banner-footer
 auone.jp##.side__ad-box
-yahoo.co.jp,appli-maker.jp,l-tike.com,maho.jp,asahi.com##.Ad
+yahoo.co.jp,appli-maker.jp,l-tike.com,asahi.com##.Ad
 tabi.chunichi.co.jp,fukuishimbun.co.jp##.super-banner
 sponichi.co.jp##[class^="banner"]
 alba.co.jp##h2.css-1jeee1j[data-view-mobile="false"]
@@ -11217,8 +11217,6 @@ totoneko.net##iframe.lazyloaded[width="728"][height="90"]
 kyobun.co.jp##.td-a-rec-id-custom_ad_2
 !+ PLATFORM(ext_ublock)
 automaton-media.com##.td-a-rec
-!+ PLATFORM(ext_ublock)
-plala.or.jp##img[width="468"][height="60"]
 !+ NOT_OPTIMIZED
 ||yimg.jp/bdv/
 ! https://github.com/AdguardTeam/AdguardFilters/issues/166410
@@ -11326,8 +11324,6 @@ funny-ai.com#$#.orp-player-rewarded { display: none !important; }
 ! https://github.com/AdguardTeam/AdguardFilters/issues/164921
 plaza.rakuten.co.jp#@#img[width="320"][height="50"]
 ! https://github.com/AdguardTeam/AdguardFilters/issues/161236
-! https://github.com/AdguardTeam/AdguardFilters/issues/161276
-srad.jp#@#.ads-text
 ! https://github.com/AdguardTeam/AdguardFilters/issues/159565
 ameblo.jp#@#img[width="240"][height="400"]
 ! ranking

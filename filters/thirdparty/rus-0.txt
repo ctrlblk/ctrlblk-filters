@@ -10062,6 +10062,7 @@ pdalife.ru##.b-popup
 vashgorod.ru##.c-popup
 games-two.su##.ckf-box
 riafan.ru##.cookie-agreement-wrapper
+rutube.ru##.cookie-notify-module__cookie-consent
 championat.com##.cookie-popup
 litnet.com##.cookies-w
 crimezone.in.ua##.custom-modal
@@ -10203,6 +10204,7 @@ surl.*#?#.text-center:-abp-has(> form > .disabled) > p ~ *
 ||apihost.ru/images/584676.gif
 ||bagnet.org/public/js/cook_popup.js
 ||black-eyed-peas.ru/engine/classes/js/
+||cdn.hsmedia.ru/ump-webapp-public/dist/client/assets/AllowConsentNotificationsModal-$third-party
 ||chefpovarok.ru/modal.js
 ||comprofit.ru/popup/
 ||computer-genius.ru/wp-content/plugins/subscribermagnet/$script
@@ -12772,6 +12774,7 @@ igdz1.ru^$script,domain=igdz.ru
 ||rintor.space/*.js|$script
 ||riotpixels.com/ogolop/
 ||riotpixels.net/playo
+||ritsatv.ru/files/reklama
 ||rlsnet.ru/image_banner_id_
 ||rlsnet.ru/images/3dbanner
 ||rlsnet.ru/images/banners/branding/
@@ -13742,6 +13745,7 @@ pesenok.ru,songpros.ru,songspro.ru###amigo_btn
 allcrimea.net###anews_bigtizer
 thequestion.ru###answers div[style*="overflow:hidden"]
 komedra.com###apext
+dtf.ru#?##app:-abp-has(> .bar > .header [href="/auth"]) .content-list > .content:-abp-has(> .content-header > .author > [href="/ggsel"])
 dtf.ru#?##app:-abp-has(> .bar > .header [href="/auth"]) .content-list > .content:-abp-has(> .content-header > .author > [href="/u/903841-gamespayberryru"])
 dtf.ru#?##app:-abp-has(> .bar > .header [href="/auth"]) .content-list > .content:-abp-has(> .content-header > .author > [href="/u/954970-kupikod"])
 ecology.md###article > .right-block
@@ -13819,6 +13823,9 @@ ketchuptv.ru###blink
 newsroom.kh.ua###block-15
 newsroom.kh.ua###block-16
 russkiiyazyk.ru###block-2
+fapvdo.ru###block-24
+fapvdo.ru###block-26
+fapvdo.ru###block-29
 growhow.in.ua###block-5
 growhow.in.ua###block-6
 anti-malware.ru###block-block-1
@@ -14359,6 +14366,7 @@ outlook.live.com###owaadbar
 wikireality.ru###p-sidebar-extlinks
 rserials.net###page > #overlay
 kv.by###page > .region-secondary-content
+fapvdo.ru###page > .users:first-child
 carsweek.ru###page > :empty
 brestcity.com###page > a[href] > img
 allunix.ru###page > center
@@ -15936,7 +15944,8 @@ solidarnost.org##.card-yandex
 1tv.ru##.card.promo
 sovsport.ru##.cardForecast_card_container__b_Ukm > div[class^="cardForecast_btn"]
 rudub.vip##.card__description__adv
-braz-rus.pro##.card__e-video
+braz-rus.pro##.card__inner-premium
+braz-rus.pro##.card__re-video
 edimdoma.ru##.card_commercial
 marketsakhcom.ru#?#.cards__col:-abp-has(> .card_cb)
 kasparov.ru,ria-m.tv##.caroufredsel_wrapper
@@ -21210,7 +21219,6 @@ reshak.ru##div[style*="height:325px;"]
 euro-football.ru,liveresult.ru##div[style*="height:400px;"]
 nemo-crack.org##div[style*="hot-game.info"]
 narutoplanet.ru##div[style*="margin-top: 9.5px;"]
-trychatgpt.ru##div[style*="min-height"][style*="max-height"]
 wtftime.ru##div[style*="min-height: 200px;"]
 euro-football.ru,liveresult.ru##div[style*="min-height:"][style*="00px"]
 chipmaker.ru##div[style*="min-height:100px;"]
@@ -21607,6 +21615,7 @@ www1.ru##nav > .hidden > .list-reset > a[target="_blank"]
 sprashivalka.com##nav > .items > a[href]:not([href^="/"]):not([href^="https://sprashivalka.com/"])
 sport.ua##nav > .navbar-notifications ~ .navbar-notifications
 lostpix.com##nav ~ a > img[align="right"]
+trychatgpt.ru##nav.sticky ~ div:not([class]) > span
 glamour.ru,gq.ru##ng-banner
 glamour.ru##ng-teasers
 salex.ru##nobr > div > table
@@ -21979,7 +21988,7 @@ https://*adtech_uid=$~third-party,xmlhttprequest,domain=lena-miro.ru|levik.blog|
 ||imgfrost.net^$third-party
 ||liveinternet.ru/utf/lici.js?
 ||news.mail.ru/-/*.js?
-||pikabu.ru/ajax/*?rxy6w=$xmlhttprequest
+||pikabu.ru/ajax/*?ryy6w=$xmlhttprequest
 ||ritsatv.ru^$csp=script-src
 ||ritsatv.ru^$popup
 ||ritsatv.ru^$~document
@@ -21998,17 +22007,18 @@ howdyho.net,howdyho.pro#@#div[id^="yandex_rtb"]
 !
 flightsim.su###tie-popup-adblock {remove:true;}
 freesoft.ru###downloadAdModal {remove:true;}
+freesoft.ru###error.modal {remove:true;}
 growhow.in.ua###custom-background-css {remove:true;}
 playground.ru###dfpPrerollDelay {remove:true;}
 the-geek.ru###wp-custom-css {remove:true;}
 vk.*##head > style:-abp-contains(/adchoice|mkit_|outlineBanner/i) {remove:true;}
 www.ixbt.com#?#body > style:-abp-contains(margin-top) {remove:true;}
 ! селекторы
+freesoft.ru###downloadAdModal
 vk.com,vk.ru###feed_rows > .feed_row > div:not([id])
 vk.com,vk.ru###feed_rows > .feed_row ~ :not(.feed_row)
 vk.com,vk.ru###feed_rows > div[class="feed_row "] > div[id]:not([id^="feed_repost"]):not([data-post-id])
 vk.com,vk.ru###main_feed:not(.feed_submit_only_shown) div:first-child:not(.page_block) ~ .feed_row > [data-post-id][id^="post"][post_view_hash]:not([data-post-track-code])
-trychatgpt.ru##.\!min-h-72
 vk.com,vk.ru##._feed_rows > div:not([id]):not([class])
 vk.com,vk.ru##._post_content > .post
 vk.com,vk.ru#?#._post_content:-abp-has(.Efxztiz1tCs6S5IDhTuN)
@@ -22024,6 +22034,7 @@ vk.com,vk.ru#?#.feed_row > [id^="post-"] > ._post_content:-abp-has(> :first-chil
 vk.com,vk.ru##.feed_row > div[class$=" post"]
 e.mail.ru##.layout__column_right-indented
 mail.ru,sportmail.ru##.media-ui-slider-track > div:last-child [data-qa="Loader"]
+freesoft.ru##.modal-backdrop
 anidub.vip,anidubonline.com##.plyr__menu
 anidub.vip,anidubonline.com##.plyr__progress__buffer
 pikabu.ru#?#.stories-feed__container > .story:-abp-has(div:-abp-properties(/min-height: 20.px|min-height: 29.px|min-height: 30.px|min-height: 300./))
@@ -22643,6 +22654,11 @@ fontanka.ru#?#section[class^="sliderWrap_"]:-abp-has(> div > [href="/pressreleas
 59.ru,ngs.ru##ul > li > a[href*="erid="]
 59.ru,ngs.ru##ul > li > a[href*="erid="] ~ div
 fontanka.ru#?#ul > li:-abp-has(> div > div > a[href*="/?erid="])
+! игры
+ru###gs-app-wrapper
+ru##.Ba
+ru##.GameButtons__disableAds
+ru##.GameContainerInner__sb
 ! запросы
 /static/js/build/autoreloadBanner.js$domain=116.ru|14.ru|161.ru|164.ru|178.ru|26.ru|29.ru|35.ru|43.ru|45.ru|48.ru|51.ru|53.ru|56.ru|59.ru|60.ru|63.ru|68.ru|71.ru|72.ru|74.ru|76.ru|86.ru|89.ru|93.ru|chita.ru|e1.ru|ircity.ru|izh1.ru|mgorsk.ru|msk1.ru|ngs.ru|ngs22.ru|ngs24.ru|ngs42.ru|ngs55.ru|ngs70.ru|nn.ru|sochi1.ru|sterlitamak1.ru|tolyatty.ru|ufa1.ru|v1.ru|voronezh1.ru|ya62.ru
 /static/js/build/widgetAutoRu.js$domain=116.ru|14.ru|161.ru|164.ru|178.ru|26.ru|29.ru|35.ru|43.ru|45.ru|48.ru|51.ru|53.ru|56.ru|59.ru|60.ru|63.ru|68.ru|71.ru|72.ru|74.ru|76.ru|86.ru|89.ru|93.ru|chita.ru|e1.ru|ircity.ru|izh1.ru|mgorsk.ru|msk1.ru|ngs.ru|ngs22.ru|ngs24.ru|ngs42.ru|ngs55.ru|ngs70.ru|nn.ru|sochi1.ru|sterlitamak1.ru|tolyatty.ru|ufa1.ru|v1.ru|voronezh1.ru|ya62.ru
@@ -26298,6 +26314,7 @@ channels247.net,goool7.ws,sport7.biz,sportbar.biz,sportbarchik88.com,sporting77.
 animedub.ru##a[href="https://animedub.ru/adblock.html"]
 sntch.com#?#article > p:-abp-contains(/отключите блокировку рекламы!$/)
 3drubik.ru##body > #page ~ div[id][class]
+fapvdo.ru##body > #txt
 24pdd.kz##body > .preloader
 doctorrouter.ru,gamingsym.in,ranobe-novels.ru,transformator220.ru,wuxiaworld.ru##body > :not([id]):not([class]):not(script)
 mirdiets.ru,top10books.ru##body > [class*="-blackout active"]
@@ -27586,6 +27603,8 @@ riotpixels.com##body:style(background-image: none !important)
 ! ---
 riperam.org###main-wrapper > #wrap:style(padding: 0 10px !important)
 ! ---
+ritsatv.ru##body[style*="overflow-x: hidden"]:style(overflow-x: unset !important)
+! ---
 rp5.am,rp5.by,rp5.co.nz,rp5.co.uk,rp5.kz,rp5.md,rp5.ru###FheaderContent > div[id]:not([class]):style(min-height: 0 !important)
 ! ---
 rserials.net###subheader:style(padding-top: 0 !important)
@@ -27790,8 +27809,6 @@ translit.ru##.tPechenkiInfoblock
 trashbox.ru##html[prefix] > body:style(background-color: #202030 !important; background-image: none !important)
 ! ---
 kino.tricolor.tv##html.bx-no-touch button[data-analytics$="-watch-with-ads-btn"]:style(min-width: 0 !important; max-width: unset !important; width: 115px !important; overflow: hidden !important; padding-left: 15px !important)
-! ---
-trychatgpt.ru##[class*="!container"] > span:style(min-height: unset !important)
 ! ---
 ts.kg##.main-container:style(margin-top: 0 !important)
 ts.kg##body:style(background-color: inherit !important)
@@ -28177,6 +28194,7 @@ mail.ru##[data-testid="grid-left-col"] > .logo:style(margin-top: 4px !important;
 mail.ru##[data-testid="news-tabs"] ~ div > div ~ div > div[style]
 mail.ru,sportmail.ru##a[id^="tb-"][class^="tb-"][target="_blank"]
 finance.mail.ru,vfokuse.mail.ru##aside > div > div:style(min-height: 0 !important)
+mail.ru##body > #grid:not(.grid) .widget__container:nth-child(3) ~ .widget__container
 news.mail.ru##body > .block > .tag:style(z-index: 1400 !important; cursor: pointer !important)
 mail.ru##body > .grid .grid__lcol > .footer:style(margin-top: 10px !important)
 mail.ru##body > .grid .grid__rcol:style(margin-left: 0 !important)
@@ -28551,6 +28569,7 @@ inforesist.org##+js(remove-node-text, script, /gtag\('event'/)
 sports.ru##+js(remove-node-text, script, AdBlocker)
 pikabu.ru##+js(remove-node-text, script, addPlaceholder)
 agronews.ua,agroreview.com##+js(remove-node-text, script, clickedOnContent)
+fapvdo.ru##+js(remove-node-text, script, getComputedStyle)
 gsm.in.ua##+js(remove-node-text, script, message_ads)
 tapochek.net##+js(remove-node-text, script, setRequestHeader)
 dtf.ru,vc.ru##+js(set-attr, .comment-media > .andropov-video > video, controls, true)
@@ -28851,10 +28870,8 @@ ok.ru##div[class*="__banner-feed"]
 ||pulse.mail.ru^$domain=~e.mail.ru|~octavius.mail.ru|~pulse.mail.ru
 ||r.mradx.net/img/*.js|$empty,script
 ||ru/count/$image,important,redirect=1x1.gif,domain=mail.ru|sportmail.ru
-! Конфликт с JS Fixes
-~3igames.mail.ru,~account.mail.ru,~auto.mail.ru,~biz.mail.ru,~blog.mail.ru,~bonus.mail.ru,~calendar.mail.ru,~calls.mail.ru,~cloud.mail.ru,~connect.mail.ru,~deti.mail.ru,~dobro.mail.ru,~e.mail.ru,~finance.mail.ru,~gibdd.mail.ru,~health.mail.ru,~help.mail.ru,~hi-tech.mail.ru,~horo.mail.ru,~kino.mail.ru,~lady.mail.ru,~love.mail.ru,mail.ru,~mcs.mail.ru,~minigames.mail.ru,~my.mail.ru,~news.mail.ru,~o2.mail.ru,~octavius.mail.ru,~okminigames.mail.ru,~otvet.mail.ru,~pets.mail.ru,~player-smotri.mail.ru,~pogoda.mail.ru,~top.mail.ru,~touch.mail.ru,~tv.mail.ru,~vfokuse.mail.ru,~widgets.mail.ru##+js(abort-on-stack-trace, Object.prototype.ssrAds, completeRadar)
 ! старый интерфейс почты
-e.mail.ru##+js(json-prune, [].*.result.body)
+mail.ru##+js(json-prune, [].*.result.body)
 e.mail.ru##.b-datalist > div:matches-css(height: 39px):remove()
 e.mail.ru##.b-letter_thread > div > div:matches-css(height: 39px):remove()
 e.mail.ru##body:not(#id) > div[style="position: absolute; visibility: hidden; top: -10000px; left: -10000px;"] > div:style(display: block !important)
