@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: EasyList – Annoyances
-! Last modified: Tue, 01 Apr 2025 13:16:39 +0000
+! Last modified: Thu, 03 Apr 2025 18:52:47 +0000
 ! Expires: 7 days (update frequency)
 ! *** easylist:template_header.txt ***
 !
@@ -1755,6 +1755,7 @@ bmwblog.com,gwinnettdailypost.com,porn5.com##.prev
 thetablet.co.uk##.prev-article-btn
 stylist.co.uk##.promo
 mediaite.com##.promo-sidebar
+twitter.com,x.com##.r-nsbfu8.r-dnmrzs.css-175oi2r
 jns.org##.registration-popup
 shopstyle.com##.ribbon
 booksnreview.com##.rightbox1
@@ -1804,6 +1805,8 @@ youtube-nocookie.com,youtube.com##.ytp-ce-playlist
 youtube-nocookie.com,youtube.com##.ytp-pause-overlay
 portableapps.com##[alt="RSS"]
 chromewebstore.google.com##[role="dialog"][aria-labelledby="promo-header"]
+twitter.com,x.com##div[data-testid="profileAnalyticsUpsell"]
+twitter.com,x.com##div[data-testid="verified_profile_upsell"]
 privacywall.org##div[style="top:0;right:0;position:absolute"]
 ispreview.co.uk##div[style="width:100%;clear:both;"]
 forbes.com##fbs-ad
@@ -3003,7 +3006,7 @@ wiki-topia.com##.ta_upscr
 jstage.jst.go.jp##.take-on-top
 sears.com##.tap-top
 nasilemaktech.com##.td-read-down
-nme.com##.td-scroll-up
+club386.com,nme.com##.td-scroll-up
 adguard.com##.theme-back-to-top-button
 ansa.it,cacm.acm.org,californiacitynews.org,cnbctv18.com,consolecreatures.com,ekathimerini.com,gbnews.com,gunsandammo.com,justapack.com,linuxlookup.com,porngem.com,thedebrief.org##.to-top
 denvergazette.com,radaris.com##.toTop
@@ -3308,6 +3311,12 @@ chatgpt.com##+js(set-session-storage-item, oai/apps/noAuthHasDismissedSoftRateLi
 hartfordbusiness.com##.paywallMsgTypeTwo
 hartfordbusiness.com##.payWallOverlay
 hartfordbusiness.com##+js(remove-cookie, meter_haystack)
+! investing.com
+||monetization.prod.invmed.co^
+||investing.com/gcode/
+investing.com##+js(remove-cookie, lifetime_page_view_count)
+investing.com##+js(remove-cookie, page_view_count)
+page_view_count
 ! commonwealmagazine.org login wall
 commonwealmagazine.org###paywall-message
 commonwealmagazine.org##+js(remove-cookie, Drupal_visitor_paywall)
