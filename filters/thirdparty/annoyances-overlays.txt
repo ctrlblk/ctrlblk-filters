@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: EasyList – Newsletter Notices
-! Last modified: Thu, 03 Apr 2025 21:50:20 +0000
+! Last modified: Sat, 05 Apr 2025 03:52:23 +0000
 ! Expires: 7 days (update frequency)
 ! *** easylist:template_header.txt ***
 !
@@ -2128,8 +2128,8 @@ educatedguesswork.org##.box
 contexttravel.com##.box--teal-accent
 bangkokpost.com##.box-informed
 monochrome-watches.com##.boxzilla-bottom-right-container
-curiosmos.com,geopoliticalfutures.com,iafrica.com,kdnuggets.com,labourlist.org,marijuanamoment.net,naturalblaze.com,wakingtimes.com##.boxzilla-container
-curiosmos.com,geopoliticalfutures.com,iafrica.com,kdnuggets.com,labourlist.org,marijuanamoment.net,naturalblaze.com,wakingtimes.com##.boxzilla-overlay
+curiosmos.com,geopoliticalfutures.com,iafrica.com,kdnuggets.com,labourlist.org,macdailynews.com,marijuanamoment.net,naturalblaze.com,wakingtimes.com##.boxzilla-container
+curiosmos.com,geopoliticalfutures.com,iafrica.com,kdnuggets.com,labourlist.org,macdailynews.com,marijuanamoment.net,naturalblaze.com,wakingtimes.com##.boxzilla-overlay
 geopoliticalfutures.com##.boxzilla-slide-in-free-newsletter-2
 thenarwhal.ca##.brave_popup
 federalnewsnetwork.com,staradvertiser.com##.breaking-news-signup
@@ -5818,7 +5818,7 @@ doctorofcredit.com#@#.wpdiscuz-subscribe-bar
 ! fanboy_newsletter_shopping_allowlist_general_hide.txt
 
 ! Title: uBlock filters – Other Annoyances
-! Last modified: Fri, 04 Apr 2025 04:24:38 +0000
+! Last modified: Fri, 04 Apr 2025 14:03:25 +0000
 ! Expires: 7 days
 ! Description: Filters optimized for uBlock Origin, to be used with EasyList's and/or Adguard's "Other Annoyances" list(s)
 ! License: https://github.com/uBlockOrigin/uAssets/blob/master/LICENSE
@@ -7579,7 +7579,24 @@ iphoneincanada.ca##.adthrive-ad
 
 ! https://github.com/uBlockOrigin/uAssets/issues/21255
 *$image,domain=peacocktv.com,redirect-rule=1x1.gif
-peacocktv.com##.playb$script,xhr,1p
+peacocktv.com##.playback-ad-blocker-notice
+
+! https://github.com/uBlockOrigin/uAssets/issues/21300
+@@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$script,domain=woomy-site.glitch.me
+
+! https://github.com/uBlockOrigin/uAssets/issues/21352
+||ip.sb/assets/js/wwads_blocked.js
+
+! https://github.com/uBlockOrigin/uAssets/issues/21301
+! https://github.com/uBlockOrigin/uAssets/issues/24250
+arras.io,arras.netlify.app,arrax.io##+js(set, ramp.addUnits, noopFunc)
+
+! https://scenexe.io/ anti adblock
+scenexe.io##+js(set-local-storage-item, ad_blocker, false)
+
+! https://github.com/uBlockOrigin/uAssets/issues/21065
+@@||googlesyndication.com^$script,domain=cheatnetwork.eu
+@@||cheatnetwork.eu^$script,xhr,1p
 @@||cheatnetwork.eu^$ghide
 
 ! https://github.com/uBlockOrigin/uAssets/issues/21424
