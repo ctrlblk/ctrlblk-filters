@@ -13155,6 +13155,7 @@ igdz1.ru^$script,domain=igdz.ru
 ||talk.$domain=dugtor.ru
 ||tamboff.ru/other/forum/banners
 ||tap.az/embed/
+||tapochek.net/*.php|$script
 ||tayga.info/banners/
 ||tayga.info/design/banner/
 ||tdaily.ru/api/ad|$xmlhttprequest
@@ -16739,6 +16740,7 @@ meteoprog.ua##.informer[id^="mp_banner_"]
 lostpix.com##.infotext
 europaplus.ru##.infox
 education.ua##.inl-blk
+catalog.onliner.by##.inline-banner
 bb.lv##.inline-desk
 howdyho.net,howdyho.pro#?#.inner > .default:-abp-has(> header > h1:-abp-contains(PEKЛAМA))
 snn-mn.ru##.inner > .widget_media_image
@@ -20914,6 +20916,7 @@ c-s.net.ua##div[id$="toplayer"]
 gdz-putina.fun##div[id*="-error-page"] + div
 gdz-putina.fun##div[id*="-error-page"] > *
 maanimo.com##div[id*="-gpt-"]
+24smi.org##div[id*="-ir-"]
 rogoff.club##div[id*="-sidebar"]
 zoneofgames.ru##div[id*="ADNEWS"]
 spravportal.ru##div[id*="AdContainer"]
@@ -21991,7 +21994,7 @@ https://*adtech_uid=$~third-party,xmlhttprequest,domain=lena-miro.ru|levik.blog|
 ||imgfrost.net^$third-party
 ||liveinternet.ru/utf/lici.js?
 ||news.mail.ru/-/*.js?
-||pikabu.ru/ajax/*?r0u6w=$xmlhttprequest
+||pikabu.ru/ajax/*?qoy5r=$xmlhttprequest
 ||ritsatv.ru^$csp=script-src
 ||ritsatv.ru^$popup
 ||ritsatv.ru^$~document
@@ -22954,6 +22957,8 @@ gdespaces.com,gdespaces.net,google-cloud.services,spac.me,spac.run,spac.wtf,spac
 ||world/$third-party,script,domain=gdespaces.com|gdespaces.net|google-cloud.services|spac.me|spac.run|spac.wtf|spac1.com|spac1.net|spac1.org|spaces-blogs.com|spaces.im|spcs-files.xyz|spcs.bio|spcs.life|spcs.me|spcs.mobi|spcs.network|spcs.pro|spcs.reviews|spcs.social|strip2.club|strip2.in|strip2.xxx|usersporn.com
 !
 ! Sports.ru, а также by.tribuna.com, ua.tribuna.com
+sports.ru###media-promo-mount-point [class*="adv-text"]
+sports.ru###media-promo-mount-point a[href*="://sirena.world/"]
 sports.ru###top-ad
 sports.ru###top-banner-place
 sports.ru##.ad
@@ -23233,6 +23238,7 @@ yandex.ru,yandex.*##div[class^="FeedAdvBlockRenderer-critical-module__banner"]:e
 ! Яндекс.Музыка
 music.yandex.ru,music.yandex.*##.bar__driver-container
 music.yandex.ru,music.yandex.*##[class^="audio-advert"]
+music.yandex.ru,music.yandex.*##section[class^="SideAdvertBanner_root_"]
 radio.yandex.ru,radio.yandex.*##.slider > .slider__item_advert
 ! Яндекс.Недвижимость
 realty.ya.ru##.FSGalleryLayout > .GalleryGuadeloupe
@@ -28578,13 +28584,13 @@ farposst.ru##+js(remove-node-text, #text, Реклама)
 filmitorrent.net,utorr.cc##+js(remove-node-text, #text, Реклама:)
 ritsatv.ru##+js(remove-node-text, script, /ADBLOCK|checkAdBlocker/)
 game4you.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##+js(remove-node-text, script, /checkCookie|s_script|tick/)
+tapochek.net##+js(remove-node-text, script, /document.head.appendChild|document.referrer/)
 inforesist.org##+js(remove-node-text, script, /gtag\('event'/)
 sports.ru##+js(remove-node-text, script, AdBlocker)
 pikabu.ru##+js(remove-node-text, script, addPlaceholder)
 agronews.ua,agroreview.com##+js(remove-node-text, script, clickedOnContent)
 fapvdo.ru##+js(remove-node-text, script, getComputedStyle)
 gsm.in.ua##+js(remove-node-text, script, message_ads)
-tapochek.net##+js(remove-node-text, script, setRequestHeader)
 dtf.ru,vc.ru##+js(set-attr, .comment-media > .andropov-video > video, controls, true)
 dtf.ru,vc.ru##+js(set-attr, .media > .andropov-video > video, controls, true)
 eneyida.tv##+js(set-attr, .owl-item > a > img, src, [data-src])
@@ -28773,7 +28779,7 @@ fanserial.*,fanserialstv.net,hdrezka.*,rezka.*##+js(set-constant, Object.prototy
 hdrezka.*,rezka.*##+js(abort-current-inline-script, document.getElementsByTagName, AMSP.loadAsset)
 howdyho.*##+js(no-setTimeout-if, _0x)
 howdyho.*##+js(set-attr, #progress-value, data-timer, 25)
-liveball.*##+js(abort-on-property-read, ABNS)
+liveball.*,tapochek.net##+js(abort-on-property-read, ABNS)
 m.rp5.*#@#.adsbygoogle
 reshu.by,sdamgia.ru##main > div > div > div:has-text(/rotator|блокировщик/)
 reshu.by,sdamgia.ru##main > div:first-child:empty + div:not([class]) > div > div
