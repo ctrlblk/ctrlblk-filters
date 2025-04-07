@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: EasyList – Newsletter Notices
-! Last modified: Sun, 06 Apr 2025 02:20:51 +0000
+! Last modified: Mon, 07 Apr 2025 02:19:45 +0000
 ! Expires: 7 days (update frequency)
 ! *** easylist:template_header.txt ***
 !
@@ -2048,6 +2048,7 @@ canberratimes.com.au,theland.com.au##.bg-indigo-700
 washingtonengager.com##.bg-light.card
 mypenndentist.org##.bg-navylightblue.padding-v20
 allaboutcircuits.com##.bg-newsletter
+biblegateway.com##.bg-popup-root
 axios.com##.bg-tertiary.gtmView
 thebudgetsavvybride.com##.bg-turquoise-500
 thepostmillennial.com##.bg-warning
@@ -2481,6 +2482,7 @@ righto.com##.form-preview
 tech.co##.form-simple
 mychicagosteak.com##.form-version-cid-1
 flotrack.org##.form-view
+laist.com##.form-wrapper
 shenandoahah.com##.form__container
 thechurchnews.com##.form__wrapper
 cnevpost.com,prettysimplesweet.com,saabplanet.com,valuewalk.com##.formkit-form
@@ -2838,6 +2840,7 @@ mayoclinic.org##.myc-subscription-form
 wellplated.com##.mz-signup-block
 ft.com##.n-sliding-popup
 tutorialslink.com##.n-subscribe-footer
+thespinoff.co.nz##.native-newsletter-signup
 shine.cn##.nav-tools
 nationalinterest.org##.nav__mag
 thetech.com##.navbar-feedback
@@ -5818,7 +5821,7 @@ doctorofcredit.com#@#.wpdiscuz-subscribe-bar
 ! fanboy_newsletter_shopping_allowlist_general_hide.txt
 
 ! Title: uBlock filters – Other Annoyances
-! Last modified: Fri, 04 Apr 2025 14:03:25 +0000
+! Last modified: Mon, 07 Apr 2025 02:05:58 +0000
 ! Expires: 7 days
 ! Description: Filters optimized for uBlock Origin, to be used with EasyList's and/or Adguard's "Other Annoyances" list(s)
 ! License: https://github.com/uBlockOrigin/uAssets/blob/master/LICENSE
@@ -8840,6 +8843,8 @@ mangaku.*##+js(aeld, contextmenu)
 www.reddit.com###nsfw-desktop-auth-blocking-modal-dialog,#nsfw-desktop-auth-blocking-modal-overlay-element
 www.reddit.com###blocking-modal, body > div[style="position: fixed; inset: 0px; backdrop-filter: blur(4px);"], #nsfw-qr-dialog
 www.reddit.com##body:style(overflow:auto !important)
+! https://github.com/uBlockOrigin/uAssets/issues/21810#issuecomment-2778710207
+www.reddit.com##body:has(#blocking-modal):style(pointer-events: auto !important;)
 ||redditstatic.com/shreddit/en-US/xpromo-nsfw-bypassable-modal-desktop-$script
 ! https://www.reddit.com/r/uBlockOrigin/comments/1dzrnq3/remove_popups_from_reddit_mobile/
 www.reddit.com##div.prompt:has(slot[name="view-in-app-button"])
