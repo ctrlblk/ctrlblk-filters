@@ -1,7 +1,7 @@
 [uBlock Origin]
 ! Title: List-KR for uBlock Origin
 ! Description: List-KR for uBlock Origin. Maintained by the adblock community and AdGuard.
-! Version: 2025.0409.0
+! Version: 2025.0414.3
 ! Expires: 12 hours
 ! Homepage: https://github.com/List-KR/List-KR
 ! Support: https://list-kr-community.pages.dev/docs/
@@ -521,6 +521,7 @@ m.cafe.naver.com##.banner_add.bottom:matches-path(/ca-fe\\/web\\/cafes\\/(steami
 /data/banner.json?$domain=~nintendo.*
 /ad-manager.min.js
 !
+||script.auction.co.kr/style/js/ad_icon.js
 ||c.011st.com/img/common/sprites/sp_ad_2x.png
 ||conist-cdn.com/*/iV/BO/
 ||conist-cdn.com/*/9j/4A/
@@ -2811,6 +2812,8 @@ koreaminecraft.net##tr.notice:not(:has(.wst_member_title))
 !
 ! DOMAIN-REFRESHER: START
 !
+tkor10.com,tkor11.com,tkor12.com,tkor13.com,tkor14.com,tkor15.com,tkor16.com,tkor17.com,tkor18.com,tkor19.com,tkor20.com,tkor21.com,tkor22.com,tkor23.com,tkor24.com,tkor25.com,tkor26.com,tkor27.com,tkor28.com##*[class*="top_bann"]
+toonkor.wiki##.banner
 yako.gg##.banner_grid
 v119.com##.zone-right > *:has(~ .no-pd):not(:has(> .tabbox))
 v119.com##.at-boxed .zone-center > .widget-box ~ *
