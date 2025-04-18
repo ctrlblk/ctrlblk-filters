@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: EasyList – Cookie Notices
-! Last modified: Thu, 17 Apr 2025 02:18:09 +0000
+! Last modified: Fri, 18 Apr 2025 02:15:15 +0000
 ! Expires: 7 days (update frequency)
 ! *** easylist:template_header.txt ***
 !
@@ -1086,7 +1086,6 @@
 ###CoockieAlert
 ###CoockiesPage
 ###Cookie-Append
-###Cookie-Banner
 ###Cookie-Consent
 ###Cookie-Container
 ###Cookie-Overlay
@@ -10967,7 +10966,6 @@
 ##.cookie-policy-june-2019-notice
 ##.cookie-policy-layer
 ##.cookie-policy-message
-##.cookie-policy-modal
 ##.cookie-policy-msg
 ##.cookie-policy-note
 ##.cookie-policy-notice
@@ -18432,6 +18430,7 @@ autotoll.com.hk##.cookies-agreement-container
 gstarcad.net##.cookies-ask
 credential.net##.cookies-banner
 gomosafer.com##.cookies-body
+castbox.fm##.cookies-conf
 eandt.theiet.org##.cookies-consent-edit-link-container
 airtel.in,habblet.city,seedtag.com##.cookies-container
 eib.org##.cookies-home_overlay
@@ -20814,6 +20813,8 @@ nationalholidays.com##+js(set-cookie, cookiePermission, essential)
 elliberal.cat##+js(set-cookie, wpl_viewed_cookie, no)
 fromsmash.com##+js(set-cookie, _sucs, true)
 ecuavisa.com##+js(set-cookie, user_cookie_consent, 1)
+dillingen.bayernlab.bayern.de##+js(set-cookie, allowStats, 0)
+dillingen.bayernlab.bayern.de##+js(set-cookie, hideBanner, 1)
 todays-golfer.com##+js(set-cookie, ccpaApplies, true)
 todays-golfer.com##+js(set-cookie, ccpaConsentAll, true)
 todays-golfer.com##+js(set-cookie, ccpaReject, false)
@@ -22759,6 +22760,7 @@ workwide.de##+js(set-session-storage-item, cookieModal2, 1)
 erco.com##+js(set-session-storage-item, cookieMessageDisagree, true)
 communitycrimemap.com##+js(set-session-storage-item, disclaimerOpened, 1)
 smartwielen.lu##+js(set-session-storage-item, terms-and-policy-accepted, true)
+remington-europe.com##+js(set-session-storage-item, cookies_dismissed, 1)
 html5games.com##+js(set-session-storage-item, fa-games-consent-given, true)
 shop-apotheke.com,redcare.it,shop-apotheke.at,farmaline.be##+js(set-session-storage-item, sae-conversational-consent-msg-closed, true)
 beenverified.com##+js(set-session-storage-item, privacyPopupShown, true)
@@ -23815,6 +23817,7 @@ switchonshop.com##.cb
 sushiworldlouvain.be##.cc-banner
 snickers-workwear.de##.cc-dialog
 fahrschulefuerth.de##.cc-info--closed
+pilatesclub.de##.cc-manager-banner
 bresser.de##.cc-modal-backdrop
 aussenrollo.de##.cc-screen
 boltenhagen.reisen##.cc_overlay
@@ -27415,6 +27418,7 @@ concursolutions.com,forbes.com,formula1.com,fortune.com,proximus.be,proximustv.b
 @@||se.com/myschneider/assets/onetrust.$~third-party
 @@||securiti.ai^$script,domain=alaskaair.com|hertz.at|hertz.co.uk|hertz.de|hertz.es|hertz.fi|hertz.fr|hertz.ie|hertz.it|hertz.no|hertz.pt|hertz.se|michaels.com
 @@||shop.bora-sauna.de/components/cookieconsent2/build/cookieconsent.min.js
+@@||sloways.eu/*/cookie-consent$script,~third-party
 @@||sonnenverlauf.de/scripts/cookieconsent.min.js$~third-party
 @@||sourcepoint.mgr.consensu.org^$domain=t3n.de
 @@||sourcepointcmp.bloomberg.*/mms/get_site_data?$domain=bloomberg.co.jp|bloomberg.com
@@ -27572,7 +27576,7 @@ concursolutions.com,forbes.com,formula1.com,fortune.com,proximus.be,proximustv.b
 @@||zensus2022.de/SiteGlobals/Modules/CookieBanner/*/CookieBanner.json?$~third-party,xmlhttprequest
 
 ! Title: uBlock filters – Cookie Notices
-! Last modified: Wed, 16 Apr 2025 12:15:45 +0000
+! Last modified: Thu, 17 Apr 2025 05:59:11 +0000
 ! Expires: 7 days
 ! Description: Filters optimized for uBlock Origin, to be used with EasyList's and/or Adguard's "Cookie Notices" list(s)
 ! License: https://github.com/uBlockOrigin/uAssets/blob/master/LICENSE
@@ -27637,6 +27641,7 @@ sourcepointcmp.bloomberg.com,sourcepointcmp.bloomberg.co.jp##+js(trusted-click-e
 sourcepointcmp.bloomberg.com,sourcepointcmp.bloomberg.co.jp##+js(trusted-click-element, [title="Reject All"], , 1000)
 sourcepointcmp.bloomberg.com,sourcepointcmp.bloomberg.co.jp##+js(trusted-click-element, button.sp_choice_type_11)
 bloomberg.com##+js(trusted-click-element, button[aria-label="Accept All"], , 1000)
+bloomberg.com##+js(trusted-click-element, button#cmp-consent-button, , 2500)
 ! Sample page: https://www.fandom.com/articles/hgt-wow-wrath-of-the-lich-king
 fandom.com##+js(trusted-set-cookie, euconsent-v2, CPt3fQAPt3fQACNAFAENDLCgAAAAAAAAACiQAAAOCgDAB-AIsAZ8A6QDBAHBAAAA.YAAAAAAAAAAA, 1year)
 fandom.com##+js(trusted-set-cookie, tracking-opt-in-status, rejected, 1year)
@@ -29299,7 +29304,8 @@ consent.spielaffe.de##+js(trusted-click-element, button[title="Accept All & Clos
 
 ! just Use necessary cookies only
 tfl.gov.uk###cb-cookieoverlay
-degiro.*,epochtimes.de,vikingline.com,tfl.gov.uk,drklein.de,hildegardis-krankenhaus.de,lotto.pl,volunteer.digitalboost.org.uk,starhotels.com,tefl.com,universumglobal.com##+js(trusted-click-element, #CybotCookiebotDialogBodyButtonDecline, , 1000)
+mineralstech.com##.consent-dialog-overlay
+degiro.*,epochtimes.de,vikingline.com,tfl.gov.uk,drklein.de,hildegardis-krankenhaus.de,lotto.pl,mineralstech.com,volunteer.digitalboost.org.uk,starhotels.com,tefl.com,universumglobal.com##+js(trusted-click-element, #CybotCookiebotDialogBodyButtonDecline, , 1000)
 
 ! Necessary + functional cookies
 interactivebrokers.*##+js(trusted-set-local-storage-item, consentMode, '{"functionality_storage":"granted","security_storage":"granted","ad_storage":"denied","analytics_storage":"denied","ad_personalization":"denied","ad_user_data":"denied"}')
@@ -30376,7 +30382,7 @@ otpbank.ro##+js(set-cookie, cookie-agreed, 2)
 otpbank.ro##+js(trusted-set-cookie, cookie-agreed-categories, '["necesare_de_functionalitate"]')
 
 ! reject
-stores.sk,nerdstar.de,prace.cz,profesia.sk,profesia.cz,pracezarohem.cz,atmoskop.cz,seduo.sk,seduo.cz,teamio.com,arnold-robot.com,cvonline.lt,cv.lv,cv.ee,dirbam.lt,visidarbi.lv,otsintood.ee,webtic.it##+js(trusted-click-element, button#c-s-bn, ,1000)
+forbo.com,stores.sk,nerdstar.de,prace.cz,profesia.sk,profesia.cz,pracezarohem.cz,atmoskop.cz,seduo.sk,seduo.cz,teamio.com,arnold-robot.com,cvonline.lt,cv.lv,cv.ee,dirbam.lt,visidarbi.lv,otsintood.ee,webtic.it##+js(trusted-click-element, button#c-s-bn, ,1000)
 
 ! reject
 gerth.de##+js(trusted-click-element, button#c-rall-bn, ,1000)
@@ -31676,7 +31682,7 @@ cdn.privacy-mgmt.com##+js(trusted-click-element, button[title="ACEPTAR Y GUARDAR
 swiss-sport.tv##+js(trusted-click-element, #cookiescript_reject, , 500)
 
 ! essential
-targobank-magazin.de,zeit-verlagsgruppe.de##+js(trusted-click-element, ._brlbs-refuse-btn > ._brlbs-cursor._brlbs-btn, , 1000)
+targobank-magazin.de,zeit-verlagsgruppe.de,online-physiotherapie.de##+js(trusted-click-element, ._brlbs-refuse-btn > ._brlbs-cursor._brlbs-btn, , 1000)
 
 ! accept (only option)
 kieferorthopaede-freisingsmile.de##+js(trusted-click-element, ._brlbs-accept > ._brlbs-btn-accept-all, , 1000)
@@ -31733,6 +31739,12 @@ pharmastar.it##+js(trusted-click-element, .in.modal .modal-dialog .modal-content
 ! Necessary
 topregal.*##+js(trusted-set-cookie, cookienote, set)
 topregal.*##+js(trusted-set-cookie, aCookieSel, '{"formParams":null,"action":"saverequired"}')
+
+! accept (CPPA)
+washingtonpost.com##+js(trusted-click-element, button#CTA_BUTTON_TEXT_CTA_WRAPPER, , 2000)
+
+! Necessary
+nomorobo.com##+js(trusted-set-local-storage-item, cookiesAllowed, '["strictly"]')
 
 ! Necessary
 univie.ac.at##+js(trusted-set-cookie, cookie-consent-settings, '{"necessary":true,"analyses":false,"personalization":false}')
