@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: EasyList – Cookie Notices
-! Last modified: Fri, 18 Apr 2025 02:15:15 +0000
+! Last modified: Sat, 19 Apr 2025 03:52:47 +0000
 ! Expires: 7 days (update frequency)
 ! *** easylist:template_header.txt ***
 !
@@ -19844,6 +19844,8 @@ amazingfoodmadeeasy.com,bradyunited.org,growbrothers-ev.de###cookieNotice
 !! .overlay-gdpr-consent/.overlay-wrapper
 lsl.com,sexlivecam.co.uk##.overlay-gdpr-consent
 lsl.com,sexlivecam.co.uk##.overlay-wrapper
+! .cookiePolicyBox
+allmusic.com,india.com##.cookiePolicyBox
 ! airbnb
 airbnb.*##[data-testid="main-cookies-banner-container"]
 ! .cookieControl__Bar
@@ -23282,8 +23284,8 @@ kidioui.fr##.cookieACK
 kidioui.fr##body,html:style(overflow: auto !important; position: initial !important;)
 ! loopearplugs.com
 !baukjen.com,desktronic.co.uk,brauzz.com,hallmark.co.uk,desktronic.de,dryrobe.com,loopearplugs.com,arktis.de,flyingtiger.com##.cc-window-wrapper
-baukjen.com,desktronic.co.uk,brauzz.com,hallmark.co.uk,desktronic.de,dryrobe.com,loopearplugs.com,arktis.de,flyingtiger.com###gdpr-blocking-page-overlay
-baukjen.com,desktronic.co.uk,brauzz.com,hallmark.co.uk,desktronic.de,dryrobe.com,loopearplugs.com,arktis.de,flyingtiger.com##body:style(position: static !important; overflow: auto !important; width: auto !important;)
+tepedirect.com,baukjen.com,desktronic.co.uk,brauzz.com,hallmark.co.uk,desktronic.de,dryrobe.com,loopearplugs.com,arktis.de,flyingtiger.com###gdpr-blocking-page-overlay
+tepedirect.com,baukjen.com,desktronic.co.uk,brauzz.com,hallmark.co.uk,desktronic.de,dryrobe.com,loopearplugs.com,arktis.de,flyingtiger.com##body:style(position: static !important; overflow: auto !important; width: auto !important;)
 !! betway
 betway.*##+js(set-cookie, BETWAY_ENSIGHTEN_PRIVACY_Analytics, 0)
 betway.*##+js(set-cookie, BETWAY_ENSIGHTEN_PRIVACY_Marketing, 0)
@@ -25035,7 +25037,6 @@ government.is,heilsugaeslan.is,kki.is,stjornarradid.is##.session-text
 torshavn.fo##.sucd-banner
 ! ---------- Indian ----------
 gujaratsamachar.com##.CookiesModel
-india.com##.cookiePolicyBox
 india.com##.cookieScreenOverlay
 sbilife.co.in##.header-text-contener
 dinamalar.com##.quickslide
@@ -27576,7 +27577,7 @@ concursolutions.com,forbes.com,formula1.com,fortune.com,proximus.be,proximustv.b
 @@||zensus2022.de/SiteGlobals/Modules/CookieBanner/*/CookieBanner.json?$~third-party,xmlhttprequest
 
 ! Title: uBlock filters – Cookie Notices
-! Last modified: Thu, 17 Apr 2025 05:59:11 +0000
+! Last modified: Sat, 19 Apr 2025 03:58:23 +0000
 ! Expires: 7 days
 ! Description: Filters optimized for uBlock Origin, to be used with EasyList's and/or Adguard's "Cookie Notices" list(s)
 ! License: https://github.com/uBlockOrigin/uAssets/blob/master/LICENSE
@@ -29171,9 +29172,9 @@ derstandard.at,derstandard.de,faz.net##+js(trusted-click-element, button[title="
 
 ! iubenda-cs-accept-btn
 ! https://github.com/uBlockOrigin/uAssets/pull/24738
-ansa.it,delladio.it,huffingtonpost.it,internazionale.it,lastampa.it,movieplayer.it,multiplayer.it,repubblica.it,tomshw.it,spaziogames.it,tuttoandroid.net,tuttotech.net##+js(trusted-click-element, button.iubenda-cs-accept-btn, , 1000)
-ansa.it,delladio.it,huffingtonpost.it,internazionale.it,lastampa.it,movieplayer.it,multiplayer.it,repubblica.it,tomshw.it,spaziogames.it,tuttoandroid.net,tuttotech.net###iubenda-cs-banner:style(visibility: hidden !important;)
-ansa.it,delladio.it,huffingtonpost.it,internazionale.it,lastampa.it,movieplayer.it,multiplayer.it,repubblica.it,tomshw.it,spaziogames.it,tuttoandroid.net,tuttotech.net##html:style(overflow: auto !important;)
+ansa.it,delladio.it,huffingtonpost.it,internazionale.it,lastampa.it,macitynet.it,movieplayer.it,multiplayer.it,repubblica.it,tomshw.it,spaziogames.it,tuttoandroid.net,tuttotech.net##+js(trusted-click-element, button.iubenda-cs-accept-btn, , 1000)
+ansa.it,delladio.it,huffingtonpost.it,internazionale.it,lastampa.it,macitynet.it,movieplayer.it,multiplayer.it,repubblica.it,tomshw.it,spaziogames.it,tuttoandroid.net,tuttotech.net###iubenda-cs-banner:style(visibility: hidden !important;)
+ansa.it,delladio.it,huffingtonpost.it,internazionale.it,lastampa.it,macitynet.it,movieplayer.it,multiplayer.it,repubblica.it,tomshw.it,spaziogames.it,tuttoandroid.net,tuttotech.net##html:style(overflow: auto !important;)
 ! https://github.com/uBlockOrigin/uAssets/pull/25606
 ! https://github.com/uBlockOrigin/uAssets/pull/25324
 ilgazzettino.it,ilmessaggero.it,ilsecoloxix.it###iubenda-cs-banner:style(visibility: hidden !important;)
