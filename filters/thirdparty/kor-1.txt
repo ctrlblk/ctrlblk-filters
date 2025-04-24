@@ -1,7 +1,7 @@
 [uBlock Origin]
 ! Title: List-KR for uBlock Origin
 ! Description: List-KR for uBlock Origin. Maintained by the adblock community and AdGuard.
-! Version: 2025.0421.0
+! Version: 2025.0424.2
 ! Expires: 12 hours
 ! Homepage: https://github.com/List-KR/List-KR
 ! Support: https://list-kr-community.pages.dev/docs/
@@ -1590,6 +1590,9 @@ eegosa.com##section[id*="_ads_"]
 ! ##div[id*="_AD"]
 sports.donga.com##div[id*="_AD"]
 
+jogemoa.com###container > .banner_list
+jogemoa.com###container > .banner_list ~ div[style^="padding:"]
+jogemoa.com##.popup_wrap
 pizzaalvolo.co.kr##.btn-loginPhone
 instiz.net##.responsive_main > div[id][style*=";min-height:250px;"]
 instiz.net###topfixed ~ div[class]:has(> div[id^="sense"][style])
@@ -2831,7 +2834,7 @@ ntnt1.tv##a[data-testid="linkElement"][href^="http"][target="_blank"]:has(> wow-
 aniwolf.*##.banner-area
 anilife.*##div[class] > a[class][href^="http"][target="_blank"]
 tvwiki13.com,tvwiki14.com,tvwiki15.com,tvwiki16.com,tvwiki17.com,tvwiki4.com,tvwiki18.com,tvwiki19.com,tvwiki20.com,tvwiki21.com,tvwiki22.com,tvwiki23.com,tvwiki24.com,tvwiki25.com##div[id] > ul:has(a[herf] > img[src^="/AD/"])
-hoduhodu.com##.relative > .bottom-0.bg-black
+hoduhodu.com##.w-full > a[target="_blank"] > img
 kktv12.com,kktv13.com,kktv14.com,kktv15.com,kktv16.com,kktv17.com,kktv18.com,kktv19.com,kktv20.com,kktv21.com,kktv22.com,kktv23.com,kktv24.com,kktv25.com,kktv26.com##.modal_contents
 tvmon14.org,tvmon15.org,tvmon16.org,tvmon17.org,tvmon18.org,tvmon19.org,tvmon20.org,tvmon21.org,tvmon22.org,tvmon23.org,tvmon24.org,tvmon25.org,tvmon26.org,tvmon27.org,tvmon28.org##.row-banner
 tvroom5.org##div.banners_area
@@ -2968,6 +2971,7 @@ manatoki464.net,manatoki465.net,manatoki466.net,manatoki467.net,manatoki468.net,
 !
 ! DOMAIN-REFRESHER: END
 
+@@||d2i2w6ttft7yxi.cloudfront.net/ad_banner/$domain=witchform.com
 @@||ssl.pstatic.net/tveta/libs/glad/prod/gfp-core.js$domain=weather.naver.com
 @@||ssl.pstatic.net/tveta/libs/glad/prod/*/gfp-sdk.js$domain=weather.naver.com
 @@||ssl.pstatic.net/tveta/libs/ssp-video/prod/ssp.web.sdk_$script,domain=tv.naver.com
