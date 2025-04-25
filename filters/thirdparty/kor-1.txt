@@ -1,7 +1,7 @@
 [uBlock Origin]
 ! Title: List-KR for uBlock Origin
 ! Description: List-KR for uBlock Origin. Maintained by the adblock community and AdGuard.
-! Version: 2025.0424.2
+! Version: 2025.0425.1
 ! Expires: 12 hours
 ! Homepage: https://github.com/List-KR/List-KR
 ! Support: https://list-kr-community.pages.dev/docs/
@@ -11,6 +11,7 @@
 !
 
 !#if ext_ublock
+||ssl-daumcdn-dvmq7lf5.kgslb.com^
 ||adgirl.yes24.com^
 ||ad.api.adwiser.kr^
 ||recoshopping.naver.com^
@@ -521,6 +522,7 @@ m.cafe.naver.com##.banner_add.bottom:matches-path(/ca-fe\\/web\\/cafes\\/(steami
 /data/banner.json?$domain=~nintendo.*
 /ad-manager.min.js
 !
+||api.eyejokerdb.com/api/banners/
 ||darknsilver.com/reaction
 ||item.gmarket.co.kr/Nbp/PowerClick
 ||seemsinfo.com/api/inventory
@@ -1590,6 +1592,8 @@ eegosa.com##section[id*="_ads_"]
 ! ##div[id*="_AD"]
 sports.donga.com##div[id*="_AD"]
 
+eyejokerdb.com##div[class$="max-w-[1200px]"].w-full > .rounded-lg
+eyejokerdb.com##next-route-announcer + .flex > div[class$="z-[5]"].relative
 jogemoa.com###container > .banner_list
 jogemoa.com###container > .banner_list ~ div[style^="padding:"]
 jogemoa.com##.popup_wrap
@@ -2819,7 +2823,7 @@ koreaminecraft.net##tr.notice:not(:has(.wst_member_title))
 ! DOMAIN-REFRESHER: START
 !
 blacktoon1.info##div[data-mesh-id="comp-m8jy31rninlineContent"]
-tkor10.com,tkor11.com,tkor12.com,tkor13.com,tkor14.com,tkor15.com,tkor16.com,tkor17.com,tkor18.com,tkor19.com,tkor20.com,tkor21.com,tkor22.com,tkor23.com,tkor24.com,tkor25.com,tkor26.com,tkor27.com,tkor28.com##*[class*="top_bann"]
+tkor011.com,tkor012.com,tkor013.com,tkor014.com,tkor015.com,tkor016.com,tkor017.com,tkor018.com,tkor019.com,tkor020.com,tkor021.com,tkor022.com,tkor023.com,tkor024.com,tkor025.com,tkor026.com,tkor027.com,tkor028.com##*[class*="top_bann"]
 toonkor.wiki##.banner
 yako.gg##.banner_grid
 v119.com##.zone-right > *:has(~ .no-pd):not(:has(> .tabbox))

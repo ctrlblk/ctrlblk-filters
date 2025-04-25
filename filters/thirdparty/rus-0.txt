@@ -9961,7 +9961,7 @@ $third-party,popup,domain=2ip.ru
 ||zpppstop.ru^$popup
 ||zqwjpxow7boc.ru^$popup
 
-! Социальные и анонсовые фичи на сайтах, блокирующие доступ к странице.
+! Социальные и анонсовые фичи на сайтах, полностью или частично блокирующие доступ к странице.
 ! Это просто запредельно неудобно, особенно если cookies периодически удаляются.
 !
 ! it-actual.ru
@@ -10070,6 +10070,7 @@ pdalife.ru##.b-popup
 vashgorod.ru##.c-popup
 games-two.su##.ckf-box
 riafan.ru##.cookie-agreement-wrapper
+news.sportbox.ru##.cookie-notice
 rutube.ru##.cookie-notify-module__cookie-consent
 championat.com##.cookie-popup
 litnet.com##.cookies-w
@@ -22014,7 +22015,7 @@ https://*adtech_uid=$~third-party,xmlhttprequest,domain=lena-miro.ru|levik.blog|
 ||news.mail.ru/-/*.js?
 ||newsyou.info/wp-content/plugins/gtranslate/
 ||newsyou.info^$csp=script-src-elem 'self' https:
-||pikabu.ru/ajax/*?lcn65=$xmlhttprequest
+||pikabu.ru/ajax/*?lcn75=$xmlhttprequest
 ||ritsatv.ru^$csp=script-src
 ||ritsatv.ru^$popup
 ||ritsatv.ru^$~document
@@ -27900,7 +27901,7 @@ videomore.ru##body > .wrapper:style(padding-top: 0 !important; background-color:
 videoredaktor.ru##div[style^="min-height: 100vh;"]:style(min-height: 0 !important)
 ! ---
 ! VIQEO, обще стили для плеера
-kp.kg,kp.kz,kp.md,media,ru##.buttonContainer[data-name="play"][style*="left: 10px;"]:style(opacity: unset !important)
+kp.kg,kp.kz,kp.md,media,ru,russian.rt.com##.buttonContainer[data-name="play"][style*="left: 10px;"]:style(opacity: unset !important)
 cdn.viqeo.tv##[data-video_status="paused"] .buttonContainer[data-name="play"][style*="left: 10px;"]:style(opacity: unset !important)
 ! ---
 virtualbrest.ru##body > div[id][class] > .header > div > div:not([class^="header"]) > *
@@ -28650,7 +28651,7 @@ frontend.vh.yandex.ru##+js(set-constant, Object.prototype.autoplay, false)
 eagleplatform.com##+js(set-constant, Object.prototype.autoplay, null)
 embed.dugout.com##+js(set-constant, Object.prototype.autostart, noopFunc)
 sports.ru##+js(set-constant, Object.prototype.branding, undefined)
-dni.expert,dni.ru,kp.kg,kp.kz,kp.md,kp.ru,ladys.media,lifehacker.ru,mk.ru,ohotniki.ru,portalvirtualreality.ru,radiokp.ru,sportkp.ru,wday.ru,woman.ru,womanhit.ru##+js(set-constant, Object.prototype.changeVisible, noopFunc)
+dni.expert,dni.ru,kp.kg,kp.kz,kp.md,kp.ru,ladys.media,lifehacker.ru,mk.ru,ohotniki.ru,portalvirtualreality.ru,radiokp.ru,russian.rt.com,sportkp.ru,wday.ru,woman.ru,womanhit.ru##+js(set-constant, Object.prototype.changeVisible, noopFunc)
 ati.su##+js(set-constant, Object.prototype.createBannerItem, null)
 24smi.org##+js(set-constant, Object.prototype.detect, noopFunc)
 examenpdd.com##+js(set-constant, Object.prototype.detectAdblock, noopFunc)
