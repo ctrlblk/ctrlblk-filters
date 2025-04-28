@@ -1,8 +1,8 @@
 [uBlock Origin]
-! Checksum: vmb5z3ECIi1COgLecRjqPw
-! Version: 202504261155
+! Checksum: seH9GSYu8OJcTqEo99asMg
+! Version: 202504271908
 ! Title: Hufilter for uBO
-! Last modified: 26 Apr 2025 11:55 UTC
+! Last modified: 27 Apr 2025 19:08 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://hufilter.hu
 ! Licence: CC-BY, see https://creativecommons.org/licenses/by/4.0/
@@ -151,6 +151,7 @@ alfahir.hu###block-block-16
 alfahir.hu###block-block-22
 alfahir.hu###block-views-ajanlo-block
 alfahir.hu###sticky_footer
+allegro.hu##.opbox-sheet.card:has(div[data-box-name^="allegro.ads."])
 androbit.net###RedUserNotification
 androgeek.hu##div.cikk_zona
 androgeek.hu##div.rightside > iframe
@@ -1130,6 +1131,7 @@ vasarnap.hu##.banner-commercial
 vasarnap.hu##.reklamnagy
 vatera.hu##.page-rightside-advert
 vatera.hu##div[id*="advert-container"]
+vectraline.hu##.prod-banner
 vehir.hu##[class*="szovegkozi"]
 vehir.hu##[class^="ad_"]
 vehir.hu##[id*="reklam_"]
@@ -1247,7 +1249,8 @@ nlc.hu#?#.m-breakingLayer:-abp-has(a[href*="nlc.hu/balkonfanatik"])
 prohardver.hu,mobilarena.hu,gamepod.hu,itcafe.hu,hardverapro.hu,fototrend.hu#?#div:-abp-has(>[style*="calc"])
 prohardver.hu,mobilarena.hu,itcafe.hu,gamepod.hu,logout.hu,hardverapro.hu#?#div:-abp-has(>h4 + div[style*="calc"])
 prohardver.hu,mobilarena.hu,itcafe.hu,gamepod.hu,logout.hu#?#div#center:-abp-has(div > div > p > a[style="color: #b42223;"])
-prohardver.hu,hardverapro.hu#?#div[class]:-abp-has(> h4:-abp-contains(/(Hirdetés|[Hh].*i.*r.*d.*e.*t.*é.*s)/) + div[class])
+prohardver.hu,mobilarena.hu,itcafe.hu,gamepod.hu,logout.hu,hardverapro.hu##.adaptiveAd
+prohardver.hu,mobilarena.hu,itcafe.hu,gamepod.hu,logout.hu,hardverapro.hu#?#div:not(.priv-thread-owner):-abp-has(> h4:-abp-contains(/(Hirdetés|[Hh].*i.*r.*d.*e.*t.*é.*s)/) + div[class])
 szeged365.hu#?#[id^="tie-block"]:-abp-has(.stream-title)
 ugytudjuk.hu#?#.row:-abp-has(.mainTopBnr)
 !-------------------------------------------------------------------------------!
@@ -1404,6 +1407,7 @@ ugytudjuk.hu#?#.row:-abp-has(.mainTopBnr)
 ||ultraweb.hu/ad*.php
 ||utcakereso.hu/hirdetes/
 ||vatera.hu/affiliate/images/banner/$image
+||vectraline.hu/*/hirdetesek/$image
 ||vezess.hu/data/files/bannerek/$image
 ||vezess.hu/data/files/kapcsolodo_anyagok/szponz_hatterek/$image
 ||vezess2.p3k.hu/app/uploads/*nyeremenyjatek$image
@@ -1940,6 +1944,7 @@ myonlineradio.hu##._bannerTop1:style(background-color: transparent !important;)
 startlap.hu##div.container.banner-container.wide:style(min-height: 0 !important; height: auto !important;)
 dehir.hu###popupFrontPageBanner-modal:style(display: none !important;)
 dehir.hu##body:style(overflow: auto !important;)
+prohardver.hu,fototrend.hu##main:style(background-image: none !important;)
 !-------------------------------------------------------------------------------!
 !------ Specific network filters -----------------------------------------------!
 !-------------------------------------------------------------------------------!
