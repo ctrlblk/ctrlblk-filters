@@ -1,8 +1,8 @@
 [uBlock Origin]
-! Checksum: seH9GSYu8OJcTqEo99asMg
-! Version: 202504271908
+! Checksum: LpQGQzlgtw4IfiFa1RCChg
+! Version: 202504281353
 ! Title: Hufilter for uBO
-! Last modified: 27 Apr 2025 19:08 UTC
+! Last modified: 28 Apr 2025 13:53 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://hufilter.hu
 ! Licence: CC-BY, see https://creativecommons.org/licenses/by/4.0/
@@ -1266,6 +1266,8 @@ ugytudjuk.hu#?#.row:-abp-has(.mainTopBnr)
 !-------------------------------------------------------------------------------!
 ||*/empty.json
 ||*/eu-banned-popup/
+||24.hu/*/sponsoredpost.css$stylesheet
+||24.hu/*/sponsoredpost.js$script
 ||444.hu/*/ease/
 ||ado.hu/banners/$image
 ||affiliate.hu$subdocument
@@ -1838,6 +1840,7 @@ infostart.hu#?##sitemodal:-abp-has(.fb-button)
 ||hestore.hu/pic/cookie.png$image
 ||itthonrolhaza.hu/wp-content/plugins/wp-popups-lite/src/assets/js/wppopups.js^$script
 ||money.hu/assets-new/js/calculator-widget-init.js$script
+||widget.moneycdn.com/hitelintezo/moneycheckwidget.min.js$script,domain=ingatlan.com
 ||penzcentrum.hu/assets/js/bioep.min.js$script
 ||szepsegbroker.hu/items/jquery.floating_popup*.js^$script
 ||liked.hu/choice/*/cmp2*.js^$script
@@ -1845,6 +1848,7 @@ infostart.hu#?##sitemodal:-abp-has(.fb-button)
 ||*.hu/*eu_cookie_compliance.css$stylesheet
 ||*.hu/*wp-content/plugins/complianz-gdpr/*.js$script
 ||*.hu/*wp-content/plugins/complianz-gdpr/*.css$stylesheet
+||iccm.ingatlancdn.com/iccm-*.js$script
 ! This section file contains rules for bypassing anti-adblock protections.
 ! The rules in this section should be compatible with all popular adblockers (Adblock Plus, AdGuard, uBlock Origin).
 !-------------------------------------------------------------------------------!
@@ -1898,6 +1902,9 @@ videa.hu,videaloop.hu##.top-video-container-banner
 ! https://github.com/hufilter/hufilter/issues/305
 ||beam-tracker.telex.hu^
 ||beam.telex.hu^
+||campaign.telex.hu/*/remplib.js$script
+||campaign.telex.hu/*/banner.js$script
+||campaign.telex.hu/showtime.php
 ||counter.megagroup.ru^
 ||doubleclick.net^
 ||gemius.hu^
@@ -2038,6 +2045,7 @@ pcworld.hu##+js(rc, have-ad, body)
 port.hu##+js(aopw, document.body.style)
 ! https://github.com/uBlockOrigin/uAssets/issues/25482
 online-filmek.ac##+js(no-fetch-if, api)
+online-filmek.ac##+js(no-fetch-if, ads)
 ! https://github.com/uBlockOrigin/uAssets/issues/27256#issuecomment-2670818969
 rubyvidhub.com##+js(rmnt, script, undefined)
 karpathir.com##[class^="k"][class*="-container"][class*="-2"][class$="-hide"]

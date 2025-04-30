@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: EasyList – Annoyances
-! Last modified: Mon, 28 Apr 2025 02:23:36 +0000
+! Last modified: Wed, 30 Apr 2025 02:20:08 +0000
 ! Expires: 7 days (update frequency)
 ! *** easylist:template_header.txt ***
 !
@@ -2139,6 +2139,7 @@ rabble.ca,sciencenews.org,thedp.com##.donate-box
 lifesitenews.com##.donate-callout
 insideclimatenews.org##.donate-cta
 ourworldindata.org##.donate-footer
+zsl.org##.donate-popup
 dailyartmagazine.com##.donate-row
 mprnews.org##.donateAsk
 democracynow.org##.donate_banner
@@ -2849,13 +2850,14 @@ betway.co.za###scroll
 baystatebanner.com###scroll-back
 linkrosa.com.br,splove.com.br###scroll-btn
 ofbez.com###scroll-buttons
-advister.it,aeromalls.com,coinmarketcap.com,ecrater.com,gadgetstouse.com,gipa.ge,hard-drive.net,hotels.com,inholland.nl,iphoneitalia.com,roadhousestory.it,safetydetectives.com,theblondeabroad.com,thefintechtimes.com,yoshuabengio.org###scroll-to-top
+advister.it,aeromalls.com,apomio.de,coinmarketcap.com,ecrater.com,gadgetstouse.com,gipa.ge,hard-drive.net,hotels.com,inholland.nl,iphoneitalia.com,roadhousestory.it,safetydetectives.com,theblondeabroad.com,thefintechtimes.com,yoshuabengio.org###scroll-to-top
 15min.lt,dihi.org,trutone.ca###scroll-top
 aptnnews.ca,gatewayhispanic.com,infodifesa.it,morbidology.com,revistaoilegasbrasil.com.br,rivanimation.com,spuf.org,theoverclocker.com,uska.ch,wdet.org###scroll-up
 alldomains.hosting,capital.com,permanentstyle.com,vodacomsoccer.com###scrollToTop
 agenciaamazonas.am.gov.br,ebookrenta.com,indiatimes.com,knowledge.wharton.upenn.edu,marketbusinessnews.com,moniteurautomobile.be,philstar.com,timesnownews.com,xiachufang.com###scrollTop
 bestbuycyprus.com###scrollTopButton
 123ink.ca,americanmusical.com,cinemo.hu,drinkboem.com,itdevices.ca,joemonster.org,kingofcocaine.com,labusa.info,primecables.ca###scrollUp
+escort-advisor.com,escort-advisor.de,escort-advisor.uk,escort-advisor.xxx###scroll_on_top
 hasznaltauto.hu,koreaboo.com,myfaith.tv,szalonauto.hu,vipcars.com###scroll_top
 astrofame.com###scrolling-top
 centrosuono.com,gigaset.com,hiclipart.com,luchtvaartnieuws.nl,miui.com,mytheresa.com,pcbeta.com,pngwing.com###scrolltop
@@ -3192,6 +3194,10 @@ irishnews.com##+js(set-local-storage-item, ArcP, $remove$)
 reason.com##.widget-placed:style(top:0 !important)
 ! nautil.us
 nautil.us##+js(cookie-remover, arc)
+! rtings
+rtings.com##.insider_notice
+rtings.com##+js(cookie-remover, current-pageviews)
+rtings.com##+js(cookie-remover, product-previews)
 ! commondreams.org
 commondreams.org,truthout.org##iframe[title="Popup"][src="about:blank"]
 commondreams.org##.popup--backdrop
@@ -3815,10 +3821,12 @@ mastory.jp##.qualvaBtn
 news.yahoo.co.jp##.riff-BackTop__root
 sp.nicovideo.jp##.searchResult-nicoadNicodicItem
 sofmap.com##.side_bnr
+young-machine.com##.widget_block [href^="/game/"]
 filmora.wondershare.jp##.ws-ad-new
 qiita.com##div[data-testid="popup-login"]
 gendai.media##div[data-testid="sidebar-ad-slider"]
 loungegamejoin.site##div[id^="idGoogleAd"]
+aps1.travel.rakuten.co.jp##table[width="750"]:not([class]):has(> tbody > tr > td > a[href^="https://img.travel.rakuten.co.jp/image/tr/ad/"])
 ||amazonaws.com/cdn.ma-site.com/common/chatbots.js$domain=mastory.jp
 ||api.popin.cc^$third-party
 ||bot.agerun.jp^$third-party
