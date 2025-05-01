@@ -1,10 +1,10 @@
 ![Adblock Plus 2.0]
-! Checksum: OECq7Fetti4hU4vfj0WP/g
-! Diff-Path: ../patches/9/9-s-1745953822-3600.patch
+! Checksum: tdnD7acoYhnRrzVkcmg1UQ
+! Diff-Path: ../patches/9/9-s-1746015270-3600.patch
 ! Title: AdGuard Spanish/Portuguese filter
 ! Description: Filter list that specifically removes ads on websites in Spanish, Portuguese, and Brazilian Portuguese languages.
-! Version: 2.0.29.70
-! TimeUpdated: 2025-04-29T19:06:20+00:00
+! Version: 2.0.29.72
+! TimeUpdated: 2025-04-30T12:10:33+00:00
 ! Expires: 5 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -2084,7 +2084,7 @@ windowsblogitalia.com#$#.sidebar > div.tile-top.tile { height: auto!important; }
 .br/adx.js
 .br/afiliados/$domain=~mercadolivre.com.br
 .br/banner.aspx?
-.br/banners/$domain=~gov.br
+.br/banners/$domain=~gov.br|~kabum.com.br
 .br/imagensdb/banners/
 .br/metrics/
 .br/swf/banners/
@@ -2203,6 +2203,9 @@ c5n.com,t13.cl,solowrestling.mundodeportivo.com,todojujuy.com,mendozapost.com,me
 !
 ! NOTE: Specific rules
 !
+macmagazine.com.br###canvas-content > div.cnvs-block-section:has(> div.cnvs-block-section-outer div.ad-space)
+macmagazine.com.br##.cs-sidebar__inner > div.widget:has(> div.wp-block-group div.ad-space)
+macmagazine.com.br###bannertopoWrapper
 dragonball.sullca.com###stickyBanner
 dragonball.sullca.com##body > a.fixed[target="_blank"]
 dragonball.sullca.com##.items-center > a[href="https://www.dragonball.uno/dragonball.html"][target="_blank"]
