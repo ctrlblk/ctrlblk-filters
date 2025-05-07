@@ -1,7 +1,7 @@
 [uBlock Origin]
 ! Title: List-KR for uBlock Origin
 ! Description: List-KR for uBlock Origin. Maintained by the adblock community and AdGuard.
-! Version: 2025.0505.0
+! Version: 2025.0507.2
 ! Expires: 12 hours
 ! Homepage: https://github.com/List-KR/List-KR
 ! Support: https://list-kr-community.pages.dev/docs/
@@ -515,6 +515,7 @@ m.cafe.naver.com##.banner_add.bottom:matches-path(/ca-fe\\/web\\/cafes\\/(steami
 /^https?:\/\/[a-z0-9-\.]*[a-z0-9-]+\.[a-z]+\/bannerpop\/uploads\//
 /^https?:\/\/[a-z0-9-\.]*[a-z0-9-]+\.[a-z]+\/adManager\/(css|js)\/[A-z]+\.(css|js)$/
 !
+/api/inventory?entryId=
 /gnetwork/adforus.
 /studio_backend/adforus.
 /^https?:\/\/[a-z0-9-\.]*[a-z0-9-]+\.[a-z]+\/RealMedia\/ads\//
@@ -523,11 +524,9 @@ m.cafe.naver.com##.banner_add.bottom:matches-path(/ca-fe\\/web\\/cafes\\/(steami
 !
 ||biz.sbs.co.kr/ad/
 ||biz.sbs.co.kr/img/pc/end_banner_250423.jpg
-||2days.aboda.kr/api/inventory
 ||api.eyejokerdb.com/api/banners/
 ||darknsilver.com/reaction
 ||item.gmarket.co.kr/Nbp/PowerClick
-||seemsinfo.com/api/inventory
 ||script.auction.co.kr/style/js/ad_icon.js
 ||c.011st.com/img/common/sprites/sp_ad_2x.png
 ||conist-cdn.com/*/iV/BO/
@@ -3170,7 +3169,7 @@ booktoki461.com,booktoki462.com,booktoki463.com,booktoki464.com,booktoki465.com,
 manatoki464.net,manatoki465.net,manatoki466.net,manatoki467.net,manatoki468.net,manatoki489.net,manatoki490.net,manatoki491.net,manatoki492.net,manatoki493.net,manatoki494.net,manatoki495.net,manatoki496.net#?#ul[class] > li:has(> a[href^="/guarantee.php"])
 ! aglint-disable-next-line
 [$domain=/newtoki\d+\.com/]#?#ul[class] > li:has(> a[href^="/guarantee.php"])
-[$domain=/^yagong\d*+\.com$/]##div[class*="border"]:has(> a[href][target*="_blank"])
+[$domain=/^yagong\d+\.com$/]##div[class*="border"]:has(> a[href][target*="_blank"])
 !
 ! DOMAIN-REFRESHER: END
 
@@ -3417,6 +3416,7 @@ t.hi098123.com#@#ins.adsbygoogle[data-ad-slot]
 @@||googletagmanager.com/gtag/js$domain=t.hi098123.com,script
 t.hi098123.com#$#.tabad { top: -100px !important; }
 !
+minipol.tistory.com##+js(set, checkAdBlock, undefined)
 start.klauncher.kr##+js(set, googletag.getVersion, trueFunc)
 ||pagead2.googlesyndication.com^$script,redirect=noop.js,domain=start.klauncher.kr
 tabriz.kr#@##AdHeader
@@ -3720,7 +3720,7 @@ www.erdcloud.com#$#.erd-container { width: 100% !important; }
 ! DOMAIN-REFRESHER: START
 !
 ! aglint-disable-next-line
-[$domain=/^spotv\d*+\.com$/]##header { top: 0px !important; }
+[$domain=/^spotv\d+\.com$/]##header { top: 0px !important; }
 ! aglint-disable-next-line
 [$domain=/newtoki\d+\.com/]#$#body { overflow: auto !important; }
 !

@@ -1,10 +1,10 @@
 ![Adblock Plus 2.0]
-! Checksum: 0ZNrW7kv69nivx9V99ggmA
-! Diff-Path: ../patches/7/7-s-1746486714-3600.patch
+! Checksum: y1PJHad/VGkbnaiRCfKbow
+! Diff-Path: ../patches/7/7-s-1746591119-3600.patch
 ! Title: AdGuard Japanese filter
 ! Description: Filter that enables ad blocking on websites in Japanese language.
-! Version: 2.0.64.25
-! TimeUpdated: 2025-05-05T23:07:55+00:00
+! Version: 2.0.64.28
+! TimeUpdated: 2025-05-07T04:08:07+00:00
 ! Expires: 5 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -1529,6 +1529,7 @@ jikayosha.jp#$#.wym-v2022__header.is-scroll-up ~ .wym-v2022__footer-fixed.is-pc-
 /wp-content/uploads/2024/09/fanza_ad$image
 !
 ! Malware/Phishing
+://visa-*.com/pay-with-featured/$document
 |http://3.34.69.214/rel/p/$document
 -co-jp.com/sbi4sec/$document
 ://eki-*.com/Perosnal_member/$document
@@ -1708,8 +1709,8 @@ _ap/signin*?_encoding=UTF8&openid.assoc_handle=jpflex&openid.claimed_id=&action=
 .asp?AC=*&IC=$document,to=com|fun|online|site
 /ap/signin/openid.pape.max_auth_age=0&openid.return_to=https%3A%2F%2Fwww.amazon.co.jp$document,to=cn|top|xyz
 /index.php?route=product/product&product_id=$document,to=cyou|life|live|shop|xyz|~ocam.live
-/index.php?main_page=product_info*&cPath=$document,to=asia|bar|beauty|best|biz|bond|buzz|cam|cfd|click|cloud|club|cyou|fit|fun|gay|homes|icu|ink|life|live|ltd|me|mom|monster|my|one|online|pics|pro|qpon|quest|rest|ru.com|sa.com|sbs|shop|site|skin|space|store|tokyo|top|website|wiki|work|xyz|za.com
-/index.php?main_page=product_info&products_id=$document,to=asia|bar|beauty|best|biz|bond|buzz|cam|cfd|click|cloud|club|cyou|fit|fun|gay|homes|icu|ink|life|live|ltd|me|mom|monster|my|one|online|pics|pro|qpon|quest|rest|ru.com|sa.com|sbs|shop|site|skin|space|store|tokyo|top|website|wiki|work|xyz|za.com
+/index.php?main_page=product_info*&cPath=$document,to=asia|bar|beauty|best|biz|bond|buzz|cam|cfd|click|cloud|club|cyou|fit|fun|gay|homes|icu|ink|lat|life|live|ltd|me|mom|monster|my|one|online|pics|pro|qpon|quest|rest|ru.com|sa.com|sbs|shop|site|skin|space|store|tokyo|top|website|wiki|work|xyz|za.com
+/index.php?main_page=product_info&products_id=$document,to=asia|bar|beauty|best|biz|bond|buzz|cam|cfd|click|cloud|club|cyou|fit|fun|gay|homes|icu|ink|lat|life|live|ltd|me|mom|monster|my|one|online|pics|pro|qpon|quest|rest|ru.com|sa.com|sbs|shop|site|skin|space|store|tokyo|top|website|wiki|work|xyz|za.com
 /\.(?:club|cn|icu|top|pro|site|work)\/Personal\/member\/Login\/index\.php\?oneTimeAccessID=/$document,to=club|cn|icu|top|pro|site|work
 !
 /^https:\/\/[a-z]{4,8}\.[a-z]{7,10}\.shop\/product\/\d{4,7}$/$document,match-case
@@ -1782,6 +1783,8 @@ gundamlog.com###more > iframe[src^="https://richlink.blogsys.jp"]
 !
 ! NOTE: Specific rules
 !
+||blove.jp/images/bnr_multipost_small.jpeg
+estar.jp##.viewerHeader ~ div[style^="background:"]
 sinsimmd.com##+js(remove-node-text, #text, /^PR\s$/)
 lovekoala.com##.lcmcolumn
 lovekoala.com##.main-column > h2.mtxt2:has(+ .lcmcolumn)
@@ -6940,7 +6943,7 @@ milk-key.com##.pc-overlay
 japan-railway.com###bigfooter
 times.abema.tv##iframe.yahoo
 2chopmt.blog.jp##.article-body-inner div[style="margin:0;padding:5px;font-size:12px;word-break: break-all;"]
-chara.ge,weblio.jp##.ads-container
+estar.jp,chara.ge,weblio.jp##.ads-container
 giocox.jp##.game_info:has(> .game_amazon)
 giocox.jp##.gc_ad
 security-next.com##.h_section2
@@ -7781,6 +7784,7 @@ minkch.com###desmiss
 minkch.com##.menu-item > .external
 minkch.com##.topframe
 library.pref.osaka.jp###banner_ad
+pref.tokushima.lg.jp##.banner_ad
 ||momoiroadult.com/wp-content/uploads/*_728x$image,~third-party
 ||momoiroadult.com/wp-content/uploads/*_640_100_$image,~third-party
 ||momoiroadult.com/wp-content/uploads/*_600x500$image,~third-party

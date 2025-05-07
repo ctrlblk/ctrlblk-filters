@@ -1,10 +1,10 @@
 ![Adblock Plus 2.0]
-! Checksum: pT0U8O7pfl2oMfI6D8u0Kw
-! Diff-Path: ../patches/13/13-s-1746451158-3600.patch
+! Checksum: u9zE0zoxq30vhuTSB0TRpw
+! Diff-Path: ../patches/13/13-s-1746529830-3600.patch
 ! Title: AdGuard Turkish filter
 ! Description: Filter list that specifically removes ads on websites in Turkish language.
-! Version: 2.0.56.13
-! TimeUpdated: 2025-05-05T13:15:11+00:00
+! Version: 2.0.56.19
+! TimeUpdated: 2025-05-06T11:06:31+00:00
 ! Expires: 5 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -286,6 +286,7 @@ menufiyatlari.com.tr##+js(no-setTimeout-if, adsbygoogle)
 sosyogaraj.com.tr##+js(no-setTimeout-if, adsbygoogle)
 ! https://github.com/AdguardTeam/AdguardFilters/issues/190065
 ! https://github.com/uBlockOrigin/uAssets/issues/25421
+gecmisi.com.tr##a[href^="https://bingx.com/"]
 gecmisi.com.tr#@#.adsbygoogle-noablate
 gecmisi.com.tr#@#div[id^="aswift_"]
 @@/favicon.ico|$domain=gecmisi.com.tr
@@ -1577,6 +1578,14 @@ dirilispostasi.com,turkuazgazetesi.net,yenialanya.com,bugunkocaeli.com.tr,cagdas
 !
 ! NOTE: Specific rules
 !
+||silentall.net/templates/silentallnet/images/sponrek.gif
+||vipfilmizle.net/anasayfa%20header.gif
+golgebahcesi.com##.rutaku-banner
+tranimaci.com##a[href^="https://cutt.ly/"]:has(img)
+tranimaci.com##a[href]:has(img[src="https://tranimaci.com/image/reklam.jpg"])
+||tranimaci.com/image/reklam.jpg
+filmizletv.*###vidaltins
+filmizletv.*#$#.container.main { margin-top: 0 !important; }
 justintv.co##.wpb_wrapper > center > a[target="_blank"]
 justintv.co##a[target="_blank"][rel="noopener"] > img
 justintv.co,inattvgiris.pro##+js(set-constant, window.config.adv.enabled, 0)
@@ -2505,6 +2514,7 @@ havadiskibris.com##img[width="710"][height="80"]
 ||haberkibris.com/banner
 izlekolik.org,haberkibris.com##img[alt="ads"]
 mynet.com##div[issponsored]
+/poo-und$domain=anizle.com|anizm.net|puffytr.com
 /po-undr.js$domain=anizle.com|anizm.net|puffytr.com
 ||vkfilmizle.net/paribas.webp
 ||vkfilmizle.net/mostbet-vid.webp
@@ -4756,7 +4766,7 @@ temizmagazin.com##.block-image > a[target="_blank"] > img
 ||koinbulteni.com/banner/
 ||koinbulteni.com/tokenad.html
 haber46.com.tr##a[href^="https://www.haber46.com.tr/banner.php"]
-birgun.net,webtekno.com##body .ads
+silentall.net,birgun.net,webtekno.com##body .ads
 otohaber.com.tr,ahaber.com.tr##.ligatusAdvert
 ||vdcasinotv*.com/assets/uploads/banners^
 hurriyet.com.tr,www-hurriyet-com-tr.cdn.ampproject.org##.amp-dfpslot
@@ -5334,7 +5344,7 @@ takvim.com.tr##iframe[name$="BIKADV"]
 haberturk.com##iframe[src*="/ads/"]
 cnnturk.com##iframe[src^="/action/ibanner"]
 afyonhaber.com##img[alt*="web-banner"]
-akcakocahavadis.com,muglagazetesi.com.tr,basarisiralamalari.com,eniyiandroid.com,bigatribun.net,mavididim.com.tr##img[alt="reklam"]
+dizimag.net,akcakocahavadis.com,muglagazetesi.com.tr,basarisiralamalari.com,eniyiandroid.com,bigatribun.net,mavididim.com.tr##img[alt="reklam"]
 fatsayenihaber.com,geredeyenigun.com,balikesirhaberajansi.com,kurtulusgazetesi.com.tr##img[alt="Reklam"]
 gidahatti.com##img[alt="ad"]
 haber.sol.org.tr##img[style="width: 300px;height: 250px;"]
@@ -5529,9 +5539,9 @@ selcuksportshd1590.xyz,selcuksportshd1591.xyz,selcuksportshd1592.xyz,selcuksport
 [$domain=/webspor\d+\.xyz/]#$?#video > style { remove: true; }
 !
 ! dizikral*.pro - frequently changed domains
-[$domain=/dizikral(?:\d+\.pro|\.live)/]#$#body > header { margin-top: 0 !important; }
-[$domain=/dizikral(?:\d+\.pro|\.live)/]##+js(set-constant, puShown, true)
-[$domain=/dizikral(?:\d+\.pro|\.live)/]#$#body > header { margin-top: 0 !important; }
+[$domain=/dizikral(?:\d+\.pro\|\.live)/]#$#body > header { margin-top: 0 !important; }
+[$domain=/dizikral(?:\d+\.pro\|\.live)/]##+js(set-constant, puShown, true)
+[$domain=/dizikral(?:\d+\.pro\|\.live)/]#$#body > header { margin-top: 0 !important; }
 !
 ! kuponuna*.top - frequently changed domains
 ||kuponuna*.top/r/
@@ -5749,6 +5759,7 @@ ugurfilm7.com,ugurfilm8.com,ugurfilm9.com,ugurfilm10.com,ugurfilm11.com,ugurfilm
 ugurfilm7.com,ugurfilm8.com,ugurfilm9.com,ugurfilm10.com,ugurfilm11.com,ugurfilm12.com,ugurfilm13.com,ugurfilm14.com,ugurfilm15.com,ugurfilm16.com##a[href="https://ucuncusinema.com/"]
 /reklampopup*.js$domain=ugurfilm7.com|ugurfilm8.com|ugurfilm9.com|ugurfilm10.com|ugurfilm11.com|ugurfilm12.com|ugurfilm13.com|ugurfilm14.com|ugurfilm15.com|ugurfilm16.com
 ugurfilm7.com,ugurfilm8.com,ugurfilm9.com,ugurfilm10.com,ugurfilm11.com,ugurfilm12.com,ugurfilm13.com,ugurfilm14.com,ugurfilm15.com,ugurfilm16.com##img[alt="Reklam"]
+||ugurfilm*.com/reklam*.js
 ||ugurfilm*.com/wp-content/cache/autoptimize/autoptimize_single_*.php
 ! avrupabettv*.com - frequently changed domains
 ||avrupabettv*.com/wp-content/uploads/
@@ -5790,17 +5801,17 @@ sezonlukdizi3.com,sezonlukdizi4.com,sezonlukdizi5.com,sezonlukdizi6.com,sezonluk
 ! sinepal*.vip - frequently changed domains
 sinepal.vip,sinepal1.vip,sinepal2.vip,sinepal3.vip,sinepal4.vip,sinepal5.vip,sinepal6.vip,sinepal7.vip,sinepal8.vip,sinepal9.vip,sinepal10.vip,sinepal11.vip##.money
 sinepal.vip,sinepal1.vip,sinepal2.vip,sinepal3.vip,sinepal4.vip,sinepal5.vip,sinepal6.vip,sinepal7.vip,sinepal8.vip,sinepal9.vip,sinepal10.vip,sinepal11.vip##.card-money
-! canlitribun*.live - frequently changed domains
-||canlitribun*.live/r/
-canlitribun237.live,canlitribun238.live,canlitribun239.live,canlitribun240.live,canlitribun241.live,canlitribun242.live,canlitribun243.live,canlitribun244.live,canlitribun245.live,canlitribun246.live##.header_r
-canlitribun237.live,canlitribun238.live,canlitribun239.live,canlitribun240.live,canlitribun241.live,canlitribun242.live,canlitribun243.live,canlitribun244.live,canlitribun245.live,canlitribun246.live##.kapat
-canlitribun237.live,canlitribun238.live,canlitribun239.live,canlitribun240.live,canlitribun241.live,canlitribun242.live,canlitribun243.live,canlitribun244.live,canlitribun245.live,canlitribun246.live##.chat_over_reklam
-canlitribun237.live,canlitribun238.live,canlitribun239.live,canlitribun240.live,canlitribun241.live,canlitribun242.live,canlitribun243.live,canlitribun244.live,canlitribun245.live,canlitribun246.live##.full_bg
-canlitribun237.live,canlitribun238.live,canlitribun239.live,canlitribun240.live,canlitribun241.live,canlitribun242.live,canlitribun243.live,canlitribun244.live,canlitribun245.live,canlitribun246.live###xbetpu
-canlitribun237.live,canlitribun238.live,canlitribun239.live,canlitribun240.live,canlitribun241.live,canlitribun242.live,canlitribun243.live,canlitribun244.live,canlitribun245.live,canlitribun246.live##.w100p
-canlitribun237.live,canlitribun238.live,canlitribun239.live,canlitribun240.live,canlitribun241.live,canlitribun242.live,canlitribun243.live,canlitribun244.live,canlitribun245.live,canlitribun246.live##div#stream_holder > iframe#video_reklam
-canlitribun237.live,canlitribun238.live,canlitribun239.live,canlitribun240.live,canlitribun241.live,canlitribun242.live,canlitribun243.live,canlitribun244.live,canlitribun245.live,canlitribun246.live##div[class="clearfix mt10"]
-canlitribun237.live,canlitribun238.live,canlitribun239.live,canlitribun240.live,canlitribun241.live,canlitribun242.live,canlitribun243.live,canlitribun244.live,canlitribun245.live,canlitribun246.live##div[class^="r_"]
+! canlitribun*.(live|top) - frequently changed domains
+||canlitribun*/r/$image
+[$domain=/(^\|.+\.)canlitribun\d+\.top/]##.header_r
+[$domain=/(^\|.+\.)canlitribun\d+\.top/]##.kapat
+[$domain=/(^\|.+\.)canlitribun\d+\.top/]##.chat_over_reklam
+[$domain=/(^\|.+\.)canlitribun\d+\.top/]##.full_bg
+[$domain=/(^\|.+\.)canlitribun\d+\.top/]###xbetpu
+[$domain=/(^\|.+\.)canlitribun\d+\.top/]##.w100p
+[$domain=/(^\|.+\.)canlitribun\d+\.top/]##div[class="clearfix mt10"]
+[$domain=/(^\|.+\.)canlitribun\d+\.top/]##div[class^="r_"]
+[$domain=/(^\|.+\.)canlitribun\d+\.top/]##div#stream_holder > iframe#video_reklam
 [$domain=/(^\|.+\.)canlitribun\d+\.live/]##.header_r
 [$domain=/(^\|.+\.)canlitribun\d+\.live/]##.kapat
 [$domain=/(^\|.+\.)canlitribun\d+\.live/]##.chat_over_reklam
@@ -5856,25 +5867,20 @@ inattvhd188.xyz,inattvhd189.xyz,inattvhd190.xyz,inattvhd191.xyz,inattvhd192.xyz,
 !
 ! trgoals*.xyz - frequently changed domains
 ! trgoals*.xyz - frequently changed domains
+! aglint-disable-next-line invalid-modifiers
+[$domain=/^trgoals\d+\.xyz$/]##.main-content > marquee
+[$domain=/^trgoals\d+\.xyz$/]##.ads-container
+[$domain=/^trgoals\d+\.xyz$/]##.rnd-qwert
+[$domain=/^trgoals\d+\.xyz$/]##body > div[style^="position:fixed;"]
 [$domain=/^trgoals\d+\.xyz$/]#$#.player-poster { background-image: none !important; }
-trgoals967.xyz,trgoals968.xyz,trgoals969.xyz,trgoals970.xyz,trgoals971.xyz,trgoals972.xyz,trgoals973.xyz,trgoals974.xyz,trgoals975.xyz,trgoals976.xyz,trgoals977.xyz,trgoals978.xyz,trgoals979.xyz,trgoals980.xyz,trgoals981.xyz,trgoals982.xyz,trgoals983.xyz,trgoals984.xyz,trgoals985.xyz,trgoals986.xyz,trgoals987.xyz,trgoals988.xyz,trgoals989.xyz,trgoals990.xyz,trgoals991.xyz,trgoals992.xyz,trgoals993.xyz,trgoals994.xyz,trgoals995.xyz,trgoals996.xyz,trgoals997.xyz,trgoals998.xyz,trgoals999.xyz,trgoals1000.xyz,trgoals1001.xyz,trgoals1002.xyz,trgoals1003.xyz,trgoals1004.xyz,trgoals1005.xyz,trgoals1006.xyz,trgoals1007.xyz,trgoals1008.xyz,trgoals1009.xyz,trgoals1010.xyz#$#.player-poster { background-image: none !important; }
 [$domain=/^trgoals\d+\.xyz$/]##+js(set-constant, config.adv, {})
-trgoals967.xyz,trgoals968.xyz,trgoals969.xyz,trgoals970.xyz,trgoals971.xyz,trgoals972.xyz,trgoals973.xyz,trgoals974.xyz,trgoals975.xyz,trgoals976.xyz,trgoals977.xyz,trgoals978.xyz,trgoals979.xyz,trgoals980.xyz,trgoals981.xyz,trgoals982.xyz,trgoals983.xyz,trgoals984.xyz,trgoals985.xyz,trgoals986.xyz,trgoals987.xyz,trgoals988.xyz,trgoals989.xyz,trgoals990.xyz,trgoals991.xyz,trgoals992.xyz,trgoals993.xyz,trgoals994.xyz,trgoals995.xyz,trgoals996.xyz,trgoals997.xyz,trgoals998.xyz,trgoals999.xyz,trgoals1000.xyz,trgoals1001.xyz,trgoals1002.xyz,trgoals1003.xyz,trgoals1004.xyz,trgoals1005.xyz,trgoals1006.xyz,trgoals1007.xyz,trgoals1008.xyz,trgoals1009.xyz,trgoals1010.xyz##+js(set-constant, config.adv, {})
 [$domain=/^trgoals\d+\.xyz$/]##+js(set-constant, isShow, true)
-trgoals967.xyz,trgoals968.xyz,trgoals969.xyz,trgoals970.xyz,trgoals971.xyz,trgoals972.xyz,trgoals973.xyz,trgoals974.xyz,trgoals975.xyz,trgoals976.xyz,trgoals977.xyz,trgoals978.xyz,trgoals979.xyz,trgoals980.xyz,trgoals981.xyz,trgoals982.xyz,trgoals983.xyz,trgoals984.xyz,trgoals985.xyz,trgoals986.xyz,trgoals987.xyz,trgoals988.xyz,trgoals989.xyz,trgoals990.xyz,trgoals991.xyz,trgoals992.xyz,trgoals993.xyz,trgoals994.xyz,trgoals995.xyz,trgoals996.xyz,trgoals997.xyz,trgoals998.xyz,trgoals999.xyz,trgoals1000.xyz,trgoals1001.xyz,trgoals1002.xyz,trgoals1003.xyz,trgoals1004.xyz,trgoals1005.xyz,trgoals1006.xyz,trgoals1007.xyz,trgoals1008.xyz,trgoals1009.xyz,trgoals1010.xyz##+js(set-constant, isShow, true)
-||trgoals*.xyz/images/ikimisli*.gif
 [$domain=/^trgoals\d+\.xyz$/]##div[style^="bottom:0;height:50px;left:0;position:fixed;"]
-trgoals967.xyz,trgoals968.xyz,trgoals969.xyz,trgoals970.xyz,trgoals971.xyz,trgoals972.xyz,trgoals973.xyz,trgoals974.xyz,trgoals975.xyz,trgoals976.xyz,trgoals977.xyz,trgoals978.xyz,trgoals979.xyz,trgoals980.xyz,trgoals981.xyz,trgoals982.xyz,trgoals983.xyz,trgoals984.xyz,trgoals985.xyz,trgoals986.xyz,trgoals987.xyz,trgoals988.xyz,trgoals989.xyz,trgoals990.xyz,trgoals991.xyz,trgoals992.xyz,trgoals993.xyz,trgoals994.xyz,trgoals995.xyz,trgoals996.xyz,trgoals997.xyz,trgoals998.xyz,trgoals999.xyz,trgoals1000.xyz,trgoals1001.xyz,trgoals1002.xyz,trgoals1003.xyz,trgoals1004.xyz,trgoals1005.xyz,trgoals1006.xyz,trgoals1007.xyz,trgoals1008.xyz,trgoals1009.xyz,trgoals1010.xyz##div[style^="bottom:0;height:50px;left:0;position:fixed;"]
 [$domain=/^trgoals\d+\.xyz$/]##body > a[target="_blank"]
-trgoals967.xyz,trgoals968.xyz,trgoals969.xyz,trgoals970.xyz,trgoals971.xyz,trgoals972.xyz,trgoals973.xyz,trgoals974.xyz,trgoals975.xyz,trgoals976.xyz,trgoals977.xyz,trgoals978.xyz,trgoals979.xyz,trgoals980.xyz,trgoals981.xyz,trgoals982.xyz,trgoals983.xyz,trgoals984.xyz,trgoals985.xyz,trgoals986.xyz,trgoals987.xyz,trgoals988.xyz,trgoals989.xyz,trgoals990.xyz,trgoals991.xyz,trgoals992.xyz,trgoals993.xyz,trgoals994.xyz,trgoals995.xyz,trgoals996.xyz,trgoals997.xyz,trgoals998.xyz,trgoals999.xyz,trgoals1000.xyz,trgoals1001.xyz,trgoals1002.xyz,trgoals1003.xyz,trgoals1004.xyz,trgoals1005.xyz,trgoals1006.xyz,trgoals1007.xyz,trgoals1008.xyz,trgoals1009.xyz,trgoals1010.xyz##body > a[target="_blank"]
 [$domain=/^trgoals\d+\.xyz$/]###player a[target="_blank"]
-trgoals967.xyz,trgoals968.xyz,trgoals969.xyz,trgoals970.xyz,trgoals971.xyz,trgoals972.xyz,trgoals973.xyz,trgoals974.xyz,trgoals975.xyz,trgoals976.xyz,trgoals977.xyz,trgoals978.xyz,trgoals979.xyz,trgoals980.xyz,trgoals981.xyz,trgoals982.xyz,trgoals983.xyz,trgoals984.xyz,trgoals985.xyz,trgoals986.xyz,trgoals987.xyz,trgoals988.xyz,trgoals989.xyz,trgoals990.xyz,trgoals991.xyz,trgoals992.xyz,trgoals993.xyz,trgoals994.xyz,trgoals995.xyz,trgoals996.xyz,trgoals997.xyz,trgoals998.xyz,trgoals999.xyz,trgoals1000.xyz,trgoals1001.xyz,trgoals1002.xyz,trgoals1003.xyz,trgoals1004.xyz,trgoals1005.xyz,trgoals1006.xyz,trgoals1007.xyz,trgoals1008.xyz,trgoals1009.xyz,trgoals1010.xyz###player a[target="_blank"]
 [$domain=/^trgoals\d+\.xyz$/]###yayinSection > marquee
-trgoals967.xyz,trgoals968.xyz,trgoals969.xyz,trgoals970.xyz,trgoals971.xyz,trgoals972.xyz,trgoals973.xyz,trgoals974.xyz,trgoals975.xyz,trgoals976.xyz,trgoals977.xyz,trgoals978.xyz,trgoals979.xyz,trgoals980.xyz,trgoals981.xyz,trgoals982.xyz,trgoals983.xyz,trgoals984.xyz,trgoals985.xyz,trgoals986.xyz,trgoals987.xyz,trgoals988.xyz,trgoals989.xyz,trgoals990.xyz,trgoals991.xyz,trgoals992.xyz,trgoals993.xyz,trgoals994.xyz,trgoals995.xyz,trgoals996.xyz,trgoals997.xyz,trgoals998.xyz,trgoals999.xyz,trgoals1000.xyz,trgoals1001.xyz,trgoals1002.xyz,trgoals1003.xyz,trgoals1004.xyz,trgoals1005.xyz,trgoals1006.xyz,trgoals1007.xyz,trgoals1008.xyz,trgoals1009.xyz,trgoals1010.xyz###yayinSection > marquee
 [$domain=/^trgoals\d+\.xyz$/]##.topDuyuru
-trgoals967.xyz,trgoals968.xyz,trgoals969.xyz,trgoals970.xyz,trgoals971.xyz,trgoals972.xyz,trgoals973.xyz,trgoals974.xyz,trgoals975.xyz,trgoals976.xyz,trgoals977.xyz,trgoals978.xyz,trgoals979.xyz,trgoals980.xyz,trgoals981.xyz,trgoals982.xyz,trgoals983.xyz,trgoals984.xyz,trgoals985.xyz,trgoals986.xyz,trgoals987.xyz,trgoals988.xyz,trgoals989.xyz,trgoals990.xyz,trgoals991.xyz,trgoals992.xyz,trgoals993.xyz,trgoals994.xyz,trgoals995.xyz,trgoals996.xyz,trgoals997.xyz,trgoals998.xyz,trgoals999.xyz,trgoals1000.xyz,trgoals1001.xyz,trgoals1002.xyz,trgoals1003.xyz,trgoals1004.xyz,trgoals1005.xyz,trgoals1006.xyz,trgoals1007.xyz,trgoals1008.xyz,trgoals1009.xyz,trgoals1010.xyz##.topDuyuru
 [$domain=/^trgoals\d+\.xyz$/]##.contentReklam
-trgoals967.xyz,trgoals968.xyz,trgoals969.xyz,trgoals970.xyz,trgoals971.xyz,trgoals972.xyz,trgoals973.xyz,trgoals974.xyz,trgoals975.xyz,trgoals976.xyz,trgoals977.xyz,trgoals978.xyz,trgoals979.xyz,trgoals980.xyz,trgoals981.xyz,trgoals982.xyz,trgoals983.xyz,trgoals984.xyz,trgoals985.xyz,trgoals986.xyz,trgoals987.xyz,trgoals988.xyz,trgoals989.xyz,trgoals990.xyz,trgoals991.xyz,trgoals992.xyz,trgoals993.xyz,trgoals994.xyz,trgoals995.xyz,trgoals996.xyz,trgoals997.xyz,trgoals998.xyz,trgoals999.xyz,trgoals1000.xyz,trgoals1001.xyz,trgoals1002.xyz,trgoals1003.xyz,trgoals1004.xyz,trgoals1005.xyz,trgoals1006.xyz,trgoals1007.xyz,trgoals1008.xyz,trgoals1009.xyz,trgoals1010.xyz##.contentReklam
 !
 ! sportradar*.com - frequently changed domains
 ||sportradar*.com/wp-content/uploads/*/mrtpsg.jpg
