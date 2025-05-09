@@ -1,10 +1,10 @@
 ![Adblock Plus 2.0]
-! Checksum: bpjDaXMDEuBuLMvVdJ+0VA
-! Diff-Path: ../patches/9/9-s-1746451163-3600.patch
+! Checksum: uovxj2UVAQbuZYdLw2d60g
+! Diff-Path: ../patches/9/9-s-1746738628-3600.patch
 ! Title: AdGuard Spanish/Portuguese filter
 ! Description: Filter list that specifically removes ads on websites in Spanish, Portuguese, and Brazilian Portuguese languages.
-! Version: 2.0.29.77
-! TimeUpdated: 2025-05-05T13:15:06+00:00
+! Version: 2.0.29.83
+! TimeUpdated: 2025-05-08T21:06:44+00:00
 ! Expires: 5 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -828,9 +828,11 @@ receitasdaora.online,foodiesgallery.com,caroloportunidades.com.br##+js(no-setTim
 @@||widgets.outbrain.com/outbrain.js$xmlhttprequest,domain=anitube.vip|hinatasoul.com|dattebayo-br.com|anitube.us|coempregos.com.br|animesonliner4.com|drstonebr.com|animefire.info
 @@||s4.cdnpc.net/*.css?version=v93$xmlhttprequest,domain=anitube.vip|hinatasoul.com|dattebayo-br.com|anitube.us|coempregos.com.br|animesonliner4.com|drstonebr.com|animefire.info
 @@||cdn.taboola.com/libtrc/san1go-network/loader.js$xmlhttprequest,domain=anitube.vip|hinatasoul.com|dattebayo-br.com|anitube.us|coempregos.com.br|animesonliner4.com|drstonebr.com|animefire.info
+@@||cdn.taboola.com/libtrc/unpkg/tfa.js$xmlhttprequest,domain=anitube.vip|hinatasoul.com|dattebayo-br.com|anitube.us|coempregos.com.br|animesonliner4.com|drstonebr.com|animefire.info
 coempregos.com.br,anitube.us,anitube.vip,hinatasoul.com##+js(no-setTimeout-if, hasAdblock)
 coempregos.com.br,anitube.us,anitube.vip,hinatasoul.com##+js(set-constant, detectedAdblock, noopFunc)
 coempregos.com.br,anitube.us,anitube.vip,hinatasoul.com##+js(no-fetch-if, /outbrain\.com|adligature\.com|quantserve\.com|srvtrck\.com/)
+drstonebr.com,animefire.info,animesonliner4.com,coempregos.com.br,anitube.us,dattebayo-br.com,anitube.vip,hinatasoul.comssstik.io##+js(no-xhr-if, //cdn.taboola.com/libtrc/unpkg/tfa.js)
 ! Fix for DNS filtering
 ! https://github.com/AdguardTeam/AdguardFilters/issues/157756
 ! Link from anitube.vip
@@ -2197,6 +2199,13 @@ c5n.com,t13.cl,solowrestling.mundodeportivo.com,todojujuy.com,mendozapost.com,me
 !
 ! NOTE: Specific rules
 !
+baixaki.com.br###new-float-ads
+baixaki.com.br##div[class^="styles_ads_placeholder"]
+megacurioso.com.br###banner-video-area
+nationalgeographicbrasil.com##div[id^="gpt--header--"]
+yelitzonpc.com##center > a[target="_blank"]
+misprogramaspc.com##.vn-green > a[target="_blank"]
+tecmundo.com.br##div[class^="styles_ads_"]
 gamestorrents.app##img[onclick*="click.ggpickaff"]
 muyinteresante.com##.banner
 macmagazine.com.br###canvas-content > div.cnvs-block-section:has(> div.cnvs-block-section-outer div.ad-space)
