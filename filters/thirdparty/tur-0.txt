@@ -1,10 +1,10 @@
 ![Adblock Plus 2.0]
-! Checksum: Wu2Mevma0H9+RsORz5XLDA
-! Diff-Path: ../patches/13/13-s-1746727954-3600.patch
+! Checksum: xeH7wH+UQzG5wWaHt+cT3w
+! Diff-Path: ../patches/13/13-s-1746814387-3600.patch
 ! Title: AdGuard Turkish filter
 ! Description: Filter list that specifically removes ads on websites in Turkish language.
-! Version: 2.0.56.30
-! TimeUpdated: 2025-05-08T18:08:48+00:00
+! Version: 2.0.56.34
+! TimeUpdated: 2025-05-09T18:08:58+00:00
 ! Expires: 5 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -901,7 +901,7 @@ dizipal1.cloud,dizipal2.cloud,dizipal3.cloud,dizipal4.cloud,dizipal5.cloud,dizip
 ! puShown
 dizimore.com,dizirex.com,maxfilmizle.pro,turkifsa.xyz,fullhdfilmizlesene.*,royalfilmizle.com,sinetiktok.com,onlinedizi.xyz,uzaymanga.com,filmzirvesi.to,filmifullizle.online,sinemakolik.org,filmerotixxx.com,filmfc.com,filmizletv18.com,onlinefilmizle.site,playerzz.xyz,filmjr.org,asfilmizle.com,dizifast.net,filmhe.com,tranimaci.*,hdfilmizle.site,sinepal1.vip,hdsinemax.com,hdfilmizle.org,siyahfilmizle.*,tafdi4.com,tafdi5.com,elzemfilm.org,tafdi3.com,anizle.com,kozfilm.com,hdfilmizle.in,dizicaps.*,filmizletv1.*,diziyou.co,fullhdfilmizle.*,fullfilmizle.*,sinepal.*,dizimag.eu,bumfilmizle1.com,yabancidizilertv.*,1080hdfilmizle.com,hdfilmcehennemi.*,yabancidizibax.com,sinemangoo.org,sexfilmleriizle.com,fullhdfilm.*,geziforumu.com,efendim.xyz,dizipaltv.net,fluffcore.com,hdfilmcehennemizle.com,netfullfilmizle3.com,filmmodu.info,izlekolik.*,arrowizle.com,jokerfilmizle.com,720pfilmiizle.net,filmcus.com,filmizlew.org,zoof1.xyz,sinemakolik.net,sinefilmizlesen.com,zarize.com,burdenfly.com,zzerotik.com,filmgo.org,sinemafilmizle.net,filmkuzusu1.com,hdfilmcix.*,sinemadelisi.com,erotikfilmtube.com,dizipal.*,filmizletv.*,tekparthdfilmizle.*,pornoanne.com,dizikorea.*,diziyo.*,diziboxx.com,dafflix.*,turkaliz.com,vkfilmizle.net,dizimov.*,filmizlet.net,bumfilmizle.com,shirl.club,evrenselfilmlerim.org,turkcealtyazilipornom.com,fullhdfilmmodu2.*,sinema.cx,hdfilmizletv.net,pembetv18.*,sinemaizle.co,hdfilmcehennem.live,efullizle.com,asyafanatiklerim.com,dizilost.com,fullhdfilmdeposu.com,tranimeizle.*,volsex.com,divx720pfilmizle.org##+js(set-constant, puShown, true)
 ! isShow
-tekfullfilmizle5.com##+js(set-constant, isShow, true)
+playertrgb.pages.dev,playertrgc.pages.dev,tekfullfilmizle5.com##+js(set-constant, isShow, true)
 ! initPu
 sinemakolix.com,erotikhoot.com,dizikral.live,eldermanga.com,promy.pro,diziyoutv.com,guneykoresinemasi.com,jetfilmizletv.net,dizimax2.com,yenierotikfilm.xyz,breakingbadizle.*,diziday1.com,zipfilmizle.com,bamfilmizle.com,sinemadafilm.com,hdizlefilmleri.com,filmmoduu.com,abifilmizle.org,trfilm.net,dolufilm.org,turkifsaalemi.com##+js(abort-on-property-read, initPu)
 ! initAd
@@ -1571,6 +1571,7 @@ dirilispostasi.com,turkuazgazetesi.net,yenialanya.com,bugunkocaeli.com.tr,cagdas
 !
 ! NOTE: Specific rules
 !
+||playertr*.pages.dev/pop.js
 /js/fc.js^$domain=star.com.tr|yirmidort.tv
 ||imgs.stargazete.com/folders/js/tmAds-star.js
 gunes.com##div[style*="height:"]:has(> div[style^="text-align:"] .js-gpt-ad)
@@ -1945,6 +1946,7 @@ odatv.com##.swiper-wrapper > a[href^="https://www.odatv.com/"] ~ a:not([href^="h
 ||hops1s.site^$image,third-party
 turkiyegazetesi.com.tr##.masthead-cls
 ||haber18.com/canbunlar/
+dizilla.club,yabancidizi.io##a.bg-position-top[target="_blank"]
 roketdizi.*,yabancidizi.io,diziyoutv.com,sinefil.tv##a[target="_blank"] > .alert
 ||tranimaci.*/vast.js
 ||tranimaci.*/pop*.js
@@ -5597,6 +5599,12 @@ fullhdizle.*,filmizlehdfilm.com,filmizletv.*,fullfilmizle.*,fullfilmizle.cc,full
 fullhdizle.*,filmizlehdfilm.com,filmizletv.*,fullfilmizle.*,fullfilmizle.cc,fullhdfilmizle.*,fullhdfilmizletv.*,hdfilmcehennemi.*,hdfilmcix.*,hdfilmizlesene.org,sinema.cx##+js(set-constant, reklamsayisi, 1)
 fullhdizle.*,filmizlehdfilm.com,filmizletv.*,fullfilmizle.*,fullfilmizle.cc,fullhdfilmizle.*,fullhdfilmizletv.*,hdfilmcehennemi.*,hdfilmcix.*,hdfilmizlesene.org,sinema.cx##+js(nano-setInterval-booster, sec--, *, 0.001)
 !
+! mackeyfi*.sbs - frequently changed domains
+[$domain=/mackeyfi\d+.sbs/]##a[href="https://bty.bio/reklam"]
+! aglint-disable invalid-modifiers
+!+ NOT_VALIDATE
+||video.twimg.com/ext_tw_video/$domain=/mackeyfi\d+.sbs/
+! aglint-enable invalid-modifiers
 ! dizipal*.com - frequently changed domains
 ! https://x.com/dizipalSx
 x.ag2m2.cfd#?##oframeplayerjs > pjsdiv[style^="position:"]:has(> pjsdiv > pjsdiv > center:contains(Padişahbet'ten))
@@ -5814,9 +5822,6 @@ macvar1056.live,macvar1057.live,macvar1058.live,macvar1059.live,macvar1060.live,
 [$domain=/golvar\d+\.sbs/]##.pageskin
 [$domain=/golvar\d+\.sbs/]##a[target="_blank"] > img
 [$domain=/golvar\d+\.sbs/]##.stream-ads
-golvar3489.sbs,golvar3490.sbs,golvar3491.sbs,golvar3492.sbs,golvar3493.sbs,golvar3494.sbs,golvar3495.sbs,golvar3496.sbs,golvar3497.sbs,golvar3498.sbs,golvar3499.sbs,golvar3500.sbs,golvar3501.sbs,golvar3502.sbs,golvar3503.sbs,golvar3504.sbs,golvar3505.sbs,golvar3506.sbs,golvar3507.sbs,golvar3508.sbs,golvar3509.sbs,golvar3510.sbs,golvar3511.sbs,golvar3512.sbs,golvar3513.sbs,golvar3514.sbs,golvar3515.sbs,golvar3516.sbs,golvar3517.sbs,golvar3518.sbs,golvar3519.sbs,golvar3520.sbs,golvar3521.sbs,golvar3522.sbs,golvar3523.sbs,golvar3524.sbs,golvar3525.sbs,golvar3526.sbs,golvar3527.sbs,golvar3528.sbs,golvar3529.sbs,golvar3530.sbs,golvar3531.sbs,golvar3532.sbs,golvar3533.sbs,golvar3534.sbs,golvar3535.sbs,golvar3536.sbs,golvar3537.sbs,golvar3538.sbs,golvar3539.sbs,golvar3540.sbs,golvar3541.sbs,golvar3542.sbs,golvar3543.sbs,golvar3544.sbs,golvar3545.sbs,golvar3546.sbs,golvar3547.sbs,golvar3548.sbs,golvar3549.sbs,golvar3550.sbs,golvar3551.sbs,golvar3552.sbs,golvar3553.sbs,golvar3554.sbs,golvar3555.sbs,golvar3556.sbs,golvar3557.sbs,golvar3558.sbs,golvar3559.sbs,golvar3560.sbs,golvar3561.sbs,golvar3562.sbs,golvar3563.sbs,golvar3564.sbs,golvar3565.sbs,golvar3566.sbs,golvar3567.sbs,golvar3568.sbs,golvar3569.sbs,golvar3570.sbs,golvar3571.sbs,golvar3572.sbs,golvar3573.sbs,golvar3574.sbs,golvar3575.sbs,golvar3576.sbs,golvar3577.sbs,golvar3578.sbs,golvar3579.sbs,golvar3580.sbs,golvar3581.sbs,golvar3582.sbs,golvar3583.sbs,golvar3584.sbs,golvar3585.sbs,golvar3586.sbs,golvar3587.sbs,golvar3588.sbs,golvar3589.sbs,golvar3590.sbs,golvar3591.sbs,golvar3592.sbs,golvar3593.sbs,golvar3594.sbs,golvar3595.sbs,golvar3596.sbs,golvar3597.sbs##.pageskin
-golvar3489.sbs,golvar3490.sbs,golvar3491.sbs,golvar3492.sbs,golvar3493.sbs,golvar3494.sbs,golvar3495.sbs,golvar3496.sbs,golvar3497.sbs,golvar3498.sbs,golvar3499.sbs,golvar3500.sbs,golvar3501.sbs,golvar3502.sbs,golvar3503.sbs,golvar3504.sbs,golvar3505.sbs,golvar3506.sbs,golvar3507.sbs,golvar3508.sbs,golvar3509.sbs,golvar3510.sbs,golvar3511.sbs,golvar3512.sbs,golvar3513.sbs,golvar3514.sbs,golvar3515.sbs,golvar3516.sbs,golvar3517.sbs,golvar3518.sbs,golvar3519.sbs,golvar3520.sbs,golvar3521.sbs,golvar3522.sbs,golvar3523.sbs,golvar3524.sbs,golvar3525.sbs,golvar3526.sbs,golvar3527.sbs,golvar3528.sbs,golvar3529.sbs,golvar3530.sbs,golvar3531.sbs,golvar3532.sbs,golvar3533.sbs,golvar3534.sbs,golvar3535.sbs,golvar3536.sbs,golvar3537.sbs,golvar3538.sbs,golvar3539.sbs,golvar3540.sbs,golvar3541.sbs,golvar3542.sbs,golvar3543.sbs,golvar3544.sbs,golvar3545.sbs,golvar3546.sbs,golvar3547.sbs,golvar3548.sbs,golvar3549.sbs,golvar3550.sbs,golvar3551.sbs,golvar3552.sbs,golvar3553.sbs,golvar3554.sbs,golvar3555.sbs,golvar3556.sbs,golvar3557.sbs,golvar3558.sbs,golvar3559.sbs,golvar3560.sbs,golvar3561.sbs,golvar3562.sbs,golvar3563.sbs,golvar3564.sbs,golvar3565.sbs,golvar3566.sbs,golvar3567.sbs,golvar3568.sbs,golvar3569.sbs,golvar3570.sbs,golvar3571.sbs,golvar3572.sbs,golvar3573.sbs,golvar3574.sbs,golvar3575.sbs,golvar3576.sbs,golvar3577.sbs,golvar3578.sbs,golvar3579.sbs,golvar3580.sbs,golvar3581.sbs,golvar3582.sbs,golvar3583.sbs,golvar3584.sbs,golvar3585.sbs,golvar3586.sbs,golvar3587.sbs,golvar3588.sbs,golvar3589.sbs,golvar3590.sbs,golvar3591.sbs,golvar3592.sbs,golvar3593.sbs,golvar3594.sbs,golvar3595.sbs,golvar3596.sbs,golvar3597.sbs##a[target="_blank"] > img
-golvar3489.sbs,golvar3490.sbs,golvar3491.sbs,golvar3492.sbs,golvar3493.sbs,golvar3494.sbs,golvar3495.sbs,golvar3496.sbs,golvar3497.sbs,golvar3498.sbs,golvar3499.sbs,golvar3500.sbs,golvar3501.sbs,golvar3502.sbs,golvar3503.sbs,golvar3504.sbs,golvar3505.sbs,golvar3506.sbs,golvar3507.sbs,golvar3508.sbs,golvar3509.sbs,golvar3510.sbs,golvar3511.sbs,golvar3512.sbs,golvar3513.sbs,golvar3514.sbs,golvar3515.sbs,golvar3516.sbs,golvar3517.sbs,golvar3518.sbs,golvar3519.sbs,golvar3520.sbs,golvar3521.sbs,golvar3522.sbs,golvar3523.sbs,golvar3524.sbs,golvar3525.sbs,golvar3526.sbs,golvar3527.sbs,golvar3528.sbs,golvar3529.sbs,golvar3530.sbs,golvar3531.sbs,golvar3532.sbs,golvar3533.sbs,golvar3534.sbs,golvar3535.sbs,golvar3536.sbs,golvar3537.sbs,golvar3538.sbs,golvar3539.sbs,golvar3540.sbs,golvar3541.sbs,golvar3542.sbs,golvar3543.sbs,golvar3544.sbs,golvar3545.sbs,golvar3546.sbs,golvar3547.sbs,golvar3548.sbs,golvar3549.sbs,golvar3550.sbs,golvar3551.sbs,golvar3552.sbs,golvar3553.sbs,golvar3554.sbs,golvar3555.sbs,golvar3556.sbs,golvar3557.sbs,golvar3558.sbs,golvar3559.sbs,golvar3560.sbs,golvar3561.sbs,golvar3562.sbs,golvar3563.sbs,golvar3564.sbs,golvar3565.sbs,golvar3566.sbs,golvar3567.sbs,golvar3568.sbs,golvar3569.sbs,golvar3570.sbs,golvar3571.sbs,golvar3572.sbs,golvar3573.sbs,golvar3574.sbs,golvar3575.sbs,golvar3576.sbs,golvar3577.sbs,golvar3578.sbs,golvar3579.sbs,golvar3580.sbs,golvar3581.sbs,golvar3582.sbs,golvar3583.sbs,golvar3584.sbs,golvar3585.sbs,golvar3586.sbs,golvar3587.sbs,golvar3588.sbs,golvar3589.sbs,golvar3590.sbs,golvar3591.sbs,golvar3592.sbs,golvar3593.sbs,golvar3594.sbs,golvar3595.sbs,golvar3596.sbs,golvar3597.sbs##.stream-ads
 ! https://github.com/AdguardTeam/AdguardFilters/issues/77520
 ! ads in stream
 ||video.twimg.com/ext_tw_video/*/pu/*/*.m4s$redirect=noop-1s.mp4,domain=ifra.strmrdrfronf.click|if.strmrdrfronf.click,media
@@ -5898,6 +5903,7 @@ inattvhd188.xyz,inattvhd189.xyz,inattvhd190.xyz,inattvhd191.xyz,inattvhd192.xyz,
 !
 ! trgoals*.xyz - frequently changed domains
 ! trgoals*.xyz - frequently changed domains
+[$domain=/^trgoals\d+\.xyz$/]##.hellobar
 [$domain=/^trgoals\d+\.xyz$/]##.main-content > marquee
 [$domain=/^trgoals\d+\.xyz$/]##.ads-container
 [$domain=/^trgoals\d+\.xyz$/]##.rnd-qwert

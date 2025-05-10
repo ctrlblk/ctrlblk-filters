@@ -1,10 +1,10 @@
 ![Adblock Plus 2.0]
-! Checksum: uovxj2UVAQbuZYdLw2d60g
-! Diff-Path: ../patches/9/9-s-1746738628-3600.patch
+! Checksum: GmTECFA3s8ry92qfCosC8A
+! Diff-Path: ../patches/9/9-s-1746825037-3600.patch
 ! Title: AdGuard Spanish/Portuguese filter
 ! Description: Filter list that specifically removes ads on websites in Spanish, Portuguese, and Brazilian Portuguese languages.
-! Version: 2.0.29.83
-! TimeUpdated: 2025-05-08T21:06:44+00:00
+! Version: 2.0.29.85
+! TimeUpdated: 2025-05-09T21:06:34+00:00
 ! Expires: 5 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -25,6 +25,7 @@
 ! https://forum.adguard.com/index.php?threads/ivoox-com-podcasts-issues.29530/
 ! ||addevweb.com^$third-party
 !
+||simpleads.com.br^$third-party
 ||upeex.com.br^
 ||upeex.com^
 ||adspublicidades.agency^
@@ -1869,6 +1870,9 @@ tuhentaionline.com##+js(abort-on-property-read, Pub2)
 !------- CSS fixes --------------------!
 !--------------------------------------!
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/204934
+olhardigital.com.br#$#.sn-header-bar { top: 0 !important; }
+olhardigital.com.br#$#body { padding-top: 0 !important; }
 ! https://github.com/AdguardTeam/AdguardFilters/issues/193605
 pulzo.com#$##pulzo-header { position: static !important; }
 ! https://github.com/AdguardTeam/AdguardFilters/issues/186354
@@ -2199,6 +2203,7 @@ c5n.com,t13.cl,solowrestling.mundodeportivo.com,todojujuy.com,mendozapost.com,me
 !
 ! NOTE: Specific rules
 !
+olhardigital.com.br##div[data-snad]
 baixaki.com.br###new-float-ads
 baixaki.com.br##div[class^="styles_ads_placeholder"]
 megacurioso.com.br###banner-video-area
@@ -2565,8 +2570,12 @@ poder360.com.br##.trust-project-bar
 tycsports.com##.asideAdWrapper
 tycsports.com##.horizontalAdWrapper
 itforum.com.br##body > .container:has(> .row:only-child > div:only-child > div:only-child > div[id^="div-gpt-ad"])
-canaltech.com.br#?#main + div.fixed:has(> div[id^="div-gpt-ad"])
+canaltech.com.br###content-news > div.aspect-video[class*="truvidPos"]
+canaltech.com.br###content-news > div.flex-col[class*="min-h-"]:has(> span[class*=" tracking-"]:only-child)
+canaltech.com.br##main + div.fixed:has(> div[id^="div-gpt-ad"])
 canaltech.com.br#?#main div.justify-center:has(> span:contains(Conteúdo apoiado por))
+canaltech.com.br###truvidPos
+canaltech.com.br###content-news > div[class]:has(> div[data-ad])
 cnnbrasil.com.br##.sidebar__item--ad
 pelismx.lat##.botones-ads
 pelismx.lat###top-menu-movil
@@ -2904,8 +2913,6 @@ cerisescan.net,sinensisscan.net##a[href="https://receita-fit.com"]
 cerisescan.net,sinensisscan.net#?#.widget_custom_html:has(a[href="https://receita-fit.com"])
 tviplayer.iol.pt##.billboardxlWrapper
 jornalopcao.com.br##.template-part-component-google-ad
-canaltech.com.br###truvidPos
-canaltech.com.br#?##content-news > div[class]:has(> div[data-ad])
 superembeds.com##.pppx
 superembeds.com###adStop
 ||superembeds.com/*.xml
