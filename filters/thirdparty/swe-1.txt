@@ -1,6 +1,6 @@
 ! Title: Frellwit's Swedish Filter
 ! Expires: 4 days
-! Last modified: 2025-05-14 05:03:07 CEST
+! Last modified: 2025-05-15 05:17:46 CEST
 ! Homepage: https://github.com/lassekongo83/Frellwits-filter-lists
 ! Description: A filter for uBlock Origin that aims to remove regional Swedish ads, tracking, annoyances, scams + badware, and unnecessary bloat.
 ! License: GPL3 - https://github.com/lassekongo83/Frellwits-filter-lists/blob/master/LICENSE
@@ -1024,8 +1024,8 @@ matkanalen.se###sidebar .widget_text
 matmalin.se##div[id^="matma-"]
 matochpyssel.nu##.loading:style(opacity:1!important)
 matpriskollen.se###kd-preloader
+matspar.se##div[id^="gpt-ad"]:upward(1)
 matspar.se##div[style="z-index: 2000;"],div[style="z-index: 2000;"] + div
-matspar.se###ad-panorama-category:upward(1)
 matspar.se##+js(json-prune, payload.ads campaigns.*)
 matspar.se##.overflow-hidden:style(overflow-y: initial !important;)
 medibok.se##noscript:has-text(mdp-deblocker-js-disabled):remove()
@@ -2610,7 +2610,7 @@ zeromagazine.nu##div[id^="ads"]
 /tracking/cts.js
 /tracking/fpc.js
 /tracking_scripts$domain=osterbottenstidning.fi|sydin.fi|vasabladet.fi
-/track$ping,xhr,domain=epochtimes.se
+/track$ping,xhr,domain=epochtimes.se|dagen.se
 /track-view$domain=aftonbladet.se|godare.se
 /track.js$domain=destination.se|sistaminuten.se
 /track/view?webInteractiveId$image
@@ -3466,7 +3466,7 @@ tabyallehanda.se##^script[src$="adsbygoogle.js"]
 woxikon.se##^script[src^="https://html-load.com/"]
 woxikon.se##^script:has-text(googletag)
 woxikon.se##^script:has-text(window._sp_)
-tv4play.se##.infinite-scroll-component > div > div:first-child .swiper-slide > div[style] > div > div:first-child:style(mask-image:unset!important; mask-size:unset!important; mask-composite:unset!important;)
+tv4play.se##:is(.infinite-scroll-component > div > div:first-child .swiper-slide > div[style] > div > div:first-child, div[data-testid="cdp-promo"] > div:first-child, .infinite-scroll-component div[style="width: 100%; height: 100%;"] > div[style="width: 100%;"] > div > div[class^="sc"]:first-child):style(mask-image:unset!important; mask-size:unset!important; mask-composite:unset!important;)
 tv4play.se##.swiper-slide > div[style] > a > div:style(mask-image:unset!important;)
 !#endif
 !#if !env_mobile
@@ -3481,4 +3481,10 @@ tv4play.se##.swiper-slide > div[style] > a > div:style(mask-image:unset!importan
 lundagard.se,boktugg.se,morotsliv.com,affarsstaden.se,kurera.se,nyfiknainvesterare.se,allagodating.se##+js(aeld, wheel)
 home2tiny.se##+js(aeld, /mousewheel|DOMMouseScroll/, smoothScrollEvent)
 veterinarmagazinet.se##.banner-spacer
+!#endif
+!#if env_mv3
+?adType$xmlhttprequest,removeparam=adType,domain=tv4play.se
+web-tools.se##+js(rmnt, script, request_ads_to_display)
+kritiker.se##div.ui.page.dimmer:has(#adblocker)
+kritiker.se##body.dimmed:style(overflow:unset!important;)
 !#endif
