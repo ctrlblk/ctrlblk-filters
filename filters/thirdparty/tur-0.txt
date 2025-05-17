@@ -1,10 +1,10 @@
 ![Adblock Plus 2.0]
-! Checksum: NwVd/+eemZdS71o8TP8ppg
-! Diff-Path: ../patches/13/13-s-1747359577-3600.patch
+! Checksum: zIJCPNMgrNhrrH6YEowNtA
+! Diff-Path: ../patches/13/13-s-1747415485-3600.patch
 ! Title: AdGuard Turkish filter
 ! Description: Filter list that specifically removes ads on websites in Turkish language.
-! Version: 2.0.56.53
-! TimeUpdated: 2025-05-16T01:35:35+00:00
+! Version: 2.0.56.57
+! TimeUpdated: 2025-05-16T17:06:43+00:00
 ! Expires: 5 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -516,7 +516,7 @@ osxinfo.net##+js(abort-current-script, $, !document.getElementById(btoa)
 ! https://github.com/AdguardTeam/AdguardFilters/issues/49271
 turkdenizcileri.com,bilgalem.blogspot.com##+js(set-constant, koddostu_com_adblock_yok, null)
 ! https://github.com/AdguardTeam/AdguardFilters/issues/203121
-tekniknot.com##+js(abort-on-property-read, workfile)
+tekniknot.com##+js(abort-on-stack-trace, document.querySelector, window.onload)
 ! https://github.com/AdguardTeam/AdguardFilters/issues/47184
 @@||veterinerhekimleri.com/wp-content/plugins/*/includes/adblock-detector/advertisement.js
 veterinerhekimleri.com##+js(set-constant, jQuery.adblock, false)
@@ -1575,8 +1575,14 @@ dirilispostasi.com,turkuazgazetesi.net,yenialanya.com,bugunkocaeli.com.tr,cagdas
 !
 ! NOTE: Specific rules
 !
+selcuksports.*##center > a[href][target="_blank"]
+||blogger.googleusercontent.com/img/$domain=selcuksports.*
+||selcuksportss.com/wp-content/uploads/*/banner*.gif
+selcuksportss.com##div[class^="button-container"]
+selcuksportss.com##.banner-container
+selcuksportss.com##.header-html-1
 ||trdiziizle.*/vast.js^
-taraftarium-24.com,selcuksports.cc,selcuk-sports.com##+js(set-constant, window.config.adv.enabled, 0)
+taraftarium-24.com,selcuksports.*,selcuk-sports.com##+js(set-constant, window.config.adv.enabled, 0)
 fullhdfilmizlesene.de##.plalt-bn
 ||storage.fintables.com/media/uploads/ads/
 sondakika.com##div[style]:has(> div[id^="div-gpt-ad-"])
@@ -1660,7 +1666,7 @@ sozcu.com.tr##.row div.sozcu-ramazan-imsakiye > a[target="_blank"]
 parselsorgu.tkgm.gov.tr###custom-popup
 onedio.com##div[id^="before-infinite-scroll-thumbnails"]
 selcukflix.com##.player > .flex:has(> div > img[alt="ad image"])
-dizifon.com##[data-mayd="moon_ayd"]
+birasyadizi.com,dizifon.com##[data-mayd="moon_ayd"]
 emlakjet.com##div[class^="styles_ad"]
 fanatik.com.tr##.article-ads-container
 t24.com.tr##div[style]:has(> div[id^="div-gpt-ad"]:only-child)
@@ -5506,7 +5512,9 @@ oyunu.com.tr#$##iki.oynama { display: block !important; }
 !
 ! selcuksporthd*.com - frequently changed domains
 ||selcuksporthd*.com/dosya/*.gif
+||hdselcuksports*.top/cdn/r/
 [$domain=/selcuksporthd\d+\.com/]##a[href^="https://bit.ly/"]
+[$domain=/hdselcuksports\d+\.top/]##+js(window.open-defuser)
 !
 ! https://github.com/AdguardTeam/AdguardFilters/issues/204675
 [$domain=/betnanotv\d+\.com/]##a[href="https://betnano.marketing/2025"]
@@ -5550,6 +5558,7 @@ justintvsh.baby,dmlstechnology.com,justintvde.com,justin-tv.org,inattvgiris.pro,
 ||justintvizle*.top/dimg/*.gif
 ||justintvizle*.top/cdn/r/
 ||selcuksports*.top/dimg/*.gif
+[$domain=/justintvizle\d+\.top/]##+js(window.open-defuser)
 [$domain=/justintvizle\d+\.top/]##div[class^="footer-"]
 [$domain=/justintvizle\d+\.top/]##header > a[href="/"] + ul
 [$domain=/justintvizle\d+\.top/]##.header_r
