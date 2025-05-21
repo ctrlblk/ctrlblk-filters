@@ -17491,6 +17491,7 @@ tulapressa.ru##.part_block
 detector.media##.parthners
 chehov-vid.ru,fbr.info,ura.news##.partner
 3dtuning.com##.partner-ads
+edyna.media##.partner-articles
 lrepacks.net,rusplt.ru##.partner-block
 autosport.com.ru##.partner-content
 zahav.ru##.partner-iframe
@@ -17965,6 +17966,7 @@ rupier.com##.sb > a > img[src^="http://rupier.com/forum/"]
 med.vesti.ru##.sb-banner
 5.ua#?#.sb-block:-abp-has([id*="ScriptRoot"])
 beauty.ua,viva.ua##.sb-partners
+edyna.media#?#.sb__column > .sb__section:-abp-has(> .sb-partners)
 agroinfo.kz##.sbanner
 tornado.3dn.ru#?#.sblock:-abp-has(> .b_title > .ins:-abp-contains(Реклама))
 uaspectr.com##.sbr-slider > .pst-block > .pst-block-head
@@ -20540,7 +20542,7 @@ www.eg.ru##div[class*="_promocodes "]
 rg.ru##div[class*="adBox"]
 rg.ru##div[class*="adFox"]
 agroxxi.ru##div[class*="adagro"]
-yummy-anime.ru,yummyani.me,yummyani.meme##div[class*="adfinity_block"]
+yummy-ani.me,yummyani.me##div[class*="adfinity_block"]
 mayaksbor.ru,rg.ru,ruwiki.ru##div[class*="adfox"]
 svpressa.ru##div[class*="adfox_banner"]
 glavnoe.net,infotime.co##div[class*="ads-fixed"]
@@ -20832,6 +20834,7 @@ sovsport.ru##div[class^="main-menu_affiliateItem"] *
 sovsport.ru##div[class^="main-menu_other"]
 stolica-s.su##div[class^="market"]
 sovsport.ru##div[class^="match-day_bottom_block"]
+sovsport.ru##div[class^="matches-by-id_right"] > div[class^="st-widget_container"]
 itc.ua,mc.today##div[class^="max-"]
 baltanews.city,barnews.city,bilopillia.city,bilyayivka.city,chernihiv.city,chortkiv.city,dobronews.city,drohobych.city,energodar.city,fastivnews.city,gylyajpole.city,hadiach.city,haisyn.city,hlukhiv.city,horodok.city,izmacity.com,kagarlyk.city,kalushnews.city,kalynivka.city,kavun.city,kitsman.city,konotop.city,kremenets.city,kuma.city,lozova.city,mltpl.city,netishyn.city,nikopol.city,nizhyn.city,novakahovka.city,novograd.city,nsirogozy.city,oretsk.city,pereiaslav.city,petropavlivka.city,popasnaya.city,primorka.city,rakhiv.city,sarnynews.city,shostkanews.city,skadovsk.city,slavuta.city,starkon.city,susidy.city,svatove.city,thegard.city,tira.city,toretsk.city,troyitske.city,volnovakha.city,volodymyrets.city,yuzhkanews.city,zhmerynka.city,zoloto.city##div[class^="mc-banner"]
 metronews.ru##div[class^="metro_banner_"]
@@ -22084,7 +22087,7 @@ https://*adtech_uid=$~third-party,xmlhttprequest,domain=lena-miro.ru|levik.blog|
 ||news.mail.ru/-/*.js?
 ||newsyou.info/wp-content/plugins/gtranslate/
 ||newsyou.info^$csp=script-src-elem 'self' https:
-||pikabu.ru/ajax/*?G5F7t=$xmlhttprequest
+||pikabu.ru/ajax/*?zH9nk=$xmlhttprequest
 ||ritsatv.ru^$csp=script-src
 ||ritsatv.ru^$popup
 ||ritsatv.ru^$~document
@@ -22155,7 +22158,6 @@ www.e1.ru#?#body > script[src^="https://www.e1.ru/"] ~ #app [itemprop] > figure:
 sdamgia.ru##center > div[id][style]
 cq.ru#?#div:-abp-properties(content: "Реклама")
 drive2.ru#?#div:-abp-properties(min-height: 555px)
-otvet.mail.ru#?#div:empty:-abp-properties(content: "Реклама")
 drive2.ru##div[class$="--equal"] > div[class] > div:not([class]):not([id])
 drive2.ru##div[class$="--equal"] > div[class] > div[id]:not(:empty)
 pogoda.onliner.by,tech.onliner.by##div[class*="_fixed-height"]
@@ -22495,11 +22497,9 @@ pets.mail.ru##.pypo-springs-sticky
 pets.mail.ru#?#[data-qa="ArticlesList"] > div:-abp-has(> .pypo-slot)
 pets.mail.ru##div[class^="Gallery__slideSide_"]
 ! Ответы
-otvet.mail.ru##a[href^="https://t.mail.ru/redir/"]
 otvet.mail.ru##body div div[class*="adv-slot-"]
+otvet.mail.ru##div[class*="_block_"]
 otvet.mail.ru##div[data-pos]
-otvet.mail.ru#?#div[style^="top: "]:-abp-has(> div > div[class=""]:empty)
-otvet.mail.ru##div[style^="top:"] ~ div[style^="top:"] > div > div[class=""] + div:last-child
 ! Дети
 deti.mail.ru##.cols__wrapper > aside
 deti.mail.ru##.deti-slot_exchange
@@ -28985,7 +28985,6 @@ minigames.mail.ru##+js(abort-current-inline-script, $, blockWarnClass)
 mmminigames.mail.ru##+js(abort-current-inline-script, $, mimicTopClass)
 ok.ru##+js(abort-on-property-read, globalAuthLoginPopupCounter)
 ok.ru##+js(abort-on-property-write, mailruEnabled)
-otvet.mail.ru##+js(addEventListener-defuser, load, checkAdblockExistence)
 light.mail.ru##+js(href-sanitizer, [href^="https://checklink.mail.ru/proxy?"], ?url)
 light.mail.ru##+js(href-sanitizer, [href^="https://click.mail.ru/redir?u="], ?u)
 ok.ru,touch.mail.ru##+js(json-prune, result.body.direct)
@@ -28993,7 +28992,6 @@ ok.ru,touch.mail.ru##+js(json-prune, result.body.direct)
 ~3igames.mail.ru,~account.mail.ru,~auto.mail.ru,~biz.mail.ru,~blog.mail.ru,~bonus.mail.ru,~calendar.mail.ru,~calls.mail.ru,~cloud.mail.ru,~connect.mail.ru,~deti.mail.ru,~dobro.mail.ru,~e.mail.ru,~finance.mail.ru,~gibdd.mail.ru,~health.mail.ru,~help.mail.ru,~hi-tech.mail.ru,~horo.mail.ru,~kino.mail.ru,~lady.mail.ru,~love.mail.ru,mail.ru,~mcs.mail.ru,~minigames.mail.ru,~my.mail.ru,~news.mail.ru,~o2.mail.ru,~octavius.mail.ru,~okminigames.mail.ru,~otvet.mail.ru,~pets.mail.ru,~player-smotri.mail.ru,~pogoda.mail.ru,~top.mail.ru,~touch.mail.ru,~tv.mail.ru,~vfokuse.mail.ru,~widgets.mail.ru##+js(prevent-xhr, &pgid=)
 ~3igames.mail.ru,~account.mail.ru,~auto.mail.ru,~biz.mail.ru,~blog.mail.ru,~bonus.mail.ru,~calendar.mail.ru,~calls.mail.ru,~cloud.mail.ru,~connect.mail.ru,~deti.mail.ru,~dobro.mail.ru,~e.mail.ru,~finance.mail.ru,~gibdd.mail.ru,~health.mail.ru,~help.mail.ru,~hi-tech.mail.ru,~horo.mail.ru,~kino.mail.ru,~lady.mail.ru,~love.mail.ru,mail.ru,~mcs.mail.ru,~minigames.mail.ru,~my.mail.ru,~news.mail.ru,~o2.mail.ru,~octavius.mail.ru,~okminigames.mail.ru,~otvet.mail.ru,~pets.mail.ru,~player-smotri.mail.ru,~pogoda.mail.ru,~top.mail.ru,~touch.mail.ru,~tv.mail.ru,~vfokuse.mail.ru,~widgets.mail.ru##+js(remove-node-text, script, violatedDirective)
 okminigames.mail.ru##+js(set-constant, NO_ADV, 1)
-otvet.mail.ru##+js(set-constant, Object.prototype._Mimic, undefined)
 player-smotri.mail.ru##+js(set-constant, Object.prototype.autoPlayParams, false)
 ok.ru##+js(set-constant, Object.prototype.detectAdBlock, undefined)
 finance.mail.ru,news.mail.ru,sportmail.ru,vfokuse.mail.ru##+js(set-constant, Object.prototype.enableMimic, noopFunc)
