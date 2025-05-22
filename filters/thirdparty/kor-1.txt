@@ -1,7 +1,7 @@
 [uBlock Origin]
 ! Title: List-KR for uBlock Origin
 ! Description: List-KR for uBlock Origin. Maintained by the adblock community and AdGuard.
-! Version: 2025.0520.0
+! Version: 2025.0522.2
 ! Expires: 12 hours
 ! Homepage: https://github.com/List-KR/List-KR
 ! Support: https://list-kr-community.pages.dev/docs/
@@ -522,7 +522,6 @@ m.cafe.naver.com##.banner_add.bottom:matches-path(/ca-fe\\/web\\/cafes\\/(steami
 /data/banner.json?$domain=~nintendo.*
 /ad-manager.min.js
 !
-||veta.naver.com^$domain=~chzzk.naver.com
 ||ggtics-static.s3.ap-northeast-1.amazonaws.com/dev-slot-image/$domain=your.gg
 ||biz.sbs.co.kr/ad/
 ||biz.sbs.co.kr/img/pc/end_banner_250423.jpg
@@ -1337,6 +1336,7 @@ m.cafe.naver.com##.banner_add.bottom:matches-path(/ca-fe\\/web\\/cafes\\/(steami
 !
 ! DOMAIN-REFRESHER: START
 !
+||nooo*.tv/theme/basic_player/img/banner/$domain=/nooo[0-9]+\.tv/
 ||blogger.googleusercontent.com/img/$domain=yasyadong.*
 .gif^$image,domain=itrulli.com
 ||365tvda.com/data/file/bojng/
@@ -2838,7 +2838,7 @@ itrulli.com##div.elementor-widget-shortcode
 avjoa69.com##img[onclick]
 avjoa69.com##.happy-header
 [$domain=/^jusokorea\[0-9\]+\.com/]##div[class*="-ad-banner"]
-ntnt1.tv##a[data-testid="linkElement"][href^="http"][target="_blank"]:has(> wow-image)
+ntnt4.tv##a[data-testid="linkElement"][href^="http"][target="_blank"]:has(> wow-image)
 aniwolf.*##.banner-area
 anilife.*##div[class] > a[class][href^="http"][target="_blank"]
 [$domain=/^tvwiki\[0-9\]+\.com/]##div[id] > ul:has(a[href] > img[src^="/AD/"])
