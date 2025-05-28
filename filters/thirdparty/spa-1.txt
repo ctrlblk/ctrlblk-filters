@@ -1,10 +1,10 @@
 ![Adblock Plus 2.0]
-! Checksum: i+O6k6bNKFRq8uRGo5gPHA
-! Diff-Path: ../patches/9/9-s-1748309959-3600.patch
+! Checksum: YZCx67aSeoQdTNkxf3iymQ
+! Diff-Path: ../patches/9/9-s-1748380266-3600.patch
 ! Title: AdGuard Spanish/Portuguese filter
 ! Description: Filter list that specifically removes ads on websites in Spanish, Portuguese, and Brazilian Portuguese languages.
-! Version: 2.0.30.8
-! TimeUpdated: 2025-05-27T01:35:08+00:00
+! Version: 2.0.30.12
+! TimeUpdated: 2025-05-27T21:06:55+00:00
 ! Expires: 5 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -221,6 +221,9 @@
 !
 !
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/206161.
+lectorhub.j5z.xyz#$?#body > div[id][class]:not([style]):has(a[target="_blank"][rel="noopener noreferrer"]) { remove: true; }
+lectorhub.j5z.xyz##+js(noeval-if, String.fromCharCode(_0x)
 ! https://github.com/AdguardTeam/AdguardFilters/issues/205246
 mitele.es#$#html { overflow: auto !important; }
 mitele.es#$#body { overflow: auto !important; }
@@ -2215,6 +2218,7 @@ c5n.com,t13.cl,solowrestling.mundodeportivo.com,todojujuy.com,mendozapost.com,me
 !
 ! NOTE: Specific rules
 !
+recetas-argentinas.com,recetas-espana.com#$#.recipe_wrapper_all .recipe_wrapper_all_right { width: 100% !important; }
 olhardigital.com.br##.under_OD
 puntodebreak.com##.selected-match-info
 puntodebreak.com##.region-taxonomy-ad
@@ -3790,7 +3794,7 @@ larazon.es###outbrain-id
 gmconline.com.br##.banner-item
 gmconline.com.br##.section-banner-topo
 xchica.com##td[width="360"] > center
-escolhasegura.com##.adsense
+escolhasegura.com,recetas-espana.com,recetas-argentinas.com##.adsense
 tecnoscann.com,mhscans.com,mangacrab.com,ahstudios.net,animerikosuper.blogspot.com,emperorscan.com,taurusfansub.com,miauscan.com,knightnoscanlation.com,pelisplaygratis.info###fixedban
 pelisplaygratis.info##.mvic-btn > a.btn-successful
 observatoriodatv.com.br,uol.com.br##.obx-ad
@@ -4092,7 +4096,7 @@ uol.com.br##.shopping-produtos-uol
 uol.com.br##.label-produtos
 uol.com.br##.ecommerce-produtos-container
 ||hentaiporno.xxx/wp-content/plugins/modal-window/
-preguntandroid.com,iteramos.com###bottom-bar-floating
+iteramos.com###bottom-bar-floating
 ||wp.com/*donghuanosekai.com/wp-content/uploads/*/anuncia-aqui-0.png$domain=donghuanosekai.com
 auto10.com##.ad-boton-full-mega
 ||fadadosexo.com/wp-content/themes/fadadosexo-responsivo/banners/
@@ -4100,8 +4104,6 @@ fadadosexo.com###publicidade-invideo
 fadadosexo.com##.links-legais
 fadadosexo.com##.parceiros
 fadadosexo.com##div[id^="scroller"]
-tusubtitulo.com##div[class^="contenedorAdcentrado"]
-||connatix.com^$domain=tusubtitulo.com
 mrpiracy.top##a[class^="reserve-button"][target="_blank"] > img
 ||mrpiracy.top/images/imagec1.gif
 mangamovil.net##.publi_arriba
@@ -4131,7 +4133,7 @@ bahianoticias.com.br,animeflv.net##div[style="width:728px;height:90px"]
 ||animeflv.net/assets/animeflv/img/triviataku.jpg
 nestoria.com.br###afscontent2
 tudogostoso.com.br##.showcase-box[data-iab-tag^="content_mpu"]
-preguntandroid.com,iteramos.com,enmimaquinafunciona.com##.intro-top > .mh-280
+iteramos.com,enmimaquinafunciona.com##.intro-top > .mh-280
 ||pornolandia.xxx/static/player/preroll.js
 pcprogramasymas.net##a[href][target="_blank"] > img
 nightlifeporn.com##.close-text
@@ -5266,7 +5268,7 @@ ig.com.br##.previsaoTempoBox
 kiosko.net##.promo
 hotelius.com##.promocines
 planetadeagostini.es##.promocion
-elsiglodedurango.com.mx,t13.cl,flip.pt,elsiglodetorreon.com.mx,cifraclub.com.br,clix.pt,destak.pt,iol.pt,lavozdegalicia.es,publico.pt,sapo.pt##.pub
+ctxt.es,elsiglodedurango.com.mx,t13.cl,flip.pt,elsiglodetorreon.com.mx,cifraclub.com.br,clix.pt,destak.pt,iol.pt,lavozdegalicia.es,publico.pt,sapo.pt##.pub
 ig.com.br##.pub-island.fl
 telanon.info##.pub-large
 iol.pt##.pub-line
