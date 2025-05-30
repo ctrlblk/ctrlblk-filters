@@ -1,10 +1,10 @@
 ![Adblock Plus 2.0]
-! Checksum: Q0mW/FTbVrVtGpYVlkdKxQ
-! Diff-Path: ../patches/16/16-s-1748196735-3600.patch
+! Checksum: pLoat6wBdxpzWz4Cq44wyQ
+! Diff-Path: ../patches/16/16-s-1748527872-3600.patch
 ! Title: AdGuard French filter
 ! Description: Liste FR + AdGuard French filter. Filter list that specifically removes ads on websites in French language.
-! Version: 2.0.52.55
-! TimeUpdated: 2025-05-25T18:08:14+00:00
+! Version: 2.0.52.58
+! TimeUpdated: 2025-05-29T14:07:10+00:00
 ! Expires: 5 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -878,6 +878,8 @@ $xmlhttprequest,third-party,denyallow=mega.co.nz|mega.nz|libs.baidu.com|ilfcdn.l
 !
 !
 !
+la-croix.com##.gam
+||la-croix.com/assets/build/templates/components/advertising/
 vide-greniers.org##.agw-container
 nationalgeographic.fr##div[id^="gpt--header--"]
 bookys-ebooks.com###vpnvpn
@@ -1665,6 +1667,8 @@ app.molotov.tv##+js(no-xhr-if, /ping?token=)
 !
 !
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/206478
+@@||ajax.cloudflare.com/cdn-cgi/scripts/*/cloudflare-static/mirage2.min.js$domain=notube.net
 ! https://github.com/AdguardTeam/AdguardFilters/issues/206063
 tripadvisor.com#@#.pubHeader
 ! https://github.com/AdguardTeam/AdguardFilters/issues/205335

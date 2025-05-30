@@ -1,7 +1,7 @@
 [uBlock Origin]
 ! Title: List-KR for uBlock Origin
 ! Description: List-KR for uBlock Origin. Maintained by the adblock community and AdGuard.
-! Version: 2025.0529.0
+! Version: 2025.0529.1
 ! Expires: 12 hours
 ! Homepage: https://github.com/List-KR/List-KR
 ! Support: https://list-kr-community.pages.dev/docs/
@@ -1341,6 +1341,7 @@ m.cafe.naver.com##.banner_add.bottom:matches-path(/ca-fe\\/web\\/cafes\\/(steami
 !
 ! DOMAIN-REFRESHER: START
 !
+||sutom.org/wp-content/uploads/*.webp
 ||nooo*.tv/theme/basic_player/img/banner/$domain=/nooo[0-9]+\.tv/
 ||blogger.googleusercontent.com/img/$domain=yasyadong.*
 .gif^$image,domain=itrulli.com
@@ -2833,6 +2834,8 @@ kio.ac##main > div:has(> div > div > a > img)
 !
 ! DOMAIN-REFRESHER: START
 !
+sutom.org##div[data-id="9429d5d"]
+sutom.org###sutom-pro
 blacktoon1.info##div[data-mesh-id="comp-m8jy31rninlineContent"]
 [$domain=/^tkor\[0-9\]+\.com/]##*[class*="top_bann"]
 toonkor.wiki##.banner
@@ -3182,7 +3185,7 @@ manatoki464.net,manatoki465.net,manatoki466.net,manatoki467.net,manatoki468.net,
 !
 ! DOMAIN-REFRESHER: END
 
-m.fmkorea.com#$?#div[id^="bd_"].bd.bd_mobile:not(:has(#bd_capture ~ #comment)):has(form[action="./"]:matches-css(height: auto)) { remove: true; }
+m.fmkorea.com#$?#*.bd.bd_mobile:not(:has(#bd_capture ~ #comment)):has(form[action="./"]:matches-css(height: auto)) { remove: true; }
 search.daum.net#$?#body.nate aside#mAside > div[disp-attr]:has(> .wing_nate) + div[disp-attr] { margin-top: 0px !important; }
 search.daum.net#$?#aside#mAside > div[disp-attr]:has(> .content_sponsor) + div[disp-attr] { margin-top: 0px !important; }
 m.fmkorea.com#$?#body[class*="mac_os"] div[class="hd"] ~ *[id][class*=" "]:matches-css(padding: /5px 10px 20px/):matches-css(height: /^[0-9]{2,3}/) { remove: true; }
