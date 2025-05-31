@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: EasyList – Newsletter Notices
-! Last modified: Fri, 30 May 2025 02:23:33 +0000
+! Last modified: Fri, 30 May 2025 11:10:56 +0000
 ! Expires: 7 days (update frequency)
 ! *** easylist:template_header.txt ***
 !
@@ -5463,6 +5463,7 @@ olimpstore.f##div[style*="position: fixed; width: 100%;"]
 ! Italian
 ||newsletter.beautydea.it^
 ! Japanese
+||hellointerior.jp/note/wp-content/plugins/wordpress-popup/assets/hustle-ui/js/hustle-ui.min.js
 ||nikkei.com/edit/topic/briefing_newsletter_
 ! Spanish
 ||latercera.com/newsletters/
@@ -5936,7 +5937,7 @@ doctorofcredit.com#@#.wpdiscuz-subscribe-bar
 ! fanboy_newsletter_shopping_allowlist_general_hide.txt
 
 ! Title: uBlock filters – Other Annoyances
-! Last modified: Sun, 25 May 2025 06:50:50 +0000
+! Last modified: Fri, 30 May 2025 23:43:14 +0000
 ! Expires: 7 days
 ! Description: Filters optimized for uBlock Origin, to be used with EasyList's and/or Adguard's "Other Annoyances" list(s)
 ! License: https://github.com/uBlockOrigin/uAssets/blob/master/LICENSE
@@ -13148,6 +13149,8 @@ vidsrc.*##+js(set, console.clear, trueFunc)
 ! https://www.reddit.com/r/uBlockOrigin/comments/1fopafx/the_filter_ublock_filters_annoyances_makes_a_site/
 vidsrc.*##+js(set, DisableDevtool, noopFunc)
 ate60vs7zcjhsjo5qgv8.com##+js(trusted-suppress-native-method, Function.prototype.constructor, '"debugger"', abort)
+https://github.com/uBlockOrigin/uAssets/issues/28579
+vidsrc.*##+js(set, devtoolsDetector.launch, noopFunc)
 ! https://github.com/uBlockOrigin/uAssets/issues/22769#issuecomment-2515120605
 embed.su##+js(aeld, keydown, 123)
 embed.su##+js(nosiif, devtool)
