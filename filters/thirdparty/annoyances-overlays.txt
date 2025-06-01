@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: EasyList – Newsletter Notices
-! Last modified: Fri, 30 May 2025 11:10:56 +0000
+! Last modified: Sun, 01 Jun 2025 02:52:43 +0000
 ! Expires: 7 days (update frequency)
 ! *** easylist:template_header.txt ***
 !
@@ -4075,6 +4075,8 @@ thebulletin.org,npr.org,vice.com,forward.com,nationalobserver.com,washingtontime
 ! 404media.co
 broadbandbreakfast.com,404media.co##.outpost-cta
 broadbandbreakfast.com,404media.co##body,html:style(overflow: auto !important; position: initial !important;)
+! sub popup
+press.princeton.edu##+js(set-cookie, block-popuproadblock, true)
 ! gwr.com
 gwr.com##.chakra-modal__overlay
 gwr.com##.chakra-modal__content-container
@@ -5937,7 +5939,7 @@ doctorofcredit.com#@#.wpdiscuz-subscribe-bar
 ! fanboy_newsletter_shopping_allowlist_general_hide.txt
 
 ! Title: uBlock filters – Other Annoyances
-! Last modified: Fri, 30 May 2025 23:43:14 +0000
+! Last modified: Sun, 01 Jun 2025 04:52:08 +0000
 ! Expires: 7 days
 ! Description: Filters optimized for uBlock Origin, to be used with EasyList's and/or Adguard's "Other Annoyances" list(s)
 ! License: https://github.com/uBlockOrigin/uAssets/blob/master/LICENSE
@@ -9288,10 +9290,6 @@ bendigoadvertiser.com.au##+js(nosiif, modal)
 fatgirlskinny.net##.pum
 fatgirlskinny.net##html:style(overflow:auto !important)
 
-! anti select lightnovelworld .com
-! https://www.reddit.com/r/uBlockOrigin/comments/1dkzbax/how_to_disable_special_style_with_ubo/
-lightnovelworld.*###chapter-article .chapter-content:style(user-select: text !important; -ms-user-select: text !important; -moz-user-select: text !important; -khtml-user-select: text !important; -webkit-user-select: text !important; -webkit-touch-callout: default !important;)
-
 ! economica .net manipulated clipboard
 economica.net##+js(aeld, copy)
 
@@ -11194,10 +11192,8 @@ rightnonel.com##+js(aopr, document.oncontextmenu)
 rightnonel.com##+js(aopr, document.onmousedown)
 rightnonel.com##+js(aopr, disableSelection)
 
-! lightnovelpub. com, webnovelpub. com anti select
-lightnovelpub.com,novelpub.com,webnovelpub.com##*:style(-webkit-touch-callout: default !important; -webkit-user-select: text !important; -moz-user-select: text !important; -ms-user-select: text !important; user-select: text !important;)
-||moatads.com^$image,redirect=1x1.gif,domain=lightnovelpub.com
-lightnovelpub.com##[data-pw-desk]:upward(1)
+! webnovelpub. com anti select
+novelpub.com,webnovelpub.com##*:style(-webkit-touch-callout: default !important; -webkit-user-select: text !important; -moz-user-select: text !important; -ms-user-select: text !important; user-select: text !important;)
 
 ! viafarmaciaonline. it anti right click
 viafarmaciaonline.it##+js(aopr, document.oncontextmenu)
@@ -13149,8 +13145,8 @@ vidsrc.*##+js(set, console.clear, trueFunc)
 ! https://www.reddit.com/r/uBlockOrigin/comments/1fopafx/the_filter_ublock_filters_annoyances_makes_a_site/
 vidsrc.*##+js(set, DisableDevtool, noopFunc)
 ate60vs7zcjhsjo5qgv8.com##+js(trusted-suppress-native-method, Function.prototype.constructor, '"debugger"', abort)
-https://github.com/uBlockOrigin/uAssets/issues/28579
-vidsrc.*##+js(set, devtoolsDetector.launch, noopFunc)
+! https://github.com/uBlockOrigin/uAssets/issues/28579
+moviesapi.club,vidsrc.*##+js(set, devtoolsDetector.launch, noopFunc)
 ! https://github.com/uBlockOrigin/uAssets/issues/22769#issuecomment-2515120605
 embed.su##+js(aeld, keydown, 123)
 embed.su##+js(nosiif, devtool)

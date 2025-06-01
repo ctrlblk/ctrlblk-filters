@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: EasyList – Annoyances
-! Last modified: Fri, 30 May 2025 11:10:56 +0000
+! Last modified: Sun, 01 Jun 2025 02:52:43 +0000
 ! Expires: 7 days (update frequency)
 ! *** easylist:template_header.txt ***
 !
@@ -2282,6 +2282,7 @@ notesfrompoland.com##.latacz
 golem.de##.li-reset
 thejakartapost.com##.loginAds
 londonnewsonline.co.uk##.londo-target
+press.princeton.edu##.m-alert-bar--orange
 city-journal.org##.m_article-donate
 pravda.com.ua##.m_banner
 thereader.mitpress.mit.edu##.ma-don-cont
@@ -2589,11 +2590,13 @@ gettr.com##img[alt="GETTR coin"]
 msn.com##views-right-rail
 ! :has
 twitter.com,x.com###layers[style="z-index: 1;"]:has(div[role="dialog"] a[href="/i/premium_sign_up"][style])
+deviantart.com##.ReactModalPortal + div[class]:has(> iframe[title="DealerAdIframe"])
 airfry.pro##.bg-gradient-to-br:has-text(Cookbook)
 eventbrite.com##.event-card:has([class*="EventCardPromoted-module"])
 jinxxy.com##.grid > .relative:has(.block[href^="https://"])
 twitter.com,x.com##aside[role="complementary"]:has(> a[href="/i/premium_sign_up"])
 blitz.gg##div[class]:has(> .placeholder > [href^="/pro?utm_"])
+deviantart.com##div[role="complementary"] > div[class]:has(> div > iframe[title="DealerAdIframe"])
 ! :-abp-contains
 dailysignal.com#?#.tds-content > p:-abp-contains(Donate now)
 laravel-news.com#?#.mt-10:-abp-contains(Laravel Jobs)
