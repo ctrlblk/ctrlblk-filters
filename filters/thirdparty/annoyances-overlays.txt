@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: EasyList – Newsletter Notices
-! Last modified: Sun, 01 Jun 2025 02:52:43 +0000
+! Last modified: Mon, 02 Jun 2025 04:17:07 +0000
 ! Expires: 7 days (update frequency)
 ! *** easylist:template_header.txt ***
 !
@@ -2067,7 +2067,7 @@ idsnews.com##.bg-ids-primary-container
 canberratimes.com.au,theland.com.au##.bg-indigo-700
 washingtonengager.com##.bg-light.card
 mypenndentist.org##.bg-navylightblue.padding-v20
-allaboutcircuits.com##.bg-newsletter
+allaboutcircuits.com,bobvila.com##.bg-newsletter
 biblegateway.com##.bg-popup-root
 axios.com##.bg-tertiary.gtmView
 thebudgetsavvybride.com##.bg-turquoise-500
@@ -2806,6 +2806,7 @@ dlife.com,gizmodo.com,helpnetsecurity.com,news.usni.org##.mc4wp-form
 tedium.co##.md-colorbox
 elespanol.com##.md-suscription
 digg.com##.md\:p-4.p-2.rounded-md
+thisoldhouse.com##.mdcr-home-popup-container
 themedialine.org##.mdl-fixed-informer
 themedialine.org##.mdl-section-subscribe
 chronicle.com##.media-width-half
@@ -2903,6 +2904,7 @@ techfirstnow.com##.newsletter-body
 thartribune.com##.newsletter-box-2
 dailydot.com,folhape.com.br##.newsletter-button
 independent.co.uk,the-independent.com##.newsletter-component
+bobvila.com##.newsletter-container
 the-sun.com,thesun.co.uk,thesun.ie##.newsletter-container-placeholder
 outdoorlife.com##.newsletter-content
 thehandbook.com##.newsletter-cta-banner
@@ -3867,6 +3869,7 @@ lemonblossoms.com##.wp-block-group-is-layout-flow.has-background.has-base-backgr
 historiccity.com##.wp-block-group-is-layout-flow:has-text(Subscribe)
 labrujulaverde.com##.wp-block-group__inner-container:has-text(Discover more)
 polygon.com##[class]:has(> .duet--cta--newsletter)
+lowes.com##[data-testid="scroll-modal-wrapper"]:has-text(sign up)
 politicalwire.com#?##custom_html-12:-abp-contains(newsletters)
 haitiantimes.com##div.is-style-border:has-text(Daily News)
 cheknews.ca##div.wp-block-cover:has-text(Be the first to know)
@@ -5939,7 +5942,7 @@ doctorofcredit.com#@#.wpdiscuz-subscribe-bar
 ! fanboy_newsletter_shopping_allowlist_general_hide.txt
 
 ! Title: uBlock filters – Other Annoyances
-! Last modified: Sun, 01 Jun 2025 04:52:08 +0000
+! Last modified: Mon, 02 Jun 2025 01:16:25 +0000
 ! Expires: 7 days
 ! Description: Filters optimized for uBlock Origin, to be used with EasyList's and/or Adguard's "Other Annoyances" list(s)
 ! License: https://github.com/uBlockOrigin/uAssets/blob/master/LICENSE
@@ -6082,6 +6085,9 @@ abcya.com##.a-adhesion
 
 ! https://github.com/AdguardTeam/AdguardFilters/issues/173013
 ||2game.info/ad/failed_ad_view.js
+
+! https://github.com/uBlockOrigin/uAssets/issues/28629
+studydrive.net##.w-full.flex:has(> div[id^="billboard_btf"])
 
 ! END: Anti-adblock
 
@@ -11786,8 +11792,8 @@ ziare.com##+js(aeld, copy)
 ! agrointel. ro copy manipulation
 agrointel.ro##+js(aeld, copy)
 
-! freefilesync. org anti-blocker
-freefilesync.org#@#.adsbygoogle
+! https://github.com/uBlockOrigin/uAssets/issues/7742
+freefilesync.org##+js(rmnt, script, /adblock/i)
 
 ! 01. org sticky header
 01.org##.o-header, .project-header-actions:style(position: initial !important;)
