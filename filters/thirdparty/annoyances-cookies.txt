@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: EasyList – Cookie Notices
-! Last modified: Mon, 02 Jun 2025 04:17:07 +0000
+! Last modified: Tue, 03 Jun 2025 04:03:42 +0000
 ! Expires: 7 days (update frequency)
 ! *** easylist:template_header.txt ***
 !
@@ -16924,6 +16924,7 @@ project529.com,shop.naturtrend.com###blackout
 aliciagame.com###block-block-6
 sfcta.org###block-cookienotice
 bsa.org###block-cookiepolicy
+gim.ac.in###block-cookies
 london-dental-implant.co.uk###block-london-cookies
 merkle.com,merkleinc.com###block-security-block
 ncaa.com###block-termsofservice
@@ -18264,6 +18265,7 @@ athleticgreens.com##.cookie_LRb5A
 elegantflyer.com##.cookie__form
 deepseek.com##.cookie_banner-wrap
 sasa.co.id##.cookie_consent
+arcol.io##.cookie_consent_component_wrap
 m.emsc.eu,mallplaza.com##.cookie_container
 tunetank.com##.cookie_container__w6Qh1
 cdp.net##.cookie_dismiss_container
@@ -18762,6 +18764,7 @@ jetbluevacations.com,paisly.com##.jtp-skinny-gdpr
 jetbluevacations.com##.jtpsdk-body-blackout
 jetbluevacations.com##.jtpsdk-popup-modal
 kegworks.com##.ju_Con
+balmuda.com##.ju_Con[data-title="Cookie%20Policy%20%7C%20Desktop"]
 jackwestin.com##.jw-accept-cookies-banner-container
 trontv.com##.jw-popups
 trontv.com##.jw-popups-backdrop
@@ -19891,7 +19894,7 @@ akeebabackup.com,batteryequivalents.com,camara.net,culturagiapponese.it,displays
 !! favoptic.*
 favoptic.de,favoptic.dk,favoptic.fi,favoptic.no##.cookie_consent_alert
 !! #cookiePolicy
-bdonline.co.uk,eutelsat.com,eutelsatamericas.com,fieldsofskibbereen.ie,keisei.co.jp,sciencelink.net,simpleescorts.com,thegrocer.co.uk,wifikaernten.at,worldfishing.net###cookiePolicy
+bdonline.co.uk,eutelsat.com,eutelsatamericas.com,fieldsofskibbereen.ie,fullraces.com,gamesontvtoday.com,keisei.co.jp,sciencelink.net,simpleescorts.com,thegrocer.co.uk,wifikaernten.at,worldfishing.net###cookiePolicy
 !! .custom-consent
 emerald-heizijde.be,rivo.be,upperleft.be,vooruitzicht.be##.custom-consent
 !! #CookiePolicy
@@ -21335,6 +21338,7 @@ blitzortung.org##+js(set-cookie, CONSENT, 15)
 esim.redteago.com##+js(set-cookie, nCookieVisible, 2)
 opayweb.com,tester.userbrain.com,milvus.io,empathy.com,labs.epi2me.io##+js(set-cookie, CookieConsent, false)
 producthunt.com##+js(set-cookie, agreed_cookie_policy, 1)
+kanta.fi##+js(set-cookie, KantafiCookies, false)
 ayudatpymes.com,zipjob.com,shoutcast.com,thefly.com##+js(set-cookie, cookie_consent, 1)
 amigosmuseoreinasofia.org##+js(set-cookie, consentcookies_Esenciales, OK)
 fydeos.io,datezone.com##+js(set-cookie, cookie_consent, necessary)
@@ -27769,7 +27773,7 @@ concursolutions.com,forbes.com,formula1.com,fortune.com,proximus.be,proximustv.b
 @@||zensus2022.de/SiteGlobals/Modules/CookieBanner/*/CookieBanner.json?$~third-party,xmlhttprequest
 
 ! Title: uBlock filters – Cookie Notices
-! Last modified: Mon, 02 Jun 2025 04:26:44 +0000
+! Last modified: Mon, 02 Jun 2025 15:32:04 +0000
 ! Expires: 7 days
 ! Description: Filters optimized for uBlock Origin, to be used with EasyList's and/or Adguard's "Cookie Notices" list(s)
 ! License: https://github.com/uBlockOrigin/uAssets/blob/master/LICENSE
@@ -28250,6 +28254,8 @@ monkeytype.com##+js(trusted-set-local-storage-item, acceptedCookies, '{"security
 imusic.*##+js(trusted-set-local-storage-item, cc_cookie, '{"categories":["necessary"],"revision":0,"data":null,"consentTimestamp":"$currentISODate$","consentId":"00000000-0000-0000-000-000000000000","services":{"necessary":[],"analytics":[],"marketing":[]},"lastConsentTimestamp":"$currentISODate$","expirationTime":1779124118406}')
 ! https://github.com/uBlockOrigin/uAssets/issues/28414
 feedbutler.app##+js(trusted-set-local-storage-item, consent, {"statistics":false})
+! https://www.flibco.com/en
+flibco.com##+js(trusted-set-cookie, cookiesjsr, %7B%22functional%22%3Afalse%2C%22analytics%22%3Afalse%2C%22facebook_pixel%22%3Afalse%2C%22recaptcha%22%3Afalse%2C%22gtag%22%3Afalse%2C%22video%22%3Afalse%7D)
 
 !! Needs additional cookies
 
@@ -28803,7 +28809,7 @@ chrono24.*##dialog.gdpr-layer
 ! .cmp-info[style] fixes endless reload
 wetter.com##+js(trusted-click-element, .cmp-scroll-padding .cmp-info[style] #cmp-paywall #cmp-consent #cmp-btn-accept, , 2000)
 wetter.com###cmp-style-reset
-wetter.com##body:style(overflow: auto !important)
+wetter.com##body:style(overflow: auto !important; position: unset !important;)
 
 ! sj.se cookies
 sj.se##+js(trusted-set-cookie, sj_consent_v1, '%7B%22consent%22%3A%7B%22PERSONALIZATION%22%3Afalse%2C%22MARKETING%22%3Afalse%7D%2C%22uuid%22%3A%22d599dc64-52b7-4dc7-bff3-1e18d5cebc1a%22%7D')
