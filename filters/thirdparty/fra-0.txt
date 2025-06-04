@@ -1,10 +1,10 @@
 ![Adblock Plus 2.0]
-! Checksum: XpwTYHjJDyJDR3Q234h5xw
-! Diff-Path: ../patches/16/16-s-1748870419-3600.patch
+! Checksum: B4M0cN8AS+1O52+NpnhacA
+! Diff-Path: ../patches/16/16-s-1748952934-3600.patch
 ! Title: AdGuard French filter
 ! Description: Liste FR + AdGuard French filter. Filter list that specifically removes ads on websites in French language.
-! Version: 2.0.52.65
-! TimeUpdated: 2025-06-02T13:16:10+00:00
+! Version: 2.0.52.67
+! TimeUpdated: 2025-06-03T12:11:32+00:00
 ! Expires: 5 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -878,6 +878,7 @@ $xmlhttprequest,third-party,denyallow=mega.co.nz|mega.nz|libs.baidu.com|ilfcdn.l
 !
 !
 !
+lejdd.fr##.outbrain-container
 diverto.tv##div[data-atoms="Ad"]
 challenges.fr##.domain-ui-ad-placeholder
 la-croix.com##.gam
@@ -958,6 +959,7 @@ wiflix.date##center[style="padding: 20px;"]
 lephoceen.fr##div[class^="ad_ad_"]
 lephoceen.fr##div[class^="layout_megabanTopContainer"]
 lesechos.fr#?#span[shape="circle"] + span:contains(Publicité):upward(2)
+nouvelobs.com##body .dfp-slot:not(#style_important)
 nouvelobs.com##.advertising
 nouvelobs.com##.sidecol > .pb-25:has(> .advertising)
 nouvelobs.com##.sidecol > .pb-25:has(> div[style] > .OUTBRAIN)
