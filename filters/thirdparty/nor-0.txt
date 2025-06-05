@@ -1,6 +1,6 @@
 ! Title: 🏔️ Dandelion Sprouts nordiske filtre for ryddigere nettsider
 ! Title 🇬🇧: Dandelion Sprout's Nordic filters for tidier websites
-! Last modified: 02June2025v4
+! Last modified: 04June2025v2
 ! Expires: 18 hours
 ! Lisens / Licence: https://github.com/DandelionSprout/adfilt/blob/master/LICENSE.md
 ! Homepage: https://github.com/DandelionSprout/adfilt/blob/master/Wiki/General-info.md
@@ -1331,6 +1331,8 @@ norskebank.no###yui-main
 norskebank.no###header:style(height:unset!important)
 bankimistnorge.com##.container-right
 bankernorge.com##aside#sidebar
+lav-det-selv.dk##.forum-sidebar .d-none
+scm.dk##.banner-hidden
 ! — — — — — — — — —
 ! 🇳🇴：Oppføringer for minst 3 nettsteder
 ! 🇬🇧：Entries for at least 3 websites
@@ -2376,10 +2378,6 @@ sosialurin.fo#@#.ads-banner
 ! ★★★ Caused by «I Don't Care About Cookies» (Its maintainer couldn't reproduce it) ★★★
 ! Fullpage uncloseable overlay when browsing around on Telenor Norway's TV section
 telenor.no##.global-overlay-background
-! ★★★ Caused by «AdGuard Annoyances Filter» and «AdGuard Tracking Protection Filter» ★★★
-! (Currently empty.)
-! ★★★ Caused by «AdGuard Popups Filter» ★★★
-@@/^https:\/\/www.gamer.no\/[0-9a-f]{32,40}$/$script,1p
 ! ★★★ Caused by «Schacks Adblock Plus liste» ★★★
 ! https://github.com/ryanbr/fanboy-adblock/issues/1410
 ekstrabladet.dk#@#body>div[id][style]
