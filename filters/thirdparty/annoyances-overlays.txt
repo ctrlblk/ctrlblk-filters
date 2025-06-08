@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: EasyList – Newsletter Notices
-! Last modified: Thu, 05 Jun 2025 04:04:16 +0000
+! Last modified: Sat, 07 Jun 2025 15:50:01 +0000
 ! Expires: 7 days (update frequency)
 ! *** easylist:template_header.txt ***
 !
@@ -5541,6 +5541,7 @@ netzwelt.de##.subscribeboard
 falter.at##.subscription-note-wide
 n-tv.de##.teaser--newsletter
 happinez.de##.top-bar
+lr-online.de,moz.de,swp.de##.u-article-newsletter
 skylineatlas.de##.underlay
 vol.at##.vodl-widget-newsletter
 watson.ch##.watson-snippet__newsletter
@@ -5954,7 +5955,7 @@ doctorofcredit.com#@#.wpdiscuz-subscribe-bar
 ! fanboy_newsletter_shopping_allowlist_general_hide.txt
 
 ! Title: uBlock filters – Other Annoyances
-! Last modified: Fri, 06 Jun 2025 05:25:33 +0000
+! Last modified: Sat, 07 Jun 2025 13:36:27 +0000
 ! Expires: 7 days
 ! Description: Filters optimized for uBlock Origin, to be used with EasyList's and/or Adguard's "Other Annoyances" list(s)
 ! License: https://github.com/uBlockOrigin/uAssets/blob/master/LICENSE
@@ -13890,3 +13891,6 @@ bangbros.com##+js(set-cookie, iAgree, 1)
 ! https://github.com/uBlockOrigin/uAssets/issues/28499
 ingesantoso.wordpress.com##.marketing-bar
 ingesantoso.wordpress.com##body:remove-class(has-marketing-bar)
+
+! https://github.com/uBlockOrigin/uAssets/issues/28736
+duckduckgo.com##+js(trusted-set-local-storage-item, adblockNotice, '{"dismissed":true,"impressionCount":1}')
