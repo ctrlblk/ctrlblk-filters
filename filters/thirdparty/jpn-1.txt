@@ -1,10 +1,10 @@
 ![Adblock Plus 2.0]
-! Checksum: bgXNL7ECbxjmYoBNSzaN5g
-! Diff-Path: ../patches/7/7-s-1749507119-3600.patch
+! Checksum: 4YnbxBEhn4+haC83kt441A
+! Diff-Path: ../patches/7/7-s-1749575450-3600.patch
 ! Title: AdGuard Japanese filter
 ! Description: Filter that enables ad blocking on websites in Japanese language.
-! Version: 2.0.65.30
-! TimeUpdated: 2025-06-09T22:07:31+00:00
+! Version: 2.0.65.33
+! TimeUpdated: 2025-06-10T17:06:50+00:00
 ! Expires: 5 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -1542,6 +1542,7 @@ jikayosha.jp#$#.wym-v2022__header.is-scroll-up ~ .wym-v2022__footer-fixed.is-pc-
 /wp-content/uploads/2024/09/fanza_ad$image
 !
 ! Malware/Phishing
+/landers/*.php?lp_key=$document
 /apk/app-release.apk|$document
 /SKEIDownLoad.html|$document
 ://www-matsui-co-jp-$document
@@ -1752,7 +1753,7 @@ _ap/signin*?_encoding=UTF8&openid.assoc_handle=jpflex&openid.claimed_id=&action=
 !
 ! For URL shorteners or simple sites with frequently changed ad servers.
 ! Incorrectly blocked domains can be excluded using regex(synchronize this regexp in all filters)
-/^(?!.*(mega.co.nz|mega.nz|libs.baidu.com|ilfcdn.li|bytecdntp.com|fastlycdn.com|doodcdn.io|intensedebate.com|vixcloud.co|cdn.plyr.io|rsc.cdn77.org|linkvertise.com|fastly.net|statically.io|sharecast.ws|b-cdn.net|bunnycdn.ru|bootstrapcdn.com|cdn.ampproject.org|cloudflare.com|cdn.staticfile.org|disqus.com|disquscdn.com|dmca.com|ebacdn.com|facebook.net|fastlylb.net|fbcdn.net|fluidplayer.com|fontawesome.com|github.io|google.com|googleapis.com|googletagmanager.com|gstatic.com|jquery.com|jsdelivr.net|jwpcdn.com|jwplatform.com|recaptcha.net|shrink.pe|twitter.com|ulogin.ru|unpkg.com|userapi.com|vidazoo.com|(\/\/|\.)vk\.com|yandex.|yastatic.net|ytimg.com|zencdn.net|player|youtube.com|cackle.me|googleoptimize.com|vuukle.com|chatango.com|twimg.com|google-analytics.com|hcaptcha.com|raincaptcha.com|media-imdb.com|blogger.com|hwcdn.net|instagram.com|wp.com|fastcomments.com|plyr.io|imgsmail.ru|cloudflare.net|rabbitstream.net|(\/\/|\.)x\.com)).*$/$third-party,script,_____,domain=viki.ja-jp.nina.az|uraaka-joshi.com
+/^(?!.*(mega.co.nz|mega.nz|libs.baidu.com|ilfcdn.li|bytecdntp.com|doodcdn.io|intensedebate.com|vixcloud.co|cdn.plyr.io|rsc.cdn77.org|linkvertise.com|fastly.net|statically.io|sharecast.ws|b-cdn.net|bunnycdn.ru|bootstrapcdn.com|cdn.ampproject.org|cloudflare.com|cdn.staticfile.org|disqus.com|disquscdn.com|dmca.com|ebacdn.com|facebook.net|fastlylb.net|fbcdn.net|fluidplayer.com|fontawesome.com|github.io|google.com|googleapis.com|googletagmanager.com|gstatic.com|jquery.com|jsdelivr.net|jwpcdn.com|jwplatform.com|recaptcha.net|shrink.pe|twitter.com|ulogin.ru|unpkg.com|userapi.com|vidazoo.com|(\/\/|\.)vk\.com|yandex.|yastatic.net|ytimg.com|zencdn.net|player|youtube.com|cackle.me|googleoptimize.com|vuukle.com|chatango.com|twimg.com|google-analytics.com|hcaptcha.com|raincaptcha.com|media-imdb.com|blogger.com|hwcdn.net|instagram.com|wp.com|fastcomments.com|plyr.io|imgsmail.ru|cloudflare.net|rabbitstream.net|(\/\/|\.)x\.com)).*$/$third-party,script,_____,domain=viki.ja-jp.nina.az|uraaka-joshi.com
 ! Similar to regexp above, but using the denyallow modifier
 *$script,third-party,denyallow=mega.co.nz|mega.nz|libs.baidu.com|ilfcdn.li|bytecdntp.com|doodcdn.io|intensedebate.com|vixcloud.co|cdn.plyr.io|rsc.cdn77.org|linkvertise.com|fastly.net|statically.io|sharecast.ws|b-cdn.net|bunnycdn.ru|bootstrapcdn.com|cdn.ampproject.org|cloudflare.com|cdn.staticfile.org|disqus.com|disquscdn.com|dmca.com|ebacdn.com|facebook.net|fastlylb.net|fbcdn.net|fluidplayer.com|fontawesome.com|github.io|google.com|googleapis.com|googletagmanager.com|gstatic.com|jquery.com|jsdelivr.net|jwpcdn.com|jwplatform.com|recaptcha.net|shrink.pe|twitter.com|ulogin.ru|unpkg.com|userapi.com|vidazoo.com|vk.com|yastatic.net|ytimg.com|zencdn.net|youtube.com|cackle.me|googleoptimize.com|vuukle.com|chatango.com|twimg.com|google-analytics.com|hcaptcha.com|raincaptcha.com|media-imdb.com|blogger.com|hwcdn.net|instagram.com|wp.com|fastcomments.com|plyr.io|imgsmail.ru|cloudflare.net|rabbitstream.net|x.com,_____,domain=viki.ja-jp.nina.az|uraaka-joshi.com
 !
@@ -4433,6 +4434,7 @@ womanlife.online##.widget-below-comment-form
 womanlife.online##div[id^="woman-"]
 ||dialyblog.com/gooddeai/$document
 numan.tokyo##.sw-Ad
+newsweekjapan.jp###kakakucom
 newsweekjapan.jp###taboola-below-article-thumbnails-desktop-1
 newsweekjapan.jp##.ad-teads-nw-box
 newsweekjapan.jp###nw-associate
@@ -6319,6 +6321,7 @@ navicon.jp##div[style="clear:both;padding-top:1em;text-align:center;"]
 datadeliver.net###right_box_inner > div[align="left"]
 omocoro.jp##div[class$="-down-ad"]
 cyzowoman.com###content > div[class="ad"] + div.section_common
+||tmp.sakura.tv/5chATR/ad/
 atelier-handmade.com###subservicelogo_wrap
 blogger.ameba.jp##.ad-btf
 official.ameba.jp##.panel-pr-block-side
@@ -7313,6 +7316,7 @@ ga-m.com##.entry-content > p > a[href^="https://hb.afl.rakuten.co.jp/hgc/"]
 ga-m.com##.entry-content > p > a[href^="https://www.amazon.co.jp/gp/search"]
 ||faq.gigafile.nu/wp-content/uploads/2023/02/rrd2.jpg
 ||speed.gigafile.nu/wp-content/uploads/*-300x250.jpg
+||gigafile.nu/js/NuMov.js
 ||src.gigafile.nu/banner/
 ||src.gigafile.nu/images/contents_
 shortener.gigafile.nu##.fixed-bottom
@@ -9080,6 +9084,7 @@ openloadpro.com###main > div[style^="margin: 0 auto 60px auto;"]
 freesoft.tvbok.com###main > div[class*="_div_center_w"]
 freesoft.tvbok.com,goguynet.jp##div[style="height:250px; width:300px;"]
 ||iwanichi.co.jp/wp-content/uploads/ad_management/
+iwanichi.co.jp##.gad_related
 iwanichi.co.jp##.ad_mcol_gad2
 iwanichi.co.jp##.ad_itextad2_wrap
 iwanichi.co.jp##.ad_mcol_gad

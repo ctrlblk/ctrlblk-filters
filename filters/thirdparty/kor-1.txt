@@ -1,7 +1,7 @@
 [uBlock Origin]
 ! Title: List-KR for uBlock Origin
 ! Description: List-KR for uBlock Origin. Maintained by the adblock community and AdGuard.
-! Version: 2025.0605.0
+! Version: 2025.0611.0
 ! Expires: 12 hours
 ! Homepage: https://github.com/List-KR/List-KR
 ! Support: https://list-kr-community.pages.dev/docs/
@@ -3187,6 +3187,7 @@ manatoki464.net,manatoki465.net,manatoki466.net,manatoki467.net,manatoki468.net,
 !
 ! DOMAIN-REFRESHER: END
 
+m.fmkorea.com#$?#.bd.bd_mobile:not(:has(*)):has(~ #spot form[action][method].search) { remove: true; }
 m.fmkorea.com#$?#*.bd.bd_mobile:not(:has(#bd_capture ~ #comment)):has(form[action="./"]:matches-css(height: auto)) { remove: true; }
 search.daum.net#$?#body.nate aside#mAside > div[disp-attr]:has(> .wing_nate) + div[disp-attr] { margin-top: 0px !important; }
 search.daum.net#$?#aside#mAside > div[disp-attr]:has(> .content_sponsor) + div[disp-attr] { margin-top: 0px !important; }
@@ -3434,7 +3435,7 @@ t.hi098123.com#@#ins.adsbygoogle[data-ad-slot]
 @@||googletagmanager.com/gtag/js$domain=t.hi098123.com,script
 t.hi098123.com#$#.tabad { top: -100px !important; }
 !
-checkwhoiam.tistory.com##+js(nostif, adblock)
+checkwhoiam.tistory.com##+js(set, adblockChecker, noopFunc)
 ||shana.pe.kr/shana_check/script.js
 kilho.net###detect-alert
 vod.jtbc.co.kr#@#.ad-unit:not(.textads)
@@ -3562,7 +3563,7 @@ jovelys.ulog.kr,coolfun.zal.kr#$#.inner-body.hided .partners-inside { display: n
 jovelys.ulog.kr,coolfun.zal.kr#$#.inner-body.hided { overflow-y: auto !important; max-height: none !important; }
 etoland.co.kr#$##mw_mobile > .mw_icon_box { margin-top: 25px !important; }
 m.hub.zum.com#$#.banner_slot_top + #container .article_cover { top: 100px !important; }
-mlbpark.donga.com#$#div[id^="SmartPhone_"][id$="_today"] .lists > li:before { padding-top: 0px !important; border-bottom: none !important; }
+mlbpark.donga.com#$#div[id^="SmartPhone_"][id$="_today"] .lists > li::before { padding-top: 0px !important; border-bottom: none !important; }
 enterdiary.com,hotplacehunter.co.kr,mystylezip.com,carandmore.co.kr,maxmovieen.com,tenbizt.com,mobilitytv.co.kr,thehousemagazine.kr,tminews.co.kr,capress.kr,youtu.co,dfast.kr,mememedia.co.kr,newautopost.co.kr#$#.news-view-wrap { padding-top: 0px !important; }
 gall.dcinside.com#$##zzbang_img { display: block !important; }
 m.sports.chosun.com,m.sportschosun.com#$##wrap > div[style*="height:"][style^="position:"] + header { margin-top: 0px !important; }
