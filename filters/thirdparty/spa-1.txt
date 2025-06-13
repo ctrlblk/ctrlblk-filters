@@ -1,10 +1,10 @@
 ![Adblock Plus 2.0]
-! Checksum: zCkDThsRbvrRpITG5NsXQw
-! Diff-Path: ../patches/9/9-s-1749629626-3600.patch
+! Checksum: hzgRdSv9qy4uUHcP+swqQw
+! Diff-Path: ../patches/9/9-s-1749759111-3600.patch
 ! Title: AdGuard Spanish/Portuguese filter
 ! Description: Filter list that specifically removes ads on websites in Spanish, Portuguese, and Brazilian Portuguese languages.
-! Version: 2.0.30.36
-! TimeUpdated: 2025-06-11T08:09:18+00:00
+! Version: 2.0.30.39
+! TimeUpdated: 2025-06-12T20:07:46+00:00
 ! Expires: 5 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -34,7 +34,6 @@
 ||butlercdn.com^$third-party
 ||classic-bonus.com^
 ||assets.etus.digital^$third-party
-||ncwabgl.com^
 ||adzonestatic.com^
 ||adzep.com.br^$third-party
 ||nobeta.com.br^$third-party
@@ -122,7 +121,6 @@
 ||contadorgratis.es^$third-party
 ||contadorgratis.web-kit.org^$third-party
 ||controlsgc.prisacom.com^$third-party
-||coolmobile.es^$third-party
 ||de17a.com^$third-party
 ||detectca.easysol.net^$third-party
 ||epartner.es^$third-party
@@ -143,7 +141,6 @@
 ||micodigo.com^$third-party
 ||mipagerank.com^$third-party
 ||navdmp.com^
-||netfilia.com^$third-party
 ||newstogram.com^$third-party
 ||nspmotion.com^$third-party
 ||nuevaq.net^$third-party
@@ -301,10 +298,6 @@ cozinhabr.top##+js(no-setTimeout-if, hasAdblock)
 dicasdereceitas.net,dicasgeeks.net#$#body { overflow: auto !important; }
 dicasdereceitas.net,dicasgeeks.net#$##adblockbyspider { display: none !important; }
 dicasdereceitas.net,dicasgeeks.net##+js(adjust-setTimeout, contador, *, 0.001)
-! https://github.com/AdguardTeam/AdguardFilters/issues/186248
-boafinancas.com###adblock-message
-boafinancas.com#$##btn-download { display: block !important; }
-boafinancas.com##+js(adjust-setTimeout, counter, *, 0.001)
 ! https://github.com/AdguardTeam/AdguardFilters/issues/186162
 filmesxp.com##div[class^="adblock-"]
 filmesxp.com#$##detect.ad-placement { display: block !important; }
@@ -414,9 +407,9 @@ expertplay.net##+js(no-fetch-if, pagead2.googlesyndication.com)
 ! https://github.com/AdguardTeam/AdguardFilters/issues/171790
 ! https://github.com/AdguardTeam/AdguardFilters/issues/164377
 ! https://github.com/AdguardTeam/AdguardFilters/issues/134928
-toonscrab.com,visorcrab.com,httpmangacrab2.com,manga-crab.com,mangacrab.com##div[uncopy-anti-adblocker]
-toonscrab.com,visorcrab.com,httpmangacrab2.com,manga-crab.com,mangacrab.com##+js(abort-on-property-read, antiAdBlockerStyle)
-/wp-content/plugins/uncopy/frontend/js/uncopy-frontend.min.js$domain=mangacrab.com|manga-crab.com|httpmangacrab2.com|visorcrab.com|toonscrab.com
+toonscrab.com,httpmangacrab2.com,manga-crab.com,mangacrab.com##div[uncopy-anti-adblocker]
+toonscrab.com,httpmangacrab2.com,manga-crab.com,mangacrab.com##+js(abort-on-property-read, antiAdBlockerStyle)
+/wp-content/plugins/uncopy/frontend/js/uncopy-frontend.min.js$domain=mangacrab.com|manga-crab.com|httpmangacrab2.com|toonscrab.com
 ! https://github.com/AdguardTeam/AdguardFilters/issues/164047
 ||peliculas8k.com/TV/encriptador/cierrapues.js
 peliculas8k.com##+js(no-setTimeout-if, Promise[\'all\'](urls)
@@ -1594,8 +1587,6 @@ fiuxy2.com##+js(abort-on-property-read, lolaop)
 animeblix.com##+js(window.open-defuser)
 ! https://github.com/AdguardTeam/AdguardFilters/issues/126442
 servertwo.xyz,megaseriesonline.pro##+js(window.open-defuser)
-! https://github.com/AdguardTeam/AdguardFilters/issues/125382
-pelisplushd.site##+js(remove-attr, href, a[href^="https://adalites.site/"])
 ! https://github.com/uBlockOrigin/uAssets/issues/14099#issuecomment-1192722375
 raulprietofernandez.net##+js(abort-on-property-write, pUrlArray)
 ! https://github.com/AdguardTeam/AdguardFilters/issues/123894
@@ -2052,6 +2043,7 @@ c5n.com,t13.cl,solowrestling.mundodeportivo.com,todojujuy.com,mendozapost.com,me
 !
 ! NOTE: Specific rules
 !
+animeonline.lat##+js(addEventListener-defuser, click, Popunder)
 canalporno.com###overlay-video
 gazetadopovo.com.br##div[class^="postAside_post-aside-banner__"]
 canalporno.com##.r11ght-pl4yer-169
@@ -2802,8 +2794,8 @@ gamestorrents.fm##a[href*="offer_id="][target="_blank"] > img
 jornalopcao.com.br##div[id^="nw_anuncio"]
 midianews.com.br###ban_header
 midianews.com.br##.col-sm-3 div[style="height: 280px;"]
-visorcrab.com,httpmangacrab2.com,manga-crab.com,mangacrab.com##.main-col > ul[id^="manga-content-navs"]:has(> li > a[href="#tab-ads"])
-visorcrab.com,httpmangacrab2.com,manga-crab.com,mangacrab.com##.anunciopublicitario
+httpmangacrab2.com,manga-crab.com,mangacrab.com##.main-col > ul[id^="manga-content-navs"]:has(> li > a[href="#tab-ads"])
+httpmangacrab2.com,manga-crab.com,mangacrab.com##.anunciopublicitario
 okdiario.com##.content > .megaContainer:empty
 okdiario.com##.content > .megaContainer.ad-slot-ph
 okdiario.com##aside.ad-slot-ph
@@ -4866,7 +4858,7 @@ baboo.com.br##.RgtColTopImg
 infobolsa.es##.Web_Banner
 animeflv.net,anime-latino.net,animeid.com##.a160
 animeflv.net##.a300x250
-seriesytv.tv,animeytv.tv,inkanime.com,animeyt.org,jkanimeonline.com,elanimeonline.net,animeflv.net,animeid.com##.a728
+seriesytv.tv,animeytv.tv,inkanime.com,animeyt.org,elanimeonline.net,animeflv.net,animeid.com##.a728
 seriesytv.tv,animeytv.tv##.main > center > a[target="_blank"] > img
 letras.mus.br##.ad-full
 telecinco.es##.ad-top

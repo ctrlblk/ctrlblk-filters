@@ -1,10 +1,10 @@
 ![Adblock Plus 2.0]
-! Checksum: uMON3MNVMF724Ay+LbInYA
-! Diff-Path: ../patches/13/13-s-1749654700-3600.patch
+! Checksum: Yopq2xxKl0MFz0w7UBg+PQ
+! Diff-Path: ../patches/13/13-s-1749782505-3600.patch
 ! Title: AdGuard Turkish filter
 ! Description: Filter list that specifically removes ads on websites in Turkish language.
-! Version: 2.0.57.25
-! TimeUpdated: 2025-06-11T15:07:30+00:00
+! Version: 2.0.57.30
+! TimeUpdated: 2025-06-13T02:37:40+00:00
 ! Expires: 5 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -199,7 +199,6 @@
 ||ad.hepsiburada.com^
 ||ad.reklm.com^
 ||ads.motosiklet.net^
-||ad.sigortagundem.biz^
 ||cdn.eksiup.com^
 ||url.isimsepeti.net^
 ||ads.gencgazete.net^
@@ -388,8 +387,6 @@ mangawt.com##+js(abort-on-property-read, adblockmesaj)
 ||itemci.com/adblock/adblock.
 ! https://github.com/AdguardTeam/AdguardFilters/issues/130570
 e-kitapstore.com##+js(set-constant, adbEnableForPage, false)
-! https://github.com/AdguardTeam/AdguardFilters/issues/127623
-||24sport.stream/assets/js/dublocker.js
 ! https://github.com/AdguardTeam/AdguardFilters/issues/123951
 @@||wheel-size.com.tr/static/v*/js/prebid-ads.js
 wheel-size.com.tr##+js(set-constant, detector_active, true)
@@ -900,7 +897,7 @@ dizipal1.cloud,dizipal2.cloud,dizipal3.cloud,dizipal4.cloud,dizipal5.cloud,dizip
 !*****
 ! START: Clickunders
 ! puShown
-dizikral.nl,puffytr.com,anizle.com,anizm.net,dizimore.com,dizirex.com,maxfilmizle.pro,turkifsa.xyz,fullhdfilmizlesene.*,royalfilmizle.com,sinetiktok.com,onlinedizi.xyz,uzaymanga.com,filmzirvesi.to,filmifullizle.online,sinemakolik.org,filmerotixxx.com,filmfc.com,filmizletv18.com,onlinefilmizle.site,playerzz.xyz,filmjr.org,asfilmizle.com,dizifast.net,filmhe.com,tranimaci.*,hdsinemax.com,hdfilmizle.org,siyahfilmizle.*,tafdi4.com,elzemfilm.org,tafdi3.com,anizle.com,kozfilm.com,hdfilmizle.in,dizicaps.*,filmizletv1.*,diziyou.co,fullhdfilmizle.*,fullfilmizle.*,sinepal.*,dizimag.eu,bumfilmizle1.com,yabancidizilertv.*,1080hdfilmizle.com,hdfilmcehennemi.*,yabancidizibax.com,sinemangoo.org,sexfilmleriizle.com,fullhdfilm.*,geziforumu.com,efendim.xyz,dizipaltv.net,fluffcore.com,hdfilmcehennemizle.com,netfullfilmizle3.com,filmmodu.info,izlekolik.*,arrowizle.com,jokerfilmizle.com,filmcus.com,filmizlew.org,sinemakolik.net,sinefilmizlesen.com,zarize.com,burdenfly.com,zzerotik.com,filmgo.org,sinemafilmizle.net,filmkuzusu1.com,hdfilmcix.*,sinemadelisi.com,erotikfilmtube.com,dizipal.*,filmizletv.*,tekparthdfilmizle.*,pornoanne.com,dizikorea.*,diziyo.*,diziboxx.com,dafflix.*,turkaliz.com,vkfilmizle.net,dizimov.*,filmizlet.net,bumfilmizle.com,shirl.club,turkcealtyazilipornom.com,fullhdfilmmodu2.*,hdfilmizletv.net,pembetv18.*,sinemaizle.co,hdfilmcehennem.live,efullizle.com,asyafanatiklerim.com,dizilost.com,fullhdfilmdeposu.com,tranimeizle.*,volsex.com,divx720pfilmizle.org##+js(set-constant, puShown, true)
+dizikral.nl,puffytr.com,anizle.com,anizm.net,dizimore.com,dizirex.com,maxfilmizle.pro,turkifsa.xyz,fullhdfilmizlesene.*,royalfilmizle.com,sinetiktok.com,onlinedizi.xyz,uzaymanga.com,filmzirvesi.to,filmifullizle.online,sinemakolik.org,filmerotixxx.com,filmfc.com,filmizletv18.com,onlinefilmizle.site,playerzz.xyz,filmjr.org,asfilmizle.com,filmhe.com,tranimaci.*,hdsinemax.com,hdfilmizle.org,siyahfilmizle.*,tafdi4.com,elzemfilm.org,tafdi3.com,anizle.com,hdfilmizle.in,dizicaps.*,filmizletv1.*,diziyou.co,fullhdfilmizle.*,fullfilmizle.*,sinepal.*,dizimag.eu,bumfilmizle1.com,yabancidizilertv.*,1080hdfilmizle.com,hdfilmcehennemi.*,yabancidizibax.com,sinemangoo.org,sexfilmleriizle.com,fullhdfilm.*,geziforumu.com,efendim.xyz,dizipaltv.net,fluffcore.com,hdfilmcehennemizle.com,netfullfilmizle3.com,filmmodu.info,izlekolik.*,arrowizle.com,filmcus.com,filmizlew.org,sinemakolik.net,sinefilmizlesen.com,zarize.com,burdenfly.com,zzerotik.com,filmgo.org,sinemafilmizle.net,filmkuzusu1.com,hdfilmcix.*,sinemadelisi.com,erotikfilmtube.com,dizipal.*,filmizletv.*,tekparthdfilmizle.*,pornoanne.com,dizikorea.*,diziyo.*,diziboxx.com,dafflix.*,turkaliz.com,vkfilmizle.net,dizimov.*,filmizlet.net,bumfilmizle.com,shirl.club,turkcealtyazilipornom.com,fullhdfilmmodu2.*,hdfilmizletv.net,pembetv18.*,sinemaizle.co,hdfilmcehennem.live,efullizle.com,asyafanatiklerim.com,dizilost.com,fullhdfilmdeposu.com,tranimeizle.*,volsex.com,divx720pfilmizle.org##+js(set-constant, puShown, true)
 ! isShow
 tekfullfilmizle5.com##+js(set-constant, isShow, true)
 ! initPu
@@ -908,7 +905,7 @@ sinemakolix.com,erotikhoot.com,dizikral.live,eldermanga.com,promy.pro,diziyoutv.
 ! initAd
 fullfilmizlebaba.com,superfilmgeldi.biz,vkfilmizlet.*,supernaturalizle.com,sinemakolik.net,hdsinemax.com,diziyo.*,fullhdabifilm.com,bettercallsaulizle.com,superfilmgeldi.net,fullhdfilmizlett1.com,fullhdfilmizleabi.com,hdfreeizle.com,hdmixfilim.com,fullhdfilmizlepala.com##+js(abort-on-property-read, initAd)
 !
-720pfilmizleme1.com,720pfilmizletir.com,1080pfilmizletir.com,720pfilmizlesene.com,filmmakinesi1.*,fullhd720pizle.live,filmizlemax.*,videoseyred.in,hdfilmcehennem.live##+js(addEventListener-defuser, click, checkTarget)
+720pfilmizleme1.com,720pfilmizletir.com,1080pfilmizletir.com,720pfilmizlesene.com,filmmakinesi1.*,filmizlemax.*,videoseyred.in,hdfilmcehennem.live##+js(addEventListener-defuser, click, checkTarget)
 filmizlehdizle.com,yabancidiziizlesene.*,1080hdfilmizle.com##+js(abort-on-property-read, initPop)
 shirl.club,altporno.xyz##+js(abort-on-property-read, oV1)
 ! END: Clickunders
@@ -1463,7 +1460,7 @@ itemci.com#$#body { background: none !important; }
 !
 ! Images hosting. Used for advertising on many sites
 !+ NOT_OPTIMIZED
-://i.hizliresim.com^$domain=mnfilmizle.com|1dizifilmizle.com|diziplus.*|dizifast.net|sinemangoo.org|sexfilmleriizle.com|ajans32.com|haber32.com.tr|technopat.net|ertehaber.com|duzcetv.com|unyenethaber.com|haberant.com|dizilost.com|medya32.com|malatyamegahaber.com|zerotikk.com|jokerfilmizle.com|erotikfilmtube.com|kozfilm.com|birasyadizi.com|asyadiziizle.com|dizicaps.*|hdfilmizleamk.*|muglayenigun.com|sinetiktok.com|filmzevkim.com
+://i.hizliresim.com^$domain=mnfilmizle.com|1dizifilmizle.com|diziplus.*|sinemangoo.org|sexfilmleriizle.com|ajans32.com|haber32.com.tr|technopat.net|ertehaber.com|duzcetv.com|unyenethaber.com|haberant.com|dizilost.com|medya32.com|malatyamegahaber.com|zerotikk.com|erotikfilmtube.com|birasyadizi.com|asyadiziizle.com|dizicaps.*|hdfilmizleamk.*|muglayenigun.com|sinetiktok.com|filmzevkim.com
 !
 ! https://github.com/AdguardTeam/AdguardFilters/issues/5969
 /images/banner/*$domain=yalovagazetesi.com|haber46.com.tr|cukurovaexpres.com|karamangundem.com|tercihiniyap.net|alanyapostasi.com.tr|pratikhaber.com|sonhaber.eu
@@ -1523,6 +1520,7 @@ dirilispostasi.com,turkuazgazetesi.net,yenialanya.com,bugunkocaeli.com.tr,cagdas
 !
 ! NOTE: Specific rules
 !
+||istanbulticaretgazetesi.com/uploads/ads/
 ||r.resimlink.com/LmAwB5P.gif
 iscihaber.net##.detailside-inner-ad-cont
 yabancidizi.*###router-view > div > div:not([class],[id]) > div[class*="bg-\[rgb"]:has(> .grid:only-child > ad + ad + ad)
@@ -1653,7 +1651,7 @@ dizimag.*##+js(abort-on-property-write, popURLs)
 ||vipfilmizle.net/*1000x50.gif
 ||vipfilmizle.net/*1000-50.gif
 mc-tr.com##.popup-reklam
-startv.com.tr##div[class*="dyg-"]
+ntvspor.net,startv.com.tr##div[class*="dyg-"]
 sozcu.com.tr##.row div.sozcu-ramazan-imsakiye > a[target="_blank"]
 parselsorgu.tkgm.gov.tr###custom-popup
 onedio.com##div[id^="before-infinite-scroll-thumbnails"]
@@ -2816,7 +2814,6 @@ canlitv.center###sidebar_reklam
 /popup.js$domain=bayfilmizle1.com
 /ads/*$domain=mp3indirdur.mobi|forum.donanimhaber.com
 ||hdmixfilim.com/vast2.js
-fullhd720pizle.live##.rsm-ykr-trf
 kredibankalar.com##div[style^="background:#eeeeee; border:2px"]
 kredibankalar.com###yeni_alt_reklam
 altporno.xyz##div[class*="-icerikten-"]
@@ -2834,7 +2831,7 @@ bomba32.com##.reklam-manset
 bomba32.com##.flash-wrapper
 bomba32.com##.sag-manset
 sorumatik.co###Arpian-ads
-timeturk.com##div[class*="reklam-"]
+istanbulticaretgazetesi.com,timeturk.com##div[class*="reklam-"]
 wv2.net###content > a[rel="dofollow"]
 marketingturkiye.com.tr##div[class^="b2b-marketing-"] > a[target="_blank"]
 ||eskisehirhaber26.com/images/upload/620x150-
@@ -2924,7 +2921,6 @@ galeri.uludagsozluk.com##.adulu_col-main-ulu
 galeri.uludagsozluk.com##body > div[style="display: flex; justify-content:center"]
 kamubulten.com##header > div[style="height: 300px;"]
 fullprogramlarindir.net,buyurindir.org##center a[onclick*="window.open("]
-||fullhd720pizle.live/f7/f7.php
 ||filmkuzusu1.com/pops5.js
 mynet.com##.ad-home-masthead-wrapper
 paratic.com##.p-bnr
@@ -3030,7 +3026,7 @@ inegolonline.com##.boxStyle[style^="height:"]
 inegolonline.com##iframe[src^="https://ads.inegolonline.com/"]
 41saat.com##.genel > div[style^="width: 980px; height: auto; margin:"]
 ||41saat.com/wp-content/uploads/*/*/toraman-reklam-980.jpg
-dizifast.net,diziplus.*,dizikorea.*,dizivap.*,dizivid.co,diziday1.com,filmzal.*##.player-top-ad a
+diziplus.*,dizikorea.*,dizivap.*,dizivid.co,diziday1.com,filmzal.*##.player-top-ad a
 arabamkacyakar.com##.ads_aky
 memurlar.net##.widget-970x250
 memurlar.net##.widget-336x280
@@ -5424,8 +5420,6 @@ dizicaps.*#$##player { display: block !important; }
 1080pizle.net#$##cn-content { display: block !important; }
 dizifilmbox.*#$##reki:not([style*="display"]) { display: none !important; }
 dizifilmbox.*#$##reki[style*="display"] { display: block !important; }
-fullhd720pizle.live#$#.video { display: block !important; }
-fullhd720pizle.live#$##VideOnrekLam { display: none !important; }
 erotikfilmtube.com#$#body div#player { display: block !important; }
 erotikfilmtube.com#$#.play-that-video { display: none !important; }
 fullfilmizle.*#$##rk-content { display: none !important; }
@@ -5559,11 +5553,10 @@ aleastoria.com,arabsdna.com,arbwork.com##.splash
 aleastoria.com,arabsdna.com##.body-clickable
 ||aleastoria.com/belgeler/
 ||arbwork.com/izin/
-jplangbroek.com##.wpb_wrapper > center > a[target="_blank"]
 justintvsh.baby,justinttvvamphd.cfd##header > a[target="_blank"]
-jplangbroek.com,hayrirsds24.cfd#$#.player-poster[data-poster].clickable { background-image: none !important; }
-jplangbroek.com,hayrirsds24.cfd##+js(set-constant, window.config.adv.enabled, 0)
-||blogger.googleusercontent.com/img/$domain=jplangbroek.com|justintvsh.baby|justinttvvamphd.cfd
+hayrirsds24.cfd#$#.player-poster[data-poster].clickable { background-image: none !important; }
+hayrirsds24.cfd##+js(set-constant, window.config.adv.enabled, 0)
+||blogger.googleusercontent.com/img/$domain=justintvsh.baby|justinttvvamphd.cfd
 ! CASE 4 - justintv*.com
 [$domain=/justintv\d+\.com/]##.banner
 [$domain=/justintv\d+\.com/]##.container > aside.sidebar:has(> .banner)
