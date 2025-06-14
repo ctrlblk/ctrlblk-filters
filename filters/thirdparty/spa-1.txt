@@ -1,10 +1,10 @@
 ![Adblock Plus 2.0]
-! Checksum: hzgRdSv9qy4uUHcP+swqQw
-! Diff-Path: ../patches/9/9-s-1749759111-3600.patch
+! Checksum: QLLDu+StGNT+KbYIESSudg
+! Diff-Path: ../patches/9/9-s-1749820837-3600.patch
 ! Title: AdGuard Spanish/Portuguese filter
 ! Description: Filter list that specifically removes ads on websites in Spanish, Portuguese, and Brazilian Portuguese languages.
-! Version: 2.0.30.39
-! TimeUpdated: 2025-06-12T20:07:46+00:00
+! Version: 2.0.30.42
+! TimeUpdated: 2025-06-13T13:16:17+00:00
 ! Expires: 5 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -2043,6 +2043,8 @@ c5n.com,t13.cl,solowrestling.mundodeportivo.com,todojujuy.com,mendozapost.com,me
 !
 ! NOTE: Specific rules
 !
+cxtvenvivo.com##.ad-titulo
+cxtvenvivo.com##.text-center:has(> .ad-titulo)
 animeonline.lat##+js(addEventListener-defuser, click, Popunder)
 canalporno.com###overlay-video
 gazetadopovo.com.br##div[class^="postAside_post-aside-banner__"]
@@ -2235,7 +2237,7 @@ folhape.com.br##.areaDeBanner
 folhape.com.br##.areaDeBanner + .spacer20
 folhape.com.br##.spacer20:has(+ .areaDeBanner)
 em.com.br##.edm-banner
-em.com.br##.publicidade-interna-container
+vrum.com.br,em.com.br##.publicidade-interna-container
 acestreamid.com###acestreamids_main > div.col > ul:has(> li > div[class="center"] > a[target="_blank"] > img)
 record.com.mx##.promotion
 record.com.mx##.block-publicidad
@@ -2535,9 +2537,9 @@ hobbyconsolas.com###megaad-wrapper
 hobbyconsolas.com##.lazyload-wrapper:has(> div[class^="embed-card"] > a.product-button)
 hobbyconsolas.com##div[data-piano-position^="recomendado-ada-"]
 otakustv.com##div[id^="public_"]
-pelismart.tv,pelis1.com,homecine.cc,seriesmetro.net,flixseries.org,homecine.tv,homecine.to,metroseries.net,smartpelis.tv,seriesbanana.com##+js(set-cookie, player, 1)
-pelismart.tv,pelis1.com,homecine.cc,seriesmetro.net,flixseries.org,homecine.tv,homecine.to,metroseries.net,smartpelis.tv,seriesbanana.com#$##playx { display: none !important; }
-pelismart.tv,pelis1.com,homecine.cc,seriesmetro.net,flixseries.org,homecine.tv,homecine.to,metroseries.net,smartpelis.tv,seriesbanana.com#$##plays { display: block !important; }
+papayaseries.net,pelismart.tv,pelis1.com,homecine.cc,seriesmetro.net,flixseries.org,homecine.tv,homecine.to,metroseries.net,smartpelis.tv,seriesbanana.com##+js(set-cookie, player, 1)
+papayaseries.net,pelismart.tv,pelis1.com,homecine.cc,seriesmetro.net,flixseries.org,homecine.tv,homecine.to,metroseries.net,smartpelis.tv,seriesbanana.com#$##playx { display: none !important; }
+papayaseries.net,pelismart.tv,pelis1.com,homecine.cc,seriesmetro.net,flixseries.org,homecine.tv,homecine.to,metroseries.net,smartpelis.tv,seriesbanana.com#$##plays { display: block !important; }
 guiadasemana.com.br#$#main#site-main { margin-top: 0px !important; }
 guiadasemana.com.br###content-column div[class].placement
 bajalogratis.com##a[href*="/redirect?tid="]
