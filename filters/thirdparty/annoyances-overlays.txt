@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: EasyList – Newsletter Notices
-! Last modified: Sat, 14 Jun 2025 21:49:59 +0000
+! Last modified: Sun, 15 Jun 2025 18:53:05 +0000
 ! Expires: 7 days (update frequency)
 ! *** easylist:template_header.txt ***
 !
@@ -3007,6 +3007,7 @@ gzeromedia.com##.newsletter__bottom-wrapper
 designmynight.com,soaps.sheknows.com,theblaze.com##.newsletter__container
 financemagnates.com##.newsletter__form
 usafacts.org##.newsletter__header
+scamadviser.com##.newsletter__row
 advisorperspectives.com##.newsletter__signup-form
 greatbritishchefs.com##.newsletter__title-image-overlay
 fastcompany.com##.newsletter__widget
@@ -5978,7 +5979,7 @@ doctorofcredit.com#@#.wpdiscuz-subscribe-bar
 ! fanboy_newsletter_shopping_allowlist_general_hide.txt
 
 ! Title: uBlock filters – Other Annoyances
-! Last modified: Sat, 14 Jun 2025 08:15:50 +0000
+! Last modified: Sun, 15 Jun 2025 06:45:20 +0000
 ! Expires: 7 days
 ! Description: Filters optimized for uBlock Origin, to be used with EasyList's and/or Adguard's "Other Annoyances" list(s)
 ! License: https://github.com/uBlockOrigin/uAssets/blob/master/LICENSE
@@ -6129,7 +6130,10 @@ abcya.com##.a-adhesion
 ! https://github.com/uBlockOrigin/uAssets/issues/28629
 studydrive.net##.w-full.flex:has(> div[id^="billboard_btf"])
 
+! https://github.com/uBlockOrigin/uAssets/issues/28782
+
 ! END: Anti-adblock
+videohelp.com###topmenu:has(> .contentlink[href="https://www.videohelp.com/donate"])
 
 ! https://github.com/uBlockOrigin/uAssets/issues/933
 ! https://github.com/easylist/EasyListHebrew/issues/332
