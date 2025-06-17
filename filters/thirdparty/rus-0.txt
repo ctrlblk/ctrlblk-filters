@@ -16426,6 +16426,7 @@ allboxing.ru#?#.field-item > p:-abp-has(noindex [href*="pari.ru"])
 allboxing.ru#?#.field-item > p:-abp-has(noindex [href*="utm_campaign"])
 libertycity.net,libertycity.ru##.file_download > div[style*="height:"]
 libertycity.net,libertycity.ru##.file_info_ad
+kinorium.com##.film-page__buttons-cinema
 fast-fiml.ru,fast-torrent.club,fast-torrent.ru,fast-torrent.su,filmpotok.ru,kinomuch.ru,nebeda.net,pickfilm.ru,veleto.ru,vixim.ru##.film_page > div:not([id]):not([class]) > center
 asn.in.ua##.filter-container
 nixp.ru##.firefox
@@ -19415,21 +19416,6 @@ cybersport.ru##a[class^="vkPlay"]
 tulapressa.ru##a[data-href*="//dzen.ru/"]
 bombardir.ru##a[data-href*="://bmbrdr.ru/"]
 ixbt.com##a[data-menuitem="honor"]
-kinorium.com##a[data-original-url^="https://24h.tv/"]
-kinorium.com##a[data-original-url^="https://bolshoe.tv/"]
-kinorium.com##a[data-original-url^="https://kino.1tv.ru/"]
-kinorium.com##a[data-original-url^="https://kino.tricolor.tv/"]
-kinorium.com##a[data-original-url^="https://kion.ru/"]
-kinorium.com##a[data-original-url^="https://okko.tv/"]
-kinorium.com##a[data-original-url^="https://premier.one/"]
-kinorium.com##a[data-original-url^="https://smotreshka.tv/"]
-kinorium.com##a[data-original-url^="https://start.ru/"]
-kinorium.com##a[data-original-url^="https://tv.apple.com/"]
-kinorium.com##a[data-original-url^="https://viju.ru/"]
-kinorium.com##a[data-original-url^="https://wink.ru/"]
-kinorium.com##a[data-original-url^="https://www.amediateka.ru/"]
-kinorium.com##a[data-original-url^="https://www.ivi.ru/"]
-kinorium.com##a[data-original-url^="https://www.tvigle.ru/"]
 grippua.com.ua##a[data-wpel-link="external"][target][rel*="nofollow"] > img
 menu.cc.ua,mycooking.pp.ua##a[href$=".htm"]
 serialy-2021.com,serialy-tor.com##a[href$=".php"]
@@ -22144,7 +22130,7 @@ https://*adtech_uid=$~third-party,xmlhttprequest,domain=lena-miro.ru|levik.blog|
 ||news.mail.ru/-/*.js?
 ||newsyou.info/wp-content/plugins/gtranslate/
 ||newsyou.info^$csp=script-src-elem 'self' https:
-||pikabu.ru/ajax/*?M57fg=$xmlhttprequest
+||pikabu.ru/ajax/*?M58fg=$xmlhttprequest
 ||ritsatv.ru^$csp=script-src
 ||ritsatv.ru^$popup
 ||ritsatv.ru^$~document
@@ -28676,7 +28662,7 @@ opennet.me,opennet.ru##+js(href-sanitizer, a[href*="://click.opennet.ru/cgi-bin/
 appleinsider.ru##+js(href-sanitizer, a[href*="?goto=https"], ?goto)
 kluchikipro.ru##+js(href-sanitizer, a[href*="deeplink="], ?deeplink)
 lifehacker.ru##+js(href-sanitizer, a[href][rel*="sponsored"][target="_blank"], ?goto)
-hot.game##+js(href-sanitizer, a[href][target="_blank"][rel="nofollow"], ?ulp)
+hot.game##+js(href-sanitizer, a[href][target="_blank"], ?ulp)
 www.ixbt.com##+js(href-sanitizer, a[href^="//www.ixbt.com/click/?c="], [title])
 wotspeak.org##+js(href-sanitizer, a[href^="/engine/dwn"], ?xf)
 vc.ru##+js(href-sanitizer, a[href^="https://go.2038.pro/"][href*="?dl="], ?dl)
