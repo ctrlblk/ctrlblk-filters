@@ -10430,7 +10430,6 @@ $xmlhttprequest,domain=happy-biock.info|happy-block.info|howto-news.info|mschist
 .calculat.ru$script,domain=calculat.ru
 .chinimavto.ru^$script,domain=chinimavto.ru
 .chto-proishodit.ru^$script,domain=chto-proishodit.ru
-.com-x.life^$script
 .creativportal.ru^$domain=creativportal.ru
 .diversant-club.ru^$script
 .dnevniki-vampira.net^$script,domain=dnevniki-vampira.net
@@ -12554,7 +12553,7 @@ igdz1.ru^$script,domain=igdz.ru
 ||partner.komedra.com/
 ||partner.labirint.ru^$third-party,domain=rutlib.com
 ||partner.uhty-multy.ru/
-||partnerkin.com/uploads/resb/
+||partnerkin.com/*/resb
 ||partners.walla.co.il^$domain=mignews.com
 ||passus.ru/test-widget/
 ||patria.md/i/partners/
@@ -15698,6 +15697,7 @@ kabar.kg##.belta-informer
 sport.ua##.best_bookies
 zbirna.com##.best_game_sec
 aldebaran.ru##.best_sellers
+partnerkin.com##.bests_block
 fightnews.info##.bet
 allhockey.ru##.bet-wrap
 vesti.kz##.betconest
@@ -18338,6 +18338,7 @@ za4eti.ru##.stl_d3 [class^="stl_"],.stl_d3 [class^="stl_"] + br
 infox.ru#?#.stlt:-abp-contains(Реклама)
 igry-man.net##.stockgame
 gdz.ru##.store-hosting
+pikabu.ru#?#.stories-feed__container > .story:-abp-has(> .story__main .story__promo)
 pikabu.ru#?#.stories-feed__container > .story:-abp-has(> .story__main > [id])
 pikabu.ru#?#.stories-feed__container > .story:-abp-has(> .story__placeholder)
 pikabu.ru#?#.stories-feed__container > .story:-abp-has([class*="sponsor"])
@@ -22130,7 +22131,7 @@ https://*adtech_uid=$~third-party,xmlhttprequest,domain=lena-miro.ru|levik.blog|
 ||news.mail.ru/-/*.js?
 ||newsyou.info/wp-content/plugins/gtranslate/
 ||newsyou.info^$csp=script-src-elem 'self' https:
-||pikabu.ru/ajax/*?M58fg=$xmlhttprequest
+||pikabu.ru/ajax/*?Ng6w7=$xmlhttprequest
 ||ritsatv.ru^$csp=script-src
 ||ritsatv.ru^$popup
 ||ritsatv.ru^$~document
@@ -26445,6 +26446,7 @@ trupornolabs.org##.header > .red
 wowhead.com##.is-atf.horizontal-bg
 wowhead.com##.is-atf.vertical-bg
 wowhead.com##.is-btf.horizontal-bg
+com-x.life##.jquery-error
 retail.ru##.markup__b2
 retail.ru##.markup__c1
 retail.ru##.markup__p1
@@ -26875,6 +26877,8 @@ chita.ru##body:style(background: none !important; margin-top: 0 !important; padd
 cinema-hd.ru,doramatv.su,filmshd.vip,goodfilms.su,hdrezka.it,kinoxa.cc,lordfilm.lu,lordserial.fun,lordserial.run,lordserial.top,newseries.me,yummyanime.best##.wrap:style(padding-top: 0 !important)
 ! ---
 click-or-die.ru##a[href*="://kik.cat/"]:style(pointer-events: none !important; color: inherit !important)
+! ---
+com-x.life##.blur-image:style(filter: none !important)
 ! ---
 comments.ua##.back_bottom > *:style(pointer-events: auto !important)
 comments.ua##.back_bottom:style(cursor: auto !important)
