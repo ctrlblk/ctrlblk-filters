@@ -2,7 +2,7 @@
 ! Title: Adblock List for Finland
 ! Description: Finnish adblock list
 ! Expires: 4 days
-! Last modified: Thu, 19 Jun 2025 01:02:56 +0300
+! Last modified: Fri, 20 Jun 2025 00:45:31 +0300
 ! Homepage: https://github.com/finnish-easylist-addition/finnish-easylist-addition
 ! License: https://unlicense.org/
 ! Raportoi mainoksenestoon liittyvistä ongelmista tai estämättömistä mainoksista täällä / Please report adblocking related issues or unblocked ads at:
@@ -273,9 +273,11 @@ alandstidningen.ax##div[id|=block-googleadmaincontent]
 alandstidningen.ax#?#.views-element-container:has-text(Annonsnytt)
 alfatvuutiset.fi##.ugaam-archive-ad-wrapper
 alfatvuutiset.fi#?#.widget_text:has-text(Advertisement)
+alibi.fi###alibi-ad-popup
 alibi.fi##.box--full.grid__container.clearfix
 alibi.fi##.magazineorderwidget__content
 alibi.fi##.sidebar-block:has(img.awpo-lazy)
+alibi.fi##[href="https://alibi.fi/tilaa-lehti/"]
 alibi.fi#?#.article__body > p:has-text(/^\xA0$/)
 alibi.fi,ampparit.com,anna.fi,eralehti.fi,golfpiste.com,hymy.fi,kaksplus.fi,kipparilehti.fi,kotiliesi.fi,koululainen.fi,muropaketti.com,nettiauto.com,nettikaravaani.com,nettikone.com,nettimokki.com,nettimoto.com,nettivaraosa.com,nettivene.com,rakennusmaailma.fi,seura.fi,suomenkuvalehti.fi,tekniikanmaailma.fi,venelehti.fi##div[id^=dfp__]
 alibi.fi,hymy.fi##.sidebar-block > a[href^="http://pubads.g.doubleclick.net/gampad/clk"]
@@ -1072,6 +1074,12 @@ sportti.com#?#div[style="padding-bottom:10px;margin-bottom:6px;border-top:1px so
 sportti.com#?#tr:has-text(.loadAd)
 sss.fi##.td_block_wrap:has([href="https://www.sss.fi/category/mainos/"])
 sss.fi#?#aside.widget_text:has-text(MAINOS)
+stadissa.fi##.banner > a[href="/clickad.php?id=1016"]
+stadissa.fi##.banner > a[href="/clickad.php?id=1264"]
+stadissa.fi##.banner > a[href="/clickad.php?id=1337"]
+stadissa.fi##.banner > a[href="/clickad.php?id=1480"]
+stadissa.fi##.banner > a[href="/clickad.php?id=1513"]
+stadissa.fi##[class|="juhlaviikot"]
 styleroom.fi##.bg-box:has([id|=placement-ad-grid])
 suomela.fi##.ad
 suomela.fi##.has-ads
@@ -1471,6 +1479,13 @@ _300x300_*.mp4$media,domain=futisfani.com|kiekkofani.com|penkkiurheilu.com|uutis
 ||seksitreffit.fi/*popunder.js$script,domain=seksitreffit.fi
 ||seksitreffit.fi/banners/$domain=seksitreffit.fi
 ||sf.nm-ovp.nelonenmedia.fi/player/games/ruutu-player-loader.js$script,domain=10kysymysta.fi|alypaa.com
+||stadissa.fi/ads/slider-scripts/$domain=stadissa.fi
+||stadissa.fi/images/stadissa/ads/*-980-200.jpg$image,domain=stadissa.fi
+||stadissa.fi/images/stadissa/ads/*-desktop.jpg$image,domain=stadissa.fi
+||stadissa.fi/images/stadissa/ads/*.gif$image,domain=stadissa.fi
+||stadissa.fi/images/stadissa/ads/*_900.jpg$image,domain=stadissa.fi
+||stadissa.fi/images/stadissa/ads/*_980x200.jpg$image,domain=stadissa.fi
+||stadissa.fi/images/stadissa/ads/*_desk.jpg$image,domain=stadissa.fi
 ||strongbox.nostemedia.fi^$script,third-party
 ||superskills.fi/fi*?isIframe=true$subdocument
 ||testeri.fi/ext_telsu$subdocument

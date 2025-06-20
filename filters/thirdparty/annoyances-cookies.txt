@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: EasyList – Cookie Notices
-! Last modified: Thu, 19 Jun 2025 04:05:00 +0000
+! Last modified: Fri, 20 Jun 2025 02:27:57 +0000
 ! Expires: 7 days (update frequency)
 ! *** easylist:template_header.txt ***
 !
@@ -19809,7 +19809,7 @@ roninwear.com,roninwear.de,roninwear.fi,roninwear.fr,roninwear.hu,roninwear.it,r
 !! ##div[class^="cookie__"]
 4templates.com,epal.gg,thegoodocs.com,thewallsthotel.com##div[class^="cookie__"]
 !! .osano-cm-window
-account.bhvr.com,advancedsciencenews.com,bitwarden.com##.osano-cm-window
+account.bhvr.com,advancedsciencenews.com,bitwarden.com,sonesta.com##.osano-cm-window
 !! .cmp-notification-action-panel
 aia.co.th,aia.com,aia.com.kh,aia.com.my,aia.com.ph,aia.com.sg,bpi-aia.com.ph##.cmp-notification-action-panel
 !! .popup-cookies
@@ -22464,7 +22464,7 @@ wildberries.ru##+js(set-local-storage-item, wbx__cookieAccepted, true)
 cryptorank.io##+js(set-local-storage-item, show_cookies_popup, false)
 springmerchant.com##+js(set-local-storage-item, modal_cookies, 1)
 veed.io##+js(set-local-storage-item, trainingDataConsent, true)
-deribit.com,dorkgpt.com,varusteleka.com,lazyrecords.app##+js(set-local-storage-item, cookieConsent, false)
+deribit.com,dorkgpt.com,kyutai.org,varusteleka.com,lazyrecords.app,unmute.sh##+js(set-local-storage-item, cookieConsent, false)
 kundenportal.harzenergie.de##+js(set-local-storage-item, cookiesAccepted, true)
 zoho.com##+js(set-local-storage-item, zglobal_Acookie_optOut, 3)
 femibion.rs,nove.fr,metro1.com.br##+js(set-local-storage-item, cookie, true)
@@ -27489,7 +27489,7 @@ concursolutions.com,forbes.com,formula1.com,fortune.com,proximus.be,proximustv.b
 @@||cmp.inmobi.com/GVL-v3/$domain=adnkronos.com|cornwalllive.com|cyprus-mail.com|dailystar.co.uk|ilgiornale.it|informazione.it|mirror.co.uk|mymovies.it|tuttoeuropei.com|video.lacnews24.it
 @@||cmp.inmobi.com/tcfv2/$domain=adnkronos.com|cornwalllive.com|cyprus-mail.com|dailystar.co.uk|ilgiornale.it|informazione.it|mirror.co.uk|mymovies.it|tuttoeuropei.com|video.lacnews24.it
 @@||cmp.inmobi.com^*/choice.js$domain=adnkronos.com|cornwalllive.com|cyprus-mail.com|dailystar.co.uk|ilgiornale.it|informazione.it|mirror.co.uk|mymovies.it|tuttoeuropei.com|video.lacnews24.it
-@@||cmp.osano.com^$script,domain=account.bhvr.com|everand.com|guidepoint.com|lucidchart.com|scribd.com
+@@||cmp.osano.com^$script,domain=account.bhvr.com|everand.com|guidepoint.com|lucidchart.com|scribd.com|sonesta.com
 @@||cmp.osano.com^*/osano.js$domain=stltoday.com
 @@||cmp.sibbo.net^$domain=tivify.tv
 @@||collector.appconsent.io/hello^$xmlhttprequest,domain=linternaute.com
@@ -27813,7 +27813,7 @@ concursolutions.com,forbes.com,formula1.com,fortune.com,proximus.be,proximustv.b
 @@||zensus2022.de/SiteGlobals/Modules/CookieBanner/*/CookieBanner.json?$~third-party,xmlhttprequest
 
 ! Title: uBlock filters – Cookie Notices
-! Last modified: Wed, 18 Jun 2025 11:30:32 +0000
+! Last modified: Fri, 20 Jun 2025 01:54:35 +0000
 ! Expires: 7 days
 ! Description: Filters optimized for uBlock Origin, to be used with EasyList's and/or Adguard's "Cookie Notices" list(s)
 ! License: https://github.com/uBlockOrigin/uAssets/blob/master/LICENSE
@@ -28296,6 +28296,8 @@ feedbutler.app##+js(trusted-set-local-storage-item, consent, {"statistics":false
 flibco.com##+js(trusted-set-cookie, cookiesjsr, %7B%22functional%22%3Afalse%2C%22analytics%22%3Afalse%2C%22facebook_pixel%22%3Afalse%2C%22recaptcha%22%3Afalse%2C%22gtag%22%3Afalse%2C%22video%22%3Afalse%7D)
 ! https://github.com/uBlockOrigin/uAssets/issues/23135
 cencenelec.eu##+js(trusted-set-cookie, cookieconsent, saved=1&functional=0&analytics=0&marketing=0, , , reload, 1)
+! https://github.com/uBlockOrigin/uAssets/issues/28920
+kick.com##+js(trusted-set-cookie, cookie_preferences_set_v1, %7B%22state%22%3A%7B%22preferences%22%3A%7B%22necessary%22%3Atrue%2C%22functional%22%3Afalse%2C%22performance%22%3Afalse%2C%22targeting%22%3Afalse%2C%22userHasMadeChoice%22%3Atrue%7D%2C%22functionalEnabled%22%3Afalse%2C%22performanceEnabled%22%3Afalse%2C%22targetingEnabled%22%3Afalse%7D%2C%22version%22%3A0%7D, , , domain, .kick.com)
 
 !! Needs additional cookies
 
@@ -29271,7 +29273,7 @@ sazkamobil.cz##+js(trusted-set-cookie, cookiesaccepted, '{%22marketing%22:false%
 deichmann.com##+js(trusted-click-element, button.decline-all, , 1000)
 
 ! decline consent option
-salomon.com##+js(trusted-set-local-storage-item, dtm-cookie-banner, decline)
+salomon.com##+js(trusted-click-element, button.cookie-decline-all, , 1800)
 
 ! Allow consent, fixes embedded videos
 blackpoolgazette.co.uk,lep.co.uk,northamptonchron.co.uk,scotsman.com,shieldsgazette.com,thestar.co.uk,portsmouth.co.uk,sunderlandecho.com,northernirelandworld.com,3addedminutes.com,anguscountyworld.co.uk,banburyguardian.co.uk,bedfordtoday.co.uk,biggleswadetoday.co.uk,bucksherald.co.uk,burnleyexpress.net,buxtonadvertiser.co.uk,chad.co.uk,daventryexpress.co.uk,derbyshiretimes.co.uk,derbyworld.co.uk,derryjournal.com,dewsburyreporter.co.uk,doncasterfreepress.co.uk,falkirkherald.co.uk,fifetoday.co.uk,glasgowworld.com,halifaxcourier.co.uk,harboroughmail.co.uk,harrogateadvertiser.co.uk,hartlepoolmail.co.uk,hemeltoday.co.uk,hucknalldispatch.co.uk,lancasterguardian.co.uk,leightonbuzzardonline.co.uk,lincolnshireworld.com,liverpoolworld.uk,londonworld.com,lutontoday.co.uk,manchesterworld.uk,meltontimes.co.uk,miltonkeynes.co.uk,newcastleworld.com,newryreporter.com,newsletter.co.uk,northantstelegraph.co.uk,northumberlandgazette.co.uk,nottinghamworld.com,peterboroughtoday.co.uk,rotherhamadvertiser.co.uk,stornowaygazette.co.uk,surreyworld.co.uk,thescarboroughnews.co.uk,thesouthernreporter.co.uk,totallysnookered.com,wakefieldexpress.co.uk,walesworld.com,warwickshireworld.com,wigantoday.net,worksopguardian.co.uk,yorkshireeveningpost.co.uk,yorkshirepost.co.uk##+js(trusted-click-element, button[aria-label="I Accept"], , 1000)
@@ -29971,8 +29973,8 @@ redcare.it##+js(trusted-set-cookie, usercentrics_consent, '{"ad_storage":0,"anal
 austrian.com,lufthansa.com##+js(trusted-click-element, button[id="cm-acceptNone"], , 1000)
 
 ! Just Essential
-kampfkunst-herz.de,glow25.de,hornetsecurity.com,kayzen.io,wasserkunst-hamburg.de,zahnspange-oelde.de###BorlabsCookieBox
-kampfkunst-herz.de,glow25.de,hornetsecurity.com,kayzen.io,wasserkunst-hamburg.de,zahnspange-oelde.de##+js(trusted-click-element, button.brlbs-btn-accept-only-essential, , 1000)
+kampfkunst-herz.de,glow25.de,h-f.at,hornetsecurity.com,kayzen.io,wasserkunst-hamburg.de,zahnspange-oelde.de###BorlabsCookieBox
+kampfkunst-herz.de,glow25.de,h-f.at,hornetsecurity.com,kayzen.io,wasserkunst-hamburg.de,zahnspange-oelde.de##+js(trusted-click-element, button.brlbs-btn-accept-only-essential, , 1000)
 
 ! disagree
 bnc.ca,decathlon.fr,egora.fr,engelvoelkers.com,estrategiasdeinversion.com,festo.com,franceinfo.fr,francebleu.fr,francemediasmonde.com,geny.com,giphy.com,idealista.com,infolibre.es,information.tv5monde.com,ing.es,knipex.de,laprovence.com,lemondeinformatique.fr,libertaddigital.com,mappy.com,marianne.net,orf.at,philibertnet.com,researchgate.net,rtbf.be,rtl.be,standaard.be,stroilioro.com,taxfix.de,telecinco.es,vistaalegre.com,zimbra.free.fr##+js(trusted-click-element, button[id="didomi-notice-disagree-button"], , 1000)
@@ -30045,6 +30047,18 @@ cdn.privacy-mgmt.com##+js(trusted-click-element, button[title="Save & Exit"], , 
 
 ! karlsruhe-insider.de, accept&close
 cdn.privacy-mgmt.com##+js(trusted-click-element, button[title="Akzeptieren & Schließen"], , 1000)
+
+! promiflash.de, , accept&close
+cdn.privacy-mgmt.com##+js(trusted-click-element, button[title="Schließen & Akzeptieren"], , 1000)
+
+! required
+blb-tourismus.de,outdooractive.com##+js(trusted-set-cookie, _consentCookie, '{"categories":["required"]}')
+
+! required
+stadtwerke-heidenheim.de##+js(trusted-set-local-storage-item, cookieConsent, '{"optional":[{"id":"google","accepted":false}]}')
+
+! no stats
+kreuzmayr.at##+js(trusted-set-cookie, CookieConsentSyreta, eyJ2ZXJzaW9uIjoxLCJjYXRlZ29yeSI6WyIxIl19)
 
 ! necessary 
 centrum24.pl##+js(trusted-click-element, button.button-reject, , 1000)
@@ -30861,7 +30875,7 @@ titancoop.sm,uebba.com,grabo-balloons.com,epac.it,epatitec.info,malattieautoimmu
 superwatchman.com##+js(trusted-set-local-storage-item, cookieformData, option0=1&analytical=0&performance=0&targeting=0&functional=0&marketing=0)
 
 ! required
-maestralia.com##+js(trusted-set-cookie, melindres_options, '{"required":true,"analytics":false,"advertising":false}')
+maestralia.com,rentingcoches.com##+js(trusted-set-cookie, melindres_options, '{"required":true,"analytics":false,"advertising":false}')
 
 ! Necessary
 refurbed.*##+js(trusted-click-element, button#acceptNecessaryCookiesBtn, , 1000)
@@ -31359,8 +31373,8 @@ atomichub.io##+js(trusted-set-cookie, cookie_settings, '{"accepted":true,"perfor
 dragnsurvey.com##+js(trusted-set-cookie, dragnsurvey_cc, '{"choice":true,"analytics":false}')
 
 ! reject
-autonet-group.ro,suince.es##+js(set-cookie, CookieShow, true)
-autonet-group.ro,suince.es##+js(trusted-set-cookie, CookiePreferences, '[]')
+autonet-group.ro,pillhof.com,suince.es##+js(set-cookie, CookieShow, true)
+autonet-group.ro,pillhof.com,suince.es##+js(trusted-set-cookie, CookiePreferences, '[]')
 
 ! refuse
 iracing.com##+js(trusted-set-local-storage-item, iracingCookieSettings, '{"performance-cookies":false,"functional-cookies":false,"marketing-cookies":false}')
@@ -32250,7 +32264,7 @@ stepstone.de##+js(trusted-click-element, div#ccmgt_explicit_accept, , 1000)
 honeygain.com##+js(trusted-set-cookie, cookieConsent, '{"submitBasicData":true,"submitUsageStats":false,"submitAudienceData":false}', , , reload, 1)
 
 ! Necessary
-galaxus.de##+js(trusted-set-cookie, .consent, fu0-ma0-pe0, , , reload, 1)
+galaxus.*##+js(trusted-set-cookie, .consent, fu0-ma0-pe0, , , reload, 1)
 
 ! Decline
 kobo.com##+js(trusted-click-element, button[data-testid="privacy-banner-decline-all-btn-desktop"], , 1000)
