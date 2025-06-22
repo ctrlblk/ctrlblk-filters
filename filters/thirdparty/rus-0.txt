@@ -3695,6 +3695,7 @@
 ||mb.vesti.ru^
 ||mb49mn8bz.ru^$third-party
 ||mbn-1.com^$third-party
+||mbt-1.com^$third-party
 ||mcbag.top^$third-party
 ||mcd-sdk.playbuzz.com^$third-party
 ||mcljm.top^$third-party
@@ -7745,6 +7746,7 @@ _verified.php?code=*&server=runetki.com
 @@||nyan.pw^$third-party,script,xmlhttprequest
 @@||recheck.12go.asia/*/recheck|$third-party,xmlhttprequest
 
+&cp.host=*&cp.token=$third-party,xmlhttprequest
 &divid=prre_
 &teasersTtl=
 &vk_t=*&adv_ids=
@@ -8080,6 +8082,7 @@ _verified.php?code=*&server=runetki.com
 /partner/images/banners/*
 /pixel2/video?$third-party,script
 /play/?ref=*/play/*$third-party,subdocument
+/player/ads.php?cp.host=$xmlhttprequest
 /plugins/adhelper/*
 /plz.somechange.js?
 /popin.js$domain=~lacoste.com
@@ -14471,7 +14474,6 @@ sibmama.info,sibmama.ru###partners
 dofiga.net###pbie_25
 poleno.net###pddk221
 onyxgame.com###pegination ~ a
-mamba.ru###photo_viewer[style]
 sportrecs.com###player .MuiButton-containedPrimary
 konohatv.org###player > .absolute
 toples.cc###player > div[style*="pointer;"]
@@ -14866,7 +14868,6 @@ ugo.ru###topBnr_container
 wm-help.net###top_ajax_ad
 hmn.ru###top_ban
 7dach.ru,consultant.ru,cossa.ru,diary.ru,kriminal.tv,kursktv.ru,livesport.ws,mgnews.ru,nashmontreal.com,studclub.poltava.ua,vlasti.net###top_banner
-mamba.ru###top_banner_ad_fox
 rlsnet.ru###top_content + div[style="padding: 0px 3px 0px 10px; margin: 0;"]
 zk.fm###top_error_notify
 kino-teatr.ru###top_line
@@ -19156,7 +19157,6 @@ myfin.by##[data-link*="winline.by"]
 rocketdockfree.ru##[data-msetup]
 woman.ru##[data-name*="Banner"]
 re.kufar.by#?#[data-name="ad_in_listing"] > article:-abp-has(> div > [id^="adfox_"])
-mamba.ru##[data-name="search-banner"]
 esports.ru##[data-name^="ads/"]
 eapteka.ru##[data-neon-skeleton-removable]
 vladnews.ru##[data-newsb]
@@ -19189,6 +19189,7 @@ adme.media#?#[data-test-id$="-recommended"] > div > div > div:nth-child(-n+3):-a
 russia-tv.online#?#[data-test="channel-name-link"] ~ div:-abp-has(> div > div[id^="yandex_rtb"])
 dom.ru#?#[data-test="custom-wrapper"]:-abp-has(> div > [href*="movix.ru/"])
 scores24.live##[data-testid="ExpressCouponBookmakers"]
+t-j.ru##[data-testid="banner"]
 telegraf.com.ua##[data-text^="Новини партнер"]
 my.ua##[data-top-iid]
 drive2.ru#?#[data-track]:-abp-has(> div[id]:empty + script)
@@ -21090,7 +21091,6 @@ avtotachki.com##div[id][style="height:350px;"]
 askentire.net##div[id][style="min-height:250px"]
 informator.ua##div[id][style="min-height:400px"]
 mind.ua##div[id][style="padding-bottom: 35px;"]
-mamba.ru##div[id][style="width: 320px; height: 100px;"]
 7days.ru##div[id][style="width: 970px; height: 250px;"]
 ivbb.ru##div[id^="ADS_"]
 1tv.ru,2mm.ru,auto.vesti.ru,ctc.ru,f1news.ru,irr.ru,probirka.org,sobesednik.ru##div[id^="AdFox_banner"]
@@ -21818,6 +21818,7 @@ ppl.nnov.ru##p > a[href][target="_blank"]:not([href*="nnov.ru"]) > img[src*="/ba
 skmash.ru##p > script[src*="wmrfast.com"] ~ *
 benzin-price.ru#?#p > strong:-abp-contains(реклама)
 onfoto.ru##p > table[cellspacing="5"][cellpadding="0"][width="100%"] > tbody > tr > td[width="50%"][style="border: 1px solid #000;"]
+vc.ru##p a[href^="https://market.yandex.ru/"]
 cameleo.xyz#?#p.main:-abp-has([href*="bit.ly"])
 thg.ru#?#p:-abp-contains(Erid:)
 bibe.ru#?#p:-abp-contains(Реклама :)
@@ -22953,6 +22954,7 @@ championat.com,championat.ru##[data-href*="okko.sport"]
 championat.com,championat.ru##[data-href*="utm_"]
 motor.ru##[data-motor-desktop*="exchange_block"]
 rambler.ru##[data-news_media-desktop*="rnet_widget"]
+ferra.ru,letidor.ru,moslenta.ru,motor.ru,passion.ru,quto.ru,secretmag.ru,wmj.ru##[data-qa="lb-content"] ~ [data-qa="lb-footer"] ~ div
 avtorambler.com,rambler.ru##[data-rcmw-init]
 sport.rambler.ru##[data-sport_media-desktop*="rnet_widget"]
 www.afisha.ru#?#[data-test="SECTION"] > [data-test="SECTION-CONTENT"]:-abp-has(> div > [href^="/out/?url="])
@@ -26357,7 +26359,7 @@ gbsmp.ru#@#img[width="728"][height="90"]
 @@||volknn.ru^*/js/adv.js|$script,domain=volknn.ru
 @@||vse.kz/public/js/jsLoader.js?adkey=
 @@||wakanim.tv^*/video/adsunauth$domain=wakanim.tv
-@@||wambacdn.net^$script,domain=love.0629.com.ua|love.mail.ru|mamba.ru|online-mamba.ru|wamba.com
+@@||wambacdn.net^$script,domain=love.0629.com.ua|love.mail.ru|mamba.ru|wamba.com
 @@||ww400.smartadserver.com/ac$script,domain=www.deezer.com
 @@||www.meteoblue.com/build/website/gpt.js|$xmlhttprequest,domain=meteoblue.com
 @@||www3.doubleclick.net/|$xmlhttprequest,domain=animix.lol
@@ -28523,7 +28525,7 @@ sinoptik.ua##+js(abort-on-property-read, SIN.AdsLoader)
 porngames.su,rintor.info,rintor.net##+js(abort-on-property-read, TotemToolsObject)
 castle-tv.com##+js(abort-on-property-read, WebSocket)
 100popugaev.ru,coderlessons.com,fixx.one,its-kids.ru,molitvy.guru,nizhny.ru,pro100hobbi.ru,publy.ru,samelectric.ru,svadba.expert,tehnobzor.ru,vibir.ru##+js(abort-on-property-read, XMLHttpRequest)
-3dnews.kz,3dnews.ru,avtovzglyad.ru,baby.ru,cont.ws,dni.ru,mamba.ru,pikabu.ru,pogoda.onliner.by,selflib.me,sm.news,sports.ru,tech.onliner.by,www.goha.ru##+js(abort-on-property-read, Ya)
+3dnews.kz,3dnews.ru,avtovzglyad.ru,baby.ru,cont.ws,dni.ru,pikabu.ru,pogoda.onliner.by,selflib.me,sm.news,sports.ru,tech.onliner.by,www.goha.ru##+js(abort-on-property-read, Ya)
 nnmclub.ro,nnmclub.to##+js(abort-on-property-read, _0x1ece)
 comedy-radio.ru,radioromantika.ru,relax-fm.ru,veseloeradio.ru##+js(abort-on-property-read, __vasActiveTestIds)
 forum.overclockers.ua##+js(abort-on-property-read, a_urls)
