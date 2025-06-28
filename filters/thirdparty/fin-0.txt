@@ -2,7 +2,7 @@
 ! Title: Adblock List for Finland
 ! Description: Finnish adblock list
 ! Expires: 4 days
-! Last modified: Fri, 27 Jun 2025 01:03:38 +0300
+! Last modified: %timestamp%
 ! Homepage: https://github.com/finnish-easylist-addition/finnish-easylist-addition
 ! License: https://unlicense.org/
 ! Raportoi mainoksenestoon liittyvistä ongelmista tai estämättömistä mainoksista täällä / Please report adblocking related issues or unblocked ads at:
@@ -599,8 +599,7 @@ inssinosingot.fi##div[class="row align-center"]:has([class$=lazy-load-active])
 inssinosingot.fi,koeajolle.com##.block-mainos
 irc-galleria.net##div[id^=open_]
 irc-galleria.net,tilannehuone.fi##div[id^=Nostemedia_Desktop]
-is.fi##.teaser-ad__background
-is.fi##a.block[href^="https://www.admanager.fi/"]
+is.fi##[data-testid|="laneitem"] > article:has(a[href^="https://media.sanoma.fi/"])
 is.fi##[href^="https://www.is.fi/tilaus/is-extra/"][href$="myyntitikkeri"]
 is.fi##div.sadblob-loading
 iskelma.fi##section.sbs-articleitems[data-module_position_id="814"]
@@ -618,6 +617,7 @@ jp-kunnallissanomat.fi#?#a[href^="/artikkeli-"]:has-text(MAINOS)
 juoksufoorumi.fi###ipsLayout_sidebar .ipsBox:not([data-blocktitle="Member Subscriptions"])
 juoksufoorumi.fi##.ipsSpacer_both
 juoksufoorumi.fi##[data-role="sidebarAd"] + br
+juoksufoorumi.fi#?#.ipsWidget:has-text((affiliatelinkki))
 juomaposti.fi##div[class*=advads_ad_widget]
 jvg.fi##[href="https://www.nettikasinovertailu.info/"]
 kaaoszine.fi##.collab
@@ -776,11 +776,10 @@ lvs.fi,orivedensanomat.fi,pirkkalainen.fi,shl.fi,ylojarvenuutiset.fi###kokosisal
 m.facebook.com#?#article:has(> * header > * span:has-text(Sponsoroitu))
 m.jaatama.fi##.c-box-space:not(.c-box)
 m.jaatama.fi##li:has(div[id|=div-gpt-ad])
-m.nettiauto.com,m.nettikaravaani.com,m.nettikone.com,m.nettimokki.com,m.nettimoto.com,m.nettivaraosa.com,m.nettivene.com###banner_area
-m.nettiauto.com,m.nettikaravaani.com,m.nettikone.com,m.nettimokki.com,m.nettimoto.com,m.nettivaraosa.com,m.nettivene.com##.lazyLoadInhouseBanner
-m.nettiauto.com,m.nettikaravaani.com,m.nettikone.com,m.nettimokki.com,m.nettimoto.com,m.nettivaraosa.com,m.nettivene.com##.topBannerMinHeight
-m.nettiauto.com,m.nettikaravaani.com,m.nettikone.com,m.nettimokki.com,m.nettimoto.com,m.nettivaraosa.com,m.nettivene.com##[class*=pt][class*=pb][style*="border-top:1px solid #b3b3b3"]
-m.nettimokki.com##.itemlist > li:not(.block_list_li)
+m.nettikaravaani.com,m.nettikone.com,m.nettivaraosa.com###banner_area
+m.nettikaravaani.com,m.nettikone.com,m.nettivaraosa.com##.lazyLoadInhouseBanner
+m.nettikaravaani.com,m.nettikone.com,m.nettivaraosa.com##.topBannerMinHeight
+m.nettikaravaani.com,m.nettikone.com,m.nettivaraosa.com##[class*=pt][class*=pb][style*="border-top:1px solid #b3b3b3"]
 maalampofoorumi.fi##div#sponsor
 maaseuduntulevaisuus.fi##[data-ad-unit-id]
 maaseuduntulevaisuus.fi##div[class*="ArticleTeaserGroup_nativeAd"]
