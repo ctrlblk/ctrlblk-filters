@@ -1,10 +1,10 @@
 ![Adblock Plus 2.0]
-! Checksum: Bd4pxK3yJSb93gLflYc4ng
-! Diff-Path: ../patches/224/224-s-1751081449-3600.patch
+! Checksum: FB3qkBEOzHIGf9UEXapbLg
+! Diff-Path: ../patches/224/224-s-1751161201-3600.patch
 ! Title: AdGuard Chinese filter
 ! Description: EasyList China + AdGuard Chinese filter. Filter list that specifically removes ads on websites in Chinese language.
-! Version: 2.1.39.78
-! TimeUpdated: 2025-06-28T03:27:06+00:00
+! Version: 2.1.39.85
+! TimeUpdated: 2025-06-29T01:36:12+00:00
 ! Expires: 5 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -83,7 +83,6 @@
 ||img.qxwoiv.com^
 ||n55ylc001.vip^
 ||dpjzr.top^
-||n55cpw.vip^
 ||xpjcg.oss-accelerate.aliyuncs.com^
 ||qxwoiv.com^
 ||krbulhb.com^
@@ -364,8 +363,6 @@ itdog.cn##+js(no-setTimeout-if, adblock_tip)
 ! https://github.com/AdguardTeam/AdguardFilters/issues/153296
 huanqiu.com##+js(set-constant, AD_SURVEY_Add_AdPos, noopFunc)
 huanqiu.com##+js(set-constant, AD_SURVEY_Add_AdPos_Simple, noopFunc)
-! https://github.com/AdguardTeam/AdguardFilters/issues/153352
-btvsports.click#@##googleAD2
 ! https://github.com/AdguardTeam/AdguardFilters/issues/151451
 @@/adview_*_ads_300x250.js$domain=itbaoku.cn
 itbaoku.cn##+js(set-constant, killads, true)
@@ -517,14 +514,6 @@ linetv.tw##.aspect-ratio > img.object-cover + .aspect-ratio-content + div[class^
 @@||dl.r3sub.com^$generichide
 !+ PLATFORM(ext_ff, ext_opera, ios, ext_android_cb, ext_safari, ext_ublock)
 dl.r3sub.com##.scupioadslot
-! https://github.com/AdguardTeam/AdguardFilters/issues/44823
-getrelax.cc#?#.nav > li.dropdown:has(> ul.dropdown-menu > li > div.mega-menu-content > div.container > div.row div.blog-grid > a[href^="https://getrelax.cc/ad"])
-getrelax.cc#?#.nav > li:has(> a[target="_blank"])
-getrelax.cc##+js(abort-current-script, $, #adisblock)
-getrelax.cc#$#iframe[src^="https://syndication.exosrv.com/"] { display: none!important; }
-getrelax.cc#$#iframe[src^="//adserver.juicyads.com/"] { display: none!important; }
-getrelax.cc#$?##main_content > .grid-boxes-in:has(> iframe[src^="//adserver.juicyads.com/"]) { remove: true; }
-getrelax.cc#$?##main_content > .grid-boxes-in:has(> iframe[src^="https://syndication.exosrv.com/"]) { remove: true; }
 ! https://github.com/AdguardTeam/AdguardFilters/issues/24478
 @@||poedb.tw/js/adsbygoogle.js
 poedb.tw##+js(abort-current-script, document.getElementById, /#myModal'\)\.modal/)
@@ -1305,7 +1294,6 @@ daohang.qq.com##.banner-adv-new
 ifoodie.tw##.ad-right-column-desktop
 ifoodie.tw,pansci.asia##.ad-container
 91porna.com##.carousel-container:has(#carouselExampleInterval)
-||pic.shedsgs.cn/upload_*/upload/*.gif$domain=91porna.com
 91porna.com##.row > div.flex-container:has(> a[href][target="_blank"] > img)
 91porna.com##.row > div[class^="col"]:has(> .video-wrap > a.checkNum)
 91porna.com##div[class^="col"] div.filters:has(a.checkNum)
@@ -1587,7 +1575,6 @@ eet-china.com#?#.new-list > ul > li:has(> div.li-row > div > h2 > a[href^="http:
 gotrip.hk#?#._more_content_ > div._page_:has(> div.oath-lrec-player)
 haoduoyun.cc#?#.ebookRight > div.tb_cell.mb10:has(> div.listcell > div.lc_head >h2:contains(课本赞助商))
 apk.tw#?#body > div:has(> div[class^="yap-ad-"])
-wholehk.com#?#div[id^="postmessage_"] > div[align="center"][style^="font-size:11px;"] > font:contains(Advertisement)
 ck101.com#?#.readingList > ul > div:has(> li > span:contains(PR))
 ltn.com.tw#?#.whitecon > .related > li:has(> .ltn_ad)
 ck101.com#?##threadlisttableid > tbody:not([class]):not([id]):has(> tr > td[id^="popin_"])
@@ -2147,7 +2134,6 @@ neon-pet.com,easylife.tw##.popup_bottom_ad
 ||news.99k.tw/open/open*.php
 news.99k.tw##.entry-content > table[align="left"][style="width:360px"]
 news.99k.tw##iframe[src^="http://news.99k.tw/open/open"][src$=".php"]
-||wholehk.com/atttuop.js
 ||bahamut.com.tw/js/ad.js
 mm-cg.com###ArticlesEx_box
 ||rackcdn.com/htv/banners/$domain=hanime.tv
@@ -4930,6 +4916,14 @@ newduba.cn###jq_youxi
 .z.dkt-ib.com
 ||cnzz.trafficmanager.net^
 ||cupfox.app^$third-party
+||bqxyns0hv.com^
+||m7xssfiit.com^
+||izopsg.icu^
+||vkxn.cn^
+||daffodilo44.com^
+||dgxjxeuzm.com^
+||plthnh.icu^
+||twjrxo.top^
 ||1l27pkxp5w.com^
 ||kwsugo.icu^
 ||hl4pvqgbyt.com^
@@ -4939,6 +4933,7 @@ newduba.cn###jq_youxi
 ||rxdxzb.top^
 ||cmna.cn^
 ||y18ut1kw22.com^
+||71lf6z67h6.com^
 ||m8ryjf38a.com^
 ||fajdhuhdh.com^
 ||mbg06270pg.com^
