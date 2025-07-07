@@ -1,10 +1,10 @@
 ![Adblock Plus 2.0]
-! Checksum: HiGbJM3Jth6dvwvzZjWxQA
-! Diff-Path: ../patches/224/224-s-1751773106-3600.patch
+! Checksum: hQ9PpUCqrhNu6BCQMGT/Dw
+! Diff-Path: ../patches/224/224-s-1751856423-3600.patch
 ! Title: AdGuard Chinese filter
 ! Description: EasyList China + AdGuard Chinese filter. Filter list that specifically removes ads on websites in Chinese language.
-! Version: 2.1.40.19
-! TimeUpdated: 2025-07-06T03:34:53+00:00
+! Version: 2.1.40.27
+! TimeUpdated: 2025-07-07T02:43:10+00:00
 ! Expires: 5 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -1049,6 +1049,8 @@ ipv6.baidu.com,www.baidu.com,www1.baidu.com,xueshu.baidu.com###content_left > .r
 !
 ! NOTE: Specific rules
 !
+biquge321.com##+js(addEventListener-defuser, touchend, window.location.href)
+/^https:\/\/(www\.)?zxzjhd\.com\/[0-9]+\.gif/$domain=zxzjhd.com
 ||browserscan.net/dist/adspower_zh.
 tw.news.yahoo.com###module-mktIframe
 4gamers.com.tw##.pull-to-refresh-trigger-element > div[class="vue-portal-target"]
@@ -4922,6 +4924,14 @@ newduba.cn###jq_youxi
 .z.dkt-ib.com
 ||cnzz.trafficmanager.net^
 ||cupfox.app^$third-party
+||07pv7k61z.com^
+||ryvvzl.icu^
+||gdmxjbjjo.com^
+||kmqaek.icu^
+||stamenbs4.com^
+||ullc.cn^
+||fiu07070kl.com^
+||8v08mjri7.com^
 ||33w8tdyelw.com^
 ||tvzapt.icu^
 ||mi2zv8wiw0.com^
@@ -4932,6 +4942,7 @@ newduba.cn###jq_youxi
 ||petalen88.top^
 ||rjxvff.icu^
 ||b79e4u3hz7.com^
+||fiu07061kl.com^
 ||59xx2yr9i.com^
 ||y7pcgacfn.com^
 ||u10nte4ba.com^
@@ -8487,6 +8498,8 @@ newduba.cn###jq_youxi
 ||zwlxnj.xyz^
 ||zxqiwe.cn^
 ||zyfnbl.xyz^
+||gn01.top^
+||holmesmind.com^
 ||burniecrepes.com^
 ||663008888.com^
 ||xxxx68xxxx.com^
@@ -13135,6 +13148,7 @@ meijutt.*/js/pcjs/
 ||komiic.com/ads/
 ||v2ex.com/pro/emitter
 zhihu.com##.Pc-word-new
+nodeseek.com##.promotation-item
 gx.cn###html-box-AD
 twword.com##.gadBlock
 mydrivers.com##.jdong1div_double
@@ -20871,6 +20885,7 @@ wss://*.*.top/$third-party
 ||maomaoks.com/1.
 ||feiniaoks.com/1.
 /skin/default/js/qbtr.js
+||62868.com/static/js/gg.
 ||deqixs.com/config/
 ##.row.nav-bottom + div[style^="display: block; position: relative; width: 0px; height:"]
 ##a[href*="aHR0cHM6Ly9xc2Z2bDExLmFsYXp2LmNvbS8zNzA4Lmh0bWw="]
