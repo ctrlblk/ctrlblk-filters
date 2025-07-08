@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: EasyList – Newsletter Notices
-! Last modified: Fri, 04 Jul 2025 02:29:18 +0000
+! Last modified: Tue, 08 Jul 2025 04:16:57 +0000
 ! Expires: 7 days (update frequency)
 ! *** easylist:template_header.txt ***
 !
@@ -25,7 +25,6 @@
 /BannerNewsletter.png
 /bloc_newsletter.jpg
 /blocknewsletter.js
-/Components/newsletter/*
 /embeds/newsletter/*
 /ENewsletter_
 /feedburner-subscription-widget/style.css
@@ -2925,6 +2924,7 @@ clubhouseforchefs.ca##.newsletter-cta-large-wrapper
 themodernproper.com##.newsletter-dialog
 health.com,lifewire.com##.newsletter-dialog-header-link
 sunrisegeek.com##.newsletter-div
+businessinsider.com##.newsletter-dynamic
 csmonitor.com##.newsletter-email-signup
 metro.co.uk##.newsletter-end-card
 carnewschina.com##.newsletter-for-scroll
@@ -4657,6 +4657,8 @@ core.app##+js(set-local-storage-item, show-email-intake-form, false)
 ! lazycatkitchen.com
 lazycatkitchen.com##.wppopups-whole
 lazycatkitchen.com##body:style(overflow: auto !important; position: initial !important;)
+! campaignlive.co.uk popup https://github.com/uBlockOrigin/uAssets/issues/29102
+campaignlive.co.uk##+js(set-session-storage-item, articleModalShown, true)
 ! newsletter splash
 seattletimes.com##+js(set-cookie, st_newsletter_splash_desktop_seen, true)
 ! snopes.com
