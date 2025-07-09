@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: EasyList – Newsletter Notices
-! Last modified: Tue, 08 Jul 2025 04:16:57 +0000
+! Last modified: Tue, 08 Jul 2025 06:58:11 +0000
 ! Expires: 7 days (update frequency)
 ! *** easylist:template_header.txt ***
 !
@@ -3869,6 +3869,7 @@ dexerto.com##.mb-16:has-text(Sign up)
 commoncog.com##.md\:px-2.py-10:has-text(Subscribe to the newsletter)
 inverse.com##.msl:has-text(Subscribe for free)
 businessinsider.in##.mx-auto.container:has-text(NEWSLETTER)
+stuff.co.nz##.nl-container:has-text(inbox)
 bakerbynature.com##.optin:has-text(Sign Up)
 cockroachlabs.com##.p-4.bg-\[\#F5F5F5\]:has-text(Subscribe to our newsletter)
 weather.com##.p-5.bg-white.rounded-xl:has-text(Weather in your inbox)
@@ -4659,6 +4660,8 @@ lazycatkitchen.com##.wppopups-whole
 lazycatkitchen.com##body:style(overflow: auto !important; position: initial !important;)
 ! campaignlive.co.uk popup https://github.com/uBlockOrigin/uAssets/issues/29102
 campaignlive.co.uk##+js(set-session-storage-item, articleModalShown, true)
+! similarweb.com login wall
+similarweb.com##+js(remove-cookie, sgID)
 ! newsletter splash
 seattletimes.com##+js(set-cookie, st_newsletter_splash_desktop_seen, true)
 ! snopes.com
@@ -5991,7 +5994,7 @@ doctorofcredit.com#@#.wpdiscuz-subscribe-bar
 ! fanboy_newsletter_shopping_allowlist_general_hide.txt
 
 ! Title: uBlock filters – Other Annoyances
-! Last modified: Mon, 07 Jul 2025 02:02:14 +0000
+! Last modified: Tue, 08 Jul 2025 19:14:26 +0000
 ! Expires: 7 days
 ! Description: Filters optimized for uBlock Origin, to be used with EasyList's and/or Adguard's "Other Annoyances" list(s)
 ! License: https://github.com/uBlockOrigin/uAssets/blob/master/LICENSE
@@ -13681,3 +13684,6 @@ all4pets.com.pl##*:style(-webkit-touch-callout: default !important; -webkit-user
 
 ! https://github.com/AdguardTeam/AdguardFilters/issues/208136
 globalairportconcierge.com##+js(no-fetch-if, method:HEAD)
+
+! https://github.com/uBlockOrigin/uAssets/issues/29122
+zeustranslations.blogspot.com##+js(acs, alert, location.href)
