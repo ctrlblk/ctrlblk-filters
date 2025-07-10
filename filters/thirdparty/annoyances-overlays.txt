@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: EasyList – Newsletter Notices
-! Last modified: Tue, 08 Jul 2025 06:58:11 +0000
+! Last modified: Wed, 09 Jul 2025 15:53:09 +0000
 ! Expires: 7 days (update frequency)
 ! *** easylist:template_header.txt ***
 !
@@ -2059,6 +2059,7 @@ bringatrailer.com##.bat-theme-widget-constant-contact
 heraldnet.com##.bc-newsletter-signup-container
 fastcompany.com,inc.com##.bcToaster
 captainaltcoin.com##.bee-page-container
+techtimes.com##.beehiiv-embed
 knowyourmeme.com##.beehiiv-newsletter-signup-container
 moneysavingmom.com##.before-content
 buzzfeednews.com##.bfp-newsletter-signup
@@ -5994,7 +5995,7 @@ doctorofcredit.com#@#.wpdiscuz-subscribe-bar
 ! fanboy_newsletter_shopping_allowlist_general_hide.txt
 
 ! Title: uBlock filters – Other Annoyances
-! Last modified: Tue, 08 Jul 2025 19:14:26 +0000
+! Last modified: Wed, 09 Jul 2025 12:04:47 +0000
 ! Expires: 7 days
 ! Description: Filters optimized for uBlock Origin, to be used with EasyList's and/or Adguard's "Other Annoyances" list(s)
 ! License: https://github.com/uBlockOrigin/uAssets/blob/master/LICENSE
@@ -13651,12 +13652,6 @@ simptown.su##.juice_ban
 
 ! https://labreakfastburrito.com/ - pie adblock
 labreakfastburrito.com##+js(aopr, PieScriptConfig)
-
-! https://github.com/uBlockOrigin/uAssets/issues/28389
-!#if env_mobile
-threads.com##+js(trusted-set-cookie-reload, cb, 5_2030_01_01_1)
-threads.com##+js(set-session-storage-item, barcelona_mobile_upsell_state, 1)
-!#endif
 
 ! https://github.com/uBlockOrigin/uAssets/issues/28415
 bangbros.com##+js(set-cookie, iAgree, 1)
