@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: EasyList – Cookie Notices
-! Last modified: Thu, 10 Jul 2025 02:32:18 +0000
+! Last modified: Fri, 11 Jul 2025 04:22:48 +0000
 ! Expires: 7 days (update frequency)
 ! *** easylist:template_header.txt ***
 !
@@ -18725,7 +18725,7 @@ jevena.com##.jevena-cookie-consent
 justfix.org##.jf-cookies-banner
 cbtnuggets.com##.jiIEgt
 webapps.geohive.ie##.jimu-widget-splash
-parametric-architecture.com##.jl-gdpr
+controllerstech.com,parametric-architecture.com##.jl-gdpr
 judge.me##.jm-cookie-bar
 newsbtc.com##.jnews-cookie-law-policy
 forumcommunity.net##.jnote
@@ -21415,7 +21415,8 @@ my2n.com##+js(set-cookie, consent_panel, 1)
 vandalism-sounds.com##+js(set-cookie, user_allowed_save_cookie, true)
 oocl.com##+js(set-cookie, AcceptCookie, yes)
 brazzersnetwork.com,niezawodny.pl##+js(set-cookie, cookieConsent, 0, , reload, 1)
-safaricom.co.ke##+js(set-cookie, cookieConsent, rejected)
+toll.no,safaricom.co.ke##+js(set-cookie, cookieConsent, rejected)
+clickbank.com##+js(set-cookie, cbgwc_cookie_consent, reject)
 smile.io##+js(set-cookie, smile_allow_cookies, true)
 hiermitherz.de##+js(set-cookie, cookie_alert, true)
 uk2.net,westhost.com,my-rise.com,ktchng.com##+js(set-cookie, cb-enabled, accepted)
@@ -27722,7 +27723,7 @@ concursolutions.com,forbes.com,formula1.com,fortune.com,proximus.be,proximustv.b
 @@||zensus2022.de/SiteGlobals/Modules/CookieBanner/*/CookieBanner.json?$~third-party,xmlhttprequest
 
 ! Title: uBlock filters – Cookie Notices
-! Last modified: Wed, 09 Jul 2025 18:04:54 +0000
+! Last modified: Thu, 10 Jul 2025 13:39:21 +0000
 ! Expires: 7 days
 ! Description: Filters optimized for uBlock Origin, to be used with EasyList's and/or Adguard's "Cookie Notices" list(s)
 ! License: https://github.com/uBlockOrigin/uAssets/blob/master/LICENSE
@@ -28218,11 +28219,13 @@ elli.eco##+js(trusted-set-cookie, elli_cookie_consent, ["ESSENTIAL"], 1year)
 autoliitto.fi##+js(trusted-set-cookie, cookiehub, eyJhbnN3ZXJlZCI6dHJ1ZSwicmV2aXNpb24iOjEsImRudCI6ZmFsc2UsImFsbG93U2FsZSI6ZmFsc2UsImltcGxpY3QiOmZhbHNlLCJyZWdpb24iOiIiLCJ0b2tlbiI6IlI1T3BFRU1NQTFmWGJQcHZVZ2Rnbm5PNGROMjJMejBQUzN2ajA0T0dHZFpTckd2RW9GVlpRVkpUSklUNElRbVYiLCJ0aW1lc3RhbXAiOiIyMDI1LTA3LTA5VDExOjMzOjEyLjAwNVoiLCJhbGxBbGxvd2VkIjpmYWxzZSwiY2F0ZWdvcmllcyI6W10sInZlbmRvcnMiOltdLCJzZXJ2aWNlcyI6W10sImltcGxpY2l0IjpmYWxzZX0=, 1year)
 ! https://maps-norway.com/
 maps-norway.com##+js(trusted-set-cookie, nwc, !adsense=false!gajs=false!addthis=false, 1year)
+! https://github.com/uBlockOrigin/uAssets/issues/29130#issuecomment-3055877019
+auth.hbomax.com##+js(trusted-set-cookie, eupubconsent-v2, CQUX_xAQUX_xAAcABBENByFgAAAAAAAAABpYAAAAAAGhAAgADgBOAP3AhWEgRAALAAqABwADwAIAAZAA0AB4AEwAKQAVQA3gB-AEIAI4ATQAwwBlADnAHcAP0Af4BJQC-gHtASIAnYBQ4C2AF5gMuAbGBBgCF4qAGAEwARwB7RkAMAJgAjgD2jgA0ADgAPADQAI4AhAD9wIVjoEYACwAKgAcABAADIAGgAPAAmABSACqAG8APwAmgBOADDAGUANEAc4A7gB-gD_AIsAR0AkoB7QEWAIvASIAnYBQ4C2AF5gMsAZcBBggADAAeAGgCFZCAaAAsAJgAVQA3gCOAHOAO4Af4BfQD2gIWARYBBgkADAHcAywB-5KAcAAsADgAPAAmABSACqAI4BCwCLAEXgJEAWwAvMCDBQASAI4ATgA7gD_gKkAVkA_cCFYELykB4ABYAFQAOAAgABkADQAHgATAApABVAD8AMoAaIA5wB-gEWAI6ASUAuoB7QELAIvASIAnYBQ4C2AF5gMsAZcBBgsAYAAeABkAFQAQgAkABsAEcAKQAdwBRQCmgF2AMIAZwA04B1QD2gIFAQsAtgBj4DYwICgQwA.YAAAAAAAAAAA, 1year)
 
 !! Needs additional cookies
 
 ! Closing Optanon Alert Box
-1001games.com,1001hry.cz,1001jeux.fr,1001jocuri.ro,1001jogos.com.br,1001jogos.pt,1001pelit.com,1001spiele.de,elkspel.nl,gamespot.com,giochixl.it,glamour.com,grajteraz.pl,isladejuegos.com,jatekokxl.hu,mtvuutiset.fi,paixnidiaxl.gr,pushsquare.com,spelo.se,spillespill.no,spilxl.dk,thejournal.ie,thetrainline.com,vkmag.com,zdnet.com##+js(trusted-set-cookie, OptanonAlertBoxClosed, $currentDate$, 1year)
+1001games.com,1001hry.cz,1001jeux.fr,1001jocuri.ro,1001jogos.com.br,1001jogos.pt,1001pelit.com,1001spiele.de,auth.hbomax.com,elkspel.nl,gamespot.com,giochixl.it,glamour.com,grajteraz.pl,isladejuegos.com,jatekokxl.hu,mtvuutiset.fi,paixnidiaxl.gr,pushsquare.com,spelo.se,spillespill.no,spilxl.dk,thejournal.ie,thetrainline.com,vkmag.com,zdnet.com##+js(trusted-set-cookie, OptanonAlertBoxClosed, $currentDate$, 1year)
 
 ! Mandatory + functional
 ! https://www.evaair.com/en-de/index.html signup
