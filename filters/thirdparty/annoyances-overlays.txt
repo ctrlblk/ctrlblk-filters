@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: EasyList – Newsletter Notices
-! Last modified: Mon, 14 Jul 2025 02:50:06 +0000
+! Last modified: Wed, 16 Jul 2025 02:45:24 +0000
 ! Expires: 7 days (update frequency)
 ! *** easylist:template_header.txt ***
 !
@@ -5585,6 +5585,7 @@ handwerk-magazin.de##.widget--sidebar-newsletter
 feuerwehrmagazin.de,filmundtvkamera.de##.widget_ee_formbuilder_widget
 pool-magazin.com##.widget_rapidmail_subscription_form
 pfister.ch##[class^="style__NewsletterPopupComponent"]
+tagesspiegel.de##[data-qa-hook="story-newsletter"]
 liferadio.at##email-registration
 titanic-magazin.de##steady-newsletter
 ! French
@@ -5995,7 +5996,7 @@ doctorofcredit.com#@#.wpdiscuz-subscribe-bar
 ! fanboy_newsletter_shopping_allowlist_general_hide.txt
 
 ! Title: uBlock filters – Other Annoyances
-! Last modified: Mon, 14 Jul 2025 11:39:21 +0000
+! Last modified: Tue, 15 Jul 2025 10:18:53 +0000
 ! Expires: 7 days
 ! Description: Filters optimized for uBlock Origin, to be used with EasyList's and/or Adguard's "Other Annoyances" list(s)
 ! License: https://github.com/uBlockOrigin/uAssets/blob/master/LICENSE
@@ -13689,3 +13690,6 @@ yuuki.me##+js(nostif, adsbygoogle)
 
 ! autodoc - unlock autoscrolling with the middle mouse button
 auto-doc.*,autodoc.*,autodoc24.*,topautoosat.fi,autoteiledirekt.de,autoczescionline24.pl,tuttoautoricambi.it,onlinecarparts.co.uk,autoalkatreszek24.hu,autodielyonline24.sk,reservdelar24.se,pecasauto24.pt,reservedeler24.co.no,piecesauto24.lu,rezervesdalas24.lv,besteonderdelen.nl,recambioscoche.es,antallaktikaexartimata.gr,piecesauto.fr,teile-direkt.ch##+js(aeld, mousedown, function(t))
+
+! https://github.com/uBlockOrigin/uAssets/issues/23150#issuecomment-3061556912
+flightradar24.com##.right-sidebar:style(right: 0 !important)
