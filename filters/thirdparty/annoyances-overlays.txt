@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: EasyList – Newsletter Notices
-! Last modified: Thu, 17 Jul 2025 13:25:10 +0000
+! Last modified: Mon, 21 Jul 2025 02:54:50 +0000
 ! Expires: 7 days (update frequency)
 ! *** easylist:template_header.txt ***
 !
@@ -5702,6 +5702,7 @@ hartvannederland.nl##.e1w9k0qi0
 drimble.nl##.email-grid-item
 speld.nl##.email-subscription
 duic.nl##.email_newsletter
+lazyadmin.nl##.eo-form-wrapper
 tvgids.nl##.footer__subscription
 bnnvara.nl##.fzCnZq
 belegger.nl,beurs.nl,beursduivel.be,beursgorilla.nl,debeurs.nl,eurobench.com,iex.nl,iexprofs.nl,tostrams.nl##.js-blocknwlsub
@@ -5997,7 +5998,7 @@ doctorofcredit.com#@#.wpdiscuz-subscribe-bar
 ! fanboy_newsletter_shopping_allowlist_general_hide.txt
 
 ! Title: uBlock filters – Other Annoyances
-! Last modified: Thu, 17 Jul 2025 15:39:00 +0000
+! Last modified: Mon, 21 Jul 2025 01:00:06 +0000
 ! Expires: 7 days
 ! Description: Filters optimized for uBlock Origin, to be used with EasyList's and/or Adguard's "Other Annoyances" list(s)
 ! License: https://github.com/uBlockOrigin/uAssets/blob/master/LICENSE
@@ -6145,6 +6146,9 @@ videohelp.com###topmenu:has(> .contentlink[href="https://www.videohelp.com/donat
 
 ! https://asiaflix.net/home - anti-adb
 /invoke.js^$script,3p,domain=asiaflix.net,redirect=noopjs
+
+! https://github.com/uBlockOrigin/uAssets/issues/29264
+lazyadmin.nl##+js(nostif, AdBlocker)
 
 ! END: Anti-adblock
 
