@@ -1,10 +1,10 @@
 ![Adblock Plus 2.0]
-! Checksum: MVfFL2PguIXWdHuunoQtjQ
-! Diff-Path: ../patches/7/7-s-1753152549-3600.patch
+! Checksum: gAWduZlLRD/0cpxyS7e4/w
+! Diff-Path: ../patches/7/7-s-1753241989-3600.patch
 ! Title: AdGuard Japanese filter
 ! Description: Filter that enables ad blocking on websites in Japanese language.
-! Version: 2.0.66.65
-! TimeUpdated: 2025-07-22T02:44:49+00:00
+! Version: 2.0.66.70
+! TimeUpdated: 2025-07-23T03:35:42+00:00
 ! Expires: 5 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -1798,7 +1798,6 @@ gundamlog.com###more > iframe[src^="https://richlink.blogsys.jp"]
 !
 ! NOTE: Specific rules
 !
-watch2chan.com##*[id^="execphp-"]
 jiwasoku.com###koukokuleftu1
 web-greenbelt.jp###mybox > div.widget_st_custom_html_widget
 web-greenbelt.jp##a[href^="https://web-greenbelt.jp/st-manager/click/track?"]
@@ -2143,7 +2142,7 @@ sirabee.com##div[class^="cxAd"]
 kaigai-bbs.com##.banner-s-block
 zutto-sports.com##div[class^="zutto-"]
 ||kotobank.jp/dist/kyujinbox/
-kotobank.jp##.kyujinbox-ad
+mangapedia.com,kotobank.jp##.kyujinbox-ad
 chirashi.kurashiru.com##.StoresShow-rectangleAds
 av-league.com##.l-box ~ div[class^="im-rectangle-"]
 navitime.co.jp##footer[style="height: 50px;"]
@@ -2188,7 +2187,6 @@ taimaninrpg.matomajor-games.com###block-14
 jukenbbs.com##+js(abort-current-script, document.currentScript, IFTG)
 bbs.fc2.com##iframe[src^="//media5.fc2.com/"]
 kurashinista.jp###first_ad_area
-suki-kira.com##div[id^="comment-inline-ad-"]
 jmty.jp##div[class^="sc-"] > div[class^="sc-"] > div:not([class]) > div[class^="sc-"]:has(> div[id^="div-gpt-"][style])
 imgbbs.dtn.jp##.panel-info:has(> div > h6.ad-panel-title)
 ||118.27.3.82/test/ad/js/
@@ -2229,9 +2227,8 @@ chunichi.co.jp#?#.sub-container > div[class^="cmp-hdg"]:has(> h2:contains(【PR�
 tumadouga.jp##.container > div.index_banner_space[style="margin-top:0.5rem; margin-bottom:-1rem;"]
 squallchannel.com##.linkwithin_div
 qiita.com##div[id^="ArticleSearchSearchPage-"] > main > div[class^="style-"] > div[class^="style-"]:has(> div[id^="div-gpt-ad-"])
+suki-kira.com###comment-top[style="min-height:250px;"]
 suki-kira.com###fullscreen-ad-container
-suki-kira.com###comment-top-ad
-suki-kira.com###vote-bottom-ad
 lettuceclub.net##.content-container > div.md\:w-\[796px\].md\:mx-auto.md\:pt-20
 lettuceclub.net##.content-container > div.section-content.md\:flex.md\:justify-between.md\:gap-6.md\:pt-14
 lettuceclub.net##.content-container > div.section:has(> div[id^="logly-"])
@@ -2720,6 +2717,7 @@ otonano-shumatsu.com##.container > div[style]:has(> div.adv-bb)
 otonano-shumatsu.com##.logly-block
 wealthadvisor.co.jp##.bottom_prarea
 go2senkyo.com##.m_left_column_long_banner
+jprime.jp##.ad-inread
 jprime.jp##div[class^="dfp-"]
 magazine.nikkei.com##.p-contents__pr
 business.nikkei.com##.js-stickySidebar_area
@@ -3799,7 +3797,7 @@ rurubu.jp##.c-sidebar-ad
 taisy0.com###custom_html-52
 ||city.higashimurayama.tokyo.jp/js/banner_random.js
 city.higashimurayama.tokyo.jp###main-right > #side_press_section
-sugi69693.xyz##.widget_execphp
+watch2chan.com,sugi69693.xyz##.widget_execphp
 ero.e7c.net##a[href*="/promotion/"][target="_blank"]
 s-restaurant24h.site##p > span.jump
 ac-illust.com###ac-main-content > .ac-d-lg-block
@@ -6845,9 +6843,8 @@ urbanlife.tokyo,2game.info##div[class^="fluct-unit"]
 androidjiten.com###surfing_adsense_widget-4
 teratail.com##div[class^="googlePublisherTags_ads"]
 teratail.com##div[class*="_questionBottomAdArea_"]
-suki-kira.com#?#.comment-container + hr:has(+ script + ins.adsbygoogle)
+suki-kira.com##.comment-container + hr:has(+ script + ins.adsbygoogle)
 suki-kira.com##.sk-container > div#ngwordModal + div.text-xs-center
-suki-kira.com##.text-xs-center[style="min-height: 90px;width:100%;"]
 catalog.circle.ms,city.fujimi.saitama.jp,kako.5ch.net,police.pref.akita.lg.jp,city.akabira.hokkaido.jp,teniteo.jp,city.shinjuku.lg.jp,kodansha.co.jp,digiday.jp,whatext.com,psmk2.net,10mtv.jp##.advertisement
 10mtv.jp##div[style^="width:610px; height:260px"]
 corriente.top##div[style="width: 970px; margin: 0 auto 30px;"]
@@ -10767,7 +10764,7 @@ blog.livedoor.jp,ldblog.jp#?#.plugin-memo > div.side > div[class^="alistcloud-co
 economical.co.jp#?#.side-topad > div.widget_st_custom_html_widget:has(> div > p > a[href^="//ck.jp.ap.valuecommerce.com/servlet/referral"])
 weathernews.jp###sub > section[class*="block"]:has(> div[style^="width:100%; margin:0 auto"] > div[id^="div-gpt-"])
 weathernews.jp###main > .block:has(> div[style*="width:"]:first-child > div[id^="div-gpt-"])
-weathernews.jp###main > .block > .block:has(> div[style*="width:"]:first-child > div[id^="div-gpt-"])
+weathernews.jp###main > article.block > article.block[style="text-align:center;padding:10px 0;font-size:0;"]
 4years.asahi.com#$?#ul[class^="panel-article__list"] > li > div[id^="div-gpt-"]:upward(1) { remove: true; }
 picb2.com#?#.forum-information > font:contains(楽天)
 ldblog.jp,eroduma.com,moetataiken.com,bantyou.livedoor.biz#?#.plugin-memo:has(> div.side > a[href^="http://www.e-nls.com/"])
@@ -11171,6 +11168,8 @@ blog.livedoor.jp#?#.plugin-memo > .side > a[href^="https://www.infotop.jp/click"
 ! Domain needing extra caution:
 ! ameblo.jp,2chblog.jp,blog.jp,blog.livedoor.jp,bloggeek.jp,blogism.jp,blogo.jp,blogstation.jp,blogto.jp,cafeblog.jp,corpblog.jp,diary.to,doorblog.jp,dreamlog.jp,gger.jp,golog.jp,ldblog.jp,liblo.jp,livedoor.biz,livedoor.blog,myjournal.jp,mynikki.jp,officeblog.jp,officialblog.jp,publog.jp,storeblog.jp,teamblog.jp,techblog.jp,weblog.to,xxxblog.jp,youblog.jp,seesaa.net,blog.fc2.com,blog.2nt.com
 ! specify subdomain or use unique and safe selector; for blog.livedoor.jp make your rule as specific as possible or use $path
+blog.livedoor.jp##:matches-path(/g_ogasawara)a[href^="https://www.dlsite.com/"]
+blog.livedoor.jp##:matches-path(/g_ogasawara)a[href^="https://al.dmm.co.jp/"]
 blog.livedoor.jp##.article-main2 > div[style="margin: 59px 1px 20px;background-color: #fafcd0;"]
 ||livedoor.blogimg.jp/g_ogasawara/imgs/1/b/1bdab3ca.png
 blog.livedoor.jp##div[class*="-outer"] div[class^="article-body"] span[style="font-family: \"MS PGothic\";"] a[href^="https://al.dmm.co.jp/?"]
@@ -11450,7 +11449,7 @@ kojodan.jp##+js(remove-attr, height, iframe[id^="google_ads_iframe"])
 @@||tpc.googlesyndication.com/pagead/imgad?$xmlhttprequest,domain=kojodan.jp
 safeframe.googlesyndication.com##+js(href-sanitizer, a[href^="https://adclick.g.doubleclick.net/"][href*="adurl="], ?adurl)
 ! temporally hidden for GTM
-ar-mag.jp,ben54.jp#$#html[class^="loading"] { visibility: visible !important; }
+kurashi-to-oshare.jp,ar-mag.jp,ben54.jp#$#html[class*="loading"] { visibility: visible !important; }
 ! https://github.com/AdguardTeam/AdguardFilters/issues/208209
 mobilegadget.jp#@#.header-ad
 ! https://github.com/AdguardTeam/AdguardFilters/issues/208191
