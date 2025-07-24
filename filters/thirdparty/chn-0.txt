@@ -1,10 +1,10 @@
 ![Adblock Plus 2.0]
-! Checksum: /4N083iTRlk9rAXxqzmBeQ
-! Diff-Path: ../patches/224/224-s-1753241988-3600.patch
+! Checksum: p34k8BS9vevoyN6LNVAlFA
+! Diff-Path: ../patches/224/224-s-1753325384-3600.patch
 ! Title: AdGuard Chinese filter
 ! Description: EasyList China + AdGuard Chinese filter. Filter list that specifically removes ads on websites in Chinese language.
-! Version: 2.1.40.84
-! TimeUpdated: 2025-07-23T03:36:01+00:00
+! Version: 2.1.40.90
+! TimeUpdated: 2025-07-24T02:45:38+00:00
 ! Expires: 5 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -1043,6 +1043,7 @@ ipv6.baidu.com,www.baidu.com,www1.baidu.com,xueshu.baidu.com###content_left > .r
 !
 ! NOTE: Specific rules
 !
+youziks.com##+js(no-setTimeout-if, ecjkox.com)
 fuliba2025.net##.content > a[href][target="_blank"]
 nekoray.org##main > div[data-elementor-type="single-page"] > div.elementor-element:has(> div.e-con-inner > div.elementor-element > a[href^="https://c.nekoray.org/goto/topbanner/"])
 news.mydrivers.com##div[style="margin: auto;width: 580px;padding: 10px 0;"]
@@ -1268,6 +1269,9 @@ eastmoney.com##iframe[src^="//same.eastmoney.com/"]
 eastmoney.com##iframe[src*=".eastmoney.com/banner/"]
 eastmoney.com##iframe[src^="//fund.eastmoney.com/trade/hqb_hq.html"]
 today.line.me##.adModule-root
+today.line.me##.scrollAd-root
+today.line.me##article > div[class^="css-"]:has(> .defaultAd)
+today.line.me##article > div[class^="css-"]:has(> div[class^="css-"]:only-child > .backdropAd-wrapper)
 news.owlting.com##.profit-wrapper
 news.cnyes.com##.content-main > div:empty
 news.cnyes.com##.content-main > div:has(> div[id^="div-gpt-"])
@@ -4065,7 +4069,6 @@ wss://*/api/wss/GetNotReadCount$third-party
 ###dbgg
 ###dgf_pc
 ###diads
-###dip[href*=".tmall.com"]
 ###div_top_ads
 ###duilian_left
 ###duilian_right
@@ -4719,7 +4722,6 @@ newduba.cn###jq_youxi
 ~allthingsopen.org##a[href*=".com?aff="]
 ##a[href*=".com?intr="]
 ##a[href*=".gaimin.gg/cn"]
-##a[href*=".taobao.com"] > .top1
 ##a[href*=".taobao.com"] > img[src*=".tucao."]
 ~umeng.com##a[href*=".umeng.com"]:not([href="http://www.umeng.com/"]) > img
 ##a[href*=".xyz:"] > img[src*=".qlogo.cn"]
@@ -4891,6 +4893,21 @@ newduba.cn###jq_youxi
 .z.dkt-ib.com
 ||cnzz.trafficmanager.net^
 ||cupfox.app^$third-party
+||fiwf54qahl.com^
+||t0cv7pmo2y.com^
+||qlkysc.icu^
+||mouthop3.com^
+||igtx.cn^
+||wgceetonr.com^
+||auy07240km.com^
+||d9q4aa05g4.com^
+||op9dbh1i0.com^
+||1kb4atu6x.com^
+||eiyu7532.xyz^
+||siodgs.icu^
+||sheeplm.top^
+||az75h.cn^
+||pxwu.cn^
 ||marketpd4.top^
 ||zj9puq8ycu.com^
 ||9hyf6wsiv5.com^
@@ -13244,7 +13261,6 @@ meijutt.*/js/pcjs/
 ||chinaz.com/statics/images/tuan
 ||ad.parkvv.com^
 ||adasset.ethersaga.online^
-||5dm.link/html/20240*.gif
 ||bing.com/AdsFetch?
 ||sojson.com/ui/images/upyun
 ||55kp.app/aini.
@@ -13260,9 +13276,13 @@ meijutt.*/js/pcjs/
 ||gtimg.cn/music/photo_new/T053XD001001BZyX50UcRRk.
 ||k8dm.com/960x70.
 ||ibmwclub.com/tophub/assets/js/sponsor.
+||5dm.link/html5/api_aj.
+||5dm.link/html/$image
 ||komiic.com/ads/
 ||v2ex.com/pro/emitter
 zhihu.com##.Pc-word-new
+docin.com##.mini-series-container
+5dm.link###player_pause
 1lou.me,1lou.one,1lou.pro###advert > :not(.card)
 manhuapica.com##a[href^="/ad/"]
 nodeseek.com##.promotation-item
