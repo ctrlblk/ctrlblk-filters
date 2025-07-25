@@ -1,10 +1,10 @@
 ![Adblock Plus 2.0]
-! Checksum: ybJYaS/Q42Hl3k2mjthD8g
-! Diff-Path: ../patches/7/7-s-1753290795-3600.patch
+! Checksum: uxuRJFU/JgXlkWS6d7XjJQ
+! Diff-Path: ../patches/7/7-s-1753407605-3600.patch
 ! Title: AdGuard Japanese filter
 ! Description: Filter that enables ad blocking on websites in Japanese language.
-! Version: 2.0.66.78
-! TimeUpdated: 2025-07-23T17:09:05+00:00
+! Version: 2.0.66.85
+! TimeUpdated: 2025-07-25T01:36:01+00:00
 ! Expires: 5 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -1795,6 +1795,12 @@ gundamlog.com###more > iframe[src^="https://richlink.blogsys.jp"]
 !
 ! NOTE: Specific rules
 !
+japanmetaldaily.com##.m-bnr
+facebook.com##:matches-path(/marketplace/item)a[aria-label="広告主によるリンク"]
+futabanet.jp##.gtm-banner
+tvfan.kyodo.co.jp###side_menu > div.widget_text
+tvfan.kyodo.co.jp###side_menu > div.widget_text + div.boxsh
+bizocean.jp##.layout-product__advertisement
 netizen-voice.blog.jp##.article-body-more > a[href^="https://amzn.to"] > img
 alba.co.jp##div[class^="PresentationalLayout_mainContainer_"] > div[class$="-only"]:has(> div div[id^="div-gpt-ad-"])
 tsurinews.jp##a[href^="https://t.felmat.net/"]
@@ -4319,6 +4325,7 @@ numan.tokyo,news.denfaminicogamer.jp##.rectangle-bn
 city.isehara.kanagawa.jp##div[id^="bnAdvertisement"]
 ||city.isehara.kanagawa.jp/banner/
 city.fukaya.saitama.jp##.bannerRMod
+asahi.com##.p-ad__container
 asahi.com###ytplayer1-ad
 asahi.com##.p-ad-area
 etude000.com##.ps-widget > div.top-ad:has(.img_container2)
