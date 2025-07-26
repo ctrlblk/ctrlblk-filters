@@ -1,10 +1,10 @@
 ![Adblock Plus 2.0]
-! Checksum: +lOXOMw7hcPJFSpNeJZW3A
-! Diff-Path: ../patches/9/9-s-1753254906-3600.patch
+! Checksum: zPA7pRwRGdcRAcN7h1cegg
+! Diff-Path: ../patches/9/9-s-1753449758-3600.patch
 ! Title: AdGuard Spanish/Portuguese filter
 ! Description: Filter list that specifically removes ads on websites in Spanish, Portuguese, and Brazilian Portuguese languages.
-! Version: 2.0.30.95
-! TimeUpdated: 2025-07-23T07:10:27+00:00
+! Version: 2.0.30.98
+! TimeUpdated: 2025-07-25T13:18:19+00:00
 ! Expires: 5 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -1949,6 +1949,9 @@ c5n.com,t13.cl,solowrestling.mundodeportivo.com,todojujuy.com,mendozapost.com,me
 !
 ! NOTE: Specific rules
 !
+gazetadopovo.com.br##.ads-banner-header
+jb.com.br##.propaganda-geral
+correiobraziliense.com.br##.rasgado-materia
 mega.cl###container-itt
 mega.cl###stickyunit_dsk
 andro4all.com,alfabetajuega.com,urbantecno.com##.ad-div
@@ -2683,7 +2686,7 @@ clickpb.com.br#?#body > div[style]:has(> a[href^="https://record.nsxafiliados.co
 clickpb.com.br##.adsHorizontal
 depor.com##div[class^="showTds"]
 gartic.com.br###shopIntUm
-noataque.com.br,vrum.com.br##.ad-banner
+embedplay.icu,noataque.com.br,vrum.com.br##.ad-banner
 vrum.com.br#?#.category-list-post:has(> .ad-banner)
 cnnbrasil.com.br##.ads__list__item
 poder360.com.br##.box-carousel-sponsor__banner
