@@ -1,7 +1,7 @@
 [uBlock Origin]
 ! Title: List-KR for uBlock Origin
 ! Description: List-KR for uBlock Origin. Maintained by the adblock community and AdGuard.
-! Version: 2025.0724.0
+! Version: 2025.0726.2
 ! Expires: 12 hours
 ! Homepage: https://github.com/List-KR/List-KR
 ! Support: https://list-kr-community.pages.dev/docs/
@@ -1616,6 +1616,7 @@ eegosa.com##section[id*="_ads_"]
 ! ##div[id*="_AD"]
 sports.donga.com##div[id*="_AD"]
 
+coupang.com###product-list > li:has(div[class^="AdMark_adMark__"][data-adsplatform])
 dogdrip.net##.ed.list > .webzine:not(.popular-item):has(.baseThumb ~  .overlay-text):has(.list-header a[target="_blank"].text-summary)
 m-sooriya.tistory.com##div[id^="fix_scroll_sidebar_DIV_"]
 m-sooriya.tistory.com##a[href^="https://soz.kr/"]
@@ -1882,6 +1883,7 @@ app.dcinside.com,m.dcinside.com##*[class^="adv-group"]
 app.dcinside.com,m.dcinside.com##li.adv-inner
 url.kr##form[method="post"] > #maskLayer
 m.tinnews.co.kr##.bn
+dnn.ne.kr##div:has(> ins.adsbygoogle)
 etoland.co.kr###m_main_attendance_wrap ~ a[href^="../../plugin/mobile/board.php?bo_table=market_"]
 m.fmkorea.com##div[id^="fmad_"] + div[style^="height:"][class]
 fmkorea.com##div.fmad_wrapper
@@ -3232,7 +3234,6 @@ zzzz.lol#?#.widget-side .widget-title:has(+ div a[href^="/bbs/link.php?bo_table=
 !
 ! DOMAIN-REFRESHER: END
 
-coupang.com#$?##product-list > li:has([data-adsplatform]) { remove: true; }
 m.fmkorea.com#$?#.bd.bd_mobile:not(:has(*)):has(~ #spot form[action][method].search) { remove: true; }
 m.fmkorea.com#$?#*.bd.bd_mobile:not(:has(#bd_capture ~ #comment)):has(form[action="./"]:matches-css(height: auto)) { remove: true; }
 search.daum.net#$?#body.nate aside#mAside > div[disp-attr]:has(> .wing_nate) + div[disp-attr] { margin-top: 0px !important; }
@@ -3482,6 +3483,8 @@ t.hi098123.com#@#ins.adsbygoogle[data-ad-slot]
 @@||googletagmanager.com/gtag/js$domain=t.hi098123.com,script
 t.hi098123.com#$#.tabad { top: -100px !important; }
 !
+remiz.co.kr##+js(spoof-css, .adsbygoogle, display, block)
+remiz.co.kr#@#.ad-body
 shana.pe.kr##+js(set, checkShanaBlock, noopFunc)
 checkwhoiam.tistory.com##+js(set, adblockChecker, noopFunc)
 ||shana.pe.kr/shana_check/script.js
