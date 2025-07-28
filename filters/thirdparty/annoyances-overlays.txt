@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: EasyList – Newsletter Notices
-! Last modified: Sat, 26 Jul 2025 06:58:10 +0000
+! Last modified: Mon, 28 Jul 2025 02:55:34 +0000
 ! Expires: 7 days (update frequency)
 ! *** easylist:template_header.txt ***
 !
@@ -1862,6 +1862,7 @@ startrek.com##.Article_newsletterPromo__YXJkV
 fatherly.com,mic.com,romper.com##.BMP
 axial.acs.org##.Button_button__dSklw
 cnbc.com##.CNBCFooter-info
+kcrw.com##.CTAnewsletter
 retailwire.com##.Campaign
 wbur.org##.Campaign__innerWrapper
 nyctourism.com##.Container_newsletterBlock__LRiMf
@@ -3839,6 +3840,7 @@ dailydot.com##.article-content-wrapper > p:has-text(into your inbox)
 phys.org##.article-main__more:has-text(Sign up)
 e360.yale.edu##.article__block--footnoteBlock--align-right:has-text(Subscribe)
 nzherald.co.nz##.article__body--botttom > div > p:has-text(a free newsletter)
+byteofdev.com##.bg-base-200:has-text(Sign up)
 thetransmitter.org##.bg-cover:has-text(Sign up)
 forksoverknives.com##.bg-fok-gray-500:has-text(Join our mailing list)
 bigthink.com##.bg-gray-100:has-text(newsletter)
@@ -3888,6 +3890,7 @@ aarp.org##.recommendationSection:has-text(Newsletter)
 streetinsider.com##.right_pod:has-text(E-mail Address)
 wisegeek.com##.rounded-3xl:has-text(in your inbox)
 cjr.org##.row > .entry-content > p:has-text(daily newsletter)
+byteofdev.com##.shadow-xl.m-2.p-4:has-text(Sign up for email updates)
 brooklynvegan.com##.sidebar-form:has-text(Sign Up For Our Newsletter)
 axios.com##.sm\:my-10.xs\:my-6:has-text(Sign up for)
 news.stanford.edu##.su-items-left:has-text(Subscribe)
@@ -6005,7 +6008,7 @@ doctorofcredit.com#@#.wpdiscuz-subscribe-bar
 ! fanboy_newsletter_shopping_allowlist_general_hide.txt
 
 ! Title: uBlock filters – Other Annoyances
-! Last modified: Sat, 26 Jul 2025 12:51:45 +0000
+! Last modified: Mon, 28 Jul 2025 01:53:47 +0000
 ! Expires: 7 days
 ! Description: Filters optimized for uBlock Origin, to be used with EasyList's and/or Adguard's "Other Annoyances" list(s)
 ! License: https://github.com/uBlockOrigin/uAssets/blob/master/LICENSE
@@ -6070,9 +6073,6 @@ up4stream.com,ups2up.fun##+js(set, devtoolsDetector, {})
 
 ! https://github.com/uBlockOrigin/uAssets/issues/27772
 kursnacukrzyce.pl##+js(acs, document.addEventListener, contextmenu)
-
-! https://github.com/uBlockOrigin/uAssets/issues/27830
-wowturkey.net##+js(rmnt, script, oncontextmenu)
 
 ! https://abstream.to/gs6zl1pvrnk2 (NSFW) - anti-devtools
 ||abstream.to/js/devtools-detector*.js
@@ -13706,3 +13706,6 @@ romaniadeazi.biz##*:style(-webkit-touch-callout: default !important; -webkit-use
 
 ! https://github.com/AdguardTeam/AdguardFilters/issues/209957
 bangkokpost.com##+js(rmnt, script, getComputedStyle)
+
+! https://github.com/uBlockOrigin/uAssets/issues/29362
+||carbonads.com^$script,redirect=noopjs,domain=sourceb.in
