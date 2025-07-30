@@ -1,10 +1,10 @@
 ![Adblock Plus 2.0]
-! Checksum: KyBEsF8si6eJ4K1m/MwIwg
-! Diff-Path: ../patches/9/9-s-1753729911-3600.patch
+! Checksum: uxb73316gK8McAz9vaHjrw
+! Diff-Path: ../patches/9/9-s-1753849609-3600.patch
 ! Title: AdGuard Spanish/Portuguese filter
 ! Description: Filter list that specifically removes ads on websites in Spanish, Portuguese, and Brazilian Portuguese languages.
-! Version: 2.0.31.2
-! TimeUpdated: 2025-07-28T19:08:05+00:00
+! Version: 2.0.31.8
+! TimeUpdated: 2025-07-30T04:23:02+00:00
 ! Expires: 5 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -191,6 +191,11 @@
 !
 !
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/210330
+||cdn.jsdelivr.net/npm/sweetalert$domain=jjjx.lol
+! https://github.com/AdguardTeam/AdguardFilters/issues/210313
+askflix.biz###adblock-overlay
+askflix.biz##+js(abort-current-script, EventTarget.prototype.addEventListener, .offsetParent===)
 ! https://github.com/AdguardTeam/AdguardFilters/issues/208565
 ||guiavidaesaude.com/wp-settings/ads_anuncio.js
 guiavidaesaude.com##+js(addEventListener-defuser, DOMContentLoaded, /window\.getComputedStyle|adblock-/)
@@ -209,7 +214,7 @@ cinemastervip.com##+js(abort-on-property-read, blockAdBlock)
 @@||imasdk.googleapis.com/js/sdkloader/ima3_dai.js$domain=mediasetinfinity.es
 @@||static-cloud.mediaset.net/misc/ad/adanalytics.js$domain=mediasetinfinity.es
 ! https://github.com/uBlockOrigin/uAssets/issues/28879
-jornaldacidadeonline.com.br##+js(no-fetch-if, pagead2.googlesyndication.com)
+@@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=jornaldacidadeonline.com.br
 ! https://github.com/AdguardTeam/AdguardFilters/issues/207002
 cuitonline.com##+js(no-fetch-if, method:HEAD)
 cuitonline.com###adBlockModalOverlay
@@ -226,6 +231,8 @@ mitele.es#$#div[class^="adsInfo__fullOpacity-"] { display: none !important; }
 ! https://github.com/AdguardTeam/AdguardFilters/issues/200089
 elcorreogallego.es###_an_cmp
 elcorreogallego.es##+js(set-constant, _an.ABMode, undefined)
+! https://github.com/AdguardTeam/AdguardFilters/issues/210312
+redecanais.*##.pm-section-highlighted > div[style]:not([class])
 ! https://github.com/AdguardTeam/AdguardFilters/issues/202441
 ! https://github.com/uBlockOrigin/uAssets/issues/27939
 redecanaistv.*,redecanais.*##.swal2-popup
@@ -1947,6 +1954,14 @@ c5n.com,t13.cl,solowrestling.mundodeportivo.com,todojujuy.com,mendozapost.com,me
 !
 ! NOTE: Specific rules
 !
+clickjogos.com.br##div[class^="styles_sideAds_"]
+||d.jornaldocomercio.com/includes/paginas/inove/api_banners.php
+jornaldocomercio.com##.bg-banner
+jornaldocomercio.com##.adunitjc
+||videos.sisfolha.com.br/?v=$subdocument
+folhabv.com.br##div[data-insertion-position="prepend"]
+folhabv.com.br##.single-content > div[class="grid"]
+folhabv.com.br#?#.single-content > .text-center:contains(PUBLICIDADE)
 atarde.com.br##.atr-article-full-ads
 atarde.com.br##.ad-article-desk
 metrocptm.com.br###block-3
