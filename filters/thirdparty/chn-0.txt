@@ -1,10 +1,10 @@
 ![Adblock Plus 2.0]
-! Checksum: +Al75Vnr+xBSqCCYn7PYxA
-! Diff-Path: ../patches/224/224-s-1753921935-3600.patch
+! Checksum: XnNk7/vN0fwy19oPYtdTOg
+! Diff-Path: ../patches/224/224-s-1754008536-3600.patch
 ! Title: AdGuard Chinese filter
 ! Description: EasyList China + AdGuard Chinese filter. Filter list that specifically removes ads on websites in Chinese language.
-! Version: 2.1.41.26
-! TimeUpdated: 2025-07-31T00:28:44+00:00
+! Version: 2.1.41.32
+! TimeUpdated: 2025-08-01T00:32:15+00:00
 ! Expires: 5 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -472,7 +472,7 @@ linovelib.com##+js(addEventListener-defuser, DOMContentLoaded, adBlock)
 linovelib.com##+js(set-constant, adblock, 0)
 ! https://github.com/AdguardTeam/AdguardFilters/issues/164798
 ! https://github.com/uBlockOrigin/uAssets/issues/10953
-@@/wp-content/themes/radio-hub/static/js/adpro.js$domain=tingfm.com
+@@/wp-content/themes/radio-hub/static/js/*.js$domain=tingfm.com
 tingfm.com##+js(set-constant, canRunAds, true)
 tingfm.com##+js(set-constant, can_run_ads, true)
 tingfm.com##+js(no-setTimeout-if, adblock)
@@ -4905,12 +4905,26 @@ newduba.cn###jq_youxi
 .z.dkt-ib.com
 ||cnzz.trafficmanager.net^
 ||cupfox.app^$third-party
+||b0rz2s5ik.com^
+||nug08010lu.com^
+||ivzaq2irg.com^
+||uiqouw.icu^
+||heavly1.com^
+||oycf.cn^
 ||f7ugx6b863.com^
 ||q7qhlnyfx.com^
 ||sportuay.com^
 ||wuyjtew.icu^
 ||yopo0hx26.com^
 ||nug07310lu.com^
+||stsgus.icu^
+||kibn.cn^
+||nug07311lu.com^
+||tinjsicyt.com^
+||gio07311rp.com^
+||82e9ac3c1.com^
+||dkngfkgbc.com^
+||qhaazaduez.com^
 ||4xicd08qs.com^
 ||cinemaup.top^
 ||udwlki.icu^
@@ -17717,7 +17731,7 @@ ikjzd.com##.wv-right-content > .imgTop-right
 52pk.com##.wxbox
 55188.com##.wz_text
 eyy5.cn##.wzgg
-tmioe.com##.ekssxhn
+tmioe.com##.ekxxhn
 tmioe.com##a[href*=".zps.im"]
 sohu.com##.x-adv-band-panel
 sohu.com##.x-adv-flogo-panel

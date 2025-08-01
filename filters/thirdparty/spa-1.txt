@@ -1,10 +1,10 @@
 ![Adblock Plus 2.0]
-! Checksum: 7CwujCWgZJDMIzjgcv0rpw
-! Diff-Path: ../patches/9/9-s-1753877738-3600.patch
+! Checksum: AQva/2GAEKJuDmb/CHhiww
+! Diff-Path: ../patches/9/9-s-1754020015-3600.patch
 ! Title: AdGuard Spanish/Portuguese filter
 ! Description: Filter list that specifically removes ads on websites in Spanish, Portuguese, and Brazilian Portuguese languages.
-! Version: 2.0.31.11
-! TimeUpdated: 2025-07-30T12:11:44+00:00
+! Version: 2.0.31.15
+! TimeUpdated: 2025-08-01T03:43:05+00:00
 ! Expires: 5 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -232,7 +232,7 @@ mitele.es#$#div[class^="adsInfo__fullOpacity-"] { display: none !important; }
 elcorreogallego.es###_an_cmp
 elcorreogallego.es##+js(set-constant, _an.ABMode, undefined)
 ! https://github.com/AdguardTeam/AdguardFilters/issues/210312
-redecanais.*##.pm-section-highlighted > div[style]:not([class])
+redecanaistv.*,redecanais.*##.pm-section-highlighted > div[style]:not([class])
 ! https://github.com/AdguardTeam/AdguardFilters/issues/202441
 ! https://github.com/uBlockOrigin/uAssets/issues/27939
 redecanaistv.*,redecanais.*##.swal2-popup
@@ -1954,6 +1954,10 @@ c5n.com,t13.cl,solowrestling.mundodeportivo.com,todojujuy.com,mendozapost.com,me
 !
 ! NOTE: Specific rules
 !
+portalleodias.com##div[id^="div-publicidade-"]
+zonared.com##.pub_300x600
+zonared.com##.pub_interior_top
+losreplicantes.com###pub-top
 postal.pt##ad-placement
 postal.pt##.sidebar-mrec
 postal.pt##.recomendados-outbrain
@@ -3534,7 +3538,7 @@ otempo.com.br##div.cf.slot-item.count-2.slot-count-20
 otempo.com.br##div[id^="ATF_"]
 ||elsiglodetorreon.com.mx/desplegados/banners/
 reforma.com##div[id^="zonapublicidad"]
-social1.ne10.uol.com.br,bnews.com.br,jcconcursos.uol.com.br,contigo.uol.com.br,tycsports.com,tvpop.com.br,midiamax.uol.com.br##div[id^="banner-"]
+imirante.com,social1.ne10.uol.com.br,bnews.com.br,jcconcursos.uol.com.br,contigo.uol.com.br,tycsports.com,tvpop.com.br,midiamax.uol.com.br##div[id^="banner-"]
 atresplayer.com##.adpause
 minha.exame.com##div[class^="AdContainer"]
 arquitecturaydiseno.es##.header-megabanner > *
