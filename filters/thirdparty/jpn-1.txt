@@ -1,10 +1,10 @@
 ![Adblock Plus 2.0]
-! Checksum: dHMQ7dINH563cM3r+h80BA
-! Diff-Path: ../patches/7/7-s-1754020014-3600.patch
+! Checksum: VsEOO6mI9Qio1Q+dlGlb1w
+! Diff-Path: ../patches/7/7-s-1754071966-3600.patch
 ! Title: AdGuard Japanese filter
 ! Description: Filter that enables ad blocking on websites in Japanese language.
-! Version: 2.0.67.19
-! TimeUpdated: 2025-08-01T03:43:03+00:00
+! Version: 2.0.67.24
+! TimeUpdated: 2025-08-01T18:09:07+00:00
 ! Expires: 5 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -27,7 +27,6 @@
 ! not for DNS
 ||ias.rakuten.co.jp^$third-party,domain=~rakuten-co.jp|~rakuten.ne.jp
 !
-||centsbicloud.bond^$all
 ||ademon.net^
 ||api.ada-cloud.com^
 ||erogazopple.com^$document
@@ -707,13 +706,8 @@ blog-and-destroy.com##+js(abort-current-script, onload, adsCount)
 !+ PLATFORM(windows, mac, android, ext_chromium, ext_ublock)
 musenboya.com##+js(abort-current-script, navigator.brave)
 ! https://github.com/AdguardTeam/AdguardFilters/issues/131648
-||fc2.com/g/a/m/gamemod/z-$script,domain=gamemod.blog.fc2.com
-||fc2.com/g/a/m/gamemod/min-toc.js$domain=gamemod.blog.fc2.com
-||fc2.com/g/a/m/gamemod/min-twitter.js$domain=gamemod.blog.fc2.com
-||fc2.com/h/e/l/helpsupport/x-$script,domain=helpsupport.blog.fc2.com
-||fc2.com/h/e/l/helpsupport/min-toc.js$domain=helpsupport.blog.fc2.com
-||fc2.com/h/e/l/helpsupport/min-twitter.js$domain=helpsupport.blog.fc2.com
-gamemod.blog.fc2.com,helpsupport.blog.fc2.com###load:empty
+||fc2.com/h/e/l/helpsupport/min-tc.js$domain=helpsupport.blog.fc2.com
+gamemod.blog.fc2.com,helpsupport.blog.fc2.com###loading:empty
 gamemod.blog.fc2.com,helpsupport.blog.fc2.com#@#.AdContainer
 ||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$script,redirect=googlesyndication.com/adsbygoogle.js,domain=helpsupport.blog.fc2.com|gamemod.blog.fc2.com,important
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=helpsupport.blog.fc2.com|gamemod.blog.fc2.com
@@ -1801,6 +1795,14 @@ gundamlog.com###more > iframe[src^="https://richlink.blogsys.jp"]
 !
 ! NOTE: Specific rules
 !
+yu41blog.com##.disable-ads-container
+relazo.net##.wider:has(> div[style] > script[data-src^="//j.microad.net/js/"])
+sportsbull.jp##.js-stats-inhouse-ad
+sportsbull.jp##.SPBL_article-inhouseAd:not([href*="sportsbull.jp"])
+sportsbull.jp##.SPBL_top-inhouseAd:not([href*="sportsbull.jp"])
+kledgeb.blogspot.com##.cls_divMatchedContentAdsenceTitle
+helpsupport.blog.fc2.com##.button[href^="https://amzn.to/"]
+ar-mag.jp##.ad-gliacloud
 pokemonsleepdaifuku.com###fixed-banner
 wear.jp##.min-h-\[90px\].min-w-\[728px\]
 ||city.hokota.lg.jp/data/banner/
@@ -1831,7 +1833,6 @@ umamusume.net##.gma-related-content
 ||storage.googleapis.com/*/media/jp.mp4
 chanto.jp.net##.gn-ad-clm
 chanto.jp.net##div[data-cptid]
-facebook.com##:matches-path(/marketplace/item)a[aria-label="広告主によるリンク"]
 futabanet.jp##.gtm-banner
 tvfan.kyodo.co.jp###side_menu > div.widget_text
 tvfan.kyodo.co.jp###side_menu > div.widget_text + div.boxsh
@@ -7287,6 +7288,7 @@ idle-girl.com###custom_html-124
 idle-girl.com###custom_html-127
 erostopics.net###custom_html-135
 umamusume.net###custom_html-167
+lv73.net###block-106
 lv73.net###広告-ad
 lv73.net##.amazon-ko-ko-ku
 lv73.net##.ko-ko-ku-area
@@ -9103,8 +9105,8 @@ ameblo.jp###entryBody > div.pickCreative_root + p
 ameblo.jp##div[class^="_"][style="min-width: 300px; min-height: 250px;"]
 ameblo.jp##.myPick_block
 anond.hatelabo.jp##.ad-in-entry-block
-kakuyomu.jp##div[id^="work-ad-"]
-kakuyomu.jp#?#div[class^=" Gap_size"] > div[class^="Layout_"]:has(> div[class^="Ad_ad_"])
+kakuyomu.jp##div[class^="Ad_ad_"]
+kakuyomu.jp##div[class^=" Gap_size"] > div[class^="Layout_"]:has(> div[class^="Ad_ad_"])
 kakuyomu.jp##div[class^="widget-ad-"]
 realsound.jp###appleBnr
 realsound.jp##.entryBottomAd
