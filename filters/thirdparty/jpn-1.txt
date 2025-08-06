@@ -1,10 +1,10 @@
 ![Adblock Plus 2.0]
-! Checksum: HpEJvOieNTs6zu+xj6bfEw
-! Diff-Path: ../patches/7/7-s-1754323976-3600.patch
+! Checksum: WfP0N8pJqAUdbOJjcK6bAw
+! Diff-Path: ../patches/7/7-s-1754435465-3600.patch
 ! Title: AdGuard Japanese filter
 ! Description: Filter that enables ad blocking on websites in Japanese language.
-! Version: 2.0.67.31
-! TimeUpdated: 2025-08-04T16:09:01+00:00
+! Version: 2.0.67.36
+! TimeUpdated: 2025-08-05T23:07:12+00:00
 ! Expires: 5 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -27,6 +27,7 @@
 ! not for DNS
 ||ias.rakuten.co.jp^$third-party,domain=~rakuten-co.jp|~rakuten.ne.jp
 !
+||live-qj.cc^$document
 ||ademon.net^
 ||api.ada-cloud.com^
 ||erogazopple.com^$document
@@ -1523,6 +1524,7 @@ jikayosha.jp#$#.wym-v2022__header.is-scroll-up ~ .wym-v2022__footer-fixed.is-pc-
 /wp-content/uploads/2024/09/fanza_ad$image
 !
 ! Malware/Phishing
+://mufg-*.cn?token=$document
 ://www.smbc.*.top/$document
 ://visa.*.top/web/$document
 .com/yz.php|$xmlhttprequest,~third-party
@@ -1795,6 +1797,8 @@ gundamlog.com###more > iframe[src^="https://richlink.blogsys.jp"]
 !
 ! NOTE: Specific rules
 !
+math-joy-life.com##.md\:h-\[280px\].xl\:w-9\/12
+catmiimi.com##.widget-sidebar-scroll
 hpupdate.info##p > font[size="2"][color="gray"]
 pokekameshi.com##.widget_custom_html:has(> div.textwidget a[href^="https://torecacamp-pokemon.com/"])
 airlinehonpo.blog.fc2.com###center > table[style^="width:730px;"]
@@ -3281,6 +3285,8 @@ minkabu.jp###stock_header_contents > div[class="min-h-[120px]"]
 ai-matome.net##.sidein2
 gurum.biz##.res > a[href*="amazon.co.jp/"][target="_blank"]
 sakamichijyoho46.blog.jp##div[class^="article-body"] > div[align="center"] > table[border="0"]
+||egone.org/js/kindle_
+||egone.org/parts/amazon_
 ||egone.org/js/amazon_
 burusoku-vip.com##.pull-left.paapi5-pa-ad-unit:first-child
 burusoku-vip.com##.paapi5-pa-product-container > div.paapi5-pa-product-image
@@ -6444,10 +6450,11 @@ okazurand.net##.product-detail-purchase--floating
 okazurand.net##.adowidgets
 okazurand.net##.ado-area
 hominis.media##.pr-ad
+news.infoseek.co.jp###headerAdvertisementsTopicsCommon
 news.infoseek.co.jp###headerAd1TopicsCommon
 news.infoseek.co.jp##.runa_affiliate
 news.infoseek.co.jp###mkdiv_footer_pitari
-news.infoseek.co.jp,fril.jp,rakuten.co.jp###mkdiv_header_pitari
+infoseek.co.jp,fril.jp,rakuten.co.jp###mkdiv_header_pitari
 ||furima-assist.com/banner/
 fril.jp,mercari.com,yahoo.co.jp##.furima-assist-ad-wrapper
 sakukankou.jp,world-best-news.doorblog.jp,news-channel.doorblog.jp##.footerBnr
@@ -6979,7 +6986,7 @@ himmel-ellipse.com,orenoraresne.com,xn--zckm5bnq2mpa6a1fz490bkx4ayzmvi9g.com,ore
 himmel-ellipse.com,j-oosk.com###text-19
 vtub0.com,lefty322.com,kaiten-heiten.com###text-20
 murakichi.net###text-21
-news.railway-pressnet.com,xn--o9j0bk1914a8b2b.com,erokiwami.com,ikikatadatabase.com,japan-hentai.com,neo-blood.co.jp,smhn.info###text-22
+fire-emblem-matome.com,news.railway-pressnet.com,xn--o9j0bk1914a8b2b.com,erokiwami.com,ikikatadatabase.com,japan-hentai.com,neo-blood.co.jp,smhn.info###text-22
 kome3blog.com,xn--o9j0bk1914a8b2b.com,vipcle2.com###text-23
 himmel-ellipse.com,game16.net,eigo.plus,news.sod.co.jp###text-24
 himmel-ellipse.com,panchirasan.site,otakaranet.com###text-25
@@ -8500,6 +8507,7 @@ mangaz.com###scroll-adv
 mangaz.com##.amazonLinkMod
 playlearnlife.com##.theiaStickySidebar > .widget_text
 oshiete.goo.ne.jp,city.joetsu.niigata.jp,shogi.or.jp##.addArea
+kurashiru.com##.PcApp-adContainer
 kurashiru.com##div[class*="adsWrapper"]
 kyounoryouri.jp##.recipe--detail-bannerarea
 kyounoryouri.jp##.side--banner-app
@@ -9390,12 +9398,12 @@ news.2chblog.jp##.pr-4
 news.2chblog.jp##.kjs
 news.2chblog.jp##.article-body-inner > table[width="750"][height="320"]
 ||cinematoday.jp/js/wp/kyujinbox.
+cinematoday.jp#$?#.feed > div[style="width:66%;height:70%;clear:left;float:right;"] { remove: true; }
 cinematoday.jp###ct-ad-streaming
 cinematoday.jp###ct-ad-super-banner
 cinematoday.jp###movie-ranking > li[style="margin: 16px 0; background:#fff;"]
 cinematoday.jp##.col-right300 > div.module:last-child
 cinematoday.jp##.ct-ad-prime-display
-cinematoday.jp###ct-affiliate-box
 yahoo.co.jp##iframe[id$="_ad_frame"]
 yahoo.co.jp##div[class^="SearchResults_searchResults__contents__main__"] > div.SSContainer
 milcow.com##.adaida

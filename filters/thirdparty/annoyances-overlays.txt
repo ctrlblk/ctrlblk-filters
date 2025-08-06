@@ -6026,7 +6026,7 @@ doctorofcredit.com#@#.wpdiscuz-subscribe-bar
 ! fanboy_newsletter_shopping_allowlist_general_hide.txt
 
 ! Title: uBlock filters – Other Annoyances
-! Last modified: Tue, 05 Aug 2025 05:09:41 +0000
+! Last modified: Tue, 05 Aug 2025 22:40:52 +0000
 ! Expires: 7 days
 ! Description: Filters optimized for uBlock Origin, to be used with EasyList's and/or Adguard's "Other Annoyances" list(s)
 ! License: https://github.com/uBlockOrigin/uAssets/blob/master/LICENSE
@@ -6199,6 +6199,8 @@ pinterest.*##+js(trusted-replace-argument, Storage.prototype.setItem, 0, json:"D
 ! "Sign Up to download"
 pinterest.*##+js(set-local-storage-item, unauthDownloadCount, $remove$)
 pinterest.*##+js(trusted-replace-argument, Storage.prototype.setItem, 0, json:"", condition, unauthDownloadCount)
+! https://www.reddit.com/r/uBlockOrigin/comments/1mh9mpd/pinterest_block_copy_image_on_recommended_images
+pinterest.*##.PinCard__imageWrapper div[class][style="background-color: rgba(17, 17, 17, 0.4); width: 100%;"]:has(> div:empty)
 
 ! https://github.com/NanoAdblocker/NanoFilters/issues/120
 files.minecraftforge.net##.promo-container
@@ -13729,3 +13731,9 @@ bangkokpost.com##+js(rmnt, script, getComputedStyle)
 
 ! https://github.com/uBlockOrigin/uAssets/issues/29362
 ||carbonads.com^$script,redirect=noopjs,domain=sourceb.in
+
+! https://github.com/AdguardTeam/AdguardFilters/issues/210747
+toweroffantasy.info##+js(rmnt, script, onerror)
+
+! https://github.com/uBlockOrigin/uAssets/issues/29469
+qrcode.best##+js(nostif, ad_blocker_detector_modal)

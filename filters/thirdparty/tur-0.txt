@@ -1,10 +1,10 @@
 ![Adblock Plus 2.0]
-! Checksum: fc3d9lZt5J94v6+Zz7plaA
-! Diff-Path: ../patches/13/13-s-1754368154-3600.patch
+! Checksum: O2Far/RUVYydy3OJN+7wDQ
+! Diff-Path: ../patches/13/13-s-1754435461-3600.patch
 ! Title: AdGuard Turkish filter
 ! Description: Filter list that specifically removes ads on websites in Turkish language.
-! Version: 2.0.58.49
-! TimeUpdated: 2025-08-05T04:25:25+00:00
+! Version: 2.0.58.61
+! TimeUpdated: 2025-08-05T23:07:16+00:00
 ! Expires: 5 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -1489,6 +1489,13 @@ dirilispostasi.com,turkuazgazetesi.net,yenialanya.com,bugunkocaeli.com.tr,cagdas
 !
 ! NOTE: Specific rules
 !
+borsadirekt.com##.voa > a[href]
+elisa1.lat##.hentry > .ivr
+haberler.com##.news-icerik > .new3-video-container > div[style="width:300px; height:100px; margin:0 auto;"]
+justintv-canlimacizle.com###ouibounce-modal
+||azbakizle.org/ch/ch.php
+/\/(justin|canli-mac)\.gif$/$domain=taraftarium.tr
+taraftarium.tr##.stream-item-widget
 dizirex.com###activeFrontVid
 ||dizirex.com/lol.js^
 ||dizikorea.pw/rklm/
@@ -1585,6 +1592,9 @@ gdh.digital##.col-start-1 > .my-6 > .items-center > .relative:has(> .block > .ad
 ||istanbulticaretgazetesi.com/uploads/ads/
 ||r.resimlink.com/*.gif
 iscihaber.net##.detailside-inner-ad-cont
+yabancidizi.*##ad
+yabancidizi.*###router-view > div:not([class],[id]) > div[class*="bg-\[rgb"]:has(> .grid:only-child > .w-full > ad)
+yabancidizi.*###router-view > div > div:not([class],[id]) > div[class*="bg-\[rgb"]:has(> .grid:only-child > .w-full > ad)
 yabancidizi.*###router-view > div > div:not([class],[id]) > div[class*="bg-\[rgb"]:has(> .grid:only-child > ad + ad + ad)
 yabancidizi.*##div[class*="bg-\[rgb"] > div:has(> div:only-child > a:first-child + button:last-child)
 kibrisgazetesi.com##div:is(.kanews-article-content, .execphpwidget) > a[target="_blank"] > img
@@ -1629,7 +1639,7 @@ selcuksports.*##center > a[href][target="_blank"]
 selcuksportss.com##div[class^="button-container"]
 selcuksportss.com##.banner-container
 selcuksportss.com##.header-html-1
-hudsonlegalblog.com,taraftarium.*,selcuksports.*,selcuk-sports.com##+js(set-constant, window.config.adv.enabled, 0)
+playertrgf.pages.dev,hudsonlegalblog.com,taraftarium.*,selcuksports.*,selcuk-sports.com##+js(set-constant, window.config.adv.enabled, 0)
 fullhdfilmizlesene.*##.plalt-bn
 ||storage.fintables.com/media/uploads/ads/
 sondakika.com##div[style]:has(> div[id^="div-gpt-ad-"])
@@ -3173,7 +3183,7 @@ dha.com.tr,gazetevatan.com,milliyet.com.tr##.adRendererInfinite
 borsadirekt.com##a[class*="SideBarBanner"]
 borsadirekt.com##div[class*="Bannerdiv"] > a[target="_blank"]
 borsadirekt.com##div[class*="BannerDiv"] > a[target="_blank"]
-||borsadirekt.com/uploads/banners/default-970x250.gif
+||borsadirekt.com/uploads/banners/
 1yuz.com,turkhacks.com,webmasterforum.com.tr,crackturkey.com##.xgt-Banner-Kutusu
 ||merlincdn.net/hoca/hesap.webp$domain=crackturkey.com
 ||merlincdn.net/hoca/ddosarmor.webp$domain=crackturkey.com
@@ -5448,6 +5458,23 @@ hdfilmcehennem.live#$##kendisi { display: block!important; }
 oyunu.com.tr#$##bir.oynama { display: none !important; }
 oyunu.com.tr#$##iki.oynama { display: block !important; }
 !
+! goblintvizle*.live - frequently changed domains
+||goblintvizle*.live/Uploads/*_bckg.jpg
+[$domain=/goblintvizle\d+\.live/]##div[style="position:fixed;height:100%;z-index:1;width:100%"]
+[$domain=/goblintvizle\d+\.live/]##.livecontainer > div.vertical-gap a[target="_blank"] > img
+!
+! hakemtv*.com - frequently changed domains
+||hakemtv*.com/view/theme/safir/img/*BANNER.gif
+||hakemtv*.com/view/theme/safir/img/guncell.png
+!
+! goley90canlitv*.site - frequently changed domains
+||goley90canlitv*.site/wp-content/uploads/*.gif
+[$domain=/goley90canlitv\d+\.site/]##.pageskin
+[$domain=/goley90canlitv\d+\.site/]##header > a[href^="https://goley90canlitv"][href$=".site/"] + ul
+[$domain=/goley90canlitv\d+\.site/]##.footer-links
+[$domain=/goley90canlitv\d+\.site/]##.watermark
+[$domain=/goley90canlitv\d+\.site/]##+js(set-constant, window.advertisement.states.activate, false)
+!
 ! macizlevip*.shop - frequently changed domains
 ||macizlevip*.shop//wp-content/uploads/*.gif
 [$domain=/macizlevip\d+\.shop/]##+js(set-constant, config.advertisement.enabled, false)
@@ -5498,11 +5525,6 @@ canlikolik.my,canlikolik1.my,canlikolik2.my,canlikolik3.my,canlikolik4.my,canlik
 ! klasikfilmler*.cc - frequently changed domains
 [$domain=/klasikfilmler\d+\.cc/]##+js(addEventListener-defuser, DOMContentLoaded, videotutucu)
 !
-! mactanmaca*.shop - frequently changed domains
-||mactanmaca*.shop//wp-content/*.gif
-[$domain=/mactanmaca\d+\.shop/]##div[data-isbd-main-container] > section > div.hidden-xs.text-center
-[$domain=/mactanmaca\d+\.shop/]##+js(set-cookie, reklamgosterimx, ok)
-!
 ! canlimacizlemax*.com - frequently changed domains
 ||canlimacizlemax*/r/$image
 [$domain=/canlimacizlemax\d+\.top/]##.header_r
@@ -5543,14 +5565,24 @@ canlikolik.my,canlikolik1.my,canlikolik2.my,canlikolik3.my,canlikolik4.my,canlik
 ||betmoneytv*.live/Uploads/*_bmtvpageskin.jpeg
 ||bahisnowtv*.com/Uploads/*_Bahisnow_TV_Pageskin*.jpg
 ||joybet114.cam/Uploads/*_pageskinsablon*.png
-! canlimaclar*.sbs - frequently changed domains
-[$domain=/canlimaclar\d+\.sbs$/]##+js(set-constant, adscfg.enabled, false)
 !
+! It seems the next 3 sites use the same template. Most likely, there are more such sites
+! Let's test one generic rule
+##div[data-isbd-main-container] > section > div.hidden-xs.text-center
+! belestepe*.shop - frequently changed domains
+||belestepe*.shop//wp-content/uploads/*.gif
+! aglint-disable-next-line invalid-modifiers
+||video.twimg.com/amplify_video/*/vid/*.mp4$domain=/^belestepe\d+\.shop/
+[$domain=/belestepe\d+\.shop/]##div[data-isbd-main-container] > section > div.hidden-xs.text-center
 ! izlemac*.sbs - frequently changed domains
 ! Random numbers
 [$domain=/izlemac\d+\.sbs/]##+js(set-constant, adscfg.enabled, false)
 [$domain=/izlemac\d+\.sbs/]##div[data-isbd-main-container] > section > div.hidden-xs.text-center
 ||izlemac*.sbs/wp-content/uploads/*.gif
+! mactanmaca*.shop - frequently changed domains
+||mactanmaca*.shop//wp-content/*.gif
+[$domain=/mactanmaca\d+\.shop/]##div[data-isbd-main-container] > section > div.hidden-xs.text-center
+[$domain=/mactanmaca\d+\.shop/]##+js(set-cookie, reklamgosterimx, ok)
 !
 ! sultansportv*.com - frequently changed domains
 ! Randomized of too fast changing
@@ -5603,17 +5635,19 @@ justintv.*##.stream-item-top-wrapper
 justintv.*##div[id^="stream-item"]
 ||taraftarium24*.top/assets/img/*.gif
 apxinfeng.com,atastymorsel.com,bhdgc.com,bonneyrega.com,justintv.*#$#body { background: none !important; }
-channelbein33.blogspot.com##body > script + marquee[bgcolor="black"][onmouseover]
-||blogger.googleusercontent.com/img/$domain=justintvgiris.blogspot.com|sportboss-macizlesbs.blogspot.com|taraftarium402.blogspot.com|macicanliizle.sbs|taraftarium24canli-macizlesene.blogspot.com|taraftarium24hdgiris1.blogspot.com|selcukspor-taraftarium24canliizle1.blogspot.com
-justintvgiris.blogspot.com,sportboss-macizlesbs.blogspot.com,taraftarium402.blogspot.com,macicanliizle.sbs,taraftarium24canli-macizlesene.blogspot.com,taraftarium24hdgiris1.blogspot.com,selcukspor-taraftarium24canliizle1.blogspot.com,taraftariumxx.cfd##+js(set-constant, puShown, true)
-justintvgiris.blogspot.com,sportboss-macizlesbs.blogspot.com,taraftarium402.blogspot.com,macicanliizle.sbs,taraftarium24canli-macizlesene.blogspot.com,taraftarium24hdgiris1.blogspot.com,selcukspor-taraftarium24canliizle1.blogspot.com##.contentReklam
-justintvgiris.blogspot.com,sportboss-macizlesbs.blogspot.com,taraftarium402.blogspot.com,macicanliizle.sbs,taraftarium24canli-macizlesene.blogspot.com,taraftarium24hdgiris1.blogspot.com,selcukspor-taraftarium24canliizle1.blogspot.com##.topNav > div.buttons
+channelbein34.blogspot.com,channelbein33.blogspot.com##body > script + marquee[bgcolor="black"][onmouseover]
+||blogger.googleusercontent.com/img/$domain=justintvx30.blogspot.com|justintvxx10.blogspot.com|inattv-taraftarium24-macizle.blogspot.com|canli-mac-izle-taraftarium24-izle.blogspot.com|justintvgiris.blogspot.com|sportboss-macizlesbs.blogspot.com|taraftarium402.blogspot.com|macicanliizle.sbs|taraftarium24canli-macizlesene.blogspot.com|taraftarium24hdgiris1.blogspot.com|selcukspor-taraftarium24canliizle1.blogspot.com|hdtaraftartv1000.blogspot.com
+justintvx30.blogspot.com,justintvxx10.blogspot.com,inattv-taraftarium24-macizle.blogspot.com,canli-mac-izle-taraftarium24-izle.blogspot.com,justintvgiris.blogspot.com,sportboss-macizlesbs.blogspot.com,taraftarium402.blogspot.com,macicanliizle.sbs,taraftarium24canli-macizlesene.blogspot.com,taraftarium24hdgiris1.blogspot.com,selcukspor-taraftarium24canliizle1.blogspot.com,taraftariumxx.cfd##+js(set-constant, puShown, true)
+justintvx30.blogspot.com,justintvxx10.blogspot.com,inattv-taraftarium24-macizle.blogspot.com,canli-mac-izle-taraftarium24-izle.blogspot.com,justintvgiris.blogspot.com,sportboss-macizlesbs.blogspot.com,taraftarium402.blogspot.com,macicanliizle.sbs,taraftarium24canli-macizlesene.blogspot.com,taraftarium24hdgiris1.blogspot.com,selcukspor-taraftarium24canliizle1.blogspot.com##div[class*="Reklam"]
+justintvx30.blogspot.com,justintvxx10.blogspot.com,inattv-taraftarium24-macizle.blogspot.com,canli-mac-izle-taraftarium24-izle.blogspot.com,justintvgiris.blogspot.com,sportboss-macizlesbs.blogspot.com,taraftarium402.blogspot.com,macicanliizle.sbs,taraftarium24canli-macizlesene.blogspot.com,taraftarium24hdgiris1.blogspot.com,selcukspor-taraftarium24canliizle1.blogspot.com##.topNav > div.buttons
 ||aleastoria.com/belgeler/
 ||arbwork.com/izin/
 justintvsh.baby,justinttvvamphd.cfd##header > a[target="_blank"]
 hayrirsds24.cfd#$#.player-poster[data-poster].clickable { background-image: none !important; }
 hayrirsds24.cfd##+js(set-constant, window.config.adv.enabled, 0)
 ||blogger.googleusercontent.com/img/$domain=justintvsh.baby|justinttvvamphd.cfd
+hdtaraftartv1000.blogspot.com##a[href^="//clbanners3.com/"]
+hdtaraftartv1000.blogspot.com#$##main-wrapper { margin: 0 auto 0 !important; }
 ! https://github.com/AdguardTeam/AdguardFilters/issues/209991
 ##body > a.body-clickable.justintvizle
 ##body > div[class="splash splash-at"][id]
