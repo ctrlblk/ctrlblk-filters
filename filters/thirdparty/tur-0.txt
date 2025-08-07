@@ -1,10 +1,10 @@
 ![Adblock Plus 2.0]
-! Checksum: O2Far/RUVYydy3OJN+7wDQ
-! Diff-Path: ../patches/13/13-s-1754435461-3600.patch
+! Checksum: ixr+/6/vv1rAGsm6wtT0XA
+! Diff-Path: ../patches/13/13-s-1754507527-3600.patch
 ! Title: AdGuard Turkish filter
 ! Description: Filter list that specifically removes ads on websites in Turkish language.
-! Version: 2.0.58.61
-! TimeUpdated: 2025-08-05T23:07:16+00:00
+! Version: 2.0.58.67
+! TimeUpdated: 2025-08-06T19:08:15+00:00
 ! Expires: 5 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -1489,6 +1489,9 @@ dirilispostasi.com,turkuazgazetesi.net,yenialanya.com,bugunkocaeli.com.tr,cagdas
 !
 ! NOTE: Specific rules
 !
+basarisiralamalari.com###ad-container
+basarisiralamalari.com##.arkaresimmobil
+||vkfilmizlee.com/betist-728.gif
 borsadirekt.com##.voa > a[href]
 elisa1.lat##.hentry > .ivr
 haberler.com##.news-icerik > .new3-video-container > div[style="width:300px; height:100px; margin:0 auto;"]
@@ -1592,11 +1595,12 @@ gdh.digital##.col-start-1 > .my-6 > .items-center > .relative:has(> .block > .ad
 ||istanbulticaretgazetesi.com/uploads/ads/
 ||r.resimlink.com/*.gif
 iscihaber.net##.detailside-inner-ad-cont
-yabancidizi.*##ad
-yabancidizi.*###router-view > div:not([class],[id]) > div[class*="bg-\[rgb"]:has(> .grid:only-child > .w-full > ad)
-yabancidizi.*###router-view > div > div:not([class],[id]) > div[class*="bg-\[rgb"]:has(> .grid:only-child > .w-full > ad)
-yabancidizi.*###router-view > div > div:not([class],[id]) > div[class*="bg-\[rgb"]:has(> .grid:only-child > ad + ad + ad)
-yabancidizi.*##div[class*="bg-\[rgb"] > div:has(> div:only-child > a:first-child + button:last-child)
+roketdizi.live,dizilla.club,yabancidizi.*##ad
+roketdizi.live,dizilla.club,yabancidizi.*###router-view > div:not([class],[id]) > div[class*="bg-\[rgb"]:has(> .grid:only-child > .w-full > ad)
+roketdizi.live,dizilla.club,yabancidizi.*###router-view > div > div:not([class],[id]) > div[class*="bg-\[rgb"]:has(> .grid:only-child > .w-full > ad)
+roketdizi.live,dizilla.club,yabancidizi.*###router-view > div:not([class],[id]) > div[class*="bg-\[rgb"]:has(> .grid:only-child > ad + ad + ad)
+roketdizi.live,dizilla.club,yabancidizi.*###router-view > div > div:not([class],[id]) > div[class*="bg-\[rgb"]:has(> .grid:only-child > ad + ad + ad)
+roketdizi.live,dizilla.club,yabancidizi.*##div[class*="bg-\[rgb"] > div:has(> div:only-child > a:first-child + button:last-child)
 kibrisgazetesi.com##div:is(.kanews-article-content, .execphpwidget) > a[target="_blank"] > img
 ||kibrisgazetesi.com/wp-content/uploads/2024/04/BJ440-PLUS.gif
 ||hlktrpl.cfd/*.xml
@@ -1787,7 +1791,7 @@ gazeteipekyol.com##.prospeed_demo_banner
 mackolik.com##div[class^="mpu"]
 ||digiturkburada.com.tr/images/digiturk-internet-banner-ns.png$third-party
 cioupdate.com.tr##a[target="_blank"] > img[alt]
-1000kitap.com##section.dr.w-full.min-h-100vh > div.relative:has(span:contains(Reklam))
+1000kitap.com#?#section.dr.w-full.min-h-100vh > div.relative:has(span:contains(Reklam))
 uludagsozluk.com##div[class^="adulu_col-"]
 webtekno.com##.content-body__detail > p > a[href^="https://turk.net/gigafiber"]
 webtekno.com##.content-body__detail > p:has(> a.box-link ~ strong)
@@ -5458,6 +5462,9 @@ hdfilmcehennem.live#$##kendisi { display: block!important; }
 oyunu.com.tr#$##bir.oynama { display: none !important; }
 oyunu.com.tr#$##iki.oynama { display: block !important; }
 !
+! canlimaclar*.sbs - frequently changed domains
+[$domain=/canlimaclar\d+\.sbs/]##+js(set-constant, config.advertisement.enabled, false)
+!
 ! goblintvizle*.live - frequently changed domains
 ||goblintvizle*.live/Uploads/*_bckg.jpg
 [$domain=/goblintvizle\d+\.live/]##div[style="position:fixed;height:100%;z-index:1;width:100%"]
@@ -5581,6 +5588,8 @@ canlikolik.my,canlikolik1.my,canlikolik2.my,canlikolik3.my,canlikolik4.my,canlik
 ||izlemac*.sbs/wp-content/uploads/*.gif
 ! mactanmaca*.shop - frequently changed domains
 ||mactanmaca*.shop//wp-content/*.gif
+! aglint-disable-next-line invalid-modifiers
+[$domain=/mactanmaca\d+\.shop/]##+js(set-constant, config.advertisement.enabled, false)
 [$domain=/mactanmaca\d+\.shop/]##div[data-isbd-main-container] > section > div.hidden-xs.text-center
 [$domain=/mactanmaca\d+\.shop/]##+js(set-cookie, reklamgosterimx, ok)
 !
@@ -6120,6 +6129,8 @@ adguard.info,adguard.com,adguard.app##.hello_from_adguard_turkish
 !
 !
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/210814
+||imasdk.googleapis.com/js/sdkloader/ima3.js$script,redirect=google-ima.js,domain=memurlar.net
 ! https://github.com/AdguardTeam/AdguardFilters/issues/203257
 roketdizi.*#@#div[id^="gpt_ad_"]
 ! https://github.com/easylist/easylist/issues/21595
