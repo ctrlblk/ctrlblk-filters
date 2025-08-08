@@ -1,10 +1,10 @@
 ![Adblock Plus 2.0]
-! Checksum: 4vQiTujoVdWroGWmDXBMag
-! Diff-Path: ../patches/9/9-s-1754540864-3600.patch
+! Checksum: /ik9EeqU+R0rhICxVZTKJw
+! Diff-Path: ../patches/9/9-s-1754627270-3600.patch
 ! Title: AdGuard Spanish/Portuguese filter
 ! Description: Filter list that specifically removes ads on websites in Spanish, Portuguese, and Brazilian Portuguese languages.
-! Version: 2.0.31.23
-! TimeUpdated: 2025-08-07T04:23:49+00:00
+! Version: 2.0.31.29
+! TimeUpdated: 2025-08-08T04:23:48+00:00
 ! Expires: 5 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -1670,6 +1670,8 @@ pulzo.com#$##pulzo-header { position: static !important; }
 maxvip.site,guiavidaesaude.com,saudeecomida.com,comidaefamilia.food,meufinanceiro.org,investimentosfacil.online,fomedereceitas.online,blog.whatsappgb.top,infoinvest.org,receitastop.click,gastroponto.com##+js(set-local-storage-item, last_ads, yes)
 modsimuladores.com,vejaideias.com.br,jogoscompleto.xyz##+js(adjust-setTimeout, /atualizar|hided/, *, 0.001)
 ! Generic, because they are using short living domains
+! uBO specific
+*#$##colunas #framed > #player.hided { display: block !important; }
 !
 ! https://github.com/AdguardTeam/AdguardFilters/issues/177517
 elmueble.com#$#header { top: 0 !important; }
@@ -1961,6 +1963,12 @@ c5n.com,t13.cl,solowrestling.mundodeportivo.com,todojujuy.com,mendozapost.com,me
 !
 ! NOTE: Specific rules
 !
+cooperativa.cl##.publicidad_dfp
+cooperativa.cl##.publicidad-torre
+cooperativa.cl##.contenedor-sticky
+cooperativa.cl,latina.pe##.u-the-banner
+wapa.pe##.recent__wrapper:has(> div[class^="BlockCuponidad_"])
+larepublica.pe##div[class^="BlockCuponidad_wrapper-"]
 lance.com.br##.sticky.z-0:has(> div > div[id^="quadrado"])
 lance.com.br##.quadradoFixo
 lance.com.br###div_rodape
@@ -2698,7 +2706,7 @@ mobills.com.br##.adsgpt
 mobills.com.br###ad-rewarded
 donghuas.top#?##sidebar > .section:has(> .releases > h3:only-child:contains(/^Ads$/))
 manhwas.net##aside.principal > .info-episode:has(> .row:only-child > .col-12[style*="height:"]:only-child > .adsbyexoclick)
-eldeber.com.bo##div[class^="publicidad-"]
+peru21.pe,eldeber.com.bo##div[class^="publicidad-"]
 globo.com###taboola-mid-article-saiba-mais
 exame.com##body > section.grid > section.hidden:has(> object[class^="ad-pos"])
 exame.com##body > section.grid > section.relative.col-span-12:not([id]):has(.adsTextBetweenLines)
@@ -5579,6 +5587,7 @@ adguard.info,adguard.com,adguard.app##.hello_from_adguard_spanish
 ! Bad:  @@||example.org^$stealth (should be in AdGuard Base - allowlist_stealth.txt)
 !
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/210926
 ! https://github.com/AdguardTeam/AdguardFilters/issues/203562
 @@||imasdk.googleapis.com/pal/sdkloader/pal.js$domain=mais.sbt.com.br
 ! https://github.com/AdguardTeam/AdguardFilters/issues/202097
