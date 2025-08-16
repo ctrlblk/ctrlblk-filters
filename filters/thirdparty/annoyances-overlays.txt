@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: EasyList – Newsletter Notices
-! Last modified: Thu, 14 Aug 2025 18:57:55 +0000
+! Last modified: Sat, 16 Aug 2025 04:01:42 +0000
 ! Expires: 7 days (update frequency)
 ! *** easylist:template_header.txt ***
 !
@@ -3893,6 +3893,7 @@ thecooldown.com##.has-medium-font-size:has-text(Join our free newsletter)
 thebarbedwire.com##.has-secondary-background-color:has-text(Subscribe)
 babylonbee.com##.hidden:has-text(Fake news)
 esports.gg##.inset-0.fixed:has-text(Sign up)
+dexerto.com##.lg\:grid-cols-\[445px_1fr\].gap-y-10 > div:has-text(Sign up to Dexerto)
 autonews.com##.lg\:u-max-w-\[345px\]:has-text(Sign up)
 mensjournal.com##.m-detail--body > p:has-text(Sign up for the)
 dexerto.com##.mb-16:has-text(Sign up)
@@ -4044,7 +4045,7 @@ earlybirdbooks.com,openroadmedia.com,theportalist.com##.copyRight-div
 !! .NewsletterBox
 marieclaire.fr##.NewsletterBox
 !! .ml-subscribe-form
-dailynewshungary.com,designersbrasileiros.com.br,fosspost.org,justrunlah.com,michaelwest.com.au,nanowerk.com,osxdaily.com,roadiscalling.com,upinthesky.nl##.ml-subscribe-form
+aeplay.org,dailynewshungary.com,designersbrasileiros.com.br,fosspost.org,justrunlah.com,michaelwest.com.au,nanowerk.com,osxdaily.com,roadiscalling.com,upinthesky.nl##.ml-subscribe-form
 !! .subscription
 6sqft.com,alhayat.tv,alquds.co.uk,augustman.com,brighteon.com,cgsociety.org,cityam.com,hagerty.co.uk,healthboards.com,infosecurity-magazine.com,lifestyleasia.com,livejournal.com,news.bg,noticiasmagazine.pt##.subscription
 !! .sign-up
@@ -5865,6 +5866,7 @@ ilgiorno.it,ilrestodelcarlino.it,iltelegrafolivorno.it,lanazione.it,quotidiano.n
 ! Japanese
 bluetti.jp###dynamic-react-root + div:has(> div.needsclick input[id^="email_"])
 rocket-boys.co.jp##.fixed-bottom
+domani.shogakukan.co.jp##.mailmagazine_area
 mastory.jp##.p-article-mail
 somu-lier.jp##.popup-mailmaga
 twilog.togetter.com##.subscription_banner
@@ -6033,7 +6035,7 @@ doctorofcredit.com#@#.wpdiscuz-subscribe-bar
 ! fanboy_newsletter_shopping_allowlist_general_hide.txt
 
 ! Title: uBlock filters – Other Annoyances
-! Last modified: Fri, 15 Aug 2025 01:56:06 +0000
+! Last modified: Fri, 15 Aug 2025 09:32:15 +0000
 ! Expires: 7 days
 ! Description: Filters optimized for uBlock Origin, to be used with EasyList's and/or Adguard's "Other Annoyances" list(s)
 ! License: https://github.com/uBlockOrigin/uAssets/blob/master/LICENSE
@@ -12766,7 +12768,7 @@ hoca4u.com##+js(set, document.onmousedown, noopFunc)
 ! https://github.com/uBlockOrigin/uAssets/issues/21554
 lowcygier.pl##+js(aeld, error, browser-plugin)
 
-! https://community.brave.com/t/asheville-com-ad-appearing/522978
+! https://community.brave.app/t/asheville-com-ad-appearing/522978
 asheville.com##+js(nostif, adblock)
 
 ! https://github.com/uBlockOrigin/uAssets/issues/21577
@@ -13673,7 +13675,7 @@ bcs16.ro##+js(aopw, document.oncontextmenu)
 time.is###attention
 time.is##html:style(overflow: auto !important;)
 
-! https://community.brave.com/t/bilibili/601806
+! https://community.brave.app/t/bilibili/601806
 !#if !cap_html_filtering
 bilibili.com##+js(aost, player.pause, /stackDepth:(9|10).+https:[./0-9a-z]+\/video\.[0-9a-f]+\.js:1\d{2}:1.+\.emit/)
 bilibili.com#@#+js(aost, player.pause, /[0-9a-f]{40}\.js:1\d{2}([\S\s]+\.emit.+core\.){3}/)

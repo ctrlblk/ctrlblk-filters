@@ -1,10 +1,10 @@
 ![Adblock Plus 2.0]
-! Checksum: 4YJ6oRRF1MXUax1wL8yJbQ
-! Diff-Path: ../patches/16/16-s-1755169860-3600.patch
+! Checksum: uF2hFThHG2u2VSrqOIvzzA
+! Diff-Path: ../patches/16/16-s-1755256272-3600.patch
 ! Title: AdGuard French filter
 ! Description: Liste FR + AdGuard French filter. Filter list that specifically removes ads on websites in French language.
-! Version: 2.0.53.88
-! TimeUpdated: 2025-08-14T11:07:09+00:00
+! Version: 2.0.53.90
+! TimeUpdated: 2025-08-15T11:07:18+00:00
 ! Expires: 5 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -814,6 +814,10 @@ $xmlhttprequest,third-party,denyallow=mega.co.nz|mega.nz|libs.baidu.com|ilfcdn.l
 !
 !
 !
+bebesetmamans.20minutes.fr##.bannerdesktop
+bebesetmamans.20minutes.fr##.custombannerads
+bebesetmamans.20minutes.fr##div[class^="box_ban"]
+||20minutes.fr/js/ads-*.min.js
 lesoir.be##.r-panel--bandeau
 clubic.com##.ad-container:not(#style_important)
 hentaivost.fr##+js(remove-node-text, script, __ADX_slot_id)
@@ -879,7 +883,7 @@ autoplus.fr###text-16
 enigme-facile.fr##div[id^="customhtml-"]:has(> center > .pepsia_player)
 filmoflix.ad,papadustream.*##.g-buttons
 lanouvellerepublique.fr##.dfp
-journaldesseniors.20minutes.fr##.ad
+slate.fr,journaldesseniors.20minutes.fr##.ad
 letribunaldunet.fr##div[class^="code-block code-block-"][style^="margin:"]
 vidal.fr##.content-gam
 1jour1film.*##+js(remove-attr, href, #clickfakeplayer)

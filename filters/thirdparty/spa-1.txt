@@ -1,10 +1,10 @@
 ![Adblock Plus 2.0]
-! Checksum: EcffcTomWnwl3g1xF3XnYQ
-! Diff-Path: ../patches/9/9-s-1755231465-3600.patch
+! Checksum: EPOJD9VcC3+wFD2KLFlzLg
+! Diff-Path: ../patches/9/9-s-1755292235-3600.patch
 ! Title: AdGuard Spanish/Portuguese filter
 ! Description: Filter list that specifically removes ads on websites in Spanish, Portuguese, and Brazilian Portuguese languages.
-! Version: 2.0.31.42
-! TimeUpdated: 2025-08-15T04:13:52+00:00
+! Version: 2.0.31.47
+! TimeUpdated: 2025-08-15T21:06:38+00:00
 ! Expires: 5 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -25,6 +25,7 @@
 ! https://forum.adguard.com/index.php?threads/ivoox-com-podcasts-issues.29530/
 ! ||addevweb.com^$third-party
 !
+||mathilde-ads.com^
 ||jogoforte.com^
 ||publyads.jstag.space^
 ||crummydevioussucculent.com^$all
@@ -196,11 +197,13 @@
 starckfilmes.*##+js(addEventListener-defuser, click, overlay-notification)
 ! https://github.com/AdguardTeam/AdguardFilters/issues/211280
 ||manhastro.net/wp-content/plugins/modal-anuncio-bloqueador/
+! https://github.com/AdguardTeam/AdguardFilters/issues/211371
+! https://github.com/AdguardTeam/AdguardFilters/issues/211370
 ! https://github.com/AdguardTeam/AdguardFilters/issues/211294
-levante-emv.com##+js(no-fetch-if, googlesyndication)
-||levante-emv.com/api/delivery/knowledge?callback=window._an.setABShow
-@@||trafico.prensaiberica.es/adm/min/pb_wrapper/prebid.js$domain=levante-emv.com
-@@||trafico.prensaiberica.es/adm/min/pb_wrapper/pbwrapper.js$domain=levante-emv.com
+/api/delivery/knowledge?callback=window._an.setABShow
+laprovincia.es,informacion.es,levante-emv.com##+js(no-fetch-if, googlesyndication)
+@@||trafico.prensaiberica.es/adm/min/pb_wrapper/prebid.js$domain=levante-emv.com|informacion.es|laprovincia.es
+@@||trafico.prensaiberica.es/adm/min/pb_wrapper/pbwrapper.js$domain=levante-emv.com|informacion.es|laprovincia.es
 ! https://github.com/AdguardTeam/AdguardFilters/issues/210710
 ||cdn.bcdn.zip/scripts/desabilitar-botao2.js
 netcinetv.*##+js(noeval-if, break;case)
@@ -1971,6 +1974,14 @@ c5n.com,t13.cl,solowrestling.mundodeportivo.com,todojujuy.com,mendozapost.com,me
 !
 ! NOTE: Specific rules
 !
+animalpolitico.com##div[id^="na"]:has(> iframe[id^="google_ads"])
+elfinanciero.com.mx##.b-ads-block
+excelsior.com.mx##.banner-content-ads
+excelsior.com.mx###wrapper-mgid-sidebar
+eltiempo.com##.c-pauta
+larepublica.co##.robapagina
+larepublica.co##.top_banner
+elcolombiano.com###pauta__ppl
 hentai-ia.com##.DvrCn
 hentai-ia.com###ctaBtn
 hentai-ia.com##+js(window.open-defuser)
