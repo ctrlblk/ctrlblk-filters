@@ -19187,6 +19187,7 @@ telegraf.com.ua##[data-text^="Новини партнер"]
 uazmi.org##[data-text^="Рекламн"]
 my.ua##[data-top-iid]
 drive2.ru#?#[data-track]:-abp-has(> div[id]:empty + script)
+rbc.ua##[data-type="_mgwidget"]
 dotabuff.com##[data-type="elo-placement"]
 historyrusedu.ru##[data-uk-grid-match*="target"]
 conversion.im##[data-url*="/banners/"]
@@ -21719,7 +21720,7 @@ sarafannoeradio.org##img[width="829"][height="90"]
 demiart.ru##img[width="900"][height="100"]
 post-tracker.ru##img[width^="8"][height^="3"][src$=".gif"]
 gizmod.ru##index > .entry
-audiotag.info,computer76.ru,enovosty.com,epravda.com.ua,finget.ru,fraza.com,inforesist.org,ostro.org,real-vin.com,stravy.net,videoredaktor.ru,volyninfo.com##ins
+audiotag.info,computer76.ru,enovosty.com,epravda.com.ua,finget.ru,fraza.com,inforesist.org,ostro.org,rbc.ua,real-vin.com,stravy.net,videoredaktor.ru,volyninfo.com##ins
 peugeot-club.net,vjazhi.ru##ins[style^="display:inline"]
 tvc.ru#?#li.play-button-wrap:-abp-has(> div > [id^="adfox_"])
 gofrag.ru#?#li:-abp-has(> .uk-accordion-title ~ [class] a[href*=".ufiler.pro/"])
@@ -22469,7 +22470,7 @@ mail.ru##.ph-project-promo-container
 ~e.mail.ru,mail.ru,sportmail.ru##.viewbox__holder .viewbox__side
 ~e.mail.ru,mail.ru,sportmail.ru##.viewbox__holder .viewbox__side-loader ~ *
 ~e.mail.ru,mail.ru##[data-logger-parent="sidebarDoubleRight"]
-~e.mail.ru,mail.ru,sportmail.ru#?#[data-qa="WrapperContent"] div:-abp-has(> [data-rb-slot])
+~e.mail.ru,~kino.mail.ru,mail.ru,sportmail.ru#?#[data-qa="WrapperContent"] div:-abp-has(> [data-rb-slot])
 ~e.mail.ru,mail.ru,sportmail.ru##[data-rb-slot]
 ~e.mail.ru,mail.ru,sportmail.ru##[data-view^="Slot"][data-adq-id]
 ~e.mail.ru,mail.ru,sportmail.ru##a[class^="rb-"][href^="https://r.mail.ru/"][target="_blank"]
@@ -22628,6 +22629,9 @@ love.mail.ru##.TopBannerSlot
 love.mail.ru##.adv-contacts
 love.mail.ru##.banner_left
 love.mail.ru##.link-ad
+! VK Play
+vkplay.ru##.aside__banner
+vkplay.ru##div[class*="ArtBannerSkeleton"]
 !
 ! Блокировка ресурсов в основном на самом mail.ru
 //r.mail.ru/b$subdocument
@@ -22635,6 +22639,7 @@ love.mail.ru##.link-ad
 ||1l-hit.mail.ru^
 ||ad.mail.ru^$domain=~e.mail.ru|~octavius.mail.ru
 ||an.mail.ru/count/$domain=~e.mail.ru|~o2.mail.ru
+||api.vkplay.ru/*/banner_right/
 ||banners.mail.ru^$third-party
 ||bs.mail.ru^$image,domain=mail.ru
 ||help.mail.ru/mail/faq/adblock$popup,~third-party
@@ -23143,7 +23148,7 @@ rbc.ru#?#[data-vr-zone="Топ новости"] div:-abp-has(> a[href*="utm_camp
 rbc.ru##[data-yandex-name^="selfpromo_"]
 rbc.ru##[data-yandex-show="cards_marketplace_show"]
 rbc.ru##[data-yandex-show^="commercial_cards_"]
-autodaily.ru,autonews.ru,rbc.ru,rbc.ua,sportrbc.ru,utro.ru##[id^="unit_"]
+autodaily.ru,autonews.ru,rbc.ru,sportrbc.ru,utro.ru##[id^="unit_"]
 rbc.ru##a.video-player__details[target="_blank"]
 quote.ru##a[href*="bannersdisable_button"]
 sportrbc.ru##a[href*="erid="][target="_blank"]
@@ -28453,7 +28458,6 @@ mail.ru##.tabs-content > :first-child > a::after:style(position: unset !importan
 mail.ru##.tabs-content > :first-child > a:style(max-height: 5em !important; position: static !important)
 mail.ru##.tabs-content > :first-child ~ li:style(max-width: 660px !important)
 mail.ru##.tabs-content > :first-child:style(max-width: 750px !important)
-mail.ru##.tv-widget > .vk-video
 mail.ru##.weather_right-column .weather__block:style(height: auto !important)
 mail.ru##.weather_right-column .weather__description::after
 my.mail.ru##:not(.l-common__container) > div[style*="position"][style*="display"][style*="visible"][style*="opacity"][style*="background-color"]
@@ -28959,6 +28963,7 @@ inoreader.com##.adsbygoogle:style(display: block !important)
 vc.ru##.andropov_video:remove-attr(data-video-play-mode)
 yandex.by,yandex.kz,yandex.ru,yandex.uz##.app__wrapper div[style^="width: calc(100% "]:remove-attr(style)
 playground.ru#?#.article-content:-abp-has(> p > em:-abp-contains(erid:)) a[href][rel="nofollow"]:style(pointer-events: none !important; color: inherit !important)
+dtf.ru,vc.ru##.author__avatar video:remove-attr(autoplay)
 footboom.com,footboom.kz##.b-article-content > h2:has-text(букмекер)
 lostfilm.download,lostfilm.life,lostfilm.one,lostfilm.pro,lostfilm.today,lostfilm.tv,lostfilm.tw,lostfilm.uno,lostfilm.win,lostfilmtv.site,lostfilmtv.uno,lostfilmtv1.site,lostfilmtv2.site,lostfilmtv3.site,lostfilmtv4.site,lostfilmtv5.site##.body > .body:style(user-select: text !important; -moz-user-select: text !important; -webkit-user-select: text !important)
 dtf.ru,vc.ru##.comment-media > .andropov-video > video:remove-attr(autoplay)
@@ -29151,6 +29156,8 @@ news.mail.ru##+js(set-constant, __PHS._.props.html, {})
 ~3igames.mail.ru,~account.mail.ru,~auto.mail.ru,~biz.mail.ru,~bonus.mail.ru,~calendar.mail.ru,~calls.mail.ru,~cloud.mail.ru,~connect.mail.ru,~deti.mail.ru,~dobro.mail.ru,~e.mail.ru,~finance.mail.ru,~gibdd.mail.ru,~health.mail.ru,~help.mail.ru,~hi-tech.mail.ru,~horo.mail.ru,~kino.mail.ru,~lady.mail.ru,~love.mail.ru,mail.ru,~mcs.mail.ru,~minigames.mail.ru,~my.mail.ru,~news.mail.ru,~o2.mail.ru,~octavius.mail.ru,~okminigames.mail.ru,~otvet.mail.ru,~pets.mail.ru,~player-smotri.mail.ru,~pogoda.mail.ru,~top.mail.ru,~touch.mail.ru,~tv.mail.ru,~vfokuse.mail.ru,~widgets.mail.ru##+js(set-constant, document.title, null)
 ~3igames.mail.ru,~account.mail.ru,~auto.mail.ru,~biz.mail.ru,~blog.mail.ru,~bonus.mail.ru,~calendar.mail.ru,~calls.mail.ru,~cloud.mail.ru,~connect.mail.ru,~deti.mail.ru,~dobro.mail.ru,~e.mail.ru,~finance.mail.ru,~gibdd.mail.ru,~health.mail.ru,~help.mail.ru,~hi-tech.mail.ru,~horo.mail.ru,~kino.mail.ru,~lady.mail.ru,~love.mail.ru,mail.ru,~mcs.mail.ru,~minigames.mail.ru,~my.mail.ru,~news.mail.ru,~o2.mail.ru,~octavius.mail.ru,~okminigames.mail.ru,~otvet.mail.ru,~pets.mail.ru,~player-smotri.mail.ru,~pogoda.mail.ru,~top.mail.ru,~touch.mail.ru,~tv.mail.ru,~vfokuse.mail.ru,~widgets.mail.ru##+js(set-constant, mr._mimic.locator.transform, undefined)
 touch.mail.ru##.page__content__slide > .messagelist > div:not([cid]):not([style]):not([id]):not([class])
+mail.ru##.tv-widget > .vk-video
+mail.ru##.tv-widget > .vk-video:remove()
 /2promo.octavius.bundle.js$domain=mail.ru
 /res/*/VideoAutoplayFlow$script,domain=ok.ru
 ok.ru##[data-module*="banner"]
