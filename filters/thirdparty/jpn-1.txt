@@ -1,10 +1,10 @@
 ![Adblock Plus 2.0]
-! Checksum: ro8CHA+vSt+9VDLEPr9uyQ
-! Diff-Path: ../patches/7/7-s-1755350227-3600.patch
+! Checksum: IWQ96xZ321z4XzRT6StQSQ
+! Diff-Path: ../patches/7/7-s-1755491120-3600.patch
 ! Title: AdGuard Japanese filter
 ! Description: Filter that enables ad blocking on websites in Japanese language.
-! Version: 2.0.67.73
-! TimeUpdated: 2025-08-16T13:13:15+00:00
+! Version: 2.0.67.75
+! TimeUpdated: 2025-08-18T04:21:09+00:00
 ! Expires: 5 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -27,6 +27,7 @@
 ! not for DNS
 ||ias.rakuten.co.jp^$third-party,domain=~rakuten-co.jp|~rakuten.ne.jp
 !
+||live-lb.cc^$document
 ||live-lr.cc^$document
 ||live-qj.cc^$document
 ||ademon.net^
@@ -1898,7 +1899,6 @@ minigame.aeriagames.jp###aeriaVideoMainContainer
 rallys.online##div[class^="side_box"]
 freepdfcomic.eu###main > article[class="post"][style]
 shinshi-manga.net##div[style^="position: absolute; width: 25px; height: 25px; text-align: center; background-color"]
-shinshi-manga.net##+js(abort-current-script, document.createElement, waqool)
 1geki.jp##.sponsor-ad
 sumaholife-plus.jp##div[style="min-height: 250px; width: 100%;"]
 arukikata.co.jp##div[class^="c-"][class*="-banner"]:not(:has(.popin))
@@ -7235,7 +7235,7 @@ mdpr.jp##.c-adBottomOverlay
 sqool.net##.stickyunit
 animatetimes.com##.c-banner-common
 animatetimes.com##.c-banner-lg-site-jack
-onlinegamer.jp,mymo-ibank.com##div[class^="c-ad"]
+medley.life,onlinegamer.jp,mymo-ibank.com##div[class^="c-ad"]
 mag.japaaan.com##.area_a
 mag.japaaan.com##.after_go_next
 dekiru.net##.module-article-list-ad
