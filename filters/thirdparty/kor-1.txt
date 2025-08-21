@@ -1,7 +1,7 @@
 [uBlock Origin]
 ! Title: List-KR for uBlock Origin
 ! Description: List-KR for uBlock Origin. Maintained by the adblock community and AdGuard.
-! Version: 2025.0819.0
+! Version: 2025.0819.1
 ! Expires: 12 hours
 ! Homepage: https://github.com/List-KR/List-KR
 ! Support: https://list-kr-community.pages.dev/docs/
@@ -11,6 +11,7 @@
 !
 
 !#if ext_ublock
+||bridgelabs.kr^
 ||daro.so^
 ||adrop.io^
 ||adgirl.yes24.com^
@@ -530,6 +531,7 @@ m.cafe.naver.com##.banner_add.bottom:matches-path(/ca-fe\\/web\\/cafes\\/(steami
 /data/banner.json?$domain=~nintendo.*
 /ad-manager.min.js
 !
+*$denyallow=ilbe.com,script,xmlhttprequest,domain=ilbe.com
 ||i.postimg.cc^$domain=m-sooriya.tistory.com
 ||t1.daumcdn.net/top/daum/op/chanel/
 ||t1.daumcdn.net/top/daum/op/smartfarm/
@@ -1625,6 +1627,7 @@ eegosa.com##section[id*="_ads_"]
 ! ##div[id*="_AD"]
 sports.donga.com##div[id*="_AD"]
 
+ilbe.com###container > .vote_list:has(> a[href="/member/poll?idx=11594093073"])
 ilbe.com###sponser_ad_new
 ilbe.com###g123_game_ad_container_wrapper
 m.ruliweb.com##.main_center .line_deco_bottom:has(div[class^="ad_"]:only-child)
