@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: EasyList – Cookie Notices
-! Last modified: Fri, 22 Aug 2025 03:57:52 +0000
+! Last modified: Fri, 22 Aug 2025 15:50:07 +0000
 ! Expires: 7 days (update frequency)
 ! *** easylist:template_header.txt ***
 !
@@ -20242,7 +20242,7 @@ dryg.pl##div[class^="CookiesNoti"]
 !! .cookie-notice
 21group.at,acidcow.com,allangray.co.za,amaze.org,artdentis.com,autosolar.co,autosolar.pe,backaldrin.com,bankofengland.co.uk,bestlawyers.com,breadandbutter.ru,camgo.com,candaceowens.com,castlefineart.com,direct2u.co.uk,drgerard.eu,ecosia.org,estately.com,greenhouseseeds.nl,greenpeace.org,harveynichols.com,iihf.com,jetset-hairextensions.nl,kappahl.com,lightspeed.com,mageba-group.com,manpower.com.ar,manpowergroup.com.ar,mashable.com,monnik-dranken.nl,motocard.com,nbtc.go.th,nc-planica.si,ncfu.ru,news.sportbox.ru,onlinedrugtraining.com,pagetiger.com,pryor.com,publicpositions.com,rex-royal.ch,spartanien.de,tvsquared.com,viboom.com,vidal.ru,vixx.nl,wine-searcher.com,worldtestchampionship.com,xtreme.pt,zonstudio.nl##.cookie-notice
 !! #cookie-notice
-aala-apo-shop.de,anamariareceitas.com.br,aschendorff-buchverlag.de,avm-verlag.de,bahai-verlag.de,blog.oup.com,bonsfluidos.com.br,brasil.perfil.com,dersportverlag.de,epoch.ai,foodbloggermania.it,gamenode.app,ib3.org,imqgroupblogzine.it,infofranchising.it,kaliscan.com,kaliscan.io,kaliscan.me,karlpichler.it,ketteler-verlag.de,kuehlen-verlag.de,laaber-verlag.de,livelaw.in,maisnovela.com.br,manequim.com.br,mangabuddy.com,mangamirror.com,marciapiovesan.com.br,maroelamedia.co.za,measurementlab.net,mgjinx.com,novelbuddy.com,papinsport.com,peterzemmer.com,radio.menu,sax-verlag.de,skatedeluxe.com,slot-mania.it,storyblok.com,trcs.or.tz,viacarreira.com,vivasaudedigital.com.br,walfer.lu,xlab.si###cookie-notice
+aala-apo-shop.de,anamariareceitas.com.br,aschendorff-buchverlag.de,aventurasnahistoria.com.br,avm-verlag.de,bahai-verlag.de,blog.oup.com,bonsfluidos.com.br,brasil.perfil.com,dersportverlag.de,epoch.ai,foodbloggermania.it,gamenode.app,ib3.org,imqgroupblogzine.it,infofranchising.it,kaliscan.com,kaliscan.io,kaliscan.me,karlpichler.it,ketteler-verlag.de,kuehlen-verlag.de,laaber-verlag.de,livelaw.in,maisnovela.com.br,manequim.com.br,mangabuddy.com,mangamirror.com,marciapiovesan.com.br,maroelamedia.co.za,measurementlab.net,mgjinx.com,novelbuddy.com,papinsport.com,peterzemmer.com,radio.menu,sax-verlag.de,skatedeluxe.com,slot-mania.it,storyblok.com,trcs.or.tz,viacarreira.com,vivasaudedigital.com.br,walfer.lu,xlab.si###cookie-notice
 !! #toast-container
 alppimatkat.fi,als.royalholloway.ac.uk,ecosto.fi,homenet.no,kialo.com,kindredgroup.com,kuntarekry.fi,lokinn.com,nelly.com,nlyman.com,quedo.es,schoolworkspace.co.uk,sozialleistungen.info,startnext.com,telecomtv.com,uslugi.mosreg.ru###toast-container
 !! .toast
@@ -20701,6 +20701,7 @@ primevideo.com##.DVWebNode-conditional-site-wide-wrapper:has([data-testid="conse
 news.abs-cbn.com##.MuiBox-root:has-text(Welcome,)
 memefi.club##.MuiStack-root:has-text(Personalised ads)
 honeygain.com##.Wrapper--1lbmq00:has-text(This website uses cookies)
+bing.com##.b_hPanel:has-text(Terms of Use)
 beta.bom.gov.au##.bom-form-alert--info.bom-form-alert:has-text(We use cookies)
 capcut.com##.box-PQtsNf:has-text(Privacy Policy)
 capcut.com##.box-beCrD2:has-text(cookies)
@@ -27860,7 +27861,7 @@ concursolutions.com,forbes.com,formula1.com,fortune.com,proximus.be,proximustv.b
 @@||zensus2022.de/SiteGlobals/Modules/CookieBanner/*/CookieBanner.json?$~third-party,xmlhttprequest
 
 ! Title: uBlock filters – Cookie Notices
-! Last modified: Wed, 20 Aug 2025 17:02:54 +0000
+! Last modified: Fri, 22 Aug 2025 09:18:05 +0000
 ! Expires: 7 days
 ! Description: Filters optimized for uBlock Origin, to be used with EasyList's and/or Adguard's "Cookie Notices" list(s)
 ! License: https://github.com/uBlockOrigin/uAssets/blob/master/LICENSE
@@ -27910,6 +27911,10 @@ partner.co.il##.cookie-message
 ||iubenda.com^$domain=my-personaltrainer.it
 ! https://github.com/uBlockOrigin/uAssets/issues/29719
 musee-moyenage.fr##body.tac-modal-open:style(overflow: auto !important;)
+! https://github.com/uBlockOrigin/uAssets/issues/29738
+!#if ext_ubol
+@@||usercentrics.eu^$script,xhr,domain=zalando.be|zalando.com|zalando.es|zalando.fr|zalando.it|zalando.nl|zalando.pl|zalando.se
+!#endif
 
 
 !!! Trusted scriptlets------------------------------------------------------------
