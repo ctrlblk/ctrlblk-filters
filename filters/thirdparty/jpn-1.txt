@@ -1,10 +1,10 @@
 ![Adblock Plus 2.0]
-! Checksum: ygmNdfFnU/BvMKSdHO9/qg
-! Diff-Path: ../patches/7/7-s-1756239084-3600.patch
+! Checksum: mpRrjweUeuFv4mAEcsFUEQ
+! Diff-Path: ../patches/7/7-s-1756318383-3600.patch
 ! Title: AdGuard Japanese filter
 ! Description: Filter that enables ad blocking on websites in Japanese language.
-! Version: 2.0.68.6
-! TimeUpdated: 2025-08-26T20:07:21+00:00
+! Version: 2.0.68.10
+! TimeUpdated: 2025-08-27T18:09:06+00:00
 ! Expires: 5 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -819,10 +819,9 @@ crefan.jp##+js(no-setTimeout-if, objDef.resolve)
 h-ken.net##+js(set-constant, adBlockDetected, noopFunc)
 ! https://github.com/AdguardTeam/AdguardFilters/pull/61513/
 @@||my0nio.seesaa.net^$generichide
-! https://github.com/AdguardTeam/AdguardFilters/issues/60864
-/modal-dist/index.js$script,domain=ananweb.jp|newsweekjapan.jp
+! https://github.com/AdguardTeam/AdguardFilters/issues/211976
 ! https://github.com/AdguardTeam/AdguardFilters/issues/137690
-coron.tech##+js(remove-attr, class, article[itemprop="articleBody"], stay)
+coron.tech##+js(remove-attr, class, .quigo, stay)
 connect.coron.tech##+js(abort-current-script, jQuery, decodeURIComponent)
 ! https://github.com/AdguardTeam/AdguardFilters/issues/52566
 @@||ad-contents.jp^$generichide
@@ -1705,8 +1704,8 @@ _ap/signin*?_encoding=UTF8&openid.assoc_handle=jpflex&openid.claimed_id=&action=
 .com/ae/login.php?openid.pape.max_auth_age=0&openid.return_to=%$document
 !
 /^https?:\/\/(?:j[ap]|qq)\d{7,8}\.[a-z]{7,8}\.[a-z]{2,8}\//$document,to=agency|art|asia|auction|bar|beauty|beer|best|biz|business|cam|cards|click|cloud|coupons|digital|diy|fashion|food|forum|gay|guru|info|life|live|living|link|ltd|my|property|pw|rocks|run|sbs|shop|store|studio|tattoo|tech|today|top|uno|work,match-case
--co-jp-*.com/$document,to=cfd|com|sbs
--co-jp.*.com/$document,to=cfd|com|sbs
+-co-jp-*.*/$document,to=cfd|com|sbs
+-co-jp.*.*/$document,to=cfd|com|sbs
 /product_details?id=$document,to=click
 ://smbc.$document,to=cn|com|top
 ://smbccard*.$document,to=club
@@ -1808,13 +1807,13 @@ gundamlog.com###more > iframe[src^="https://richlink.blogsys.jp"]
 !
 ! NOTE: Specific rules
 !
+kabutan.jp###kensaku_form + div.main_kensaku_div2_2.font-sans
+kyoto-np.co.jp###ad-footer-overlay
 xenospectrum.com##div[class^="gb-element-"]:has(> div[class^="gas_fallback-ad_"])
 feedwatcher.net###wrapper > div.feed-block > div:has(> ins.adsbygoogle[data-ad-slot])
 news.tv-asahi.co.jp##.ad-timeline-summary-taboola
 ||avdb-app.com/_next/image?url=%2Faffi%2F
-avdb-app.com##div[class^="aff-banner_wrapper__"]
-avdb-app.com##.h-\[380px\]
-avdb-app.com##.h-\[380px\] ~ div[class^="html-embed-panel_container__"]
+avdb-app.com##.bg-\[\#f8f8f8\].p-4.mb-4:has(> div > p.font-bold + a[rel])
 misatopi.com##.bnr-list
 shiga2.jp##div[class^="w-single"] > div.widget_custom_html
 shiga2.jp##a[rel="nofollow sponsored noopener"][style="word-wrap: break-word;"]
@@ -1938,7 +1937,7 @@ sotolover.com###codewidget-7
 ||sotolover.com/wp-content/uploads/2024/11/afBanner_sideTop.jpg
 0115765.com##ins.adsbygoogle[data-ad-client]
 0115765.com##ins.adsbygoogle[data-ad-slot]
-jiwasoku.com###koukokuleftu1
+eronetagazou.com,jiwasoku.com##[id^="koukokuleftu"]
 web-greenbelt.jp###mybox > div.widget_st_custom_html_widget
 web-greenbelt.jp##a[href^="https://web-greenbelt.jp/st-manager/click/track?"]
 mycaddie.jp##.c-modal__container
@@ -3602,7 +3601,6 @@ freem.ne.jp##.game-ad-bottom
 nikkan-spa.jp##.tag-box > div.series-img
 game16.net##.g-txt
 ||pvpoke-re.com/nitro.js
-pvpoke-re.com##div[id^="nitro"]
 yjgames.gamedistribution.com#?#.MuiPaper-elevation.MuiPaper-rounded:has(> div[class^="css-"] > div[id^="idhb-"])
 game.yomipo.yomiuri.co.jp,kantan.game##.c-modal-light-score__ad-frame
 ||dabun.net/js/addAmz.js
@@ -7099,7 +7097,7 @@ orenoraresne.com###text-58
 orenoraresne.com###text-59
 orenoraresne.com###text-60
 toolmania.info###text-63
-toolmania.info###text-64
+eronetagazou.com,toolmania.info###text-64
 toolmania.info###text-65
 sqool.net###text-67
 oreteki-design.com###text-71
@@ -9727,7 +9725,7 @@ alc.co.jp###news > ul
 alc.co.jp###container > div[style^="width:1100px; "]
 ||aacdn.jp/js/aa/matome/ad.js
 news.allabout.co.jp##.layout_sidebar > div.obtain-height
-allabout.co.jp###fourm_video
+phileweb.com,allabout.co.jp###fourm_video
 allabout.co.jp##div[id^="sys_aa_"]
 allabout.co.jp##div[id^="sys-"]
 allabout.co.jp##.aa_content-side > div[data-tracking-zone] > div.obtain-height
@@ -11582,10 +11580,6 @@ adguard.info,adguard.com,adguard.app##.hello_from_adguard_japanese
 !
 !
 !
-! https://github.com/AdguardTeam/AdguardFilters/issues/211976
-coron.tech#@#.quigo
-@@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=coron.tech
-@@||ad.jp.ap.valuecommerce.com/servlet/jsbanner$domain=coron.tech
 ! https://github.com/AdguardTeam/AdguardFilters/issues/211118
 @@||s-ad.rmp.rakuten.co.jp/ad$domain=24.rakuten.co.jp
 ! fix reward
