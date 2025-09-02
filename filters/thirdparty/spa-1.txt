@@ -1,10 +1,10 @@
 ![Adblock Plus 2.0]
-! Checksum: yji8d7oqSw7b8wVWwAzQGQ
-! Diff-Path: ../patches/9/9-s-1756437905-3600.patch
+! Checksum: J9d1JwTltfZwEYznxbXutQ
+! Diff-Path: ../patches/9/9-s-1756786322-3600.patch
 ! Title: AdGuard Spanish/Portuguese filter
 ! Description: Filter list that specifically removes ads on websites in Spanish, Portuguese, and Brazilian Portuguese languages.
-! Version: 2.0.31.60
-! TimeUpdated: 2025-08-29T03:21:10+00:00
+! Version: 2.0.31.67
+! TimeUpdated: 2025-09-02T04:08:02+00:00
 ! Expires: 5 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -193,6 +193,20 @@
 !
 !
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/212613
+manhastro.net#@#ins.adsbygoogle[data-ad-slot]
+manhastro.net#@#ins.adsbygoogle[data-ad-client]
+manhastro.net##+js(no-fetch-if, googleads.g.doubleclick.net)
+manhastro.net##+js(no-fetch-if, googletagmanager.com)
+manhastro.net##+js(no-fetch-if, connect.facebook.net)
+manhastro.net##+js(no-fetch-if, static.ads-twitter.com)
+manhastro.net##+js(no-fetch-if, google-analytics.com)
+manhastro.net##+js(no-requestAnimationFrame-if, ULTIMATE_BAIT_REMOVED)
+! https://github.com/AdguardTeam/AdguardFilters/issues/212429
+! Generic fix for frequently changed "random" domains
+##body > .content.uid ~ .footer + #adblock-modal
+financasdeouro.info,receitascaseiras.xyz,dicasreceita.com,tudoesportes.online###adblock-modal
+financasdeouro.info,receitascaseiras.xyz,dicasreceita.com,tudoesportes.online##+js(abort-current-script, EventTarget.prototype.addEventListener, adsbygoogle)
 ! https://github.com/AdguardTeam/AdguardFilters/issues/211362
 starckfilmes.*##+js(addEventListener-defuser, click, overlay-notification)
 ! https://github.com/AdguardTeam/AdguardFilters/issues/211280
@@ -1972,6 +1986,11 @@ c5n.com,t13.cl,solowrestling.mundodeportivo.com,todojujuy.com,mendozapost.com,me
 !
 ! NOTE: Specific rules
 !
+nacionflix.com###__next > div[class^="jsx-"]:has(> div.content > div.module > div.bannercover)
+independentespanol.com###billboard-wrapper
+independentespanol.com##.teads
+independentespanol.com##.mpu-item
+topesdegama.com##.gaz-ad
 magazineluiza.com.br##div[data-testid="mod-adsbanner"]
 elboletin.com##div[data-widget_type="html.default"]
 zonamovilidad.es##div[class^="caja-publi-"]
@@ -2297,7 +2316,7 @@ kns.cookni.net,twobluescans.com##.row > div.widget:has(> div.c-widget-wrap ifram
 threedaos.zdrz.xyz,mewingzone.com,samuraiscan.cookni.net,kns.cookni.net,twobluescans.com##div[id^="ad-container"]
 elsiglodedurango.com.mx##.col-4 > .h-900:has(> .pub)
 estadiodeportes.mx###__next > div.grid:has(> div.content > div.module > header + div.bannercover)
-estadiodeportes.mx##.bannercover
+nacionflix.com,estadiodeportes.mx##.bannercover
 portafolio.co##.gpt-slot-satelite-container
 portafolio.co##div[class^="articulo__pauta"]
 portafolio.co##.col1:has(> .articulo__pauta)
@@ -2356,7 +2375,6 @@ clarosports.com##div[class^="footer-card-evento"] > a[target="_blank"]
 dn.pt###navbar > div[id^="widget-"] > div[class^="widget-module__"]
 hola.com##div[class*="variation"]
 gamestorrents.*##img[onclick^="window.open('https://click.ggpickaff.com/"]
-softonic.com##div[data-meta="placeholder-slot"]
 noticiasaominuto.com##.dummyPub
 noticiasaominuto.com#?#.mb-8 > div:has(> h3:contains(Recomendados para si))
 noticiasaominuto.com##div[style]:has(> a[href="/n/2697964"])
@@ -3347,7 +3365,7 @@ cuevana.fm##a[href^="/register"]
 inforchannel.com.br##body .height-ads
 inforchannel.com.br##iframe[src^="https://banners.inforchannel.com.br/"]
 folhavitoria.com.br##.card-advertising
-megacurioso.com.br,uol.com.br##.up-floating
+tecmundo.com.br,megacurioso.com.br,uol.com.br##.up-floating
 redesuldenoticias.com.br##div[id="modal-noticias"][visualizacoes="69502"]
 redesuldenoticias.com.br##.modal-backdrop
 diariodepernambuco.com.br##.PubTopo
