@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: EasyList – Cookie Notices
-! Last modified: Wed, 03 Sep 2025 03:50:50 +0000
+! Last modified: Thu, 04 Sep 2025 02:10:04 +0000
 ! Expires: 7 days (update frequency)
 ! *** easylist:template_header.txt ***
 !
@@ -17563,7 +17563,7 @@ cartoonnetwork.com###tos-bar
 toughnickel.com###tos_update_band
 weather.com###tou-notice
 tp-link.com###tp-cookie
-tp-link.com###tp-cookie-banner
+omadanetworks.com,tp-link.com###tp-cookie-banner
 applytojob.com###tracking-consent-banner
 ergonbike.com###tracking-modal
 stingray.com###tracking-popup
@@ -20845,9 +20845,13 @@ toppy.be##+js(set-cookie, __toppy_consent, 1)
 ovation.ca##+js(set-cookie, ovation.v20231006.essentials, 1, , reload, 1)
 hyte.com##+js(set-cookie, AcceptUseCookie, Accept)
 d5render.com##+js(set-cookie, accept_cookie_flag, 1)
+clinicadelsudor.es##+js(set-cookie, allow_hiper_cookie, true)
 global-messer.shop##+js(set-cookie, youtube-video, 1)
 stagewise.io##+js(set-cookie, stagewise-cookie-consent, denied)
+kjell.com##+js(set-cookie, ccValues, 1)
 careers.omedastudios.com##+js(set-cookie, _ttCookiePermissions, 0)
+plantasjen.no##+js(set-cookie, _ca, false)
+plantasjen.no##+js(set-cookie, _ftu, false)
 gandwfurniture.co.uk##+js(set-cookie, as-set-cookies, true, , reload, 1)
 nationalholidays.com##+js(set-cookie, cookiePermission, essential)
 megasport.co.il##+js(set-cookie, YourCoockieName, true)
@@ -25546,6 +25550,7 @@ ngi.no##.bcc-container
 dagbladet.no##.cIwTNh
 seher.no##.cbxMtF
 smakmagasinet.no##.coco-wrapper
+fotoknudsen.no##.cookie-consent-modal
 dagbladet.no##.css-pp-box
 ruter.no##.fixed-messages
 oslosportslager.no##.footerCurtainCookie
@@ -25562,6 +25567,7 @@ direktesport.no##[aria-label="Informasjonskapsler"]
 norsk-tipping.no##div[data-test="cookie-toaster"]
 aftenposten.no##div[id^="sp_message_"]
 digiforms.no##fieldset
+nrk.no##nrkno-cookie-banner
 ! ---------- Philippines -----
 paynet.ph###data-privacy
 dunelondon.ph###header0
@@ -27156,6 +27162,7 @@ ants.vn##.sg-popup-content
 ! ---------- Latvian ----------
 ! ---------- Norwegian ----------
 ||matprat.no/Sites/OEK.MatPrat.AddOn/Content/Scripts/build/static/js/cookiesPopup.
+||ruter.no/_astro/cookie-banner.
 ||widforss.no/bundles/consent-init
 ! ---------- Polish ----------
 ||4hifi.pl/scripts/jquery.cookie.js
@@ -27451,6 +27458,7 @@ metallica.com#@#.privacy_policy_message_box
 uniroyal.pl#@#.privacyhint
 seb.se,sebgroup.com#@#.pw-cookie-consent-v2
 unicredit.it#@#.pws_cookie_bar
+clinicadelsudor.es#@#.reveal-modal[id*="cookie"]
 motofaktor.pl#@#.rodo-accept
 farmacja.pl#@#.rodo-modal
 fabrykacukiernika.pl#@#.rodo-popup
@@ -27537,6 +27545,8 @@ concursolutions.com,forbes.com,formula1.com,fortune.com,proximus.be,proximustv.b
 @@||brandexperience-group.com/assets/js/cookie.notice.min.js$script,~third-party
 @@||budgetthuis.nl^*/cookieBar-$script,~third-party
 @@||c.evidon.com/sitenotice/evidon-sitenotice-tag.js$script,domain=southpark.de|southparkstudios.nu
+@@||cache.consentframework.com/js/*/cmp$domain=gizmodo.com
+@@||cache.consentframework.com/js/*/stub$domain=gizmodo.com
 @@||cafedelapaix.fr/assets/plugins/bwp-minify/min/$script,~third-party
 @@||campus.arte.tv/js/components/cookie-banner.js
 @@||carport-diagnose.de/script/cookieconsent.min.js$~third-party
@@ -27899,7 +27909,7 @@ concursolutions.com,forbes.com,formula1.com,fortune.com,proximus.be,proximustv.b
 @@||zensus2022.de/SiteGlobals/Modules/CookieBanner/*/CookieBanner.json?$~third-party,xmlhttprequest
 
 ! Title: uBlock filters – Cookie Notices
-! Last modified: Tue, 02 Sep 2025 15:22:15 +0000
+! Last modified: Wed, 03 Sep 2025 17:37:55 +0000
 ! Expires: 7 days
 ! Description: Filters optimized for uBlock Origin, to be used with EasyList's and/or Adguard's "Cookie Notices" list(s)
 ! License: https://github.com/uBlockOrigin/uAssets/blob/master/LICENSE
@@ -28420,6 +28430,11 @@ bockscornerbrewery.com##+js(trusted-set-cookie, website_cookies_bar, '{"required
 ! https://www.vpd.fi/
 vpd.fi##+js(trusted-set-cookie, amcookie_allowed, 1, 1year, , domain, www.vpd.fi)
 vpd.fi##+js(trusted-set-cookie, amcookie_disallowed, recently_viewed_product%2Crecently_viewed_product_previous%2Crecently_compared_product%2Crecently_compared_product_previous%2C_ga%2C_gid%2C_gat, 1year, , domain, www.vpd.fi)
+! https://github.com/uBlockOrigin/uAssets/issues/29884
+@@||cmp.pubtech.ai/*/pubtech-cmp-v2*.js$script,domain=everyeye.it
+everyeye.it##+js(trusted-click-element, #pubtech-cmp button[aria-label="Continue without accepting"])
+! https://github.com/uBlockOrigin/uAssets/issues/29900
+godtlevert.no##+js(trusted-set-local-storage-item, reduxStore, '{"tracking":{"consents":{"All":false,"functional":false,"Segment.io":false},"dialog":{"open":false,"dirty":false},"isConfigured":true},"loyalty":{"hasSeenLoyaltyPage":false}}')
 
 !! Needs additional cookies
 
@@ -32701,3 +32716,6 @@ teippimestarit.fi##+js(trusted-set-cookie, consent-policy, %7B%22ess%22%3A1%2C%2
 
 ! https://supreme.com - close
 supreme.com##+js(trusted-set-local-storage-item, cookie_bar, 'manually closed')
+
+! https://github.com/uBlockOrigin/uAssets/issues/29888 - video
+helsenorge.no##+js(trusted-set-cookie, HN-Cookie-Consent, base64:eyJWaWRlb0Nvb2tpZXMiOnRydWUsIkFuYWx5dGljc0Nvb2tpZXMiOmZhbHNlfQ==, , , domain, .helsenorge.no)
