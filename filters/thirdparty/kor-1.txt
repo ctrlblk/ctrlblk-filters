@@ -1,7 +1,7 @@
 [uBlock Origin]
 ! Title: List-KR for uBlock Origin
 ! Description: List-KR for uBlock Origin. Maintained by the adblock community and AdGuard.
-! Version: 2025.0903.0
+! Version: 2025.0904.1
 ! Expires: 12 hours
 ! Homepage: https://github.com/List-KR/List-KR
 ! Support: https://list-kr-community.pages.dev/docs/
@@ -537,6 +537,7 @@ m.cafe.naver.com##.banner_add.bottom:matches-path(/ca-fe\\/web\\/cafes\\/(steami
 /data/banner.json?$domain=~nintendo.*
 /ad-manager.min.js
 !
+||ssl.pstatic.net/t.static.blog/mylog/versioning//js/post/ssp/SspAdContentCallerFor
 ||uwayapply.com/js/adscript_
 ||prod.danawa.com/list/ajax/getAdSmartProductList.ajax.php
 ||img.danawa.com/ui_category/topBanner/
@@ -1638,6 +1639,7 @@ eegosa.com##section[id*="_ads_"]
 ! ##div[id*="_AD"]
 sports.donga.com##div[id*="_AD"]
 
+chzzkban.xyz##main > div:not([class]):has(div[id^="ad-"])
 uwayapply.com##.recom_univ
 uwayapply.com##.media_area
 uwayapply.com##.power_univ
@@ -2801,7 +2803,7 @@ bodnara.co.kr##iframe[src^="/advert/advert.php"]
 m.naver.com###MM_aside_smartad_container
 windowsforum.kr##a[href^="https://www.dothome.co.kr/ad/"][target="new"]
 pann.nate.com##.sidearea.talktalk > .sideiframe
-dundam.xyz,ddengle.com,thisisgame.com##div[id^="ad-"]
+chzzkban.xyz,dundam.xyz,ddengle.com,thisisgame.com##div[id^="ad-"]
 thisisgame.com###divMsnAD
 thisisgame.com##iframe[src^="//ad"][src*=".thisisgame.com/ad"]
 dschool.co.kr##a[href^="/ws/include/banner_link.asp?"][target="_blank"]
@@ -3521,6 +3523,7 @@ t.hi098123.com#@#ins.adsbygoogle[data-ad-slot]
 @@||googletagmanager.com/gtag/js$domain=t.hi098123.com,script
 t.hi098123.com#$#.tabad { top: -100px !important; }
 !
+chzzkban.xyz##+js(norafif, window.getComputedStyle()
 mylocation.co.kr##+js(nostif, adBlockedMessage)
 ||shana.pe.kr/shana_check/csb*.js$script
 remiz.co.kr##+js(spoof-css, .adsbygoogle, display, block)

@@ -1,5 +1,6 @@
+[uBlock Origin]
 ! Title: ☀️ PersianBlockerNG ☀️
-! Last modified: 2025-08-06 23:10:49 +0330
+! Last modified: Thu, 4 Sep 2025 23:38:35 +0330
 ! Expires: 5 days
 ! Description: Filters to block ads, trackers and annoyances in Persian websites 
 ! License: https://codeberg.org/KhodeKiaa/PersianBlocker/src/branch/main/LICENSE
@@ -8,7 +9,26 @@
 ! GitHub issues: https://codeberg.org/KhodeKiaa/PersianBlocker/issues
 ! GitHub pull requests: https://codeberg.org/KhodeKiaa/PersianBlocker/pulls
 
-! Include the old list for now:
+! لیستی برای برگرداندن آزادی کاربران، چون هر کاربر این آزادی را دارد که چه چیزی وارد مرورگرش می‌شود و چه چیزی وارد نمی‌شود !
+! فَروَهَر یا فرِّ کیانی، نماد فناناپذیری:
+!                              ████                          !
+!                             ████                           !
+!                             ████                           !
+!                       ███   ████                           !
+!                       ██████████                           !
+!                       ██████████                           !
+!████████████████████████████████████████████████████████████!
+!████████████████████████████████████████████████████████████!
+! ███████████████████████████████ ██████████████████████████ !
+!   ██████████████████████████████████████████████████████   !
+!        ████████████████████████████████████████████        !
+!                       ██████████████                       !
+!                   ██ ██ ██████████ ██ ██                   !
+!                   ████ ████████████ ████                   !
+!                        ████████████                        !
+
+
+! Include the old list for now, will be removed in the future:
 [uBlock Origin]
 ! Title: PersianBlocker
 ! Description: سرانجام، یک لیست بهینه و گسترده برای مسدودسازی تبلیغ ها و ردیاب ها در سایت های پارسی زبان!
@@ -424,8 +444,9 @@ logo.samandehi.ir##^responseheader(set-cookie)
 ||seyedrezabazyar.com/codetools/files/close-right-click.js
 
 ! >> T <<
-||trustseal.e-rasaneh.ir^$domain=~anaj.ir|~salamatnews.com
-trustseal.e-rasaneh.ir##^responseheader(set-cookie)
+! 2025-09-04, commented:
+!!||trustseal.e-rasaneh.ir^$domain=~anaj.ir|~salamatnews.com
+!!trustseal.e-rasaneh.ir##^responseheader(set-cookie)
 anaj.ir,salamatnews.com##+js(set, jscd, {})
 anaj.ir,salamatnews.com##+js(set, document.URL, undefined)
 anaj.ir,salamatnews.com##+js(set, document.referrer, undefined)
@@ -2077,24 +2098,6 @@ khabarfarsi.com###block-block-120
 ||kojaro.com/kojaro/ui/js/banner.js^$script,1p
 kojaro.com##div.wideheader-b1:has(> div.bannercontainer)
 kojaro.com##div.mobileBanner
-
-! https://github.com/AdguardTeam/AdguardFilters/issues/33437
-! https://github.com/AdguardTeam/AdguardFilters/issues/101735
-! https://github.com/MasterKia/PersianBlocker/issues/41
-khabaronline.ir###header-ad
-khabaronline.ir##.ads
-khabaronline.ir##[href^="/redirect/ads/"]
-khabaronline.ir##.bg-gray-links.box
-khabaronline.ir#@##ads-container
-khabaronline.ir###ads-container > .list-thumbs.title-only.list.box
-!#if !env_mobile
-khabaronline.ir##.container:style(max-width: 95% !important; flex-grow: 1 !important;)
-khabaronline.ir##.main-content:style(max-width: 60% !important; flex: 0 0 60% !important;)
-khabaronline.ir##.col-md-3:style(max-width: 40% !important; flex: 0 0 40% !important;)
-!#endif
-!#if env_mobile
-khabaronline.ir###ads-container:has-text(خواندنی ها)
-!#endif
 
 koolakmag.ir##.widget_custom_html.widget.container-wrapper.widget_text
 
@@ -4700,8 +4703,9 @@ benawa.com##div[style="margin-top:5px;margin-bottom:3px; overflow:hidden;"]
 
 
 ! Ads:
+[uBlock Origin]
 ! Title: PersianBlockerAds
-! Last modified: 2025-09-02 10:43:39 +0330
+! Last modified: Fri, 5 Sep 2025 00:03:11 +0330
 ! Expires: 5 days
 ! Description: Filters to block ads in Persian websites 
 ! License: https://codeberg.org/KhodeKiaa/PersianBlocker/src/branch/main/LICENSE
@@ -4724,6 +4728,7 @@ benawa.com##div[style="margin-top:5px;margin-bottom:3px; overflow:hidden;"]
 ||pushe.co^
 ||sanjagh.com^
 ||najva.com^
+||sorenad.com^
 
 ||adexo.ir^
 ! (e.g. sharghdaily.com):
@@ -4751,10 +4756,10 @@ benawa.com##div[style="margin-top:5px;margin-bottom:3px; overflow:hidden;"]
 @@||player.tavoos.net/provider.hlsjs.js^$script
 @@||player.tavoos.net/assets^$image,font
 
-! rokna.net
+! rokna.net:
 ||binoads.ir^
 
-! par30games.net
+! par30games.net:
 ||yektabanner.com^
 
 ! These news websites all have a common advertisment format:
@@ -4764,6 +4769,9 @@ benawa.com##div[style="margin-top:5px;margin-bottom:3px; overflow:hidden;"]
 ! donya-e-eqtesad.com, rokna.net:
 ##.zxc
 ##.zxc-padding-custom
+
+! ronveis.ir:
+||mihanstore.net/partner^
 
 !!! Specific !!!
 !!! ===VV=== !!!
@@ -4785,14 +4793,18 @@ dlfox.com##.banner_small_dlbox_b
 ! download.ir
 ||download.ir/wp-content/uploads/*.gif^
 
-! zoomit.ir, zoomg.ir
+! zoomit.ir, zoomg.ir, pedal.ir, filmzi.tv/filmzi.com
+! https://github.com/MasterKia/PersianBlocker/issues/310
 ! https://github.com/MasterKia/PersianBlocker/issues/330
-/ads/api^$domain=zoomit.ir|zoomg.ir
+/ads/api^$domain=zoomit.ir|zoomg.ir|pedal.ir|filmzi.tv|filmzi.com
 ! Header ads:
 zoomit.ir,zoomg.ir##div[class^="sc-"][rowcount="1"][columncount="1"]:has(> div[class^="sc-"][maxwidth="1920"][maxheight="192"])
 ! Other ads:
 zoomit.ir,zoomg.ir##div[class^="sc-"][rowcount][columncount]:has(> div[class^="sc-"][maxwidth="648"][maxheight="167"])
 zoomit.ir,zoomg.ir##div[class^="sc-"][rowcount][columncount]:has(> div[class^="sc-"][maxwidth="300"][maxheight="250"])
+! All ads:
+pedal.ir,filmzi.com##div[class^="sc-"][rowcount][columncount="1"]:has(> div[class^="sc-"] > a[rel="sponsored"])
+pedal.ir,filmzi.com##div[class^="sc-"][spacing="[object Object]"]:has( > span:has-text(تبلیغات))
 
 ! mali3.com
 ||mali3.com/wp-content/uploads/*.gif^
@@ -4887,11 +4899,7 @@ aparat.com##.promote-puls
 ! soft98.ir:
 ! https://github.com/uBlockOrigin/uAssets/issues/14480
 ! https://github.com/MasterKia/PersianBlocker/issues/40
-||soft98.ir^$script
 soft98.ir,~forum.soft98.ir##img[src^="https://img.soft98.ir/"]:upward(1):style(clip-path: circle(0) !important;)
-soft98.ir,~forum.soft98.ir##html:style(position: static !important; transform: none !important; filter: none !important; -webkit-filter: none !important; backdrop-filter: none !important; opacity: 1 !important; visibility: visible !important; mix-blend-mode: normal !important; clip-path: none !important;)
-soft98.ir,~forum.soft98.ir##body:style(filter: none !important; -webkit-filter: none !important; backdrop-filter: none !important; opacity: 1 !important; visibility: visible !important; mix-blend-mode: normal !important; clip-path: none !important;)
-soft98.ir,~forum.soft98.ir##html::after:style(all: unset !important; content: ' ⚠️ این وبسایت توسط جامعهٔ PersianBlocker یک وبسایت ضدکاربر تشخیص داده شده است؛ یعنی با جلوگیری از استفاده از افزونه‌های ضدتبلیغات، آزادی شماره صفرم شما (هر کاربر باید آزادی اینکه چه چیز را ببیند یا نبیند داشته باشد) را محدود کرده است. پیشنهاد می‌شود از وبسایت‌های جایگزین استفاده کنید. PersianBlocker 🄯 ⚠️ ' !important; color: #1E88E5 !important; font-weight: bold !important; font-size: x-large !important; background-color: white !important; border: 8px solid red !important; border-radius: 12px !important; padding: 1em !important; width: min(100%, 90vw) !important; height: auto !important; max-width: 100vw !important; max-height: 90vh !important; overflow: auto !important; clip: auto !important; clip-path: none !important; mask: none !important; transform: translateX(-50%) !important; display: block !important; opacity: 100% !important; visibility: visible !important; filter: none !important; -webkit-text-fill-color: initial !important; -webkit-text-stroke: initial !important; position: absolute !important; top: 12px !important; left: 50% !important; right: auto !important; bottom: auto !important; z-index: 214748364700 !important; text-indent: 0 !important; line-height: normal !important; backface-visibility: visible !important; animation: none !important; transition: none !important; contain: content !important; box-sizing: border-box !important; margin: 0 auto; inset: 0; pointer-events: auto; isolation: isolate !important;)
 
 ! par30games.net 
 ||par30games.net/wp-content/uploads/*.gif^
@@ -4951,11 +4959,25 @@ filmzi.tv##div[class^="sc-"][spacing="[object Object]"]:has(> div[class^="sc-"][
 ! wikihoghoogh.net
 wikihoghoogh.net###siteNotice
 
+! avaz-kurd.ir, power-music.ir
+avaz-kurd.ir,power-music.ir##.btn-app
+
+! ronvevis.ir
+ronevis.ir##.posts-ads
+
+! khabaronline.ir:
+! https://github.com/AdguardTeam/AdguardFilters/issues/33437
+! https://github.com/AdguardTeam/AdguardFilters/issues/101735
+! https://github.com/MasterKia/PersianBlocker/issues/41
+||cdn.bartarinha.ir/servev2^$image,from=khabaronline.ir
+khabaronline.ir##.cyt-ads-block
+
 
 
 ! Trackers:
+[uBlock Origin]
 ! Title: PersianBlockerTrackers
-! Last modified: 2025-08-24 17:46:19 +0330
+! Last modified: Thu, 4 Sep 2025 23:38:35 +0330
 ! Expires: 7 days
 ! Description: Filters to block trackers in Persian websites 
 ! License: https://codeberg.org/KhodeKiaa/PersianBlocker/src/branch/main/LICENSE
@@ -5055,8 +5077,9 @@ aparat.com##+js(set-session-storage-item, videoWatchCount, $remove$)
 
 
 ! Video Censorship:
+[uBlock Origin]
 ! Title: PersianBlockerCensor
-! Last modified: 2025-09-01 09:58:24 +0330
+! Last modified: Fri, 5 Sep 2025 00:03:11 +0330
 ! Expires: 7 days
 ! Description: Filters to block video censorship in Persian websites 
 ! License: https://codeberg.org/KhodeKiaa/PersianBlocker/src/branch/main/LICENSE
@@ -5086,33 +5109,43 @@ aparat.com##+js(set-session-storage-item, videoWatchCount, $remove$)
 ! google.com:
 www.google.com##a[href]:where([href*="doostihaa.com/"], [href*="zardfilm.in/"], [href*="cooldl.net/"], [href*="dlrozaneh.ir/"], [href*="gapfilm.ir/"], [href*="hexdl.com/"], [href*="modernfilm.ir/"], [href*="vipofilm.com/"], [href*="upmedia.movie/"], [href*="filimo.com/"]) > h3::after:style(content: ' ✂️ (سانسور شده) ✂️ ' !important; color: red !important; font-weight: bold !important;)
 www.google.com##a[href]:where([href*="filmazon.my/"]) > h3::after:style(content: ' 💰 (اشتراکی) 💰 ' !important; color: yellow !important; font-weight: bold !important; text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px  1px 0 black, 1px  1px 0 black;)
-www.google.com##a[href]:where([href*="soft98.ir/"]) > h3::after:style(content: ' ⚠️ ضد کاربر | Anti-User ⚠️ ' !important; color: red !important; font-weight: bold !important;)
 
 ! bing.com:
 www.bing.com##a[href][href*="&mediaurl="][target="_blank"][title][href^="/images/search?view=detail"]:where([href*="doostihaa.com/"], [href*="zardfilm.in/"], [href*="cooldl.net/"], [href*="dlrozaneh.ir/"], [href*="gapfilm.ir/"], [href*="hexdl.com/"], [href*="modernfilm.ir/"], [href*="vipofilm.com/"], [href*="upmedia.movie/"], [href*="filimo.com/"])::before:style(content: ' ✂️ (سانسور شده) ✂️ ' !important; color: red !important; font-weight: bold !important; font-size: large !important;)
 www.bing.com##a[href][href*="&mediaurl="][target="_blank"][title][href^="/images/search?view=detail"]:where([href*="filmazon.my/"])::before:style(content: ' 💰 (اشتراکی) 💰 ' !important; color: yellow !important; font-weight: bold !important; text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px  1px 0 black, 1px  1px 0 black;)
-www.bing.com##a[href][href*="&mediaurl="][target="_blank"][title][href^="/images/search?view=detail"]:where([href*="soft98.ir/"])::before:style(content: ' ⚠️ ضد کاربر | Anti-User ⚠️ ' !important; color: red !important; font-weight: bold !important; font-size: large !important;)
 
 ! duckduckgo.com:
 duckduckgo.com##a[href][data-testid="result-title-a"]:where([href*="doostihaa.com/"], [href*="zardfilm.in/"], [href*="cooldl.net/"], [href*="dlrozaneh.ir/"], [href*="gapfilm.ir/"], [href*="hexdl.com/"], [href*="modernfilm.ir/"], [href*="vipofilm.com/"], [href*="upmedia.movie/"], [href*="filimo.com/"])::after:style(content: ' ✂️ (سانسور شده) ✂️ ' !important; color: red !important; font-weight: bold !important;)
 duckduckgo.com##a[href][data-testid="result-title-a"]:where([href*="filmazon.my/"])::after:style(content: ' 💰 (اشتراکی) 💰 ' !important; color: yellow !important; font-weight: bold !important; text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px  1px 0 black, 1px  1px 0 black;)
-duckduckgo.com##a[href][data-testid="result-title-a"]:where([href*="soft98.ir/"])::after:style(content: ' ⚠️ ضد کاربر | Anti-User ⚠️ ' !important; color: red !important; font-weight: bold !important;)
 
 ! search.brave.com:
 search.brave.com##a[href][class$="heading-serpresult"]:where([href*="doostihaa.com/"], [href*="zardfilm.in/"], [href*="cooldl.net/"], [href*="dlrozaneh.ir/"], [href*="gapfilm.ir/"], [href*="hexdl.com/"], [href*="modernfilm.ir/"], [href*="vipofilm.com/"], [href*="upmedia.movie/"], [href*="filimo.com/"])::after:style(content: ' ✂️ (سانسور شده) ✂️ ' !important; color: red !important; font-weight: bold !important;)
 search.brave.com##a[href][class$="heading-serpresult"]:where([href*="filmazon.my/"])::after:style(content: ' 💰 (اشتراکی) 💰 ' !important; color: yellow !important; font-weight: bold !important; text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px  1px 0 black, 1px  1px 0 black;)
-search.brave.com##a[href][class$="heading-serpresult"]:where([href*="soft98.ir/"])::after:style(content: ' ⚠️ ضد کاربر | Anti-User ⚠️ ' !important; color: red !important; font-weight: bold !important;)
 
 ! zarebin.ir:
 zarebin.ir##a[href][class^="!text-link"]:where([href*="doostihaa.com/"], [href*="zardfilm.in/"], [href*="cooldl.net/"], [href*="dlrozaneh.ir/"], [href*="gapfilm.ir/"], [href*="hexdl.com/"], [href*="modernfilm.ir/"], [href*="vipofilm.com/"], [href*="upmedia.movie/"], [href*="filimo.com/"])::after:style(content: ' ✂️ (سانسور شده) ✂️ ' !important; color: red !important; font-weight: bold !important;)
 zarebin.ir##a[href][class^="!text-link"]:where([href*="filmazon.my/"])::after:style(content: ' 💰 (اشتراکی) 💰 ' !important; color: yellow !important; font-weight: bold !important; text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px  1px 0 black, 1px  1px 0 black;)
+
+! soft98.ir:
+! https://github.com/uBlockOrigin/uAssets/issues/14480
+! https://github.com/MasterKia/PersianBlocker/issues/40
+www.google.com##a[href]:where([href*="soft98.ir/"]) > h3::after:style(content: ' ⚠️ ضد کاربر | Anti-User ⚠️ ' !important; color: red !important; font-weight: bold !important;)
+www.bing.com##a[href][href*="&mediaurl="][target="_blank"][title][href^="/images/search?view=detail"]:where([href*="soft98.ir/"])::before:style(content: ' ⚠️ ضد کاربر | Anti-User ⚠️ ' !important; color: red !important; font-weight: bold !important; font-size: large !important;)
+duckduckgo.com##a[href][data-testid="result-title-a"]:where([href*="soft98.ir/"])::after:style(content: ' ⚠️ ضد کاربر | Anti-User ⚠️ ' !important; color: red !important; font-weight: bold !important;)
+search.brave.com##a[href][class$="heading-serpresult"]:where([href*="soft98.ir/"])::after:style(content: ' ⚠️ ضد کاربر | Anti-User ⚠️ ' !important; color: red !important; font-weight: bold !important;)
 zarebin.ir##a[href][class^="!text-link"]:where([href*="soft98.ir/"])::after:style(content: ' ⚠️ ضد کاربر | Anti-User ⚠️ ' !important; color: red !important; font-weight: bold !important;)
+||soft98.ir^$script
+soft98.ir,~forum.soft98.ir##img[src^="https://img.soft98.ir/"]:upward(1):style(clip-path: circle(0) !important;)
+soft98.ir,~forum.soft98.ir##html:style(position: static !important; transform: none !important; filter: none !important; -webkit-filter: none !important; backdrop-filter: none !important; opacity: 1 !important; visibility: visible !important; mix-blend-mode: normal !important; clip-path: none !important;)
+soft98.ir,~forum.soft98.ir##body:style(filter: none !important; -webkit-filter: none !important; backdrop-filter: none !important; opacity: 1 !important; visibility: visible !important; mix-blend-mode: normal !important; clip-path: none !important;)
+soft98.ir,~forum.soft98.ir##html::after:style(all: unset !important; content: ' ⚠️ این وبسایت توسط جامعهٔ PersianBlocker یک وبسایت ضدکاربر تشخیص داده شده است؛ یعنی با جلوگیری از استفاده از افزونه‌های ضدتبلیغات، آزادی شماره صفرم شما (هر کاربر باید آزادی اینکه چه چیز را ببیند یا نبیند داشته باشد) را محدود کرده است. پیشنهاد می‌شود از وبسایت‌های جایگزین استفاده کنید. PersianBlocker 🄯 ⚠️ ' !important; color: #1E88E5 !important; font-weight: bold !important; font-size: x-large !important; background-color: white !important; border: 8px solid red !important; border-radius: 12px !important; padding: 1em !important; width: min(100%, 90vw) !important; height: auto !important; max-width: 100vw !important; max-height: 90vh !important; overflow: auto !important; clip: auto !important; clip-path: none !important; mask: none !important; transform: translateX(-50%) !important; display: block !important; opacity: 100% !important; visibility: visible !important; filter: none !important; -webkit-text-fill-color: initial !important; -webkit-text-stroke: initial !important; position: absolute !important; top: 12px !important; left: 50% !important; right: auto !important; bottom: auto !important; z-index: 214748364700 !important; text-indent: 0 !important; line-height: normal !important; backface-visibility: visible !important; animation: none !important; transition: none !important; contain: content !important; box-sizing: border-box !important; margin: 0 auto; inset: 0; pointer-events: auto; isolation: isolate !important;)
 
 
 
 ! Half-Price (نیم بها) Sites:
+[uBlock Origin]
 ! Title: PersianBlockerHalfPrice
-! Last modified: 2025-08-06 16:39:58 +0330
+! Last modified: Thu, 4 Sep 2025 23:38:35 +0330
 ! Expires: 7 days
 ! Description: Filters to indicate half-price (نیم بها) Persian websites in search results
 ! License: https://codeberg.org/KhodeKiaa/PersianBlocker/src/branch/main/LICENSE
@@ -5149,7 +5182,10 @@ zarebin.ir##a[href][class^="!text-link"]:where([href*="par30games.net/"])::after
 
 
 ! Malware and Phishing:
+[uBlock Origin]
 
+
+[uBlock Origin]
 
 ! سایت مهاجرت کلاهبرداری با 800 شاکی
 ||alast.group^
@@ -5158,8 +5194,9 @@ zarebin.ir##a[href][class^="!text-link"]:where([href*="par30games.net/"])::after
 
 ! Mobile (Firefox Android, Cromite, AdGuard for Android, AdGuard for iOS, AdGuard for Safari, Samsung Internet)
 !#if env_mobile
+[uBlock Origin]
 ! Title: PersianBlockerMobile
-! Last modified: 2025-08-24 17:25:08 +0330
+! Last modified: 2025-09-04 22:40:40 +0330
 ! Expires: 5 days
 ! Description: Filters to block ads in Persian websites on mobile browsers
 ! License: https://codeberg.org/KhodeKiaa/PersianBlocker/src/branch/main/LICENSE
@@ -5188,8 +5225,9 @@ zoomit.ir##div[class^="sc-"][rowcount][columncount]:has(> div[class^="sc-"][maxw
 
 !#endif
 !#if (adguard && adguard_app_android)
+[uBlock Origin]
 ! Title: PersianBlockerMobile
-! Last modified: 2025-08-24 17:25:08 +0330
+! Last modified: 2025-09-04 22:40:40 +0330
 ! Expires: 5 days
 ! Description: Filters to block ads in Persian websites on mobile browsers
 ! License: https://codeberg.org/KhodeKiaa/PersianBlocker/src/branch/main/LICENSE
@@ -5218,8 +5256,9 @@ zoomit.ir##div[class^="sc-"][rowcount][columncount]:has(> div[class^="sc-"][maxw
 
 !#endif
 !#if (adguard && adguard_app_ios)
+[uBlock Origin]
 ! Title: PersianBlockerMobile
-! Last modified: 2025-08-24 17:25:08 +0330
+! Last modified: 2025-09-04 22:40:40 +0330
 ! Expires: 5 days
 ! Description: Filters to block ads in Persian websites on mobile browsers
 ! License: https://codeberg.org/KhodeKiaa/PersianBlocker/src/branch/main/LICENSE
@@ -5248,8 +5287,9 @@ zoomit.ir##div[class^="sc-"][rowcount][columncount]:has(> div[class^="sc-"][maxw
 
 !#endif
 !#if (adguard && adguard_ext_android_cb)
+[uBlock Origin]
 ! Title: PersianBlockerMobile
-! Last modified: 2025-08-24 17:25:08 +0330
+! Last modified: 2025-09-04 22:40:40 +0330
 ! Expires: 5 days
 ! Description: Filters to block ads in Persian websites on mobile browsers
 ! License: https://codeberg.org/KhodeKiaa/PersianBlocker/src/branch/main/LICENSE

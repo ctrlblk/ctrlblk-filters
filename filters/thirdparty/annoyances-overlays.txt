@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: EasyList – Newsletter Notices
-! Last modified: Wed, 03 Sep 2025 15:50:12 +0000
+! Last modified: Fri, 05 Sep 2025 02:12:37 +0000
 ! Expires: 7 days (update frequency)
 ! *** easylist:template_header.txt ***
 !
@@ -3920,6 +3920,7 @@ thebarbedwire.com##.has-secondary-background-color:has-text(Subscribe)
 babylonbee.com##.hidden:has-text(Fake news)
 esports.gg##.inset-0.fixed:has-text(Sign up)
 publichealthpolicyjournal.com##.is-position-sticky:has-text(Subscribe)
+inc.com##.lg\:gap-3:has-text(Weekly roundup)
 dexerto.com##.lg\:grid-cols-\[445px_1fr\].gap-y-10 > div:has-text(Sign up to Dexerto)
 autonews.com##.lg\:u-max-w-\[345px\]:has-text(Sign up)
 mensjournal.com##.m-detail--body > p:has-text(Sign up for the)
@@ -3950,6 +3951,7 @@ heatpumped.org##.text-wt-background:has-text(Subscribe)
 autonews.com##.u-space-y-6.u-items-center:has-text(Staying current)
 finance.yahoo.com##.variant-default.card:has-text(newsletter)
 ensemblemagazine.co.nz##.w-embed:has-text(Sign up now)
+newsroom.paypal-corp.com##.wd_dkblue-background:has-text(Stay up to date)
 thenewlede.org##.widget_custom_html:has-text(newsletter)
 wareable.com##.widget_custom_html:has-text(substack)
 systemsapproach.org##.wp-block-column > .is-layout-flow.wp-block-group:has-text(Subscribe)
@@ -6085,7 +6087,7 @@ doctorofcredit.com#@#.wpdiscuz-subscribe-bar
 ! fanboy_newsletter_shopping_allowlist_general_hide.txt
 
 ! Title: uBlock filters – Other Annoyances
-! Last modified: Thu, 04 Sep 2025 01:33:35 +0000
+! Last modified: Fri, 05 Sep 2025 00:46:53 +0000
 ! Expires: 7 days
 ! Description: Filters optimized for uBlock Origin, to be used with EasyList's and/or Adguard's "Other Annoyances" list(s)
 ! License: https://github.com/uBlockOrigin/uAssets/blob/master/LICENSE
@@ -6166,8 +6168,7 @@ e-panigiria.gr##+js(rmnt, script, oncontextmenu)
 e-panigiria.gr###body *:not(input):not(textarea):style(-webkit-touch-callout: default !important; -webkit-user-select: text !important; -moz-user-select: text !important; -ms-user-select: text !important; user-select: text !important;)
 
 ! https://www.reddit.com/r/uBlockOrigin/comments/1lpy21u/animekai_anti_dev_tools/
-animekai.*,anigo.to,yflix.to##+js(nostif, ||!!)
-animekai.*,yflix.to##+js(nosiif, devtool)
+animekai.*,anigo.to,sflix.fi,yflix.to##+js(nostif, ||!!)
 
 ! END: Anti copy, right-click etc.
 
@@ -6250,6 +6251,10 @@ pokeos.com##+js(no-fetch-if, doubleclick)
 ! https://github.com/uBlockOrigin/uAssets/issues/29791
 ! https://github.com/uBlockOrigin/uAssets/issues/29904
 ##.inset-x-0[x-data="adblockBanner()"]
+
+! https://github.com/uBlockOrigin/uAssets/issues/29921
+granfondo-cycling.com##+js(no-xhr-if, googlesyndication, length:10)
+###steadyAdblockContainer
 
 ! END: Anti-adblock
 
@@ -13652,8 +13657,8 @@ pokeos.com##+js(no-fetch-if, doubleclick)
 lemon8-app.com##+js(trusted-click-element, .seo-landing-modal-cancel-btn .design-system-button-container, , 500)
 
 ! animekai.me anti-devtools
-animekai.*,anigo.to,yflix.to##+js(aeld, keydown, ||)
-animekai.*,anigo.to,megaup.cc,rapidshare.cc,yflix.to##+js(set, console.clear, throwFunc)
+animekai.*,anigo.to,sflix.fi,yflix.to##+js(aeld, keydown, ||)
+animekai.*,anigo.to,megaup.cc,megaup.site,rapidshare.cc,sflix.fi,yflix.to##+js(set, console.clear, throwFunc)
 
 ! https://github.com/uBlockOrigin/uAssets/issues/27010
 loverslab.com##+js(nano-sib)
