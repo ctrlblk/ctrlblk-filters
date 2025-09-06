@@ -1960,6 +1960,10 @@ tion.ro##.et-last-child.et_pb_column_2
 ||stiridetimisoara.ro/*banner
 ||stiridetimisoara.ro/*.gif$image
 
+go4it.ro##.single__under:has([style*="padding"])
+go4it.ro##.text-center.hidden-sm.hidden-md
+go4it.ro##.mg-bottom-10:has(.strawberry-ads)
+
 [Adblock Plus 2.1]
 ! Title: Romanian specific uBO filters
 ! Expires: 3 days
@@ -2064,7 +2068,7 @@ lovendal.ro##+js(noeval-if, ads)
 emag.*##.container:has([data-tracking-alias^="sponsored_products"])
 
 ! image background
-gsp.ro##+js(rmnt, script, maxbet)
+gsp.ro##+js(rmnt, style, /@media.*url/gms)
 
 ! https://github.com/AdguardTeam/AdguardFilters/issues/183110
 ||business24.ro/index.php?module=getActiveBlockerContent.ajxinternal
