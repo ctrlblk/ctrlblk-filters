@@ -1,10 +1,10 @@
 ![Adblock Plus 2.0]
-! Checksum: KG5gVQ14h1wKLoS0lgm4pw
-! Diff-Path: ../patches/7/7-s-1757391156-3600.patch
+! Checksum: jtBOLtXm4vZ3m89+rr53nA
+! Diff-Path: ../patches/7/7-s-1757434340-3600.patch
 ! Title: AdGuard Japanese filter
 ! Description: Filter that enables ad blocking on websites in Japanese language.
-! Version: 2.0.68.33
-! TimeUpdated: 2025-09-09T04:08:28+00:00
+! Version: 2.0.68.35
+! TimeUpdated: 2025-09-09T16:08:01+00:00
 ! Expires: 5 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -1811,6 +1811,8 @@ gundamlog.com###more > iframe[src^="https://richlink.blogsys.jp"]
 !
 ! NOTE: Specific rules
 !
+gaitame.com##.g-h-ads
+gaitame.com##.g-insert-ads
 wikiwiki.jp###adsense-body-top-wrap
 baby-calendar.jp###before_footer_widget
 baby-calendar.jp##.w-beforeRelated
@@ -2521,6 +2523,8 @@ gensin.blog.jp###lite_link
 dissoku.net##.v-row:has(> div.v-col > div > a[href="https://favry.app"])
 b.best-hit.tv##.heading:has(+ div[style="text-align:center"] > div[style$="background-color:#F0F0F0; text-align: center;"])
 b.best-hit.tv##div[style$="background-color:#F0F0F0; text-align: center;"]
+contents-group.work##.adSP1 + div[style="background-color:#fff;width:100%;text-align:center;padding:2px 0;margin:10px auto;"]
+contents-group.work###mainContent + script + div.pc:has(+ div.adSP1)
 best-hit.tv##div[style="margin-top:10px; margin-bottom:10px; text-align:center;"]
 contents-group.work#?#div[align="center"][style="margin: 20px 0px;"]:contains(/^- PR -$/)
 contents-group.work###interstitial
@@ -4871,6 +4875,7 @@ liquidfoundation.work##td[height="260"][width="310"]
 liquidfoundation.work##td[height="290"][width="320"]
 gamefactory.jp##.banner_area_300
 gamefactory.jp##.banner_area_728
+ib-game.jp##.tag_336
 ib-game.jp##.ad_size_728x90
 ib-game.jp##.tag_300
 ib-game.jp##.tag_468
