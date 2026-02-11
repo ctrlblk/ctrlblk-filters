@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
 ! Title: EasyList – Chat Widgets
 ! Expires: 9 days
-! Last modified: Tue, 02 Sep 2025 21:50:10 +0000
+! Last modified: Mon, 09 Feb 2026 10:40:51 +0000
 ! *** easylist:template_header.txt ***
 !
 ! Please report any unblocked adverts or problems
@@ -16,6 +16,7 @@
 ! *** easylist:fanboy-addon/fanboy_chatapps_third-party.txt ***
 ###WACLauncher__Button
 ###popin-salescontact
+###rasaWebchatPro
 ##.b24-widget-button-wrapper
 ##.chat_hammerbot-iframe-wrapper__outer
 ##.drift-facade
@@ -32,8 +33,10 @@
 ://webim.*/button.js
 ://webim.*/button.php
 ! Specific Blocks
+ishopchangi.com###chat-wrapper
 hp.com###chatbotToronto
 docs.aws.amazon.com###floating-experience-feature-tour-popover
+support.carousell.com###launcher
 docs.aws.amazon.com###view-__module-context__-_amzn_conversational-experience-module__tandalone-0
 casbin.org##.chat-button
 casbin.org##.chat-container
@@ -44,14 +47,22 @@ healthshots.com##.chatbotentrybtn
 healthshots.com##.healthshotsChannels
 amazon.com##.rufus-panel-container
 healthshots.com##.secBannerWidget
+singtel.com##.ux-faq-singtel
 therealdeal.com##.woot-widget-bubble
+support.carousell.com##[style*="display: flex; flex-direction: column; z-index: 999999;"]
+healthhub.sg##ai-chatbot
+simba.sg##button:has([alt="Chat with SIMBA"])
+m1.com.sg##div:has(> [class^="ChatWindow"])
+! Specific
 ||ai.casbin.com^$domain=casbin.org
+||eservices.healthhub.sg/public/chatbot/widget/ca/assets/index.js
 ||today.com/oli/
 ! Third-party chat
 ||247-inc.net^$third-party
 ||24nettbutikk.chat^$third-party
 ||3cx.com/livechat/
 ||3cx.uk^$third-party
+||above.im^$third-party
 ||acquire.io^$third-party
 ||alive5.com^$third-party
 ||allegro-cdn.concerto.ai^
@@ -63,6 +74,7 @@ therealdeal.com##.woot-widget-bubble
 ||app.chaport.com^$third-party
 ||app.chatplus.jp^$third-party
 ||app.mymaisie.com/static/chatbot-component/
+||assets.flex.twilio.com^$third-party
 ||assistant.almaintelligence.com^
 ||astutebot.com^$third-party
 ||awhy.it^$third-party
@@ -82,10 +94,12 @@ therealdeal.com##.woot-widget-bubble
 ||cbot.ai^$third-party
 ||cdn.asksuite.com/infochat.js
 ||cdn.shopify.com/extensions/*/assets/inbox-chat-loader.js
+||cdn.shopify.com/extensions/*/manifest-ai-chatbot-548/assets/common-script.js
 ||cgsinc.cl/mcic/web/mediatel_chat.js
 ||chat-app.chat-link.de^$third-party
 ||chat-app.neurabot.de^$third-party
 ||chat-widget.hiverhq.com^
+||chat.24liveblog.com^
 ||chat.broadly.com^$third-party
 ||chat.gosquared.com^$third-party
 ||chat.octadesk.services^$third-party
@@ -145,13 +159,13 @@ therealdeal.com##.woot-widget-bubble
 ||hubspot.com/livechat-public/
 ||iadvize.com/iadvize.js
 ||igetresponse.chat^$third-party
+||inside.chat^$third-party
 ||inteliwise.com^$third-party
 ||intelliticks.com^$third-party
 ||jivosite.com^$third-party
 ||js.zohocdn.com/ichat/$third-party,domain=~zoho.com|~zoho.eu|~zoho.in|~zohoshowtime.com
 ||js.zohocdn.com/salesiq/js/floatbutton1_$third-party,domain=~zoho.com|~zoho.eu|~zoho.in|~zohoshowtime.com
 ||jsdelivr.net/gh/tykhe-dev/tykhe-chat@1.0/tykhe-chat.js
-||kapa.ai^$third-party
 ||ladesk.com/chat/$third-party
 ||landbot.io^$third-party
 ||lcmagentportal.appspot.com^$third-party
@@ -172,6 +186,8 @@ therealdeal.com##.woot-widget-bubble
 ||messenger.customerly.io^$third-party
 ||mindbehind.com^$third-party
 ||mobilemonkey.com^$third-party
+||momence.com/plugin/webchat/webchat.js
+||moustacheai.com^$third-party
 ||my.salesforce.com/embeddedservice/
 ||mylivechat.com^$third-party
 ||neurologic.com.br^$third-party
@@ -197,11 +213,11 @@ therealdeal.com##.woot-widget-bubble
 ||reamaze.com^$third-party
 ||replain.cc^$third-party
 ||richpanel.com^$third-party
-||salesforceliveagent.com^$third-party
 ||salesiq.zoho.com^$third-party
+||selfservice.robinhq.com^
 ||sendinblue.com^$third-party
-||service.force.com^$third-party
 ||serviceform.com^$third-party
+||services.leadconnectorhq.com/chat-widget/$third-party
 ||shopify.com^*/shopifyChatV1.js
 ||smart.generaxion.fi^$third-party
 ||smartarget.online^$third-party
@@ -211,18 +227,19 @@ therealdeal.com##.woot-widget-bubble
 ||smooch.io^$third-party
 ||snapengage.com^$third-party
 ||snapsmedia.io^$third-party
+||socialintents.com/api/chat/socialintents.$script,third-party
 ||sprinklr.com/api/livechat/$third-party
 ||st.chatango.com^$third-party
 ||stadtwerk.bot^$third-party
 ||storage.googleapis.com/code.snapengage.com/
 ||supportai.yandex/widget/$third-party
+||swi.neobox.ebu.io^$third-party
 ||talkative-cdn.com^$third-party
 ||tawk.to^$third-party
 ||thankful.ai^$third-party
 ||thelivechatsoftware.com^$third-party
-||tidio.co^$third-party
+||tidio.co^$third-party,domain=~tidio.com
 ||tidiochat.com^$third-party
-||twilio.com^$third-party
 ||unibuddy.co^$third-party
 ||usemessages.com/conversations-embed.js
 ||userback.io/widget/
@@ -236,8 +253,10 @@ therealdeal.com##.woot-widget-bubble
 ||web-chat.global.assistant.watson.appdomain.cloud^$third-party
 ||web.kodabots.com^$third-party
 ||web.pypestream.com/launcher.js
+||webchat.bebot.io^
 ||webchat.hyperflow.global^$third-party
 ||webchat.omni.cafe^
+||webchat.vica.gov.sg/static/js/chat.js
 ||webchatapi.robbu.global^$third-party
 ||webim.ru^$third-party
 ||whatya.solairo-api.com^$third-party
