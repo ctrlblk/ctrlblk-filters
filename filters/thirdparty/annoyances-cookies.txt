@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: EasyList – Cookie Notices
-! Last modified: Thu, 12 Feb 2026 22:02:10 +0000
+! Last modified: Sat, 14 Feb 2026 05:01:18 +0000
 ! Expires: 7 days (update frequency)
 ! *** easylist:template_header.txt ***
 !
@@ -17979,6 +17979,7 @@ index.co##.c-consent-manager
 croda.com,frontgate.com,incotec.com,york.ac.uk##.c-cookie-banner
 asm.com,bastionhotels.com,bestwesternschipholairport.com,midlands.englandhockey.co.uk##.c-cookie-bar
 datagen.tech##.c-cookie-consent-background
+gic.careers##.c-cookie-notice__container
 aniguessr.com##.c-cookie-popup
 orderbilly.com##.c-cookiemessage-overlay
 cabify.com##.c-cookies
@@ -19790,7 +19791,7 @@ beerwulf.com,bhphotovideo.com,binekarac.vw.com.tr,cheq.ai,distrelec.de,experiani
 experianidentityservice.co.uk###ensBannerBG
 !! #ensConsentWidget
 !! .cookie-message
-action.pl,appartementamsterdam.nl,bestbuycyprus.com,cambridge.org,dgpci.mai.gov.ro,discountbank.co.il,dividendmax.com,faccsa.com,haber7.com,huurwoningamsterdam.nl,jobg8.com,kameramsterdam.nl,macpac.co.nz,mercantile.co.il,meups.com.br,nomos-glashuette.com,ostwest.tv,piadinalumbro.gr,rules.co.uk,safra.sg,studiosamsterdam.nl,woonbotenamsterdam.com##.cookie-message
+action.pl,appartementamsterdam.nl,bestbuycyprus.com,cambridge.org,dgpci.mai.gov.ro,discountbank.co.il,dividendmax.com,faccsa.com,haber7.com,huurwoningamsterdam.nl,imda.gov.sg,jobg8.com,kameramsterdam.nl,macpac.co.nz,mercantile.co.il,meups.com.br,nomos-glashuette.com,ostwest.tv,piadinalumbro.gr,rules.co.uk,safra.sg,studiosamsterdam.nl,woonbotenamsterdam.com##.cookie-message
 !! .cookie-accept
 autocango.com##.cookie-accept
 !! #cookie-popup
@@ -20640,6 +20641,7 @@ up-load.io###gdpr-cookie-notice
 support.arcgames.com###gdpr-wall
 hindustantimes.com###gdprpopup
 galerieslafayette.com,group.vig,sparkasse.at###tc-privacy-wrapper
+gryphline.com##.PolicyPrompt_policyPrompt__0Fu5L
 bild.de,welt.de##.as-oil
 builderius.io##.builderiusCookieNotice
 hiltonheadisland.org##.c-site-alerts
@@ -21097,6 +21099,7 @@ archiwumalle.pl##+js(set-cookie, accept_political, 1)
 simsherpa.com##+js(set-cookie, acceptadvertising, no)
 simsherpa.com##+js(set-cookie, acceptanalytics, no)
 visti.it##+js(set-cookie, acceptcookies, 1)
+degruyterbrill.com##+js(set-cookie, acceptcookies, false)
 yambits.co.uk##+js(set-cookie, acceptcookies, no, , reload, 1)
 crushwineco.com##+js(set-cookie, acceptcookietermCookieBanner, true)
 croisieresendirect.com##+js(set-cookie, accepted, 1)
@@ -24518,6 +24521,7 @@ ctee.com.tw##.cookie-concent
 game.omg.com.tw##.cookie-confirm
 news.pts.org.tw##.cookie-flex
 sf-express.com##.cookie-policy_cookiePolicyWrapper__cwbwV
+bewildcard.com##.cookie-policy_cookiePolicy__iVL65
 hozonauto.com##.cookie-tips
 hkbu.edu.hk##.cookies-consent-banner
 unity.cn##.cookies-permission_2kEyTVGb
@@ -26247,6 +26251,7 @@ gastronom.ru##.accept-cookies-popup
 web-c.ru##.access-cookie
 culture.ru##.afWIX
 m2-shop.ru##.agreeCookie
+chitai-gorod.ru##.agreement-notice
 bancaintesa.ru##.agreement-substrate
 holodilnik.ru##.alert-compliance
 cenyvaptekah.ru##.alert-first-usage
@@ -27996,7 +28001,7 @@ concursolutions.com,forbes.com,formula1.com,fortune.com,proximus.be,proximustv.b
 @@||zensus2022.de/SiteGlobals/Modules/CookieBanner/*/CookieBanner.json?$~third-party,xmlhttprequest
 
 ! Title: uBlock filters – Cookie Notices
-! Last modified: Mon, 09 Feb 2026 11:09:58 +0000
+! Last modified: Fri, 13 Feb 2026 14:22:58 +0000
 ! Expires: 7 days
 ! Description: Filters optimized for uBlock Origin, to be used with EasyList's and/or Adguard's "Cookie Notices" list(s)
 ! License: https://github.com/uBlockOrigin/uAssets/blob/master/LICENSE
@@ -28095,11 +28100,8 @@ standard.co.uk##html.sp-message-open > body:style(position: unset !important; ov
 standard.co.uk##[id^="sp_message_container"]
 ! https://www.independent.co.uk/news/world/americas/inside-titan-sub-titanic-implosion-b2364884.html
 ! https://www.reddit.com/r/uBlockOrigin/comments/16893ks/
-cmpv2.independent.co.uk##+js(trusted-click-element, .sp_choice_type_12[title="OPTIONS"])
-cmpv2.independent.co.uk##+js(trusted-click-element, [title="Reject All"], , 500)
 cmpv2.independent.co.uk##+js(trusted-click-element, button[title="READ FOR FREE"], , 1000)
-independent.co.uk##[id^="sp_message_container"]
-independent.co.uk##html.sp-message-open:style(width: initial !important)
+independent.co.uk##+js(trusted-click-element, button.sp_choice_type_11)
 ! https://video.lefigaro.fr/figaro/video/les-gestes-damour-prennent-plusieurs-formes-dans-une-video-humoristique-lukraine-demande-plus-de-caesar-a-la-france/
 lefigaro.fr##+js(trusted-set-cookie, fig_save_consent, iTTPgpSWqAGGcd3vV88zNDbHsABxE1hB, 1year)
 ! https://www.filmweb.pl/video/Zwiastun/Indiana+Jones+i+artefakt+przeznaczenia+Zwiastun+nr+2+polskie+napisy-64884
@@ -29880,11 +29882,9 @@ nytimes.com##+js(trusted-click-element, button[data-tpl-type="Button"], , 1000)
 uber.com,ubereats.com##+js(trusted-click-element, button[data-tracking-name="cookie-preferences-sloo-opt-out"], , 1000)
 
 ! Accept cookie-wall (UK IP)
-independent.co.uk,privacy.crash.net,cmpv2.likehifi.de##+js(trusted-click-element, button[title="ACCEPT"], , 1000)
+privacy.crash.net,cmpv2.likehifi.de##+js(trusted-click-element, button[title="ACCEPT"], , 1000)
 ! Save and exit  (UK IP)
 the-independent.com##+js(trusted-click-element, button[title="SAVE AND EXIT"])
-! reject (EU IP) https://www.the-independent.com/
-cmpv2.independent.co.uk##+js(trusted-click-element, button[aria-label="Reject All"], , 1000)
 
 ! reject
 prospre.io##+js(trusted-set-cookie, cookieConsent, '{"adConsentGranted":false,"adUserDataConsentGranted":false,"adPersonalizationConsentGranted":false,"analyticsConsentGranted":false,"personalizationConsentGranted":false}', , , reload, 1)
