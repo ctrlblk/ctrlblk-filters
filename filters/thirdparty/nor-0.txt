@@ -1,6 +1,6 @@
 ! Title: 🏔️ Dandelion Sprouts nordiske filtre for ryddigere nettsider
 ! Title 🇬🇧: Dandelion Sprout's Nordic filters for tidier websites
-! Last modified: 13February2026v1
+! Last modified: 16February2026v1
 ! Expires: 18 hours
 ! Lisens / Licence: https://github.com/DandelionSprout/adfilt/blob/master/LICENSE.md
 ! Homepage: https://github.com/DandelionSprout/adfilt/blob/master/Wiki/General-info.md
@@ -1963,6 +1963,8 @@ no##section.noHeader:has(amedia-include[param-url*=innocode])
 .dk/media/*-topbanner-$image
 ! https://play•tv2•no/direkte-tv/hits-q7bsv1v6?play=true (Tested with TV2 Play's no-ads Total pack; 21/10/2025)
 ://sponsorship.public.tv2.no/spons/play/v2?params=
+! https://www•smakelig•com/sjokoladens-magi-lag-din-egen-sjokolade-bade-klassisk-og-sunn-variant/ (16/02/2026)
+||smakelig.com/wp-content/uploads/202*.gif|
 ! — — — — —
 ! 🇳🇴：Generelle oppføringer med kilder
 ! 🇬🇧：Generic entries that have sources
@@ -2541,7 +2543,7 @@ telenor.no##.global-overlay-background
 @@||cl.k5a.io^$domain=abcnyheter.no
 
 !
-! Last updated: 22December2025v1-Extension
+! Last updated: 16February2026v1-Extension
 ! 🇳🇴: ——— Vindusviskere for betalte artikler (sånn at de nederste linjene i en forhåndsvisning ikke toner ut) ———
 ! Takk til THEtomaso (https://github.com/THEtomaso) for de fleste av disse oppføringene.
 ! 🇩🇰: ——— Vinduesviskere for betalte artikler (så de sidste par linjer i en forhåndsvisning ikke falder ud) ———
@@ -2664,6 +2666,10 @@ playpilot.com##body:style(overflow: auto !important)
 
 ! 🇬🇧: ——— An unusual entry, but a needed entry: Aims to prevents NRK's login system on Google Translate-d pages from forcing readers who were logged in to their regular site, from being redirected from a translated page to the non-translated frontpage. ———
 ||innlogging.nrk.no^$frame,domain=www-nrk-no.translate.goog
+
+! 🇳🇴: Meningsløs tilsløring av strømprismåleren på forsiden, siden sløringen ikke fjernes for abonnenter uansett
+! 🇬🇧: Pointless blurring of the electricity price gauge on the frontpage, since the blurring isn't removed for subscribers anyway
+adressa.no##.strom .overlay:style(background:0!important;backdrop-filter:0!important;-webkit-backdrop-filter:0!important)
 
 !¤=☆=¤=☆=¤=☆=¤=☆=¤=☆=¤=☆=¤=☆=¤=☆=¤=☆=¤=☆=¤=☆=¤=☆=¤!
 
