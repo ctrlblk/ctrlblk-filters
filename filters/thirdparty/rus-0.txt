@@ -13913,7 +13913,6 @@ sib.fm#?##article_feeds > .row:-abp-has(> div > p:-abp-contains(/яндекс/i)
 portal-kultura.ru###aside > center ~ *
 sinonim.org###aside > div[style^="border:"]
 vsebasni.ru###aside > noindex
-minfin.com.ua###aside-teaser
 stopress.ru###aside.punktir
 upn.ru###aspnetForm > center
 gorod55.ru###at-cv-lightbox
@@ -14085,7 +14084,6 @@ otzyvua.net###container > div.otzyv_box_float[id^="review_"] ~ .otzyv_box_float:
 oper.ru###container > div[style]
 sql-tutorial.ru###container > div[style] > script + style ~ ul
 agilerussia.ru###container > style + ul[class]
-minfin.com.ua###container-deposit
 ua-electro.com###content .metaslider
 kosmetista.ru###content > .b-under-menu
 sport-tv.by#?##content > .block:-abp-has(a[href][target="_blank"] > img)
@@ -14859,7 +14857,6 @@ gamegpu.com,hi.dn.ua,slavinfo.dn.ua###sp-top-banners
 rebill.me###space
 rebill.me###space + a[target="_blank"]
 31tv.ru###special-link
-minfin.com.ua###special-product-offer
 cian.ru###special-promo-link-container
 kino-teatr.ru###special_block
 itop-gear.ru###sping
@@ -17300,7 +17297,6 @@ fisher.spb.ru##.message-view-ads
 old-games.ru##.message[data-author="Ads Master"]
 bmwclub.ru##.message[data-author="KADR"] > .primaryContent .signature
 obmenvsem.org##.meti
-minfin.com.ua##.mfm-aside-block[style]
 torrent10.ru,torrent3.ru,torrent50.ru##.mg
 northern-newspaper.ru#?#.mg-posts-sec:-abp-has(> script)
 winstation.ru##.mg_button
@@ -19415,6 +19411,7 @@ allgosts.ru##[id*="baner"]
 lifenews.ru,lifenews78.ru,semestr.online,semestr.ru##[id*="banner"]
 forum.guns.ru##[id*="hide"][id$="ban"]
 hideme.ru##[id*="hidemead"]
+minfin.com.ua##[id*="product-offer"]
 iarex.ru,p-p.com.ua##[id*="redtram"]
 mychords.net,polaremont.ru,stokvod.ru##[id*="teaser"]
 telek.top##[id*="wmg-"]
@@ -22358,8 +22355,8 @@ ictv.ua,vikna.tv##div[id^="div-gpt-ad-"]
 ||dzen.ru/articles$csp=script-src 'unsafe-inline' 'unsafe-eval' data: static.dzeninfra.ru/react/ static.dzeninfra.ru/s3/zen-apps/ static.dzeninfra.ru/s3/zen-lib/ yandex.ru/ads/ vk.com/dist/ vk.com/js/api/videoplayer.js vk.com/dist/public/api/
 ||dzen.ru/news$csp=script-src 'unsafe-inline' 'unsafe-eval' data: static.dzeninfra.ru/react/ static.dzeninfra.ru/s3/zen-apps/ static.dzeninfra.ru/s3/zen-lib/ yandex.ru/ads/ vk.com/dist/ vk.com/js/api/videoplayer.js vk.com/dist/public/api/
 ||dzen.ru/pogoda/$script
+||static.dzeninfra.ru/s3/zen-apps/news-site/*/*/$script
 ||static.dzeninfra.ru/s3/zen-apps/video-feed/*/*/$script
-||static.dzeninfra.ru/s3/zen-apps/video-player-core/*/*/$script
 !
 $csp=script-src-attr 'none',domain=eurointegration.com.ua|sportanalytic.com|notebookcheck-ru.com
 /^https?://24smi\.org/*[/]*[/][^\s]{8,}/$xmlhttprequest,domain=24smi.org
@@ -22771,7 +22768,6 @@ news.mail.ru##aside div > div:first-child:empty ~ div
 news.mail.ru#?#aside div:-abp-has(> div:only-child:empty)
 news.mail.ru##body > div > style + div[id]
 ! Дзен новости Mail-edition
-dzen.ru##[id*="10-"]
 dzen.ru##[id*="20-"]
 dzen.ru##[id*="30-"]
 dzen.ru##[id*="_R-A-"]
@@ -23412,6 +23408,7 @@ pro.rbc.ru##.header__partner
 rbc.ru##.header__project__info
 rbc.ru#?#.item-in-article:-abp-has([href*="erid="])
 sportrbc.ru##.js-header-slider-container
+rbc.ru##.js-index-central-column .item-commercial-anons-wrapper
 cash.rbc.ru##.js-one-office.premium
 rbc.ru##.js-pro-slider__container
 rbc.ru##.js-snippet-pro-container
@@ -23461,6 +23458,12 @@ cnews.ru#?#a[href^="https://www.cnews.ru/redirect.php"]:-abp-contains(Дзен)
 autonews.ru,rbc.ru,rbcautonews.ru,sportrbc.ru##body div .banner__container
 autonews.ru,rbc.ru,sportrbc.ru##body div .banner__filmstrip
 rbc.ru##body div[class^="MainNewsComponent_wrapper_"] [href^="https://pro.rbc.ru/"]
+rbc.ru#?#body.free .intresting__list > .intresting__item:-abp-has(a[href^="https://pro.rbc.ru/"])
+rbc.ru#?#body.free .js-index-central-column > [data-publisher-index]:-abp-has([href^="https://pro.rbc.ru"])
+rbc.ru##body.free [data-vr-zone="Топ новости"] .main__feed::before
+rbc.ru##body.free [data-vr-zone="Топ новости"] a[href*="utm_campaign"]:not([href^="https://pro.rbc.ru/"])
+rbc.ru##body.free [data-vr-zone="Топ новости"] a[href^="https://pro.rbc.ru/"]
+rbc.ru#?#body.free [data-vr-zone="Топ новости"] div:-abp-has(> a[href*="utm_campaign"]:not([href^="https://pro.rbc.ru/"]))
 rbc.ru##body.free a.meta-info-row-project[href^="https://pro.rbc.ru"]
 rbc.ru##body.free a[class^="styles_message-bar_"][href^="https://pro.rbc.ru/"]
 rbc.ru#?#body.free aside.bside .sidebar:-abp-has(a[href^="https://pro.rbc.ru/"])
@@ -23706,7 +23709,7 @@ ukr.net##.lazy-load-banner
 @@||yandex.ru/ads/system/adsdk.js|$script,domain=yandex.ru
 ya.ru##.i-mini-bem[class*="banner"]
 ya.ru##[aria-label="Informers"] ~ [class]
-ya.ru##[aria-label^="Информ"] ~ [class]
+ya.ru##[aria-label^="Информ"] ~ [class][class]:not(button)
 ya.ru##[style*="feed"][style*="min-height:"]
 ya.ru##body > div[data-hydration-id] > [href^="https://yabs.yandex.ru/count/"] + div
 ya.ru##body > div[data-hydration-id] > div > [src^="https://yabs.yandex.ru/count/"] + div
@@ -23809,6 +23812,7 @@ yandex.ru,yandex.*#?#.page__result .typo:-abp-contains(/^новости парт
 yandex.ru,yandex.*#?#html[class*=" Theme_color_news-"] div[class*="_type_native"] [class*="_type_card"]:-abp-has(> div > div:empty)
 ! Яндекс.Афиша
 afisha.yandex.ru,afisha.yandex.*##.adfox
+afisha.yandex.ru,afisha.yandex.*##.afisha-profit-banner
 afisha.yandex.ru,afisha.yandex.*##div[data-banner-id]
 afisha.yandex.ru,afisha.yandex.*#?#div[data-component="Grid__Page"]:-abp-has(> div > div.adfox[id])
 ! Яндекс.Видео
@@ -23837,6 +23841,7 @@ market.yandex.ru,market.yandex.*##[data-banner-manager-id] [role="button"]
 market.yandex.ru,market.yandex.*##[data-baobab-name="recomMadv"] [role="button"]
 market.yandex.ru,market.yandex.*##[data-madv]
 market.yandex.ru,market.yandex.*##a[href^="https://ad.adriver.ru/"]
+market.yandex.ru,market.yandex.*##div[data-apiary-widget-name="@monetize/CreativeBanner"]
 market.yandex.ru,market.yandex.*##div[id^="remix_"] > div[style^="grid-row:"][style*="grid-column:"]:empty
 ! Яндекс.Музыка
 music.yandex.ru,music.yandex.*##section[class^="SideAdvertBanner_root_"]
@@ -28554,6 +28559,7 @@ dzen.ru##div[class*="__bannerContainer"]
 dzen.ru##div[class*="dzen-"][class*="-banner-"]
 dzen.ru##div[class*="dzen-desktop--"][class*="__ad-"]
 dzen.ru##div[class*="dzen-desktop--top-sidebar-desktop-ad__root"]
+dzen.ru##div[class*="topContentOneColumnFeed"] > div:first-child + div > article:style(background: inherit !important)
 dzen.ru##div[class^="dzen-desktop--"][class*="__right-"] div[style^="--top-padding:"]
 dzen.ru##div[class^="dzen-desktop--top-"] > div[style*="%"]:style(padding-top: unset !important)
 dzen.ru##div[id*="splashscreen"]
@@ -28723,7 +28729,7 @@ zoom.cnews.ru##.article_inner.news_content_inner + .sidebar:style(top: 0 !import
 rbc.ru,sportrbc.ru##.g-banner__news-footer:style(min-height: 0 !important)
 rbc.ru##.g-icon-big.g-play::after:style(bottom: calc(50% - 55px) !important; left: calc(50% - 55px) !important; cursor: pointer !important)
 rbc.ru,sportrbc.ru##.g-relative > .forecast:style(height: auto !important)
-rbc.ru,rbcrealty.ru,sportrbc.ru##.is-outline .topline__item:style(border-color: transparent !important)
+autonews.ru,rbc.ru,rbcrealty.ru,sportrbc.ru##.is-outline .topline__item:style(border-color: transparent !important)
 rbc.ru,sportrbc.ru##.l-col-100h:style(min-height: 0 !important; height: auto !important)
 rbc.ru##.l-small-width-top-padding:style(padding-top: unset !important)
 rbc.ru##.l-sticky-right-parent
@@ -28913,10 +28919,13 @@ drive2.ru##+js(abort-on-property-read, Object.prototype.AdfoxXhrRequestPrepared)
 liveinternet.ru,yap.ru,yaplakal.com##+js(abort-on-property-read, Object.prototype.Metrika)
 liveinternet.ru##+js(abort-on-property-read, Object.prototype.YA_TURBO_PAGES)
 lena-miro.ru,levik.blog,livejournal.com,olegmakarenko.ru,periskop.su,shakko.ru,shiro-kino.ru,vadimrazumov.ru##+js(abort-on-property-read, Object.prototype._getBanner)
+rbc.ru##+js(abort-on-property-read, Object.prototype._isAutostartQueueSet)
+dzen.ru##+js(abort-on-property-read, Object.prototype.adfoxContainerId)
 www.kinopoisk.ru##+js(abort-on-property-read, Object.prototype.bannerOptions)
 gorodrabot.by,gorodrabot.ru##+js(abort-on-property-read, Object.prototype.direct)
 fishki.net##+js(abort-on-property-read, Object.prototype.fakeDetect)
 auto.ru,reshu.by,reshuent.kz,sdamgia.ru##+js(abort-on-property-read, Object.prototype.getAdUsageStorage)
+rbc.ru##+js(abort-on-property-read, Object.prototype.isApplySticky)
 e1.ru,nova.rambler.ru,pikabu.ru##+js(abort-on-property-read, Object.prototype.loadBanner)
 24smi.org##+js(abort-on-property-read, Object.prototype.render)
 gismeteo.by,gismeteo.kz,gismeteo.ru##+js(abort-on-property-read, Object.prototype.scriptsViaXhr)
@@ -29218,8 +29227,6 @@ fishki.net##+js(set-attr, .cycle-carousel-wrap > a.bottom_slide__item > img, src
 fishki.net##+js(set-attr, .drag_element a[href*=".html"], target, true)
 dtf.ru,vc.ru##+js(set-attr, .media .andropov-video video, controls, true)
 eneyida.tv##+js(set-attr, .owl-item > a > img, src, [data-src])
-rbc.ru##+js(set-attr, a[href*="?from=main_lines"], target, true)
-rbc.ru##+js(set-attr, a[href*="?from=newsfeed"], target, true)
 overclockers.ru##+js(set-attr, img[src="https://overclockers.ru/assets/logo_gray_stub.gif"], src, [data-src])
 joyreactor.cc,reactor.cc##+js(set-attr, video, controls, true)
 3dnews.ru##+js(set-attr, video[controls="controls"], controls, true)
@@ -29258,11 +29265,8 @@ www.mos.ru##+js(set-constant, Object.prototype.disablePaste, false)
 1tv.ru##+js(set-constant, Object.prototype.disableSeek, noopFunc)
 kinokong.sk##+js(set-constant, Object.prototype.disableSelection, noopFunc)
 dzen.ru,frontend.vh.yandex.ru##+js(set-constant, Object.prototype.getAutoplay, noopFunc)
-dzen.ru##+js(set-constant, Object.prototype.getPlacement, undefined)
 shedevrum.ai##+js(set-constant, Object.prototype.getUaasConfig, undefined)
-dzen.ru##+js(set-constant, Object.prototype.initYaVersion, undefined)
 frontend.vh.yandex.ru##+js(set-constant, Object.prototype.initialAutoplay, null)
-dzen.ru##+js(set-constant, Object.prototype.isCustomBannerType, undefined)
 rbc.ru,sportrbc.ru##+js(set-constant, Object.prototype.livetv-state, true)
 tenews.org.ua##+js(set-constant, Object.prototype.manualAutoplay_, null)
 vp.rambler.ru##+js(set-constant, Object.prototype.minPlayingVisibleHeight, noopFunc)
@@ -29388,6 +29392,8 @@ ozon.ru##:matches-path(/kursk-sertifikaty) div[data-widget="banner"]:style(displ
 dzen.ru##:matches-path(/news) div[id*="feed"] > div:not([id]) > div[id*="feed"]
 dzen.ru##:matches-path(articles) div[class^="article-feed--"] > div:matches-attr(/./=/card$/) ~ div[id]
 forum.ru-board.com##:matches-path(topic=51666) .dats > a[href="javascript:pasteN('AlAvis')"] > b:style(color: #00bfff !important)
+dzen.ru##:matches-path(video/watch) [class*="_withBottomSpace-"]
+dzen.ru##:matches-path(video/watch) [class*="doc2doc-after"]
 pronpic.org#@#:not(obhod-adblocka)
 @@/fuckadblock.$script,domain=aniboom.one
 @@||frontend.vh.yandex.ru/player/*autoplay=1*service=ya-sport$subdocument,removeparam=|
@@ -29435,7 +29441,7 @@ cosplay-porn.*,fap-guru.*,mult-porno.*,sex-studentki.*##+js(set-cookie-reload, i
 disk.yandex.ru,disk.yandex.*##+js(remove-class, has-fullscreen-banner|has-right-direct, .public__root, stay)
 dzen.ru##div:matches-attr(/./=dzenpro-banner)
 dzen.ru##div:matches-attr(/[a-z0-9]/=/_ad-yp/)
-dzen.ru##div:matches-attr(/data-[a-z0-9]/=bottom-ad)
+dzen.ru##div:matches-attr(/data-[a-z0-9]/=/-ad$/)
 cq.ru##div[class]:not([class*="-"]):not([class*="_"]):matches-css(margin-top: 16px)
 ozon.ru##div[data-widget="banner"]:matches-path(/my/reviews/promo):style(display: block !important)
 pronpic.org##div[style="color:red;font-size:25px;"], .adblock_loock
