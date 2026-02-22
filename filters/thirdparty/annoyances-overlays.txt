@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: EasyList – Newsletter Notices
-! Last modified: Thu, 19 Feb 2026 13:55:54 +0000
+! Last modified: Sat, 21 Feb 2026 07:19:40 +0000
 ! Expires: 7 days (update frequency)
 ! *** easylist:template_header.txt ***
 !
@@ -2011,6 +2011,7 @@ friendlyatheist.com##._background_1mspu_85
 thefiscaltimes.com,thewalrus.ca##._form
 kilgorenewsherald.com##._inline-form
 therailwayhub.co.uk##._lpSurveyEmbed
+semafor.com##._newsletterSignup_1uf9b_29
 tvline.com##._newsletter_1cw2x_1
 goldderby.com##._newsletter_ixyx8_1
 lareviewofbooks.org##._slug__donationCard__glcwg
@@ -6186,7 +6187,7 @@ doctorofcredit.com#@#.wpdiscuz-subscribe-bar
 ! fanboy_newsletter_shopping_allowlist_general_hide.txt
 
 ! Title: uBlock filters – Other Annoyances
-! Last modified: Sat, 14 Feb 2026 08:07:15 +0000
+! Last modified: Sun, 22 Feb 2026 03:33:23 +0000
 ! Expires: 7 days
 ! Description: Filters optimized for uBlock Origin, to be used with EasyList's and/or Adguard's "Other Annoyances" list(s)
 ! License: https://github.com/uBlockOrigin/uAssets/blob/master/LICENSE
@@ -6337,6 +6338,9 @@ kashinavi.com##+js(ra, oncopy|onSelectStart|oncontextmenu|style, '[oncopy],[onco
 ! https://github.com/uBlockOrigin/uAssets/issues/31730
 open.spotify.com##.contentSpacing .paywall[data-testid="lyrics-container"] p[data-encore-id="text"]:style(-webkit-touch-callout: default !important; -webkit-user-select: text !important; -khtml-user-select: text !important; -moz-user-select: text !important; -ms-user-select: text !important; user-select: text !important; -webkit-tap-highlight-color: revert !important; cursor: revert !important;)
 
+! https://github.com/uBlockOrigin/uAssets/issues/31939
+police.gov.sg##.slick-slider:style(-webkit-touch-callout: default !important; -webkit-user-select: text !important; -khtml-user-select: text !important; -moz-user-select: text !important; -ms-user-select: text !important; user-select: text !important; -webkit-tap-highlight-color: revert !important; cursor: revert !important;)
+
 ! END: Anti copy, right-click etc.
 
 ! START: Anti-adblock
@@ -6443,6 +6447,9 @@ jailbreakchangelogs.xyz##+js(set-session-storage-item, adblock_modal_dismissed, 
 
 ! https://github.com/easylist/easylist/pull/23101
 @@||jigsawplanet.com^$ghide
+
+! https://github.com/uBlockOrigin/uAssets/issues/31947
+lofi-nopixel.com##+js(trusted-set-local-storage-item, adBlockerAlert_lastShown, $now$)
 
 ! END: Anti-adblock
 
