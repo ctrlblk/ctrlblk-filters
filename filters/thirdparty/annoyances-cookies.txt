@@ -28045,7 +28045,7 @@ concursolutions.com,forbes.com,formula1.com,fortune.com,proximus.be,proximustv.b
 @@||zensus2022.de/SiteGlobals/Modules/CookieBanner/*/CookieBanner.json?$~third-party,xmlhttprequest
 
 ! Title: uBlock filters – Cookie Notices
-! Last modified: Thu, 19 Feb 2026 13:16:08 +0000
+! Last modified: Sun, 22 Feb 2026 11:36:59 +0000
 ! Expires: 7 days
 ! Description: Filters optimized for uBlock Origin, to be used with EasyList's and/or Adguard's "Cookie Notices" list(s)
 ! License: https://github.com/uBlockOrigin/uAssets/blob/master/LICENSE
@@ -28214,7 +28214,7 @@ onlinestempel.ch##+js(trusted-set-cookie, consent, %7B%22level%22%3A%5B%22necess
 ! https://www.chase.co.uk/gb/en/
 chase.co.uk##+js(trusted-set-cookie, CookieConsents, '{"StrictlyNecessary":true,"Analytical":false,"Performance":false,"AdvertisingAndTargeting":false,"timestamp":""}')
 ! https://www.svt.se/sport/fotboll/dejan-kulusevski-tippar-ems-mastare-och-storsta-flopp
-svt.se##+js(trusted-set-cookie, cookie-consent-news-3, '{"optedIn":true,"statistics":false,"functionality":false}')
+svt.se##+js(trusted-set-cookie, cookie-consent-news-4, '{"categories":{"required":true,"improved_experience":false,"partners":false},"version":4}')
 ! https://www.komoot.com
 komoot.com##+js(trusted-set-local-storage-item, komoot_gdpr_data, '{"requestDone":true,"technicalAcceptedTrackers":[],"analyticsAcceptedTrackers":[],"profilingAcceptedTrackers":[],"lastAcceptedVersion":1}')
 ! https://chatreplay.stream/
@@ -33351,3 +33351,8 @@ kuntarekry.fi##+js(trusted-set-cookie, consent, '{"necessary":true,"preferences"
 
 ! https://github.com/uBlockOrigin/uAssets/issues/31764
 dailygame.at##+js(trusted-click-element, [role="button"][class*="366"])
+
+! https://github.com/uBlockOrigin/uAssets/issues/22533#issuecomment-3939128053
+itavisen.no##.qc-cmp2-container
+itavisen.no##+js(trusted-click-element, [id="qc-cmp2-ui"] [mode="secondary"], , 2000)
+itavisen.no##+js(trusted-click-element, [id="qc-cmp2-ui"] button[class*="css-"]:nth-of-type(1), , 3000)
