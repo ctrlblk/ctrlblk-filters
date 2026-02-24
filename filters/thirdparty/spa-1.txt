@@ -1,10 +1,10 @@
 ![Adblock Plus 2.0]
-! Checksum: UgBctr2OCQ7ojsYSqa240w
-! Diff-Path: ../patches/9/9-s-1771822177-3600.patch
+! Checksum: 5j02W7lCBWk2znboMIopJg
+! Diff-Path: ../patches/9/9-s-1771908282-3600.patch
 ! Title: AdGuard Spanish/Portuguese filter
 ! Description: Filter list that specifically removes ads on websites in Spanish, Portuguese, and Brazilian Portuguese languages.
-! Version: 2.0.33.29
-! TimeUpdated: 2026-02-23T04:46:07+00:00
+! Version: 2.0.33.34
+! TimeUpdated: 2026-02-24T04:41:13+00:00
 ! Expires: 5 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -198,6 +198,12 @@
 !
 !
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/225410
+luggames.com##body:style(overflow: auto !important;)
+luggames.com###adblock-modal:style(display: none !important;)
+luggames.com##+js(set-constant, checkAdBlock, noopFunc)
+! https://github.com/AdguardTeam/AdguardFilters/issues/225373
+flacdownloader.com##+js(no-setTimeout-if, _wp_chunks)
 ! https://github.com/AdguardTeam/AdguardFilters/issues/224138
 perisxxx.com##+js(addEventListener-defuser, DOMContentLoaded, offsetHeight === 0)
 ! https://github.com/AdguardTeam/AdguardFilters/issues/223687
@@ -392,9 +398,10 @@ kumanga.com##+js(no-setInterval-if, console[_0x)
 ! https://github.com/AdguardTeam/AdguardFilters/issues/191153
 zonatmo.com###adb-enabled
 zonatmo.com##+js(no-setTimeout-if, adblockDetector)
+! https://github.com/AdguardTeam/AdguardFilters/issues/225412
 ! https://github.com/AdguardTeam/AdguardFilters/issues/191026
 ! https://github.com/AdguardTeam/AdguardFilters/issues/190843
-gourlpro.com,casperhd.com,short.7hd.club##+js(prevent-fetch, pagead2.googlesyndication.com)
+gourlpaste.com,softwarepc.es,gourlpro.com,casperhd.com,short.7hd.club##+js(prevent-fetch, pagead2.googlesyndication.com)
 ! https://github.com/AdguardTeam/AdguardFilters/issues/190838
 ||imasdk.googleapis.com/js/sdkloader/ima3.js$script,redirect=google-ima.js,domain=youtube-player.sbtlab.io
 ! file4go.net (Brazilian file hoster - window.alert adblock)
@@ -1496,10 +1503,12 @@ receitasdocheff.online##+js(set-local-storage-item, last_ads, yes)
 uol.com.br##+js(set-constant, URL_VAST_YOUTUBE, {})
 ! https://github.com/AdguardTeam/AdguardFilters/issues/159573
 uol.com.br##+js(set-constant, __configuredDFPTags, {})
+! https://github.com/AdguardTeam/AdguardFilters/issues/225495
 ! https://github.com/AdguardTeam/AdguardFilters/issues/224774
 ! https://github.com/AdguardTeam/AdguardFilters/issues/166619
 ||mp.lura.live/vod/vast.info/
-vix.com##+js(json-prune, ads vmap_ad_breaks interstitials)
+vix.com##+js(json-prune, ads, ads.policy.skipMode)
+vix.com##+js(json-prune, vmap_ad_breaks interstitials)
 vix.com##+js(m3u-prune, type=ad, .m3u8)
 vix.com##+js(xml-prune, xpath(//*[name()="Period"][.//*[name()="BaseURL" and contains(text()\,".mp.lura.live/prod/")]] | //*[name()="MPD"]/@mediaPresentationDuration), , .mpd)
 ! https://github.com/AdguardTeam/AdguardFilters/issues/165935
@@ -1589,6 +1598,7 @@ safez.es,payad.lat,uberxviral.com,eldiario24hrs.com,constanteonline.com,acortaz.
 geeknetic.es##+js(no-window-open-if)
 ! https://github.com/AdguardTeam/AdguardFilters/issues/151620
 solopc.net##+js(set-constant, global.noobMaxTry, 0)
+! https://github.com/AdguardTeam/AdguardFilters/issues/225412
 ! https://github.com/AdguardTeam/AdguardFilters/issues/191026
 ! https://github.com/AdguardTeam/AdguardFilters/issues/190843
 ! https://github.com/AdguardTeam/AdguardFilters/issues/146895
@@ -2045,6 +2055,12 @@ mundobytes.com,techondicas.com,jornalrepercussao.com.br,zonaaps.com,gamevicio.co
 !
 ! NOTE: Specific rules
 !
+luggames.com##div[class*="-ad-container-"]
+gamestorrents.app##a[target="_blank"] > img.rounded
+pastecool.com##.dc-leaderboard
+cualesmiip.com##div[class^="ad-"]
+cual-es-mi-ip.net##.sas_static
+cual-es-mi-ip.net##.grid__main:has(> .grid--content > .grid--mega > .sas_static)
 replayoutv.comunidades.net##+js(abort-current-script, onload, puTS)
 replayoutv.comunidades.net##.toolbar_bazzoa
 replayoutv.comunidades.net###topo
