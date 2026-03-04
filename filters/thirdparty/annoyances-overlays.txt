@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: EasyList – Newsletter Notices
-! Last modified: Mon, 02 Mar 2026 03:19:11 +0000
+! Last modified: Tue, 03 Mar 2026 10:23:20 +0000
 ! Expires: 7 days (update frequency)
 ! *** easylist:template_header.txt ***
 !
@@ -3014,7 +3014,7 @@ chalkbeat.org##.newsletter-breaker-wrapper
 dailydot.com,folhape.com.br##.newsletter-button
 independent.co.uk,the-independent.com,theblock.co##.newsletter-component
 chalkbeat.org##.newsletter-composer
-bobvila.com##.newsletter-container
+bobvila.com,futurism.com##.newsletter-container
 the-sun.com,thesun.co.uk,thesun.ie##.newsletter-container-placeholder
 outdoorlife.com##.newsletter-content
 deadline.com##.newsletter-cta
@@ -6200,7 +6200,7 @@ doctorofcredit.com#@#.wpdiscuz-subscribe-bar
 ! fanboy_newsletter_shopping_allowlist_general_hide.txt
 
 ! Title: uBlock filters – Other Annoyances
-! Last modified: Mon, 02 Mar 2026 15:36:09 +0000
+! Last modified: Tue, 03 Mar 2026 09:52:06 +0000
 ! Expires: 7 days
 ! Description: Filters optimized for uBlock Origin, to be used with EasyList's and/or Adguard's "Other Annoyances" list(s)
 ! License: https://github.com/uBlockOrigin/uAssets/blob/master/LICENSE
@@ -6361,7 +6361,8 @@ nny360.com##+js(aeld, contextmenu, preventDefault)
 nny360.com##+js(rpnt, script, rcoverride < 1, false)
 
 ! https://github.com/uBlockOrigin/uAssets/issues/32038
-padlet.com##.select-none:style(-webkit-touch-callout: default !important; -webkit-user-select: text !important; -khtml-user-select: text !important; -moz-user-select: text !important; -ms-user-select: text !important; user-select: text !important; -webkit-tap-highlight-color: revert !important; cursor: revert !important;)
+padlet.com##.select-none.surface-post:style(-webkit-touch-callout: default !important; -webkit-user-select: text !important; -khtml-user-select: text !important; -moz-user-select: text !important; -ms-user-select: text !important; user-select: text !important; -webkit-tap-highlight-color: revert !important; cursor: revert !important;)
+padlet.com##.wish-wrapper > div[draggable="true"]:remove-attr(draggable)
 
 ! END: Anti copy, right-click etc.
 

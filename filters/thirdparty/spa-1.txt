@@ -1,10 +1,10 @@
 ![Adblock Plus 2.0]
-! Checksum: k00/YdQiIM6WYtmlSH0a3Q
-! Diff-Path: ../patches/9/9-s-1772280945-3600.patch
+! Checksum: wMXhHLUn6aeBfzRfEI0itA
+! Diff-Path: ../patches/9/9-s-1772529765-3600.patch
 ! Title: AdGuard Spanish/Portuguese filter
 ! Description: Filter list that specifically removes ads on websites in Spanish, Portuguese, and Brazilian Portuguese languages.
-! Version: 2.0.33.42
-! TimeUpdated: 2026-02-28T12:12:38+00:00
+! Version: 2.0.33.44
+! TimeUpdated: 2026-03-03T09:19:09+00:00
 ! Expires: 5 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -2061,6 +2061,16 @@ eloutput.com,mundobytes.com,techondicas.com,jornalrepercussao.com.br,zonaaps.com
 !
 ! NOTE: Specific rules
 !
+eluniversal.com.mx##.ELU_VIDEO
+eluniversal.com.mx##.wrapper_box_interarticle_1
+eluniversal.com.mx##.wrapper_box_interarticle_2
+eluniversal.com.mx##.google-related-search-container
+geek.reporteindigo.com##div[class^="styles_banner"]
+geek.reporteindigo.com##div[class^="styles_stickyrail"]
+pcmrace.com##.cb-post-footer-block:style(display: none !important;)
+pcmrace.com##.cb-h-block:style(display: none !important;)
+pcmrace.com##a#cb-bg-to:style(display: none !important;)
+pcmrace.com##body:style(background-image: none !important;)
 veja.abril.com.br##.relacionadas-marfeel-single
 veja.abril.com.br##.mais-lidas-marfeel-single
 vistazo.com##.portlet-boundary:has(> div:not([id-next]) > div[class*="1Display"])
