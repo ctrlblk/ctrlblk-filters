@@ -1,10 +1,10 @@
 ![Adblock Plus 2.0]
-! Checksum: YA/aYUyRMnroZHWhx+Wdcw
-! Diff-Path: ../patches/13/13-s-1772551512-3600.patch
+! Checksum: /hXkqcgLMa1/Ss3gHAqnow
+! Diff-Path: ../patches/13/13-s-1772685736-3600.patch
 ! Title: AdGuard Turkish filter
 ! Description: Filter list that specifically removes ads on websites in Turkish language.
-! Version: 2.0.62.65
-! TimeUpdated: 2026-03-03T15:21:57+00:00
+! Version: 2.0.62.71
+! TimeUpdated: 2026-03-05T04:38:57+00:00
 ! Expires: 5 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -1538,6 +1538,9 @@ dirilispostasi.com,turkuazgazetesi.net,yenialanya.com,bugunkocaeli.com.tr,cagdas
 !
 ! NOTE: Specific rules
 !
+sporx.com##div[id^="adcluster"]:style(display: none !important;)
+sporx.com##body:style(overflow: auto !important;)
+tabyadijital.com##.text-foreground-secondary:contains(Reklam)
 cnnturk.com##.banner-ramadan-sponsoredLink
 ahaber.com.tr##.md\:flex.item-force
 ||gazetegercek.com.tr/images/money/RdSlPefya9Fn.jpg
@@ -1561,7 +1564,9 @@ sondakika.com###tb-inpage-general-desktop
 sondakika.com##.content-container > section.hbRow:has(> a[href^="https://www.eminevim.com/"])
 gazetebirlik.com##section[data-layout-id="162"]
 trhaber.com##.mt-6 > div[style^="min-height:"]
-hurriyet.com.tr##div[data-right-href^="http://pubads.g.doubleclick.net/gampad/clk?id="]
+hurriyet.com.tr##+js(remove-attr, data-right-href|data-right-href-mobile, .ke-pt-row)
+hurriyet.com.tr##.ke-pt-row:style(cursor: default !important;)
+hurriyet.com.tr##.ke-pt-brand:style(display: none !important;)
 aydinlik.com.tr###taboola-mid-article-thumbnails-1
 trhaber.com##.relative[style*="min-height:"][style*="250px"]
 defensehere.com##.track-click
@@ -2945,7 +2950,6 @@ fullhdfilm.*##div[style^="margin:"] > a[target="_blank"] > img
 ||filmbari.com/*.mp4
 evrensel.net##.bulten_sidebar
 evrensel.net##.haber-ici-reklam
-pusulagazetesi.com.tr###tdsAdContainer
 forum.donanimarsivi.com##.p-body-content > a[target="_blank"] > img
 forum.donanimarsivi.com##.p-body-sideNavContent > a[target="_blank"] > img
 ||donanimarsivi.com/wp-content/uploads/2022/12/da-forum-amd-banner-3.jpg
@@ -5806,6 +5810,13 @@ lovefilmizle.net,elzemfilm.org,dizicaps.*,erotikfilmtube.com,sexfilmleriizle.com
 ! WARNING: When adding new rules here, try to find an initial source of an actual domain,
 !          or add a last known domain
 !
+! Frequently changed domains: tvakin*.live
+! Source: https://bit.ly/m/akintv
+/tvakin\d?\.live$/##div[onclick^="window.open('https://direk"]
+/tvakin\d?\.live$/##.marquee-banner
+tvakin.live,tvakin1.live,tvakin2.live,tvakin3.live,tvakin4.live,tvakin5.live,tvakin6.live,tvakin7.live,tvakin8.live,tvakin9.live,tvakin10.live,tvakin11.live,tvakin12.live,tvakin13.live,tvakin14.live,tvakin15.live,tvakin16.live,tvakin17.live,tvakin18.live,tvakin19.live,tvakin20.live##div[onclick^="window.open('https://direk"]
+tvakin.live,tvakin1.live,tvakin2.live,tvakin3.live,tvakin4.live,tvakin5.live,tvakin6.live,tvakin7.live,tvakin8.live,tvakin9.live,tvakin10.live,tvakin11.live,tvakin12.live,tvakin13.live,tvakin14.live,tvakin15.live,tvakin16.live,tvakin17.live,tvakin18.live,tvakin19.live,tvakin20.live##.marquee-banner
+!
 ! Frequently changed domains: patronizle*.cfd
 ! Source: patronspor.is
 ! aglint-disable no-invalid-modifiers
@@ -6350,6 +6361,7 @@ justintvizle550.top,justintvizle551.top,justintvizle552.top,justintvizle553.top,
 ! selcuksports2.com
 selcuksports2.com,selcuksports3.com,selcuksports4.com,selcuksports5.com,selcuksports6.com,selcuksports7.com,selcuksports8.com,selcuksports9.com,selcuksports10.com,selcuksports11.com,selcuksports12.com,selcuksports13.com,selcuksports14.com,selcuksports15.com,selcuksports16.com,selcuksports17.com,selcuksports18.com,selcuksports19.com,selcuksports20.com,selcuksports21.com##img[id^="top-ads-"]
 ! CASE 3 - probably fake
+taraftariumkral24.pro,selcuktvonline.me,selcukspor-hd.digital,netsportv.co##.alert
 ||taraftariumhdizle24.org/dimg/*.gif$image
 taraftariumhdizle24.org###pageskin-link
 taraftariumhdizle24.org##a[href^="https://hemengit.link/"]
