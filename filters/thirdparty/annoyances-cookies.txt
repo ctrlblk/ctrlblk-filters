@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: EasyList – Cookie Notices
-! Last modified: Thu, 05 Mar 2026 05:05:21 +0000
+! Last modified: Thu, 05 Mar 2026 22:02:01 +0000
 ! Expires: 7 days (update frequency)
 ! *** easylist:template_header.txt ***
 !
@@ -18478,6 +18478,7 @@ cognizantee.tekstac.com##.eupopup-container
 kromgaming.com##.eupouY
 bojoko.com##.evt-notification-bottom
 ezil.me##.ew776696
+matrixify.app##.ex-cookies
 exidegroup.com##.exide-gtm-scripts-modal-wrapper
 exitlag.com##.exl-cookie-banner
 parcelsonline.postoffice.co.uk##.explicit-cookie-banner-wrapper
@@ -23668,6 +23669,9 @@ anjunadeep.co##.privacy-notice-gdpr-container
 gpiaaf.gov.pt##+js(set-cookie, WarningsAndPolicyAccepted, true)
 ! bpstat.bportugal.pt
 bpstat.bportugal.pt##+js(set-cookie, bdp_use_cookies, notagree)
+! klimahotelmilano.com
+klimahotelmilano.com###body,html:style(overflow: auto !important; position: initial !important;)
+klimahotelmilano.com##.tpl-cookie
 !------------------------Rules for international sites------------------------!
 ! *** easylist:easylist_cookie/easylist_cookie_international_specific_hide.txt ***
 flvw.de###ConsentMsg
@@ -25328,7 +25332,6 @@ coccinella.bz.it###privacy-win
 cinquantamila.it###privacy_advisor
 faxiflora.it###privacydiv
 hotelmarini.it###pscookielaw
-la7.it###puthere
 rds.it###rds-cookie-preferences
 samaritansonlus.org###sB_injected
 netbet.it###sec-banner-div
@@ -27665,7 +27668,7 @@ concursolutions.com,forbes.com,formula1.com,fortune.com,proximus.be,proximustv.b
 @@||api.consentframework.com/api/$xmlhttprequest,domain=01net.com|gizmodo.com
 @@||api.mercari.jp/experiments/get_running_experiments_by_name$xmlhttprequest,domain=jp.mercari.com
 @@||api.transcend.io/privacy/graphql$xmlhttprequest
-@@||apikeys.civiccomputing.com^$xmlhttprequest,domain=insights.com|videogameschronicle.com
+@@||apikeys.civiccomputing.com^$xmlhttprequest,domain=gold.ac.uk|insights.com|videogameschronicle.com
 @@||app.erevie.pl/assets/CookieConsent-$~third-party
 @@||app.termly.io/embed-policy.min.js$domain=help.sanctions.io|jobscan.co|trinityschool.org
 @@||app.weathercloud.net/assets/*/CookieMonster.min.js$~third-party
@@ -27673,7 +27676,7 @@ concursolutions.com,forbes.com,formula1.com,fortune.com,proximus.be,proximustv.b
 @@||arbetsgivarverket.se/js/cookieconsent.js$script,~third-party
 @@||assets.travix.com/client/cookie-banner-$script
 @@||astrogaming.com/etc.clientlibs/logitech-common/clientlibs/onetrust.$script,~third-party
-@@||ats-wrapper.privacymanager.io/ats-modules/*/ats.js$script,domain=iodonna.it|video.corriere.it|video.gazzetta.it
+@@||ats-wrapper.privacymanager.io/ats-modules/*/ats.js$script,domain=iodonna.it|la7.it|video.corriere.it|video.gazzetta.it
 @@||badgeland.*/cookie-consent.js$~third-party
 @@||banking.fyrst.de/translations/*-cookiedisclaimer$~third-party,xmlhttprequest
 @@||barclays.co.uk^*/cookiepolicy.js$~third-party
@@ -27708,7 +27711,7 @@ concursolutions.com,forbes.com,formula1.com,fortune.com,proximus.be,proximustv.b
 @@||ceramtec-group.com^*/cookieconsent.min.js
 @@||chasecdn.com^*/cookie.js$script,domain=chase.com
 @@||choices.consentframework.com^$domain=01net.com|frandroid.com|numerama.com
-@@||civiccomputing.com^*/cookieControl-$script,domain=amplitude.com|kit.co|marylebonevillage.com|msi.com|pilates.com|ram.ac.uk|romania-insider.com|shop.ordnancesurvey.co.uk|stagecoachbus.com|videogameschronicle.com
+@@||civiccomputing.com^*/cookieControl-$script,domain=amplitude.com|gold.ac.uk|kit.co|marylebonevillage.com|msi.com|pilates.com|ram.ac.uk|romania-insider.com|shop.ordnancesurvey.co.uk|stagecoachbus.com|videogameschronicle.com
 @@||clickskeks.at^$domain=wittmann-group.com
 @@||client.axept.io^$domain=welcometothejungle.com
 @@||cloudflare.com^*/cookieconsent.min.js$domain=cards.thm.de|ehftv.com|pixelexperience.org|pixieset.com|rijbewijskeuringennederland.nl|sammobile.com|xnview.com
@@ -28057,7 +28060,7 @@ concursolutions.com,forbes.com,formula1.com,fortune.com,proximus.be,proximustv.b
 @@||zensus2022.de/SiteGlobals/Modules/CookieBanner/*/CookieBanner.json?$~third-party,xmlhttprequest
 
 ! Title: uBlock filters – Cookie Notices
-! Last modified: Wed, 04 Mar 2026 06:35:29 +0000
+! Last modified: Thu, 05 Mar 2026 17:31:11 +0000
 ! Expires: 7 days
 ! Description: Filters optimized for uBlock Origin, to be used with EasyList's and/or Adguard's "Cookie Notices" list(s)
 ! License: https://github.com/uBlockOrigin/uAssets/blob/master/LICENSE
@@ -33422,3 +33425,10 @@ camaramar.com##+js(trusted-click-element, button.button.accept, , 2000)
 
 ! https://github.com/uBlockOrigin/uAssets/issues/32054
 maxjeune-tgvinoui.sncf##+js(trusted-click-element, #didomi-notice-agree-button)
+
+! https://github.com/uBlockOrigin/uAssets/issues/32077
+gold.ac.uk##+js(trusted-click-element, button.ccc-accept-button)
+
+! Functional
+! https://github.com/brave-experiments/cookiecrumbler-issues/issues/367
+wistia.com##+js(trusted-set-local-storage-item, wistia_cookie_consent, '{"ad_storage":"denied","analytics_storage":"denied","functionality_storage":"granted","personalization_storage":"denied","security_storage":"granted","ad_user_data":"denied","ad_personalization":"denied"}')
