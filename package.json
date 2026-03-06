@@ -1,10 +1,13 @@
 {
-    "name": "ctrblk-filters",
+    "name": "@ctrlblk/ctrlblk-filters",
     "version": "0.1.0",
+    "files": [
+        "dist"
+    ],
     "scripts": {
         "build": "node build/build.mjs",
-        "update-thirdparties": "node build/updateThirdparties.mjs"
-
+        "update-thirdparties": "node build/updateThirdparties.mjs",
+        "prepare": "node build/build.mjs"
     },
     "devDependencies": {
         "fast-glob": "^3.3.2"
