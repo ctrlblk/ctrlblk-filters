@@ -1,10 +1,10 @@
 ![Adblock Plus 2.0]
-! Checksum: /yis5XI9eiL+Vp8ldrWfdw
-! Diff-Path: ../patches/7/7-s-1773111916-3600.patch
+! Checksum: 69NJy8SnTR4jQpasYua1iQ
+! Diff-Path: ../patches/7/7-s-1773201459-3600.patch
 ! Title: AdGuard Japanese filter
 ! Description: Filter that enables ad blocking on websites in Japanese language.
-! Version: 2.0.72.66
-! TimeUpdated: 2026-03-10T03:01:48+00:00
+! Version: 2.0.72.68
+! TimeUpdated: 2026-03-11T03:54:09+00:00
 ! Expires: 5 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -450,6 +450,10 @@
 !
 !
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/226734
+yomury.blog.jp##+js(no-setTimeout-if, offsetHeight&&0!==n.offsetWidth&&"none")
+! https://github.com/AdguardTeam/AdguardFilters/issues/226582
+girlsvip-matome.com##+js(no-setTimeout-if, adsbygoogle)
 ! https://github.com/AdguardTeam/AdguardFilters/issues/226611
 ! https://github.com/AdguardTeam/AdguardFilters/issues/226433
 ||googleads.g.doubleclick.net/pagead/id$xhr,redirect=noop.txt,domain=a-q-f.ib-game.jp|pointmall-rakuten.ib-game.jp

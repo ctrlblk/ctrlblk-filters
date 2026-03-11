@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: EasyList – Newsletter Notices
-! Last modified: Mon, 09 Mar 2026 03:26:08 +0000
+! Last modified: Wed, 11 Mar 2026 05:03:44 +0000
 ! Expires: 7 days (update frequency)
 ! *** easylist:template_header.txt ***
 !
@@ -1376,7 +1376,7 @@
 ||omnisnippet1.com^$domain=miuratakuya.store|yourcelebritymagazines.com
 ||p.ynet.co.il^$subdocument
 ||p2a.co/embed/widget/app/$domain=thefire.org
-||piano.io^$domain=artnews.com|bbc.com|bbcgoodfood.com|billboard.com|businessinsider.com.pl|deadline.com|nationalobserver.com|npr.org|outsideonline.com|prospectmagazine.co.uk|rawstory.com|refinery29.com|rollingstone.com|sifted.eu|stuff.co.nz|telegraph.co.uk|the42.ie|thedailybeast.com|thelogic.co|thenation.com|variety.com|wwd.com
+||piano.io^$domain=artnews.com|bbc.com|bbcgoodfood.com|billboard.com|deadline.com|nationalobserver.com|npr.org|outsideonline.com|prospectmagazine.co.uk|rawstory.com|refinery29.com|rollingstone.com|sifted.eu|stuff.co.nz|telegraph.co.uk|the42.ie|thedailybeast.com|thelogic.co|thenation.com|variety.com|wwd.com
 ||researchnews.cc/subscribe.html
 ||scmp.com/misc/inkstone_sub_widget/
 ||sibforms.com/serve/$domain=maidenhead-advertiser.co.uk|sloughexpress.co.uk
@@ -1458,6 +1458,7 @@ decode39.com,kerrick.blog###block-8
 coleycooks.com,unofficialnetworks.com###block-9
 biztechmagazine.com###block-cdwregistertimedmodal
 qsrmagazine.com###block-elettersubform
+hackerone.com###block-hackerone-blogsubscribe
 highnorthnews.com###block-mailchimppopupblock
 cbn.com###block-newsletterfooterblock
 privacyinternational.org###block-newsletterlink-2
@@ -6205,7 +6206,7 @@ doctorofcredit.com#@#.wpdiscuz-subscribe-bar
 ! fanboy_newsletter_shopping_allowlist_general_hide.txt
 
 ! Title: uBlock filters – Other Annoyances
-! Last modified: Sun, 08 Mar 2026 11:47:42 +0000
+! Last modified: Tue, 10 Mar 2026 10:23:26 +0000
 ! Expires: 7 days
 ! Description: Filters optimized for uBlock Origin, to be used with EasyList's and/or Adguard's "Other Annoyances" list(s)
 ! License: https://github.com/uBlockOrigin/uAssets/blob/master/LICENSE
@@ -14180,3 +14181,6 @@ advnture.com,androidcentral.com,avnetwork.com,cinemablend.com,countrylife.co.uk,
 
 ! https://github.com/uBlockOrigin/uAssets/issues/32011#issuecomment-3977600122
 ||urldefense.com/v*/__http$doc,urlskip=/__(.*)__;!!/
+
+! https://github.com/uBlockOrigin/uAssets/issues/22198#issuecomment-4019789885
+open.spotify.com##*:style(-webkit-touch-callout: default !important; -webkit-user-select: text !important; -khtml-user-select: text !important; -moz-user-select: text !important; -ms-user-select: text !important; user-select: text !important; -webkit-tap-highlight-color: revert !important; cursor: revert !important;)
