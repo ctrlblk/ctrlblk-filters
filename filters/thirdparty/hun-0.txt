@@ -1,8 +1,8 @@
 [uBlock Origin]
-! Checksum: cwRutQcytJ0hJZ8QccyMjg
-! Version: 202603121936
+! Checksum: uriMdL8UtWHzkC0jNrqM9g
+! Version: 202603151525
 ! Title: Hufilter for uBO
-! Last modified: 12 Mar 2026 19:36 UTC
+! Last modified: 15 Mar 2026 15:25 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://hufilter.hu
 ! Licence: CC-BY, see https://creativecommons.org/licenses/by/4.0/
@@ -115,6 +115,8 @@ hu##[class*="overlayBg"]
 !-------------------------------------------------------------------------------!
 !------ Specific cosmetic filters ----------------------------------------------!
 !-------------------------------------------------------------------------------!
+jofogas.hu##.adverticum-anchor-banner
+hellomagyar.hu##.ban
 leetgaming.com##.banner_container_gtm
 naphire.hu##.ad__cont
 eredmenyek.com##div[data-zone-group]
@@ -384,7 +386,7 @@ eropolis.hu##[class*="banner"]
 es.hu##[class*="banner"]
 es.hu##[id*="banner"]
 es.hu##IFRAME
-esport1.hu##.adaptiveStyle, [class^="cls-"]:has(> .adaptiveStyle)
+esport1.hu##[class*="cls-"]
 eudomain.eu##div[id*="col_2"]
 evamagazin.hu##.popupunderlay
 evamagazin.hu##[class*="adPlace"]
@@ -443,12 +445,12 @@ gportal.hu##[class*="banner"]
 gsplus.hu,pcwplus.hu##.ad
 gsplus.hu,pcwplus.hu##.box-wrapper > .box-actual-magazine + .box-html
 gumiszoba.com##.wpcnt
-gyakorikerdesek.hu,hoxa.hu##div[style="text-align: center; margin: 30px 0px;"]:has(> a)
 gyakorikerdesek.hu###adryf
 gyakorikerdesek.hu##.rltdwidget
 gyakorikerdesek.hu##IFRAME
 gyakorikerdesek.hu##[id*="aswift"]
 gyakorikerdesek.hu##td.txtcenter:has(>script+ins)
+gyakorikerdesek.hu##div:has(> a[href^="/"] + div[style*="background-color"])
 gyaloglo.hu###banner
 gyaloglo.hu##div[class*="Advert"]
 gyartastrend.hu##[class*="contentBanner"]
@@ -1190,6 +1192,10 @@ prohardver.hu,mobilarena.hu,logout.hu,hardverapro.hu#?#div:not(.priv-thread-owne
 !-------------------------------------------------------------------------------!
 !------ Specific network filters -----------------------------------------------!
 !-------------------------------------------------------------------------------!
+! https://github.com/hufilter/hufilter/pull/704
+||*$image,domain=gyakorikerdesek.hu
+||*$media,domain=gyakorikerdesek.hu
+@@||gyakorikerdesek.hu/p/$image,domain=gyakorikerdesek.hu
 ! https://github.com/hufilter/hufilter/issues/172
 /dl/cnt/20[^0]\d-\d{2}/\d{4}//$image,domain=prohardver.hu|mobilarena.hu|logout.hu|hardverapro.hu
 ||3monkey.lol/vilagunk_640.html$domain=vilagunk.hu
@@ -1461,6 +1467,7 @@ hu##.sz2020-logo
 !-------------------------------------------------------------------------------!
 !------ Specific cosmetic filters ----------------------------------------------!
 !-------------------------------------------------------------------------------!
+hellomagyar.hu##.ct-popup
 24.hu##.a-hirstartRecommender
 24.hu##.fb-exit-popup-container
 24.hu##.m-donationBottomLine
@@ -2026,6 +2033,8 @@ greendex.hu#@#.heateor_sss_sharing_container
 !-------------------------------------------------------------------------------!
 !------ Specific cosmetic filters ----------------------------------------------!
 !-------------------------------------------------------------------------------!
+! https://github.com/uBlockOrigin/uAssets/issues/32204#issuecomment-4062542193
+gyakorikerdesek.hu,hoxa.hu##[href^="/"]:matches-css(background:/https/)
 444.hu##article:has(a[href*="hirdetes"])
 444.hu##div.item:has(a[href*="hirdetes"])
 ! https://github.com/uBlockOrigin/uAssets/issues/23271

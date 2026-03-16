@@ -1,10 +1,10 @@
 ![Adblock Plus 2.0]
-! Checksum: e8uz6Ubmp7FXbbC2FfmbaA
-! Diff-Path: ../patches/224/224-s-1773472975-3600.patch
+! Checksum: rN0iTz4ehzyrLt9gVL4YQw
+! Diff-Path: ../patches/224/224-s-1773637339-3600.patch
 ! Title: AdGuard Chinese filter
 ! Description: EasyList China + AdGuard Chinese filter. Filter list that specifically removes ads on websites in Chinese language.
-! Version: 2.1.55.91
-! TimeUpdated: 2026-03-14T07:20:04+00:00
+! Version: 2.1.56.4
+! TimeUpdated: 2026-03-16T04:58:59+00:00
 ! Expires: 5 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -1098,6 +1098,8 @@ ipv6.baidu.com,www.baidu.com,www1.baidu.com,xueshu.baidu.com###content_left > .r
 !
 ! NOTE: Specific rules
 !
+wikisport.cc##+js(addEventListener-defuser, click, window.open)
+wikisport.cc##+js(no-window-open-if)
 twmanga.com###baoziAdPopup
 eporner2.top,chuanghongjituan.com##.streamer-container2
 *$script,3p,domain=huanggua22.com
@@ -5253,6 +5255,24 @@ newduba.cn###jq_youxi
 .z.dkt-ib.com
 ||cnzz.trafficmanager.net^
 ||cupfox.app^$3p
+||w97nv5ibv4.com^
+||1tvg524vih.com^
+||pepwpv.icu^
+||surmount35.com^
+||nsxrfh.icu^
+||curogmc.com^
+||dtrurqeq.com^
+||ste000u5mk.com^
+||1nevsf92q.com^
+||h57vpulpu.com^
+||jotedd.icu^
+||cpvx.cn^
+||falsehood67.top^
+||hohmanrtit.com^
+||zmg15qfvi.com^
+||cyq8vqq9s.com^
+||k69wes8q8.com^
+||wyqqanziid.com^
 ||jhhpvy7cp3.com^
 ||x4hu95mh0t.com^
 ||llxjrt.icu^
@@ -5261,6 +5281,8 @@ newduba.cn###jq_youxi
 ||6w4ix4bxz1.com^
 ||79n4cubmu8.com^
 ||etqu.cn^
+||75wdm82a69.com^
+||itraamelr.com^
 ||binaqathh.com^
 ||kgaviuu42.com^
 ||g2w9awdq0.com^
@@ -14406,6 +14428,7 @@ meijutt.*/js/pcjs/
 ||*.mp4$redirect=noop-0.1s.mp3,domain=huavod.com,media
 ||pan0304.com/ads.
 zhihu.com##.Pc-word-new
+4hu.tv##.kkm-content
 vpstop.cn##a[href*="/ClickAd"]
 joyacg.top##a[href^="http"] > .img-fluid
 ttks.tw##.txtcenter
@@ -20807,23 +20830,23 @@ guailie.com#@#.google-ad
 ||17ce.com^*_$image
 !#18comic.org
 /exads-adblock-$image
-18comic.org,18comic.vip,18comic.ink###guide-modal
-18comic.org,18comic.vip,18comic.ink##.div_sticky2
-18comic.org,18comic.vip,18comic.ink##.modal-backdrop
-18comic.org,18comic.vip,18comic.ink##.row[style="display: flex;flex-wrap: wrap;"]
-18comic.org,18comic.vip,18comic.ink##a[href*="//"]:not([href*="18c"]) > [style*="back"]
-18comic.org,18comic.vip,18comic.ink##a[href*="//"]:not([href*="18c"]) > div[style]
-18comic.org,18comic.vip,18comic.ink##a[herf*="//"]:not([href*="18c"]) > img
-18comic.org,18comic.vip,18comic.ink##a[href*="//"]:not([href*="18c"]) > img
-18comic.org,18comic.vip,18comic.ink##a[href*="//"]:not([href*="18c"]) > img + [style]
-18comic.org,18comic.vip,18comic.ink##div[data-group][data-width="300"]
-18comic.org,18comic.vip,18comic.ink##style + div[style="cursor: pointer; position: relative;"]
-18comic.org,18comic.vip,18comic.ink##:has(>ins+div)
-18comic.org,18comic.vip,18comic.ink##:has(>ins+script)
-18comic.org,18comic.vip,18comic.ink##:has(>ins+style)
-18comic.org,18comic.vip,18comic.ink##:has(>script+ins)
-18comic.org,18comic.vip,18comic.ink##:not(body):has(>script[src*=".realsrv.com"])
-18comic.org,18comic.vip,18comic.ink##div[data-group]:has(>.group-notice)
+jm18c-oec.net,18comic.org,18comic.vip,18comic.ink###guide-modal
+jm18c-oec.net,18comic.org,18comic.vip,18comic.ink##.div_sticky2
+jm18c-oec.net,18comic.org,18comic.vip,18comic.ink##.modal-backdrop
+jm18c-oec.net,18comic.org,18comic.vip,18comic.ink##.row[style="display: flex;flex-wrap: wrap;"]
+jm18c-oec.net,18comic.org,18comic.vip,18comic.ink##a[href*="//"]:not([href*="18c"]) > [style*="back"]
+jm18c-oec.net,18comic.org,18comic.vip,18comic.ink##a[href*="//"]:not([href*="18c"]) > div[style]
+jm18c-oec.net,18comic.org,18comic.vip,18comic.ink##a[herf*="//"]:not([href*="18c"]) > img
+jm18c-oec.net,18comic.org,18comic.vip,18comic.ink##a[href*="//"]:not([href*="18c"]) > img
+jm18c-oec.net,18comic.org,18comic.vip,18comic.ink##a[href*="//"]:not([href*="18c"]) > img + [style]
+jm18c-oec.net,18comic.org,18comic.vip,18comic.ink##div[data-group][data-width="300"]
+jm18c-oec.net,18comic.org,18comic.vip,18comic.ink##style + div[style="cursor: pointer; position: relative;"]
+jm18c-oec.net,18comic.org,18comic.vip,18comic.ink##:has(>ins+div)
+jm18c-oec.net,18comic.org,18comic.vip,18comic.ink##:has(>ins+script)
+jm18c-oec.net,18comic.org,18comic.vip,18comic.ink##:has(>ins+style)
+jm18c-oec.net,18comic.org,18comic.vip,18comic.ink##:has(>script+ins)
+jm18c-oec.net,18comic.org,18comic.vip,18comic.ink##:not(body):has(>script[src*=".realsrv.com"])
+jm18c-oec.net,18comic.org,18comic.vip,18comic.ink##div[data-group]:has(>.group-notice)
 ||18comic.*/media/albums/*?$media
 !#2
 !#3
