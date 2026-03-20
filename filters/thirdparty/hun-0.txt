@@ -1,8 +1,8 @@
 [uBlock Origin]
-! Checksum: uriMdL8UtWHzkC0jNrqM9g
-! Version: 202603151525
+! Checksum: 4sVHWBYAXXr1b6WxwMi1nQ
+! Version: 202603190752
 ! Title: Hufilter for uBO
-! Last modified: 15 Mar 2026 15:25 UTC
+! Last modified: 19 Mar 2026 07:52 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://hufilter.hu
 ! Licence: CC-BY, see https://creativecommons.org/licenses/by/4.0/
@@ -462,6 +462,8 @@ hajdupress.hu##.catch-click
 hajdupress.hu##[class*="hirdetes"]
 hajdupress.hu##[id*="banner"]
 hajokonyha.hu##[class*="hirdetes"]
+hang.hu##.banner-wrapper
+hang.hu##.sidebar > .widget:has(> h3 + picture)
 ! https://github.com/hufilter/hufilter/issues/249
 hang.hu##.banner-widget-container
 haon.hu##.Ad
@@ -836,6 +838,10 @@ ncore.pro##.banner
 ncore.pro##:has(> .banner) + .hr_stuff, .hr_stuff:has(+ * > .banner)
 nemkutya.com##[class^="ad-"]
 nemkutya.com###text-3
+nemzetisport.hu##nso-petition-popup
+nemzetisport.hu##app-strossle-advert
+nemzetisport.hu##div[class*="img_"]:has(> p + div[data-google-query-id])
+nemzetisport.hu##div[class*="img_"][style*="text-align: center;"]
 nemzetisport.hu##.bet365_connect
 nemzetisport.hu##[class*=" ad"]
 nemzetisport.hu##[class*="_szponzor_"]

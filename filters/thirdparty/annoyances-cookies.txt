@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: EasyList – Cookie Notices
-! Last modified: Thu, 19 Mar 2026 05:13:21 +0000
+! Last modified: Thu, 19 Mar 2026 13:56:14 +0000
 ! Expires: 7 days (update frequency)
 ! *** easylist:template_header.txt ***
 !
@@ -16807,7 +16807,6 @@ gillian-guide.github.io,globox1997.github.io###__consent
 letsplayuno.com,mattel163.com###__mt163__cookie
 raspberrypi.com###__rptl-cookiebanner
 ups.com###__tealiumImplicitmodal
-pro-bikegear.com###_evidon-barrier-wrapper
 coloradocollege.edu###_pc
 tuya.com###_th-trust
 abramsbooks.com###abr_cookie_modal
@@ -28130,7 +28129,7 @@ concursolutions.com,forbes.com,formula1.com,fortune.com,proximus.be,proximustv.b
 @@||zensus2022.de/SiteGlobals/Modules/CookieBanner/*/CookieBanner.json?$~third-party,xmlhttprequest
 
 ! Title: uBlock filters – Cookie Notices
-! Last modified: Thu, 19 Mar 2026 05:30:49 +0000
+! Last modified: Fri, 20 Mar 2026 05:00:32 +0000
 ! Expires: 7 days
 ! Description: Filters optimized for uBlock Origin, to be used with EasyList's and/or Adguard's "Cookie Notices" list(s)
 ! License: https://github.com/uBlockOrigin/uAssets/blob/master/LICENSE
@@ -28713,6 +28712,8 @@ opensea.io##+js(trusted-click-element, button[data-role="necessary"])
 iteraplay.com##+js(trusted-set-local-storage-item, itera_cookie_consent, '{"strictlyNecessary":true,"analytics":false,"marketing":false,"functional":false}')
 ! https://github.com/AdguardTeam/AdguardFilters/issues/227341
 cinemark.com.br##+js(set-cookie, cookies_config, deny)
+! https://github.com/uBlockOrigin/uAssets/pull/32262
+theweathernetwork.com##+js(trusted-click-element, #didomi-notice-disagree-button)
 
 
 !! Needs additional cookies
@@ -33554,6 +33555,12 @@ dilosi.services.gov.gr##+js(trusted-set-cookie, dilosi_cookie, Accept_cookies)
 ! Only Necessary
 ! https://github.com/brave-experiments/cookiecrumbler-issues/issues/912
 bt.dk##+js(trusted-click-element, #CybotCookiebotDialogBodyButtonDecline)
+
+! Reject
+frenchbee.com##+js(trusted-click-element, #onetrust-reject-all-handler, , 1000)
+
+! "OK"
+hbomax.com##+js(trusted-click-element, button.btn.btn--privacy-primary, , 1000)
 
 ! https://github.com/AdguardTeam/AdguardFilters/issues/227343 - functional
 spmaiscultura.prefeitura.sp.gov.br##+js(trusted-set-cookie, spmaiscultura-prefs, %7B%22functional%22%3Atrue%2C%22analytics%22%3Afalse%7D)
