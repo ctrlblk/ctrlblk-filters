@@ -1,10 +1,10 @@
 ![Adblock Plus 2.0]
-! Checksum: bnfTF5HKe4d/Sx1DlKEXpg
-! Diff-Path: ../patches/9/9-s-1773758065-3600.patch
+! Checksum: OJ6QvSbgO1qX2gAcAhlHDg
+! Diff-Path: ../patches/9/9-s-1774013660-3600.patch
 ! Title: AdGuard Spanish/Portuguese filter
 ! Description: Filter list that specifically removes ads on websites in Spanish, Portuguese, and Brazilian Portuguese languages.
-! Version: 2.0.33.70
-! TimeUpdated: 2026-03-17T14:30:41+00:00
+! Version: 2.0.33.72
+! TimeUpdated: 2026-03-20T13:30:49+00:00
 ! Expires: 5 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -198,6 +198,8 @@
 !
 !
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/227346
+||outbound-proxy-us-east1-0-glob-usercontent-client-id-4143213601.googleapis.com.do/*/sweetalert
 ! https://github.com/AdguardTeam/AdguardFilters/issues/227120
 ||sushianimes.com.br/app/theme/assets/js/lazycore-ad.js
 ! https://github.com/AdguardTeam/AdguardFilters/issues/226890
@@ -1146,9 +1148,6 @@ seriesdonghua.com,mundodonghua.com##+js(set-constant, loadingAds, true)
 !+ PLATFORM(ext_ff, ext_opera, ios, ext_android_cb, ext_ublock)
 @@||majesy.com^$generichide
 ! https://github.com/AdguardTeam/AdguardFilters/issues/20092
-! https://github.com/AdguardTeam/AdguardFilters/issues/19393
-!+ PLATFORM(ext_ff, ext_opera, ios, ext_android_cb, ext_ublock)
-@@||latornamesa.blogspot.com^$generichide
 ! https://github.com/AdguardTeam/AdguardFilters/issues/19311
 @@||damelibros.com^$generichide
 ! https://github.com/AdguardTeam/AdguardFilters/issues/19151
@@ -2472,7 +2471,7 @@ selfie.iol.pt##.taboolaWrapper
 selfie.iol.pt##.pubTopWrapper.mcd-hidden-block
 ole.com.ar##div[class^="sc-"]:has(> .SRA > div[id^="div-gpt-ad-"])
 ole.com.ar##div[class^="sc-"]:has(> .lazyBanner)
-ole.com.ar##.bannerTopHeader
+ole.com.ar##.bannerTopHeader:style(display: none !important;)
 ole.com.ar,terra.es##.bann
 veja.abril.com.br###abrAdAnchor
 sport.es##.friso-marcadores-sponsor
