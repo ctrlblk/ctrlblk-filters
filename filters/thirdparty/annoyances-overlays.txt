@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: EasyList – Newsletter Notices
-! Last modified: Tue, 24 Mar 2026 05:13:35 +0000
+! Last modified: Tue, 24 Mar 2026 22:04:56 +0000
 ! Expires: 7 days (update frequency)
 ! *** easylist:template_header.txt ***
 !
@@ -1788,6 +1788,7 @@ tomklingenstein.com###sign-up-form
 permanentstyle.com###signUpWrapperOuter
 punchline-gloucester.com,washingtonmonthly.com###signup
 asteriskmag.com###signup-article-button
+searchenginewatch.com###signup-bar
 livenation.co.nz###signup-component
 peanutbutterrunner.com###signup-container
 browardpalmbeach.com###signup-modal
@@ -6219,7 +6220,7 @@ doctorofcredit.com#@#.wpdiscuz-subscribe-bar
 ! fanboy_newsletter_shopping_allowlist_general_hide.txt
 
 ! Title: uBlock filters – Other Annoyances
-! Last modified: Sun, 22 Mar 2026 17:30:24 +0000
+! Last modified: Tue, 24 Mar 2026 09:46:46 +0000
 ! Expires: 7 days
 ! Description: Filters optimized for uBlock Origin, to be used with EasyList's and/or Adguard's "Other Annoyances" list(s)
 ! License: https://github.com/uBlockOrigin/uAssets/blob/master/LICENSE
@@ -6504,6 +6505,9 @@ lofi-nopixel.com##+js(trusted-set-local-storage-item, adBlockerAlert_lastShown, 
 
 ! https://github.com/uBlockOrigin/uAssets/issues/31993
 temperatur.nu##+js(nostif, holidAds)
+
+! https://www.reddit.com/r/uBlockOrigin/comments/1s20stf/ad_block_detection_on_flamecomicsxyz/
+flamecomics.xyz##+js(trusted-set-local-storage-item, adBlockedModal:lastDismiss, $now$)
 
 ! END: Anti-adblock
 
