@@ -9188,10 +9188,6 @@ $third-party,popup,domain=2ip.ru
 /*utm_$popup,domain=stratege.ru
 /go.php$popup,domain=piratca.net
 /redirect/cpa/*$popup,domain=rt02.ru
-://pikabu.ru/*.*.*.*.*.$popup
-://pikabu.ru/*/*/*/*--$popup
-://pikabu.ru/*/*/*/*..$popup
-://pikabu.ru/*/*/*/*_$popup
 ?partner=$popup,domain=lifehacker.ru
 |http://li.ru/go?$popup,domain=fishki.net
 ||catcut.net^$popup,domain=mobile-4at-obshenie.chatovod.ru|mobile-chat-obshenie.jimdo.com
@@ -11988,8 +11984,8 @@ igdz1.ru^$script,domain=igdz.ru
 ||ivi.ru/branding/
 ||ivi.ru/player/*autostart$subdocument,domain=moevideo.net|playreplay.net|playvideolink.com|videochart.net
 ||iviche.com/images/commertials/
+||ixbt.*/cgi-bin/banqs.cgi
 ||ixbt.com/branding/
-||ixbt.com/cgi-bin/banqs.cgi
 ||ixbt.online/banners/
 ||ixbt.online^*/brandings/
 ||iz.ru^*/banners/
@@ -16122,6 +16118,7 @@ softboard.ru##.clearfix > center:first-child
 babyblog.ru##.clearfix.blog-incut-uad
 metrologe.ru##.clearfix.content > div > .col-sm-12
 forum.saransk.ru##.clearfix.ipsSideBlock > div[class^="zone_"]:not(:last-child)
+ixbt.games,ixbt.pro##.clickable_zone
 zamunda.ch,zamunda.net##.clickads
 glazey.info##.client
 literaguru.ru##.clinic-image
@@ -16193,6 +16190,7 @@ glavnoe.net,infotime.co##.comments-wrapper
 pikabu.ru##.comments__adv
 car.ru##.commercial
 aniliberty.top,anilibria.top##.commercial-banner
+vedomosti.ru##.commercial-logo
 yantann.rbsmi.ru,yanzori.rbsmi.ru##.commercical_wrap
 sportanalytic.com##.common_content_news > .news > center
 samara24.ru##.common_left > [id^="rep_"] > .bl_main
@@ -16805,6 +16803,7 @@ konkurent.ru##.hidden-print
 itc.ua##.hidden-sm[style^="min-height:"]
 rgho.st##.hidden-xs.alert-warning
 russian.rt.com##.hide--partner--block
+vedomosti.ru##.hide-offer
 vokrug.tv##.hide_640
 finanz.ru##.highlightbox.content_box
 www.film.ru##.hochuvkino
@@ -17554,6 +17553,7 @@ superkarate.ru##.page-content > .row
 selezen.club,selezen.net,selezen.org#?#.page-content > .row > div[class^="col"] + div[class^="col"] > div:-abp-has(> .card h6:-abp-contains(/Реклама|Друзья/i))
 3m2.ua##.page-content section a[href^=http][target="_blank"]:not([href^="https://3m2.ua/"]) > img
 dumka.poltava.ua##.page-element > .page-element__ads ~ .page-element__ads
+vedomosti.ru##.page-gallery__loader
 mmotop.ru##.page-header > .bg-one-server
 mmotop.ru##.page-header > .left
 mmotop.ru##.page-header > .right
@@ -17689,6 +17689,7 @@ footballgazeta.com##.popularList > center
 tourister.ru##.popularMaterialList > div[id^="readmore_"] ~ [class]:not([id^="readmore_"])
 stavcur.ru##.popup-army
 nrj.ua##.popup-banner
+garant.ru##.popup-social
 securitymedia.org##.popup_banners
 equity.today##.popup_module_container
 nashaniva.com##.pos-market
@@ -18024,7 +18025,7 @@ floristics.info##.rmgm
 nn.ru##.rn-global-sidebar
 nn.ru##.rn-top-banner
 root-nation.com##.rn-widget
-kommersant.ru##.rocket_man
+autopilot.ru,kommersant.ru,myweekend.ru##.rocket_man
 in-english.club##.roll_autoplay_ads
 novgorod.ru##.root > .bigb
 matematikalegko.ru##.rotac_reklama
@@ -18443,6 +18444,8 @@ igry-man.net##.stockgame
 gdz.ru##.store-hosting
 pikabu.ru#?#.stories-feed__container > .story:-abp-has(> .story__main .story__promo)
 pikabu.ru#?#.stories-feed__container > .story:-abp-has(> .story__main > [id])
+pikabu.ru#?#.stories-feed__container > .story:-abp-has(> .story__main [href*="?erid="])
+pikabu.ru#?#.stories-feed__container > .story:-abp-has(> .story__main [title*="?erid="])
 pikabu.ru#?#.stories-feed__container > .story:-abp-has(> .story__placeholder)
 pikabu.ru#?#.stories-feed__container > .story:-abp-has([class*="sponsor"])
 pikabu.ru##.stories-feed__related-stories-adv
@@ -18555,7 +18558,6 @@ starhit.ru,uralweb.ru,www.ixbt.com##.tgb
 vbr.ru##.tgb-content
 parents.ru##.tgb__heading
 telegraf.com.ua##.tgr-ads
-vedomosti.ru##.the-header__top a[href*="?erid="]
 ria.ru#?#.the-in-carousel__item:-abp-has(> [data-has-banner])
 vedomosti.ru##.the-loader
 lifehacker.ru#?#.the-tv__observer:-abp-has(.lh-article-card-meta__partner)
@@ -22384,6 +22386,8 @@ flightsim.su###tie-popup-adblock {remove:true;}
 freesoft.ru###downloadAdModal {remove:true;}
 freesoft.ru###error.modal {remove:true;}
 growhow.in.ua###custom-background-css {remove:true;}
+ixbt.*##.clickable_zone {remove:true;}
+ixbt.*##style[id^="branding-"] {remove:true;}
 lenta.*##.topic-body__content> .box-external-video:last-child {remove:true;}
 lenta.*##.topic-footer > div[class^="box-"][class$="-video"] {remove:true;}
 lenta.*##.vk-video-popup {remove:true;}
@@ -22393,8 +22397,6 @@ tapochek.*##body:has(#register_link) > canvas {remove:true;}
 the-geek.ru###wp-custom-css {remove:true;}
 uwupad.*##style:has-text(lb-banner-height) {remove:true;}
 vk.*##head > style:has-text(/adchoice|mkit_|outlineBanner/i) {remove:true;}
-www.ixbt.*###branding-ssr-style {remove:true;}
-www.ixbt.*##.clickable_zone {remove:true;}
 www.ixbt.*##body > style:has-text(margin-top) {remove:true;}
 ! селекторы
 freesoft.ru###downloadAdModal
@@ -22437,7 +22439,7 @@ mail.ru##[href*="https://dzen.ru"]
 vk.com,vk.ru##[id^="post-"] > ._post_content > :only-child
 levik.blog,livejournal.com,olegmakarenko.ru,periskop.su,shakko.ru,shiro-kino.ru,vadimrazumov.ru##[role="banner"] > .s-header-extra + div[class]
 livejournal.com#?#a:-abp-has(span:-abp-contains(Реклама))
-pikabu.ru##article.story[data-text-length="1"]
+pikabu.ru##article.story[data-recom-coef=""]
 kp.kg,kp.kz,kp.md,kp.ru#?#body > #app div:-abp-properties(background-color: rgb(225, 231, 235))
 sdamgia.ru##center > div[id][style]
 cq.ru#?#div:-abp-properties(content: "Реклама")
@@ -23385,7 +23387,7 @@ gazeta.press,gazeta.ru##div[id^="block_pad_id"]
 ! RBC (РБК)
 cnews.ru,utro.ru##.banner
 rbc.ru##.branding-block
-rbc.ru##.central-publisher-item[data-name="CommercialAnons"]
+rbc.ru##.central-publisher-item[data-name^="CommercialAnons"]
 rbc.ru##.fox-fallback
 rbc.ru,sportrbc.ru##.g-banner__news-footer > div[class="js-rbcslider-multi-news"]
 safe.cnews.ru##.header-brand-logo
@@ -27680,7 +27682,7 @@ www.ivi.ru##body.watch > header.ivi-top:style(top: 0 !important)
 ! ---
 ixbt.com##body:not(#id) > .b-content.b-content__breadcrumbs:style(margin-top: unset !important)
 ixbt.com##body:not(#id) > .b-content__pagecontent:style(margin-top: unset !important)
-ixbt.com##body:style(background-color: inherit !important)
+ixbt.com##body:not([class*="dark:"]):style(background-color: inherit !important)
 ! ---
 forum.ixbt.com##.body_content_table > .left.column:style(margin-right: 0 !important; width: 100% !important)
 forum.ixbt.com##.body_wrapper:style(max-width: 100% !important)
@@ -27696,6 +27698,7 @@ www.ixbt.com##.branding .main__container:style(margin-top: unset !important)
 ! исправление ошибок и косяков оригинальной вёрстки
 ixbt.market,www.ixbt.com###page-wrapper .container:style(max-width: 100% !important)
 ixbt.com##.b-content__pagecontent > .b-content--wrapper > .g-grid:style(margin-top: unset !important)
+ixbt.pro##.text-color-navbar-text:style(color: inherit !important)
 ! ---
 jut-su.net##body:not(#id):style(padding-top: 0 !important; padding-bottom: 0 !important)
 ! ---
@@ -29418,6 +29421,7 @@ rutube.ru##body.wdp-scroll:style(overflow-y: auto !important)
 tapochek.net##body:has(#register_link) > canvas
 tapochek.net##body:has(#register_link) > canvas:remove()
 volyn.com.ua##body:remove-attr(/oncopy|onselectstart|oncontextmenu/)
+ixbt.pro##body:remove-class(branding)
 my-expert.ru##body:style(-webkit-touch-callout: default !important; -webkit-user-select: text !important; -khtml-user-select: text !important; -moz-user-select: text !important; -ms-user-select: text !important; user-select: text !important)
 sawlive.tv##body[onclick^="closeMyAd"] > div[id][style*="position"][style*="background-color"]
 cosplay-porn.*,fap-guru.*,mult-porno.*,sex-studentki.*##+js(remove-node-text, script, /initTeasers|initVads/)
@@ -29460,6 +29464,7 @@ kanobu.ru#?#section[class^="MaterialsManufacturerPage_infiniteWrap"] > div[class
 igromania.ru#?#section[class^="MaterialsManufacturerPage_infiniteWrap"] > div[class^="InfiniteScrollWrap_content"] > [class*="MaterialItemPage_materialSection"]:-abp-has(> .knb-grid-container > [data-io-article-url] [class^="TextContent_text"] > p:-abp-contains(/^Реклама:/)) [class^="material-content_"] a[href][target="_blank"]:not([href^="https://www.igromania.ru/"]):style(color: inherit !important; pointer-events: none !important)
 smaxim.*##+js(set-constant, flashvars.protect_block, '')
 studizba.com,surl.*##+js(nano-setInterval-booster, #timer)
+ixbt.pro##style[id^="branding-"]:remove()
 translate.yandex.ru,translate.yandex.*##+js(set-constant, Object.prototype.dispatchSignalCallbacks, undefined)
 3dnews.ru##video[autoplay="autoplay"]:remove-attr(autoplay)
 kino-teatr.ru,kinoafisha.info,kinonews.ru##videotronic-player:remove-attr(data-video-autoplay)
