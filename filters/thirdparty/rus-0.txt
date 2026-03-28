@@ -8629,7 +8629,6 @@ by,~mail.ru,ru,ua##.banner_box
 ##[href*="postlnk.com"]
 ##[href^="https://download.cdn.yandex.net/yandex-tag/weboffer/"]
 ~dzen.ru,~sportsdzen.ru##[href^="https://dzen.ru"]
-##[href^="https://dzen.ru"]
 ##[href^="https://pxl.leads.su/click/"]
 ##[href^="https://trkleads.su/click/"]
 ##[id^="n4p_"]
@@ -11980,6 +11979,7 @@ igdz1.ru^$script,domain=igdz.ru
 ||islam-today.ru/files/stat_ban/
 ||islam-today.ru/static/banner$image
 ||istorikonline.ru/cpa/
+||it-world.ru/local/src/banner_click.
 ||itvcom.ru/images/*sape
 ||itweek.ru/ad/banners/
 ||ivanovonews.ru/local/templates/*/js/custom.js
@@ -13158,7 +13158,7 @@ igdz1.ru^$script,domain=igdz.ru
 ||space.com.ua/ban_
 ||spark.ru/upload/promo/
 ||spbdnevnik.ru/media/_b/$image
-||spbit.ru/b_images/
+||spbit.ru/uploads/Banner/
 ||special.matchtv.ru/feeds/
 ||special.pikabu.ru/*/banner.html
 ||specials*.servicecdn.ru/$domain=dtf.ru|vc.ru
@@ -13938,7 +13938,6 @@ grind.fm###bannerborder
 now.ru###bannerholder
 casstudio.tv,kinomania.kz,kinoprosmotr.site###bannerlayer
 ascnb1.ru,matematikalegko.ru,orangeapps.ru,rgfootball.net,shadowlands.ru,tapclap.com###banners
-spbit.ru###banners > a
 pobedish.ru###banners > noindex > a[href]:not([href*="pobedish.ru"])
 sletat.ru###banners-after-search-form
 marketing.spb.ru###banners-klik
@@ -14912,7 +14911,6 @@ cont.ws###top-page-ads
 37.ru###top-pannel
 dyvys.info###top-random-banner
 sudakonline.info###top45
-spbit.ru###top4banners
 sudakonline.info###top6out
 om1.ru###topAdb
 chess-samara.ru###topAdsBlock
@@ -15685,7 +15683,7 @@ azovnews.ru##.banner_bot
 livejournal.com,novyny.pro##.banner_container
 autostat.ru##.banner_content
 listaj.ru##.banner_dc
-autodoc.ru,spbit.ru##.banner_div
+autodoc.ru##.banner_div
 camelot.multilocal.ru,camelot.userlan.ru##.banner_header
 mybrazz.club##.banner_holder
 vd-tv.ru##.banner_home
@@ -15892,6 +15890,7 @@ zakon.ru##.blogtbg
 papillomy.com##.blok1
 omastopatii.ru##.blopr
 oko-planet.su#?#.bltitle:-abp-contains(Реклама)
+spbit.ru#?#.blue > .header:-abp-contains(партнеры)
 dnepr.info##.blue-bann
 ecm-journal.ru##.blurb
 777score.ru,comnews.ru,emotionalrating.com,kluch.media,ok-magazine.ru,poltava.to##.bn
@@ -15906,6 +15905,7 @@ eadaily.com##.bn_news_incut
 facenews.ua##.bnblock
 1istochnik.ru##.bnbox
 newdaynews.ru#?#.bnd-cnt:-abp-has(> [class] > b:-abp-contains(Новости партнеров))
+spbit.ru##.bnnr
 apostrophe.ua,bitcryptonews.ru,news.ru,ogolosha.ua,turizm.ru##.bnr
 splkirov.ru##.bnr-2horizontal
 newauto.kz##.bnr-tall
@@ -15997,7 +15997,7 @@ citydog.by##.brandLink
 ekaraganda.kz##.brand_a
 harpersbazaar.com.ua##.brand_left
 harpersbazaar.com.ua##.brand_right
-agropolit.com,elevatorist.com,filmozavr.com,filmozavr.net,gotennis.ru,inoprosport.ru,kinopati.ru,kurkul.com,lada-granta.net,latifundist.com,lkforum.ru,myshows.me,osp.ru,overclockers.ua,podfm.ru,popcornnews.ru,psm7.com,stopgame.ru,superagronom.com,zemliak.com##.branding
+agropolit.com,elevatorist.com,filmozavr.com,filmozavr.net,forum.zoneofgames.ru,gotennis.ru,inoprosport.ru,kinopati.ru,kurkul.com,lada-granta.net,latifundist.com,lkforum.ru,myshows.me,osp.ru,overclockers.ua,podfm.ru,popcornnews.ru,psm7.com,stopgame.ru,superagronom.com,zemliak.com##.branding
 tut.by##.branding > a
 3dtoday.ru##.branding-banner
 banki.ru##.branding-bg
@@ -26880,7 +26880,7 @@ sntch.com#?#article > p:-abp-contains(/отключите блокировку �
 3drubik.ru##body > #page ~ div[id][class]
 fapvdo.ru##body > #txt
 24pdd.kz##body > .preloader
-doctorrouter.ru,gamingsym.in,ranobe-novels.ru,transformator220.ru,wuxiaworld.ru##body > :not([id]):not([class]):not(script)
+doctorrouter.ru,gamingsym.in,ranobe-novels.ru,transformator220.ru,vita-water.ru,wuxiaworld.ru##body > :not([id]):not([class]):not(script)
 mirdiets.ru,top10books.ru##body > [class*="-blackout active"]
 mirdiets.ru,top10books.ru##body > [class*="-blackout active"] + div[class$="-wrapper"]
 iblitzmods.ru##body > [class^="adbd-"]
@@ -27658,6 +27658,9 @@ isport.ua##body > .layout:style(margin-top: 0 !important)
 ! ---
 it-actual.ru##.entry-content > [class*=" "][style="text-align: center;"]
 it-actual.ru##.fltext:style(background: none !important; position: unset !important)
+! ---
+it-world.ru##html > body > *:style(pointer-events: auto !important)
+it-world.ru##html > body:style( pointer-events: none !important; background: inherit !important)
 ! ---
 itc.ua##a[href*="://rdr.fmcgsd.net/in/offer/"]:style(pointer-events: none !important; color: unset !important; border-bottom: none !important)
 itc.ua##a[href*="://telemart.ua/"]:style(pointer-events: none !important; color: unset !important; border-bottom: none !important)
@@ -28549,6 +28552,7 @@ dzen.ru##[class*="yandex-direct"]
 dzen.ru##[data-testid="dzenpro-banner"]
 dzen.ru##div[class*="-ad-block_"]
 dzen.ru##div[class*="-right-ad-column"]
+dzen.ru##div[class*="_advertDoc2Doc-"]
 dzen.ru##div[class*="adContentWrapper"]
 dzen.ru##div[class*="adSplitEmbed"]
 dzen.ru##div[class*="bannerMain"]
@@ -28567,8 +28571,10 @@ dzen.ru##.news-secondary-layout-column__secondary div[id]
 dzen.ru##.news-story-page div[id] > div:not([id]) > div[id]
 dzen.ru##[class^="news-site--Infinite"][class*="AdColumnItem-desktop__content"] > div[id*="-column_top"]
 dzen.ru##div:not(.news-rubric-desktop__adv-column) > div[class^="mg-sticky"]
+dzen.ru##div[class*="AdvertTsar"]
+dzen.ru##div[class*="BrandingAdvertLayoutColumn-"]
 dzen.ru##div[class*="_content_with-new-"] > div[id] ~ div[id]
-dzen.ru##div[class*="_content_with-new-"] > div[id]:first-child + div[class*=" news-"]
+dzen.ru##div[class*="body_branding"]:style(background: inherit !important)
 dzen.ru##div[class*="new"] [class$="__rubricator"] + div[class*=" "] > div:only-child
 dzen.ru##div[class^="news"] [class*="skeleton"]:style(background-color: transparent !important)
 dzen.ru##div[class^="news-site-"][class*="-desktop-"]:style(background-color: transparent !important)
@@ -28997,7 +29003,7 @@ growhow.in.ua##+js(abort-on-property-read, wpsite_clickable_data)
 animedia.tv,animedub.ru,vsetut.su##+js(abort-on-property-read, zfgformats)
 transkarpatia.net##+js(abort-on-property-write, NiceScroll)
 24pdd.ru##+js(abort-on-property-write, adsBlocked)
-doctorrouter.ru,ranobe-novels.ru,tests24.su##+js(abort-on-property-write, ai_front)
+doctorrouter.ru,ranobe-novels.ru,tests24.su,vita-water.ru##+js(abort-on-property-write, ai_front)
 newxboxone.ru,ufchgu.ru##+js(abort-on-property-write, disableSelection)
 ufchgu.ru##+js(abort-on-property-write, disable_keystrokes)
 fssp.gov.ru,southpark.su,turkcinema.org##+js(abort-on-property-write, document.oncontextmenu)
