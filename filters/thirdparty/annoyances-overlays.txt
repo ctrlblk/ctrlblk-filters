@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: EasyList – Newsletter Notices
-! Last modified: Wed, 01 Apr 2026 03:54:01 +0000
+! Last modified: Thu, 02 Apr 2026 05:23:45 +0000
 ! Expires: 7 days (update frequency)
 ! *** easylist:template_header.txt ***
 !
@@ -1278,6 +1278,8 @@
 ##div[data-newsletter-2]
 ##gannett-atoms-component-newsletter-cta
 ##journey-inline-newsletter
+! future plc
+###utilitybar__button--newsletter
 ! floodlightnews.org
 ##.gh-footer-signup
 ##.gh-outer.gh-cta
@@ -1794,7 +1796,7 @@ peanutbutterrunner.com###signup-container
 browardpalmbeach.com###signup-modal
 aetv.com,historytoday.com###signup-popup
 amazingfoodmadeeasy.com,businesstimes.com.sg###signup-wrapper
-pcgamer.com,techradar.com###signupForm
+gamesradar.com,pcgamer.com,techradar.com###signupForm
 seatguru.com###signup_large
 domainnamewire.com###simple-banner
 nationalobserver.com###site-broadcast
@@ -1882,7 +1884,6 @@ bitcoinmagazine.com###tpbr_topbar
 masteringemacs.org###try-book
 autodesk.com###uf-cta-beside
 ultimate-guitar.com###ug-article-email-subscribe
-techradar.com###utilitybar__button--newsletter
 semafor.com###vertical-signup-form
 ozbargain.com.au###visitor-notice
 matomo.org###wbounce-modal
@@ -6231,7 +6232,7 @@ doctorofcredit.com#@#.wpdiscuz-subscribe-bar
 ! fanboy_newsletter_shopping_allowlist_general_hide.txt
 
 ! Title: uBlock filters – Other Annoyances
-! Last modified: Tue, 31 Mar 2026 07:02:45 +0000
+! Last modified: Thu, 02 Apr 2026 03:37:32 +0000
 ! Expires: 7 days
 ! Description: Filters optimized for uBlock Origin, to be used with EasyList's and/or Adguard's "Other Annoyances" list(s)
 ! License: https://github.com/uBlockOrigin/uAssets/blob/master/LICENSE
@@ -6299,7 +6300,7 @@ e-panigiria.gr###body *:not(input):not(textarea):style(-webkit-touch-callout: de
 
 ! https://www.reddit.com/r/uBlockOrigin/comments/1lpy21u/animekai_anti_dev_tools/
 anikai.to,animekai.*,anigo.to,flixzone.co,hianime.ws,moontv.to,yflix.to##+js(nostif, ||!!)
-sflix.fi##+js(nostif, || !!_)
+myflixer.bz,sflix.fi##+js(nostif, || !!_)
 
 ! https://www.reddit.com/r/uBlockOrigin/comments/1nalnl4/rightclick_dev_tool_disable_and_redirect_to_ads/
 webnoveltranslations.com##+js(aeld, /contextmenu|copy|cut|key/, , elements, document)
@@ -13910,10 +13911,10 @@ lemon8-app.com##*:style(-webkit-touch-callout: default !important; -webkit-user-
 
 ! animekai.me anti-devtools
 ! https://www.reddit.com/r/uBlockOrigin/comments/1rw1ned/anti_dev_console_moontvto/
-~challenges.cloudflare.com,anikai.to,animekai.*,anigo.to,flixzone.co,hianime.ws,moontv.to,sflix.fi,yflix.to,anikai.to>>,animekai.*>>,anigo.to>>,flixzone.co>>,hianime.ws>>,moontv.to>>,sflix.fi>>,yflix.to>>##+js(aeld, keydown, /^function\(.*\|\|.*}$/)
-~challenges.cloudflare.com,anikai.to,animekai.*,anigo.to,flixzone.co,hianime.ws,moontv.to,sflix.fi,yflix.to,anikai.to>>,animekai.*>>,anigo.to>>,flixzone.co>>,hianime.ws>>,moontv.to>>,sflix.fi>>,yflix.to>>##+js(set, console.clear, trueFunc)
-~challenges.cloudflare.com,anikai.to,animekai.*,anigo.to,flixzone.co,hianime.ws,moontv.to,sflix.fi,yflix.to,anikai.to>>,animekai.*>>,anigo.to>>,flixzone.co>>,hianime.ws>>,moontv.to>>,sflix.fi>>,yflix.to>>##+js(set, console.table, trueFunc)
-~challenges.cloudflare.com,anikai.to,animekai.*,anigo.to,flixzone.co,hianime.ws,moontv.to,sflix.fi,yflix.to,anikai.to>>,animekai.*>>,anigo.to>>,flixzone.co>>,hianime.ws>>,moontv.to>>,sflix.fi>>,yflix.to>>##+js(set, console.log, trueFunc)
+~challenges.cloudflare.com,anikai.to,animekai.*,anigo.to,flixzone.co,hianime.ws,moontv.to,myflixer.bz,sflix.fi,yflix.to,anikai.to>>,animekai.*>>,anigo.to>>,flixzone.co>>,hianime.ws>>,moontv.to>>,myflixer.bz>>,sflix.fi>>,yflix.to>>##+js(aeld, keydown, /^function\(.*\|\|.*}$/)
+~challenges.cloudflare.com,anikai.to,animekai.*,anigo.to,flixzone.co,hianime.ws,moontv.to,myflixer.bz,sflix.fi,yflix.to,anikai.to>>,animekai.*>>,anigo.to>>,flixzone.co>>,hianime.ws>>,moontv.to>>,myflixer.bz>>,sflix.fi>>,yflix.to>>##+js(set, console.clear, trueFunc)
+~challenges.cloudflare.com,anikai.to,animekai.*,anigo.to,flixzone.co,hianime.ws,moontv.to,myflixer.bz,sflix.fi,yflix.to,anikai.to>>,animekai.*>>,anigo.to>>,flixzone.co>>,hianime.ws>>,moontv.to>>,myflixer.bz>>,sflix.fi>>,yflix.to>>##+js(set, console.table, trueFunc)
+~challenges.cloudflare.com,anikai.to,animekai.*,anigo.to,flixzone.co,hianime.ws,moontv.to,myflixer.bz,sflix.fi,yflix.to,anikai.to>>,animekai.*>>,anigo.to>>,flixzone.co>>,hianime.ws>>,moontv.to>>,myflixer.bz>>,sflix.fi>>,yflix.to>>##+js(set, console.log, trueFunc)
 
 ! https://github.com/uBlockOrigin/uAssets/issues/27010
 loverslab.com##+js(nano-sib)
@@ -14252,3 +14253,6 @@ allen.in##+js(json-prune, data.page_content.slot_widgets)
 ! https://github.com/uBlockOrigin/uAssets/issues/32383
 japanesewithtomo.com##+js(rmnt, script, contextmenu)
 japanesewithtomo.com##*:style(-webkit-touch-callout: default !important; -webkit-user-select: text !important; -moz-user-select: text !important; -ms-user-select: text !important; user-select: text !important;)
+
+! https://github.com/AdguardTeam/AdguardFilters/issues/228290
+duck.ai##+js(trusted-set-local-storage-item, aichatPromoDismissal, '{"promoReleaseDate":"2026-01-05","dismissedPromos":["subscription","browserUpsell"],"allPromosDismissed":true}')
