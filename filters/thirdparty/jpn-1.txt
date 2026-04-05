@@ -1,10 +1,10 @@
 ![Adblock Plus 2.0]
-! Checksum: iqirZNpei4ih7FQtg0X4jQ
-! Diff-Path: ../patches/7/7-s-1775266959-3600.patch
+! Checksum: DWljAJ4z4b3jZDIpjg7R7g
+! Diff-Path: ../patches/7/7-s-1775365117-3600.patch
 ! Title: AdGuard Japanese filter
 ! Description: Filter that enables ad blocking on websites in Japanese language.
-! Version: 2.0.73.18
-! TimeUpdated: 2026-04-04T01:38:57+00:00
+! Version: 2.0.73.22
+! TimeUpdated: 2026-04-05T04:55:16+00:00
 ! Expires: 5 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -1876,6 +1876,9 @@ gundamlog.com###more > iframe[src^="https://richlink.blogsys.jp"]
 !
 ! NOTE: Specific rules
 !
+abc-mart.net###coupon:has(> .ad)
+matome-geinou.net##[id^="myad-"]
+matome-geinou.net##+js(abort-current-script, actress, myad)
 automaton-media.com##.ct-sidebar > .ct-widget:has(div[data-code])
 daily.co.jp##a[href^="http://uma36.com/"]
 hagitai.com##a[href^="https://al.dmm.co.jp/"]
@@ -2260,13 +2263,12 @@ wiki.fc2.com###plg_free_3:has(> div > ins.adsbygoogle)
 wiki.fc2.com###plg_free_4:has(> div > center > ins.adsbygoogle)
 wiki.fc2.com##.section[id^="plg_free"] > div.menubody > a[name="amazletlink"]
 wiki.fc2.com##.section[id^="plg_free"]:has(> div > div[align="center"] > ins.adsbygoogle)
-||i-pclub.com/m/adnex_randam3.html
-||i-pclub.com/m/appollo$script,~3p
-||i-pclub.com/m/randam_slapo_ppsecl.js
+||i-pclub.com/ama_$script
+||i-pclub.com/sps/script.js
+i-pclub.com###fooot1, .fooo:style(height: 160px !important;)
+i-pclub.com###stick
 i-pclub.com###nobel
 i-pclub.com###nobel1_5
-i-pclub.com##.zoon:has(> div#nex)
-i-pclub.com##.zoon2:has(> iframe#lz)
 fullpokko.com###block-53
 fullpokko.com###block-59
 ananweb.jp##.styles_sideAd__S_Ted
@@ -7790,6 +7792,7 @@ e-countries.com###custom_html-34
 ge-soku.com###custom_html-35
 yukawanet.com###custom_html-36
 yaruobook.net,tousatu-club.com,valorantnews.jp###custom_html-38
+chaos-giga.com###custom_html-39
 iphone-mania.jp###custom_html-42
 anime-torrent.com,tokyolucci.jp###custom_html-43
 iphone-mania.jp###custom_html-44
@@ -9145,7 +9148,7 @@ with2.net##.ads-native
 rebosoku.com##.kiji-ad1
 rebosoku.com##.sidebody-r
 rebosoku.com##div[style="height:445px;"]
-haronbouchannel.com,mhwsmatome.com,otonano.info,geinomatome.com,gameleaks.org,kinggonzalez.net,toolmania.info,moez-m.com,deai-help.com,curo.jp,gadget2ch.com,blog.syumikatu.info###sidebar-scroll
+chaos-giga.com,haronbouchannel.com,mhwsmatome.com,otonano.info,geinomatome.com,gameleaks.org,kinggonzalez.net,toolmania.info,moez-m.com,deai-help.com,curo.jp,gadget2ch.com,blog.syumikatu.info###sidebar-scroll
 blog.skeg.jp###gad-relatedentry
 app-ranking.net,plus-a.net,itmedia.co.jp,pasoble.jp,figsoku.net,mysqlweb.net,nlab.itmedia.co.jp,securl.nu,blog.skeg.jp##.gad
 blog.skeg.jp##.gad-articletop
