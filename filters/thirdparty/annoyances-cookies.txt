@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: EasyList – Cookie Notices
-! Last modified: Mon, 06 Apr 2026 22:05:22 +0000
+! Last modified: Wed, 08 Apr 2026 22:24:04 +0000
 ! Expires: 7 days (update frequency)
 ! *** easylist:template_header.txt ***
 !
@@ -18013,6 +18013,7 @@ rebirth-hannover.de##.c-callout
 index.co##.c-consent-manager
 croda.com,frontgate.com,incotec.com,york.ac.uk##.c-cookie-banner
 asm.com,bastionhotels.com,bestwesternschipholairport.com,midlands.englandhockey.co.uk##.c-cookie-bar
+hobbitontours.com##.c-cookie-confirm
 datagen.tech##.c-cookie-consent-background
 gic.careers##.c-cookie-notice__container
 aniguessr.com##.c-cookie-popup
@@ -18200,7 +18201,7 @@ developers.turing.com##.cookie-consent-overlay
 buying.expert##.cookie-consent-popover
 fling2night.com##.cookie-consent-root
 samsungknox.com##.cookie-consent-v3
-springbok-puzzles.com,tinyurl.com,visitworld.today##.cookie-consent-wrapper
+aronimink.org,springbok-puzzles.com,tinyurl.com,visitworld.today##.cookie-consent-wrapper
 envirovent.com##.cookie-content
 home.cricketwireless.com##.cookie-dialog__container
 chargie.com##.cookie-div-block
@@ -19857,7 +19858,7 @@ austrian.com,comparethemarket.com,gsk.com,pepperl-fuchs.com###__tealiumGDPRcpPre
 !! .cookie-consent-banner
 agados.cz,allmyfaves.com,charlesandcolvard.com,concert.ua,delfortgroup.com,githubstatus.com,goldaglida.co.il,morfix.co.il,puffy.com,splice-cad.com,tnawrestling.com,wincatalog.com##.cookie-consent-banner
 !! .cookie-consent-popup
-015.co.il,almaviva.it,cos.com,expireddomains.com,gcli.li,hm.com##.cookie-consent-popup
+015.co.il,almaviva.it,cos.com,expireddomains.com,gcli.li,hm.com,podurama.com##.cookie-consent-popup
 !! #cookie-consent-popup
 bagina.co.il,coffeeman.co.il,finam.ru,halalit.co.il,pccenter.co.il,rsm.co.il,shop-now14.co.il,vero-cafe.co.il,zulacasino.com###cookie-consent-popup
 !! .cookiebar
@@ -22937,6 +22938,7 @@ granado.com.br##+js(set-local-storage-item, store-cookie-consent, accepted)
 supreme.com##+js(set-local-storage-item, sup_gdpr_cookie, accepted)
 supabase.com##+js(set-local-storage-item, supabase-consent-ph, false)
 superset.sh##+js(set-local-storage-item, superset-analytics-consent, denied)
+taketaketake.com##+js(set-local-storage-item, takex3.cookie-consent, declined)
 technikmuseum.berlin##+js(set-local-storage-item, technikmuseum-required-enabled, true)
 venom.foundation##+js(set-local-storage-item, terms, accepted)
 galaxy.com##+js(set-local-storage-item, terms, true)
@@ -28044,9 +28046,9 @@ concursolutions.com,forbes.com,formula1.com,fortune.com,proximus.be,proximustv.b
 @@||oddschecker.com/cookie-policy-banner/$~third-party
 @@||omniplex.ie/script/modules/cookiecuttr.js$~third-party
 @@||onepage.io/api/v1/cookie-service/lib/$script
-@@||onetrust.com/consent/$domain=airnewzealand.co.nz|bt.com|groceries.asda.com|konami.com|nintendolife.com|panasonic.com|paramountplus.com|posti.fi|pushsquare.com|technics.com|timeextension.com|uw.co.uk
+@@||onetrust.com/consent/$domain=airnewzealand.co.nz|bt.com|groceries.asda.com|konami.com|nectar.com|nintendolife.com|panasonic.com|paramountplus.com|posti.fi|pushsquare.com|technics.com|timeextension.com|uw.co.uk
 @@||onetrust.com/request/$xmlhttprequest
-@@||onetrust.com/scripttemplates/$domain=airnewzealand.co.nz|bt.com|groceries.asda.com|konami.com|milliescookies.com|nintendolife.com|panasonic.com|paramountplus.com|posti.fi|pushsquare.com|technics.com|timeextension.com
+@@||onetrust.com/scripttemplates/$domain=airnewzealand.co.nz|bt.com|groceries.asda.com|konami.com|milliescookies.com|nectar.com|nintendolife.com|panasonic.com|paramountplus.com|posti.fi|pushsquare.com|technics.com|timeextension.com
 @@||onetrust.com/vendorlist/$domain=groceries.asda.com|nintendolife.com|paramountplus.com|pushsquare.com|timeextension.com
 @@||onetrust.com/webform/$subdocument
 @@||onlineservice.ewr-gmbh.de/ui.components.extended/material/nli-cookie-banner/$script,~third-party
@@ -28256,7 +28258,7 @@ concursolutions.com,forbes.com,formula1.com,fortune.com,proximus.be,proximustv.b
 @@||zensus2022.de/SiteGlobals/Modules/CookieBanner/*/CookieBanner.json?$~third-party,xmlhttprequest
 
 ! Title: uBlock filters – Cookie Notices
-! Last modified: Sun, 05 Apr 2026 14:45:34 +0000
+! Last modified: Thu, 09 Apr 2026 05:09:33 +0000
 ! Expires: 7 days
 ! Description: Filters optimized for uBlock Origin, to be used with EasyList's and/or Adguard's "Cookie Notices" list(s)
 ! License: https://github.com/uBlockOrigin/uAssets/blob/master/LICENSE
@@ -31248,6 +31250,18 @@ lta.org.uk##+js(trusted-set-cookie, cookieprefs, '{"func":false,"perf":false,"tr
 ! refuse
 app.lepermislibre.fr##+js(trusted-click-element, button[data-testid="cookie-modal-actions-decline"], , 1000)
 
+! Continue without accepting
+leboncoin.fr##+js(trusted-click-element, button[aria-label="Continuer sans accepter"], , 1000)
+
+! reject
+parkingbase.com##+js(trusted-set-local-storage-item, cookie-consent, '{"hasConsent":true,"preferences":{"necessary":true,"analytics":false,"marketing":false},"timestamp":"$currentISODate$"}')
+
+! reject tracking
+palaisgalliera.paris.fr##+js(trusted-set-cookie, orejime, '{"strictly_necessary":true,"tracking":false,"youtube":true,"dailymotion":true,"Facebook":true}')
+
+! consent wall, accept
+cmp.klart.se##+js(trusted-click-element, button[aria-label="Godkänn alla"], , 1000)
+
 ! decline
 cremadescalvosotelo.com##+js(trusted-set-cookie, cookies_consent, !gtag=false)
 
@@ -33729,3 +33743,7 @@ weddingbee.com##+js(trusted-set-cookie, OptanonConsent, groups=C0001%3A1%2CC0002
 
 ! https://github.com/tcptomato/ROad-Block/issues/671
 e-jumbo.ro##+js(trusted-set-cookie, {ConsentChecked, '"userHasSetCookies":true,"functionalityCookies":false,"statisticCookies":false,"marketingCookies":false}')
+
+! https://github.com/uBlockOrigin/uAssets/issues/32456
+@@||onetrust.com^$script,xhr,domain=nectar.com
+nectar.com##+js(trusted-click-element, button[id="onetrust-reject-all-handler"], , 1500)
