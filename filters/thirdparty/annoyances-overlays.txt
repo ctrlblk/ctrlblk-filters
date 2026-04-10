@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: EasyList – Newsletter Notices
-! Last modified: Wed, 08 Apr 2026 22:24:04 +0000
+! Last modified: Fri, 10 Apr 2026 03:52:31 +0000
 ! Expires: 7 days (update frequency)
 ! *** easylist:template_header.txt ***
 !
@@ -1651,6 +1651,7 @@ nationalobserver.com###modalBackdrop
 metalsucks.net###ms-newsletter-2
 metalsucks.net###ms-newsletter-3
 consumerreports.org###mtExitModalPopup
+upolitics.com,usports.org,utrips.com###myNewsModal
 visualistan.com###na-wrapper
 nationalgeographic.com###natgeo-marketing-inline-email-footer-frame1-module2
 nascar.ca###ndms-newsletter_widget
@@ -2048,7 +2049,7 @@ glutenfreecuppatea.co.uk,techspree.net##.after-post
 inspiredtaste.net##.afterpost.text_box
 globalinitiative.net##.ajaxform
 elcomercio.com,folklife.si.edu,insidermedia.com##.alert
-uinterview.com##.alert-discreet
+uinterview.com,upolitics.com,usports.org##.alert-discreet
 thepost.co.nz##.alert-signup-container
 algemeiner.com##.alg_subscribe_cont
 film-news.co.uk,game-news.co.uk,music-news.com,theatre-news.com##.amazon-tickets
@@ -2953,7 +2954,7 @@ stopmandatoryvaccination.com##.moOptinForm
 lung.org##.modaal-overlay
 abc15.com##.modal--content
 gault-millau.nl,gaultmillau.be,gaultmillau.lu,unknowncomicbooks.com##.modal--newsletter
-battlefields.org,thestar.com##.modal-backdrop
+battlefields.org,thestar.com,upolitics.com,usports.org,utrips.com##.modal-backdrop
 christiantoday.com##.modal-container
 nationalobserver.com##.modal-default
 officialcharts.com##.modal-overlay
@@ -3019,6 +3020,7 @@ advocate.com,comicsands.com,out.com,thefulcrum.us##.newsletter-aside
 cityam.com##.newsletter-auto-inject
 theintercept.com##.newsletter-block__content
 techfirstnow.com##.newsletter-body
+uinterview.com##.newsletter-box
 thartribune.com##.newsletter-box-2
 chalkbeat.org##.newsletter-breaker-wrapper
 dailydot.com,folhape.com.br##.newsletter-button
@@ -4046,6 +4048,7 @@ foxandbriar.com#?#.has-tertiary-background-color:has-text(Week)
 foxnews.com#?#.advanced.embed-media:has-text(Get a daily look)
 freedomnews.tv#?#.to-fntv-purple\/20:has-text(Breaking News Alerts)
 freethink.com#?#.bg-gray-100:has-text(Sign up)
+gadgetreview.com#?#div.wp-container-core-group-is-layout-7014ffe2:has-text(Join over)
 gizmodo.com#?#.dark\:bg-main-850:has-text(Join our Newsletters)
 gizmodo.com#?#.max-w-screen-2xl.py-10:has-text(Sign up)
 gizmodo.com#?#div.mt-10:has-text(Daily Newsletter)
@@ -6233,7 +6236,7 @@ doctorofcredit.com#@#.wpdiscuz-subscribe-bar
 ! fanboy_newsletter_shopping_allowlist_general_hide.txt
 
 ! Title: uBlock filters – Other Annoyances
-! Last modified: Thu, 09 Apr 2026 03:31:21 +0000
+! Last modified: Fri, 10 Apr 2026 04:23:20 +0000
 ! Expires: 7 days
 ! Description: Filters optimized for uBlock Origin, to be used with EasyList's and/or Adguard's "Other Annoyances" list(s)
 ! License: https://github.com/uBlockOrigin/uAssets/blob/master/LICENSE
@@ -14254,3 +14257,16 @@ japanesewithtomo.com##*:style(-webkit-touch-callout: default !important; -webkit
 
 ! https://github.com/AdguardTeam/AdguardFilters/issues/228290
 duck.ai##+js(trusted-set-local-storage-item, aichatPromoDismissal, '{"promoReleaseDate":"2026-01-05","dismissedPromos":["subscription","browserUpsell"],"allPromosDismissed":true}')
+
+! https://github.com/uBlockOrigin/uAssets/issues/32474
+!#if ext_ubol
+ya.ru,yandex.*##.Distribution
+ya.ru,yandex.*##.b-page:style(padding-top: 0 !important)
+ya.ru,yandex.*##.b-page[style*="padding-right:"]:style(overflow-y: auto !important; padding-right: 0 !important)
+!#endif
+
+! https://github.com/uBlockOrigin/uAssets/issues/32483
+!doordash.com##[data-testid="LAYER-MANAGER-SHEET"]:has([data-testid="overlay-content"])
+!doordash.com##body, html:style(overflow: visible !important; position: static !important;)
+doordash.com##div[aria-hidden="true"] + div[class^="sc-"][style*="margin-top:"]:has-text(Browse faster)
+doordash.com##+js(trusted-set-local-storage-item, appDownloadPromptDismissedV3Ttl, {"value":"99999999999999"\,"expiresAt":99999999999999})
