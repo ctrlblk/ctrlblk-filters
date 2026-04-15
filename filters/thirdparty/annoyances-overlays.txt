@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: EasyList – Newsletter Notices
-! Last modified: Mon, 13 Apr 2026 14:18:32 +0000
+! Last modified: Wed, 15 Apr 2026 03:52:28 +0000
 ! Expires: 7 days (update frequency)
 ! *** easylist:template_header.txt ***
 !
@@ -2017,6 +2017,7 @@ cnbc.com##.WildcardEmbed-wrapper
 latimes.com##.\@container\/newsletter-module
 timesnownews.com##._37K4.RUE6
 80.lv##._3Gr3h
+gulfnews.com##._4EXSh
 thelogic.co##.__form-wrapper
 friendlyatheist.com##._background_1mspu_85
 thefiscaltimes.com,thewalrus.ca##._form
@@ -2816,7 +2817,7 @@ draxe.com##.ju_overlay
 newstatesman.com##.july22-newsletter
 qz.com##.kHmXgL
 christinacooks.com##.kadence-conversion-wrap
-ppc.land##.kg-cta-card
+joanwestenberg.com,ppc.land##.kg-cta-card
 the-londoner.co.uk##.kg-cta-content
 beautifulpublicdata.com,codereliant.io,evinfocus.com,gardinerbryant.com,gkogan.co,micahflee.com,newslttrs.com,overkill.wtf,oxfordclarion.uk,ppc.land,scarletink.com,simone.org##.kg-signup-card
 disconnect.blog,the-londoner.co.uk##.kg-signup-card-content
@@ -2862,6 +2863,7 @@ history.com,parade.com##.m-brand-engagement
 thestreet.com##.m-custom-component
 lamag.com##.m-detail--body-iframe-embed
 parade.com##.m-flex-nav--right-engagement
+boston.com##.m-generic-cta
 boston.com##.m-generic-cta--email-signup
 minds.com##.m-modal-bg
 politifact.com##.m-supporter
@@ -3561,7 +3563,7 @@ mediatrust.com##.subscribe-callout-bar
 mbconfidential.com,news.itsfoss.com,untappedcities.com,words.filippo.io##.subscribe-cta
 noyb.eu##.subscribe-cta-block
 aorus.com,nutritioninsight.com,packaginginsights.com##.subscribe-div
-afaqs.com##.subscribe-div-body-right-side
+afaqs.com,indianstartupnews.com##.subscribe-div-body-right-side
 cafemom.com##.subscribe-enter-done
 punchline-gloucester.com##.subscribe-footer-container
 euroweeklynews.com##.subscribe-for-news
@@ -3577,6 +3579,7 @@ spaceref.com##.subscribe-line-link
 media4growth.com##.subscribe-ltr
 techpout.com##.subscribe-medium
 ia.acs.org.au,meetup.com##.subscribe-modal
+indianstartupnews.com##.subscribe-news-letter
 golem.de,versicherungsbote.de##.subscribe-newsletter
 fxleaders.com##.subscribe-newsletter-wrapper
 hawaiitribune-herald.com,wccftech.com,westhawaiitoday.com##.subscribe-now
@@ -3587,7 +3590,7 @@ blog.rootsofprogress.org,tpain.com##.subscribe-popup
 politics.co.uk##.subscribe-popup-container
 aciafrica.org,catholicnewsagency.com##.subscribe-post
 alvarotrigo.com##.subscribe-s
-aircraftforsale.com,bitdegree.org,churchpop.com,conmebol.com,philadelphiaherald.com,reasonstobecheerful.world,thechainsaw.com##.subscribe-section
+aircraftforsale.com,bitdegree.org,churchpop.com,conmebol.com,joanwestenberg.com,philadelphiaherald.com,reasonstobecheerful.world,thechainsaw.com##.subscribe-section
 metro.us##.subscribe-section-container
 thefire.org##.subscribe-sticky
 semanticscholar.org##.subscribe-tile
@@ -4824,6 +4827,8 @@ webpronews.com##html:style(overflow: auto !important)
 ! klaviyo-prevent-body-scrolling
 aminoporssi.fi,brytesoft.com,europesnus.com,nutrifitt.com,psychiatrist.com,windupwatchshop.com##.kl-private-reset-css-Xuajs1.needsclick
 aminoporssi.fi,brytesoft.com,europesnus.com,nutrifitt.com,psychiatrist.com,windupwatchshop.com##body:style(overflow: auto !important)
+! thebarentsobserver.com
+thebarentsobserver.com##+js(set-cookie, mm_f_45691, true)
 ! addapinch.com
 addapinch.com##.cohoes-campaign
 addapinch.com##html:style(overflow: auto !important; position: initial !important;)
@@ -6241,7 +6246,7 @@ doctorofcredit.com#@#.wpdiscuz-subscribe-bar
 ! fanboy_newsletter_shopping_allowlist_general_hide.txt
 
 ! Title: uBlock filters – Other Annoyances
-! Last modified: Mon, 13 Apr 2026 11:20:27 +0000
+! Last modified: Tue, 14 Apr 2026 15:01:27 +0000
 ! Expires: 7 days
 ! Description: Filters optimized for uBlock Origin, to be used with EasyList's and/or Adguard's "Other Annoyances" list(s)
 ! License: https://github.com/uBlockOrigin/uAssets/blob/master/LICENSE
@@ -11509,12 +11514,6 @@ deepl.com##+js(aeld, copy)
 ! https://github.com/uBlockOrigin/uAssets/issues/15084
 google.*##[data-lyricid]:style(user-select: text !important;)
 
-! https://gourmetscans. net right click, copy, keys
-gourmetscans.net##+js(aopw, disableEnterKey)
-gourmetscans.net##+js(acs, document.oncontextmenu)
-! https://github.com/uBlockOrigin/uAssets/issues/15367 anti F12 and Ctrl+U
-gourmetscans.net##+js(acs, wccp_pro_iscontenteditable)
-
 ! https://github.com/uBlockOrigin/uAssets/issues/14170
 minimum-wage.org##.alert-dismissible
 
@@ -11915,7 +11914,7 @@ songs-wayaku.com,famousintel.com,jnews5.com,eurooptyk.com.pl,evreporter.com,tvsh
 jnews5.com##+js(aeld, mousedown, , elements, .entry-content)
 
 ! WPCP Pro - https://wp-buy.com/product/wp-content-copy-protection-pro/
-/wp-content/plugins/wccp-pro/*$domain=ferroviando.com.br|counciloflove.com|gourmetscans.net|infokik.com|kulinarnastronamocy.pl|jafekri.com|reborntrans.com|truyenbanquyen.com|ezmanga.net|secondlifetranslations.com|piklodz.pl|koltry.life|kolnovel.com|theaircurrent.com
+/wp-content/plugins/wccp-pro/*$domain=ferroviando.com.br|counciloflove.com|infokik.com|kulinarnastronamocy.pl|jafekri.com|reborntrans.com|truyenbanquyen.com|ezmanga.net|secondlifetranslations.com|piklodz.pl|koltry.life|kolnovel.com|theaircurrent.com
 ! https://github.com/uBlockOrigin/uAssets/issues/4744
 ! https://github.com/uBlockOrigin/uAssets/issues/5462
 ! https://github.com/uBlockOrigin/uAssets/issues/13687
