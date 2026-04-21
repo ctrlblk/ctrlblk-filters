@@ -11942,7 +11942,7 @@ igdz1.ru^$script,domain=igdz.ru
 ||img-fotki.yandex.ru/get/*_orig|$image,domain=masterok.livejournal.com
 ||img.*.ru/js/jquery.suSlider.js$script
 ||img.bankoboev.ru^
-||img.zoneofgames.*/branding/$domain=www.zoneofgames.ru
+||img.zoneofgames.*/branding/$domain=zoneofgames.ru
 ||imgal.ru^*script$script
 ||imgbum.ru^*.php$script
 ||imgix.ru/*.js|
@@ -16024,7 +16024,7 @@ citydog.by##.brandLink
 ekaraganda.kz##.brand_a
 harpersbazaar.com.ua##.brand_left
 harpersbazaar.com.ua##.brand_right
-agropolit.com,elevatorist.com,filmozavr.com,filmozavr.net,forum.zoneofgames.ru,gotennis.ru,inoprosport.ru,kinopati.ru,kurkul.com,lada-granta.net,latifundist.com,lkforum.ru,myshows.me,osp.ru,overclockers.ua,podfm.ru,popcornnews.ru,psm7.com,stopgame.ru,superagronom.com,zemliak.com##.branding
+agropolit.com,elevatorist.com,filmozavr.com,filmozavr.net,gotennis.ru,inoprosport.ru,kinopati.ru,kurkul.com,lada-granta.net,latifundist.com,lkforum.ru,myshows.me,osp.ru,overclockers.ua,podfm.ru,popcornnews.ru,psm7.com,stopgame.ru,superagronom.com,zemliak.com##.branding
 tut.by##.branding > a
 3dtoday.ru##.branding-banner
 banki.ru##.branding-bg
@@ -17103,6 +17103,9 @@ the-cinema.online##.leftside.lcolomn > .block:nth-of-type(1)
 biletyplus.ru##.lending_adv_top
 asn.in.ua##.lenta > .clear_block
 asn.in.ua##.lenta > .clear_block + hr
+yap.ru,yaplakal.com#?#.lenta > tbody > tr:-abp-has(> .topic-header > .topic-header-parent > .mainpage-rank-container:empty)
+yap.ru,yaplakal.com#?#.lenta > tbody > tr:-abp-has(> .topic-header > .topic-header-parent > .mainpage-rank-container:empty) + tr
+yap.ru,yaplakal.com#?#.lenta > tbody > tr:-abp-has(> .topic-header > .topic-header-parent > .mainpage-rank-container:empty) + tr + tr
 asn.in.ua##.lentanewspost > .clear_block + hr
 cubiq.ru##.lets-review-block__aff
 cwer.me,cwer.ru,cwer.su,cwer.ws##.like_hide
@@ -18980,6 +18983,7 @@ gitarshkola.net##.widget_widget_catchbox_adwidget
 elevatorist.com##.widget_wrap
 agrognom.ru,apral.ru,kvmarvel.ru,samelectric.ru##.widget_zen_widget
 burninghut.ru##.widgets-area--above-comments
+kursiv.media##.widgets-container
 inetsovety.ru##.wiged.widget_text
 enovosty.com##.wiget.ukr_links
 forum.taxiservice.com.ua#?#.windowbg:-abp-has(> .poster > h4:-abp-contains(Форум Такси Сервис))
@@ -21033,6 +21037,7 @@ meta.ua##div[class^="bookmaker"]
 kingisepp-today.ru,xn----etbbecbrbp5ahkja1ae7v.xn--p1ai#?#div[class^="boxFormWrapper"]:-abp-has(> div[class^="link"] a[href*="/images/reklama/"])
 kerch.fm##div[class^="bp_"][class*="-block"]
 medicina.ua##div[class^="brand_"]
+forum.zoneofgames.ru##div[class^="branding"]
 gorod.cn.ua##div[class^="branding_"]
 www.ixbt.com##div[class^="branding_"][class*="-spacer"]
 agroxxi.ru##div[class^="brending"]
@@ -22634,7 +22639,7 @@ ru###ads-top.ads
 ||proxyshare.com^$third-party,popup
 !
 ! Avito
-www.avito.ru##[data-chunks="item-buyer-view"] + div > div:first-child > div:first-child + div > div:first-child + div + div:last-child > div:only-child > div:first-child + div:last-child > div:only-child > div:first-child + div:last-child
+www.avito.ru##[data-chunks="item"] + div > div:first-child > div:first-child + div > div:first-child + div + div:last-child > div:only-child > div:first-child + div:last-child > div:only-child > div:first-child + div:last-child
 www.avito.ru##div[class*="avito-ads-container"]
 www.avito.ru##div[class*="index-advRootWidget"]
 www.avito.ru##div[class*="styles-module-root_animation-"]:empty
@@ -28561,8 +28566,7 @@ ya.ru,yandex.by,yandex.kz,yandex.uz##.link-bro
 ya.ru##.market-feed
 ya.ru##.reasoning-section
 ya.ru##[action="https://ya.ru/search/"] ~ div[style]
-ya.ru##[class*="feed"][class*="masonry"]
-ya.ru##[id^="ryt"][id*="fe"]
+ya.ru##[id^="ryt"][id*="m-f"][id$="d"]
 ya.ru##html[class*="_neuro"] aside ~ div[style]
 ya.ru##html[class*="_reaso"] aside ~ div[style]
 ya.ru##html[class*="document_feed_"] aside ~ div[style]
@@ -28610,6 +28614,7 @@ dzen.ru##.content--styles__banner-cc + [aria-label] ~ div
 dzen.ru##[class*="yandex-direct"]
 dzen.ru##[data-testid="dzenpro-banner"]
 dzen.ru##div[class*="-ad-block_"]
+dzen.ru##div[class*="-ad-branding-"]
 dzen.ru##div[class*="-right-ad-column"]
 dzen.ru##div[class*="_advertDoc2Doc-"]
 dzen.ru##div[class*="adContentWrapper"]
@@ -29443,9 +29448,9 @@ dtf.ru,vc.ru##:matches-path(-erid-) .block-special-button
 dtf.ru,vc.ru##:matches-path(-erid-) a[href*="go.vc.ru"]:style(pointer-events: none !important; color: inherit !important)
 dzen.ru##:matches-path(/\/a/) article:matches-attr(/./=/promo-card/)
 dzen.ru##:matches-path(/\/a/) div:matches-attr(/[a-z0-9]/=article-bottom-block) > [class] ~ div:not([class]):not([id])
+dzen.ru##:matches-path(/\/a/) div[class*="Doc2Doc"]
 dzen.ru##:matches-path(/\/a/) div[style="opacity: 1;"]
-dzen.ru##:matches-path(/\/a/) main > div > [itemscope] > div > div[id]
-dzen.ru##:matches-path(/\/a/) main > div > div > [itemscope] > div > div[id]
+dzen.ru##:matches-path(/\/a/) main div [itemscope] > div > div[id]
 dzen.ru##:matches-path(/articles) div:has(> article > [class*="adBox"])
 ozon.ru##:matches-path(/kursk-sertifikaty) [data-lcp-name*="anner-"]:style(display: block !important)
 ozon.ru##:matches-path(/kursk-sertifikaty) div[data-widget="banner"]:style(display: block !important)
