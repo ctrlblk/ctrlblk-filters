@@ -11942,6 +11942,7 @@ igdz1.ru^$script,domain=igdz.ru
 ||img-fotki.yandex.ru/get/*_orig|$image,domain=masterok.livejournal.com
 ||img.*.ru/js/jquery.suSlider.js$script
 ||img.bankoboev.ru^
+||img.playground.ru/moevideo_*.html
 ||img.zoneofgames.*/branding/$domain=zoneofgames.ru
 ||imgal.ru^*script$script
 ||imgbum.ru^*.php$script
@@ -19522,6 +19523,7 @@ allrefrs.ru##[src*="/imgr/"]
 gecid.com##[src*="/inc/getBanIf."]
 retailers.ua##[src*="/media/reclame/"]
 radio1.ru##[src*="/media_banner/"]
+playground.ru##[src*="/moevideo_"][src$=".html"]
 arenda.az##[src*="/public/banner/"]
 freesoft.ru##[src*="/sponsored/"]
 pechera.info##[src*="/storage/banner_upload/"]
@@ -20640,7 +20642,7 @@ hi-fi.ru##body[data-pageid] #ipsLayout_sidebar
 2gis.by,2gis.kz,2gis.ru##button > div[style^="width: 136px; height: 100%;"] ~ div[style*="pointer-events: auto"]
 shuba.life#?#button:-abp-contains(Купит)
 novayagazeta.eu#?#button:-abp-has(> [src^="/vpnovaya_"])
-riamo.ru#?#button:-abp-has(> svg > [clip-path*="dzen"])
+360.ru,riamo.ru#?#button:-abp-has(> svg > [clip-path*="dzen"])
 www.kinopoisk.ru##button[class*=" styles_adButton_"]
 shuba.life#?#button[target="_blank"]:-abp-has(> .i-icon-basket)
 shuba.life##button[target="_blank"]:not([href])
@@ -22402,7 +22404,7 @@ ictv.ua,vikna.tv##div[id^="div-gpt-ad-"]
 $csp=script-src-attr 'none',domain=eurointegration.com.ua|sportanalytic.com|notebookcheck-ru.com
 /^https?://24smi\.org/*[/]*[/][^\s]{8,}/$xmlhttprequest,domain=24smi.org
 ://mail.ru$csp=img-src 'self' https:
-://pikabu.ru/$csp=connect-src https://pikabu.ru/ajax/ https://pikabu.ru/ajax.php https://pikabu.ru/ajax?route= *.pikabu.ru/ data: https://pikabu.ru/.well-known/ wss://pikabu.ru/.well-known/
+://pikabu.ru/$csp=connect-src https://pikabu.ru/ajax/ https://pikabu.ru/ajax.php https://pikabu.ru/ajax?route= *.pikabu.ru/ data: https://pikabu.ru/.well-known/ wss://pikabu.ru/.well-known/ wss://ws.pikabu.ru/
 ://pikabu.ru/$csp=script-src 'self' * 'unsafe-inline' data:
 @@||a.magsrv.com/ad-provider.js$script,domain=ahen.me
 @@||dmp.mpsuadv.ru/promer$xmlhttprequest,domain=trychatgpt.ru
@@ -27756,7 +27758,6 @@ www.ivi.ru##body.watch > header.ivi-top:style(top: 0 !important)
 ! ---
 ixbt.com##body:not(#id) > .b-content.b-content__breadcrumbs:style(margin-top: unset !important)
 ixbt.com##body:not(#id) > .b-content__pagecontent:style(margin-top: unset !important)
-ixbt.com##body:not([class*="dark:"]):style(background-color: inherit !important)
 ! ---
 forum.ixbt.com##.body_content_table > .left.column:style(margin-right: 0 !important; width: 100% !important)
 forum.ixbt.com##.body_wrapper:style(max-width: 100% !important)
@@ -29619,6 +29620,7 @@ light.mail.ru##+js(href-sanitizer, [href^="https://click.mail.ru/redir?u="], ?u)
 my.mail.ru##+js(href-sanitizer, [href^="https://clicker.mail.ru/redir?u="], ?u)
 ok.ru,touch.mail.ru##+js(json-prune, result.body.direct)
 ~3igames.mail.ru,~account.mail.ru,~auto.mail.ru,~biz.mail.ru,~blog.mail.ru,~bonus.mail.ru,~calendar.mail.ru,~calls.mail.ru,~cloud.mail.ru,~connect.mail.ru,~deti.mail.ru,~dobro.mail.ru,~e.mail.ru,~finance.mail.ru,~gibdd.mail.ru,~health.mail.ru,~help.mail.ru,~hi-tech.mail.ru,~horo.mail.ru,~kino.mail.ru,~lady.mail.ru,~love.mail.ru,mail.ru,~mcs.mail.ru,~minigames.mail.ru,~my.mail.ru,~news.mail.ru,~o2.mail.ru,~octavius.mail.ru,~okminigames.mail.ru,~otvet.mail.ru,~pets.mail.ru,~player-smotri.mail.ru,~pogoda.mail.ru,~top.mail.ru,~touch.mail.ru,~tv.mail.ru,~vfokuse.mail.ru,~widgets.mail.ru##+js(no-fetch-if, /\/apic\//)
+pogoda.mail.ru##+js(prevent-addEventListener, scroll, '{(0,x.nO)(I)}')
 ~3igames.mail.ru,~account.mail.ru,~auto.mail.ru,~biz.mail.ru,~blog.mail.ru,~bonus.mail.ru,~calendar.mail.ru,~calls.mail.ru,~cloud.mail.ru,~connect.mail.ru,~deti.mail.ru,~dobro.mail.ru,~e.mail.ru,~finance.mail.ru,~gibdd.mail.ru,~health.mail.ru,~help.mail.ru,~hi-tech.mail.ru,~horo.mail.ru,~kino.mail.ru,~lady.mail.ru,~love.mail.ru,mail.ru,~mcs.mail.ru,~minigames.mail.ru,~my.mail.ru,~news.mail.ru,~o2.mail.ru,~octavius.mail.ru,~okminigames.mail.ru,~otvet.mail.ru,~pets.mail.ru,~player-smotri.mail.ru,~pogoda.mail.ru,~top.mail.ru,~touch.mail.ru,~tv.mail.ru,~vfokuse.mail.ru,~widgets.mail.ru##+js(prevent-xhr, &pgid=)
 ~3igames.mail.ru,~account.mail.ru,~auto.mail.ru,~biz.mail.ru,~blog.mail.ru,~bonus.mail.ru,~calendar.mail.ru,~calls.mail.ru,~cloud.mail.ru,~connect.mail.ru,~deti.mail.ru,~dobro.mail.ru,~e.mail.ru,~finance.mail.ru,~gibdd.mail.ru,~health.mail.ru,~help.mail.ru,~hi-tech.mail.ru,~horo.mail.ru,~kino.mail.ru,~lady.mail.ru,~love.mail.ru,mail.ru,~mcs.mail.ru,~minigames.mail.ru,~my.mail.ru,~news.mail.ru,~o2.mail.ru,~octavius.mail.ru,~okminigames.mail.ru,~otvet.mail.ru,~pets.mail.ru,~player-smotri.mail.ru,~pogoda.mail.ru,~top.mail.ru,~touch.mail.ru,~tv.mail.ru,~vfokuse.mail.ru,~widgets.mail.ru##+js(remove-node-text, script, violatedDirective)
 okminigames.mail.ru##+js(set-constant, NO_ADV, 1)
