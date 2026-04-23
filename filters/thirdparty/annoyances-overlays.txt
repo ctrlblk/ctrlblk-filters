@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: EasyList – Newsletter Notices
-! Last modified: Wed, 22 Apr 2026 03:52:15 +0000
+! Last modified: Thu, 23 Apr 2026 03:57:40 +0000
 ! Expires: 7 days (update frequency)
 ! *** easylist:template_header.txt ***
 !
@@ -2296,6 +2296,7 @@ gallup.com##.c-quick-subscribe
 thefp.com##.c-side-header__extra
 texastribune.org##.c-sign-up
 blooloop.com##.c-signup
+livpost.co.uk##.c-signup-section
 marketplace.org##.c-simple-newsletter-subscribe
 northdevongazette.co.uk,softlaunchlondon.com,takebackourtech.org,valueaddedresource.net##.c-subscribe
 marketplace.org##.c-subscribe-cta
@@ -2524,7 +2525,7 @@ texasmonthly.com##.eoa__newsletter-signup
 thescoop.us##.essb_mailform
 unremarkable.ai##.esub-section-wrap
 liveandletsfly.com,tennesseestar.com##.et_bloom_below_post
-diycarserviceparts.co.uk,factkeepers.com,nutritioncare.net,online-tech-tips.com,onthegotours.com##.et_bloom_popup
+anthropocenemagazine.org,diycarserviceparts.co.uk,factkeepers.com,nutritioncare.net,online-tech-tips.com,onthegotours.com##.et_bloom_popup
 realestatemagazine.ca##.et_newsletter_area
 sammyguru.com##.et_pb_row_0_tb_footer
 cocktailsaway.com##.et_pb_widget
@@ -2820,7 +2821,7 @@ qz.com##.kHmXgL
 christinacooks.com##.kadence-conversion-wrap
 joanwestenberg.com,ppc.land##.kg-cta-card
 the-londoner.co.uk##.kg-cta-content
-beautifulpublicdata.com,codereliant.io,evinfocus.com,gardinerbryant.com,gkogan.co,micahflee.com,newslttrs.com,overkill.wtf,oxfordclarion.uk,ppc.land,scarletink.com,simone.org##.kg-signup-card
+beautifulpublicdata.com,codereliant.io,evinfocus.com,gardinerbryant.com,gkogan.co,livpost.co.uk,micahflee.com,newslttrs.com,overkill.wtf,oxfordclarion.uk,ppc.land,scarletink.com,simone.org##.kg-signup-card
 disconnect.blog,the-londoner.co.uk##.kg-signup-card-content
 digitalocean.com##.khfYvn
 betakit.com,govee.com##.kl-private-reset-css-Xuajs1.needsclick
@@ -3086,7 +3087,7 @@ essemagazine.it,givemesport.com,latv.com,news12.com,percona.com,poynter.org,uplo
 bitcoinist.com,darkreading.com,everydayhealth.com,gamedeveloper.com,historyextra.com,radiotimes.com##.newsletter-sign-up
 audacy.com##.newsletter-sign-up--station
 capitaltransport.com##.newsletter-sign-up-wrapper
-dailymail.co.uk##.newsletter-sign-up_2K2O1Qev
+dailymail.co.uk,dailymail.com##.newsletter-sign-up_2K2O1Qev
 news24.com##.newsletter-signup--group
 foreignpolicy.com##.newsletter-signup-and-ads
 tweaktown.com##.newsletter-signup-bottom
@@ -3534,6 +3535,7 @@ interacnetwork.com##.stripe--newsletter
 barrons.com##.style--newsletter-signup-bottom--1Spc175x
 emergingtechbrew.com##.style__NewsletterCTAWrapper-sc-e26ea068-2
 inyourarea.co.uk##.styles_DesktopBottomBarSubscriptionForm_21C_s
+thinkygames.com##.styles_NewsletterSection__IY0HO
 emergingtechbrew.com##.styles__NewsletterButtonWrapper-sc-1d1d7156-13
 bringmethenews.com##.styles_announcementBanner__cgbJf
 economictimes.indiatimes.com##.styles_homeLeftSectionBanner__8_ohA
@@ -3990,6 +3992,7 @@ aerospaceglobalnews.com#?#.btn-ocean:has-text(Newsletter Sign Up)
 suppose.tv#?##alertTab:has-text(Enter your email address)
 amgreatness.com#?#.border-gray-200:has-text(Get the news)
 amgreatness.com#?#.border-secondary-900:has-text(Get the news)
+anthropocenemagazine.org#?#.et_pb_equal_columns:has-text(Sign up for our free newsletters)
 aspentimes.com,craigdailypress.com,postindependent.com,skyhinews.com,steamboatpilot.com,vaildaily.com#?#.card-body:has-text(Daily Newsletter)
 autonews.com#?#.lg\:u-max-w-\[345px\]:has-text(Sign up)
 autonews.com#?#.u-space-y-6.u-items-center:has-text(Staying current)
@@ -6258,7 +6261,7 @@ doctorofcredit.com#@#.wpdiscuz-subscribe-bar
 ! fanboy_newsletter_shopping_allowlist_general_hide.txt
 
 ! Title: uBlock filters – Other Annoyances
-! Last modified: Tue, 21 Apr 2026 18:02:56 +0000
+! Last modified: Thu, 23 Apr 2026 02:11:58 +0000
 ! Expires: 7 days
 ! Description: Filters optimized for uBlock Origin, to be used with EasyList's and/or Adguard's "Other Annoyances" list(s)
 ! License: https://github.com/uBlockOrigin/uAssets/blob/master/LICENSE
@@ -6429,6 +6432,9 @@ discord.com##ul[class^="cards__"]:style(-webkit-touch-callout: default !importan
 
 ! https://github.com/uBlockOrigin/uAssets/issues/32529
 massan.jp##.entry-content:style(-webkit-touch-callout: default !important; -webkit-user-select: text !important; -khtml-user-select: text !important; -moz-user-select: text !important; -ms-user-select: text !important; user-select: text !important; -webkit-tap-highlight-color: revert !important; cursor: revert !important;)
+
+! https://github.com/uBlockOrigin/uAssets/issues/32644
+www.delta.com##.card-chart:style(user-select: text !important; touch-action: auto !important;)
 
 ! END: Anti copy, right-click etc.
 
