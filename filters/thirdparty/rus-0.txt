@@ -5127,6 +5127,7 @@
 ||reborko.com^$third-party
 ||receivedachest.com^$third-party
 ||reckintersupwas.info^$third-party
+||reckless-variation.pro^$third-party
 ||reclame.io^$third-party
 ||recordsbluemountain.com^$third-party
 ||recreativ.com.ua^
@@ -10482,7 +10483,6 @@ $csp=script-src-attr 'none',domain=volyn.com.ua
 ||azbne.net^$csp=sandbox allow-same-origin;
 ||betnetmed.advertserve.com^$csp=sandbox allow-same-origin;
 ||cdncontent.top/img_full/$csp=script-src
-||cdncontent.top/opentorrent/$csp=script-src
 ||cosplay-porn.$csp=connect-src 'self' blob: data:
 ||crossout.net/*free?*&r=$csp=sandbox allow-same-origin;
 ||drive.google.com/file/d/1VmzdhLB_-DcnBtUbKfQPnNvsEp_2gnsy/$csp=script-src
@@ -14523,6 +14523,7 @@ kino-teatr.ua###ourBranding
 vashdom.ru###out_banner
 electricalschool.info###outer > #third
 woman.ru###outside-col
+cdncontent.top###overlay
 kinogo.fm###overlay_u
 promodj.com###overlaybranding
 1plus1.video###ovva-player .o-pp
@@ -18121,6 +18122,7 @@ rupier.com##.sb > a > img[src^="http://rupier.com/forum/"]
 beauty.ua,viva.ua##.sb-partners
 edyna.media#?#.sb__column > .sb__section:-abp-has(> .sb-partners)
 agroinfo.kz##.sbanner
+pikabu.ru##.sber-smile
 uaspectr.com##.sbr-slider > .pst-block > .pst-block-head
 tagilcity.ru##.sbs_p
 eva.ru##.scroll-smooth
@@ -19570,6 +19572,7 @@ penzainform.ru##[style^="width: 140px; height: 280px;"]
 meteovesti.ru##[style^="width:100%"][style*=";height:2"][style*=";min-height:2"]
 radiodacha.ru##[summary="content_table"] > tbody > tr > td[height="90"]
 root-nation.com##[swg-standard-button="contribution"]
+fastpic.org##[tabindex][role="link"]
 cdmail.ru,izcity.com##[title*="быстрый браузер!"] > img
 zx-pk.com##[title="Yandex Direct"]
 ozon.ru##[title="Реклама"]
@@ -20430,7 +20433,7 @@ glavpost.com##article div[style*="#EFEFEF"]
 domodedovoriamo.ru,korolevriamo.ru,krasnogorskriamo.ru,lubertsyriamo.ru,mytischiriamo.ru,podolskriamo.ru,reutovriamo.ru,riamo.ru,riamobalashiha.ru,schelkovoriamo.ru,sergposadriamo.ru##article ul > li > button
 4pda.to#?#article ~ article:-abp-has(> [class] > div:only-child > img:first-child)
 point.md#?#article:-abp-has(> div[id^="article-"] > .business)
-pikabu.ru##article[data-author-id="6"]
+pikabu.ru##article[data-author-id="7"]
 qip.ru##article[data-type="advert"]
 mi100.info##article[id^="post-"] > .entry-meta + div[style^="padding-bottom:"]
 sport-tv.pro##aside .HTML > .widget-content > a > img
@@ -22469,6 +22472,7 @@ lenta.ru##.topic-body__content> .box-external-video:last-child {remove:true;}
 lenta.ru##.topic-footer > div[class^="box-"][class$="-video"] {remove:true;}
 lenta.ru##.vk-video-popup {remove:true;}
 playground.ru###dfpPrerollDelay {remove:true;}
+stratege.ru##html[xmlns] > body > script + script + style {remove:true;}
 tapochek.net##body:has(#register_link) > canvas
 tapochek.net##body:has(#register_link) > canvas {remove:true;}
 the-geek.ru###wp-custom-css {remove:true;}
@@ -26085,7 +26089,6 @@ xn--112-5cd3baof9c5c.xn--p1ai#@#.wrapad
 @@/webadvert.$domain=webadvert.net|webadvert.ru
 @@://*.*.*.*.m3u8$xmlhttprequest,domain=tvvse.my1.ru
 @@://*.*.*.*.ts|$xmlhttprequest,domain=tvvse.my1.ru
-@@://ads.$popup,domain=ads.moscow
 @@://adshow.ru/$domain=adshow.ru
 @@://adv.*.lawport.ru$~third-party,domain=lawport.ru
 @@://adv.*.lawport.ru^$third-party,popup
@@ -26127,8 +26130,6 @@ xn--112-5cd3baof9c5c.xn--p1ai#@#.wrapad
 @@||ads.adfox.ru^$popup,domain=magnit.ru
 @@||ads.adfox.ru^$popup,domain=vklybe.tv
 @@||ads.adfox.ru^*/goLink$popup,domain=2x2tv.ru|friday.ru
-@@||ads.moscow^$domain=ads.moscow
-@@||ads.moscow^$third-party,popup
 @@||ads.rb.ru/video_banner.php$object
 @@||ads.sagan-nur.info^$~third-party
 @@||ads.setby.net^$domain=ads.setby.net
@@ -26137,6 +26138,7 @@ xn--112-5cd3baof9c5c.xn--p1ai#@#.wrapad
 @@||ads.tomtel.ru/adjs.$script
 @@||ads.vk.com/api/v*/*.json$xmlhttprequest,domain=vk.com
 @@||ads.vyborg-press.ru^$domain=vyborg-press.ru
+@@||ads.x5media.ru/api/$popup,domain=5ka.ru|perekrestok.ru
 @@||adsbox.$domain=adsbox.com.ua|adsbox.ru
 @@||adseo.com.ua^$~third-party
 @@||adseo.pro^$~third-party
@@ -28376,8 +28378,9 @@ stopgame.ru###preroll_mediaplayer
 stopgame.ru##body:style(cursor: default !important)
 stopgame.ru##div[id^="videoplayer_"][class^="iframe_wrapper"]:style(display: block !important)
 ! ---
-stratege.ru###vbulletin_html .above_body:style(margin-bottom: auto !important)
 stratege.ru##html:style(background-color: #dbdbdb !important)
+stratege.ru##html[xmlns] #globalcontent:style(padding-top: 0 !important)
+stratege.ru##html[xmlns] .above_body:style(margin-bottom: auto !important)
 ! ---
 stravy.net##.right-sidebar:style(margin-top: 0 !important; overflow: hidden !important)
 ! ---
@@ -28938,7 +28941,6 @@ freescreens.ru,imgbase.ru,imgcach.ru,imgclick.ru,payforpic.ru,picclick.ru,picclo
 fenglish.site,mp3spy.cc##+js(abort-current-inline-script, JSON.parse, atob)
 draug.ru,modsforwot.ru##+js(abort-current-inline-script, Math.floor, AdSense)
 agroreview.com##+js(abort-current-inline-script, Object.defineProperty, rcBuf)
-fastpic.org,~new.fastpic.org##+js(abort-current-inline-script, addEventListener, DOMContentLoaded)
 allboxing.ru##+js(abort-current-inline-script, atob, void)
 pravvest.ru##+js(abort-current-inline-script, clickExplorer)
 my-expert.ru##+js(abort-current-inline-script, disableSelection, reEnable)
@@ -28946,7 +28948,7 @@ mod-wot.ru##+js(abort-current-inline-script, document.addEventListener, adsBlock
 krolik.biz##+js(abort-current-inline-script, document.createElement)
 1news.com.ua,365news.biz,4mama.ua,agroter.com.ua,apnews.com.ua,asiaplustj.info,autotema.org.ua,autotheme.info,avtodream.org,beauty.ua,chas.cv.ua,cheline.com.ua,cikavosti.com,ck.ua,cn.ua,comments.ua,cvnews.cv.ua,day.kyiv.ua,depo.ua,dv-gazeta.info,dyvys.info,economistua.com,expert.in.ua,fedpress.ru,firtka.if.ua,forpost.media,fraza.com,gazeta1.com,glavnoe24.ru,glavpost.ua,golosinfo.com.ua,gorodkiev.com.ua,grad.ua,greenpost.ua,ifnews.org.ua,inforpost.com,inkorr.com,itechua.com,kh.ua,khersonline.net,kolizhanka.com.ua,kop.net.ua,kr.ua,krymr.com,kurskcity.ru,liga.net,lvnews.org.ua,mega-music.pro,mi100.info,mind.ua,mistosumy.com,moirebenok.ua,mycompplus.ru,nashbryansk.ru,news24today.info,newsua.one,ngp-ua.info,nnews.com.ua,novavlada.info,novynarnia.com,np.pl.ua,odessa-life.od.ua,ogo.ua,panoptikon.org,pg11.ru,pik.net.ua,pingvin.pro,pl.com.ua,planetanovosti.com,podpricelom.com.ua,politnavigator.net,poltava365.com,portal.lviv.ua,pravdatutnews.com,prm.ua,procherk.info,profootball.ua,promin.cv.ua,radiosvoboda.org,ratel.kz,real-vin.com,reporter.ua,risu.ua,rivne.media,rivnenews.com.ua,rusjev.com,russianshowbiz.info,rv.ua,rvnews.rv.ua,showdream.org,sport-kr.com.ua,strana.news,strana.today,sud.ua,te.ua,telekritika.ua,tenews.org.ua,theageoffootball.com,tverigrad.ru,tverisport.ru,tvoymalysh.com.ua,uainfo.org,uanews.org.ua,uatv.ua,ukranews.com,ukrrain.com,unn.com.ua,vchaspik.ua,viva.ua,vlast.kz,vnn24.ru,volnorez.com.ua,volyninfa.com.ua,volyninfo.com,volynpost.com,volynua.com,vsviti.com.ua,westnews.info,womo.ua,wona.com.ua,wworld.com.ua,zbirna.com,zp.ua##+js(abort-current-inline-script, document.createElement, /ru-n4p|ua-n4p|загрузка.../)
 crast.net##+js(abort-current-inline-script, document.createElement, Detected)
-fastpic.org,kg-portal.ru,~new.fastpic.org,nnm-club.me,nnmclub.ro,nnmclub.to##+js(abort-current-inline-script, document.createElement, Math.random)
+kg-portal.ru,nnm-club.me,nnmclub.ro,nnmclub.to##+js(abort-current-inline-script, document.createElement, Math.random)
 shanson320.ru##+js(abort-current-inline-script, document.createElement, atob)
 lrepacks.net##+js(abort-current-inline-script, document.createElement, delete window)
 trainzland.ru##+js(abort-current-inline-script, document.createElement, document.head.appendChild)
@@ -29084,7 +29086,6 @@ ai-next.ru##+js(abort-on-stack-trace, document.getElementById, /723-|ai-2-/)
 forums.rusmedserv.com##+js(abort-on-stack-trace, fetch, eval)
 7days.ru##+js(addEventListener-defuser, /^(?:contextmenu|keydown)$/)
 drive2.ru,shedevrum.ai##+js(addEventListener-defuser, /beforeunload|pagehide/, 0x)
-fastpic.org,~new.fastpic.org##+js(addEventListener-defuser, /click|load/, popMagic)
 biqle.org,biqle.ru##+js(addEventListener-defuser, /click|mousedown/, popunder)
 lrepacks.net##+js(addEventListener-defuser, /click|mousedown/, setClickedUrl)
 fm-app.ru,tvapp.su,yootv.ru##+js(addEventListener-defuser, /mouse/, cursorVisible)
@@ -29110,7 +29111,6 @@ aione.ru,carservic.ru,iptv.org.ua,newxboxone.ru,tva.org.ua,ufchgu.ru##+js(addEve
 cq.ru##+js(addEventListener-defuser, copy, preventDefault)
 megaprogz.ru,programhub.ru##+js(addEventListener-defuser, download, isMonetized)
 trychatgpt.ru##+js(addEventListener-defuser, error, '', elements, [data-status="loading"])
-fastpic.org,~new.fastpic.org##+js(addEventListener-defuser, getexoloader)
 romakatya.ru##+js(addEventListener-defuser, load, AdBlock)
 blackwot.ru##+js(addEventListener-defuser, load, detect-modal)
 bonus-tv.ru##+js(addEventListener-defuser, loadstart, isImmediatePropagationStopped)
@@ -29230,6 +29230,8 @@ sm.news##+js(no-xhr-if, method:GET)
 dzen.ru,frontend.vh.yandex.ru,naydex.net,widgets.kinopoisk.ru,www.kinopoisk.ru,yastatic.net##+js(no-xhr-if, strm.yandex.ru/get/)
 otzovik.com##+js(noeval-if, ShadowRoot)
 kvadratmetr.uz,oligarx.uz,tehnar.net.ua##+js(noeval-if, adsBlocked)
+fastpic.org,~new.fastpic.org##+js(prevent-addEventListener, /click|load/, /exopop|popMagic/)
+fastpic.org,~new.fastpic.org##+js(prevent-addEventListener, DOMContentLoaded, /0x|popMagic/)
 rutube.ru##+js(prevent-addEventListener, click, showRedirectPopup)
 dumatv.ru##+js(prevent-addEventListener, message, AUTOPLAY)
 news.rambler.ru##+js(prevent-fetch, &origin_type=rtb, url:/rutube.ru/api/tags/video/)
@@ -29258,6 +29260,7 @@ nullcms.ru##+js(remove-node-text, script, 'decodeURIComponent(escape')
 game4you.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##+js(remove-node-text, script, /A.d.b.|Adb-|A-d-b-|-Gua|dGua|dblo|tick|Адгуард/)
 tapochek.net##+js(remove-node-text, script, /document.head.appendChild|document.referrer/)
 inforesist.org##+js(remove-node-text, script, /gtag\('event'/)
+fastpic.org,~new.fastpic.org##+js(remove-node-text, script, Math.rnd)
 questtime.net##+js(remove-node-text, script, MsgNoAD)
 pikabu.ru##+js(remove-node-text, script, addPlaceholder)
 uwupad.me##+js(remove-node-text, script, checkAdBlock)
@@ -29270,6 +29273,7 @@ gsm.in.ua##+js(remove-node-text, script, message_ads)
 kriminal.net.ua##+js(remove-node-text, script, nidclick)
 sichnews.ua##+js(remove-node-text, script, right_click)
 eg.ru,gorodche.ru,gorodvo.ru,ng72.ru##+js(remove-node-text, script, showBanner)
+stratege.ru##+js(remove-node-text, style, #000000 !important;)
 stratege.ru##+js(remove-node-text, style, background: black !important;)
 game4you.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##+js(remove-node-text, style, epom-brend)
 uwupad.me##+js(remove-node-text, style, lb-banner-height)
