@@ -1,10 +1,10 @@
 ![Adblock Plus 2.0]
-! Checksum: 6bEl1i31ioEvsDaqizYm5A
-! Diff-Path: ../patches/224/224-s-1777683095-3600.patch
+! Checksum: c4ZLaaq5FqTVII8tFFHiVg
+! Diff-Path: ../patches/224/224-s-1777778170-3600.patch
 ! Title: AdGuard Chinese filter
 ! Description: EasyList China + AdGuard Chinese filter. Filter list that specifically removes ads on websites in Chinese language.
-! Version: 2.1.58.41
-! TimeUpdated: 2026-05-02T00:49:14+00:00
+! Version: 2.1.58.46
+! TimeUpdated: 2026-05-03T03:13:29+00:00
 ! Expires: 5 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -20,6 +20,7 @@
 ! Bad: /banner.jpg (should be in general_url.txt)
 ! Bad: ||adssubdomain.legitwebsite.com^ (should be in adservers_firstparty.txt)
 !
+||umini.shujupie.com^
 ||rgzz3rs.icu^
 ||impdsp.meituan.com^
 ||rtb.julang.taobao.com^
@@ -1114,6 +1115,9 @@ ipv6.baidu.com,www.baidu.com,www1.baidu.com,xueshu.baidu.com###content_left > .r
 !
 ! NOTE: Specific rules
 !
+123865.com##+js(no-window-open-if)
+123865.com##.bg_svip_block_ads
+||static.dhsz.cn^$image,domain=123865.com
 ||udn.com/static/js/google-dfp-native.js
 time.udn.com##.fixed-ad
 niuyank.top##a.centtext
@@ -3552,6 +3556,7 @@ bmvc2020-conference.com#@#div[id][style="width: 100%;"] > iframe[scrolling="no"]
 !---------------------------------------------------------------------------!
 -*-*-*-*.alpha^$script,3p
 /7755com-*00x*.gif
+/phoenix-share/js/code.123.bg.
 .com/co/$domain=1anime.me
 /CC6F9ACB52D1582671AFEA808AFE10FE.gif
 .top/herebyad
@@ -5310,10 +5315,22 @@ newduba.cn###jq_youxi
 .z.dkt-ib.com
 ||cnzz.trafficmanager.net^
 ||cupfox.app^$3p
+||7g761j2nc.com^
+||ght2bvin1.com^
+||lkpseyc3d.com^
+||tocologist44.top^
+||dtdjhb.icu^
 ||ngd2rf6mqe.com^
 ||p78vz5tcho.com^
 ||riptgxsype.com^
 ||obstetrician36.com^
+||xdhrvr.icu^
+||148a0hqnen.com^
+||cboufsrelp.com^
+||31pjnw0wff.com^
+||trgp7pddid.com^
+||zjflf9epfe.com^
+||yyenb.cn^
 ||xhtkm35sw.com^
 ||tvj8lylgv.com^
 ||3hx1ui2vt.com^
@@ -22560,7 +22577,7 @@ yydstxt*.com/js/cdn.
 ||biqgg.com/n.
 ||biqgg.com/w.
 ||fd80s.com/static/m.
-||chachefa.com/asdfasdfqwer/
+||chachefa.com^*.js?v=
 ||jjjxsw.com/js/common.
 ||diyibanzhu*.com/js/html
 ||diyibanzhu*.com/js/cdn.
