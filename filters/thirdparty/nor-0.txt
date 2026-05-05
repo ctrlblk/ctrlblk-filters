@@ -1,6 +1,6 @@
 ! Title: 🏔️ Dandelion Sprouts nordiske filtre for ryddigere nettsider
 ! Title 🇬🇧: Dandelion Sprout's Nordic filters for tidier websites
-! Last modified: 02May2026v1
+! Last modified: 05May2026v1
 ! Expires: 18 hours
 ! Lisens / Licence: https://github.com/DandelionSprout/adfilt/blob/master/LICENSE.md
 ! Homepage: https://github.com/DandelionSprout/adfilt/blob/master/Wiki/General-info.md
@@ -135,6 +135,7 @@ tvkampen.com,tvsporten.dk##.odds
 aftenposten.no##.container > div[class=block]
 xstra.no##.td-fix-index
 tek.no#?#main > section > section:has-text(/^an{2}onse$/)
+tek.no##main section:has(span[data-nosnippet=true]:has-text(/^annonse$/))
 madensverden.dk##.maden-after-content
 indkast.dk##.site_ad_container
 f7.no##.td-loader-gif
@@ -1409,6 +1410,7 @@ gladkokken.no##.-type-ad
 kabaler.dk##aside > table[bgcolor^=FFF]
 sykepleien.no##.layout--onecol:has([class*=adnuntius])
 moviezine.no##div:has(>div[id^=moviezine-norge_outside])
+prisjakt.no##div[class^="pjra:r"]
 ! — — — — — — — — — — — — — — — — — 
 ! 🇳🇴：Oppføringer for minst 3 nettsteder
 ! 🇬🇧：Entries for at least 3 websites

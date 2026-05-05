@@ -18092,8 +18092,6 @@ bestradio.fm##.row .panel-danger
 5-tv.ru##.row > .col3.positionRelative
 my-hit.org##.row > .hidden-sm.hidden-xs > :not([class])
 pingvin.pro#?#.row > div:-abp-has(> .card-blog script)
-repack.me##.row > div:first-child .panel-primary.short-title
-repack.me##.row > div:first-child .panel-primary.short-title ~ br
 censor.net,lookatme.ru##.row-banner
 the-village-kz.com,the-village.me,the-village.ru,village.com.ua##.row-banner-top
 internetsms.org##.row-fluid.center > h3
@@ -20454,7 +20452,6 @@ glavpost.com##article div[style*="#EFEFEF"]
 domodedovoriamo.ru,korolevriamo.ru,krasnogorskriamo.ru,lubertsyriamo.ru,mytischiriamo.ru,podolskriamo.ru,reutovriamo.ru,riamo.ru,riamobalashiha.ru,schelkovoriamo.ru,sergposadriamo.ru##article ul > li > button
 4pda.to#?#article ~ article:-abp-has(> [class] > div:only-child > img:first-child)
 point.md#?#article:-abp-has(> div[id^="article-"] > .business)
-pikabu.ru##article[data-author-id="7"]
 qip.ru##article[data-type="advert"]
 mi100.info##article[id^="post-"] > .entry-meta + div[style^="padding-bottom:"]
 sport-tv.pro##aside .HTML > .widget-content > a > img
@@ -22428,8 +22425,8 @@ ictv.ua,vikna.tv##div[id^="div-gpt-ad-"]
 ||dzen.ru/articles$csp=script-src 'unsafe-inline' 'unsafe-eval' data: static.dzeninfra.ru/react/ static.dzeninfra.ru/s3/zen-apps/ static.dzeninfra.ru/s3/zen-lib/ yandex.ru/ads/ vk.com/dist/ vk.com/js/api/videoplayer.js vk.com/dist/public/api/
 ||dzen.ru/news$csp=script-src 'unsafe-inline' 'unsafe-eval' data: static.dzeninfra.ru/react/ static.dzeninfra.ru/s3/zen-apps/ static.dzeninfra.ru/s3/zen-lib/ yandex.ru/ads/ vk.com/dist/ vk.com/js/api/videoplayer.js vk.com/dist/public/api/
 ||dzen.ru/pogoda/$script
-||static.dzeninfra.ru/s3/zen-apps/commets2/*/*/$script
-||static.dzeninfra.ru/s3/zen-apps/desktop2/*/*/$script
+||static.dzeninfra.ru/s3/zen-apps/news-site/*/*/$script
+||static.dzeninfra.ru/s3/zen-apps/video-feed/*/*/$script
 !
 $csp=script-src-attr 'none',domain=eurointegration.com.ua|sportanalytic.com|notebookcheck-ru.com
 /^https?://24smi\.org/*[/]*[/][^\s]{8,}/$xmlhttprequest,domain=24smi.org
@@ -22460,7 +22457,7 @@ https://*adtech_uid=$~third-party,xmlhttprequest,domain=levik.blog|livejournal.c
 ||newsyou.info/wp-content/plugins/gtranslate/
 ||newsyou.info^$csp=script-src-elem 'self' https:
 ||ng72.ru^$csp=script-src 'self' 'unsafe-eval' https:
-||pikabu.ru/ajax/*?hJK6w=$xmlhttprequest
+||pikabu.ru/ajax/*?pwX1U=$xmlhttprequest
 ||ritsatv.ru^$csp=script-src
 ||ritsatv.ru^$popup
 ||ritsatv.ru^$~document
@@ -23596,6 +23593,13 @@ rbc.ru##div[class^="styles_okko"]
 ||utro.ru/*/banners/
 ||zoom.cnews.ru/inc/bpic/
 !
+! REPAK.me
+repack.me##.row > div:first-child .panel-primary:nth-child(-n+3)
+repack.me##.row > div:first-child .panel-primary:nth-child(-n+3) + br
+! блокировки, добавленные из-за агрессивного обхода >
+||t.me/neovpnbot?$third-party,popup
+||waicore.net^$third-party,popup
+!
 ! Spaces и зеркала
 google-cloud.services,spac.me,spaces.im,spcs.bio,strip2.co,strip2.*,usersporn.com###sidebar > div[class]:last-child
 google-cloud.services,spac.me,spaces.im,spcs.bio,strip2.co,strip2.*,usersporn.com###siteContent > div:not([id]):not([class]) ~ div[class]
@@ -23704,19 +23708,15 @@ sports.ru##ad-slot
 sports.ru##article.material-list__item[data-link^="https://sirena.world/"]
 sports.ru##body > div[class^="br-lt"] > :not(.page-layout):not(.pageLayout)
 sports.ru##div[class*="SALES"] > .accordion__handle
-tribuna.com##div[class*="_odds_wrapper"]
 tribuna.com##div[class*="main_layout__empty_block"]
-tribuna.com##div[class*="rb-widget"]
-tribuna.com##div[class^="BookmakerGift_bookmaker-gift_"]
-tribuna.com##div[class^="CustomRatingsWidget"]
+tribuna.com##div[class^="BookmakerGift"]
 tribuna.com##div[class^="MatchLayout-module_"] > [style="display: contents;"] > [data-test]
-tribuna.com##div[class^="_banner_"]
+tribuna.com#?#div[class^="_structured-body_"] > div:-abp-has([id*="Postscripts_News"])
 cyber.sports.ru##div[class^="desktop-teaser_"] a[href*="://sirena.world/"]
+tribuna.com##div[data-anchor^="_"][class^="_"]
 sports.ru##div[data-control-noinit="Common.BetsTabs"]
 sports.ru##div[data-control="Common.AutoInit"]
 sports.ru##div[data-control^="Common.Bets"]
-tribuna.com##div[data-test="bookie-widget"]
-tribuna.com#?#div[style="display: contents;"] > div:-abp-has(> a[href*="/betting/bonuses/"])
 sports.ru##p > a[rel="nofollow"] > img[height][width]
 sports.ru#?#p:-abp-has(> a[href]:-abp-contains(М.Видео))
 tribuna.com##span[class^="_comments__loader"][class*="_spinner_"]
@@ -23728,6 +23728,7 @@ sports.ru##style:first-child ~ [class^="gift__"]
 ||senoval.cdn.sports.ru/news-renderer/public/SparrowRecommendations-
 ||senoval.cdn.sports.ru/s-presence/sblock-presence.min.js
 ||sports.ru^*/banners/
+||static.*.tribuna.com/_next/static/chunks/3340.a9e1afb602402a44.js
 ||taboola.com^$domain=sports.ru|tribuna.com
 ! обфускация
 sports.ru##.in-read-wrapper
@@ -28247,7 +28248,7 @@ regnum.news,regnum.ru##.page-column > .right-adv-container:style(top: 100px !imp
 mag.relax.by##.b-global-branding[branding_url*=http] .b-global-wrap:style(cursor: auto !important)
 mag.relax.by##.b-global-wrap > .b-global-offset:style(padding: unset !important)
 ! ---
-repack.me##.cnt:style(padding-top: 0 !important; margin-top: 0 !important)
+repack.me##.cont:style(padding-top: 0 !important; margin-top: 0 !important)
 ! ---
 reshebnik.com##div[id*="-error-page"] > p:style(height: 0 !important; opacity: 0 !important)
 ! ---
