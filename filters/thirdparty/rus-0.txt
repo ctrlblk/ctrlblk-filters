@@ -20351,6 +20351,7 @@ n1.by##a[href^="https://www.alibi.by"]
 mt.today##a[href^="https://www.dns-shop.ru/product/"]
 ternopillive.com##a[href^="https://www.facebook.com/republicplatte/"]
 www.kinopoisk.ru##a[href^="https://www.ivi.ru/watch/"]
+mt.today##a[href^="https://www.komus.ru/katalog/"]
 mt.today##a[href^="https://www.ozon.ru/product/"]
 design-for.net##a[href^="https://www.reg.ru/"]
 ebay-russia.ru##a[href^="https://www.shipito.com/"]
@@ -23594,8 +23595,8 @@ rbc.ru##div[class^="styles_okko"]
 ||zoom.cnews.ru/inc/bpic/
 !
 ! REPAK.me
-repack.me##.row > div:first-child .panel-primary:nth-child(-n+3)
-repack.me##.row > div:first-child .panel-primary:nth-child(-n+3) + br
+repack.me#?#.panel:-abp-has(> .panel-body > p > a[href*="/ne"])
+repack.me#?#.panel:-abp-has(> .panel-body > p > a[href*="/wa"])
 ! блокировки, добавленные из-за агрессивного обхода >
 ||t.me/neovpnbot?$third-party,popup
 ||waicore.net^$third-party,popup
@@ -23817,7 +23818,7 @@ ya.ru##[style*="feed"][style*="min-height:"]
 ya.ru##body > div[data-hydration-id] > [href^="https://yabs.yandex.ru/count/"] + div
 ya.ru##body > div[data-hydration-id] > div > [src^="https://yabs.yandex.ru/count/"] + div
 ya.ru##section[class^="reaso"]
-ya.ru##section[style*="-cektion-items-count:"]
+ya.ru##section[style*="-cekktion-items-count:"]
 ya.ru##ul[class*="-section__list"]
 ya.ru,yandex.ru,yandex.*##.AdvProductGallery
 ya.ru,yandex.ru,yandex.*##.layout__banner
@@ -28248,7 +28249,7 @@ regnum.news,regnum.ru##.page-column > .right-adv-container:style(top: 100px !imp
 mag.relax.by##.b-global-branding[branding_url*=http] .b-global-wrap:style(cursor: auto !important)
 mag.relax.by##.b-global-wrap > .b-global-offset:style(padding: unset !important)
 ! ---
-repack.me##.cont:style(padding-top: 0 !important; margin-top: 0 !important)
+repack.me##main > div:style(padding-top: 0 !important; margin-top: 0 !important)
 ! ---
 reshebnik.com##div[id*="-error-page"] > p:style(height: 0 !important; opacity: 0 !important)
 ! ---
@@ -28594,7 +28595,7 @@ ya.ru,yandex.by,yandex.kz,yandex.uz##.link-bro
 ya.ru##.market-feed
 ya.ru##.reasoning-section
 ya.ru##[action*="/search/"] ~ div[style]
-ya.ru##[id^="ryt"][id*="m-f"][id$="d"]
+ya.ru##[id^="r"][id*="yt"][id*="m-f"][id$="d"]
 ya.ru##html[class*="_neuro"] aside ~ div[style]
 ya.ru##html[class*="_reaso"] aside ~ div[style]
 ya.ru##html[class*="document_feed_"] aside ~ div[style]

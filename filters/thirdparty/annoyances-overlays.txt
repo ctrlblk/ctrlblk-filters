@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: EasyList – Newsletter Notices
-! Last modified: Sun, 03 May 2026 10:36:26 +0000
+! Last modified: Wed, 06 May 2026 04:24:47 +0000
 ! Expires: 7 days (update frequency)
 ! *** easylist:template_header.txt ***
 !
@@ -1507,6 +1507,7 @@ cryptopolitan.com###cp-newsletter-block
 marketbeat.com###cphPrimaryContent_pnlCTARowOptin
 marketbeat.com###cphPrimaryContent_pnlSidebarBoxOptin
 cryptoslate.com###cs-newsletter
+physicsworldjobs.com###cta-right-column
 davidlebovitz.com###ctabar
 washingtonmonthly.com###ctct_form-2
 curiosmos.com###curiosmosnewsletter_widget-2
@@ -1536,7 +1537,6 @@ jamesgmartin.center###dh-donation-prompts-5
 digg.com###digg-subscribe
 newser.com###divNewserInYourInboxM
 drive.com.au###drive-subscribe-newsletter
-winaero.com###drpa
 stlpr.org###dynamic-ask
 eco-business.com###eb-bottom-banner
 diet.mayoclinic.org###elementForNewsletter
@@ -2318,6 +2318,7 @@ thepostmillennial.com##.card-body
 finbold.com##.card-subscribe
 depthfirst.com##.case-study_sticky_email_wrap
 claimdepot.com##.case_newsletter
+ticketnews.com##.categories-widget.sidebar-widget
 neowin.net##.category-bar
 clinicaltrialsarena.com,cranestodaymagazine.com,faithwire.com,hoistmagazine.com,just-food.com,naval-technology.com,railway-technology.com,retail-insight-network.com,ttjonline.com,verdict.co.uk##.catfish
 crazyforcrust.com,easypeasyfoodie.com,thetinylife.com##.cb-box__wrapper-center_modal
@@ -2644,6 +2645,7 @@ flytrippers.com##.ft-email-box
 politicshome.com##.ftr-subsWrap
 etonline.com##.full-bleed-newsletter
 thebrokebackpacker.com##.full-width-cta
+physicsworld.com##.fullwidth-newsletter-sign-up
 physicsworld.com##.fullwidth-newsletter-sign-up__email
 thriftytraveler.com##.g
 shueisha.online##.g-regist-banner
@@ -3000,6 +3002,7 @@ tutorialslink.com##.n-subscribe-footer
 thespinoff.co.nz##.native-newsletter-signup
 nationalinterest.org##.nav__mag
 thetech.com##.navbar-feedback
+npr.org##.navigation__newsletters
 asweetpeachef.com,biggerbolderbaking.com,blackoutcoffee.com,bookshop.org,craftboxdirect.com,dailycaller.com,gamebyte.com,geoffanderson.dk,glerups.com,highcarbhannah.co,jbhifi.co.nz,jbhifi.com.au,kurufootwear.com,mobellageret.dk,motor1.com,mychicagosteak.com,mylivelobster.com,readwrite.com,redrightvideos.com,rocketeyewear.com,satellitephonestore.com,staples.ca,thesatanictemple.com,tibi.com,unknowncomicbooks.com,warpedsense.com##.needsclick[aria-label][style]
 thehill.com##.network-footer__ca-newsletter
 thehill.com##.network-footer__newsletter
@@ -3030,6 +3033,7 @@ calgaryherald.com,edmontonjournal.com,nationalpost.com,vancouversun.com##.newsle
 mobilesyrup.com##.newsletter-article-container
 advocate.com,comicsands.com,out.com,thefulcrum.us##.newsletter-aside
 cityam.com##.newsletter-auto-inject
+pcguide.com##.newsletter-block-wrapper
 theintercept.com##.newsletter-block__content
 techfirstnow.com##.newsletter-body
 uinterview.com##.newsletter-box
@@ -3583,7 +3587,7 @@ cafemom.com##.subscribe-enter-done
 punchline-gloucester.com##.subscribe-footer-container
 euroweeklynews.com##.subscribe-for-news
 memri.org##.subscribe-for-updates
-allthings.how,armageddonexpo.com,businesstech.co.za,buttondown.com,channelnews.com.au,dashbit.co,itsfoss.com,jurist.org,pandotrip.com,pissdaily.com,reasonstobecheerful.world,rigzone.com,sfist.com##.subscribe-form
+allthings.how,armageddonexpo.com,businesstech.co.za,buttondown.com,channelnews.com.au,dashbit.co,itsfoss.com,jurist.org,nobodyaskedforthis.lol,pandotrip.com,pissdaily.com,reasonstobecheerful.world,rigzone.com,sfist.com##.subscribe-form
 theanalyst.com##.subscribe-form-footer
 gwaramedia.com##.subscribe-form-holder
 theinspiredhome.com##.subscribe-form-wrap
@@ -6277,7 +6281,7 @@ doctorofcredit.com#@#.wpdiscuz-subscribe-bar
 ! fanboy_newsletter_shopping_allowlist_general_hide.txt
 
 ! Title: uBlock filters – Other Annoyances
-! Last modified: Mon, 04 May 2026 13:17:19 +0000
+! Last modified: Tue, 05 May 2026 15:16:14 +0000
 ! Expires: 7 days
 ! Description: Filters optimized for uBlock Origin, to be used with EasyList's and/or Adguard's "Other Annoyances" list(s)
 ! License: https://github.com/uBlockOrigin/uAssets/blob/master/LICENSE
@@ -14336,3 +14340,6 @@ dozaanimata.net##+js(trusted-create-html, html, <details open style='display:non
 
 ! https://github.com/uBlockOrigin/uAssets/issues/32731
 fontsquirrel.com###bottom_banner_ad_container
+
+! https://github.com/uBlockOrigin/uAssets/issues/32827
+paloaltonetworks.com##+js(nostif, /adbl/i)
