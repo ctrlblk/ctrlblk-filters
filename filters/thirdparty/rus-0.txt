@@ -9202,7 +9202,7 @@ me##td[background^="//cdn.livetv"] tr > td[valign="top"] + td[align="right"]
 ##div[style="width: 252px; height: 450px; position: fixed; right: 0px; top: 0px; overflow: hidden; z-index: 10000;"]
 
 ! - Частные правила -----------------------------------------------------------
-$popup,domain=176.114.0.126|176.114.0.132|37.220.36.15|assiatv.com|cdnpotok.com|cdntvpotok.com|freescreens.ru|imgbase.ru|imgcach.ru|imgclick.ru|kolikbolik.top|oneliketv.com|payforpic.ru|picclick.ru|picclock.ru|picforall.ru|protonvideo.to|telecdn.net|tv-assia.org
+$popup,domain=176.114.0.126|176.114.0.132|37.220.36.15|assiatv.com|cdnpotok.com|cdntvpotok.com|fastpic.org|freescreens.ru|imgbase.ru|imgcach.ru|imgclick.ru|kolikbolik.top|oneliketv.com|payforpic.ru|picclick.ru|picclock.ru|picforall.ru|protonvideo.to|telecdn.net|tv-assia.org
 $third-party,popup,domain=2ip.ru
 &utm_campaign=$popup,domain=itc.ua|sc2tv.ru|www.film.ru
 /*utm_$popup,domain=stratege.ru
@@ -9398,6 +9398,7 @@ $third-party,popup,domain=2ip.ru
 ||dominantroute.com^$popup
 ||download/*rd.php?id=$third-party,popup
 ||drako.ru/refredirect$popup
+||dsbuiu.com^$popup
 ||dxasracer.bid^$popup
 ||dyshagi.ru^$popup
 ||earnshill.com/images/sp/$popup
@@ -14319,7 +14320,6 @@ megalyrics.ru###header_bottom
 sitepartners.ru###header_center
 radidomapro.ru###header_partenaire
 pesiq.ru###header_right_cell
-fastpic.org###headermenu a[target="_blank"]
 gzt-sv.ru###headerq
 bigkyiv.com.ua###headlessui-portal-root
 chess-samara.ru###headlineAdv
@@ -17407,6 +17407,8 @@ videochart.net##.mv-advert-position
 moevideo.net,playvideolink.com,thesame.tv,videochart.net##.mv-advert-position__pause
 beremennost.net,imolodost.com,menportal.info,nmedic.info##.mv-content
 infosmi.net#?#.mvp-widget-home-title:-abp-contains(Реклама)
+repack.me##.my > .ads
+repack.me##.my > .ads + br
 glavred.info,glavred.net,teleport2001.ru##.my-3
 ip.osnova.news##.my-4
 mymsk.online##.my-5
@@ -17433,9 +17435,9 @@ drive.ru##.nav-menu > li > a[href][target="_blank"]
 webmasters.ru##.nav_we > a:not([href^="http://webmasters.ru/"]):not([href^="/"]):not([href^="."])
 forum.soft4dle.com##.navbar > br
 forum.soft4dle.com##.navbar > center
+fastpic.org##.navbar > div:not([class])
 nalogikz.kz##.navbar-fixed-bottom
 newkaliningrad.ru##.navbar-nav > .important
-fastpic.org##.navbar-nav > a[target="_blank"]
 forum.fonarevka.ru##.navbar_banners
 srtclub.ru##.navbar_notice a[href][target="_blank"]
 mobile-review.com##.navmenu__advert
@@ -22386,7 +22388,6 @@ chem21.info##tr[height="250px"]
 izgr.ru##tr[height="90px"]
 raspisanie24.com##tr[onclick*="blablacar"]
 domsnov.ru##tr[style*="important"]
-fastpic.org##u[tabindex="0"]
 twirpx.com,twirpx.org##ul[class*="file-download"] + div[class*=" "]
 repost.uz##video[src*="/storage/uploads/"][src$=".mp4"]
 vc.ru##vue[name="booster"]
@@ -23595,15 +23596,6 @@ rbc.ru##div[class^="styles_okko"]
 ||utro.ru/*/banners/
 ||zoom.cnews.ru/inc/bpic/
 !
-! REPAK.me
-repack.me##.my > .ads
-repack.me##.my > .ads + br
-! блокировки, добавленные из-за агрессивного обхода >
-||t.me/neovpnbot?$third-party,popup
-||telegram.me/neovpnbot?$third-party,popup
-||waicore.com^$third-party,popup
-||waicore.net^$third-party,popup
-!
 ! Spaces и зеркала
 google-cloud.services,spac.me,spaces.im,spcs.bio,strip2.co,strip2.*,usersporn.com###sidebar > div[class]:last-child
 google-cloud.services,spac.me,spaces.im,spcs.bio,strip2.co,strip2.*,usersporn.com###siteContent > div:not([id]):not([class]) ~ div[class]
@@ -23982,7 +23974,7 @@ tv.yandex.ru,tv.yandex.*##script[nonce] + script[nonce] + div[class]
 ! Дзен Yandex-edition
 dzen.ru###branded-banner
 dzen.ru##.adv-skeleton___main
-dzen.ru##.mini-suggest__popup-extra
+dzen.ru##.mini-suggest__popup-extra .slices
 dzen.ru##[aria-label^="Peкл"]
 dzen.ru##[aria-label^="Карточк"][aria-label*=" p"][aria-label*="кл"]
 dzen.ru##[aria-label^="Карточк"][aria-label*=" рекл"]
@@ -28253,7 +28245,7 @@ regnum.news,regnum.ru##.page-column > .right-adv-container:style(top: 100px !imp
 mag.relax.by##.b-global-branding[branding_url*=http] .b-global-wrap:style(cursor: auto !important)
 mag.relax.by##.b-global-wrap > .b-global-offset:style(padding: unset !important)
 ! ---
-repack.me##main > div:style(padding-top: 0 !important; margin-top: 0 !important)
+repack.me##html:not(.admin) > body > main > div:style(padding-top: 0 !important; margin-top: 0 !important)
 ! ---
 reshebnik.com##div[id*="-error-page"] > p:style(height: 0 !important; opacity: 0 !important)
 ! ---
@@ -29272,6 +29264,7 @@ dzen.ru,sportsdzen.ru##+js(prevent-fetch, /stats/bulk|stats/pixels|zen_audit/)
 ura.news##+js(prevent-fetch, _rsc=)
 aigenda.ru##+js(prevent-setTimeout, combinedDetector)
 forum.ixbt.com##+js(prevent-setTimeout, count_banners)
+fastpic.org,~new.fastpic.org##+js(prevent-window-open)
 i-ua.tv##+js(remove-attr, autoplay, [data-video-player="small"], stay)
 cnews.ru,gfycat.com,inter.ua,obozrevatel.com,platformcraft.ru,protv.md,rg.ru,rusvesna.su,tv8.md,xsport.ua##+js(remove-attr, autoplay, video, stay)
 u24.ua##+js(remove-attr, autoplay|loop, .watch-live__link > video, stay)
@@ -29291,7 +29284,7 @@ ya.ru##+js(remove-node-text, a, /Установите Яндекс Браузе�
 ya.ru##+js(remove-node-text, div, 'ad-mark__b-unit')
 nullcms.ru##+js(remove-node-text, script, 'decodeURIComponent(escape')
 game4you.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##+js(remove-node-text, script, /A.d.b.|Adb-|A-d-b-|-Gua|dGua|dblo|tick|Адгу-/)
-fastpic.org,~new.fastpic.org##+js(remove-node-text, script, /adsterra|data:video|decodeURIComponent|Math.rnd/)
+fastpic.org,~new.fastpic.org##+js(remove-node-text, script, /ABN|adsterra|Math.rnd|parseInt|window.open/)
 tapochek.net##+js(remove-node-text, script, /document.head.appendChild|document.referrer/)
 inforesist.org##+js(remove-node-text, script, /gtag\('event'/)
 questtime.net##+js(remove-node-text, script, MsgNoAD)
@@ -29515,6 +29508,7 @@ dzen.ru,ya.ru,yandex.by,yandex.kz,yandex.ru,yandex.uz##[id^="suggest-item-"]:has
 pb.wtf,pirat.one,piratbit.fun,piratbit.org,piratbit.top##[value="Скачать"]:remove-attr(disabled)
 gazeta.press,gazeta.ru##^responseheader(location)
 24smi.org##a[href*="://24smi.org/"]:remove-attr(target)
+fastpic.org,~new.fastpic.org##a[href="https://static.fastpic.ru/FastPicUploader.apk"]:remove-attr(target)
 aniu.ru,liveball.*##+js(no-setInterval-if, debugger)
 cq.ru#?#article:-abp-has(> div .p__affiliate) a[href^="http"]:not([href*="cq.ru/"]):style(pointer-events: none !important; border-bottom: none !important; color: inherit !important)
 dzen.ru##article:has(> div:matches-attr(/[a-z0-9]/=/_ad-yp|direct|mytarget/))
