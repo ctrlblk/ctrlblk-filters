@@ -10747,7 +10747,7 @@ $xmlhttprequest,domain=happy-biock.info|happy-block.info|howto-news.info|mschist
 /ajax/hitsadv.php?$domain=newsomsk.ru|omskregion.info
 /anbaplashka.jpg$domain=sportcast.online
 /api*iframe$subdocument,domain=intermusic.name|iplayer.info|ipleer.fm
-/api/*/ads-banners$domain=limehd.tv|litehd.tv|pervyi-tv.online|russia-tv.online
+/api/*/ads$xmlhttprequest,domain=limehd.tv|litehd.tv|pervyi-tv.online|russia-tv.online
 /api/*/ainfo/*$domain=igromania.ru|kanobu.ru
 /api/ad/*$domain=lampa.mx
 /api/branding/*$domain=lalafo.az|lalafo.kg
@@ -26861,6 +26861,7 @@ chelseafc.com,shrlink.top#@#.ad-banner
 dl2kq.de#@##sponsor_ad
 drahelas.ru#@#.forumAd
 draug.ru,print-post.com#@##reklama
+evribiont.ru#@#.AdSense
 gamepush.com#@##text_ad
 green-way.com.ua#@#.adWrapper
 iphones.ru#@##sponsorText
@@ -28402,8 +28403,8 @@ stopgame.ru###preroll_mediaplayer
 stopgame.ru##body:style(cursor: default !important)
 stopgame.ru##div[id^="videoplayer_"][class^="iframe_wrapper"]:style(display: block !important)
 ! ---
-stratege.ru###globalcontent:style(margin-top: 0 !important)
-stratege.ru##.above_body:style(margin-bottom: auto !important)
+stratege.ru###globalcontent:style(margin-top: 0 !important; padding-top: 0 !important)
+stratege.ru##.above_body:style(margin-bottom: 0 !important)
 ! & for Users
 ! stratege.ru##html:style(background: #dbdbdb !important)
 ! stratege.ru##body > [id][class]:first-of-type:style(display: unset !important)
@@ -29262,6 +29263,7 @@ dumatv.ru##+js(prevent-addEventListener, message, AUTOPLAY)
 news.rambler.ru##+js(prevent-fetch, &origin_type=rtb, url:/rutube.ru/api/tags/video/)
 dzen.ru,sportsdzen.ru##+js(prevent-fetch, /stats/bulk|stats/pixels|zen_audit/)
 ura.news##+js(prevent-fetch, _rsc=)
+evribiont.ru##+js(prevent-setTimeout, adTestElement)
 aigenda.ru##+js(prevent-setTimeout, combinedDetector)
 forum.ixbt.com##+js(prevent-setTimeout, count_banners)
 fastpic.org,~new.fastpic.org##+js(prevent-window-open)
@@ -29284,7 +29286,7 @@ ya.ru##+js(remove-node-text, a, /Установите Яндекс Браузе�
 ya.ru##+js(remove-node-text, div, 'ad-mark__b-unit')
 nullcms.ru##+js(remove-node-text, script, 'decodeURIComponent(escape')
 game4you.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##+js(remove-node-text, script, /A.d.b.|Adb-|A-d-b-|-Gua|dGua|dblo|tick|Адгу-/)
-fastpic.org,~new.fastpic.org##+js(remove-node-text, script, /ABN|adsterra|Math.rnd|parseInt|window.open/)
+fastpic.org,~new.fastpic.org##+js(remove-node-text, script, /ABN|adsterra|generateContent|Math.rnd|parseInt|window.open/)
 tapochek.net##+js(remove-node-text, script, /document.head.appendChild|document.referrer/)
 inforesist.org##+js(remove-node-text, script, /gtag\('event'/)
 questtime.net##+js(remove-node-text, script, MsgNoAD)
