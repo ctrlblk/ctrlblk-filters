@@ -1,10 +1,10 @@
 ![Adblock Plus 2.0]
-! Checksum: i9zIvFzfEwgv/BOrBPL/uQ
-! Diff-Path: ../patches/7/7-s-1778343975-3600.patch
+! Checksum: AXK/4bxF7iZYnXxSm7IkFw
+! Diff-Path: ../patches/7/7-s-1778649980-3600.patch
 ! Title: AdGuard Japanese filter
 ! Description: Filter that enables ad blocking on websites in Japanese language.
-! Version: 2.0.73.76
-! TimeUpdated: 2026-05-09T16:23:09+00:00
+! Version: 2.0.73.78
+! TimeUpdated: 2026-05-13T05:22:48+00:00
 ! Expires: 5 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -790,13 +790,13 @@ coolpan.net#@#.ad-area:not(.text-ad)
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$script,domain=coolpan.net
 ! https://github.com/AdguardTeam/AdguardFilters/issues/96832
 g-pc.info##+js(set-constant, adsbygoogle.loaded, true)
+! https://github.com/AdguardTeam/AdguardFilters/issues/230492
 ! https://github.com/AdguardTeam/AdguardFilters/issues/103488
 ||ad-stir.com/js/adstir.js$script,redirect=noop.js,domain=musenboya.com
 ||i-mobile.co.jp/script/v1/spot.js$script,redirect=noop.js,domain=musenboya.com
 ||nend.net/js/nendAdLoader.js$script,redirect=noop.js,domain=musenboya.com
 @@||musenboya.com^$generichide
 musenboya.com##.widget_pc_ad
-musenboya.com##+js(no-setTimeout-if, /location\.href|document\./)
 ! health.joyplot.com anti-adb
 ||health.joyplot.com/HealthWordsWiki/skin/foradblock.
 ! https://github.com/AdguardTeam/AdguardFilters/issues/90462
@@ -8536,6 +8536,7 @@ game.oricon.co.jp,game.hiroba.dpoint.docomo.ne.jp,kantangame.com,kantan.game,yom
 traicy.com##.pc-ad-wide
 traicy.com##.sp-header-ad
 ||hochi.news/apps/js/ad_kb/
+hochi.news##.job-list-wrap
 hochi.news##.article-list__head:has(+ .job-list-wrap)
 hochi.news##.sub__head:has(+ .right_job-list-wrap)
 entapark.jp,hochi.news##div[class$="job-list-wrap"]
@@ -10590,6 +10591,9 @@ tvbok.com###left_fix_out #left_box3
 tvbok.com###right_2nd > .right_box2
 bookbang.jp###footer_ban
 hatena.ne.jp##div[class^="entry-ad-"]
+2ch.logpo.jp##.SaleInfo
+2ch.logpo.jp##.DetectRed
+2ch.logpo.jp##.KindleBooks
 2ch.logpo.jp,mt-soft.sakura.ne.jp,hiroburo.com,xn--w8jtkjf8c570x.com,cg-method.com##a[href^="https://www.amazon.co.jp/"]
 komykomy7.hatenablog.jp,cofure.hatenablog.com,fireyoshida.com,comic11.hatenablog.com,blog.munieru.jp,anou4649.hatenablog.com,nomolk.hatenablog.com,moognyk.jp,noaboutsnote.hatenablog.com##.hatena-asin-detail
 ogeji.hatenablog.com##.entry-content > .code ~ table[style*="width:300px"]

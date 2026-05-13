@@ -6688,6 +6688,7 @@
 ||vinregle.com^
 ||vioturallis.com^$third-party
 ||vip-click.biz^$third-party
+||vipapi.org^$third-party
 ||viparchive1.ru^$third-party
 ||vipavf.com^$third-party
 ||vipsearch.guru^$third-party
@@ -12973,6 +12974,7 @@ igdz1.ru^$script,domain=igdz.ru
 ||rsload.net/images*/appwizard.
 ||rss-script.ru^$domain=vk-cc.com
 ||rstprgapipt.com/*.xml?$xmlhttprequest
+||rstprgapipt.com/api-integration/
 ||rt-ddd.ru/image/banner/
 ||rt.com/scripts/adfox/
 ||rtg.real-vin.com/
@@ -13354,6 +13356,7 @@ igdz1.ru^$script,domain=igdz.ru
 ||telekomza.ru/wp-content/uploads/$object
 ||telik.top^*randomator.js
 ||temptcdn.com/*.xml?$xmlhttprequest
+||temptcdn.com/api-integration/
 ||tengrinews.kz/js/loader.js
 ||teremok.org.ua/partner/images/
 ||ternopillive.com/wp-content/uploads/*.mp4|
@@ -13584,7 +13587,6 @@ igdz1.ru^$script,domain=igdz.ru
 ||videouroki.net^$domain=kopilkaurokov.ru
 ||vikna.if.ua/assets/upload/banner/
 ||viknaodessa.od.ua/baner468
-||vipapi.org/*.xml?$xmlhttprequest
 ||vipidei.com/wp-json/
 ||vipk-cache.cdnvideo.ru/
 ||viplist.fun/yandex
@@ -14681,7 +14683,6 @@ novate.ru###right > .bordered ~ .bordered ~ .bordered
 filmitorrent.net,utorr.cc###right > .colorstrip
 n71.ru###right > .nofloat
 sun-news.ru###right > .sideblock > :not(#vk_groups):not(.fb-page)
-kinokong.sk###right > div[style*="height:"][style*="255px"]
 itnews.com.ua###right > div[style^="height:"]
 novate.ru###right > h2 ~ div + br + br + h2
 novate.ru#?##right > h2:-abp-contains(Рекомендуем)
@@ -21730,7 +21731,7 @@ mozaika.biz#?#div[style]:-abp-has(> a[href]:not([href^="/"]):not([href^="https:/
 kirov-portal.ru#?#div[style]:-abp-has(> ntvk)
 small-games.info#?#div[style]:-abp-has(> p > [href="#hideRekCaption"])
 buhoblik.org.ua##div[style][onclick*="/rizni/"]
-opennet.me,opennet.ru##div[style^="background-color: #E9EAD6; width:100%; height:"]
+opennet.me,opennet.ru##div[style^="background-color: #E9EAD7; width:100%; height:"]
 all-sci.net,bib.social,economics.studio,economuch.com,finbook.news,lawbook.online,lawbooks.news,lib.sale,medinfo.live,myzooplanet.ru,pravo.studio,provse.news,psihologia.biz,sci-lib.biz,sci.house,scicenter.online,textbooks.studio,uchebnikfree.com,xn--80aaivjfyj3e.com##div[style^="background-color: rgb(204, 0, 0)"]
 risovach.ru##div[style^="background: url"]
 xn--c1ajfnfb.xn--p1acf##div[style^="background:"][style*="/ple.jpg)"]
@@ -23815,9 +23816,8 @@ ya.ru,yandex.ru,yandex.*##.main-home-banner
 ya.ru,yandex.ru,yandex.*##.main__block-banner
 ya.ru,yandex.ru,yandex.*##.main__distr-popup
 ya.ru,yandex.ru,yandex.*##.Organic_withPromoOffer
+ya.ru,yandex.ru,yandex.*#?##search-result > [class]:-abp-has(> div.Organic > div a[href*="_crpd"])
 ya.ru,yandex.ru,yandex.*#?#.content__left > #search-result > li:-abp-has(> .Organic_withPromoOffer)
-ya.ru,yandex.ru,yandex.*#?#.content__left > #search-result > li:-abp-has(> div .Organic-Subtitle > span:-abp-contains(/[РPeекламa]{6,7}/))
-ya.ru,yandex.ru,yandex.*#?#.content__left > #search-result > li:-abp-has(> div .organic__subtitle > span:-abp-contains(/[РPeекламa]{6,7}/))
 ya.ru,yandex.ru,yandex.*#?#.content__right div[class]:-abp-has(> div > script)
 ya.ru,yandex.ru,yandex.*#?#.content__right div[class][data-log-node]:-abp-has(.DirectInlineContainer)
 yandex.ru,yandex.*###banner.b-banner__content
@@ -27679,6 +27679,8 @@ hdkinozzoro.ru##body:not(#id):style(padding-top: 0 !important)
 ! HDREZKA
 ac,ag,biz,buzz,by,city,club,co,com,fi,in,ink,kim,loan,me,name,net,org,pub,rest,run,sh,si,so,space,su,today,tv,vip,website,win##body[class^="has-brand"][class*=" active-brand"][class*="fixed-header"] > [id$="er"]:nth-child(-n+3):style(width: unset !important)
 ac,ag,biz,buzz,by,city,club,co,com,fi,in,ink,kim,loan,me,name,net,org,pub,rest,run,sh,si,so,space,su,today,tv,vip,website,win##body[class^="has-brand"][class*=" active-brand"][class*="fixed-header"]:style(padding-top: 0 !important; background-color: inherit !important)
+! Моносериальные домены HDrezka
+net##body.branded:not([id]):not([style]) > #wrapper:not([class]):not([style]):style(margin-top: unset !important)
 ! ---
 hdrezka.inc,rezka.biz##.container > #content:style(margin-top: unset !important)
 ! ---
@@ -27826,7 +27828,7 @@ kino.video,tasix.me##.publisher-name > [id^="blink"]:style(-webkit-animation: no
 ! ---
 kinoakter.net##body > div[class^="wrapper"]:style(margin-top: 0 !important)
 ! ---
-kinokong.sk,kinokrad.net###wrapper:not(#id):style(margin-top: 67px !important)
+kinokong.li,kinokrad.cc###wrapper:not(#id):style(margin-top: 67px !important)
 kinokrad.my##body > div[style^="height:"]:style(height: auto !important)
 ! ---
 kinokladovka.com##.b-background:style(background: none !important; padding-top: 0 !important)
@@ -28584,7 +28586,7 @@ ya.ru##.i-mini-bem[style]
 ya.ru,yandex.by,yandex.kz,yandex.uz##.link-bro
 ya.ru##.market-feed
 ya.ru##.reasoning-section
-ya.ru##[action*="/search/"] ~ div[style]
+ya.ru##[action*="/search/"] ~ section + div
 ya.ru##[id^="r"][id*="yt"][id*="m-f"]
 ya.ru##html[class*="_neuro"] aside ~ div[style]
 ya.ru##html[class*="_reaso"] aside ~ div[style]
@@ -29198,7 +29200,7 @@ muzlan.top##+js(nano-setInterval-booster, .numcard)
 mp3crown.cc##+js(nano-setInterval-booster, .time)
 sorokam.ru##+js(nano-setInterval-booster, .track-download__timer)
 bitshare.link##+js(nano-setInterval-booster, closeWait, 1800)
-kinogo-720.net,kinokong.sk,uakino.best,win-lite.site##+js(nano-setInterval-booster, countdown)
+kinogo-720.net,kinokong.li,uakino.best,win-lite.site##+js(nano-setInterval-booster, countdown)
 startgamer.ru##+js(nano-setInterval-booster, js-game-loader-block, 1000, 0.0001)
 3mod.ru,iblitzmods.ru##+js(nano-setInterval-booster, ks_counter)
 wowskill.ru##+js(nano-setInterval-booster, p)
@@ -29340,7 +29342,7 @@ retail.ru##+js(set-constant, Object.prototype.detectBlockAds, noopFunc)
 embed.twitch.tv,player.twitch.tv##+js(set-constant, Object.prototype.disableAutoplay, true)
 www.mos.ru##+js(set-constant, Object.prototype.disablePaste, false)
 1tv.ru##+js(set-constant, Object.prototype.disableSeek, noopFunc)
-kinokong.sk##+js(set-constant, Object.prototype.disableSelection, noopFunc)
+kinokong.li##+js(set-constant, Object.prototype.disableSelection, noopFunc)
 dzen.ru,frontend.vh.yandex.ru##+js(set-constant, Object.prototype.getAutoplay, noopFunc)
 shedevrum.ai##+js(set-constant, Object.prototype.getUaasConfig, undefined)
 frontend.vh.yandex.ru##+js(set-constant, Object.prototype.initialAutoplay, null)
