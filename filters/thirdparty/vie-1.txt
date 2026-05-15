@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Version: 20260513212321805
+! Version: 20260515101308906
 ! id: D4028CDD-3D39-4624-ACC7-8140F4EC3888
 ! Title: ABPVN List | Ublock Origin
-! Last modified: 13 May 2026 21:23:21 UTC+7
-! Diff-Path: patches/20260513212321805.patch#abpvn_ublock
+! Last modified: 15 May 2026 10:13:08 UTC+7
+! Diff-Path: patches/20260515101308906.patch#abpvn_ublock
 ! Diff-Expires: 60 minutes
 ! Expires: 1 days (update frequency)
 !
@@ -117,6 +117,7 @@
 ||coiphim.biz/client_assets/js/minijumb.js$script,~third-party
 ||coiphim.biz^*.gif$image
 ||danketoan.com/banner/
+||doctruyenqq.net/*banner$image
 ||down-vn.img.susercontent.com/file/vn-11134207-7ra0g-m7vtp74a0ozne9.webp$image,domain=audiotruyenfull.com
 ||file1.dangcongsan.vn^*.gif$image,domain=dangcongsan.vn
 ||forum.idichvuseo.com/images/quang-cao
@@ -242,7 +243,6 @@
 ||traderviet.tv/data/siropu/am/user/$image
 ||tructiep.vn/website/adv/
 ||truyenconect.com/uploads/*-truyenconect_com-*.
-||truyenqqgo.net/*banner$image
 ||tudomuaban.com/public/upload/ad/
 ||tuyensinh247.com/$image,third-party
 ||tuyensinhso.vn/images/banners/*.gif$image,~third-party
@@ -516,6 +516,9 @@ danviet.vn##.sidebar>div[style]
 diadiem.com##.div_box_adv
 docnhanh.vn##.ad-position-container
 docnhanh.vn##.lg\:\!h-\[260px\].\!h-\[240px\].lg\:mb-3.lg\:mt-1.tss-widget
+doctruyenqq.net###flyer
+doctruyenqq.net##.md-overlay
+doctruyenqq.net##.md-show.md-effect.popup1
 docviewer.yandex.com##.js-doc-html>div>div[id]
 doisongphapluat.com.vn,vtcnews.vn##.sys-ads
 download.vn##div[id^="adsbg"]
@@ -566,7 +569,7 @@ googleapiscdn.com###avs-banner-overlay
 googleapiscdn.com###avs-pause-ad
 hh3dhay.gg,hhtq.boats###top_addd
 hhdragon.site##.catfish-img
-hhninja30.tv,hhtq13.vip,hhtq.today,hhtq.today,animehay02.site,hhtq3d.net,hhvsub1.com,phimdacap.tv,motchillk.bid,hhdragon.site,hh2d.top###catfish
+hhninja30.tv,hhtq13.vip,hhtq.today,animehay02.site,hhtq3d.net,hhvsub1.com,phimdacap.tv,motchillk.bid,hhdragon.site,hh2d.top###catfish
 hhtq.boats###xs-addd0
 hhtq.boats##.btn-fanpage.btn-default.btn-block.btn
 hhtq.boats##.underplayer_btn
@@ -836,9 +839,6 @@ truyenaudiocv.org##.js-editors-choice-slider.editors-choice-slider>.adsbygoogle
 truyenfull.vision###header-ads-full
 truyenfull.vision##.ads-responsive
 truyenfull.vision##[id^="ads-"]
-truyenqqgo.net###flyer
-truyenqqgo.net##.md-overlay
-truyenqqgo.net##.md-show.md-effect.popup1
 truyenqqko.com###_pop-qqgo-11
 truyenqqko.com###catfish-banner-reading-container
 truyenqqko.com###catfishAd
@@ -1112,12 +1112,13 @@ docufind.org.uk/wp-content/themes/vlxx/js/*-adx.js$script
 ||sexviet88.it.com^*.gif
 ||sieukhung.net^*.gif$image
 ||stream.cliphot69.one/mb66.mp4$media,domain=sexlive.biz
+||thesmallbusinesskit.com^*.gif$image
 ||thiendia3.com/banner/$image
 ||truyensextv.com/anh/$image
 ||truyensextv.com^*.gif
 ||truyenvn.sbs^*banner$image
-||umisushivacaville.com^*.gif$image
 ||video.qmh.cat/uploads/banners/$image,domain=cap3.sbs|qmh.cat
+||video.viphubss.shop/uploads/banners/$image,domain=qmh.cat
 ||www.hentaivnx.com/js/cla/2064711.js$script
 ||www.hentaivnx.com/js/modscript.js$script
 ||www.hentaivnx.com/js/random-click-opener.js$script
@@ -1235,6 +1236,7 @@ vlxx.rip,trangsexdam.net##.hd-tube-desktop
 vlxx.rip,trangsexdam.net##.hd-tube-mobile
 vlxxhot.net,phimxxx.ac##.adx1
 vlxxhot.net,vailonxx.me###ab_ctl
+www.qmh.cat##.global-sticky-ads
 xamvn.homes##.js-notices
 xfast.sbs###overlay
 xiuren.org###bannerIn
@@ -1266,7 +1268,7 @@ cap3.sbs##+js(aeld, click, setTimeout)
 cap3.sbs##+js(aeld, fullscreenchange, e.target)
 cdn.codexa.fun##+js(acs, $, arrDirectLink)
 chotlo3s.com###header:style(margin-top: 0 !important)
-cliphotnewi.com,umisushivacaville.com##+js(acs, window.addEventListener, Ads)
+cliphotnewi.com,thesmallbusinesskit.com##+js(acs, window.addEventListener, Ads)
 cliphubs.com,viet69hay.site##+js(acs, document.addEventListener, pop)
 clipphot.vip##+js(acs, document.addEventListener, POP)
 cmangax16.com##+js(nostif, ads_num)
@@ -1343,6 +1345,7 @@ www.bachnguyetquang.online##.ant-modal-root
 www.gvnvh18z.com,sexdiaryx.to##+js(set, D4zz, noopFunc)
 www.iosviet.com##+js(set, timer, 0)
 www.nettruyenupp.com##+js(aopr, sp)
+www.qmh.cat##+js(set, open, noopFunc)
 www.saostar.vn##div.layout.pt-mobi-top:style(padding-top: 0 !important)
 www.saostar.vn##header.bg-white:style(margin-top: 0px !important)
 www.sieutamphim.pro##+js(aopw, _$_d52e)

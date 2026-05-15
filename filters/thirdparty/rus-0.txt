@@ -419,7 +419,6 @@
 ||aj2738.top^$third-party
 ||aj3081.top^$third-party
 ||ajaxbig.ru^$third-party
-||ajur.info^$third-party
 ||ajx130.online^$third-party
 ||ajx161.online^$third-party
 ||akamaihd.site^$third-party
@@ -10484,8 +10483,7 @@ $csp=script-src-attr 'none',domain=volyn.com.ua
 .softoroom.org^$csp=default-src 'unsafe-inline',domain=~gzip.softoroom.org|~m.softoroom.org
 /bens/vinos.js$csp=sandbox allow-same-origin;
 /gateway/aHR0c$csp=script-src
-|http*//fastpic.org/$csp=frame-src 'self'
-|http*//fastpic.org/$csp=script-src 'self' 'unsafe-inline' 'unsafe-eval' static.fastpic.org
+|http*://fastpic.org/$csp=script-src 'self' 'unsafe-inline' 'unsafe-eval' static.fastpic.org; connect-src 'self'; frame-src 'self'
 ||24click.*/top/$csp=script-src
 ||24smi-*/top/$csp=script-src
 ||24smi.*/top/$csp=script-src
@@ -11059,6 +11057,7 @@ igdz1.ru^$script,domain=igdz.ru
 ||aida64.ru^*/amigo$image
 ||aii.su/banners/
 ||ais.com.ua/usersimage/banners/
+||ajur.info/cgi-bin/ac.fcgi?
 ||akademekb.ru/loadinga/
 ||akniga.org/ads.js
 ||aktobeinfo.kz/sites/default/files/swf/
@@ -22491,6 +22490,7 @@ lenta.ru##.layout__content > .js-topic:has(.topic-header__erid) {remove:true;}
 lenta.ru##.topic-body__content> .box-external-video:last-child {remove:true;}
 lenta.ru##.topic-footer > div[class^="box-"][class$="-video"] {remove:true;}
 lenta.ru##.vk-video-popup {remove:true;}
+pikabu.ru##head > style:has-text(min-height:301px;) {remove:true;}
 playground.ru###dfpPrerollDelay {remove:true;}
 stratege.ru##html[xmlns] > body > script + script + style {remove:true;}
 tapochek.net##body:has(#register_link) > canvas
@@ -22548,9 +22548,10 @@ mail.ru##[href*="https://dzen.ru"]
 vk.com,vk.ru##[id^="post-"] > ._post_content > :only-child
 levik.blog,livejournal.com,olegmakarenko.ru,periskop.su,shakko.ru,shiro-kino.ru,vadimrazumov.ru##[role="banner"] > .s-header-extra + div[class]
 livejournal.com#?#a:-abp-has(span:-abp-contains(Реклама))
+pikabu.ru#?#article:-abp-has(> .story__left > span:only-child)
 pikabu.ru#?#article:-abp-has(> .story__main > div > header + div[class^="story"] > div:not([id]))
 pikabu.ru#?#article:-abp-has(> .story__main > div > header + div[class^="story"]:not(:-abp-has(*)))
-pikabu.ru#?#article:-abp-has(> .story__main > div:empty)
+pikabu.ru#?#article:-abp-has(> .story__main:not(:-abp-has(*)))
 kp.kg,kp.kz,kp.ru,md.kp.media#?#body > #app div:-abp-properties(background-color: rgb(225, 231, 235))
 sdamgia.ru##center > div[id][style]
 cq.ru#?#div:-abp-properties(content: "Реклама")

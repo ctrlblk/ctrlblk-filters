@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: EasyList – Newsletter Notices
-! Last modified: Tue, 12 May 2026 09:21:10 +0000
+! Last modified: Fri, 15 May 2026 04:39:20 +0000
 ! Expires: 7 days (update frequency)
 ! *** easylist:template_header.txt ***
 !
@@ -53,7 +53,6 @@
 /newsletter-portlet/js/main.js
 /newsletter-signup.js
 /newsletter-signup.min.js
-/newsletter-subscribe-
 /newsletter-subscription-$~stylesheet
 /newsletter/popup-
 /newsletter/popup/*
@@ -2114,6 +2113,7 @@ dnamagazine.com.au,thetechfactor.ca##.ays-pb-modals
 bnnbloomberg.ca##.b-double-chain-custom
 digitaltrends.com##.b-in-content-shortcode
 peanutbutterrunner.com##.b-modal
+digitaltrends.com##.b-newsletter-sign-up
 ctvnews.ca##.b-promo-medium-manual-custom
 cyberdaily.au##.b-sideSub
 nysun.com##.backdrop-blur-sm
@@ -3931,6 +3931,7 @@ jewishworldreview.com##[href="/subs.php"]
 thebolditalic.com##[href="http://tbi.fyi/website_referral"]
 sfgate.com##[href="https://link.sfgate.com/join/signup-sfgate"]
 techcabal.com##[href="https://techcabal.com/newsletter"]
+cbtnews.com##[href="https://www.cbtnews.com/newsletter-signup/"]
 hackster.io##[href="https://www.hackster.io/newsletter/sign_up"]
 linuxiac.com##[href^="https://subscribe.linuxiac.com/"]
 yahoo.com##[href^="https://subscription.yahoo.net/Newsletter/"]
@@ -4051,6 +4052,7 @@ dailydot.com#?#strong > em:has-text(Sign up)
 dailystar.co.uk#?#.article-body > p:has-text(sign up for our newsletters)
 decrypt.co#?#.border-decryptGridline:has-text(Newsletter)
 demstate.com#?#.p-6.border-gray-200:has-text(Stay Informed)
+denodell.com#?#.p-4.dark\:bg-gray-900:has-text(More from Den)
 dexerto.com#?#.lg\:grid-cols-\[445px_1fr\].gap-y-10 > div:has-text(Sign up to Dexerto)
 dexerto.com#?#.mb-16:has-text(Sign up)
 digitalhealth.net#?#.e-con-inner:has-text(Subscribe)
@@ -6287,7 +6289,7 @@ doctorofcredit.com#@#.wpdiscuz-subscribe-bar
 ! fanboy_newsletter_shopping_allowlist_general_hide.txt
 
 ! Title: uBlock filters – Other Annoyances
-! Last modified: Mon, 11 May 2026 06:44:28 +0000
+! Last modified: Thu, 14 May 2026 11:46:29 +0000
 ! Expires: 7 days
 ! Description: Filters optimized for uBlock Origin, to be used with EasyList's and/or Adguard's "Other Annoyances" list(s)
 ! License: https://github.com/uBlockOrigin/uAssets/blob/master/LICENSE
@@ -8277,7 +8279,7 @@ gamebanana.com##+js(aopr, adBlockDetected)
 gamebanana.com##+js(nostif, vSiteRefresher)
 
 ! https://github.com/uBlockOrigin/uAssets/issues/10888#issuecomment-1523943368
-www.reddit.com###configured-xpromo-blocking_xpromo_nsfw_blocking_desktop
+www.reddit.com##div[id*="_xpromo_nsfw_blocking_"]
 www.reddit.com###blocking-modal, body > div[style="position: fixed; inset: 0px; backdrop-filter: blur(4px);"], #nsfw-qr-dialog
 ! https://github.com/uBlockOrigin/uAssets/issues/21810#issuecomment-2782270465
 www.reddit.com##body[style*="overflow"]:style(overflow: auto !important;)
