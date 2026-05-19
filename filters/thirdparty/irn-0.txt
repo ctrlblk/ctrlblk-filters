@@ -687,7 +687,8 @@ ana.press##div.back_links
 !#if !env_mobile
 ac.ir##+js(set, chromeOS, true)
 !#endif
-||ac.ir/common/scripts/analytics/meetingLaunchIA.js^$script,1p
+! https://github.com/AdguardTeam/AdguardFilters/issues/231021
+!||ac.ir/common/scripts/analytics/meetingLaunchIA.js^$script,1p
 ac.ir##input[id="PreparePrint"]:watch-attr(disabled):remove-attr(disabled)
 ac.ir##body[style^="background-image: url(\"/_images/nonprintable.gif\")"]:style(background-image: unset !important;)
 
@@ -4907,7 +4908,7 @@ app.epoll.pro##*:style(cursor: revert !important; -webkit-touch-callout: default
 ! Trackers:
 [uBlock Origin]
 ! Title: PersianBlockerTrackers
-! Last modified: Sun, 10 May 2026 12:49:06 +0330
+! Last modified: Mon, 18 May 2026 22:17:08 +0330
 ! Expires: 7 days
 ! Description: Filters to block trackers in Persian websites 
 ! License: https://codeberg.org/KhodeKiaa/PersianBlocker/src/branch/main/LICENSE
@@ -4930,6 +4931,8 @@ app.epoll.pro##*:style(cursor: revert !important; -webkit-touch-callout: default
 
 ! aparat.com:
 ||sentry.sabaidea.cloud^
+! aparat.com/shorts:
+||aparat.com/external/roost/v1/b/watchtime^
 
 ! Google Account Login (e.g. gama.ir):
 ||accounts.google.com/gsi^$~script,from=ir
