@@ -4506,14 +4506,14 @@ benawa.com##div[style="margin-top:5px;margin-bottom:3px; overflow:hidden;"]
 ! Ads:
 [uBlock Origin]
 ! Title: PersianBlockerAds
-! Last modified: Sun, 10 May 2026 12:35:58 +0330
+! Last modified: Thu, 21 May 2026 22:03:05 +0330
 ! Expires: 5 days
 ! Description: Filters to block ads in Persian websites 
-! License: https://codeberg.org/KhodeKiaa/PersianBlocker/src/branch/main/LICENSE
-! Homepage: https://codeberg.org/KhodeKiaa/PersianBlocker
+! License: https://github.com/MasterKia/PersianBlocker/blob/main/LICENSE
+! Homepage: https://github.com/MasterKia/PersianBlocker
 !
-! GitHub issues: https://codeberg.org/KhodeKiaa/PersianBlocker/issues
-! GitHub pull requests: https://codeberg.org/KhodeKiaa/PersianBlocker/pulls
+! GitHub issues: https://github.com/MasterKia/PersianBlocker/issues
+! GitHub pull requests: https://github.com/MasterKia/PersianBlocker/pulls
 
 
 !!! General !!!
@@ -4687,6 +4687,12 @@ alef.ir##a[href="https://panel.triboon.net/"][target="_blank"]
 
 ! virgool.io:
 ||virgool.io/api2/app/posts/*/ad^
+! Header ads:
+||virgool.io/api2/app/banners^
+virgool.io##body > div:has(> div > a[rel="sponsored"])
+! Popup ads:
+virgool.io###app-portal > div:has(a[rel="sponsored"] > img[alt="Ad"])
+virgool.io##body[style="overflow: hidden;"]:style(overflow: auto !important;)
 
 ! setare.com:
 setare.com##.chavosh-ad-box
@@ -4903,12 +4909,18 @@ digiform.ir##body:style(cursor: revert !important; -webkit-touch-callout: defaul
 ! epoll.pro:
 app.epoll.pro##*:style(cursor: revert !important; -webkit-touch-callout: default !important; -webkit-user-select: text !important; -khtml-user-select: text !important; -moz-user-select: text !important; -ms-user-select: text !important; user-select: text !important; -webkit-tap-highlight-color: revert !important;)
 
+! hamkelasi.ir:
+hamkelasi.ir##+js(nano-sib, countdown)
+
+! androidha.com:
+androidha.com##.arh_banner
+
 
 
 ! Trackers:
 [uBlock Origin]
 ! Title: PersianBlockerTrackers
-! Last modified: Mon, 18 May 2026 22:17:08 +0330
+! Last modified: Thu, 21 May 2026 12:22:27 +0330
 ! Expires: 7 days
 ! Description: Filters to block trackers in Persian websites 
 ! License: https://codeberg.org/KhodeKiaa/PersianBlocker/src/branch/main/LICENSE
@@ -4951,11 +4963,10 @@ app.epoll.pro##*:style(cursor: revert !important; -webkit-touch-callout: default
 ||dgka.me^$removeparam=bCode
 
 ! zoomit.ir, zoomg.ir:
-||sentry.theforge.ir^
+||sentry01.theforge.ir^
 ! zoomit.ir:
 ||analytics.zoomit.ir^
-! zoomit.ir/product/
-zoomit.ir##+js(href-sanitizer, a[variant="contained"][href^="https://api2.zoomit.ir/catalog/store-links/"][href*="/click?url=http"], ?url)
+||analytics.qalam.group^
 ! zoomg.ir:
 ||zoomg.ir/editorial/api/articles/*/visit^
 
@@ -5030,7 +5041,7 @@ search.bertina.ir##+js(href-sanitizer, a[href^="/api/click?dest="], ?dest -base6
 ! Video Censorship:
 [uBlock Origin]
 ! Title: PersianBlockerCensor
-! Last modified: Wed, 29 Apr 2026 20:34:28 +0330
+! Last modified: Thu, 21 May 2026 12:49:14 +0330
 ! Expires: 7 days
 ! Description: Filters to block video censorship in Persian websites 
 ! License: https://codeberg.org/KhodeKiaa/PersianBlocker/src/branch/main/LICENSE
@@ -5073,8 +5084,8 @@ search.bertina.ir##+js(href-sanitizer, a[href^="/api/click?dest="], ?dest -base6
 www.google.com##span[jsaction] > a[href]:where([href*="namava.ir/"], [href*="sansorha.ir/"], [href*="karanmovie.org/"], [href*="vipofilm.com/"], [href*="fastmovie.ir/"], [href*="ir-dl.com/"], [href*="film2serial.ir/"], [href*="nama.tv/"], [href*="emimovie.com/"], [href*="donyamovie.ir/"], [href*="film2irani.ir/"], [href*="film2iranis.ir/"], [href*="netpaak.com/"], [href*="hexdownload.co/"], [href*="hexdl.com/"], [href*="filimserial.ir/"], [href*="naabmovie.ir/"], [href*="upera.tv/"], [href*="upera.shop/"], [href*="uptvs.com/"], [href*="filmr.ir/"], [href*="doostihaa.com/"], [href*="zardfilm.in/"], [href*="cooldl.net/"], [href*="dlrozaneh.ir/"], [href*="gapfilm.ir/"], [href*="hexdl.com/"], [href*="modernfilm.ir/"], [href*="vipofilm.com/"], [href*="upmedia.movie/"], [href*="filimo.com/"]) > h3::after:style(content: ' ✂️ (دارای حذفیات) ✂️ ' !important; color: red !important; font-weight: bold !important;)
 www.google.com##span[jsaction] > a[href]:where([href*="filmazon.my/"], [href*="animegate.ir/"], [href*="animegate.net/"]) > h3::after:style(content: ' 💰 (اشتراکی) 💰 ' !important; color: yellow !important; font-weight: bold !important; text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px  1px 0 black, 1px  1px 0 black;)
 ! Mobile:
-www.google.com##div[data-snc] a[href]:where([href*="namava.ir/"], [href*="sansorha.ir/"], [href*="karanmovie.org/"], [href*="vipofilm.com/"], [href*="fastmovie.ir/"], [href*="ir-dl.com/"], [href*="film2serial.ir/"], [href*="nama.tv/"], [href*="emimovie.com/"], [href*="donyamovie.ir/"], [href*="film2irani.ir/"], [href*="film2iranis.ir/"], [href*="netpaak.com/"], [href*="hexdownload.co/"], [href*="hexdl.com/"], [href*="filimserial.ir/"], [href*="naabmovie.ir/"], [href*="upera.tv/"], [href*="upera.shop/"], [href*="uptvs.com/"], [href*="filmr.ir/"], [href*="doostihaa.com/"], [href*="zardfilm.in/"], [href*="cooldl.net/"], [href*="dlrozaneh.ir/"], [href*="gapfilm.ir/"], [href*="hexdl.com/"], [href*="modernfilm.ir/"], [href*="vipofilm.com/"], [href*="upmedia.movie/"], [href*="filimo.com/"]) div[role="link"] > span[dir]::after:style(content: ' ✂️ (دارای حذفیات) ✂️ ' !important; color: red !important; font-weight: bold !important;)
-www.google.com##div[data-snc] a[href]:where([href*="filmazon.my/"], [href*="animegate.ir/"], [href*="animegate.net/"]) div[role="link"] > span[dir]::after:style(content: ' 💰 (اشتراکی) 💰 ' !important; color: yellow !important; font-weight: bold !important; text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px  1px 0 black, 1px  1px 0 black;)
+www.google.com##div[data-snc] a[href]:where([href*="namava.ir/"], [href*="sansorha.ir/"], [href*="karanmovie.org/"], [href*="vipofilm.com/"], [href*="fastmovie.ir/"], [href*="ir-dl.com/"], [href*="film2serial.ir/"], [href*="nama.tv/"], [href*="emimovie.com/"], [href*="donyamovie.ir/"], [href*="film2irani.ir/"], [href*="film2iranis.ir/"], [href*="netpaak.com/"], [href*="hexdownload.co/"], [href*="hexdl.com/"], [href*="filimserial.ir/"], [href*="naabmovie.ir/"], [href*="upera.tv/"], [href*="upera.shop/"], [href*="uptvs.com/"], [href*="filmr.ir/"], [href*="doostihaa.com/"], [href*="zardfilm.in/"], [href*="cooldl.net/"], [href*="dlrozaneh.ir/"], [href*="gapfilm.ir/"], [href*="hexdl.com/"], [href*="modernfilm.ir/"], [href*="vipofilm.com/"], [href*="upmedia.movie/"], [href*="filimo.com/"]) div[role="link"] > span::after:style(content: ' ✂️ (دارای حذفیات) ✂️ ' !important; color: red !important; font-weight: bold !important;)
+www.google.com##div[data-snc] a[href]:where([href*="filmazon.my/"], [href*="animegate.ir/"], [href*="animegate.net/"]) div[role="link"] > span]::after:style(content: ' 💰 (اشتراکی) 💰 ' !important; color: yellow !important; font-weight: bold !important; text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px  1px 0 black, 1px  1px 0 black;)
 
 ! bing.com:
 www.bing.com##a[href][href*="&mediaurl="][target="_blank"][title][href^="/images/search?view=detail"]:where([href*="namava.ir/"], [href*="sansorha.ir/"], [href*="karanmovie.org/"], [href*="vipofilm.com/"], [href*="fastmovie.ir/"], [href*="ir-dl.com/"], [href*="film2serial.ir/"], [href*="nama.tv/"], [href*="emimovie.com/"], [href*="donyamovie.ir/"], [href*="film2irani.ir/"], [href*="film2iranis.ir/"], [href*="netpaak.com/"], [href*="hexdownload.co/"], [href*="hexdl.com/"], [href*="filimserial.ir/"], [href*="naabmovie.ir/"], [href*="upera.tv/"], [href*="upera.shop/"], [href*="uptvs.com/"], [href*="filmr.ir/"], [href*="doostihaa.com/"], [href*="zardfilm.in/"], [href*="cooldl.net/"], [href*="dlrozaneh.ir/"], [href*="gapfilm.ir/"], [href*="hexdl.com/"], [href*="modernfilm.ir/"], [href*="vipofilm.com/"], [href*="upmedia.movie/"], [href*="filimo.com/"])::before:style(content: ' ✂️ (دارای حذفیات) ✂️ ' !important; color: red !important; font-weight: bold !important; font-size: large !important;)
