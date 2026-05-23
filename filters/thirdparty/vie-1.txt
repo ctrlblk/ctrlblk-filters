@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Version: 20260522132502530
+! Version: 20260523092611693
 ! id: D4028CDD-3D39-4624-ACC7-8140F4EC3888
 ! Title: ABPVN List | Ublock Origin
-! Last modified: 22 May 2026 13:25:02 UTC+7
-! Diff-Path: patches/20260522132502530.patch#abpvn_ublock
+! Last modified: 23 May 2026 09:26:11 UTC+7
+! Diff-Path: patches/20260523092611693.patch#abpvn_ublock
 ! Diff-Expires: 60 minutes
 ! Expires: 1 days (update frequency)
 !
@@ -44,8 +44,8 @@
 /core/*$script,domain=gamek.vn|genk.vn|kenh14.vn|cafef.vn|thanhnien.vn
 /disable-devtool.min.js$script
 /giadinhonline.vn/files/qc/*
-/i.imgur.com/*.gif$domain=keonhacai55.uno|www.aphim5.com|idcubed.org|vebotvx.cc|listnhacai88.com|rakhoiic.cc
-/images/company/21.png$image,domain=vebotvx.cc|idcubed.org
+/i.imgur.com/*.gif$domain=keonhacai55.uno|www.aphim5.com|mainenewsonline.com|vebotvx.cc|listnhacai88.com|rakhoiic.cc
+/images/company/21.png$image,domain=vebotvx.cc|mainenewsonline.com
 /js/ads.js$script,~third-party,domain=~vipurl.in
 /lv/esnk/*$script
 /newchill/*gif$image
@@ -174,7 +174,6 @@
 ||nhipcaudautu.vn/*gafin$script
 ||nhipcaudautu.vn/Media/*.gif
 ||notepad.vn/media/images/like68.jpg
-||onflixstream.site/ads$media,~third-party
 ||pezmoku.com^*.gif$image
 ||phim.vkool8.net/images/ads/$image
 ||phim.vkool8.net/js/pov.js$script,~third-party
@@ -450,7 +449,7 @@ chap.vn##.titleBar + *
 chap.vn##[class1="my_responsive_add"]
 chat.vebotv.me##.chat-header
 chat.vebotv.me##[href="https://8xbe52.com"]
-chatboxn.com,idcubed.org##a[target="_blank"][rel="nofollow"]
+chatboxn.com,mainenewsonline.com##a[target="_blank"][rel="nofollow"]
 checkscam.vn##.qh_qcbp
 chodansinh.net##.link-gold
 chodansinh.net##[id^="banner"]
@@ -585,25 +584,6 @@ home4.mannhan22.pro,gavangtv14.net##.bn-popup-bottom-sdwdwxw
 hsctvn.com##.advertTop
 hsctvn.com##.hsdn>li:has(.adsbygoogle)
 hsctvn.com##.module_plugins
-idcubed.org###match-child-1
-idcubed.org##.block-catfish.text-center.d-lg-none.d-block
-idcubed.org##.container>ul
-idcubed.org##.match-detail__offer
-idcubed.org##.menu-cuoc-8xbet
-idcubed.org##.menu-top
-idcubed.org##.offer
-idcubed.org##.offer__btn
-idcubed.org##.pl-lg-0.col-xl-4
-idcubed.org##.row.d-none
-idcubed.org##.widget-offers__list
-idcubed.org##div.d-lg-none.d-block:nth-of-type(3)
-idcubed.org,rakhoiic.cc##.sk_balloon
-idcubed.org,vebotvx.cc###quangcaopc
-idcubed.org,vebotvx.cc##.company
-idcubed.org,vebotvx.cc##.marquee-container
-idcubed.org,vebotvx.cc##.menu-top-nha-cai
-idcubed.org,vebotvx.cc##div[id^="dnn_"]
-idcubed.org,vebotvx.cc,rakhoiic.cc###wap_bottombanner
 idpvn.com##[id^="idpvn-"]
 ipatool.codevn.net##.ad-left
 ipatool.codevn.net##.ad-right
@@ -639,6 +619,25 @@ loigiaihay.com##div[style="margin: 10px 0 5px 0; min-height: 250px;"]
 luatduonggia.vn##.ads-tags
 luatduonggia.vn##.img_side_bar
 luatduonggia.vn##.poka-image
+mainenewsonline.com###match-child-1
+mainenewsonline.com##.block-catfish.text-center.d-lg-none.d-block
+mainenewsonline.com##.container>ul
+mainenewsonline.com##.match-detail__offer
+mainenewsonline.com##.menu-cuoc-8xbet
+mainenewsonline.com##.menu-top
+mainenewsonline.com##.offer
+mainenewsonline.com##.offer__btn
+mainenewsonline.com##.pl-lg-0.col-xl-4
+mainenewsonline.com##.row.d-none
+mainenewsonline.com##.widget-offers__list
+mainenewsonline.com##div.d-lg-none.d-block:nth-of-type(3)
+mainenewsonline.com,rakhoiic.cc##.sk_balloon
+mainenewsonline.com,vebotvx.cc###quangcaopc
+mainenewsonline.com,vebotvx.cc##.company
+mainenewsonline.com,vebotvx.cc##.marquee-container
+mainenewsonline.com,vebotvx.cc##.menu-top-nha-cai
+mainenewsonline.com,vebotvx.cc##div[id^="dnn_"]
+mainenewsonline.com,vebotvx.cc,rakhoiic.cc###wap_bottombanner
 manhua3q.com##.native-ad-container
 mannhan97.xyz##.bet-btn-8423
 mannhan97.xyz##.btn_betnow_632132
@@ -712,7 +711,7 @@ quechoa9.live##.transition-opacity.hover\:opacity-90.shadow-\[0px_4px_4px_0px_rg
 quechoa9.live##.transition-opacity.hover\:opacity-90.shadow-\[0px_4px_4px_0px_rgba\(0\,0\,0\,0\.25\)\].py-2.px-4.rounded-lg.to-\[\#f8e201\].from-\[\#fee701\].bg-gradient-to-r.gap-2.items-center.flex
 rakhoiic.cc##.bookmaker-selector-container
 rakhoiic.cc##.btn-odds
-rakhoiic.cc,vebotvx.cc,idcubed.org##.btn-8xbet
+rakhoiic.cc,vebotvx.cc,mainenewsonline.com##.btn-8xbet
 reatimes.vn##div[class^="adv-"]
 sachmoi.net##.boxzilla-bottom-right-container
 sachmoi.net##[href^="https://gotrackecom.info"]
@@ -1043,7 +1042,7 @@ docufind.org.uk/wp-content/themes/vlxx/js/*-adx.js$script
 ||clipphimsex3x.net^*.gif$image
 ||cloufdlare.com/ads/vn1.html$subdocument,domain=vl.phe.to
 ||cruncherpatiencestoreroom.com^$popup,domain=cap3.skin|qmh.cx
-||discordapp.$image,domain=phim18vip.top|thefaplive.com
+||discordapp.$image,domain=phim18vip.site|thefaplive.com
 ||gamer18.net^*.gif$image
 ||hellobabygirl.live/*/adx*.js$domain=nung18.net|phimxxx.ac
 ||hentaivn.show/banner_image/$image
@@ -1063,7 +1062,7 @@ docufind.org.uk/wp-content/themes/vlxx/js/*-adx.js$script
 ||qmanga.art/banner_image/$image
 ||qmh.cx/assets/js/simpleblocker.js$script,~third-party
 ||quatvn.my^*.gif$image
-||quoracdn.net^$image,domain=sexmanh.net|phim18vip.top|pheclip.dev|sexmupxinh.net|xemsexhihi.com|phevl.hot|fulllivehot.live|haysexvn.online|chich69.men|viet69hay.site
+||quoracdn.net^$image,domain=sexmanh.net|phim18vip.site|pheclip.dev|sexmupxinh.net|xemsexhihi.com|phevl.hot|fulllivehot.live|haysexvn.online|chich69.men|viet69hay.site
 ||rphang.online^*.gif
 ||sayhentai.sh/assets/js/ads.js
 ||sayhentai.sh/storage/images/banner/$image
@@ -1129,7 +1128,7 @@ javtopxx2.com##.sticky_bottom
 laalmirchitakeaway.co.uk##.banner-preload
 ngaytho.me##.body_wrapper1
 nung18.net##.jw-overlays>img[src]
-pheclip.dev,phim18vip.top##.in.fade.modal-backdrop
+pheclip.dev,phim18vip.site##.in.fade.modal-backdrop
 phim.haysex.asia###mp-preload-popup-overlay
 phim.haysex.asia##.banner-play
 phim18hdxx.com##.cash-fish
@@ -1137,9 +1136,9 @@ phim18hdxx.com##.cash-fish-pc
 phim18hdxx.com##.preload-pc
 phim18hdxx.com##.top-mobile-banner
 phim18hdxx.com##.under-player-pc-banner
-phim18vip.top,pheclip.dev###pc-preload-modal
-phim18vip.top,pheclip.dev##.quang-cao
-phim18vip.top,phevl.hot###popup
+phim18vip.site,pheclip.dev###pc-preload-modal
+phim18vip.site,pheclip.dev##.quang-cao
+phim18vip.site,phevl.hot###popup
 phimxxx.ac###adsbottom
 play.zpic.biz##.btm_bar
 play.zpic.biz##div.ad-container
@@ -1251,7 +1250,6 @@ hh3dhay.life,tram3d.com##+js(acs, document.createElement, ;break;case)
 hh3dhay.life,tram3d.online,animevietsub.site##+js(acs, eval, $._Eu)
 hhtq.digital###overlay
 hhtq.digital,phimchautinhtri.net##html:style(overflow: auto !important)
-idcubed.org##+js(aopr, adsRedirectPopups)
 imail.edu.vn##+js(acs, setTimeout, ad_block)
 imail.edu.vn,www.aphim5.com,trumtruyen.xyz,teamlanhlungday.store,audiotruyenfull.com##+js(acs, setTimeout, Aff)
 ios.codevn.net##+js(acs, jQuery, Popup)
@@ -1265,6 +1263,7 @@ linkneverdie.net,linkneverdie.top,linkneverdie2.com##+js(nostif, callback, 6004)
 lottedira.store,tekora.fun##+js(acs, $, aff)
 lrepacks.net##+js(acs, JSON.parse, break;case $.)
 lxmanga.space##+js(acs, $, PopUnder)
+mainenewsonline.com##+js(aopr, adsRedirectPopups)
 monkeydtruyen.com##.affActive:style(display:block!important)
 monkeydtruyen.com##.affClick
 moontruyen.com,teamlanhlungday.store##+js(acs, $, open)
@@ -1274,7 +1273,7 @@ mv.phimmoiaz.cc,anime14.site,zpic.biz,javgiga.wordpress.com,hoctot.hocmai.vn,blu
 nettruyenar.com,hhvsub1.com##+js(acs, WebAssembly, globalThis)
 nettruyenviet10.com##+js(acs, JSON, fromCharCode)
 ombak700.org##+js(aopr, sp)
-pheclip.dev,phim18vip.top,subnhanh.plus##+js(acs, $, pop)
+pheclip.dev,phim18vip.site,subnhanh.plus##+js(acs, $, pop)
 phimchautinhtri.net##.popmake-overlay
 phimlongtieng.net##+js(acs, document.createElement, script)
 phimtho.cc#%#//scriptlet("abort-current-inline-script", "$", "p0pUpRandom")
