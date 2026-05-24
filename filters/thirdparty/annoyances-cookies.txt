@@ -28367,7 +28367,7 @@ concursolutions.com,forbes.com,formula1.com,fortune.com,proximus.be,proximustv.b
 @@||zensus2022.de/SiteGlobals/Modules/CookieBanner/*/CookieBanner.json?$~third-party,xmlhttprequest
 
 ! Title: uBlock filters – Cookie Notices
-! Last modified: Sat, 23 May 2026 04:50:48 +0000
+! Last modified: Sat, 23 May 2026 07:42:27 +0000
 ! Expires: 7 days
 ! Description: Filters optimized for uBlock Origin, to be used with EasyList's and/or Adguard's "Cookie Notices" list(s)
 ! License: https://github.com/uBlockOrigin/uAssets/blob/master/LICENSE
@@ -28976,6 +28976,8 @@ united-domains.de##div[consent-skip-blocker]:remove()
 !#endif
 ! https://github.com/uBlockOrigin/uAssets/pull/33006
 diamantrad.com,lpi.org##+js(trusted-click-element, button#CookieBoxSaveButton, , 1000)
+! https://github.com/uBlockOrigin/uAssets/pull/33012
+urlando.de##+js(trusted-set-cookie, urlando_consent, '{"analytics":false,"marketing":false,"timestamp":"$currentISODate$"}')
 
 !! Needs additional cookies
 
