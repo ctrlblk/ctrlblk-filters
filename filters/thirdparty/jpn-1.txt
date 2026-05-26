@@ -1,10 +1,10 @@
 ![Adblock Plus 2.0]
-! Checksum: YtYkrr1xzP+QUMtER7VDcQ
-! Diff-Path: ../patches/7/7-s-1779550365-3600.patch
+! Checksum: gSagtO1du8IfrsD7x/XaYw
+! Diff-Path: ../patches/7/7-s-1779730838-3600.patch
 ! Title: AdGuard Japanese filter
 ! Description: Filter that enables ad blocking on websites in Japanese language.
-! Version: 2.0.74.3
-! TimeUpdated: 2026-05-23T15:29:15+00:00
+! Version: 2.0.74.6
+! TimeUpdated: 2026-05-25T17:37:03+00:00
 ! Expires: 5 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -455,6 +455,8 @@
 !
 !
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/231290
+pc.moppy.jp##+js(prevent-fetch, pagead2.googlesyndication.com)
 ! https://github.com/AdguardTeam/AdguardFilters/issues/231187
 ||si-coding.net/block_ctn.php
 si-coding.net##+js(no-setTimeout-if, aswift_)
@@ -1895,7 +1897,6 @@ crank-in.net##div[id^="slide_ad_"]
 crank-in.net##.banner-item
 ||keinet.ne.jp/common/images/ad/
 blog.domesoccer.jp##div.side-box:has(> div[id^="div-gpt-ad-"])
-blog.domesoccer.jp##.iminterstitial
 contents.jobcatalog.yahoo.co.jp##div[class^="_questionId__p-contents__"]:has(> div.listJobQaBlocks)
 syougeki-utikiri.com##.review-slide
 syougeki-utikiri.com###block-16
@@ -9574,7 +9575,7 @@ recordchina.co.jp##.ad-outer
 recordchina.co.jp##.right-ranking
 kobe-np.co.jp##.bottomPrArea
 kobe-np.co.jp##li.active.native
-wikiwiki.jp,saitama-city-marathon.jp##.iminterstitial
+buzzap.jp,blog.domesoccer.jp,wikiwiki.jp,saitama-city-marathon.jp##.iminterstitial
 wikiwiki.jp###pc-bottom-grandparent-ad-wrapper
 wikiwiki.jp###pc-caption-ad-container
 wikiwiki.jp##.fluct-overlay-container
@@ -12045,6 +12046,8 @@ adguard.info,adguard.com,adguard.app##.hello_from_adguard_japanese
 !
 !
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/231290
+pc.moppy.jp#@#img[width="468"][height="60"]
 ! https://github.com/AdguardTeam/AdguardFilters/issues/231168
 @@||faq-widget.nakanohito.jp/faqwidget.js$domain=keio-passport.co.jp
 @@||support-beacon.nakanohito.jp/widget/faqview$domain=keio-passport.co.jp
