@@ -1,10 +1,10 @@
 ![Adblock Plus 2.0]
-! Checksum: 7sncAjObCm08eCz/3u3npw
-! Diff-Path: ../patches/13/13-s-1779860289-3600.patch
+! Checksum: yA6OsNC39vszHDbuu0fluw
+! Diff-Path: ../patches/13/13-s-1779938469-3600.patch
 ! Title: AdGuard Turkish filter
 ! Description: Filter list that specifically removes ads on websites in Turkish language.
-! Version: 2.0.64.57
-! TimeUpdated: 2026-05-27T05:34:54+00:00
+! Version: 2.0.64.60
+! TimeUpdated: 2026-05-28T03:17:30+00:00
 ! Expires: 5 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -949,7 +949,7 @@ erotikgo.org,tekparthdfilmizle.*,anizle.*,anizm.*,puffytr.com,filmcuss.cc,canlim
 ! initAd
 hdizleplus.com,kaliteizle.com,720pizleme.cc,fullfilmizlebaba.com,superfilmgeldi.biz,vkfilmizlet.*,supernaturalizle.com,sinemakolik.net,diziyo.*,bettercallsaulizle.com,superfilmgeldi.net,fullhdfilmizlett1.com,fullhdfilmizleabi.com,hdfreeizle.com,hdmixfilim.com,fullhdfilmizlepala.com##+js(abort-on-property-read, initAd)
 !
-720pfilmizleme1.com,720pfilmizletir.com,1080pfilmizletir.com,720pfilmizlesene.com,filmmakinesi1.*,filmizlemax.*,videoseyred.in,hdfilmcehennem.live##+js(addEventListener-defuser, click, checkTarget)
+cehennemizle.cc,720pfilmizleme1.com,720pfilmizletir.com,1080pfilmizletir.com,720pfilmizlesene.com,filmmakinesi1.*,filmizlemax.*,videoseyred.in,hdfilmcehennem.live##+js(addEventListener-defuser, click, checkTarget)
 diziwatch.*,hdfilmizlesen.com,filmizlehdizle.com,yabancidiziizlesene.*,1080hdfilmizle.com##+js(abort-on-property-read, initPop)
 shirl.club,altporno.xyz##+js(abort-on-property-read, oV1)
 ! END: Clickunders
@@ -1527,7 +1527,7 @@ gelirkapisi.com##div[id^="ad_"]
 indirin.co,maksatbilgi.com,bedavainternet.com.tr,turkedebiyati.org,frpnet.net,teknobh.com,begonya.com,egehaber.com,voleybolmagazin.com,kadinvekadin.net,savunmasanayist.com,aof.tc,m5dergi.com,sosyola.com,havadiskibris.com,unirehberi.com##.stream-item
 ! ##body .code-block
 techolay.net,havadiskibris.com,oyunindir.club,armoniscans.com,teknobh.com,yoldaolmak.com,aof.tc,sorumatik.co,andronova.net,koinfinans.com,hwp.com.tr,konupara.com,lafmacun.net,oyundunyasi.net,bilgenc.com,teknodiot.com,ruyashoujo.com,pchocasi.com.tr,dusuncekatalogu.com##body .code-block
-cdnvexo.site,bingozade.com,ifsaciturksex99.site,99turkifsaizle.site,trkifsalariz.site,escobarvip.blog,dizipal.website,videojs.online,epikplayer.xyz,animeler.me,player.filmizle.in,tranimaci.com,izlekolik.org,4kfilmizlesene.*##+js(no-window-open-if)
+cehennemizle.cc,cdnvexo.site,bingozade.com,ifsaciturksex99.site,99turkifsaizle.site,trkifsalariz.site,escobarvip.blog,dizipal.website,videojs.online,epikplayer.xyz,animeler.me,player.filmizle.in,tranimaci.com,izlekolik.org,4kfilmizlesene.*##+js(no-window-open-if)
 !
 !
 ! For URL shorteners or simple sites with frequently changed ad servers.
@@ -6581,9 +6581,9 @@ hdselcuksports368.top##+js(no-window-open-if)
 ! aglint-enable no-invalid-modifiers
 /belestepe\d+\.sbs/##div[data-isbd-main-container] > section > div.hidden-xs.text-center
 /belestepe\d+\.sbs/##+js(set-constant, config.advertisement.enabled, false)
-belestepe826.sbs##div[data-isbd-main-container] > section > div.hidden-xs.text-center
-belestepe826.sbs##+js(set-constant, config.advertisement.enabled, false)
-||video.twimg.com/amplify_video/*/vid/*.mp4$domain=belestepe826.sbs
+belestepe836.sbs##div[data-isbd-main-container] > section > div.hidden-xs.text-center
+belestepe836.sbs##+js(set-constant, config.advertisement.enabled, false)
+||video.twimg.com/amplify_video/*/vid/*.mp4$domain=belestepe836.sbs
 !
 ! Frequently changed domains: izlemac*.sbs
 ! Random numbers
@@ -7036,10 +7036,10 @@ hdfilmcehennemi27.org##body:style(background-image: none !important; cursor: aut
 ! Source: https://inattvgiris.one/ => https://inattv1298.xyz/
 /inattv\d+\.xyz/##.ads-container
 /inattv\d+\.xyz/##div[style="position:fixed; bottom:0px; left:0; width:100%; text-align:center; z-index:999999;"]
-inattv1308.xyz##.pageskin-wrapper > a[target="_blank"]
-||blogger.googleusercontent.com/img/$domain=inattv1308.xyz
-inattv1308.xyz##.ads-container
-inattv1308.xyz##div[style="position:fixed; bottom:0px; left:0; width:100%; text-align:center; z-index:999999;"]
+inattv1309.xyz##.pageskin-wrapper > a[target="_blank"]
+||blogger.googleusercontent.com/img/$domain=inattv1309.xyz
+inattv1309.xyz##.ads-container
+inattv1309.xyz##div[style="position:fixed; bottom:0px; left:0; width:100%; text-align:center; z-index:999999;"]
 ! aglint-disable no-invalid-modifiers
 !+ NOT_VALIDATE
 ||blogger.googleusercontent.com/img/$domain=/inattv\d+\.xyz/
@@ -7112,15 +7112,15 @@ inattvizle302.top,inattvizle303.top,inattvizle304.top,inattvizle305.top,inattviz
 ! Source: https://bit.ly/m/papazsports => https://bit.ly/3QeeImt?r=lp&m=MnahlkNsk1J / http://www.papazsports922.pro/
 /papazsports\d+\.pro/##.dbad
 /papazsports\d+\.pro/##.under-vid-banner
-papazsports1020.pro,www.papazsports1014.pro##.dbad
-papazsports1020.pro,www.papazsports1014.pro##.under-vid-banner
+papazsports1020.pro,www.papazsports1014.pro,papazsports1009.pro,papazsports1010.pro,papazsports1011.pro,papazsports1012.pro,papazsports1013.pro,papazsports1015.pro,papazsports1016.pro,papazsports1017.pro,papazsports1018.pro,papazsports1019.pro##.dbad
+papazsports1020.pro,www.papazsports1014.pro,papazsports1009.pro,papazsports1010.pro,papazsports1011.pro,papazsports1012.pro,papazsports1013.pro,papazsports1015.pro,papazsports1016.pro,papazsports1017.pro,papazsports1018.pro,papazsports1019.pro##.under-vid-banner
 /papazsports\d+\.pro/##+js(set-constant, puShown, true)
 /papazsports\d+\.pro/##.header-banner
 ||papazsports*.pro/video_reklam.html
 ! papazsports*.pro
-papazsports1020.pro,www.papazsports1014.pro##+js(adjust-setInterval, reklam_, *, 0.001)
-papazsports1020.pro,www.papazsports1014.pro##+js(set-constant, puShown, true)
-papazsports1020.pro,www.papazsports1014.pro##.header-banner
+papazsports1020.pro,www.papazsports1014.pro,papazsports1009.pro,papazsports1010.pro,papazsports1011.pro,papazsports1012.pro,papazsports1013.pro,papazsports1015.pro,papazsports1016.pro,papazsports1017.pro,papazsports1018.pro,papazsports1019.pro##+js(adjust-setInterval, reklam_, *, 0.001)
+papazsports1020.pro,www.papazsports1014.pro,papazsports1009.pro,papazsports1010.pro,papazsports1011.pro,papazsports1012.pro,papazsports1013.pro,papazsports1015.pro,papazsports1016.pro,papazsports1017.pro,papazsports1018.pro,papazsports1019.pro##+js(set-constant, puShown, true)
+papazsports1020.pro,www.papazsports1014.pro,papazsports1009.pro,papazsports1010.pro,papazsports1011.pro,papazsports1012.pro,papazsports1013.pro,papazsports1015.pro,papazsports1016.pro,papazsports1017.pro,papazsports1018.pro,papazsports1019.pro##.header-banner
 !
 ! START: Yandex
 !
