@@ -26911,7 +26911,6 @@ adblock.turtlecute.org###ad_ctd
 seolik.ru###alert_top_site
 tvvse.my1.ru###cont-i > span[style*="color:red"]
 fast-fiml.ru,fast-torrent.club,fast-torrent.ru,fast-torrent.su,filmpotok.ru,kinomuch.ru,nebeda.net,pickfilm.ru,veleto.ru,vixim.ru###container > center:nth-child(-n+3)
-fm-app.ru,tvapp.su,yootv.ru###content > div[style*="fixed"]
 satdx.club###darkenwrapper
 3dtuning.com###detected
 vuzopedia.ru###fab
@@ -27056,6 +27055,7 @@ forums.overclockers.ru##tr > td[nowrap="nowrap"][style^="color: red;"][style$="f
 ||under-prog.ru/wp-content/plugins/eazy-ad-unblocker/
 ||webwintop.ru/wp-content/plugins/$script
 ||yagramotniy.ru/templates/edv/js/_extra/
+||yootv.online/assets/js/player/counter.js
 !
 ! - Против "бесконечной загрузки страниц" -------------------------------------
 !#infiload.bookmark
@@ -28640,9 +28640,10 @@ dzen.ru##div[class*="__bannerContainer"]
 dzen.ru##div[class*="dzen-"][class*="-banner-"]
 dzen.ru##div[class*="dzen-desktop--"][class*="__ad-"]
 dzen.ru##div[class*="dzen-desktop--top-sidebar-desktop-ad__root"]
-dzen.ru##div[class^="dzen-desktop--"]:first-child > div[class^="dzen-desktop--"]:first-child > div[class^="dzen-desktop--"]:first-child + div[class^="dzen-"] > div:empty + div div:style(background-color: transparent !important)
-dzen.ru##div[class^="dzen-desktop--"]:first-child > div[class^="dzen-desktop--"]:first-child > div[class^="dzen-desktop--"]:first-child + div[class^="dzen-"] > div:empty:style(background-color: transparent !important)
-dzen.ru##div[class^="dzen-desktop--"]:first-child > div[class^="dzen-desktop--"]:first-child > div[class^="dzen-desktop--"]:first-child + div[class^="dzen-"]:style(border: inherit !important)
+dzen.ru##div[class^="dzen-desktop--"]:first-child:only-child > div[class^="dzen-desktop--"]:first-child > div[class^="dzen-desktop--"]:first-child + div[class^="dzen-"]:last-child > div > div:empty + div div:style(background-color: inherit !important)
+dzen.ru##div[class^="dzen-desktop--"]:first-child:only-child > div[class^="dzen-desktop--"]:first-child > div[class^="dzen-desktop--"]:first-child + div[class^="dzen-"]:last-child > div > div:empty:style(background-color: inherit !important)
+dzen.ru##div[class^="dzen-desktop--"]:first-child:only-child > div[class^="dzen-desktop--"]:first-child > div[class^="dzen-desktop--"]:first-child + div[class^="dzen-"]:last-child > div:style(border: inherit !important)
+dzen.ru##div[class^="dzen-desktop--"]:first-child:only-child > div[class^="dzen-desktop--"]:first-child > div[class^="dzen-desktop--"]:first-child + div[class^="dzen-"]:last-child:style(background: inherit !important)
 dzen.ru##div[class^="dzen-desktop--content-app__content-"] > div > div:first-child > div:first-child + div:style(opacity: 0 !important; pointer-events: none !important)
 dzen.ru##div[id*="splashscreen"]
 dzen.ru##div[style*="important"] div[class*="__main"]
@@ -29059,7 +29060,7 @@ friends.in.ua,gidonline.eu##+js(abort-on-property-read, atob)
 terrikon.com##+js(abort-on-property-read, bdy)
 medicina.ua##+js(abort-on-property-read, blocked_action)
 zaruba.fun##+js(abort-on-property-read, clickNS4)
-fm-app.ru,ritsatv.ru,tvapp.su,yootv.ru##+js(abort-on-property-read, console.clear)
+ritsatv.ru##+js(abort-on-property-read, console.clear)
 kolizhanka.com.ua##+js(abort-on-property-read, disable_copy)
 kolizhanka.com.ua##+js(abort-on-property-read, disable_hot_keys)
 friends.in.ua,gra-prestoliv.in.ua,simpsonsua.tv##+js(abort-on-property-read, document.addEventListener)
@@ -29134,7 +29135,6 @@ forums.rusmedserv.com##+js(abort-on-stack-trace, fetch, eval)
 drive2.ru,shedevrum.ai##+js(addEventListener-defuser, /beforeunload|pagehide/, 0x)
 biqle.org,biqle.ru##+js(addEventListener-defuser, /click|mousedown/, popunder)
 lrepacks.net##+js(addEventListener-defuser, /click|mousedown/, setClickedUrl)
-fm-app.ru,tvapp.su,yootv.ru##+js(addEventListener-defuser, /mouse/, cursorVisible)
 ~id.rambler.ru,rambler.ru,~vp.rambler.ru##+js(addEventListener-defuser, DOMContentLoaded, .j-mini-player__video)
 sibnet.ru##+js(addEventListener-defuser, DOMContentLoaded, /EventTracker|utm_campaign/)
 buhplatforma.com.ua,dzplatforma.com.ua,medplatforma.com.ua,oblikbudget.com.ua,oplatforma.com.ua,pro-op.com.ua,prokadry.com.ua##+js(addEventListener-defuser, DOMContentLoaded, StrategyHandler)
@@ -29300,7 +29300,6 @@ online-fix.me##+js(remove-node-text, #text, РЕКЛАМНЫЙ БЛОК:)
 farposst.ru##+js(remove-node-text, #text, Реклама)
 filmitorrent.net,utorr.cc##+js(remove-node-text, #text, Реклама:)
 ya.ru##+js(remove-node-text, a, /Установите Яндекс Браузер|Установить поиск Яндекса/)
-ya.ru##+js(remove-node-text, div, 'ad-mark__b-unit')
 nullcms.ru##+js(remove-node-text, script, 'decodeURIComponent(escape')
 game4you.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##+js(remove-node-text, script, /A.d.b.|Adb-|A-d-b-|-Gua|dGua|dblo|tick|Адгу-/)
 fastpic.org,~new.fastpic.org##+js(remove-node-text, script, /ABN|adsterra|adManager|atOptions|generateContent|Math.rnd|parseInt|window.open/)
@@ -29561,6 +29560,7 @@ dzen.ru##div:matches-attr(/[a-z0-9]/=/_ad-yp/)
 dzen.ru##div:matches-attr(/data-[a-z0-9]/=/-ad$/)
 dzen.ru##div:matches-attr(/data-is-/="false")
 dzen.ru##div:matches-path(/news/search?query=) [aria-label="Страница с новостями"] > div:only-child > div > div:first-child:not([style]):not([aria-label])
+dzen.ru##div:not([class^="dzen-desktop--trends-"]):matches-css(height: 212px):style(opacity: 0 !important)
 dzen.ru##div[class^="news-"]:matches-attr(/./=/-stub/)
 ozon.ru##div[data-widget="banner"]:matches-path(/my/reviews/promo):style(display: block !important)
 pronpic.org##div[style="color:red;font-size:25px;"], .adblock_loock
