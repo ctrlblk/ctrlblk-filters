@@ -2536,7 +2536,6 @@
 ||guktuti.ru^$third-party
 ||gumyfui.com^$third-party
 ||gus.host/coins.js
-||gusfioner.live^$third-party
 ||gvahh.top^$third-party
 ||gvfror.com^$third-party
 ||gwxpv.com^$third-party
@@ -11565,6 +11564,7 @@ igdz1.ru^$script,domain=igdz.ru
 ||dw-informer-w.newsru.com/
 ||dwg.ru/imgnew/
 ||dwg.ru/imnew/
+||dynamo.kiev.ua/media/bimg/
 ||dynamomania.com/assets/68b1e3a7/jquery.js
 ||dyncdn.me/static/*/js/expla*.js|$script
 ||dyvys.info/wp-content/plugins/random-banner/
@@ -12638,10 +12638,10 @@ igdz1.ru^$script,domain=igdz.ru
 ||ontivi.net/*.js?0.$script
 ||onyxgame.com/img/bnr
 ||open.ua/uploads/ckeditor/images/*baner
+||opennet.*/cgi-bin/opennet/hints.cgi
 ||opennet.*/img/bsh_
 ||opennet.ru/adv_
 ||opennet.ru/img/ihor_
-||opennet.ru^*/hints.cgi?
 ||opensharing.org/vizitpartner/
 ||openssource.biz/st/pic/$image
 ||openssource.biz/st/ps/
@@ -13973,7 +13973,6 @@ playvega.com###bannerHolder
 smotrisport.tv###bannerXbet
 talks.by###banner_750
 oneprogs.ru###banner_big
-radiokot.ru###banner_code
 securitylab.ru###banner_content_mobile_content
 sfw.so###banner_left_arsenal
 winitpro.ru###banner_registrator
@@ -14478,6 +14477,7 @@ bankchart.com.ua###modal-cpa
 mozilla-russia.org###modex
 animevost.one,animevost.org,animevost.top,vost.pw###moduleLeft[style="border:0;"]
 ekaraganda.kz###moneyblock
+tsargrad.tv###moreContentnews > div.news-item_article
 brclip.com,clip-share.net,flash-player.net,frvid.com,kzclip.com,ru-clip.com,thclips.com,uaclips.com,vnclip.net###morev
 chinaspb350.ru###mouselayer
 westernfilm.ru###movie-right noindex > center
@@ -14572,7 +14572,6 @@ rgfootball.net###page_header > center
 rgfootball.net###page_header > hr
 vk.com,vk.ru#?##page_wall_posts > div[id^="post-"]:-abp-has(.wall_marked_as_ads)
 vk.com,vk.ru#?##page_wall_posts > div[id^="post-"]:-abp-has(> ._post_content > .PostHeader > .PostHeaderInfo > .PostHeaderSubtitle > .PostHeaderSubtitle__item:-abp-contains(/Community ad|Реклама |Рэклама | жарнама/))
-radiokot.ru#?##pagecontent > .tablebg:-abp-has(.postauthor:-abp-contains(Реклама))
 rf-cheats.ru###pagenav_menu + center ~ center
 talkers.ru###pagenav_menu ~ center
 promebelclub.ru,xn----btbdkbsogebtjq6bm4g5b.xn--p1ai###pagenav_menu ~ div[style*="height:"]
@@ -17777,6 +17776,7 @@ itc.ua#?#.post-txt > p:-abp-has(.highlight > a[href*="utm_"])
 apparat.cc##.postBanner
 rutr.life,rutracker.lib,rutracker.net,rutracker.org##.postLink[href*="://sbermegamarket.ru/"]
 rutr.life,rutracker.lib,rutracker.net,rutracker.org##.postLink[href*="citilink.ru/"]
+radiokot.ru##.post[id] ~ .post:not([id])
 repost.uz##.post__banner
 apnews.com.ua##.post__bottom-banner
 dermatitanet.ru##.post__entry > div[style^="background"]
@@ -18668,6 +18668,8 @@ habr.com##.tm-article-presenter__banner
 habr.com##.tm-company-card__branding
 newformat.info##.tm-content ~ .tm-main-bottom .widget_custom_html:not([style])
 habr.com##.tm-layout-sidebar__banner
+habr.com##.tm-layout__wrapper > .container-wrapper[style]
+habr.com##.tm-page__wrapper > .content-blur:empty
 itcrowd.top##.tm-top
 tmbw.ru##.tmbwrekbelow
 kinovdom.tv##.tn-player-tsr
@@ -19538,8 +19540,8 @@ apteki.su##[poster^="http://static.apteki.su/img/banners/"]
 rozetka.com.ua#?#[rzadvertisingview]:-abp-has(> div > span > rz-advertising-info-btn)
 rozetka.com.ua#?#[rzscrollersliderbar] > div > .slide:-abp-has(> rz-product-tile [aria-label*=" про рекламу"])
 ficbook.net##[src*=".net/banners/"]
-radiokot.ru##[src*="//radiokot.ru/adv/"]
 itweek.ru##[src*="/ad/banners/"]
+radiokot.ru##[src*="/adv/"]
 fixygen.ua##[src*="/assets/banner_"]
 ozersk74.ru##[src*="/banner"]
 vprognoze.ru##[src*="/banners/"]
@@ -20622,6 +20624,7 @@ ukr.bio##body > div[id^="brands"]
 virusinfo.info##body > div[id^="headbr"]
 pornolomka.com.ru##body > div[id^="pw"]
 emuzic.ru##body > div[onclick^="window.open"]
+opennet.me,opennet.ru##body > div[style$="width:100%; height: 62px;"]
 thailandproperty.tv##body > div[style*="1240px"]
 forum.raskraska.com##body > div[style*="2000"]
 raes.tech,sbfull.com,wigistream.to##body > div[style*="2147483647"]
@@ -21742,7 +21745,6 @@ mozaika.biz#?#div[style]:-abp-has(> a[href]:not([href^="/"]):not([href^="https:/
 kirov-portal.ru#?#div[style]:-abp-has(> ntvk)
 small-games.info#?#div[style]:-abp-has(> p > [href="#hideRekCaption"])
 buhoblik.org.ua##div[style][onclick*="/rizni/"]
-opennet.me,opennet.ru##div[style^="background-color: #E9EAD7; width:100%; height:"]
 all-sci.net,bib.social,economics.studio,economuch.com,finbook.news,lawbook.online,lawbooks.news,lib.sale,medinfo.live,myzooplanet.ru,pravo.studio,provse.news,psihologia.biz,sci-lib.biz,sci.house,scicenter.online,textbooks.studio,uchebnikfree.com,xn--80aaivjfyj3e.com##div[style^="background-color: rgb(204, 0, 0)"]
 risovach.ru##div[style^="background: url"]
 xn--c1ajfnfb.xn--p1acf##div[style^="background:"][style*="/ple.jpg)"]
@@ -22697,7 +22699,7 @@ ru###ads-top.ads
 ||proxyshare.com^$third-party,popup
 !
 ! Avito
-www.avito.ru##[data-chunks="item"] + div > div:first-child > div:first-child + div > div:first-child + div + div:last-child > div:only-child > div:first-child + div:last-child > div:only-child > div:first-child + div:last-child
+www.avito.ru##[data-chunks="item"] + div > div:first-child > div:first-child > div[class] > div:first-child + div > div:first-child + div + div:last-child > div:only-child > div:first-child + div:last-child > div:only-child > div:first-child + div:last-child
 www.avito.ru##div[class*="avito-ads-container"]
 www.avito.ru##div[class*="index-advRootWidget"]
 www.avito.ru##div[class*="styles-module-root_animation-"]:empty
@@ -24497,8 +24499,10 @@ zarulem.ws##td[style^="text-align:center;width:50%"]
 ||casino-kaza.com^$third-party
 ||casino-piramida.com/partner/banners/
 ||cbn.ru^
+||cdn.eicom.ru/media/uploads/adv/$third-party
 ||cdn.leon.ru/*/*banners/$third-party,image
 ||cdn.sportlabs.online/libs/e.js$third-party
+||cdn.tmelectronics.ru/img/$third-party
 ||cdn.wpshop.ru^$third-party
 ||cenovik.net^
 ||centrpush.com^$third-party
@@ -29660,7 +29664,6 @@ light.mail.ru##+js(href-sanitizer, [href^="https://click.mail.ru/redir?u="], ?u)
 my.mail.ru##+js(href-sanitizer, [href^="https://clicker.mail.ru/redir?u="], ?u)
 ok.ru,touch.mail.ru##+js(json-prune, result.body.direct)
 ~3igames.mail.ru,~account.mail.ru,~auto.mail.ru,~biz.mail.ru,~blog.mail.ru,~bonus.mail.ru,~calendar.mail.ru,~calls.mail.ru,~cloud.mail.ru,~connect.mail.ru,~deti.mail.ru,~dobro.mail.ru,~e.mail.ru,~finance.mail.ru,~gibdd.mail.ru,~health.mail.ru,~help.mail.ru,~hi-tech.mail.ru,~horo.mail.ru,~kino.mail.ru,~lady.mail.ru,~love.mail.ru,mail.ru,~mcs.mail.ru,~minigames.mail.ru,~my.mail.ru,~news.mail.ru,~o2.mail.ru,~octavius.mail.ru,~okminigames.mail.ru,~otvet.mail.ru,~pets.mail.ru,~player-smotri.mail.ru,~pogoda.mail.ru,~top.mail.ru,~touch.mail.ru,~tv.mail.ru,~vfokuse.mail.ru,~widgets.mail.ru##+js(no-fetch-if, /\/apic\//)
-pogoda.mail.ru##+js(prevent-setTimeout, 'return t', 100)
 ~3igames.mail.ru,~account.mail.ru,~auto.mail.ru,~biz.mail.ru,~blog.mail.ru,~bonus.mail.ru,~calendar.mail.ru,~calls.mail.ru,~cloud.mail.ru,~connect.mail.ru,~deti.mail.ru,~dobro.mail.ru,~e.mail.ru,~finance.mail.ru,~gibdd.mail.ru,~health.mail.ru,~help.mail.ru,~hi-tech.mail.ru,~horo.mail.ru,~kino.mail.ru,~lady.mail.ru,~love.mail.ru,mail.ru,~mcs.mail.ru,~minigames.mail.ru,~my.mail.ru,~news.mail.ru,~o2.mail.ru,~octavius.mail.ru,~okminigames.mail.ru,~otvet.mail.ru,~pets.mail.ru,~player-smotri.mail.ru,~pogoda.mail.ru,~top.mail.ru,~touch.mail.ru,~tv.mail.ru,~vfokuse.mail.ru,~widgets.mail.ru##+js(prevent-xhr, &pgid=)
 ~3igames.mail.ru,~account.mail.ru,~auto.mail.ru,~biz.mail.ru,~blog.mail.ru,~bonus.mail.ru,~calendar.mail.ru,~calls.mail.ru,~cloud.mail.ru,~connect.mail.ru,~deti.mail.ru,~dobro.mail.ru,~e.mail.ru,~finance.mail.ru,~gibdd.mail.ru,~health.mail.ru,~help.mail.ru,~hi-tech.mail.ru,~horo.mail.ru,~kino.mail.ru,~lady.mail.ru,~love.mail.ru,mail.ru,~mcs.mail.ru,~minigames.mail.ru,~my.mail.ru,~news.mail.ru,~o2.mail.ru,~octavius.mail.ru,~okminigames.mail.ru,~otvet.mail.ru,~pets.mail.ru,~player-smotri.mail.ru,~pogoda.mail.ru,~top.mail.ru,~touch.mail.ru,~tv.mail.ru,~vfokuse.mail.ru,~widgets.mail.ru##+js(remove-node-text, script, violatedDirective)
 okminigames.mail.ru##+js(set-constant, NO_ADV, 1)
@@ -29790,8 +29793,9 @@ vkvideo.ru/video_ext.php##+js(set-constant, Object.prototype.autoplay, undefined
 ||vk.com/video_ext.php?$third-party,subdocument,removeparam=autoplay,domain=~mediahope.ru
 ||vk.ru/video_ext.php?$third-party,subdocument,removeparam=autoplay
 ||vkvideo.ru/video_ext.php?$third-party,subdocument,removeparam=autoplay
-! Телеканал Царьград
-||vk.com/video_ext.php?oid=-75679763&id=$csp=connect-src 'self' *.okcdn.ru
+! ---
+tsargrad.tv##.video-aside
+tsargrad.tv##.video-aside:remove()
 !
 ! Zmctrack
 24boxing.com.ua,avtovod.com.ua,bigmir.net,bilshe.com,buhgalter.com.ua,buhgalter911.com,businessua.com,censor.net,dengi.ua,ditey.com,epravda.com.ua,f1analytic.com,facenews.ua,factor.ua,football-ukraine.com,football24.ua,footballgazeta.com,footballtransfer.com.ua,gazeta.ua,glianec.com,gorod.dp.ua,hvylya.net,i.ua,inforesist.org,isport.ua,ivona.ua,kolobok.ua,kriminal.tv,liga.net,meteo.ua,meteofor.com.ua,nnovosti.info,nv.ua,panno4ka.net,pogodaua.com,pravda.com.ua,real-vin.com,sportanalytic.com,stravy.net,tochka.net,tv.ua,viva.ua,vsetv.com,www.ukr.net,zdorovia.com.ua##+js(remove-node-text, script, "Shadow)
