@@ -1,10 +1,10 @@
 ![Adblock Plus 2.0]
-! Checksum: qHnsIYTiAyr4/7B5Yiacmw
-! Diff-Path: ../patches/13/13-s-1780173015-3600.patch
+! Checksum: +osWM+rJkWyDNsg6dGMfoQ
+! Diff-Path: ../patches/13/13-s-1780300821-3600.patch
 ! Title: AdGuard Turkish filter
 ! Description: Filter list that specifically removes ads on websites in Turkish language.
-! Version: 2.0.64.66
-! TimeUpdated: 2026-05-30T20:27:11+00:00
+! Version: 2.0.64.69
+! TimeUpdated: 2026-06-01T07:57:01+00:00
 ! Expires: 5 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -6586,9 +6586,9 @@ hdselcuksports368.top##+js(no-window-open-if)
 ! aglint-enable no-invalid-modifiers
 /belestepe\d+\.sbs/##div[data-isbd-main-container] > section > div.hidden-xs.text-center
 /belestepe\d+\.sbs/##+js(set-constant, config.advertisement.enabled, false)
-belestepe856.sbs##div[data-isbd-main-container] > section > div.hidden-xs.text-center
-belestepe856.sbs##+js(set-constant, config.advertisement.enabled, false)
-||video.twimg.com/amplify_video/*/vid/*.mp4$domain=belestepe856.sbs
+belestepe866.sbs##div[data-isbd-main-container] > section > div.hidden-xs.text-center
+belestepe866.sbs##+js(set-constant, config.advertisement.enabled, false)
+||video.twimg.com/amplify_video/*/vid/*.mp4$domain=belestepe866.sbs
 !
 ! Frequently changed domains: izlemac*.sbs
 ! Random numbers
@@ -6870,14 +6870,14 @@ x.ag2m2.cfd###oframeplayerjs > pjsdiv[style^="position:"]:has(> pjsdiv > pjsdiv 
 ||dizipal*.com/wp-content/uploads/*.gif
 /dplayer\d+.site/##pjsdiv[id*="betzulabanner"]
 /^dizipal\d+\.com/##.alert
-/^dizipal\d+\.com/##body > a[class^="pageskin-"]
+/^dizipal\d+\.com/##body a[class^="pageskin-"]
 /^dizipal\d+\.com/##a[target="_blank"][rel="nofollow"]
 /^dizipal\d+\.com/##.video-wrapper > a[href][target="_blank"]
 ! aglint-disable no-invalid-modifiers
 !+ NOT_VALIDATE
 ||blogger.googleusercontent.com/img/$domain=/^dizipal\d+\.com$/
 ! aglint-enable no-invalid-modifiers
-dizipal2071.com,dizipal2072.com,dizipal2073.com,dizipal2074.com,dizipal2075.com,dizipal2076.com,dizipal2077.com,dizipal2078.com,dizipal2079.com,dizipal2080.com,dizipal2081.com,dizipal2082.com,dizipal2083.com,dizipal2084.com,dizipal2085.com,dizipal2086.com,dizipal2087.com,dizipal2088.com,dizipal2089.com,dizipal2090.com,dizipal2091.com,dizipal2092.com,dizipal2093.com,dizipal2094.com,dizipal2095.com,dizipal2096.com,dizipal2097.com,dizipal2098.com,dizipal2099.com,dizipal2100.com,dizipal2101.com,dizipal2102.com,dizipal2103.com,dizipal2104.com,dizipal2105.com,dizipal2106.com,dizipal2107.com,dizipal2108.com,dizipal2109.com,dizipal2110.com,dizipal2111.com,dizipal2112.com,dizipal2113.com,dizipal2114.com,dizipal2115.com,dizipal2116.com,dizipal2117.com,dizipal2118.com,dizipal2119.com,dizipal2120.com,dizipal2121.com,dizipal2122.com,dizipal2123.com,dizipal2124.com,dizipal2125.com,dizipal2126.com,dizipal2127.com,dizipal2128.com,dizipal2129.com,dizipal2130.com,dizipal2131.com,dizipal2132.com,dizipal2133.com,dizipal2134.com,dizipal2135.com,dizipal2136.com,dizipal2137.com,dizipal2138.com,dizipal2139.com,dizipal2140.com,dizipal2141.com,dizipal2142.com##body > a[class^="pageskin-"]
+dizipal2071.com,dizipal2072.com,dizipal2073.com,dizipal2074.com,dizipal2075.com,dizipal2076.com,dizipal2077.com,dizipal2078.com,dizipal2079.com,dizipal2080.com,dizipal2081.com,dizipal2082.com,dizipal2083.com,dizipal2084.com,dizipal2085.com,dizipal2086.com,dizipal2087.com,dizipal2088.com,dizipal2089.com,dizipal2090.com,dizipal2091.com,dizipal2092.com,dizipal2093.com,dizipal2094.com,dizipal2095.com,dizipal2096.com,dizipal2097.com,dizipal2098.com,dizipal2099.com,dizipal2100.com,dizipal2101.com,dizipal2102.com,dizipal2103.com,dizipal2104.com,dizipal2105.com,dizipal2106.com,dizipal2107.com,dizipal2108.com,dizipal2109.com,dizipal2110.com,dizipal2111.com,dizipal2112.com,dizipal2113.com,dizipal2114.com,dizipal2115.com,dizipal2116.com,dizipal2117.com,dizipal2118.com,dizipal2119.com,dizipal2120.com,dizipal2121.com,dizipal2122.com,dizipal2123.com,dizipal2124.com,dizipal2125.com,dizipal2126.com,dizipal2127.com,dizipal2128.com,dizipal2129.com,dizipal2130.com,dizipal2131.com,dizipal2132.com,dizipal2133.com,dizipal2134.com,dizipal2135.com,dizipal2136.com,dizipal2137.com,dizipal2138.com,dizipal2139.com,dizipal2140.com,dizipal2141.com,dizipal2142.com##body a[class^="pageskin-"]
 dizipal2071.com,dizipal2072.com,dizipal2073.com,dizipal2074.com,dizipal2075.com,dizipal2076.com,dizipal2077.com,dizipal2078.com,dizipal2079.com,dizipal2080.com,dizipal2081.com,dizipal2082.com,dizipal2083.com,dizipal2084.com,dizipal2085.com,dizipal2086.com,dizipal2087.com,dizipal2088.com,dizipal2089.com,dizipal2090.com,dizipal2091.com,dizipal2092.com,dizipal2093.com,dizipal2094.com,dizipal2095.com,dizipal2096.com,dizipal2097.com,dizipal2098.com,dizipal2099.com,dizipal2100.com,dizipal2101.com,dizipal2102.com,dizipal2103.com,dizipal2104.com,dizipal2105.com,dizipal2106.com,dizipal2107.com,dizipal2108.com,dizipal2109.com,dizipal2110.com,dizipal2111.com,dizipal2112.com,dizipal2113.com,dizipal2114.com,dizipal2115.com,dizipal2116.com,dizipal2117.com,dizipal2118.com,dizipal2119.com,dizipal2120.com,dizipal2121.com,dizipal2122.com,dizipal2123.com,dizipal2124.com,dizipal2125.com,dizipal2126.com,dizipal2127.com,dizipal2128.com,dizipal2129.com,dizipal2130.com,dizipal2131.com,dizipal2132.com,dizipal2133.com,dizipal2134.com,dizipal2135.com,dizipal2136.com,dizipal2137.com,dizipal2138.com,dizipal2139.com,dizipal2140.com,dizipal2141.com,dizipal2142.com##a[target="_blank"][rel="nofollow"]
 dizipal2071.com,dizipal2072.com,dizipal2073.com,dizipal2074.com,dizipal2075.com,dizipal2076.com,dizipal2077.com,dizipal2078.com,dizipal2079.com,dizipal2080.com,dizipal2081.com,dizipal2082.com,dizipal2083.com,dizipal2084.com,dizipal2085.com,dizipal2086.com,dizipal2087.com,dizipal2088.com,dizipal2089.com,dizipal2090.com,dizipal2091.com,dizipal2092.com,dizipal2093.com,dizipal2094.com,dizipal2095.com,dizipal2096.com,dizipal2097.com,dizipal2098.com,dizipal2099.com,dizipal2100.com,dizipal2101.com,dizipal2102.com,dizipal2103.com,dizipal2104.com,dizipal2105.com,dizipal2106.com,dizipal2107.com,dizipal2108.com,dizipal2109.com,dizipal2110.com,dizipal2111.com,dizipal2112.com,dizipal2113.com,dizipal2114.com,dizipal2115.com,dizipal2116.com,dizipal2117.com,dizipal2118.com,dizipal2119.com,dizipal2120.com,dizipal2121.com,dizipal2122.com,dizipal2123.com,dizipal2124.com,dizipal2125.com,dizipal2126.com,dizipal2127.com,dizipal2128.com,dizipal2129.com,dizipal2130.com,dizipal2131.com,dizipal2132.com,dizipal2133.com,dizipal2134.com,dizipal2135.com,dizipal2136.com,dizipal2137.com,dizipal2138.com,dizipal2139.com,dizipal2140.com,dizipal2141.com,dizipal2142.com##.video-wrapper > a[href][target="_blank"]
 !
@@ -7041,10 +7041,10 @@ hdfilmcehennemi27.org##body:style(background-image: none !important; cursor: aut
 ! Source: https://inattvgiris.one/ => https://inattv1298.xyz/
 /inattv\d+\.xyz/##.ads-container
 /inattv\d+\.xyz/##div[style="position:fixed; bottom:0px; left:0; width:100%; text-align:center; z-index:999999;"]
-inattv1310.xyz##.pageskin-wrapper > a[target="_blank"]
-||blogger.googleusercontent.com/img/$domain=inattv1310.xyz
-inattv1310.xyz##.ads-container
-inattv1310.xyz##div[style="position:fixed; bottom:0px; left:0; width:100%; text-align:center; z-index:999999;"]
+inattv1311.xyz##.pageskin-wrapper > a[target="_blank"]
+||blogger.googleusercontent.com/img/$domain=inattv1311.xyz
+inattv1311.xyz##.ads-container
+inattv1311.xyz##div[style="position:fixed; bottom:0px; left:0; width:100%; text-align:center; z-index:999999;"]
 ! aglint-disable no-invalid-modifiers
 !+ NOT_VALIDATE
 ||blogger.googleusercontent.com/img/$domain=/inattv\d+\.xyz/
@@ -7117,15 +7117,15 @@ inattvizle302.top,inattvizle303.top,inattvizle304.top,inattvizle305.top,inattviz
 ! Source: https://bit.ly/m/papazsports => https://bit.ly/3QeeImt?r=lp&m=MnahlkNsk1J / http://www.papazsports922.pro/
 /papazsports\d+\.pro/##.dbad
 /papazsports\d+\.pro/##.under-vid-banner
-papazsports1020.pro,www.papazsports1014.pro,papazsports1011.pro,papazsports1012.pro,papazsports1013.pro,papazsports1015.pro,papazsports1016.pro,papazsports1017.pro,papazsports1018.pro,papazsports1019.pro##.dbad
-papazsports1020.pro,www.papazsports1014.pro,papazsports1011.pro,papazsports1012.pro,papazsports1013.pro,papazsports1015.pro,papazsports1016.pro,papazsports1017.pro,papazsports1018.pro,papazsports1019.pro##.under-vid-banner
+papazsports1020.pro,www.papazsports1014.pro,papazsports1012.pro,papazsports1013.pro,papazsports1015.pro,papazsports1016.pro,papazsports1017.pro,papazsports1018.pro,papazsports1019.pro##.dbad
+papazsports1020.pro,www.papazsports1014.pro,papazsports1012.pro,papazsports1013.pro,papazsports1015.pro,papazsports1016.pro,papazsports1017.pro,papazsports1018.pro,papazsports1019.pro##.under-vid-banner
 /papazsports\d+\.pro/##+js(set-constant, puShown, true)
 /papazsports\d+\.pro/##.header-banner
 ||papazsports*.pro/video_reklam.html
 ! papazsports*.pro
-papazsports1020.pro,www.papazsports1014.pro,papazsports1011.pro,papazsports1012.pro,papazsports1013.pro,papazsports1015.pro,papazsports1016.pro,papazsports1017.pro,papazsports1018.pro,papazsports1019.pro##+js(adjust-setInterval, reklam_, *, 0.001)
-papazsports1020.pro,www.papazsports1014.pro,papazsports1011.pro,papazsports1012.pro,papazsports1013.pro,papazsports1015.pro,papazsports1016.pro,papazsports1017.pro,papazsports1018.pro,papazsports1019.pro##+js(set-constant, puShown, true)
-papazsports1020.pro,www.papazsports1014.pro,papazsports1011.pro,papazsports1012.pro,papazsports1013.pro,papazsports1015.pro,papazsports1016.pro,papazsports1017.pro,papazsports1018.pro,papazsports1019.pro##.header-banner
+papazsports1020.pro,www.papazsports1014.pro,papazsports1012.pro,papazsports1013.pro,papazsports1015.pro,papazsports1016.pro,papazsports1017.pro,papazsports1018.pro,papazsports1019.pro##+js(adjust-setInterval, reklam_, *, 0.001)
+papazsports1020.pro,www.papazsports1014.pro,papazsports1012.pro,papazsports1013.pro,papazsports1015.pro,papazsports1016.pro,papazsports1017.pro,papazsports1018.pro,papazsports1019.pro##+js(set-constant, puShown, true)
+papazsports1020.pro,www.papazsports1014.pro,papazsports1012.pro,papazsports1013.pro,papazsports1015.pro,papazsports1016.pro,papazsports1017.pro,papazsports1018.pro,papazsports1019.pro##.header-banner
 !
 ! START: Yandex
 !
