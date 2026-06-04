@@ -1,10 +1,10 @@
 ![Adblock Plus 2.0]
-! Checksum: JmIflvlMwd85S4OAEGmGWg
-! Diff-Path: ../patches/9/9-s-1780473288-3600.patch
+! Checksum: GuInRQ0sVG0iWaz/9f1GbA
+! Diff-Path: ../patches/9/9-s-1780515044-3600.patch
 ! Title: AdGuard Spanish/Portuguese filter
 ! Description: Filter list that specifically removes ads on websites in Spanish, Portuguese, and Brazilian Portuguese languages.
-! Version: 2.0.34.53
-! TimeUpdated: 2026-06-03T07:51:18+00:00
+! Version: 2.0.34.56
+! TimeUpdated: 2026-06-03T19:27:13+00:00
 ! Expires: 5 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -200,6 +200,8 @@
 !
 !
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/232488
+meuplayeronlinehd.com##+js(prevent-fetch, cloudfront.net)
 ! https://github.com/AdguardTeam/AdguardFilters/issues/232183
 ||sushianimes.com.br/app/theme/assets/js/oksua-v3.js
 ! https://github.com/AdguardTeam/AdguardFilters/issues/232135
@@ -2108,6 +2110,11 @@ lusometeo.com,kltutors.com,eloutput.com,mundobytes.com,techondicas.com,jornalrep
 !
 ! NOTE: Specific rules
 !
+futemax.reise##.alertWS
+rde.lat##+js(no-window-open-if)
+vocesa.abril.com.br###relacionadas_marfeel_single
+vocesa.abril.com.br###mais_lidas_marfeel_single
+vocesa.abril.com.br###abrAdAnchor
 canale-tv.net##+js(no-window-open-if, , 1)
 lectortmoo.com##.zen-hide
 mejorinformado.com##.ultimas-noticias-container:style(height: fit-content !important;)
@@ -3262,6 +3269,9 @@ donghuas.top###sidebar > .section:has(> .releases > h3:only-child:contains(/^Ads
 manhwas.net##aside.principal > .info-episode:has(> .row:only-child > .col-12[style*="height:"]:only-child > .adsbyexoclick)
 peru21.pe,eldeber.com.bo##div[class^="publicidad-"]
 globo.com###taboola-mid-article-saiba-mais
+exame.com##.adsTextBetweenLines
+exame.com##body > section.grid >.col-span-12:has(> .ad-pos-0)
+exame.com##.gap-4.px-0 > .col-span-12:has(> object[id^="native-home-"]):style(visibility: hidden !important;)
 exame.com##body > section.grid > section.hidden:has(> object[class^="ad-pos"])
 exame.com##body > section.grid > section.relative.col-span-12:not([id]):has(.adsTextBetweenLines)
 exame.com##section#publications > .grid > object[id^="native-home"]
