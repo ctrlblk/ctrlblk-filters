@@ -1,10 +1,10 @@
 ![Adblock Plus 2.0]
-! Checksum: psDfMP1ji93n/b1hjvvr0w
-! Diff-Path: ../patches/224/224-s-1780559371-3600.patch
+! Checksum: 29SDlTFZVkdaQ642+Qlreg
+! Diff-Path: ../patches/224/224-s-1780645297-3600.patch
 ! Title: AdGuard Chinese filter
 ! Description: EasyList China + AdGuard Chinese filter. Filter list that specifically removes ads on websites in Chinese language.
-! Version: 2.1.59.96
-! TimeUpdated: 2026-06-04T07:46:36+00:00
+! Version: 2.1.60.2
+! TimeUpdated: 2026-06-05T07:38:50+00:00
 ! Expires: 5 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -291,9 +291,6 @@
 ! Bad: ||ad.doubleclick.net^ (should be in adservers.txt)
 !
 !
-! https://github.com/AdguardTeam/AdguardFilters/issues/232814
-||ltd.ua/zz$badfilter
-||ltd.ua/zz$xhr,redirect=noop.json
 ! https://github.com/AdguardTeam/AdguardFilters/issues/230872
 freedidi.com##+js(abort-on-property-read, SPM_CONFIG.adblockOnly)
 ||freedidi.com/wp-content/plugins/abn-wall/assets/abn-wall.
@@ -1122,6 +1119,9 @@ ipv6.baidu.com,www.baidu.com,www1.baidu.com,xueshu.baidu.com###content_left > .r
 !
 ! NOTE: Specific rules
 !
+aramgg.com##.bg-red-950
+aramgg.com##a[rel^="sponsored"]
+x6g.com##.news-article_container > ul > li[class]:has(> a[href^="/ad.php?aHR0c"])
 ||zudns.cn/uploads/*.gif$image,domain=tcptest.cn
 tcptest.cn##div.min-w-0 > .relative
 tcptest.cn##div.fixed.hidden
@@ -5348,6 +5348,14 @@ newduba.cn###jq_youxi
 .z.dkt-ib.com
 ||cnzz.trafficmanager.net^
 ||cupfox.app^$3p
+||lodipq3zb.com^
+||wwavo59q3.com^
+||blackthorn88.com^
+||nahdlvqwqkzxby.com^
+||tt144jrfu.com^
+||ndpfxnu.com^
+||4xr7sy3gu.com^
+||yn68b5vn9.com^
 ||branch20.top^
 ||m3v8x28jut.com^
 ||dd81bp3qbj.com^
@@ -5357,6 +5365,9 @@ newduba.cn###jq_youxi
 ||5eyal1g5a9.com^
 ||efh2rahxxq.com^
 ||fx455rrt4b.com^
+||jtzyk9iypb.com^
+||wc6y3nrv7g.com^
+||0otmh22aj2.com^
 ||nbwsj9gnd.com^
 ||t19olm6fd.com^
 ||dukwznn0x.com^
@@ -14854,7 +14865,7 @@ meijutt.*/js/pcjs/
 ||pc-util.gamersky.com^
 ||kssms.com/click/play.
 ||exmoo.com/js/ad-position/
-||ltd.ua/zz
+||nbpicture.xyz^$domain=ltd.ua
 huaren.live##.pause-love
 staticfile.link###player_pause
 jin10.com##.desktop-tip
@@ -14886,8 +14897,8 @@ iplark.com##div[style="position: relative;"]
 cngold.org##.w310:has(>.swiper-company)
 cngold.org##.headCompanys
 cngold.org##.mainRight > .border_top:first-child
-ping0.cc##.xzeles
-ping0.cc###adbright
+ping0.cc##.xaeles
+ping0.cc###adfright
 cngold.org##.foot_megagame
 cngold.org##.fixed_jt
 hanime1.me##div[style*="text-align:"]:has(>div[style*="color: white"])
