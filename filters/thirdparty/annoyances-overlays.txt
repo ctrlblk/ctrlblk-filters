@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: EasyList – Newsletter Notices
-! Last modified: Sun, 07 Jun 2026 05:11:53 +0000
+! Last modified: Mon, 08 Jun 2026 05:18:24 +0000
 ! Expires: 7 days (update frequency)
 ! *** easylist:template_header.txt ***
 !
@@ -2138,6 +2138,7 @@ helpnetsecurity.com##.bar
 technologynetworks.com##.base_subscribe_footer
 thedriven.io##.basic_mailchimp_widget
 bringatrailer.com##.bat-theme-widget-constant-contact
+barchart.com##.bc-modal-bottom
 barchart.com##.bc-news-subscription-tmpl
 heraldnet.com##.bc-newsletter-signup-container
 fastcompany.com,inc.com##.bcToaster
@@ -2971,6 +2972,8 @@ mv-voice.com##.meter-warning-box
 paloaltoonline.com##.meter-warning-text
 metro.co.uk##.metro-email-signup
 metro.co.uk##.metro-email-signup-mpu
+greekcitytimes.com##.mfp-bg
+greekcitytimes.com##.mfp-wrap
 misinforeview.hks.harvard.edu##.misinfo-banner
 motherjones.com##.mj-text-cta
 heartfm.co.za##.mk-subscribe-link
@@ -6335,7 +6338,7 @@ doctorofcredit.com#@#.wpdiscuz-subscribe-bar
 ! fanboy_newsletter_shopping_allowlist_general_hide.txt
 
 ! Title: uBlock filters – Other Annoyances
-! Last modified: Sat, 06 Jun 2026 20:00:37 +0000
+! Last modified: Mon, 08 Jun 2026 05:45:16 +0000
 ! Expires: 7 days
 ! Description: Filters optimized for uBlock Origin, to be used with EasyList's and/or Adguard's "Other Annoyances" list(s)
 ! License: https://github.com/uBlockOrigin/uAssets/blob/master/LICENSE
@@ -14204,7 +14207,7 @@ odysee.com##body:style(cursor: revert !important)
 bhaskar.com##+js(set, Object.prototype.dbskrat, true)
 
 ! https://github.com/uBlockOrigin/uAssets/issues/29349
-/\/inc\/embed\/index\.php/$frame,uritransform=//\/inc\/embed\/video-js-new.php/,from=wco.tv|wcoflix.tv,to=embed.wcostream.com
+/\/inc\/embed\/index\.php/$frame,uritransform=//\/inc\/embed\/video-js-new.php/,to=embed.wcostream.com
 
 ! https://github.com/uBlockOrigin/uAssets/issues/30132
 modxvm.com##+js(trusted-set-local-storage-item, xvmDialogLastShown, $now$)
@@ -14427,3 +14430,6 @@ estadao.com.br##+js(set-local-storage-item, TUTORIAL_VIEWED_SNACKS_HOME, true)
 
 ! https://github.com/uBlockOrigin/uAssets/issues/33145
 freemagazines.top##+js(trusted-rpnt, script, timeLeft > 0, timeLeft = 0, includes, clearInterval)
+
+! https://github.com/uBlockOrigin/uAssets/issues/33214
+zocbo.com###festivalPop
