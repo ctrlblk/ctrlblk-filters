@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: EasyList – Newsletter Notices
-! Last modified: Sun, 14 Jun 2026 05:20:07 +0000
+! Last modified: Mon, 15 Jun 2026 06:08:18 +0000
 ! Expires: 7 days (update frequency)
 ! *** easylist:template_header.txt ***
 !
@@ -1493,6 +1493,7 @@ cultofmac.com###center-modal-popup
 neon.com###changelog-form
 holdthecarbs.ca###chated-iframe
 holdthecarbs.ca###chated-overlay
+tomshardware.com###clubPopup
 ambcrypto.com###cm-embed_signup
 saveur.com###cm-popup-overlay
 cpr.org###coWondersWrapper
@@ -2348,7 +2349,7 @@ etsy.com##.chrome-footer__etsy-finds
 androidpcreview.com,raptitude.com,thelittlekitchen.net##.ck_form_container
 iliketomakestuff.com##.ck_vertical_subscription_form
 aseannow.com##.cl-dialog
-aspicyperspective.com,dailyveganmeal.com,downshiftology.com,feastingathome.com,foodiecrush.com,healthyrecipesblogs.com,neighborfoodblog.com,ohsheglows.com,ohsweetbasil.com,onceuponachef.com,prowrestlingstories.com,rakskitchen.net,sundaysuppermovement.com,thecountrycook.net,www.thecountrycook.net,wyseguide.com##.cls-inserted
+aspicyperspective.com,dailyveganmeal.com,downshiftology.com,feastingathome.com,foodiecrush.com,healthyrecipesblogs.com,neighborfoodblog.com,ohsheglows.com,ohsweetbasil.com,onceuponachef.com,prowrestlingstories.com,rakskitchen.net,sundaysuppermovement.com,thecountrycook.net,wideopencountry.com,www.thecountrycook.net,wyseguide.com##.cls-inserted
 spectator.com.au##.cm-form-container
 medpagetoday.com##.cme-join
 coasttocoastam.com##.coast-zone
@@ -4018,6 +4019,7 @@ rootforamerica.com##div[id^="pframe_SF_"]
 gzeromedia.com##div[id^="sNewsletter_"]
 niemanlab.org##div[style^="border: 1px dashed #a51c30; color: #333;"]
 pcmag.com##div[x-init*="initNewsletter"]
+follow-it-form-subscribe
 dailydot.com##footer
 insidermonkey.com##footer section
 lemonde.fr##forecast-creative-custom
@@ -6349,7 +6351,7 @@ doctorofcredit.com#@#.wpdiscuz-subscribe-bar
 ! fanboy_newsletter_shopping_allowlist_general_hide.txt
 
 ! Title: uBlock filters – Other Annoyances
-! Last modified: Sat, 13 Jun 2026 10:52:38 +0000
+! Last modified: Sun, 14 Jun 2026 13:35:55 +0000
 ! Expires: 7 days
 ! Description: Filters optimized for uBlock Origin, to be used with EasyList's and/or Adguard's "Other Annoyances" list(s)
 ! License: https://github.com/uBlockOrigin/uAssets/blob/master/LICENSE
@@ -14447,3 +14449,10 @@ freemagazines.top##+js(trusted-rpnt, script, timeLeft > 0, timeLeft = 0, include
 
 ! https://github.com/uBlockOrigin/uAssets/issues/33214
 zocbo.com###festivalPop
+
+! https://github.com/uBlockOrigin/uAssets/issues/11256
+!#if env_safari
+simplywall.st###root ~ #action-menu ~ #modal-container
+simplywall.st###root:style(filter: none !important;)
+simplywall.st##+js(spoof-css, #root, filter, blur(6px))
+!#endif
