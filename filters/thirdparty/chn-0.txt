@@ -1,10 +1,10 @@
 ![Adblock Plus 2.0]
-! Checksum: Vyv7Y0ilqK8VKVtM/t9RVg
-! Diff-Path: ../patches/224/224-s-1781511281-3600.patch
+! Checksum: UdemgxnYIAaazT7sWPyyKg
+! Diff-Path: ../patches/224/224-s-1781649924-3600.patch
 ! Title: AdGuard Chinese filter
 ! Description: EasyList China + AdGuard Chinese filter. Filter list that specifically removes ads on websites in Chinese language.
-! Version: 2.1.60.49
-! TimeUpdated: 2026-06-15T08:11:51+00:00
+! Version: 2.1.60.57
+! TimeUpdated: 2026-06-16T22:42:46+00:00
 ! Expires: 5 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -303,7 +303,9 @@ jav224.shop,ttp229.shop,clp126.shop,hsq233.shop#@#.ad-unit:not(.textads)
 jav224.shop,ttp229.shop,clp126.shop,hsq233.shop##+js(no-setTimeout-if, ](getComputedStyle\,)
 ! https://github.com/AdguardTeam/AdguardFilters/issues/228610
 ! https://github.com/AdguardTeam/AdguardFilters/issues/228606
-huaren.live,huavod.com##+js(no-setTimeout-if, bait.offsetHeight===0)
+huavod.cc,huavod.top,huavod.net,huaren.live,huavod.com##+js(abort-on-stack-trace, document.querySelector, isAdblocked)
+huavod.cc,huavod.top,huavod.net,huaren.live,huavod.com##+js(abort-current-script, MutationObserver, isAdblocked)
+huavod.cc,huavod.top,huavod.net,huaren.live,huavod.com##+js(no-setTimeout-if, /bait\.offsetHeight===0|isAdblocked|requestAnimationFrame\(/)
 huavod.cc,huavod.top,huavod.net,huaren.live,huavod.com##+js(addEventListener-defuser, DOMContentLoaded, showModal)
 huavod.cc,huavod.top,huavod.net,huaren.live,huavod.com##div[id^="anti-adblock-"]
 huaren.live,huavod.com#@#.ad_unit
@@ -1123,6 +1125,11 @@ ipv6.baidu.com,www.baidu.com,www1.baidu.com,xueshu.baidu.com###content_left > .r
 !
 ! NOTE: Specific rules
 !
+||yilufff.com^$domain=xiaoaimh.com
+xiaoaimh.com##.flex-cols.tops
+webtech360.com##.service-box
+360lele.cc##.container > div[id]:has(> div[style*="width: 100vw; position: relative;"] > span + img)
+sunnylife.tw##div[style="min-width: 300px; min-height:400px;"]
 haokan.baidu.com###art-player-wrapper > div[class^="ArtVideo_"][class*="-pause-ad"]
 haokan.baidu.com##div[class^="videoList_videolist__"] > div[class^="videoList_videolist-item__"]:has(> div[class^="videoList_videolist-aditem__"])
 haokan.baidu.com##div[class^="video_land_pageBottomGuesslike__"] ul[class^="GuessLike_guess-list__"] > li[class^="GuessLike_guess-item__"]:not([vid]):empty
@@ -3139,11 +3146,12 @@ banzhu1111111.com,banzhu2222222.com,banzhu3333333.com,banzhu4444444.com,banzhu55
 ! https://github.com/AdguardTeam/AdguardFilters/issues/217901
 /^https:\/\/www\.xiguashuwu\.com\/[a-z]{15,20}\/[a-z]{15,20}\.js\?v=/$script,domain=xiguashuwu.com
 ! Specific rules to avoid redirects on tap with very similar scripts
-huoqwk.com,wap.biqugewx.info##+js(no-setTimeout-if, addEventListener("touchstart")
+360lele.cc,huoqwk.com,wap.biqugewx.info##+js(no-setTimeout-if, addEventListener("touchstart")
 enhuku.com##+js(set-constant, adObj, noopFunc)
 m.13xsw.com,wap.yushuwu.cloud##+js(addEventListener-defuser, touchend, clientheight)
+*$script,xhr,image,3p,domain=360lele.cc
 *$script,xhr,3p,domain=m.1024txt.com
-*$script,3p,domain=m.roushuwu.vip
+*$script,3p,domain=m.roushuwu.vip|xiaoaimh.com
 m.1024txt.com##+js(abort-on-stack-trace, document.createElement, /(?=^(?![\s\S]*(static|jquery)))/)
 !
 ! https://github.com/AdguardTeam/AdguardFilters/issues/190832
@@ -5375,12 +5383,32 @@ newduba.cn###jq_youxi
 .z.dkt-ib.com
 ||cnzz.trafficmanager.net^
 ||cupfox.app^$3p
+||remainder38.com^
+||11rhol0ni.com^
+||fwbdfg5n6.com^
+||5v19ql3xi1.com^
+||qnpy8bumnc.com^
+||phzlhhfidmntxc.com^
+||d2pfd8w05h.com^
+||gtethuui.com^
+||multiplication29.top^
+||dneimig.com^
+||xt8esrr.com^
+||ei6udchhys.com^
+||7ho8oc3svg.com^
+||ilbceb6d60.com^
+||tslkd9ygnh.com^
+||jozx7iukw8.com^
 ||sxq9xn7t3.com^
 ||qls7v6jd3.com^
 ||1k2uh20wr.com^
 ||redtvxjmgjbtlw.com^
 ||division43.top^
 ||bowo666.com^
+||7w7kditsz.com^
+||9obmf866d.com^
+||pkytxfiin.com^
+||bahpqcq.com^
 ||subtraction59.com^
 ||1u6hvoykk3.com^
 ||7q2701vx8e.com^
@@ -15166,7 +15194,7 @@ cnbeta.com.tw##.cb-help
 cnbeta.com.tw##.meta > .fr
 333ood.com###appBox
 333ood.com##div[style$="display: block;"]
-baidu.com##.tieba-pause-ad-container
+baidu.com##div[class*="tieba-pause-ad-container"]
 laozuo.org###focusslide
 laozuo.org##.container[style="margin-bottom: 3px;"]
 laozuo.org##.widget_ui_orbui
