@@ -6650,7 +6650,6 @@
 ||videosmor.com^$third-party
 ||videotoper.com^$third-party
 ||videotrailer.top^$third-party
-||videotronic.io^$third-party
 ||videovikt.com^$third-party
 ||videovint.com^$third-party
 ||videsjs.com^$third-party
@@ -12087,7 +12086,7 @@ igdz1.ru^$script,domain=igdz.ru
 ||kerchinfo.com/uploads/img_ban/
 ||keysportal.com/yandex$image
 ||kg-portal.ru/banned/
-||kg-portal.ru/brandbook/
+||kg-portal.ru/brandbook/$~stylesheet
 ||kg-portal.ru^*/bg.jpg|
 ||kgd.ru/images/commerc/
 ||kharkov.info/files/image*/banner
@@ -16154,7 +16153,7 @@ drive2.ru##.c-dv-p
 drive2.com,drive2.ru##.c-dv-sns
 dsnews.ua#?#.c-feed__list-item:-abp-has(> .c-feed__item > .c-r)
 drive2.com,drive2.ru#?#.c-header:-abp-contains(/Ads|Реклама/)
-telegraf.com.ua#?#.c-post__content > div:-abp-has(> [id^="_vidverto-"])
+telegraf.com.ua,telegraf.ua#?#.c-post__content > div:-abp-has(> [id^="_vidverto-"])
 shuba.life##.c-product-card
 delo.ua,dsnews.ua,focus.ua##.c-r
 5-tv.ru##.cFadeDark
@@ -18199,6 +18198,7 @@ sport-express.net,sport-express.ru##.se-banner
 sport-express.net,sport-express.ru##.se-bets
 sport-express.net,sport-express.ru##.se-brand-buttons
 sport-express.net,sport-express.ru##.se-brandedbuttons
+sport-express.net,sport-express.ru##.se-football-world-betboom-widget
 sport-express.net,sport-express.ru##.se-material-page__footer-recommendations
 sport-express.net,sport-express.ru##.se-partner-stuffing-info
 sport-express.net,sport-express.ru##.se-sport-entity-icon-links__link--kinopoisk
@@ -18668,7 +18668,7 @@ all-books.org##.tg-promo-container
 starhit.ru,uralweb.ru,www.ixbt.com##.tgb
 vbr.ru##.tgb-content
 parents.ru##.tgb__heading
-telegraf.com.ua##.tgr-ads
+telegraf.com.ua,telegraf.ua##.tgr-ads
 ria.ru#?#.the-in-carousel__item:-abp-has(> [data-has-banner])
 vedomosti.ru##.the-loader
 lifehacker.ru#?#.the-tv__observer:-abp-has(.lh-article-card-meta__partner)
@@ -19443,7 +19443,7 @@ russia-tv.online#?#[data-test="channel-name-link"] ~ div:-abp-has(> div > div[id
 dom.ru#?#[data-test="custom-wrapper"]:-abp-has(> div > [href*="movix.ru/"])
 scores24.live##[data-testid="ExpressCouponBookmakers"]
 t-j.ru##[data-testid="banner"]
-telegraf.com.ua##[data-text^="Новини партнер"]
+telegraf.com.ua,telegraf.ua##[data-text^="Новини партнер"]
 uazmi.org##[data-text^="Рекламн"]
 bryansknovosti.ru,novozybkov.su##[data-title^="erid:"]
 my.ua##[data-top-iid]
@@ -23926,6 +23926,7 @@ ya.ru,yandex.ru,yandex.*##.main-home-banner
 ya.ru,yandex.ru,yandex.*##.main__block-banner
 ya.ru,yandex.ru,yandex.*##.main__distr-popup
 ya.ru,yandex.ru,yandex.*##.Organic_withPromoOffer
+ya.ru,yandex.ru,yandex.*##div[class^="AdvRsya"]
 ya.ru,yandex.ru,yandex.*#?##search-result > [class]:-abp-has(> div.Organic > div a[href*="_crpd"])
 ya.ru,yandex.ru,yandex.*#?#.content__left > #search-result > li:-abp-has(> .Organic_withPromoOffer)
 ya.ru,yandex.ru,yandex.*#?#.content__right div[class]:-abp-has(> div > script)
@@ -27905,14 +27906,11 @@ jut-su.net##body:not(#id):style(padding-top: 0 !important; padding-bottom: 0 !im
 ! ---
 kanaldim.tv,uatv.ua##body > .playerlive
 ! ---
-kg-portal.ru##.comments_form:style(min-height: 0 !important)
-kg-portal.ru##.content_wrap > div[class^="content_"] > div > a[href^="/go.php?id="]
-kg-portal.ru##.ten_ears_wrap:style(margin: 35px auto 0 auto !important)
+kg-portal.ru##.ten_ears_wrap:style(margin-top: 0 !important; background-color: #a5a5a5 !important)
 kg-portal.ru##.ten_topbar + div:not(.ten_ears_wrap)
-kg-portal.ru##.ten_topbar ~ div[class]:not([id]):nth-child(-n+10):not(.ten_ears_wrap):not(.content_wrap):not(.footer_wrap)
-kg-portal.ru##.ten_topbar:style(height: 0 !important)
+kg-portal.ru##.ten_topbar:style(max-height: 10px !important)
 kg-portal.ru##body > .menu_wrap:style(position: relative !important)
-kg-portal.ru##body:style(background-image: none !important; background-color: #bdbdbd !important)
+kg-portal.ru##body:style(background-image: none !important; background-color: inherit !important)
 ! ---
 kharkovforum.com##body > table > tbody > tr > td[align="center"]
 ! ---
