@@ -13432,6 +13432,8 @@ igdz1.ru^$script,domain=igdz.ru
 ||torrenther.com^*.php|$script
 ||torrentinka.me/templates/Default/images/prestol
 ||torrentporno.ru/jrt-$script
+||torrents.ws/otorrente/Antivirus_brandmauer.jpg
+||torrents.ws/yandex_reklama
 ||tort.fm/banners/
 ||tourdom.ru/_ad/
 ||tourdom.ru/_nuxt/img/*X*_$image
@@ -19633,6 +19635,7 @@ sibnet.ru##[src*="sibnet.ru/iframe-wink"]
 ski.ru##[src*="ski.ru/vertelka/"]
 clubsandero.ru##[src="//an.yandex.ru/system/context.js"] ~ iframe
 rutor.org.ru##[src="/download32.png"]
+byrut.games##[src="/sm/images/btn.svg"]
 linux.org.ru##[src^="/adv/"]
 news.soundex.ru##[src^="http://news.soundex.ru/images/banners/"]
 pikabu.ru##[src^="https://special.pikabu.ru/"][src*="banner.html"]
@@ -21168,7 +21171,7 @@ arz-biz.ru##div[class^="direkt-"]
 prazdnovik.ru##div[class^="distr"]
 trashbox.ru##div[class^="div_branding_"]
 aum.news##div[class^="djslider"]
-byrut.games,onlinestreams.ru##div[class^="dle_b_"]
+onlinestreams.ru,selezen.games##div[class^="dle_b_"]
 z-torrents.ru##div[class^="dle_b_app"]
 btu.org.ua##div[class^="dle_b_banner"]
 btu.org.ua##div[class^="dle_b_bet"]
@@ -23926,6 +23929,7 @@ ya.ru,yandex.ru,yandex.*##.main-home-banner
 ya.ru,yandex.ru,yandex.*##.main__block-banner
 ya.ru,yandex.ru,yandex.*##.main__distr-popup
 ya.ru,yandex.ru,yandex.*##.Organic_withPromoOffer
+ya.ru,yandex.ru,yandex.*##[id^="search-"] .SportAdfox
 ya.ru,yandex.ru,yandex.*##div[class^="AdvRsya"]
 ya.ru,yandex.ru,yandex.*#?##search-result > [class]:-abp-has(> div.Organic > div a[href*="_crpd"])
 ya.ru,yandex.ru,yandex.*#?#.content__left > #search-result > li:-abp-has(> .Organic_withPromoOffer)
@@ -27988,7 +27992,7 @@ www.kinopoisk.ru##.content-container_app-width_wide:style(max-width: 100% !impor
 www.kinopoisk.ru##.desktop-layout-with-sidebar__content > div[class][data-tid]:style(width: auto !important)
 www.kinopoisk.ru##.filmsListNew .info:style(padding-right: 116px !important)
 www.kinopoisk.ru##.modal-root div[class^="fullscreen-selector"]:style(opacity: inherit !important)
-www.kinopoisk.ru##body[class*="body"][style*="overflow:"][style*="hidden"]:style(overflow: auto !important)
+www.kinopoisk.ru##body[class*="body"]:style(overflow: auto !important)
 www.kinopoisk.ru##div > a[aria-label="КиноПоиск"] ~ div > button ~ div:style(opacity: inherit !important)
 www.kinopoisk.ru##div[class*="styles_headerContainer"] + div[class^="styles_"]:style(max-width: 100% !important)
 www.kinopoisk.ru##div[class*="user-bar"] > div > button ~ div:style(opacity: inherit !important)
@@ -29771,7 +29775,7 @@ ok.ru##body > div:not([id]):not([class]) > .exit-popup:style(display: block !imp
 ok.ru##div[class*="__banner-feed"]
 ||ad.mail.ru/dist/
 ||mail.ru/api-proxy/rb-mimic/
-||media-trend.mail.ru/api/*/mix/*/get/$xmlhttprequest
+||media-trend.mail.ru/api/*/mix/*/get/$xmlhttprequest,domain=~news.mail.ru
 ||ok.ru/res/js/app/VideoEmbed_*.js|$script
 ||ok.ru/videoembed/*autoplay=1$subdocument,removeparam=|
 ||ok.ru/web-api/*/hobby/getMailRuHobbyFeedScriptSrc$domain=mail.ru
