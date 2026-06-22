@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: EasyList – Newsletter Notices
-! Last modified: Sun, 21 Jun 2026 05:29:47 +0000
+! Last modified: Sun, 21 Jun 2026 15:02:39 +0000
 ! Expires: 7 days (update frequency)
 ! *** easylist:template_header.txt ***
 !
@@ -3897,6 +3897,7 @@ minnpost.com##.wp-elements-6af074a2b773903132682d24a9a289ae
 visualcapitalist.com##.wp-image-1216
 lifeinnorway.net##.wp-image-9836
 accessnow.org##.wp-popup
+gadgetreview.com##.wp-position-container-1781633738934
 consumerreports.org##.wp_cta-container
 5pillarsuk.com,raya.com##.wpcf7
 thelogic.co##.wpcf7-form
@@ -4264,6 +4265,7 @@ wideopencountry.com#?#.above-footer-section:has-text(newsletter)
 wisegeek.com#?#.rounded-3xl:has-text(in your inbox)
 worldsensorium.com#?#.has-medium-font-size:has-text(newsletter)
 www.yahoo.com#?#.bg-white.border-\[\#eceff2\]:has-text(Weekday Newsletter)
+www.yahoo.com#?#.border-tertiary.rounded-lg:has-text(Newsletter)
 wyseguide.com#?#.has-background:has-text(Never miss a post)
 yourstory.com#?#.mt-\[2rem\]:has-text(newsletter)
 zerofox.com#?#.xl\:-mt-12.shadow-md.p-8:has-text(Subscribe to our Blog)
@@ -6362,7 +6364,7 @@ doctorofcredit.com#@#.wpdiscuz-subscribe-bar
 ! fanboy_newsletter_shopping_allowlist_general_hide.txt
 
 ! Title: uBlock filters – Other Annoyances
-! Last modified: Thu, 18 Jun 2026 17:12:21 +0000
+! Last modified: Mon, 22 Jun 2026 10:40:32 +0000
 ! Expires: 7 days
 ! Description: Filters optimized for uBlock Origin, to be used with EasyList's and/or Adguard's "Other Annoyances" list(s)
 ! License: https://github.com/uBlockOrigin/uAssets/blob/master/LICENSE
@@ -6682,6 +6684,10 @@ anizone.to##.h-\[90px\].w-\[728px\]:has(iframe[src^="//ad.a-ads.com/"])
 
 ! https://soundcloudmp3.org/ anti-adb
 scmp3.org,soundcloudmp3.org##+js(set, detectAdBlock, noopFunc)
+
+! https://github.com/uBlockOrigin/uAssets/issues/33408
+vaughn.live##.wrapper_content ~ .vs_modal_v9:style(opacity: 0 !important;)
+vaughn.live##.wrapper_content ~ .vs_modal_v9_background
 
 ! END: Anti-adblock
 
