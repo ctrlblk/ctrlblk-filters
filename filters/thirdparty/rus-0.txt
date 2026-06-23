@@ -7892,7 +7892,7 @@ _verified.php?code=*&server=runetki.com
 //b.*/iframe/*
 //cds.*.hwcdn.net/s/*-*-*-*-*.js|
 //jsn.$third-party,script
-//mads.$domain=~mads.magnit.ru|~mads.team|~mads.uz
+//mads.$domain=~mads.team|~mads.uz
 /1script.js?*=
 /240x400.gif
 /240x400_$domain=~price.ru
@@ -13375,6 +13375,8 @@ igdz1.ru^$script,domain=igdz.ru
 ||telegraf.in.ua/uploads/projects/
 ||telekomza.ru/wp-content/uploads/$object
 ||telik.top^*randomator.js
+||temp2cdn.link/*.xml?$xmlhttprequest
+||temp2cdn.link/api-integration/
 ||temptcdn.com/*.xml?$xmlhttprequest
 ||temptcdn.com/api-integration/
 ||tengrinews.kz/js/loader.js
@@ -15261,6 +15263,7 @@ kg-portal.ru##.adex
 togliatti24.ru##.adf-ins
 gastronom.ru##.adfox-banner
 www.onliner.by##.adfox-banner-background
+magnit.ru##.adfox-carousel-skeleton-wrapper
 profile.ru##.adfox-hidden
 baby.ru##.adfox-video-desk
 ren.tv##.adfox-wrapper
@@ -15925,6 +15928,7 @@ vitatv.com.ua##.block-type-advertising
 velvet.by##.block-velcompany
 bogmedia.org,filmozavr.com,filmozavr.net##.block-video > .table
 processer.media##.block-wrap-da
+habr.com##.block-wrapper ~ .block-wrapper::after
 habr.com#?#.block-wrapper:-abp-has(> [data-test-id*="Advertising"]:empty)
 habr.com#?#.block-wrapper:-abp-has(> [data-test-id^="Advertising"] > div:empty)
 zh24.com##.block.elite
@@ -17755,6 +17759,7 @@ bidbaits.ru#?#.pg-section:-abp-has(> .abox-layout)
 krymr.com##.pg-title--ymla
 fansector.info##.pg_content_nav > a[href][target="_blank"]
 seasonvar.ru##.pgs-player > div[align="center"]
+magnit.ru##.pharmacy
 multitran.com##.pic
 telegraf.news,telegraf.plus##.pikachu
 moeobrazovanie.ru##.pinBnFs
@@ -18499,6 +18504,7 @@ www.zakon.kz##.spec-list
 profile.ru,trashbox.ru##.special
 stopress.ru##.special > a[href][target="_blank"]
 softsalad.ru##.special-block-yabrowser
+magnit.ru##.special-offers
 pravda.ru##.special.block
 newsroom24.ru##.special_banner_in
 vmo24.ru##.special_branding
@@ -18748,6 +18754,7 @@ key-test.ru,kurs.if.ua,vesti.ru##.top-block
 liga.net##.top-bnr
 fight.ru##.top-bookmakers-widget
 gamemag.ru##.top-branding
+magnit.ru##.top-carousel-wrapper
 37.ru##.top-header-wrapper
 gamemag.ru##.top-img-wrap
 ug.ru##.top-kitten-container
@@ -18862,6 +18869,7 @@ gamer.ru##.under-back
 kinoprofi.vip##.under-player
 66.ru##.underNewsAdb
 weacom.ru##.unicorn
+magnit.ru##.unit-ad-block-message
 korrespondent.net##.unit-inner-banner
 korrespondent.net##.unit-side-banner
 korrespondent.net##.unit-top-banner
@@ -19441,6 +19449,7 @@ irtafax.com##[data-sticky-offset="20"] > .td-fix-index:nth-child(-n+2)
 beeline.ru##[data-t-id="components-TopBanner"]
 drive2.ru#?#[data-target]:-abp-has(> div > h3 ~ [href*=".drom.ru/"])
 drive2.ru##[data-target^="drom_"]
+magnit.ru##[data-test-id="adfox"]
 russia-tv.online#?#[data-test="channel-name-link"] ~ div:-abp-has(> div > div[id^="yandex_rtb"])
 dom.ru#?#[data-test="custom-wrapper"]:-abp-has(> div > [href*="movix.ru/"])
 scores24.live##[data-testid="ExpressCouponBookmakers"]
@@ -19691,6 +19700,7 @@ www.ivi.ru##a.teaserImage[target="_blank"]
 video.matchtv.ru##a.vjs-link[href*="://matchtv.ru/subscriptions"]
 moniheal.com##a:not([href*="moniheal.com/"]) > img[src*="/m-public/"]
 good73.net##a[\;] > img
+magnit.ru##a[aria-label^="Реклама"]
 ren.tv##a[class*=" ya_"]
 solverbook.com##a[class*="-banner-"]
 siliconrus.com##a[class*="b-menu__li__a-"]
@@ -22539,7 +22549,7 @@ https://*adtech_uid=$~third-party,xmlhttprequest,domain=levik.blog|livejournal.c
 ||newsyou.info/wp-content/plugins/gtranslate/
 ||newsyou.info^$csp=script-src-elem 'self' https:
 ||ng72.ru^$csp=script-src 'self' 'unsafe-eval' https:
-||pikabu.ru/ajax/*?j5Oio=$xmlhttprequest
+||pikabu.ru/ajax/*?r7n8M=$xmlhttprequest
 ||ritsatv.ru^$csp=script-src
 ||ritsatv.ru^$popup
 ||ritsatv.ru^$~document
@@ -23923,7 +23933,7 @@ ya.ru##[style*="feed"][style*="min-height:"]
 ya.ru##body > div[data-hydration-id] > [href^="https://yabs.yandex.ru/count/"] + div
 ya.ru##body > div[data-hydration-id] > div > [src^="https://yabs.yandex.ru/count/"] + div
 ya.ru##section[class^="reaso"]
-ya.ru##section[style*="sektlilon-items-count:"]
+ya.ru##section[style*="sektllion-items-count:"]
 ya.ru##ul[class*="-section__list"]
 ya.ru,yandex.ru,yandex.*##.AdvProductGallery
 ya.ru,yandex.ru,yandex.*##.layout__banner
@@ -23966,6 +23976,7 @@ yandex.ru,yandex.*##a[href*="//ads.adfox.ru/"]
 yandex.ru,yandex.*##body[class*="b-page_alt-widgets_yes"] .feed ._need-stub
 yandex.ru,yandex.*##div[class$="ear_js_inited"] > a[href^="//awaps.yandex.ru"]
 yandex.ru,yandex.*##div[class^="advert-card--content-feed-"]
+yandex.ru,yandex.*##div[class^="AreYouGoodPromo_"]
 yandex.ru,yandex.*##img[src*="yandex.net/get-direct"]
 yandex.ru,yandex.*#?##search-result > .serp-list__card:-abp-has(> div .organic__subtitle > span:-abp-contains(/[РPeекламa]{6,7}/))
 yandex.ru,yandex.*#?#.scroller__wrap > .showcase__item:-abp-has(.product-card__direct)
@@ -25595,6 +25606,7 @@ zarulem.ws##td[style^="text-align:center;width:50%"]
 ||telderi.ru/img/banners/$third-party
 ||telderi.ru/uploads/promote/
 ||telepark.ua/tpb.php?code=
+||temp2cdn.link^$third-party,xmlhttprequest
 ||temptcdn.com^$third-party,xmlhttprequest
 ||teren.in.ua^$third-party,subdocument
 ||terthoreper.ru^$third-party
@@ -25922,7 +25934,6 @@ zarulem.ws##td[style^="text-align:center;width:50%"]
 ! - Секция для ресурсов, в отношению которых действуют Generic-опции
 @@://auth.nuzhnapomosh.ru/$generichide
 @@://auto.ru/$generichide
-@@://magnit.ru/$generichide
 @@||adult-images.ru^$generichide
 @@||alexstuff.ru^$generichide
 @@||alhimika.net^$generichide
@@ -26270,7 +26281,6 @@ xn--112-5cd3baof9c5c.xn--p1ai#@#.wrapad
 @@||adman.ru^$~third-party
 @@||admitad.com/public/advertising_campaign/images/$domain=getcoupons.ru
 @@||adocean.pl^$xmlhttprequest,domain=ovva.tv
-@@||ads.adfox.ru^$popup,domain=magnit.ru
 @@||ads.adfox.ru^$popup,domain=vklybe.tv
 @@||ads.adfox.ru^*/goLink$popup,domain=2x2tv.ru|friday.ru
 @@||ads.rb.ru/video_banner.php$object
@@ -26495,7 +26505,6 @@ xn--112-5cd3baof9c5c.xn--p1ai#@#.wrapad
 @@||mads.su^$~third-party
 @@||madyar.net/baners/$domain=madyar.net
 @@||magictime.net.ua/wp-content/plugins/m-wp-popup$script,domain=magictime.net.ua
-@@||magnit.ru/scripts/prebid.js|$script,~third-party
 @@||mangalbbq.ru/upload/$image,domain=mangalbbq.ru
 @@||map.cn.ua/media/*/tur/
 @@||maxcdn.bootstrapcdn.com^$script,domain=gwss.ru|lgotivam.ru|rvb.ru|vsedeserti.ru
@@ -26751,7 +26760,6 @@ xn--112-5cd3baof9c5c.xn--p1ai#@#.wrapad
 @@||xvet.ru^*_600x180.$image,domain=xvet.ru
 @@||yaberemenna.info/openx/www/delivery/ai.php?filename=$domain=yaberemenna.info
 @@||yaberemenna.info/openx/www/delivery/ajs.php?zoneid=7&$domain=yaberemenna.info
-@@||yandex.ru/ads/$domain=magnit.ru
 @@||yandex.ru/metrika/informer.js
 @@||yandex.ru/search/site/?*search$third-party,script
 @@||yandex.st/share/share.js|$script,domain=nashaplaneta.su
@@ -26759,7 +26767,6 @@ xn--112-5cd3baof9c5c.xn--p1ai#@#.wrapad
 @@||yandex.st/swf/ad-sdk-module/1_0/info?nc=
 @@||yastatic.net/jquery/*/jquery.min.js|$third-party,script
 @@||yastatic.net/market-export/*/adv/advert.js|
-@@||yastatic.net/partner-code-bundles/$domain=magnit.ru
 @@||yastatic.net/share2/share.js
 @@||yastatic.net/sitesearch*.js|$third-party,script
 @@||youtube.com/*/www-widgetapi.$third-party,script
@@ -28693,10 +28700,11 @@ ya.ru##.i-mini-bem[style]
 ya.ru,yandex.by,yandex.kz,yandex.uz##.link-bro
 ya.ru##.market-feed
 ya.ru##.reasoning-section
+ya.ru##[id^="r"][id*="et"][id*="m"][id*="-"][id*="f"]
 ya.ru##[id^="r"][id*="it"][id*="m"][id*="-"][id*="f"]
 ya.ru##[id^="r"][id*="yt"][id*="m"][id*="-"][id*="f"]
-ya.ru##html[class*="sektlilon_top"] aside + div
-ya.ru##html[class*="sektlilon_top"] main > div[class*="__"] ~ div[class*="__"] ~ div[class*="__"] > div
+ya.ru##html[class*="sektllion_top"] aside + div
+ya.ru##html[class*="sektllion_top"] main > div[class*="__"] ~ div[class*="__"] ~ div[class*="__"] > div
 ya.ru##main.body__wrapper > div[class*="__"] ~ div[class*="__"] ~ div[class*="__"] > div
 ! афиша
 afisha.yandex.ru##[style^="width:"][style*="100%;"][style*="height:"][style*="240px;"][style*="display:"][style*="block;"]:empty
@@ -29229,7 +29237,7 @@ xv-ru.com##+js(addEventListener-defuser, DOMContentLoaded, exo_tracker)
 litnet.com##+js(addEventListener-defuser, DOMContentLoaded, feedback)
 allboxing.ru##+js(addEventListener-defuser, DOMContentLoaded, popup)
 vedomosti.ru##+js(addEventListener-defuser, click, '', elements, a[href*="?from="])
-regnum.ru,tproger.ru##+js(addEventListener-defuser, click, '', elements, a[href*="utm_campaign"])
+magnit.ru,regnum.ru,tproger.ru##+js(addEventListener-defuser, click, '', elements, a[href*="utm_campaign"])
 forbes.ru##+js(addEventListener-defuser, click, '', elements, a[href*="utm_campaign="])
 116.ru,14.ru,161.ru,164.ru,173.ru,178.ru,26.ru,29.ru,35.ru,43.ru,45.ru,48.ru,51.ru,53.ru,56.ru,59.ru,60.ru,63.ru,68.ru,71.ru,72.ru,74.ru,76.ru,86.ru,89.ru,93.ru,chita.ru,e1.ru,ircity.ru,izh1.ru,mgorsk.ru,msk1.ru,ngs.ru,ngs22.ru,ngs24.ru,ngs42.ru,ngs55.ru,ngs70.ru,nn.ru,sochi1.ru,sterlitamak1.ru,tolyatty.ru,ufa1.ru,v1.ru,vladivostok1.ru,voronezh1.ru,www.fontanka.ru,ya62.ru##+js(addEventListener-defuser, click, , elements, [class^="plotsLine_"] > div)
 softonic.ru##+js(addEventListener-defuser, click, [native code])
