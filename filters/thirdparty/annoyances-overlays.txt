@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: EasyList – Newsletter Notices
-! Last modified: Thu, 25 Jun 2026 04:50:46 +0000
+! Last modified: Fri, 26 Jun 2026 04:58:32 +0000
 ! Expires: 7 days (update frequency)
 ! *** easylist:template_header.txt ***
 !
@@ -1683,6 +1683,7 @@ theamericanscholar.org###newsletter-homepage-right
 lapresse.ca###newsletter-hub-promo-box
 bodyandsoul.com.au###newsletter-light-registration
 cryptonews.com,perizona.it,thejc.com###newsletter-modal
+windowslatest.com###newsletter-nav
 butternutbakeryblog.com###newsletter-optin3
 backyardchickens.com,christiantoday.com,fodors.com,nocamels.com,talotekniikka-lehti.fi,theface.com###newsletter-popup
 hypebae.com###newsletter-popup-fullscreen
@@ -4060,6 +4061,7 @@ polygon.com,theverge.com##.duet--cta--newsletter
 ! :has
 goodrx.com##.\[\&_\[data-qa\=searchbar\]\>button\]\:md\:mt-4:has([data-qa="newsletter-form"])
 spin.com##.border-backgrounds.flex.flex-wrap.border-t:has(form-container)
+eposaudio.com##.grid__item:has(> .newsletter-sign-up)
 tryterra.co##.lg\:px-24:has(#email-container)
 emobilityplus.com##.sharedaddy
 hyrax.dev##.w-full.lg\:max-w-sm.lg\:text-right:has(#newsletter-email-hero)
@@ -4389,7 +4391,7 @@ camtsuku.com,comnico.jp,jns.org,kumanichi.com,news.cuanschutz.edu,pagamentidigit
 !! .subscribe-block
 carnegieendowment.org,iranwire.com,lifesitenews.com,payloadspace.com,proofpoint.com,sciencetimes.com,techtimes.com##.subscribe-block
 !! .widget-newsletter
-breakingdefense.com,colombiapress.co,deadline.com,deghi.it,insideevs.com,mlbtraderumors.com,motor1.com,notibolivia.bo,notichile.cl,noticiargentina.com.ar,notiecuador.com.ec,notimexico.com.mx,notipanama.com.pa,notiparaguay.com.py,notiperu.com.pe,notiuruguay.uy,order-order.com##.widget-newsletter
+breakingdefense.com,colombiapress.co,deadline.com,deghi.it,fextralife.com,insideevs.com,mlbtraderumors.com,motor1.com,notibolivia.bo,notichile.cl,noticiargentina.com.ar,notiecuador.com.ec,notimexico.com.mx,notipanama.com.pa,notiparaguay.com.py,notiperu.com.pe,notiuruguay.uy,order-order.com##.widget-newsletter
 ! Generichide
 calgaryherald.com,edmontonjournal.com,montrealgazette.com,ottawacitizen.com,thestarphoenix.com###pn-newsletter-signup
 merriam-webster.com##.footer-subscribe-block
@@ -6376,7 +6378,7 @@ doctorofcredit.com#@#.wpdiscuz-subscribe-bar
 ! fanboy_newsletter_shopping_allowlist_general_hide.txt
 
 ! Title: uBlock filters – Other Annoyances
-! Last modified: Wed, 24 Jun 2026 18:16:11 +0000
+! Last modified: Thu, 25 Jun 2026 22:17:56 +0000
 ! Expires: 7 days
 ! Description: Filters optimized for uBlock Origin, to be used with EasyList's and/or Adguard's "Other Annoyances" list(s)
 ! License: https://github.com/uBlockOrigin/uAssets/blob/master/LICENSE
@@ -11939,6 +11941,7 @@ coinsparty.com##+js(aeld, contextmenu)
 ! https://github.com/uBlockOrigin/uAssets/issues/15598
 ! https://github.com/uBlockOrigin/uAssets/issues/32278
 startpage.com###main > .support-banner
+startpage.com###main > div[class^="css-"]:has(> div:first-child + div > button:first-child + div[aria-label]:last-child > svg[aria-label="x-icon"])
 
 ! https://github.com/uBlockOrigin/uAssets/issues/15654
 postype.com##+js(aeld, contextmenu)

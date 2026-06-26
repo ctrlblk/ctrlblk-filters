@@ -6589,6 +6589,7 @@
 ||vengovision.ru^$third-party
 ||venova.ru^$third-party
 ||ventite.com^
+||veoapi.net^$third-party
 ||veretiggoo.com^$third-party
 ||vergilimus.com^$third-party
 ||verhedttot.pro^$third-party
@@ -6693,6 +6694,7 @@
 ||vinregle.com^
 ||vioturallis.com^$third-party
 ||vip-click.biz^$third-party
+||vipapi.me^$third-party
 ||vipapi.org^$third-party
 ||viparchive1.ru^$third-party
 ||vipavf.com^$third-party
@@ -7942,6 +7944,7 @@ _verified.php?code=*&server=runetki.com
 /afisha_banner/*
 /aika.swf
 /amcu_$script
+/api-integration/assets/*.txt?*=$third-party,xmlhttprequest
 /api/content/jsonp?offerid=$third-party,script
 /api/getslug*?partner_apikey=$third-party,xmlhttprequest
 /api/outreach/vast/*$xmlhttprequest
@@ -8411,7 +8414,6 @@ _tizers.
 ||v.adfox.ru^$object,xmlhttprequest
 ||vip/?pu=$third-party,script
 ||vst.videolink.$third-party
-||vvcat.*/api-integration/assets/*.txt?*=$third-party,xmlhttprequest
 ||work/?pu=$third-party,script
 ||xn--p1ai/banner/
 ||xyz/*?mobile=null&tablet=null&os=null&site=*&rand=$third-party,xmlhttprequest
@@ -10906,7 +10908,7 @@ $xmlhttprequest,domain=happy-biock.info|happy-block.info|howto-news.info|mschist
 /wp-content/uploads/*/elitstroj*.$image,domain=vb.by
 /wp-content/uploads/*/kurery*.$image,domain=vb.by
 /wp-content/uploads/*/med.$image,domain=vb.by
-/wp-content/uploads/*_1920x1080$image,domain=agronews.ua|agroreview.com|agroweek.com
+/wp-content/uploads/*_1920x1080$image,domain=agronews.ua|agroreview.com|agroweek.com|growhow.in.ua
 /www/base/*&cb=$domain=namba.kg|namba.tj
 /yandex.b.js$script,domain=krossava.ru
 /yandex.js$domain=camorca.ru
@@ -13679,6 +13681,7 @@ igdz1.ru^$script,domain=igdz.ru
 ||vsetop.org/uploads/yabr.
 ||vsetyt.us/uploads/ruscams.
 ||vsluh.ru/system/*banners/
+||vveu.spdmpgcdn.com/
 ||vvru.spdmpgcdn.com/
 ||vyksarf.ru^$domain=xn--80ady2a0c.xn--p1ai
 ||walking-dead.ru/banners.js
@@ -15150,6 +15153,7 @@ myshows.me##.LayoutWrapper__promo
 spot.uz##.LeaderBoard
 stavka.tv##.MatchHeaderCoefs
 russian.rt.com##.Mirtesen-root
+myshows.me##.MovieCardPromo__buttons
 do.ru##.MyOpacity1
 tonkosti.ru##.NoCurTips
 forums.sumy.ua##.Notices.PanelScroller
@@ -23714,9 +23718,12 @@ sports.ru###top-banner-place
 sports.ru##.ad
 sports.ru##.ad-banner
 sports.ru##.ad-banner-layout
+sports.ru##.ad-widget
+sports.ru##.ad-wrapper
 sports.ru##.app-ratings
 sports.ru#?#.aside-news-list__item:-abp-has(> a[href^="https://sirena.world/"])
 sports.ru##.bookmaker-bonus-block
+sports.ru##.bookmaker-bonuses
 sports.ru##.branding-ad-link
 sports.ru##.card-odds
 sports.ru##.columns__alt-column .frame
@@ -23735,13 +23742,16 @@ sports.ru##.in-read-yadv
 sports.ru##.js-ad-label
 sports.ru##.layout-branding
 sports.ru##.layout__branding
+sports.ru##.match-card-cta-button
 sports.ru##.match-factoid-item__betting
 sports.ru##.match-factoid-item__bookmaker-button
+sports.ru##.match-of-the-day__ad-label
 sports.ru#?#.match-poll:not(:-abp-has(*))
 cyber.sports.ru##.match-teaser__betting-bar
 sports.ru##.matches-entertainment-rating__advertise
 sports.ru#?#.material-list__item:-abp-has(.content-label:-abp-contains(/Реклама|Pеклама/))
 sports.ru#?#.material-list__item:-abp-has(a[href^="https://sprts.cc/"])
+sports.ru##.mc-layout__top-ads
 sports.ru##.middle-banner-place
 sports.ru##.nav-list__widget-wrapper .promo-block
 sports.ru##.navigation-left-banner
@@ -23750,6 +23760,7 @@ sports.ru##.navigation-top__specials + div:empty,.navigation-top__specials
 sports.ru##.news-ad-inreads
 sports.ru##.news-item__content > p > strong > a[rel="nofollow"]
 sports.ru##.news-layout__frame
+sports.ru##.news-page__branding
 sports.ru##.odds-widget
 sports.ru##.one-card[data-img_desktop^="https://dumpster.cdn.sports.ru/"]
 sports.ru##.online-layout__third-position > .widget-heading
@@ -23761,6 +23772,7 @@ sports.ru##.poll__bookmaker-logo
 cyber.sports.ru##.polling
 cyber.sports.ru##.post-content a[href*="://sirena.world/"]
 sports.ru##.post-layout__frame
+sports.ru##.post-page__branding
 sports.ru##.promo-link
 sports.ru##.promo-timer__broadcast-label
 sports.ru##.promo-timer__erid-label
@@ -29598,11 +29610,11 @@ dzen.ru##:matches-path(/\/a/) div[class*="Doc2Doc"]
 dzen.ru##:matches-path(/\/a/) div[style="opacity: 1;"]
 dzen.ru##:matches-path(/\/a/) main div [itemscope] > div > div[id]
 dzen.ru##:matches-path(/articles) div:has(> article > [class*="adBox"])
+dzen.ru##:matches-path(/articles) div[class^="article-feed--"] > div[class] ~ div[id]
 ozon.ru##:matches-path(/kursk-sertifikaty) [data-lcp-name*="anner-"]:style(display: block !important)
 ozon.ru##:matches-path(/kursk-sertifikaty) div[data-widget="banner"]:style(display: block !important)
 dzen.ru,sportsdzen.ru##:matches-path(/news) :matches-attr(/./=/feed/) > div:not([id]) > div[id*="feed"]
 dzen.ru,sportsdzen.ru##:matches-path(/news) div:matches-attr(/./=/misc-card/)
-dzen.ru##:matches-path(articles) div[class^="article-feed--"] > div[class] ~ div[id]
 forum.ru-board.com##:matches-path(topic=51666) .dats > a[href="javascript:pasteN('AlAvis')"] > b:style(color: #00bfff !important)
 dzen.ru##:matches-path(video/watch) [class*="_withBottomSpace-"]
 dzen.ru##:matches-path(video/watch) [class*="doc2doc-after"]
@@ -29615,7 +29627,6 @@ pronpic.org#@#:not(obhod-adblocka)
 @@||st.top100.ru/top100/top100.js|$script,badfilter,domain=auto.rambler.ru|news.rambler.ru
 @@||studizba.com^$generichide,badfilter
 @@||xksqb.com/native.$script,badfilter,domain=gwss.ru
-sports.ru##[class*="_label "]
 dzen.ru,ya.ru,yandex.by,yandex.kz,yandex.ru,yandex.uz##[class*="mini-suggest__item"]:has(> a[href*="://yabs.yandex."][href*="/count/"]):remove()
 dzen.ru,ya.ru,yandex.by,yandex.kz,yandex.ru,yandex.uz##[class*="mini-suggest__item"]:has(> a[href*="://yandex."][href*="/clck/"]):remove()
 dzen.ru,ya.ru,yandex.by,yandex.kz,yandex.ru,yandex.uz##[class*="mini-suggest__item"]:has(> a[href][target="_blank"]):remove()
@@ -29738,7 +29749,7 @@ ya.ru,yandex.*##.simple-popup__overlay:remove()
 ||pronpic.org^$third-party,badfilter
 ||rbk.ru/*/_videoAutoplayRecommend.js
 ||rbk.ru/*/build/fn/_oprosso.js
-||rutube.ru/play/embed/*?dist=$subdocument,removeparam=autoplay
+||rutube.ru/play/embed/*dist=$subdocument,removeparam=autoplay
 ||s-cdn.org/promo/*.mp4$media,redirect=noop-0.1s.mp3,domain=player-films.online
 ||s-club.tv/promo/*.mp4$media,redirect=noop-0.1s.mp3,domain=player-films.online
 ||skam.online^$csp=script-src 'self' * 'unsafe-eval' data:,badfilter
