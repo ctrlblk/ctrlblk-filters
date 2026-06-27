@@ -265,6 +265,7 @@
 ||adplay.ru^$third-party
 ||adplus.io^$third-party
 ||adpool.bet^$third-party
+||adport.net^$third-party
 ||adpremium.ru^$third-party
 ||adprofits.ru^$third-party
 ||adradle.life^$third-party
@@ -1136,6 +1137,7 @@
 ||celebratearrival.com^$third-party
 ||celesterium.com^$third-party
 ||cellulitmedic.ru^$third-party
+||cenoobi.run^$third-party
 ||ceoftca.ru^$third-party
 ||cepereh.ru^$third-party
 ||ceregete.com^$third-party
@@ -6799,6 +6801,7 @@
 ||vuwsdds.pro^$third-party
 ||vvcat.me^$third-party
 ||vvcat.org^$third-party
+||vvhub.me^$third-party
 ||vvmblock.ru^
 ||vvvsd.space^$third-party
 ||vwcsl.com^$third-party
@@ -7912,6 +7915,7 @@ _verified.php?code=*&server=runetki.com
 /?t=rot&pid=$script
 /\/[a-z]{1,3}\?zoneId\=\d{7}\-\d{7}$/$third-party,script
 /^https:\/\/[0-9a-f]{10}\.[0-9a-f]{10}\.com\/.*\.js$/$third-party,match-case,script
+/^https:\/\/[a-z0-9-]+\.[a-z0-9-]+\.[a-z]+\/(api-integration\/)?cdn\/[a-z0-9]+\.js\?[a-z0-9]+=[a-z0-9_=-]{6,}/$third-party,xmlhttprequest
 /^https?://([^.]+\.)+[a-z]+\.(?:biz|ru|space)/[a-z][/?][-a-z0-9_?&=]{5,45}$/$third-party,script,domain=~hotcharts.ru
 /^https?:\/\/[-a-z]{6,}\.(?:com?|info|pro|xyz)\/[a-d][-.\/A-Z_a-z][DHWXm][-.\/A-Z_a-z][59FVZ][-.\/A-Z_a-z][6swyz][-.\/A-Z_a-z][-\/0-9A-Z_a-z][-.\/A-Z_a-z][-\/0-9A-Z_a-z]+(?:$|\?)/$third-party,match-case,script
 /a/ipn/js/*$third-party,script
@@ -8142,6 +8146,7 @@ _verified.php?code=*&server=runetki.com
 /mirmaek/*$image
 /mixadvert.$domain=~mixadvert.com
 /movie/files/episodes/*-RU.mp4|$third-party,media
+/movie/files/episodes/*bet.mp4|$third-party,media
 /mp3player.swf?file=*/bb1.mp3
 /mp3player.swf?file=*/bb2.mp3
 /mp3player.swf?file=*/vk.mp3
@@ -11977,7 +11982,6 @@ igdz1.ru^$script,domain=igdz.ru
 ||image.jimcdn.com^$image,domain=optimistt.ru
 ||image2you.ru^$domain=strelec.ucoz.ru
 ||imedica.by/delivery/
-||img-fotki.yandex.ru/get/*_orig|$image,domain=masterok.livejournal.com
 ||img.*.ru/js/jquery.suSlider.js$script
 ||img.bankoboev.ru^
 ||img.playground.ru/moevideo_*.html
@@ -13215,7 +13219,6 @@ igdz1.ru^$script,domain=igdz.ru
 ||spark.ru/upload/promo/
 ||spbdnevnik.ru/media/_b/$image
 ||spbit.ru/uploads/Banner/
-||spdmpgcdn.com/veoveo-creative/
 ||special.matchtv.ru/api/*bonuses?
 ||special.matchtv.ru/feeds/
 ||special.pikabu.ru^$domain=~special.pikabu.ru
@@ -13681,8 +13684,6 @@ igdz1.ru^$script,domain=igdz.ru
 ||vsetop.org/uploads/yabr.
 ||vsetyt.us/uploads/ruscams.
 ||vsluh.ru/system/*banners/
-||vveu.spdmpgcdn.com/
-||vvru.spdmpgcdn.com/
 ||vyksarf.ru^$domain=xn--80ady2a0c.xn--p1ai
 ||walking-dead.ru/banners.js
 ||walking-dead.ru/bnr/
@@ -18910,6 +18911,7 @@ alcogolizm.com,jlady.ru,parazitovnetu.ru,spinazdorov.ru##.vex
 kino-history.net,velikolepnyivek.com##.viboom-overroll
 xcadr.online##.video-ad
 youtube.com##.video-annotations .annotation-type-text
+livejournal.com##.video-autoplay-adv
 dobre.stb.ua##.video-banner
 povarenok.ru##.video-bl
 povarenok.ru##.video-bl ~ .specproject-widgets
@@ -22557,7 +22559,7 @@ https://*adtech_uid=$~third-party,xmlhttprequest,domain=levik.blog|livejournal.c
 ||newsyou.info/wp-content/plugins/gtranslate/
 ||newsyou.info^$csp=script-src-elem 'self' https:
 ||ng72.ru^$csp=script-src 'self' 'unsafe-eval' https:
-||pikabu.ru/ajax/*?r7n8M=$xmlhttprequest
+||pikabu.ru/ajax/*?Grt5e=$xmlhttprequest
 ||ritsatv.ru^$csp=script-src
 ||ritsatv.ru^$popup
 ||ritsatv.ru^$~document
@@ -25554,6 +25556,7 @@ zarulem.ws##td[style^="text-align:center;width:50%"]
 ||sovetnik.yandex.net^$third-party
 ||spacepush.ru^$third-party
 ||spbland.ru/bban/
+||spdmpgcdn.com^$third-party,media
 ||spitter.pauk.ru^
 ||sponsor.gazeta.ru^$third-party
 ||sport-fitnes.ru^$third-party
@@ -28801,6 +28804,7 @@ dzen.ru##[aria-label] div[id][class*="-desktop__ad-"]
 dzen.ru##div[class*="AdvertTsar"]
 dzen.ru##div[class*="BrandingAdvertLayoutColumn-"]
 dzen.ru##div[class*="_content_with-new-"] > div[id] ~ div[class*="withDiscreteScroll"]
+dzen.ru##div[class*="_is-branding"] > div[style^="background-color:"]
 dzen.ru##div[class*="body_branding"] > div[style*="background-color:"]
 dzen.ru##div[class*="body_branding"]:style(background: inherit !important)
 dzen.ru##div[class*="new"] [class$="__rubricator"] + div[class*=" "] > div:only-child
