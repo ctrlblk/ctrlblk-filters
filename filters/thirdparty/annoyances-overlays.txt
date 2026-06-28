@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: EasyList – Newsletter Notices
-! Last modified: Fri, 26 Jun 2026 04:58:32 +0000
+! Last modified: Sun, 28 Jun 2026 05:08:36 +0000
 ! Expires: 7 days (update frequency)
 ! *** easylist:template_header.txt ***
 !
@@ -2193,6 +2193,7 @@ datacenterdynamics.com##.block-channel_subscription
 cidrap.umn.edu##.block-cidrap-persistent-newsletter
 qsrmedia.com.au##.block-cmg-newsletter
 frommybowl.com##.block-cookbook
+californiasciencecenter.org##.block-csc-newsletter
 africacheck.org##.block-cta-block
 eatingbirdfood.com,joyfoodsunshine.com,spendwithpennies.com##.block-ebook
 visordown.com##.block-echobox-subscriber-blockvisordown-newsletter
@@ -3989,6 +3990,7 @@ triblive.com##[href="/notifications/"]
 jewishworldreview.com##[href="/subs.php"]
 thebolditalic.com##[href="http://tbi.fyi/website_referral"]
 sfgate.com##[href="https://link.sfgate.com/join/signup-sfgate"]
+ibtimes.com##[href="https://newsletter.ibt.com/"]
 techcabal.com##[href="https://techcabal.com/newsletter"]
 cbtnews.com##[href="https://www.cbtnews.com/newsletter-signup/"]
 hackster.io##[href="https://www.hackster.io/newsletter/sign_up"]
@@ -6378,7 +6380,7 @@ doctorofcredit.com#@#.wpdiscuz-subscribe-bar
 ! fanboy_newsletter_shopping_allowlist_general_hide.txt
 
 ! Title: uBlock filters – Other Annoyances
-! Last modified: Fri, 26 Jun 2026 22:45:17 +0000
+! Last modified: Sun, 28 Jun 2026 05:41:13 +0000
 ! Expires: 7 days
 ! Description: Filters optimized for uBlock Origin, to be used with EasyList's and/or Adguard's "Other Annoyances" list(s)
 ! License: https://github.com/uBlockOrigin/uAssets/blob/master/LICENSE
@@ -14485,3 +14487,6 @@ homegymreview.co.uk##body * :not(input):not(textarea):style(user-select: text !i
 ! https://old.reddit.com/r/uBlockOrigin/comments/1ug4jiw/the_sun_adblock_nag/
 thesun.co.uk##dialog:remove()
 thesun.co.uk##:is(html,body):style(overflow: unset !important)
+
+! https://github.com/uBlockOrigin/uAssets/issues/33479
+alphacoders.com##+js(trusted-rpnt, script, countdown <= 0, countdown => 0)
