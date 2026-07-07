@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Version: 20260706151851992
+! Version: 20260707115256299
 ! id: D4028CDD-3D39-4624-ACC7-8140F4EC3888
 ! Title: ABPVN List | Ublock Origin
-! Last modified: 06 Jul 2026 15:18:52 UTC+7
-! Diff-Path: patches/20260706151851992.patch#abpvn_ublock
+! Last modified: 07 Jul 2026 11:52:56 UTC+7
+! Diff-Path: patches/20260707115256299.patch#abpvn_ublock
 ! Diff-Expires: 60 minutes
 ! Expires: 1 days (update frequency)
 !
@@ -43,7 +43,7 @@
 /core/*$script,domain=gamek.vn|genk.vn|kenh14.vn|cafef.vn|thanhnien.vn
 /disable-devtool.min.js$script
 /giadinhonline.vn/files/qc/*
-/i.imgur.com/*.gif$domain=www.1phim9.com|listnhacai88.com|rakhoizr.cc
+/i.imgur.com/*.gif$domain=www.1phim9.com|listnhacai88.com|rakhoizf.cc
 /lv/esnk/*$script
 /newchill/*gif$image
 /player/jwplayer-*/vast.js$script
@@ -93,7 +93,7 @@
 ||cdn-data.gtvplus.vn/banners/$image,domain=gametv.vn
 ||cdn.giavang.org/images/ads/$image,domain=giavang.org
 ||cdn.lfastcdn.com/2026/04/dzzmi8.gif$image
-||cdn.lfastcdn.com^*.gif$image,domain=bongdainfox.tv|rakhoizr.cc
+||cdn.lfastcdn.com^*.gif$image,domain=bongdainfox.tv|rakhoizf.cc
 ||cdn.monkeydarchive.com/images/banner/$image,domain=monkeyd.net.vn
 ||cdn.webhoctienganh.com/asset/home/img/banner/$image,domain=webhoctienganh.com
 ||cf.shopee.vn/file/$image,domain=tctruyen.org
@@ -179,7 +179,7 @@
 ||qthang.net/js/blocker$script,~third-party
 ||quaivatdienanh.com/*banner$image
 ||quoracdn.net^$image,domain=www.1phim9.com|phimlongtieng.net
-||rophims.co.uk^*.gif,~third-party
+||rophimzz.fit^*.gif,~third-party
 ||run.vn/widget$script,~third-party
 ||s2.truyentot.com^*.gif$image,domain=hhtq13.vip|hhtq3d.net|hhtq5.vip|hhvsub1.com|hhvietsub.com
 ||server.zmedia.vn/static/$script
@@ -618,14 +618,14 @@ plcdn.xyz,xoilac.livecdnem.com,xlz.buzzscorelinez.com##.odds-button
 qdnd.vn##.box-banner
 qmanga.art,khotruyen.ac##.gwd-banner-image
 quantrimang.com###adrighttop
-rakhoizr.cc###wap_bottombanner
-rakhoizr.cc##.bookmaker-selector-container
-rakhoizr.cc##.btn-8xbet
-rakhoizr.cc##.btn-odds
-rakhoizr.cc##.footer-banner
-rakhoizr.cc##.sk_balloon
+rakhoizf.cc###wap_bottombanner
+rakhoizf.cc##.bookmaker-selector-container
+rakhoizf.cc##.btn-8xbet
+rakhoizf.cc##.btn-odds
+rakhoizf.cc##.footer-banner
+rakhoizf.cc##.sk_balloon
 reatimes.vn##div[class^="adv-"]
-rophims.co.uk##.sspp-area
+rophimzz.fit##.sspp-area
 sachmoi.net##.boxzilla-bottom-right-container
 sachmoi.net##[href^="https://gotrackecom.info"]
 saostar.vn###mobi-top
@@ -701,6 +701,10 @@ thuysanvietnam.com.vn##.noname-left
 tienphong.vn##.banner-top
 tienphong.vn##div[id^="adsMobile"]
 tienphong.vn,baodauthau.vn##div[id^="adsWeb"]
+tieulamwc1.com##.css-d32i5r.MuiBox-root.-translate-x-1\/2.left-1\/2.max-w-\[720px\].w-full.fixed.md\:px-2.px-0
+tieulamwc1.com##.css-nlhufw.MuiStack-root>.whitespace-nowrap.transition.text-xs.text-black.font-medium.rounded-full.py-1\.5.px-4.shrink-0
+tieulamwc1.com##.items-end.justify-between.flex.gap-2.px-4.py-4.w-full>.whitespace-nowrap.transition.text-xs.text-black.font-medium.rounded-full.py-1\.5.px-4.shrink-0
+tieulamwc1.com##.no-underline.font-semibold.items-center.justify-start.flex.text-black.rounded-full.shrink-0.w-fit
 tiin.vn##.ads-common-box
 tinhte.vn##.hidden-md>.main.jsx-2126301199
 tinhte.vn##.jsx-3569995709
@@ -940,6 +944,8 @@ docufind.org.uk/wp-content/themes/vlxx/js/*-adx.js$script
 ||lxmanga.space/storage/images/banners
 ||mangadm.cc$csp=script-src 'self' 'unsafe-inline' http
 ||ngaytho.me^*.gif
+||phe69.asia/wp-content/3rd-ads/jsad/ads-t11.js$script,~third-party
+||phe69.asia^*.gif
 ||phimsexhayvne.com^*.gif$image
 ||phimsexnhatkhongche.top^*.gif$image
 ||phimsexsuong3x.net^*.gif$image
@@ -1009,6 +1015,8 @@ javtopxx2.com##.logo-player
 javtopxx2.com##.sticky_bottom
 laalmirchitakeaway.co.uk##.banner-preload
 ngaytho.me##.body_wrapper1
+phe69.asia###ad-banner
+phe69.asia###phe-overlay-root
 pheclip.fit,phim18vip.site##.in.fade.modal-backdrop
 phim.haysex.asia###mp-preload-popup-overlay
 phim.haysex.asia##.banner-play
@@ -1162,14 +1170,14 @@ quykhu.com###content:style(max-height:none !important;opacity:1 !important)
 quykhu.com##+js(acs, document.addEventListener, atob)
 quykhu.com##.shadow-sm.space-y-2.text-center.text-blue-900.rounded-2xl.border-blue-200.border.bg-blue-50.p-3
 rophim.moe##+js(acs, addEvent, popu)
-rophims.co.uk,motphimr.app##+js(aeld, click, ads)
+rophimzz.fit,motphimr.app##+js(aeld, click, ads)
 rphang.online,misskon.com##+js(acs, document.querySelectorAll, popMagic)
 saigon24.net##+js(acs, document.getElementById, myModal)
 sex.javnong.cc##+js(aopr, Math.round)
 sexmupxinh.net##+js(aopr, Cookies)
-tram3d.cam,animevietsub.love##+js(acs, eval, $._Eu)
 tram3d.com##+js(acs, document.createElement, ;break;case)
 tram3d.mom##+js(acs, setTimeout, appendChild)
+tram3d.my,animevietsub.love##+js(acs, eval, $._Eu)
 truyen247.pro##+js(acs, eval)
 truyenfull.today##+js(set, ads_show, 0)
 truyensextv.com,yanhh3d.nl,z.chinav.sex##+js(acs, document.addEventListener, opup)
