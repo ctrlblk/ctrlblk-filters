@@ -1,10 +1,10 @@
 ![Adblock Plus 2.0]
-! Checksum: mjGncC/vpxla3yhAiA+BVw
-! Diff-Path: ../patches/13/13-s-1783415792-3600.patch
+! Checksum: D9KCOAcZ0WbJ4ovvFq9eZQ
+! Diff-Path: ../patches/13/13-s-1783546298-3600.patch
 ! Title: AdGuard Turkish filter
 ! Description: Filter list that specifically removes ads on websites in Turkish language.
-! Version: 2.0.65.57
-! TimeUpdated: 2026-07-07T09:13:27+00:00
+! Version: 2.0.65.63
+! TimeUpdated: 2026-07-08T21:28:41+00:00
 ! Expires: 5 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -5950,11 +5950,11 @@ lovefilmizle.net,elzemfilm.org,dizicaps.*,erotikfilmtube.com,sexfilmleriizle.com
 /sadeceifsa\d+\.(lol\|icu)$/##article[data-ad-pos]
 /sadeceifsa\d+\.(lol\|icu)$/##div[style]:has(> a[href^="https://bit.ly/"])
 /sadeceifsa\d+\.(lol\|icu)$/##+js(remove-node-text, script, pickEngine)
-sadeceifsa16.icu###tg-cta-container
-sadeceifsa16.icu##.banner-grid-wrap
-sadeceifsa16.icu##article[data-ad-pos]
-sadeceifsa16.icu##div[style]:has(> a[href^="https://bit.ly/"])
-sadeceifsa16.icu##+js(remove-node-text, script, pickEngine)
+sadeceifsa15.icu###tg-cta-container
+sadeceifsa15.icu##.banner-grid-wrap
+sadeceifsa15.icu##article[data-ad-pos]
+sadeceifsa15.icu##div[style]:has(> a[href^="https://bit.ly/"])
+sadeceifsa15.icu##+js(remove-node-text, script, pickEngine)
 !
 ! Frequently changed domains: dizimor*.com.tr
 ! Source: dizimor1.com.tr
@@ -5995,14 +5995,17 @@ turkporoclub1.sbs,turkporoclub2.sbs,turkporoclub3.sbs,turkporoclub4.sbs,turkporo
 ! Source: hdifsaizle4.com
 ! aglint-disable no-invalid-modifiers
 !+ NOT_VALIDATE NOT_PLATFORM(windows, mac, android, cli)
-||hdgifs.b-cdn.net^$media,domain=/hdifsaizle\d+\.com$/
+||r2.dev/*.gif$image,domain=/hdifsaizle\d+\.icu$/
 ! aglint-enable no-invalid-modifiers
-/hdifsaizle\d+\.com$/##div[style]:has(> a[href^="http://bpkaff.com/"])
-/hdifsaizle\d+\.com$/##.sticky-banner-container
-/hdifsaizle\d+\.com$/##+js(no-window-open-if)
-hdifsaizle4.com,hdifsaizle5.com,hdifsaizle6.com,hdifsaizle7.com,hdifsaizle8.com,hdifsaizle9.com,hdifsaizle10.com,hdifsaizle11.com,hdifsaizle12.com,hdifsaizle13.com,hdifsaizle14.com,hdifsaizle15.com,hdifsaizle16.com,hdifsaizle17.com,hdifsaizle18.com,hdifsaizle19.com,hdifsaizle20.com,hdifsaizle21.com,hdifsaizle22.com,hdifsaizle23.com,hdifsaizle24.com,hdifsaizle25.com,hdifsaizle26.com,hdifsaizle27.com,hdifsaizle28.com,hdifsaizle29.com,hdifsaizle30.com,hdifsaizle31.com,hdifsaizle32.com,hdifsaizle33.com##div[style]:has(> a[href^="http://bpkaff.com/"])
-hdifsaizle4.com,hdifsaizle5.com,hdifsaizle6.com,hdifsaizle7.com,hdifsaizle8.com,hdifsaizle9.com,hdifsaizle10.com,hdifsaizle11.com,hdifsaizle12.com,hdifsaizle13.com,hdifsaizle14.com,hdifsaizle15.com,hdifsaizle16.com,hdifsaizle17.com,hdifsaizle18.com,hdifsaizle19.com,hdifsaizle20.com,hdifsaizle21.com,hdifsaizle22.com,hdifsaizle23.com,hdifsaizle24.com,hdifsaizle25.com,hdifsaizle26.com,hdifsaizle27.com,hdifsaizle28.com,hdifsaizle29.com,hdifsaizle30.com,hdifsaizle31.com,hdifsaizle32.com,hdifsaizle33.com##.sticky-banner-container
-hdifsaizle4.com,hdifsaizle5.com,hdifsaizle6.com,hdifsaizle7.com,hdifsaizle8.com,hdifsaizle9.com,hdifsaizle10.com,hdifsaizle11.com,hdifsaizle12.com,hdifsaizle13.com,hdifsaizle14.com,hdifsaizle15.com,hdifsaizle16.com,hdifsaizle17.com,hdifsaizle18.com,hdifsaizle19.com,hdifsaizle20.com,hdifsaizle21.com,hdifsaizle22.com,hdifsaizle23.com,hdifsaizle24.com,hdifsaizle25.com,hdifsaizle26.com,hdifsaizle27.com,hdifsaizle28.com,hdifsaizle29.com,hdifsaizle30.com,hdifsaizle31.com,hdifsaizle32.com,hdifsaizle33.com##+js(no-window-open-if)
+/hdifsaizle\d+\.icu$/##.banner-grid-wrap
+/hdifsaizle\d+\.icu$/##a[href^="https://tinyurl.com/"]
+/hdifsaizle\d+\.icu$/###prerollOverlay
+/hdifsaizle\d+\.icu$/##article.hd-card:has(> a[href^="/api/ad-click/"])
+hdifsaizle17.icu,hdifsaizle18.icu,hdifsaizle19.icu,hdifsaizle20.icu,hdifsaizle21.icu,hdifsaizle22.icu,hdifsaizle23.icu,hdifsaizle24.icu,hdifsaizle25.icu,hdifsaizle26.icu,hdifsaizle27.icu,hdifsaizle28.icu,hdifsaizle29.icu,hdifsaizle30.icu,hdifsaizle31.icu,hdifsaizle32.icu,hdifsaizle33.icu##.banner-grid-wrap
+hdifsaizle17.icu,hdifsaizle18.icu,hdifsaizle19.icu,hdifsaizle20.icu,hdifsaizle21.icu,hdifsaizle22.icu,hdifsaizle23.icu,hdifsaizle24.icu,hdifsaizle25.icu,hdifsaizle26.icu,hdifsaizle27.icu,hdifsaizle28.icu,hdifsaizle29.icu,hdifsaizle30.icu,hdifsaizle31.icu,hdifsaizle32.icu,hdifsaizle33.icu##a[href^="https://tinyurl.com/"]
+hdifsaizle17.icu,hdifsaizle18.icu,hdifsaizle19.icu,hdifsaizle20.icu,hdifsaizle21.icu,hdifsaizle22.icu,hdifsaizle23.icu,hdifsaizle24.icu,hdifsaizle25.icu,hdifsaizle26.icu,hdifsaizle27.icu,hdifsaizle28.icu,hdifsaizle29.icu,hdifsaizle30.icu,hdifsaizle31.icu,hdifsaizle32.icu,hdifsaizle33.icu###prerollOverlay
+hdifsaizle17.icu,hdifsaizle18.icu,hdifsaizle19.icu,hdifsaizle20.icu,hdifsaizle21.icu,hdifsaizle22.icu,hdifsaizle23.icu,hdifsaizle24.icu,hdifsaizle25.icu,hdifsaizle26.icu,hdifsaizle27.icu,hdifsaizle28.icu,hdifsaizle29.icu,hdifsaizle30.icu,hdifsaizle31.icu,hdifsaizle32.icu,hdifsaizle33.icu##article.hd-card:has(> a[href^="/api/ad-click/"])
+||r2.dev/*.gif$image,domain=hdifsaizle17.icu|hdifsaizle18.icu|hdifsaizle19.icu|hdifsaizle20.icu|hdifsaizle21.icu|hdifsaizle22.icu|hdifsaizle23.icu|hdifsaizle24.icu|hdifsaizle25.icu|hdifsaizle26.icu|hdifsaizle27.icu|hdifsaizle28.icu|hdifsaizle29.icu|hdifsaizle30.icu|hdifsaizle31.icu|hdifsaizle32.icu|hdifsaizle33.icu
 !
 ! Frequently changed domains: turkifsa*.site; turkifsalar2.site
 ! Source: turkifsa40.site; turkifsalar2.site
@@ -6120,11 +6123,11 @@ turktube1.ink,turktube2.ink,turktube3.ink,turktube4.ink,turktube5.ink,turktube6.
 /hdturkifsa\d+\.(lol\|icu)$/##+js(remove-node-text, script, pickEngine)
 !
 ! hdturkifsa*.icu
-hdturkifsa54.cfd###tg-cta-container
-hdturkifsa54.cfd##.banner-grid-wrap
-hdturkifsa54.cfd##article[data-ad-pos]
-hdturkifsa54.cfd##div[style]:has(> a[href^="https://bit.ly/"])
-hdturkifsa54.cfd##+js(remove-node-text, script, pickEngine)
+hdturkifsa50.cfd###tg-cta-container
+hdturkifsa50.cfd##.banner-grid-wrap
+hdturkifsa50.cfd##article[data-ad-pos]
+hdturkifsa50.cfd##div[style]:has(> a[href^="https://bit.ly/"])
+hdturkifsa50.cfd##+js(remove-node-text, script, pickEngine)
 !
 ! Frequently changed domains: softtv*.com
 ! Source: softtv2.com
@@ -6202,6 +6205,11 @@ tvakin.live,tvakin1.live,tvakin2.live,tvakin3.live,tvakin4.live,tvakin5.live,tva
 patronizle14.cfd,patronizle15.cfd,patronizle16.cfd,patronizle17.cfd,patronizle18.cfd,patronizle19.cfd,patronizle20.cfd,patronizle21.cfd,patronizle22.cfd,patronizle23.cfd,patronizle24.cfd,patronizle25.cfd,patronizle26.cfd,patronizle27.cfd,patronizle28.cfd,patronizle29.cfd,patronizle30.cfd,patronizle31.cfd,patronizle32.cfd,patronizle33.cfd,patronizle34.cfd,patronizle35.cfd,patronizle36.cfd,patronizle37.cfd,patronizle38.cfd,patronizle39.cfd,patronizle40.cfd,patronizle41.cfd,patronizle42.cfd,patronizle43.cfd,patronizle44.cfd,patronizle45.cfd,patronizle46.cfd,patronizle47.cfd,patronizle48.cfd,patronizle49.cfd,patronizle50.cfd,patronizle51.cfd,patronizle52.cfd,patronizle53.cfd,patronizle54.cfd,patronizle55.cfd,patronizle56.cfd,patronizle57.cfd,patronizle58.cfd,patronizle59.cfd,patronizle60.cfd,patronizle61.cfd,patronizle62.cfd,patronizle63.cfd##.background-link
 patronizle14.cfd,patronizle15.cfd,patronizle16.cfd,patronizle17.cfd,patronizle18.cfd,patronizle19.cfd,patronizle20.cfd,patronizle21.cfd,patronizle22.cfd,patronizle23.cfd,patronizle24.cfd,patronizle25.cfd,patronizle26.cfd,patronizle27.cfd,patronizle28.cfd,patronizle29.cfd,patronizle30.cfd,patronizle31.cfd,patronizle32.cfd,patronizle33.cfd,patronizle34.cfd,patronizle35.cfd,patronizle36.cfd,patronizle37.cfd,patronizle38.cfd,patronizle39.cfd,patronizle40.cfd,patronizle41.cfd,patronizle42.cfd,patronizle43.cfd,patronizle44.cfd,patronizle45.cfd,patronizle46.cfd,patronizle47.cfd,patronizle48.cfd,patronizle49.cfd,patronizle50.cfd,patronizle51.cfd,patronizle52.cfd,patronizle53.cfd,patronizle54.cfd,patronizle55.cfd,patronizle56.cfd,patronizle57.cfd,patronizle58.cfd,patronizle59.cfd,patronizle60.cfd,patronizle61.cfd,patronizle62.cfd,patronizle63.cfd##.header-nav > a[href="/"] ~ a[href][target="_blank"]
 !
+! Frequently changed domains: patronlig*.cfd
+patronlig16.cfd##.background-link
+patronlig16.cfd##.top-banner-header
+||blogger.googleusercontent.com/img/$domain=patronlig16.cfd
+!
 ! Frequently changed domains: piabettv*.live
 ! Source: https://ksln.link/piatv
 /piabettv\d+\.live$/##header > ul > li:not(:has(> a[href="/"]))
@@ -6241,7 +6249,7 @@ turkkizlar31.com,turkkizlar32.com,turkkizlar33.com,turkkizlar34.com,turkkizlar35
 ! Source: cimcime56.com / cimcime133.live
 ||cimcime*.com/wp-content/uploads/*.gif
 /cimcime\d+\.\w+$/###ads-inside-main
-cimcime133.live###ads-inside-main
+cimcime134.live###ads-inside-main
 !
 ! Frequently changed domains: dahahizli*.com
 ! Source: dahahizli49.com
@@ -6313,8 +6321,8 @@ turkifsaclub.org##.ads-grid
 turkifsaclub.org##main > h3:contains(Sponsor Bannerlar)
 /turkifsaclub\d+\.sbs/##.ads-grid
 /turkifsaclub\d+\.sbs/##main > h3:contains(Sponsor Bannerlar)
-turkifsaclub130.sbs,turkifsaclub131.sbs,turkifsaclub132.sbs,turkifsaclub133.sbs,turkifsaclub134.sbs,turkifsaclub135.sbs,turkifsaclub136.sbs,turkifsaclub137.sbs,turkifsaclub138.sbs,turkifsaclub139.sbs,turkifsaclub140.sbs,turkifsaclub141.sbs,turkifsaclub142.sbs,turkifsaclub143.sbs,turkifsaclub144.sbs,turkifsaclub145.sbs,turkifsaclub146.sbs,turkifsaclub147.sbs,turkifsaclub148.sbs,turkifsaclub149.sbs,turkifsaclub150.sbs,turkifsaclub151.sbs,turkifsaclub152.sbs,turkifsaclub153.sbs,turkifsaclub154.sbs,turkifsaclub155.sbs,turkifsaclub156.sbs,turkifsaclub157.sbs,turkifsaclub158.sbs,turkifsaclub159.sbs,turkifsaclub160.sbs,turkifsaclub161.sbs,turkifsaclub162.sbs##.ads-grid
-turkifsaclub130.sbs,turkifsaclub131.sbs,turkifsaclub132.sbs,turkifsaclub133.sbs,turkifsaclub134.sbs,turkifsaclub135.sbs,turkifsaclub136.sbs,turkifsaclub137.sbs,turkifsaclub138.sbs,turkifsaclub139.sbs,turkifsaclub140.sbs,turkifsaclub141.sbs,turkifsaclub142.sbs,turkifsaclub143.sbs,turkifsaclub144.sbs,turkifsaclub145.sbs,turkifsaclub146.sbs,turkifsaclub147.sbs,turkifsaclub148.sbs,turkifsaclub149.sbs,turkifsaclub150.sbs,turkifsaclub151.sbs,turkifsaclub152.sbs,turkifsaclub153.sbs,turkifsaclub154.sbs,turkifsaclub155.sbs,turkifsaclub156.sbs,turkifsaclub157.sbs,turkifsaclub158.sbs,turkifsaclub159.sbs,turkifsaclub160.sbs,turkifsaclub161.sbs,turkifsaclub162.sbs##main > h3:contains(Sponsor Bannerlar)
+turkifsaclub130.sbs,turkifsaclub131.sbs,turkifsaclub132.sbs,turkifsaclub133.sbs,turkifsaclub134.sbs,turkifsaclub135.sbs,turkifsaclub136.sbs,turkifsaclub137.sbs,turkifsaclub138.sbs,turkifsaclub139.sbs,turkifsaclub140.sbs,turkifsaclub141.sbs,turkifsaclub142.sbs,turkifsaclub143.sbs,turkifsaclub144.sbs,turkifsaclub145.sbs,turkifsaclub146.sbs,turkifsaclub147.sbs,turkifsaclub148.sbs,turkifsaclub149.sbs,turkifsaclub150.sbs,turkifsaclub151.sbs,turkifsaclub152.sbs,turkifsaclub153.sbs,turkifsaclub154.sbs,turkifsaclub155.sbs,turkifsaclub156.sbs,turkifsaclub157.sbs,turkifsaclub158.sbs,turkifsaclub159.sbs,turkifsaclub160.sbs,turkifsaclub161.sbs,turkifsaclub162.sbs,turkifsaclub163.sbs,turkifsaclub164.sbs##.ads-grid
+turkifsaclub130.sbs,turkifsaclub131.sbs,turkifsaclub132.sbs,turkifsaclub133.sbs,turkifsaclub134.sbs,turkifsaclub135.sbs,turkifsaclub136.sbs,turkifsaclub137.sbs,turkifsaclub138.sbs,turkifsaclub139.sbs,turkifsaclub140.sbs,turkifsaclub141.sbs,turkifsaclub142.sbs,turkifsaclub143.sbs,turkifsaclub144.sbs,turkifsaclub145.sbs,turkifsaclub146.sbs,turkifsaclub147.sbs,turkifsaclub148.sbs,turkifsaclub149.sbs,turkifsaclub150.sbs,turkifsaclub151.sbs,turkifsaclub152.sbs,turkifsaclub153.sbs,turkifsaclub154.sbs,turkifsaclub155.sbs,turkifsaclub156.sbs,turkifsaclub157.sbs,turkifsaclub158.sbs,turkifsaclub159.sbs,turkifsaclub160.sbs,turkifsaclub161.sbs,turkifsaclub162.sbs,turkifsaclub163.sbs,turkifsaclub164.sbs##main > h3:contains(Sponsor Bannerlar)
 !
 ! Frequently changed domains: yavasgir*.com
 ||yavasgir*.com/*.gif
@@ -6824,6 +6832,8 @@ selcuksportshdcanli.com,selcuksportshd.is##body:style(background-image: none !im
 selcuksportshdcanli.com##.ps
 ! TODO: remove "NOT_VALIDATE" hint when this issue is fixed - https://github.com/AdguardTeam/FiltersCompiler/issues/237
 !+ NOT_VALIDATE
+/^main\.uxsyplayer[a-z0-9]+\.click$/##.player-poster:style(background-image: unset !important;)
+!+ NOT_VALIDATE
 /^main\.uxsyplayer[a-z0-9]+\.click$/##+js(set-constant, Object.prototype.adSkipped, true)
 !+ NOT_VALIDATE
 /^main\.uxsyplayer[a-z0-9]+\.click$/##+js(set-constant, document.referrer, '')
@@ -7120,10 +7130,10 @@ hdfilmcehennemi27.org##body:style(background-image: none !important; cursor: aut
 ! Source: https://inattvgiris.one/ => https://inattv1298.xyz/
 /inattv\d+\.xyz/##.ads-container
 /inattv\d+\.xyz/##div[style="position:fixed; bottom:0px; left:0; width:100%; text-align:center; z-index:999999;"]
-inattv1316.xyz##.pageskin-wrapper > a[target="_blank"]
-||blogger.googleusercontent.com/img/$domain=inattv1316.xyz
-inattv1316.xyz##.ads-container
-inattv1316.xyz##div[style="position:fixed; bottom:0px; left:0; width:100%; text-align:center; z-index:999999;"]
+inattv1317.xyz##.pageskin-wrapper > a[target="_blank"]
+||blogger.googleusercontent.com/img/$domain=inattv1317.xyz
+inattv1317.xyz##.ads-container
+inattv1317.xyz##div[style="position:fixed; bottom:0px; left:0; width:100%; text-align:center; z-index:999999;"]
 ! aglint-disable no-invalid-modifiers
 !+ NOT_VALIDATE
 ||blogger.googleusercontent.com/img/$domain=/inattv\d+\.xyz/
