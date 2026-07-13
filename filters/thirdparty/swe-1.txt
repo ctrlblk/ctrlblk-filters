@@ -1,6 +1,6 @@
 ! Title: Frellwit's Swedish Filter
 ! Expires: 4 days
-! Last modified: 2026-07-10 05:20:55 CEST
+! Last modified: 2026-07-13 04:33:31 CEST
 ! Homepage: https://github.com/lassekongo83/Frellwits-filter-lists
 ! Description: A filter for uBlock Origin that aims to remove regional Swedish ads, tracking, annoyances, scams + badware, and unnecessary bloat.
 ! License: GPL3 - https://github.com/lassekongo83/Frellwits-filter-lists/blob/master/LICENSE
@@ -137,7 +137,7 @@ aikhockey.se,almtuna.com,bikkarlskoga.se,bjorkloven.com,brynas.se,difhockey.se,f
 aikhockey.se,almtuna.com,bikkarlskoga.se,bjorkloven.com,brynas.se,difhockey.se,frolundahockey.com,farjestadbk.se,hockeyallsvenskan.se,hv71.se,ikoskarshamn.se,kalmarhockey.com,leksandsif.se,luleahockey.se,malmoredhawks.com,modohockey.se,moraik.se,nybrovikings.com,orebrohockey.se,roglebk.se,skellefteaaik.se,sodertaljesk.se,taif.nu,timraik.se,vaxjolakers.se,vik.se,ostersundik.com,fbclerum.se,shl.se##.linked-image-section:has(a[href*="svenskaspel.se"][target])
 aip.nu##[class*="feed-ad"], .site-popup[data-popup-mode="logged_out"]
 aip.nu,lansposten.se,dalabygden.se,sormlandsbygden.se##body.cookies-not-set:style(overflow:unset!important)
-aip.nu,sjostadsbladet.se,fotbollsresultat.com,lansposten.se,dalabygden.se,sormlandsbygden.se,skaneplus.se,tradgardstrollet.se,8till5.se,etunawebben.se###cookie-notice
+aip.nu,sjostadsbladet.se,fotbollsresultat.com,lansposten.se,dalabygden.se,sormlandsbygden.se,skaneplus.se,tradgardstrollet.se,8till5.se,etunawebben.se,gasetten.se###cookie-notice
 aktavara.org##.banner-start
 aktieskolan.se##.ast-container > .elementor > section.elementor-section:has(a[href*="betting"])
 aktiespararna.se,alekuriren.se,tidningen.se,kurera.se,vinbanken.se,utsidan.se,offentligaaffarer.se##.native
@@ -885,7 +885,7 @@ jaktbaronen.se##.widget-sidebar:has-text(ANNONS)
 jaktjournalen.se##.activate-notifications-container.shown, [class*="ai-viewport"], .placeholder
 jaktjournalen.se##.has-row-header:has(#banner-ad-container)
 jaktjournalen.se##.post:has(.post__category--sponsored)
-jaktojagare.se##div.cookie-warning-container, .mb-adarea
+jaktojagare.se##div.cookie-warning-container, .mb-adarea, #jj-takeover-overlay
 jakto.se###sidebar-right .bs-widget:has(a[target="_blank"])
 jakto.se###sidebar-right .bs-widget:has-text(Annonsartiklar)
 jaktplay.se##.jaktplay-ad
@@ -1109,7 +1109,7 @@ mitti.se##.profile-native
 mitti.se,praktisktbatagande.se##+js(aeld, scroll, helpers.scroll(id))
 mkse.com##.mcforms-wrapper, .textwidget a[href*="bit.ly"]
 mmabetz.se##.desktop-homepage-ad, .desktop-main-ad, .latest-betting-campaigns, .best-casino-section, .top-casino
-mmanytt.se##.front-banner, .front-banner-cover, #text-2, [class*="sponsrat-inlagg"], a[href*="://kampanjer."], .ohmbet_link, a[href*="adsrv.eacdn.com"], .jeg_postblock + .wpb_content_element, .spelbolag-text, .adbox, .fight-odds-aggressive
+mmanytt.se##.front-banner, .front-banner-cover, #text-2, [class*="sponsrat-inlagg"], a[href*="://kampanjer."], .ohmbet_link, a[href*="adsrv.eacdn.com"], .jeg_postblock + .wpb_content_element, .spelbolag-text, .adbox, .fight-odds-aggressive, .mma-lw-slot
 mmanytt.se##.img-featured-posts-image:has(a[href$="/annons/"])
 mmanytt.se##.tablepress:has(a[href*="expekt"])
 mmanytt.se##:is(.jeg_postblock, .jeg_block_heading):has(a[href*="/speltips"], a[href*="/partner/"])
@@ -1313,7 +1313,7 @@ resesidan.se###media_image-6, #block-81, #media_image-7
 res.se##.res-display, .promotion
 ridsport.se##.svrf__sticky-ad, .svrf-block__banner, .sp-banner-block, .sp-double-ad-block, .sp-head-sponsor-container, .sp-regular-sponsor-container, .sp-ad
 rikatillsammans.se##div[class^="livewrapped-ad"], .tag-reklam
-riktighockey.se###custom_html-2
+riktighockey.se##div[aria-labelledby="cmp-banner-title"]
 rimlab.se##div[id^="azrhymes_com_between_content"], .noads
 rivieraklubben.com##div[class*="home_ad"]
 rockbladet.se##:is(body > aside:first-child, .mh-sidebar > .mh-widget, .mh-sidebar-2 > .mh-widget):has(.g)
@@ -1569,7 +1569,7 @@ tidningenmikroskop.se##:is(.widget_block, .code-block):has(a[href^="https://addr
 tidningenproffs.se##div[id^="proff-"]
 tidningenridsport.se##body.cli-barmodal-open:remove-class(cli-barmodal-open)
 tidningenridsport.se##.entry-content:style(display: initial !important;)
-tidningenridsport.se##.subscribe_now_popup, .type-native, #captive, div[class^="hldr_takeover"], div[id^="ad-welcome"]
+tidningenridsport.se##.subscribe_now_popup, .type-native, #captive, div[class^="hldr_takeover"], div[id^="ad-welcome"], .adhld
 tidningenskriva.se##section.widget_text:has(div[id^="ad-"])
 tidningensvenskpolis.se###cookie-consent
 tidningensyre.se,landetsfria.nu,fempers.se,tidningenglobal.se##+js(remove-cookie, article_count)
@@ -1947,6 +1947,7 @@ zeromagazine.nu##div[id^="ads"]
 ##img[alt="Spela på Betsson"]
 ##img[src*="/track.adtraction"]
 ##section.bgcolor-ad
+##section.panorama-ad
 ##td#reklam
 ##ul.adsmodern
 ###RightOuterBannerDiv
@@ -2346,6 +2347,7 @@ zeromagazine.nu##div[id^="ads"]
 /getAdById.php?
 /getAdsConfig$domain=aftonbladet.se|svd.se
 /getCookieConsent$domain=krogguiden.se
+/getRandomAd$domain=fotbollsthlm.se
 /getadd$domain=bovision.se
 /get.aspx?AdSlotID$script
 /glimr$script,domain=aftonbladet.se|blocket.se
@@ -2978,6 +2980,7 @@ zeromagazine.nu##div[id^="ads"]
 @@||klaviyo.com/media/js/public/klaviyo_subscribe.js$domain=solostove.com
 @@||nuthymia-llc.kit.com/*/index.js$domain=nickwignall.com
 @@||pages.upsales.com^
+@@||payway-cdn-stage.adeprimo.se^
 @@||sonar.viously.com^$domain=stoppapressarna.se
 @@||v.fwmrm.net/ad/g/$xmlhttprequest,domain=tv4play.se|tv4.se|fotbollskanalen.se|koket.se|embed.viaplay.com
 _banner.php?$domain=tvmatchen.nu
@@ -3391,6 +3394,7 @@ _banner.php?$domain=tvmatchen.nu
 ||misssite.com/*/published-site-analytics.js
 ||mis.se/count/
 ||momondo.se/*gtm/
+||monocular-agency.com^$third-party
 ||mraffiliate.com^$third-party
 ||mtpc.se^$third-party
 ||mtst.io/js/mtst.js
