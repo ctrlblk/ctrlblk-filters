@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: EasyList – Newsletter Notices
-! Last modified: Wed, 15 Jul 2026 14:26:03 +0000
+! Last modified: Fri, 17 Jul 2026 03:51:41 +0000
 ! Expires: 7 days (update frequency)
 ! *** easylist:template_header.txt ***
 !
@@ -1579,6 +1579,7 @@ nomadicmatt.com###footer-email
 statnews.com###footer-email-form
 the-scientist.com###footer-hubspot-form
 engadget.com###footer-newsletter
+zscaler.com###footer-subscription-form
 independent.co.uk###footerPrompt
 grit.com###footer_signup_form
 glutenfreepalate.com###form-subscribe
@@ -1591,6 +1592,7 @@ pcipolicyportal.com###g-bottom1
 arboristsite.com,kitchenknifeforums.com###gb-newsletter-modal-reg
 quadraphonicquad.com###gb-reg-modal-block
 quadraphonicquad.com###gb-reg-modal-reg
+zscaler.com###get-latest-updates
 sourceforge.net###get-updates
 warontherocks.com###gform_wrapper_1
 verybestbaking.com###gigya-subscribe-with-email-screen
@@ -1835,7 +1837,7 @@ spectator.com.au,theroar.com.au###subForm
 soundandvision.com###sub_pop
 dynomight.net###submitForm
 screendaily.com###subs-ribbon
-beforeitsnews.com,celebrity.red,codastory.com,dailygood.org,databricks.com,fjolt.com,homeofdirectcommerce.com,knowledge.wharton.upenn.edu,marineelectronics.com,swimswam.com,technostall.com,u.today###subscribe
+beforeitsnews.com,celebrity.red,codastory.com,dailygood.org,databricks.com,evero.com,fjolt.com,homeofdirectcommerce.com,knowledge.wharton.upenn.edu,marineelectronics.com,swimswam.com,technostall.com,u.today###subscribe
 designtaxi.com###subscribe-box
 readysetcloud.io###subscribe-embed
 orca-app.dev###subscribe-form
@@ -3969,6 +3971,7 @@ driving.ca##[data-aqa="widget-breaking-banner"]
 cepa.org##[data-block="newsletter"]
 plantbasednews.org##[data-class="support-us__wrapper"]
 abc.net.au##[data-component="Newsletter"]
+endjin.com##[data-cta-id="fabric-weekly-newsletter"]
 digg.com##[data-cy="namespace-home-newsletter"]
 nationalpost.com##[data-evt-val*="author_newsletter"]
 psyche.co##[data-ga-view-prompt="psyche_cta_pop_up_subscribe"]
@@ -6392,7 +6395,7 @@ doctorofcredit.com#@#.wpdiscuz-subscribe-bar
 ! fanboy_newsletter_shopping_allowlist_general_hide.txt
 
 ! Title: uBlock filters – Other Annoyances
-! Last modified: Wed, 15 Jul 2026 06:24:55 +0000
+! Last modified: Thu, 16 Jul 2026 20:45:32 +0000
 ! Expires: 7 days
 ! Description: Filters optimized for uBlock Origin, to be used with EasyList's and/or Adguard's "Other Annoyances" list(s)
 ! License: https://github.com/uBlockOrigin/uAssets/blob/master/LICENSE
@@ -6587,7 +6590,10 @@ prpm.dbp.gov.my##+js(set, document.onmousedown, trueFunc)
 
 ! https://github.com/uBlockOrigin/uAssets/issues/33664
 stifler.ro##+js(rmnt, script, contextmenu)
-stifler.ro##*:style(-webkit-touch-callout: default !important; -webkit-user-select: text !important; -moz-user-select: text !important; -ms-user-select: text !important; user-select: text !important;)
+stifler.ro##style:has-text(user-select: none):remove()
+
+! https://github.com/uBlockOrigin/uAssets/issues/33730
+apps.apple.com##.body-container > .app-container main.page-container > .default-page-container a, blockquote, body, code, dd, div, dl, dt, embed, fieldset, footer, form, h1, h2, h3, h4, h5, h6, header, html, img, legend, li, ol, p, pre, section, table, td, th, ul:style(-webkit-touch-callout: default !important; -webkit-user-select: text !important; -khtml-user-select: text !important; -moz-user-select: text !important; -ms-user-select: text !important; user-select: text !important; -webkit-user-drag: auto !important; user-drag: auto !important; cursor: revert !important;)
 
 ! END: Anti copy, right-click etc.
 
@@ -14508,10 +14514,6 @@ simplywall.st##+js(spoof-css, #root, filter, blur(6px))
 ! https://github.com/uBlockOrigin/uAssets/issues/33337
 homegymreview.co.uk##+js(rmnt, script, nocontextmenu)
 homegymreview.co.uk##body * :not(input):not(textarea):style(user-select: text !important; -webkit-touch-callout: text !important; -webkit-user-select: text !important; -moz-user-select: text !important; -khtml-user-select: text !important; -ms-user-select: text !important)
-
-! https://old.reddit.com/r/uBlockOrigin/comments/1ug4jiw/the_sun_adblock_nag/
-thesun.co.uk##dialog:remove()
-thesun.co.uk##:is(html,body):style(overflow: unset !important)
 
 ! https://github.com/uBlockOrigin/uAssets/issues/33479
 alphacoders.com##+js(trusted-rpnt, script, countdown <= 0, countdown => 0)

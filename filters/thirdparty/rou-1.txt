@@ -36,7 +36,7 @@
 ||tesseradigital.com^
 
 ||observatorulph.ro/cdn-cgi/apps/*$script,first-party
-observatorulph.ro##[class^="obser-internet_corp"]:has(.obser-adlabel)
+observatorulph.ro##[class*="obser-internet_corp"]:has(.obser-adlabel)
 
 ||thumbs.gfycat.com^$image,domain=deschide.md
 
@@ -2578,6 +2578,11 @@ incomod-media.ro##.mvp-widget-home-title:has-text(PUB)
 
 radio.com.ro##.card-header:has-text(Pub)
 
+! https://github.com/uBlockOrigin/uAssets/issues/33744
+||filmexxx.ro/*push
+||filmexxx.ro/assets/js/cxads.js
+filmexxx.ro##.videoPlayerAD
+
 [Adblock Plus 2.1]
 ! Title: Romanian specific uBO filters
 ! Expires: 3 days
@@ -2750,4 +2755,8 @@ buzau.net##+js(aeld, contextmenu)
 
 ! https://github.com/tcptomato/ROad-Block/issues/772
 vasluianul.ro##+js(nowoif)
+
+! https://github.com/uBlockOrigin/uAssets/issues/33744
+filmexxx.ro##+js(rmnt, script, window.location.href)
+filmexxx.ro##+js(no-fetch-if, php)
 
