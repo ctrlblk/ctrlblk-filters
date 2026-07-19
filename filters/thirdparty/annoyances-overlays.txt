@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: EasyList – Newsletter Notices
-! Last modified: Fri, 17 Jul 2026 03:51:41 +0000
+! Last modified: Sun, 19 Jul 2026 04:13:45 +0000
 ! Expires: 7 days (update frequency)
 ! *** easylist:template_header.txt ***
 !
@@ -4077,6 +4077,7 @@ polygon.com,theverge.com##.duet--cta--newsletter
 ! :has
 goodrx.com##.\[\&_\[data-qa\=searchbar\]\>button\]\:md\:mt-4:has([data-qa="newsletter-form"])
 spin.com##.border-backgrounds.flex.flex-wrap.border-t:has(form-container)
+reactormag.com##.desktop\:mb-\[27px\]:has(> hubspot-newsletter)
 eposaudio.com##.grid__item:has(> .newsletter-sign-up)
 tryterra.co##.lg\:px-24:has(#email-container)
 emobilityplus.com##.sharedaddy
@@ -6395,7 +6396,7 @@ doctorofcredit.com#@#.wpdiscuz-subscribe-bar
 ! fanboy_newsletter_shopping_allowlist_general_hide.txt
 
 ! Title: uBlock filters – Other Annoyances
-! Last modified: Thu, 16 Jul 2026 20:45:32 +0000
+! Last modified: Sun, 19 Jul 2026 02:33:54 +0000
 ! Expires: 7 days
 ! Description: Filters optimized for uBlock Origin, to be used with EasyList's and/or Adguard's "Other Annoyances" list(s)
 ! License: https://github.com/uBlockOrigin/uAssets/blob/master/LICENSE
@@ -6594,6 +6595,10 @@ stifler.ro##style:has-text(user-select: none):remove()
 
 ! https://github.com/uBlockOrigin/uAssets/issues/33730
 apps.apple.com##.body-container > .app-container main.page-container > .default-page-container a, blockquote, body, code, dd, div, dl, dt, embed, fieldset, footer, form, h1, h2, h3, h4, h5, h6, header, html, img, legend, li, ol, p, pre, section, table, td, th, ul:style(-webkit-touch-callout: default !important; -webkit-user-select: text !important; -khtml-user-select: text !important; -moz-user-select: text !important; -ms-user-select: text !important; user-select: text !important; -webkit-user-drag: auto !important; user-drag: auto !important; cursor: revert !important;)
+
+! https://github.com/uBlockOrigin/uAssets/issues/33764
+universalproductionmusic.com##.works-results__item div[draggable="true"]:remove-attr(draggable)
+universalproductionmusic.com##.works-results__item .simple-work--disable-action:remove-class(simple-work--disable-action)
 
 ! END: Anti copy, right-click etc.
 
