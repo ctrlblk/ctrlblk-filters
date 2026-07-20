@@ -1,6 +1,6 @@
 ! Title: Frellwit's Swedish Filter
 ! Expires: 4 days
-! Last modified: 2026-07-19 07:18:12 CEST
+! Last modified: 2026-07-20 07:06:17 CEST
 ! Homepage: https://github.com/lassekongo83/Frellwits-filter-lists
 ! Description: A filter for uBlock Origin that aims to remove regional Swedish ads, tracking, annoyances, scams + badware, and unnecessary bloat.
 ! License: GPL3 - https://github.com/lassekongo83/Frellwits-filter-lists/blob/master/LICENSE
@@ -119,7 +119,7 @@ aftonbladet.se##article[class^="article-wrapper"] strong:has-text(/annons/i):upw
 aftonbladet.se##aside > div[class^="_wrapper"]:has(div[class^="_adLabel"])
 aftonbladet.se##div[class^="stickylogin"]
 aftonbladet.se##div[class^="_adLabel"]:upward(1)
-aftonbladet.se##div[data-edition-name^="ab-native-premium"], a[href*="/brandstudio"], a[href*="/brand-studio"],  a[href*="/casinoguide"], div[class*="panorama-wrapper"], div[class*="insider-wrapper"], #sps-bottombar-poster
+aftonbladet.se##div[data-edition-name^="ab-native-premium"], a[href*="/brandstudio"], a[href*="/brand-studio"],  a[href*="/casinoguide"], div[class*="panorama-wrapper"], div[class*="insider-wrapper"], #sps-bottombar-poster, astro-island[component-export="AffiliateAd"]
 aftonbladet.se##h2[data-test-tag="paragraph-header"]:has(a[aria-label*="ANNONS"])
 aftonbladet.se##section[class^="twocolumnlayout-main"] > div[class^="usermsgtoast-root"]:has(iframe)
 aftonbladet.se##track-element:remove-attr(/data-track/)
@@ -353,6 +353,7 @@ cannabis.se###block-8
 carup.se##div[id^="carup-"]
 casinoguiden$image,domain=samnytt.se|samnytt.nu
 casino$domain=pirkt.se
+casino$xhr,domain=res.se
 casino-utan-$image
 chefstidningen.se##[id^="block-views-ad"], .modal-container
 chef.se##.Cookie-notice, .Product-modal, .Offer-popup, .Toaster
@@ -975,7 +976,7 @@ lajvo.se###panoramaTop, .facebook
 lajvo.se##.postCard:has-text(/bonusar|casino|betting|spelbranschen|spelupplevelse/i)
 lakartidningen.se##.screen-sm, .screen-md
 lakartidningen.se,canariajournalen.se,familjeliv.se,brollopstorget.se,rodeo.net,modette.se,loppi.se,devote.se##.advertisement
-landleyskok.se##.inpostbanner, .banner-leaderboard
+landleyskok.se##.inpostbanner, .banner-leaderboard, .recipe-ad
 landleyskok.se##.widget_text:has(.banner)
 landsbygdsnatverket.se,greppa.nu,sbf.se,skaneridsport.se,ridsport.se,biljardforbundet.se,rfsisu.se,skidor.com,rf.se,svenskkonstakning.se##.sv-cookie-consent-banner
 landskronadirekt.com###companies-slider, div[id^="ads-"]
@@ -1307,6 +1308,7 @@ reseguiden.se##.adsbox-wrapper, .banner-xxl_panorama-container, .banner-top-cont
 resenaren.se##.dipi_preloader_wrapper_outer
 resesidan.se###media_image-6, #block-81, #media_image-7
 res.se##.res-display, .promotion
+res.se##.text-uppercase:has-text(/promotion/i):upward(.card)
 ridsport.se##.svrf__sticky-ad, .svrf-block__banner, .sp-banner-block, .sp-double-ad-block, .sp-head-sponsor-container, .sp-regular-sponsor-container, .sp-ad
 rikatillsammans.se##div[class^="livewrapped-ad"], .tag-reklam
 riktighockey.se##div[aria-labelledby="cmp-banner-title"]

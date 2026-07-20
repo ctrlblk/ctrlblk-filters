@@ -6396,7 +6396,7 @@ doctorofcredit.com#@#.wpdiscuz-subscribe-bar
 ! fanboy_newsletter_shopping_allowlist_general_hide.txt
 
 ! Title: uBlock filters – Other Annoyances
-! Last modified: Sun, 19 Jul 2026 02:33:54 +0000
+! Last modified: Mon, 20 Jul 2026 04:03:17 +0000
 ! Expires: 7 days
 ! Description: Filters optimized for uBlock Origin, to be used with EasyList's and/or Adguard's "Other Annoyances" list(s)
 ! License: https://github.com/uBlockOrigin/uAssets/blob/master/LICENSE
@@ -6599,6 +6599,18 @@ apps.apple.com##.body-container > .app-container main.page-container > .default-
 ! https://github.com/uBlockOrigin/uAssets/issues/33764
 universalproductionmusic.com##.works-results__item div[draggable="true"]:remove-attr(draggable)
 universalproductionmusic.com##.works-results__item .simple-work--disable-action:remove-class(simple-work--disable-action)
+
+! https://github.com/uBlockOrigin/uAssets/issues/32634#issuecomment-5015280720
+videohelper.com##body:style(-webkit-user-select: text !important; -ms-user-select: text !important; user-select: text !important;)
+
+! https://github.com/uBlockOrigin/uAssets/issues/33769
+megatrax.com##.collection-tracks:style(-webkit-touch-callout: default !important; -webkit-user-select: text !important; -khtml-user-select: text !important; -moz-user-select: text !important; -ms-user-select: text !important; user-select: text !important; -webkit-user-drag: auto !important; user-drag: auto !important;)
+
+! https://github.com/uBlockOrigin/uAssets/issues/33770
+fpmmusic.com##+js(aeld, mousedown, , elements, .trackContainer)
+
+! https://github.com/uBlockOrigin/uAssets/issues/33771
+milesofmusik.com##+js(aeld, mousedown, , elements, .fancybox-container)
 
 ! END: Anti copy, right-click etc.
 
@@ -14529,3 +14541,6 @@ zhuanlan.zhihu.com##.Modal-backdrop
 zhuanlan.zhihu.com##.MobileModal-wrapper
 zhuanlan.zhihu.com##body.WhiteBg-body:style(overflow: auto !important; position: initial !important;)
 zhuanlan.zhihu.com##html:style(overflow: auto !important; padding-right: 0 !important;)
+
+! https://github.com/uBlockOrigin/uAssets/issues/33772
+civitai.com##.dark\:bg-dark-9.dark\:border-dark-4:has([aria-label="Close ad"])
