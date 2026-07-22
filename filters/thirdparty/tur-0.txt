@@ -1,10 +1,10 @@
 ![Adblock Plus 2.0]
-! Checksum: Jxas9Sx/67z2Ky4enkgHAg
-! Diff-Path: ../patches/13/13-s-1784603524-3600.patch
+! Checksum: JcBVwphSdBb670/m2sxeiQ
+! Diff-Path: ../patches/13/13-s-1784684500-3600.patch
 ! Title: AdGuard Turkish filter
 ! Description: Filter list that specifically removes ads on websites in Turkish language.
-! Version: 2.0.66.1
-! TimeUpdated: 2026-07-21T03:08:48+00:00
+! Version: 2.0.66.5
+! TimeUpdated: 2026-07-22T01:38:39+00:00
 ! Expires: 5 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -1554,6 +1554,12 @@ dirilispostasi.com,turkuazgazetesi.net,yenialanya.com,bugunkocaeli.com.tr,cagdas
 !
 ! NOTE: Specific rules
 !
+||sporx.com/_ajax/dynamic_bnnrs.php
+sporx.com###tepemenu2 li:has(> a[href^="https://www.sporx.com/rdrct.php"])
+yenisafak.com##.mastheadAd
+yenisafak.com##.seperatorEmbedAd
+||haberdenizde.com/wp-content/uploads/*_banner
+haberdenizde.com##.wpb_content_element:has(> .wpb_wrapper > .dva-standard)
 trendyol.com##a.product-card:has(img.stamp.lower-left[src="https://cdn.dsmcdn.com/mnresize/150/-/indexing-sticker-stamp/mars/084d9cce-0c55-4dfa-b34c-8217d11ece7d.png"])
 trendyol.com##+js(json-prune, $.products.*[?(@.tagDetails.*.tag=="sponsored")])
 kevserinmutfagi.com##.category-carousel-ad
@@ -6045,21 +6051,27 @@ turkifsa25.art,turkifsa31.art##div[class]:has(> a[href^="https://cutt.ly/"])
 turkifsa25.art,turkifsa31.art##div[style^="min-height"]:has(> a[target="_blank"] > div.ad-banner-frame)
 !
 ! Frequently changed domains: amatorifsa*.com
-! Source: amatorifsa4.com
+! Source: amatorifsa36.com
 ! aglint-disable no-invalid-modifiers
-!+ NOT_VALIDATE NOT_PLATFORM(windows, mac, android, cli)
-||hdgifs.b-cdn.net^$media,domain=/amatorifsa\d+\.com$/
+!+ NOT_VALIDATE
+.gif|$image,domain=/amatorifsa\d+\.com$/
+!+ NOT_VALIDATE
+||pub-*.r2.dev/yenigif.mp4$domain=/amatorifsa\d+\.com$/
 ! aglint-enable no-invalid-modifiers
-/amatorifsa\d+\.com$/##div[style="margin-bottom:14px; text-align:center;"]
-/amatorifsa\d+\.com$/##div[style="margin-top:14px; text-align:center;"]
-/amatorifsa\d+\.com$/##.row:has(> div.col-md-6 > a[href^="https://wipads.com/"])
-/amatorifsa\d+\.com$/##a[href="https://t.me/+tLBtscezDLE0Yjk0"]
-/amatorifsa\d+\.com$/##+js(no-window-open-if)
-amatorifsa4.com,amatorifsa5.com,amatorifsa6.com,amatorifsa7.com,amatorifsa8.com,amatorifsa9.com,amatorifsa10.com,amatorifsa11.com,amatorifsa12.com,amatorifsa13.com,amatorifsa14.com,amatorifsa15.com,amatorifsa16.com,amatorifsa17.com,amatorifsa18.com,amatorifsa19.com,amatorifsa20.com,amatorifsa21.com,amatorifsa22.com,amatorifsa23.com,amatorifsa24.com,amatorifsa25.com,amatorifsa26.com,amatorifsa27.com,amatorifsa28.com,amatorifsa29.com,amatorifsa30.com,amatorifsa31.com,amatorifsa32.com,amatorifsa33.com##div[style="margin-bottom:14px; text-align:center;"]
-amatorifsa4.com,amatorifsa5.com,amatorifsa6.com,amatorifsa7.com,amatorifsa8.com,amatorifsa9.com,amatorifsa10.com,amatorifsa11.com,amatorifsa12.com,amatorifsa13.com,amatorifsa14.com,amatorifsa15.com,amatorifsa16.com,amatorifsa17.com,amatorifsa18.com,amatorifsa19.com,amatorifsa20.com,amatorifsa21.com,amatorifsa22.com,amatorifsa23.com,amatorifsa24.com,amatorifsa25.com,amatorifsa26.com,amatorifsa27.com,amatorifsa28.com,amatorifsa29.com,amatorifsa30.com,amatorifsa31.com,amatorifsa32.com,amatorifsa33.com##div[style="margin-top:14px; text-align:center;"]
-amatorifsa4.com,amatorifsa5.com,amatorifsa6.com,amatorifsa7.com,amatorifsa8.com,amatorifsa9.com,amatorifsa10.com,amatorifsa11.com,amatorifsa12.com,amatorifsa13.com,amatorifsa14.com,amatorifsa15.com,amatorifsa16.com,amatorifsa17.com,amatorifsa18.com,amatorifsa19.com,amatorifsa20.com,amatorifsa21.com,amatorifsa22.com,amatorifsa23.com,amatorifsa24.com,amatorifsa25.com,amatorifsa26.com,amatorifsa27.com,amatorifsa28.com,amatorifsa29.com,amatorifsa30.com,amatorifsa31.com,amatorifsa32.com,amatorifsa33.com##.row:has(> div.col-md-6 > a[href^="https://wipads.com/"])
-amatorifsa4.com,amatorifsa5.com,amatorifsa6.com,amatorifsa7.com,amatorifsa8.com,amatorifsa9.com,amatorifsa10.com,amatorifsa11.com,amatorifsa12.com,amatorifsa13.com,amatorifsa14.com,amatorifsa15.com,amatorifsa16.com,amatorifsa17.com,amatorifsa18.com,amatorifsa19.com,amatorifsa20.com,amatorifsa21.com,amatorifsa22.com,amatorifsa23.com,amatorifsa24.com,amatorifsa25.com,amatorifsa26.com,amatorifsa27.com,amatorifsa28.com,amatorifsa29.com,amatorifsa30.com,amatorifsa31.com,amatorifsa32.com,amatorifsa33.com##a[href="https://t.me/+tLBtscezDLE0Yjk0"]
-amatorifsa4.com,amatorifsa5.com,amatorifsa6.com,amatorifsa7.com,amatorifsa8.com,amatorifsa9.com,amatorifsa10.com,amatorifsa11.com,amatorifsa12.com,amatorifsa13.com,amatorifsa14.com,amatorifsa15.com,amatorifsa16.com,amatorifsa17.com,amatorifsa18.com,amatorifsa19.com,amatorifsa20.com,amatorifsa21.com,amatorifsa22.com,amatorifsa23.com,amatorifsa24.com,amatorifsa25.com,amatorifsa26.com,amatorifsa27.com,amatorifsa28.com,amatorifsa29.com,amatorifsa30.com,amatorifsa31.com,amatorifsa32.com,amatorifsa33.com##+js(no-window-open-if)
+/amatorifsa\d+\.com$/##.yenigif-wrap
+/amatorifsa\d+\.com$/##.banner-grid-wrap
+/amatorifsa\d+\.com$/###tg-cta-container
+/amatorifsa\d+\.com$/##div[style]:has(> a[href][target="_blank"][rel$="sponsored"])
+/amatorifsa\d+\.com$/##article[data-ad-pos]
+/amatorifsa\d+\.com$/###prerollOverlay:style(display: none !important;)
+/amatorifsa\d+\.com$/###mainVideo:style(display: block !important;)
+amatorifsa36.com##.yenigif-wrap
+amatorifsa36.com##.banner-grid-wrap
+amatorifsa36.com###tg-cta-container
+amatorifsa36.com##div[style]:has(> a[href][target="_blank"][rel$="sponsored"])
+amatorifsa36.com##article[data-ad-pos]
+amatorifsa36.com###prerollOverlay:style(display: none !important;)
+amatorifsa36.com###mainVideo:style(display: block !important;)
 !
 ! Frequently changed domains: taraftarium*.xyz
 ! Source: https://trgoalsgiris.xyz
@@ -6786,7 +6798,7 @@ hdfilmizleamk.net,birasyadizi.com,seyredeger.com##+js(abort-on-property-write, o
 ! Frequently changed domains: royaltv*.com
 ||royaltv*.com/reklam*.gif
 /royaltv\d+\.com/##a[href^="https://t2ly.io/"]
-royaltv32.com##a[href^="https://t2ly.io/"]
+royaltv33.com##a[href^="https://t2ly.io/"]
 !
 ! Frequently changed domains: diziyou*.com
 ! Source: https://t.me/diziyoucom
@@ -6948,10 +6960,10 @@ dizipal1555.com,dizipal1556.com,dizipal1557.com,dizipal1558.com,dizipal1559.com,
 dizipal1555.com,dizipal1556.com,dizipal1557.com,dizipal1558.com,dizipal1559.com,dizipal1560.com,dizipal1561.com,dizipal1562.com,dizipal1563.com,dizipal1564.com,dizipal1565.com,dizipal1566.com,dizipal1567.com,dizipal1568.com,dizipal1569.com,dizipal1570.com,dizipal1571.com,dizipal1572.com,dizipal1573.com,dizipal1574.com,dizipal1575.com,dizipal1576.com,dizipal1577.com,dizipal1578.com,dizipal1579.com,dizipal1580.com,dizipal1581.com,dizipal1582.com,dizipal1583.com,dizipal1584.com,dizipal1585.com,dizipal1586.com,dizipal1587.com,dizipal1588.com,dizipal1589.com,dizipal1590.com,dizipal1591.com,dizipal1592.com,dizipal1593.com,dizipal1594.com,dizipal1595.com,dizipal1596.com,dizipal1597.com,dizipal1598.com,dizipal1599.com,dizipal1600.com##div.banner-slot
 dizipal1555.com,dizipal1556.com,dizipal1557.com,dizipal1558.com,dizipal1559.com,dizipal1560.com,dizipal1561.com,dizipal1562.com,dizipal1563.com,dizipal1564.com,dizipal1565.com,dizipal1566.com,dizipal1567.com,dizipal1568.com,dizipal1569.com,dizipal1570.com,dizipal1571.com,dizipal1572.com,dizipal1573.com,dizipal1574.com,dizipal1575.com,dizipal1576.com,dizipal1577.com,dizipal1578.com,dizipal1579.com,dizipal1580.com,dizipal1581.com,dizipal1582.com,dizipal1583.com,dizipal1584.com,dizipal1585.com,dizipal1586.com,dizipal1587.com,dizipal1588.com,dizipal1589.com,dizipal1590.com,dizipal1591.com,dizipal1592.com,dizipal1593.com,dizipal1594.com,dizipal1595.com,dizipal1596.com,dizipal1597.com,dizipal1598.com,dizipal1599.com,dizipal1600.com##a.st-bg
 dizipal1555.com,dizipal1556.com,dizipal1557.com,dizipal1558.com,dizipal1559.com,dizipal1560.com,dizipal1561.com,dizipal1562.com,dizipal1563.com,dizipal1564.com,dizipal1565.com,dizipal1566.com,dizipal1567.com,dizipal1568.com,dizipal1569.com,dizipal1570.com,dizipal1571.com,dizipal1572.com,dizipal1573.com,dizipal1574.com,dizipal1575.com,dizipal1576.com,dizipal1577.com,dizipal1578.com,dizipal1579.com,dizipal1580.com,dizipal1581.com,dizipal1582.com,dizipal1583.com,dizipal1584.com,dizipal1585.com,dizipal1586.com,dizipal1587.com,dizipal1588.com,dizipal1589.com,dizipal1590.com,dizipal1591.com,dizipal1592.com,dizipal1593.com,dizipal1594.com,dizipal1595.com,dizipal1596.com,dizipal1597.com,dizipal1598.com,dizipal1599.com,dizipal1600.com###psContainer
-dizipal2087.com##body a[class^="pageskin-"]
-dizipal2087.com##a[target="_blank"][rel="nofollow"]
-dizipal2087.com##.video-wrapper > a[href][target="_blank"]
-||blogger.googleusercontent.com/img/$domain=dizipal2087.com
+dizipal2088.com##body a[class^="pageskin-"]
+dizipal2088.com##a[target="_blank"][rel="nofollow"]
+dizipal2088.com##.video-wrapper > a[href][target="_blank"]
+||blogger.googleusercontent.com/img/$domain=dizipal2088.com
 !
 ! dizipal*.com (probably another similar)
 ||wtsdde.cfd/player/jw8/vast.js
