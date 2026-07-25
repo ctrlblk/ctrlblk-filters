@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: EasyList – Newsletter Notices
-! Last modified: Thu, 23 Jul 2026 14:53:23 +0000
+! Last modified: Sat, 25 Jul 2026 03:53:51 +0000
 ! Expires: 7 days (update frequency)
 ! *** easylist:template_header.txt ***
 !
@@ -1516,7 +1516,7 @@ washingtonmonthly.com###ctct_form-2
 curiosmos.com###curiosmosnewsletter_widget-2
 guidedoc.com###curtain
 mommyshomecooking.com###custom_html-14
-circuitbasics.com,loyaltylobby.com,makingthymeforhealth.com###custom_html-2
+becleverwithyourcash.com,circuitbasics.com,loyaltylobby.com,makingthymeforhealth.com###custom_html-2
 laurenslatest.com###custom_html-21
 conservativewoman.co.uk###custom_html-22
 nocamels.com###custom_html-23
@@ -2402,7 +2402,7 @@ thecooldown.com##.cool_newsletter
 the-line-up.com##.copyRight-div
 english.nv.ua##.coronavirus_subscribe
 atlpresscollective.com##.cp-popup
-biztimes.com,browneyedbaker.com,budgetbytes.com,cookincanuck.com,davidlebovitz.com,delishknowledge.com,iambaker.net,lexiscleankitchen.com,littlespicejar.com,luzmedia.co,peanutbutterandjilly.com,traditionalcookingschool.com,wholesomeyum.com,yellowblissroad.com##.cp-popup-container
+biztimes.com,browneyedbaker.com,budgetbytes.com,cookincanuck.com,davidlebovitz.com,delishknowledge.com,iambaker.net,lexiscleankitchen.com,littlespicejar.com,luzmedia.co,peanutbutterandjilly.com,thebuckeyeflame.com,traditionalcookingschool.com,wholesomeyum.com,yellowblissroad.com##.cp-popup-container
 atlpresscollective.com##.cpro-form-container
 wellplated.com##.cpro-overlay
 crainsnewyork.com##.crain-newsletter-v2-wrapper
@@ -2577,7 +2577,7 @@ factinate.com##.f-ssw
 factinate.com##.f-ssw-subscribe-hook
 metro.co.uk##.factbox
 edition.cnn.com##.factbox_inline-small
-zmescience.com##.fb-inst
+jerseyvindicator.org,zmescience.com##.fb-inst
 allrecipes.com,cruisecritic.com,foodandwine.com,seriouseats.com,shape.com,simplyrecipes.com,southernliving.com,thespruceeats.com,travelandleisure.com,tripsavvy.com,verywellhealth.com,verywellmind.com##.fb_lightbox-overlay
 azestforlife.com##.fca_eoi_featherlight
 bakeandbacon.com,eazypeazymealz.com,familystylefood.com,fijivillage.com,glutenfreepalate.com,helloadamsfamily.com,herwholesomekitchen.com,lanternlanedesigns.com,mallorynikolaus.com,mommyshomecooking.com,mylifewellloved.com,neighborfoodblog.com,splashoftaste.com,sweetteaandthyme.com,thedeliciousplate.com,thelittlehollythatcould.com,thesuburbanmom.com,tosimplyinspire.com,withspice.com##.fd-focus-visible-applied
@@ -3482,7 +3482,7 @@ gcaptain.com##.sidebar-email-outer
 altpress.com,caribjournal.com,invisibleoranges.com##.sidebar-form
 hamodia.com##.sidebar-form-wrap
 youcouldtravel.com##.sidebar-item-subscribe-form
-happymoneysaver.com,sugarandsoul.co,togetherasfamily.com##.sidebar-newsletter
+happymoneysaver.com,sugarandsoul.co,thebuckeyeflame.com,togetherasfamily.com##.sidebar-newsletter
 popsci.com,ppc.land,taskandpurpose.com,thedrive.com##.sidebar-newsletter-container
 starttv.com##.sidebar-newsletter-signup-wrap
 magazine.artstation.com##.sidebar-newslttr
@@ -3867,7 +3867,7 @@ missionlocal.org##.widget_block
 factkeepers.com,tennesseestar.com##.widget_bloomwidget
 themarginalian.org##.widget_brainpickings_newsletter_midweek_vertical_widget
 themarginalian.org##.widget_brainpickings_newsletter_vertical_widget
-doctornerdlove.com,whitecoatinvestor.com##.widget_convertkit_form
+doctornerdlove.com,ofdollarsanddata.com,whitecoatinvestor.com##.widget_convertkit_form
 humansbefree.com,insidethemagic.net,momfabulous.com,mpost.io,nerds.xyz,pymnts.com,wersm.com##.widget_custom_html
 worldscreen.com##.widget_execphp.widget
 worldisraelnews.com##.widget_loginwithajaxwidget
@@ -4042,6 +4042,7 @@ nature.com##div.nature-briefing
 macleans.ca##div.wp-block > .nl-signup
 thepointsguy.com##div[class*="EmailSignUp_"]
 thenightly.com.au##div[class*="StyledFormContainer"]
+becleverwithyourcash.com##div[class*="email-signup"]
 theatlantic.com##div[class^="BottomLeaflets_newsletter_"]
 wired.com##div[class^="ConsumerMarketingUnitThemedWrapper-"]
 patch.com##div[class^="ContentBlocks_CardDetail__SubscribeBlock"]
@@ -6409,7 +6410,7 @@ doctorofcredit.com#@#.wpdiscuz-subscribe-bar
 ! fanboy_newsletter_shopping_allowlist_general_hide.txt
 
 ! Title: uBlock filters – Other Annoyances
-! Last modified: Thu, 23 Jul 2026 17:42:53 +0000
+! Last modified: Sat, 25 Jul 2026 02:08:27 +0000
 ! Expires: 7 days
 ! Description: Filters optimized for uBlock Origin, to be used with EasyList's and/or Adguard's "Other Annoyances" list(s)
 ! License: https://github.com/uBlockOrigin/uAssets/blob/master/LICENSE
@@ -14569,3 +14570,9 @@ ing-sat.hu##+js(set, document.onmousedown, null)
 
 ! https://github.com/uBlockOrigin/uAssets/issues/33809
 javx357.com##+js(rmnt, script, disableRightClick)
+
+! https://github.com/uBlockOrigin/uAssets/issues/33820
+primariasector2.ro##+js(rmnt, script, .blockContextMenu)
+
+! https://github.com/uBlockOrigin/uAssets/issues/33819
+posturi.gov.ro##:root:style(user-select:unset!important)
