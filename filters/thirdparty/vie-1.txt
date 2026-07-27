@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Version: 20260726110922876
+! Version: 20260727125111234
 ! id: D4028CDD-3D39-4624-ACC7-8140F4EC3888
 ! Title: ABPVN List | Ublock Origin
-! Last modified: 26 Jul 2026 11:09:22 UTC+7
-! Diff-Path: patches/20260726110922876.patch#abpvn_ublock
+! Last modified: 27 Jul 2026 12:51:11 UTC+7
+! Diff-Path: patches/20260727125111234.patch#abpvn_ublock
 ! Diff-Expires: 60 minutes
 ! Expires: 1 days (update frequency)
 !
@@ -43,7 +43,7 @@
 /core/*$script,domain=gamek.vn|genk.vn|kenh14.vn|cafef.vn|thanhnien.vn
 /disable-devtool.min.js$script
 /giadinhonline.vn/files/qc/*
-/i.imgur.com/*.gif$domain=www.1phim15.com|listnhacai88.com|rakhoizb.cc
+/i.imgur.com/*.gif$domain=www.1phim15.com|listnhacai88.com|rakhoizc.cc
 /lv/esnk/*$script
 /newchill/*gif$image
 /player/jwplayer-*/vast.js$script
@@ -94,7 +94,7 @@
 ||cdn-data.gtvplus.vn/banners/$image,domain=gametv.vn
 ||cdn.giavang.org/images/ads/$image,domain=giavang.org
 ||cdn.lfastcdn.com/2026/04/dzzmi8.gif$image
-||cdn.lfastcdn.com^*.gif$image,domain=bongdainfox.tv|rakhoizb.cc
+||cdn.lfastcdn.com^*.gif$image,domain=bongdainfox.tv|rakhoizc.cc
 ||cdn.monkeydarchive.com/images/banner/$image,domain=monkeyd.net.vn
 ||cdn.webhoctienganh.com/asset/home/img/banner/$image,domain=webhoctienganh.com
 ||cf.shopee.vn/file/$image,domain=tctruyen.org
@@ -619,12 +619,12 @@ plcdn.xyz,xoilac.livecdnem.com,xlz.buzzscorelinez.com##.odds-button
 qdnd.vn##.box-banner
 qmanga.art,khotruyen.ac##.gwd-banner-image
 quantrimang.com###adrighttop
-rakhoizb.cc###wap_bottombanner
-rakhoizb.cc##.bookmaker-selector-container
-rakhoizb.cc##.btn-8xbet
-rakhoizb.cc##.btn-odds
-rakhoizb.cc##.footer-banner
-rakhoizb.cc##.sk_balloon
+rakhoizc.cc###wap_bottombanner
+rakhoizc.cc##.bookmaker-selector-container
+rakhoizc.cc##.btn-8xbet
+rakhoizc.cc##.btn-odds
+rakhoizc.cc##.footer-banner
+rakhoizc.cc##.sk_balloon
 reatimes.vn##div[class^="adv-"]
 rophim10.online##.adserver
 rophim10.online##.mt-3.topics-line.topics-grid.topics-list
@@ -932,6 +932,10 @@ docufind.org.uk/wp-content/themes/vlxx/js/*-adx.js$script
 ||cliphot69.click$csp=script-src 'self' 'unsafe-inline'
 ||cliphot69.click^*.gif$image
 ||cliphotvn69.com^*.gif$image
+||clobberprocurertightwad.com^
+||content.mediacdn.me^*.gif$image
+||creative.mnaspm.com^
+||crumpetprankerstench.com/on.js$domain=lxmanga.space,script,rewrite=abp-resource:blank-js
 ||cruncherpatiencestoreroom.com^$popup,domain=cap3.boats
 ||dance.bytecdn.cfd^*.gif$image,domain=qmhsex.lat
 ||discordapp.$image,domain=phim18vip.site|thefaplive.com
@@ -945,13 +949,14 @@ docufind.org.uk/wp-content/themes/vlxx/js/*-adx.js$script
 ||javhdz.meme/js/ads-javhd.js$script,~third-party
 ||javtopxx2.com^*.gif$image
 ||laalmirchitakeaway.co.uk^*.gif
+||lmovixat.in^
 ||lxmanga.space/storage/images/banners
 ||mangadm.cc$csp=script-src 'self' 'unsafe-inline' http
 ||ngaytho.me^*.gif
 ||phe69.site/wp-content/3rd-ads/jsad/ads-t11.js$script,~third-party
 ||phe69.site^*.gif
+||phimsexcom.com^*.gif$image
 ||phimsexhayvne.com^*.gif$image
-||phimsexhd69.com^*.gif$image
 ||phimsexsuong3x.net^*.gif$image
 ||qmanga.art/banner_image/$image
 ||qmh.garden/uploads/banners/$image,domain=cap3.boats
@@ -981,7 +986,10 @@ docufind.org.uk/wp-content/themes/vlxx/js/*-adx.js$script
 ||xfast.sbs^*.gif$image,domain=clipphot.vip
 ||xnhau.blog^$media,domain=xnhau.video
 !---------- ABPVN Adult Element Hide ---------------
+18tube.my##.ads-gated
 @@||lxmanga.space$generichide
+buomtv.baby##._1vguhxv.cosll6e._3yp41v.row-3.lgy>._1lbf8q9
+buomtv.baby##._1vguhxv.cwzsl22.czdj0j5.c1skg1w3.c1q1n9rc.c1f8a55r.c2wbcgy.c1qs0lzc.cq980mc.cosll6e.cjq7bud.c10dklm2.c1xtmnwt.dlnefd1
 buomtv.baby##._9xtpcl.c1mnguco.c9pdtme.c1q1n9rc.c1f8a55r.c2wbcgy.c1qs0lzc.cq980mc.cosll6e.cxngf0m.c199xq07.c1xtmnwt
 buomtv.baby##._9xtpcl.c4je67d.c1qs0lzc.c1hrlkpu.cc2icwl.c1i0iccj.cfd18df
 buomtv.baby##._9xtpcl.cxwrp3i.c1skg1w3.cxngf0m.c199xq07.c10dklm2.c1xtmnwt.cvk29a4.w-\[300px\]
@@ -1102,6 +1110,7 @@ z1.chinav.sex##.adbox
 z1.chinav.sex##.banner-container
 zpic.st##.ad-banner
 ! ---------Rule only for uBlock Origin------
+18tube.my##+js(acs, document.addEventListener, ads)
 anime47.best##+js(nostif, Adblock)
 anime47.best##.affiliate-swiper
 animehay10.site##+js(aopr, popUp)
@@ -1159,7 +1168,7 @@ pheclip.fit,phim18vip.site,subnhanh.plus##+js(acs, $, pop)
 phim.haysex.asia##+js(acs, Promise, break;case)
 phimchautinhtri.net##.popmake-overlay
 phimlongtieng.net##+js(acs, document.createElement, script)
-phimsexhd69.com##+js(acs, window.addEventListener, Ads)
+phimsexcom.com##+js(acs, window.addEventListener, Ads)
 phimtho.cc#%#//scriptlet("abort-current-inline-script", "$", "p0pUpRandom")
 plcdn.xyz##+js(aopr, ads)
 plcdn.xyz##+js(aopr, adsPlayer)
