@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: EasyList – Newsletter Notices
-! Last modified: Sat, 25 Jul 2026 03:53:51 +0000
+! Last modified: Mon, 27 Jul 2026 15:30:30 +0000
 ! Expires: 7 days (update frequency)
 ! *** easylist:template_header.txt ***
 !
@@ -4088,6 +4088,7 @@ goodrx.com##.\[\&_\[data-qa\=searchbar\]\>button\]\:md\:mt-4:has([data-qa="newsl
 spin.com##.border-backgrounds.flex.flex-wrap.border-t:has(form-container)
 ign.com##.box-wrapper:has(> .promo-card)
 reactormag.com##.desktop\:mb-\[27px\]:has(> hubspot-newsletter)
+ubuntu.com##.grid-col:has(> [data-ga-submit-category="Newsletter"])
 eposaudio.com##.grid__item:has(> .newsletter-sign-up)
 tryterra.co##.lg\:px-24:has(#email-container)
 emobilityplus.com##.sharedaddy
@@ -6331,6 +6332,7 @@ eleco.com.ar##.Newsletter_newsLetterWrap___6tip
 primerahora.com##.PHNewsletter
 blogthinkbig.com##.acumba-form
 ara.cat##.ara-newsletter
+latercera.com##.article-body__newsletter
 motor.elpais.com##.bloque-newsletter
 comunicacio21.cat,cultura21.cat,espai.media,espailinia.cat,exterior.cat,riverelmasgrande.com##.boletin
 elordenmundial.com##.boletin-wrapper
@@ -6410,7 +6412,7 @@ doctorofcredit.com#@#.wpdiscuz-subscribe-bar
 ! fanboy_newsletter_shopping_allowlist_general_hide.txt
 
 ! Title: uBlock filters – Other Annoyances
-! Last modified: Sun, 26 Jul 2026 10:47:41 +0000
+! Last modified: Mon, 27 Jul 2026 16:59:59 +0000
 ! Expires: 7 days
 ! Description: Filters optimized for uBlock Origin, to be used with EasyList's and/or Adguard's "Other Annoyances" list(s)
 ! License: https://github.com/uBlockOrigin/uAssets/blob/master/LICENSE
@@ -6638,6 +6640,9 @@ primariasector2.ro##+js(rmnt, script, .blockContextMenu)
 
 ! https://github.com/uBlockOrigin/uAssets/issues/33819
 posturi.gov.ro##:root:style(user-select: unset !important)
+
+! https://github.com/uBlockOrigin/uAssets/issues/33845
+canale-tv.net,cool-tv.net##+js(rmnt, script, .preventDefault(), includes, contextmenu)
 
 ! END: Anti copy, right-click etc.
 
@@ -14581,6 +14586,3 @@ civitai.com##.dark\:bg-dark-9.dark\:border-dark-4:has([aria-label="Close ad"])
 dejure.org##+js(set, ad_allowed, true)
 dejure.org#@##AdsDiv
 dejure.org##+js(remove-cookie, adblock_counter)
-
-! https://github.com/uBlockOrigin/uAssets/issues/33845
-canale-tv.net,cool-tv.net##+js(rmnt, script, .preventDefault(), includes, contextmenu)
