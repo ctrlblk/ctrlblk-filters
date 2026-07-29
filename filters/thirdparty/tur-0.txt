@@ -1,10 +1,10 @@
 ![Adblock Plus 2.0]
-! Checksum: XZLvS3ZWpgGb+UZkD6O5VQ
-! Diff-Path: ../patches/13/13-s-1785173920-3600.patch
+! Checksum: nd5Szt/nMMmoPQNVho1K0g
+! Diff-Path: ../patches/13/13-s-1785301956-3600.patch
 ! Title: AdGuard Turkish filter
 ! Description: Filter list that specifically removes ads on websites in Turkish language.
-! Version: 2.0.66.25
-! TimeUpdated: 2026-07-27T17:35:45+00:00
+! Version: 2.0.66.32
+! TimeUpdated: 2026-07-29T05:09:40+00:00
 ! Expires: 5 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -1554,10 +1554,14 @@ dirilispostasi.com,turkuazgazetesi.net,yenialanya.com,bugunkocaeli.com.tr,cagdas
 !
 ! NOTE: Specific rules
 !
+||zevklifilm.com/ma5.js
+||hizlierotikizle.com/ma5.js
+||hdflimizle.com/wp-content/uploads/2026/03/2.mp4
 dizibol.com##app-banner-zone
 ||superfilmizle.net/wp-content/plugins/popup-manager/
 superfilmizle.*##+js(no-window-open-if)
-r10.net##.rPanel
+r10.net##.thread[id^="sponsor"]
+r10.net##.rPanel:has(> div.content > a[href^="https://www.ideasoft.com.tr/"])
 r10.net##.featuredAjaxContent > div.list > ul[data-id="sonAcilan"] > li[class*="thread"][data-ri]
 r10.net##.footerSponsors
 r10.net##.ozelKategori > a[href][rel*="sponsored"][target="_blank"]
@@ -1868,7 +1872,7 @@ bewins.tv##.sidebar-section:has(> h2 > i.fa-ad)
 3taraftarium24i.digital###fixedFooterAd
 booksfer.net##.bn-container
 booksfer.net##body > div[style]:not([class]):not([id]):has(> button[aria-label="PDF İndir"])
-turbofilmizle.net,dizipala.*##+js(addEventListener-defuser, DOMContentLoaded, openHiddenPopup)
+unutulmazfilmizle.com,turbofilmizle.net,dizipala.*##+js(addEventListener-defuser, DOMContentLoaded, openHiddenPopup)
 enuygun.com##div[class^="styled__AdsContainer"]
 ustayemektarifleri.com##div[style="min-height:250px;"]
 ustayemektarifleri.com##div[style="min-height:280px;"]
@@ -3380,7 +3384,7 @@ canlitv.center###sidebar_reklam
 /wp-content/uploads/*.gif$domain=cdn.diziyou.co|geyvemedya.com
 /sex*.png$domain=filmoneriler.com
 /suv.js$domain=sinemafilmizle.net|filmmoduu.com
-/popup.js$domain=bayfilmizle1.com
+/popup.js$domain=bayfilmizle1.com|unutulmazfilmizle.com
 /ads/*$domain=mp3indirdur.mobi|forum.donanimhaber.com
 ||hdmixfilim.com/vast2.js
 kredibankalar.com##div[style^="background:#eeeeee; border:2px"]
@@ -4049,7 +4053,7 @@ cosmoturk.com##.midiBanners
 ||erosfilmizle.*/mostbet.mp4
 ||erosfilmizle.*/gif.gif
 livefullfilmizle.org,fullhdfilmizlesene.*,diziyoutv.com,erosfilmizle.*,dizipal.org,dizimom.*,asyadiziizle.com,dizicaps.*,hdfilmizle.in,yabancidizilertv.*##.videoalt
-dizirella.com,filmcusx.com,fullhdfilmizlesem.com,fullhdfilmizlesene.*,diziyoutv.com,erosfilmizle.*,dizipal.org,dizimom.*,asyadiziizle.com,dizicaps.*,hdfilmizle.in,yabancidizilertv.*##.videoust
+hdflimizle.com,dizirella.com,filmcusx.com,fullhdfilmizlesem.com,fullhdfilmizlesene.*,diziyoutv.com,erosfilmizle.*,dizipal.org,dizimom.*,asyadiziizle.com,dizicaps.*,hdfilmizle.in,yabancidizilertv.*##.videoust
 mengen.gen.tr##.slider3Widget
 memleketimbolu.com##.mansetyani
 ademyurt.com###alt > div.at
@@ -5900,8 +5904,8 @@ onlinedizi.sbs###pre_video:style(display: none !important;)
 onlinedizi.sbs###vast:style(display: block !important;)
 livefullfilmizle.cam,livefullfilmizle.org,livefullfilmizle.*##.custom-html-widget:style(display: none !important;)
 livefullfilmizle.cam,livefullfilmizle.org,livefullfilmizle.*##.pageskin-link:style(display: none !important;)
-livefullfilmizle.cam,livefullfilmizle.org,livefullfilmizle.*,vipfilmsitesi.com,fullhdfilmcehennemi.vip,moonfilmizle.com###filmoncereklam:style(display: none !important;)
-livefullfilmizle.cam,livefullfilmizle.org,livefullfilmizle.*,vipfilmsitesi.com,fullhdfilmcehennemi.vip,moonfilmizle.com##div[id="episode"][style]:style(height: unset !important; width: unset !important; overflow: unset !important; position: unset !important;)
+hdflimizle.com,livefullfilmizle.cam,livefullfilmizle.org,livefullfilmizle.*,vipfilmsitesi.com,fullhdfilmcehennemi.vip,moonfilmizle.com###filmoncereklam:style(display: none !important;)
+hdflimizle.com,livefullfilmizle.cam,livefullfilmizle.org,livefullfilmizle.*,vipfilmsitesi.com,fullhdfilmcehennemi.vip,moonfilmizle.com##div[id="episode"][style]:style(height: unset !important; width: unset !important; overflow: unset !important; position: unset !important;)
 webdramaturkey2.com,webdramaturkey.org###vast > div[id].jwplayer:style(display: none !important;)
 webdramaturkey2.com,webdramaturkey.org###vast > div[id].jwplayer + iframe.embed-responsive-item:style(display: block !important;)
 fullhdfilmcehennemi.vip,filmtib.com,filmizlemobil.com,filmizlego.com,yenifilmizle.org,erotizmcenneti.org,dizirella.com,burcufilm.com,filmizlersin.com###rk-content:style(display: none !important;)
@@ -5979,13 +5983,13 @@ lovefilmizle.net,elzemfilm.org,dizicaps.*,erotikfilmtube.com,sexfilmleriizle.com
 /onlyifsa\d+\.com$/##div[style]:has(> a[href^="https://bit.ly/"])
 /onlyifsa\d+\.com$/###prerollOverlay:style(display: none !important;)
 /onlyifsa\d+\.com$/###mainVideo:style(display: block !important;)
-onlyifsa12.com##.yenimarka-wrap
-onlyifsa12.com##.yenigif-wrap
-onlyifsa12.com###tg-cta-container
-onlyifsa12.com##article[data-ad-pos]
-onlyifsa12.com##div[style]:has(> a[href^="https://bit.ly/"])
-onlyifsa12.com###prerollOverlay:style(display: none !important;)
-onlyifsa12.com###mainVideo:style(display: block !important;)
+onlyifsa22.com##.yenimarka-wrap
+onlyifsa22.com##.yenigif-wrap
+onlyifsa22.com###tg-cta-container
+onlyifsa22.com##article[data-ad-pos]
+onlyifsa22.com##div[style]:has(> a[href^="https://bit.ly/"])
+onlyifsa22.com###prerollOverlay:style(display: none !important;)
+onlyifsa22.com###mainVideo:style(display: block !important;)
 !
 ! Frequently changed domains: sadeceifsa*.lol; sadeceifsa*.icu; sadeceifsa*.com
 ! Source: sadeceifsa12.icu
@@ -6001,12 +6005,12 @@ onlyifsa12.com###mainVideo:style(display: block !important;)
 /sadeceifsa\d+\.com$/##div[style]:has(> a[href^="https://bit.ly/"])
 /sadeceifsa\d+\.com$/###prerollOverlay:style(display: none !important;)
 /sadeceifsa\d+\.com$/###mainVideo:style(display: block !important;)
-sadeceifsa11.com##.yenigif-wrap
-sadeceifsa11.com###tg-cta-container
-sadeceifsa11.com##article[data-ad-pos]
-sadeceifsa11.com##div[style]:has(> a[href^="https://bit.ly/"])
-sadeceifsa11.com###prerollOverlay:style(display: none !important;)
-sadeceifsa11.com###mainVideo:style(display: block !important;)
+sadeceifsa17.com##.yenigif-wrap
+sadeceifsa17.com###tg-cta-container
+sadeceifsa17.com##article[data-ad-pos]
+sadeceifsa17.com##div[style]:has(> a[href^="https://bit.ly/"])
+sadeceifsa17.com###prerollOverlay:style(display: none !important;)
+sadeceifsa17.com###mainVideo:style(display: block !important;)
 !
 ! Frequently changed domains: dizimor*.com.tr
 ! Source: dizimor1.com.tr
@@ -6058,13 +6062,13 @@ turkporoclub1.sbs,turkporoclub2.sbs,turkporoclub3.sbs,turkporoclub4.sbs,turkporo
 /hdifsaizle\d+\.com$/##div[style]:has(> a[href^="https://bit.ly/"])
 /hdifsaizle\d+\.com$/###prerollOverlay:style(display: none !important;)
 /hdifsaizle\d+\.com$/###mainVideo:style(display: block !important;)
-hdifsaizle12.com##.yenigif-wrap
-hdifsaizle12.com##.banner-grid-wrap
-hdifsaizle12.com##.yenimarka-wrap
-hdifsaizle12.com##.hd-row > article.hd-card ~ div.col-12
-hdifsaizle12.com##div[style]:has(> a[href^="https://bit.ly/"])
-hdifsaizle12.com###prerollOverlay:style(display: none !important;)
-hdifsaizle12.com###mainVideo:style(display: block !important;)
+hdifsaizle18.com##.yenigif-wrap
+hdifsaizle18.com##.banner-grid-wrap
+hdifsaizle18.com##.yenimarka-wrap
+hdifsaizle18.com##.hd-row > article.hd-card ~ div.col-12
+hdifsaizle18.com##div[style]:has(> a[href^="https://bit.ly/"])
+hdifsaizle18.com###prerollOverlay:style(display: none !important;)
+hdifsaizle18.com###mainVideo:style(display: block !important;)
 !
 ! Frequently changed domains: turkifsa*.site; turkifsalar2.site
 ! Source: turkifsa40.site; turkifsalar2.site
@@ -6132,13 +6136,13 @@ turkifsa25.art,turkifsa31.art##div[class][style^="min-height:"][style*="calc("]
 /amatorifsa\d+\.com$/##article[data-ad-pos]
 /amatorifsa\d+\.com$/###prerollOverlay:style(display: none !important;)
 /amatorifsa\d+\.com$/###mainVideo:style(display: block !important;)
-amatorifsa37.com##.yenigif-wrap
-amatorifsa37.com##.banner-grid-wrap
-amatorifsa37.com###tg-cta-container
-amatorifsa37.com##div[style]:has(> a[href][target="_blank"][rel$="sponsored"])
-amatorifsa37.com##article[data-ad-pos]
-amatorifsa37.com###prerollOverlay:style(display: none !important;)
-amatorifsa37.com###mainVideo:style(display: block !important;)
+amatorifsa48.com##.yenigif-wrap
+amatorifsa48.com##.banner-grid-wrap
+amatorifsa48.com###tg-cta-container
+amatorifsa48.com##div[style]:has(> a[href][target="_blank"][rel$="sponsored"])
+amatorifsa48.com##article[data-ad-pos]
+amatorifsa48.com###prerollOverlay:style(display: none !important;)
+amatorifsa48.com###mainVideo:style(display: block !important;)
 !
 ! Frequently changed domains: taraftarium*.xyz
 ! Source: https://trgoalsgiris.xyz
@@ -6212,13 +6216,13 @@ turktube1.ink,turktube2.ink,turktube3.ink,turktube4.ink,turktube5.ink,turktube6.
 /hdturkifsa\d+\.com$/##div[style]:has(> a[href^="https://bit.ly/"])
 /hdturkifsa\d+\.com$/###prerollOverlay:style(display: none !important;)
 /hdturkifsa\d+\.com$/###mainVideo:style(display: block !important;)
-hdturkifsa44.com##a[rel="nofollow noopener noreferrer sponsored"]
-hdturkifsa44.com###tg-cta-container
-hdturkifsa44.com##.banner-grid-wrap
-hdturkifsa44.com##article[data-ad-pos]
-hdturkifsa44.com##div[style]:has(> a[href^="https://bit.ly/"])
-hdturkifsa44.com###prerollOverlay:style(display: none !important;)
-hdturkifsa44.com###mainVideo:style(display: block !important;)
+hdturkifsa55.com##a[rel="nofollow noopener noreferrer sponsored"]
+hdturkifsa55.com###tg-cta-container
+hdturkifsa55.com##.banner-grid-wrap
+hdturkifsa55.com##article[data-ad-pos]
+hdturkifsa55.com##div[style]:has(> a[href^="https://bit.ly/"])
+hdturkifsa55.com###prerollOverlay:style(display: none !important;)
+hdturkifsa55.com###mainVideo:style(display: block !important;)
 !
 ! Frequently changed domains: softtv*.com
 ! Source: softtv2.com
@@ -6301,9 +6305,9 @@ patrongol34.cfd##.top-banner-header
 /patronlive\d+\.cfd$/##.background-link
 /patronlive\d+\.cfd$/##.top-banner-header
 /patronlive\d+\.cfd$/##a[href="https://x.com/patronsporis"] ~ a[href][target="_blank"]:not(#telegram-link)
-patronlive48.cfd,patronlive46.cfd##.background-link
-patronlive48.cfd,patronlive46.cfd##.top-banner-header
-patronlive48.cfd,patronlive46.cfd##a[href="https://x.com/patronsporis"] ~ a[href][target="_blank"]:not(#telegram-link)
+patronlive49.cfd,patronlive50.cfd,patronlive51.cfd##.background-link
+patronlive49.cfd,patronlive50.cfd,patronlive51.cfd##.top-banner-header
+patronlive49.cfd,patronlive50.cfd,patronlive51.cfd##a[href="https://x.com/patronsporis"] ~ a[href][target="_blank"]:not(#telegram-link)
 !
 ! Frequently changed domains: piabettv*.live
 ! Source: https://ksln.link/piatv
@@ -6336,8 +6340,8 @@ turkkizlar31.com,turkkizlar32.com,turkkizlar33.com,turkkizlar34.com,turkkizlar35
 ||dahahizli*.*/wp-content/uploads/*/Saha-468-in-60.jpg
 /dahahizli\d+\.(com\|live)$/###ads-inside-main
 /dahahizli\d+\.(com\|live)$/###video-player-ads
-dahahizli135.live###ads-inside-main
-dahahizli135.live###video-player-ads
+dahahizli136.live###ads-inside-main
+dahahizli136.live###video-player-ads
 !
 ! Frequently changed domains: hepbetspor*.cfd
 ! aglint-disable no-invalid-modifiers
@@ -6393,8 +6397,8 @@ turkifsaclub.org##.ads-grid
 turkifsaclub.org##main > h3:contains(Sponsor Bannerlar)
 /turkifsaclub\d+\.sbs/##.ads-grid
 /turkifsaclub\d+\.sbs/##main > h3:contains(Sponsor Bannerlar)
-turkifsaclub130.sbs,turkifsaclub176.sbs,turkifsaclub177.sbs,turkifsaclub131.sbs,turkifsaclub132.sbs,turkifsaclub133.sbs,turkifsaclub134.sbs,turkifsaclub135.sbs,turkifsaclub136.sbs,turkifsaclub137.sbs,turkifsaclub138.sbs,turkifsaclub139.sbs,turkifsaclub140.sbs,turkifsaclub141.sbs,turkifsaclub142.sbs,turkifsaclub143.sbs,turkifsaclub144.sbs,turkifsaclub145.sbs,turkifsaclub146.sbs,turkifsaclub147.sbs,turkifsaclub148.sbs,turkifsaclub149.sbs,turkifsaclub150.sbs,turkifsaclub151.sbs,turkifsaclub152.sbs,turkifsaclub153.sbs,turkifsaclub154.sbs,turkifsaclub155.sbs,turkifsaclub156.sbs,turkifsaclub157.sbs,turkifsaclub158.sbs,turkifsaclub159.sbs,turkifsaclub160.sbs,turkifsaclub161.sbs,turkifsaclub162.sbs,turkifsaclub163.sbs,turkifsaclub164.sbs,turkifsaclub165.sbs,turkifsaclub166.sbs,turkifsaclub167.sbs,turkifsaclub168.sbs,turkifsaclub169.sbs,turkifsaclub170.sbs,turkifsaclub171.sbs,turkifsaclub172.sbs,turkifsaclub173.sbs,turkifsaclub174.sbs,turkifsaclub175.sbs,turkifsaclub178.sbs##.ads-grid
-turkifsaclub130.sbs,turkifsaclub176.sbs,turkifsaclub177.sbs,turkifsaclub131.sbs,turkifsaclub132.sbs,turkifsaclub133.sbs,turkifsaclub134.sbs,turkifsaclub135.sbs,turkifsaclub136.sbs,turkifsaclub137.sbs,turkifsaclub138.sbs,turkifsaclub139.sbs,turkifsaclub140.sbs,turkifsaclub141.sbs,turkifsaclub142.sbs,turkifsaclub143.sbs,turkifsaclub144.sbs,turkifsaclub145.sbs,turkifsaclub146.sbs,turkifsaclub147.sbs,turkifsaclub148.sbs,turkifsaclub149.sbs,turkifsaclub150.sbs,turkifsaclub151.sbs,turkifsaclub152.sbs,turkifsaclub153.sbs,turkifsaclub154.sbs,turkifsaclub155.sbs,turkifsaclub156.sbs,turkifsaclub157.sbs,turkifsaclub158.sbs,turkifsaclub159.sbs,turkifsaclub160.sbs,turkifsaclub161.sbs,turkifsaclub162.sbs,turkifsaclub163.sbs,turkifsaclub164.sbs,turkifsaclub165.sbs,turkifsaclub166.sbs,turkifsaclub167.sbs,turkifsaclub168.sbs,turkifsaclub169.sbs,turkifsaclub170.sbs,turkifsaclub171.sbs,turkifsaclub172.sbs,turkifsaclub173.sbs,turkifsaclub174.sbs,turkifsaclub175.sbs,turkifsaclub178.sbs##main > h3:contains(Sponsor Bannerlar)
+turkifsaclub130.sbs,turkifsaclub176.sbs,turkifsaclub177.sbs,turkifsaclub131.sbs,turkifsaclub132.sbs,turkifsaclub133.sbs,turkifsaclub134.sbs,turkifsaclub135.sbs,turkifsaclub136.sbs,turkifsaclub137.sbs,turkifsaclub138.sbs,turkifsaclub139.sbs,turkifsaclub140.sbs,turkifsaclub141.sbs,turkifsaclub142.sbs,turkifsaclub143.sbs,turkifsaclub144.sbs,turkifsaclub145.sbs,turkifsaclub146.sbs,turkifsaclub147.sbs,turkifsaclub148.sbs,turkifsaclub149.sbs,turkifsaclub150.sbs,turkifsaclub151.sbs,turkifsaclub152.sbs,turkifsaclub153.sbs,turkifsaclub154.sbs,turkifsaclub155.sbs,turkifsaclub156.sbs,turkifsaclub157.sbs,turkifsaclub158.sbs,turkifsaclub159.sbs,turkifsaclub160.sbs,turkifsaclub161.sbs,turkifsaclub162.sbs,turkifsaclub163.sbs,turkifsaclub164.sbs,turkifsaclub165.sbs,turkifsaclub166.sbs,turkifsaclub167.sbs,turkifsaclub168.sbs,turkifsaclub169.sbs,turkifsaclub170.sbs,turkifsaclub171.sbs,turkifsaclub172.sbs,turkifsaclub173.sbs,turkifsaclub174.sbs,turkifsaclub175.sbs,turkifsaclub178.sbs,turkifsaclub179.sbs##.ads-grid
+turkifsaclub130.sbs,turkifsaclub176.sbs,turkifsaclub177.sbs,turkifsaclub131.sbs,turkifsaclub132.sbs,turkifsaclub133.sbs,turkifsaclub134.sbs,turkifsaclub135.sbs,turkifsaclub136.sbs,turkifsaclub137.sbs,turkifsaclub138.sbs,turkifsaclub139.sbs,turkifsaclub140.sbs,turkifsaclub141.sbs,turkifsaclub142.sbs,turkifsaclub143.sbs,turkifsaclub144.sbs,turkifsaclub145.sbs,turkifsaclub146.sbs,turkifsaclub147.sbs,turkifsaclub148.sbs,turkifsaclub149.sbs,turkifsaclub150.sbs,turkifsaclub151.sbs,turkifsaclub152.sbs,turkifsaclub153.sbs,turkifsaclub154.sbs,turkifsaclub155.sbs,turkifsaclub156.sbs,turkifsaclub157.sbs,turkifsaclub158.sbs,turkifsaclub159.sbs,turkifsaclub160.sbs,turkifsaclub161.sbs,turkifsaclub162.sbs,turkifsaclub163.sbs,turkifsaclub164.sbs,turkifsaclub165.sbs,turkifsaclub166.sbs,turkifsaclub167.sbs,turkifsaclub168.sbs,turkifsaclub169.sbs,turkifsaclub170.sbs,turkifsaclub171.sbs,turkifsaclub172.sbs,turkifsaclub173.sbs,turkifsaclub174.sbs,turkifsaclub175.sbs,turkifsaclub178.sbs,turkifsaclub179.sbs##main > h3:contains(Sponsor Bannerlar)
 !
 ! Frequently changed domains: yavasgir*.com
 ! Source: yavasgir136.live
@@ -6409,8 +6413,8 @@ yavasgir136.live##+js(addEventListener-defuser, DOMContentLoaded, openPopup)
 ||cimcime*.*/*.gif
 /cimcime\d+\.\w+$/###ads-inside-main
 /cimcime\d+\.\w+$/##+js(addEventListener-defuser, DOMContentLoaded, openPopup)
-cimcime144.live###ads-inside-main
-cimcime144.live##+js(addEventListener-defuser, DOMContentLoaded, openPopup)
+cimcime145.live###ads-inside-main
+cimcime145.live##+js(addEventListener-defuser, DOMContentLoaded, openPopup)
 !
 ! Frequently changed domains: askimyavas*.com
 ! Source: askimyavas.com
@@ -7077,17 +7081,6 @@ dizipal12.plus,dizipal13.plus,dizipal14.plus,dizipal15.plus,dizipal16.plus,dizip
 dizipal1022.com,dizipal1021.com,dizipal1017.com,dizipal1.com,dizipal2.com,dizipal3.com,dizipal4.com,dizipal5.com,dizipal6.com,dizipal7.com,dizipal8.com,dizipal9.com,dizipal10.com,dizipal11.com,dizipal12.com,dizipal13.com,dizipal14.com,dizipal15.com##.videoalt
 dizipal1022.com,dizipal1021.com,dizipal1017.com,dizipal1.com,dizipal2.com,dizipal3.com,dizipal4.com,dizipal5.com,dizipal6.com,dizipal7.com,dizipal8.com,dizipal9.com,dizipal10.com,dizipal11.com,dizipal12.com,dizipal13.com,dizipal14.com,dizipal15.com##.videoust
 dizipal1022.com,dizipal1021.com,dizipal1017.com,dizipal1.com,dizipal2.com,dizipal3.com,dizipal4.com,dizipal5.com,dizipal6.com,dizipal7.com,dizipal8.com,dizipal9.com,dizipal10.com,dizipal11.com,dizipal12.com,dizipal13.com,dizipal14.com,dizipal15.com##.body-clickable
-! dizi-pal*.com
-||blogger.googleusercontent.com/img/b/*/s500/maxwin728x90.gif
-||blogger.googleusercontent.com/img/b/*/s320/prada-dizi-banner72890.gif
-/^dizi-pal\d+\.com/##+js(set-constant, psWorker, noopFunc)
-/^dizi-pal\d+\.com/##a[href^="https://shrto.net/"]
-/^dizi-pal\d+\.com/##a[target="_blank"] > .alert
-/^dizi-pal\d+\.com/##div[id^="header"] a[target="_blank"]:has(> img)
-dizi-pal16.com##+js(set-constant, psWorker, noopFunc)
-dizi-pal16.com##a[href^="https://shrto.net/"]
-dizi-pal16.com##a[target="_blank"] > .alert
-dizi-pal16.com##div[id^="header"] a[target="_blank"]:has(> img)
 !
 ! Frequently changed domains: diziwatch*.net
 ||diziwatch*.net/wp-content/uploads/*.gif
