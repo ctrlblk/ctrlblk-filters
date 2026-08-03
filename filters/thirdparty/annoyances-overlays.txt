@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: EasyList – Newsletter Notices
-! Last modified: Fri, 31 Jul 2026 20:08:04 +0000
+! Last modified: Sun, 02 Aug 2026 19:53:39 +0000
 ! Expires: 7 days (update frequency)
 ! *** easylist:template_header.txt ***
 !
@@ -1843,6 +1843,7 @@ soundandvision.com###sub_pop
 dynomight.net###submitForm
 screendaily.com###subs-ribbon
 beforeitsnews.com,celebrity.red,codastory.com,dailygood.org,databricks.com,evero.com,fjolt.com,homeofdirectcommerce.com,knowledge.wharton.upenn.edu,marineelectronics.com,swimswam.com,technostall.com,u.today###subscribe
+behaviouralinvestment.com###subscribe-blog
 designtaxi.com###subscribe-box
 readysetcloud.io###subscribe-embed
 orca-app.dev###subscribe-form
@@ -1864,6 +1865,7 @@ mediapost.com###subscribe_form
 fsf.org###subscribeblock
 musictimes.com###subscription
 cleanmymac.com###subscription-faq-article
+capitalgroup.com###subscription-form
 kbb.com###subscription-overlay
 classpop.com###subscriptionform
 ted.com###talk-marketing-banner
@@ -6426,7 +6428,7 @@ doctorofcredit.com#@#.wpdiscuz-subscribe-bar
 ! fanboy_newsletter_shopping_allowlist_general_hide.txt
 
 ! Title: uBlock filters – Other Annoyances
-! Last modified: Sat, 01 Aug 2026 16:17:15 +0000
+! Last modified: Mon, 03 Aug 2026 00:38:57 +0000
 ! Expires: 7 days
 ! Description: Filters optimized for uBlock Origin, to be used with EasyList's and/or Adguard's "Other Annoyances" list(s)
 ! License: https://github.com/uBlockOrigin/uAssets/blob/master/LICENSE
@@ -14611,3 +14613,6 @@ readcomicsonline.lol##+js(nano-stb, e=>e-1)
 !#if env_mobile
 mail.yahoo.com##+js(trusted-click-element, #landshark .skip-link)
 !#endif
+
+! t3.chat anti adblock annoyance
+t3.chat##+js(nostif, .abort();, 1000)

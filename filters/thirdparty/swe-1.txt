@@ -1,6 +1,6 @@
 ! Title: Frellwit's Swedish Filter
 ! Expires: 4 days
-! Last modified: 2026-08-01 05:52:33 CEST
+! Last modified: 2026-08-03 08:57:36 CEST
 ! Homepage: https://github.com/lassekongo83/Frellwits-filter-lists
 ! Description: A filter for uBlock Origin that aims to remove regional Swedish ads, tracking, annoyances, scams + badware, and unnecessary bloat.
 ! License: GPL3 - https://github.com/lassekongo83/Frellwits-filter-lists/blob/master/LICENSE
@@ -613,7 +613,6 @@ foretagsverige.se,forskningsverige.se,motorbibeln.se,hallbarhetsverige.se,tillva
 foretagsverige.se,forskningsverige.se,motorbibeln.se,hallbarhetsverige.se,tillvaxtsverige.se,grillbibeln.se,kampenmotcancer.se,folkhalsasverige.se,dinlivsstil.nu##:is(div[class*="vicky-whitebox"], .vicky-category-label, .vicky-video-infobox-label, .vicky-post-headline-container__category__inner):has-text(/spons/i):upward(a, .carousel-caption, .featurette, article)
 forni.se##.section-sidebar-shop
 forni.se##:is(article, .recent-articles):has(.collaboration-brand)
-forskning.se##.cli-modal
 forskoletidningen.se##div[id^="block-adrevive"]
 forstasidorna.se##body.tingle-enabled:remove-class(tingle-enabled)
 forstasidorna.se##.tingle-modal--visible
@@ -915,7 +914,7 @@ karinrahm.se,sydasien.se,magasindagg.se##.thb-cookie-bar
 karlskogavaxer.se,molndalvaxer.se##.elementor-heading-title:has-text(/annons/i):upward(.elementor-column)
 karriarlakare.se##a[target][onclick], #cliSettingsPopup
 karriarlakare.se##.annons-label:upward(a)
-karriarlakare.se,livinguppsala.se,battrestadsdel.se,butikstrender.se,forskning.se,vardfokus.se,varvat.se,smaspararguiden.se,sjostadsbladet.se,tidningenridsport.se,vinliv.se,raa.se,svenskfilmdatabas.se,hockeybladet.nu,frihetsnytt.se,ingridochmaria.se###cookie-law-info-bar
+karriarlakare.se,livinguppsala.se,battrestadsdel.se,butikstrender.se,vardfokus.se,varvat.se,smaspararguiden.se,sjostadsbladet.se,tidningenridsport.se,vinliv.se,raa.se,svenskfilmdatabas.se,hockeybladet.nu,frihetsnytt.se,ingridochmaria.se###cookie-law-info-bar
 kattannonser.se##+js(noeval-if, adbEnableForPage)
 kb.se,dansportalen.se,hh.se,vr.se,viss.nu,skogssallskapet.se,formas.se,rf.se,naturvetarna.se,skyscanner.se##body:style(overflow:unset!important; position:unset!important;)
 kb.se,dansportalen.se,hh.se,vr.se,viss.nu,tidningencurie.se,skogssallskapet.se,formas.se,naturvetarna.se##.sv-marketplace-sitevision-cookie-consent, .sv-cookie-consent-modal, .env-modal-dialog__backdrop, .env-modal-dialog__backdrop--in, .env-modal-dialog--show
@@ -1267,7 +1266,6 @@ podtail.se##aside a[href*="utm_campaign"], a[title*="casino"]
 podtail.se##.item-list__item:has-text(/annons från/i)
 pokerforum.nu##.ipsBox:has(div[onclick="changeSubTab(\"casino\")"])
 polistidningen.se##div[id^="polis-"]
-pomu.se##[class^="Banner"]
 poolforum.se##div.adfit, div[style^="width:100%;max-width: 728px;"] > div[align="center"], div[style^="width:100%;max-width: 728px;"] > br
 poolforum.se,varmepumpsforum.com##.cookie_notice
 popularastronomi.se##a.gofollow[data-track]:not([href*="www.popularastronomi.se"])
@@ -2672,8 +2670,8 @@ zeromagazine.nu##div[id^="ads"]
 /plugins/ungrabber
 /plugins/vizzit-analytics
 /plugins/wccp-pro$domain=dinbyggare.se
-/plugins/webtoffee-cookie-consent$script,domain=ekonomifokus.se|hejauppsala.com|dansbandsnytt.se
-/plugins/webtoffee-gdpr-cookie-consent$script,domain=forskning.se|karriarlakare.se|svenskfilmdatabas.se|bonnieraudio.se
+/plugins/webtoffee-cookie-consent$script,domain=ekonomifokus.se|hejauppsala.com|dansbandsnytt.se|forskning.se
+/plugins/webtoffee-gdpr-cookie-consent$script,domain=karriarlakare.se|svenskfilmdatabas.se|bonnieraudio.se
 /plugins/wf-cookie-consent$script,domain=spelochfilm.se
 /plugins/woocommerce-google-adwords
 /plugins/wordpress-stats-manager-pro
@@ -3037,7 +3035,6 @@ _banner.php?$domain=tvmatchen.nu
 ||analytics.ozzi.io^$third-party
 ||analytics.samnytt.se^
 ||analytics.teknikveckan.se^
-||analytics.undeco.se^
 ||analytics.webfokus.no^$third-party
 ||annonser.snoap.no^$third-party
 ||annons.dagen.se^
@@ -3054,6 +3051,8 @@ _banner.php?$domain=tvmatchen.nu
 ||api.staylive.tv/videos/engagement
 ||applets.ebxcdn.com/ebx.js$domain=stoppapressarna.se
 ||app-statistics.puzzel.com^
+||app.impact.com/display-ad
+||app.impact.com/display-logo-via-campaign
 ||app.nocodelytics.com^$third-party
 ||app.termly.io^$domain=soderkopingsposten.se|huvudvarksforbundet.se
 ||apsis.one^$third-party
@@ -3465,8 +3464,6 @@ _banner.php?$domain=tvmatchen.nu
 ||pm.azerioncircle.com^
 ||podcasts.nu/adbg.svg
 ||poddtoppen.se/api/ad?
-||pomu.se/api/ads.json
-||pomu.se/games/visit/
 ||popupsmart.com^$third-party
 ||portalhc.com^$third-party
 ||premium.analys.cloud^$third-party
@@ -3741,5 +3738,4 @@ dagensarbetsmiljo.se##+js(aeld, wheel, e.defaultPrevented)
 web-tools.se,bio-link.se##+js(rmnt, script, request_ads_to_display)
 kritiker.se##div.ui.page.dimmer:has(#adblocker)
 kritiker.se##body.dimmed:style(overflow:unset!important;)
-spelhubben.se##+js(rmnt, script, event.target.tagName)
 !#endif
