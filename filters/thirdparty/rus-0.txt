@@ -10249,6 +10249,7 @@ litnet.com##.cookies-w
 ecopolitic.com.ua##.cursor-follower
 crimezone.in.ua##.custom-modal
 jurnalu.ru##.demo
+embed.smotrim.ru##.disclaimers
 gofrag.ru##.eb-inst
 rufonts.ru##.elementor-popup-modal
 elhow.ru##.extra-banner
@@ -11655,7 +11656,7 @@ igdz1.ru^$script,domain=igdz.ru
 ||fap-guru.*/front/js/unwanted.js
 ||fapl.ru/upload/fapl_$subdocument
 ||faspiic.ru/js/go_re.js
-||fastpic.org/ad-provider.js
+||fastpic.org/*provider.js
 ||fastpic.org/p.js
 ||fastpic.org/view/$script
 ||fastpicc.ru^$third-party,script
@@ -12281,6 +12282,7 @@ igdz1.ru^$script,domain=igdz.ru
 ||lostfilm.tv/pereP/?a=
 ||lostpix.com/pic_lospix/radeika_$image
 ||lottielab.com^$third-party,domain=nnm-club.me|nnmclub.ro|nnmclub.to
+||love-games1.net/yb2.
 ||love4str.ru^$script
 ||loveradio.ru/background/$image
 ||lovitut.ru/sites/default/files/$image
@@ -12831,6 +12833,7 @@ igdz1.ru^$script,domain=igdz.ru
 ||povarenok.ru/css/*1.css$stylesheet
 ||povarenok.ru/css/*media.$stylesheet
 ||povarenok.ru/css/*project$stylesheet
+||povarenok.ru/css/style-sp.css$stylesheet
 ||povarenok.ru/i/*/*.jpg
 ||powerwaver.cc^*.js|$script
 ||pozdrav.ru/img/banners/
@@ -18364,6 +18367,7 @@ lfl.ru##.sidebar .start_block a[href^="http"]:not([href*="://lfl.ru"])
 lfl.ru##.sidebar .start_block table[style="width: 263px;"]
 headphone-review.ru,kinomania.kz##.sidebar .widget_text
 pc-aio.ru##.sidebar > #HTML2
+love-games1.net##.sidebar > .accordion-in ~ .accordion-in
 vesti.uz##.sidebar > .adv ~ *
 litnet.com##.sidebar > .b-popular
 fukushima-news.ru#?#.sidebar > .block-content:-abp-has(> noindex > script)
@@ -29258,6 +29262,7 @@ marieclaire.ua##+js(abort-current-inline-script, redram, /загрузка.../)
 livesport.ws##+js(abort-current-inline-script, setTimeout, adblockwarn)
 liga.net##+js(abort-current-inline-script, window.innerWidth, rcBuf)
 techmusic.ru##+js(abort-current-inline-script, window.onload, _uWnd)
+fastpic.org,~new.fastpic.org##+js(abort-current-script, document.addEventListener, 1e3)
 fastpic.org,~new.fastpic.org##+js(abort-current-script, document.addEventListener, location.href)
 dynamo.kiev.ua##+js(abort-current-script, document.getElementById, document.body.style.overflow)
 lenta.news,lenta.ru##+js(abort-current-script, window._lentaData, url_for_scroll)
@@ -29521,6 +29526,8 @@ kvadratmetr.uz,oligarx.uz,tehnar.net.ua##+js(noeval-if, adsBlocked)
 www.kinopoisk.ru##+js(prevent-addEventListener, /canplay|loadeddata|playing|timeupdate/, '', elements, [poster][loop])
 mem-hub.ru##+js(prevent-addEventListener, DOMContentLoaded, /adBlocks|adObserver|appPromoModal/)
 fastpic.org,~new.fastpic.org##+js(prevent-addEventListener, DOMContentLoaded, 0x)
+fastpic.org,~new.fastpic.org##+js(prevent-addEventListener, click, '', elements, html)
+fastpic.org,~new.fastpic.org##+js(prevent-addEventListener, click, '', elements, window)
 fastpic.org,~new.fastpic.org##+js(prevent-addEventListener, click, /0x|isTrusted/)
 rutube.ru##+js(prevent-addEventListener, click, showRedirectPopup)
 dumatv.ru##+js(prevent-addEventListener, message, AUTOPLAY)
@@ -29560,11 +29567,12 @@ newsyou.info##+js(remove-node-text, script, error-report.com)
 fapvdo.ru##+js(remove-node-text, script, getComputedStyle)
 fastpic.org,~new.fastpic.org##+js(remove-node-text, script, getElementById, includes, referrer)
 ahen.me##+js(remove-node-text, script, isAdBlock)
+fastpic.org,~new.fastpic.org##+js(remove-node-text, script, location.href.split)
 gsm.in.ua##+js(remove-node-text, script, message_ads)
 kriminal.net.ua##+js(remove-node-text, script, nidclick)
 sichnews.ua##+js(remove-node-text, script, right_click)
 eg.ru,gorodche.ru,gorodvo.ru,ng72.ru##+js(remove-node-text, script, showBanner)
-fastpic.org,~new.fastpic.org##+js(remove-node-text, style, /ex-over-top|214748364/)
+fastpic.org,~new.fastpic.org##+js(remove-node-text, style, /divExo|ex-over-top|214748364/)
 game4you.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##+js(remove-node-text, style, epom-brend)
 uwupad.me##+js(remove-node-text, style, lb-banner-height)
 www.ixbt.com##+js(remove-node-text, style, rose.ixbt.com/banner/)
@@ -29732,6 +29740,7 @@ lenta.news,lenta.ru##.vk-video-popup:remove()
 vk.com,vk.ru##.wall_module > div[id]:first-child > :matches-prop(innerHTML="/format_edit|mradx\.|media_on_/")
 /^https?://yastatic\.net\/www\/_\/[^\s]{150,}/$image,domain=yandex.by|yandex.kz|yandex.ru|yandex.uz
 /sm\.news/[^\s]{80,}/$script,xmlhttprequest,badfilter,domain=sm.news
+/splash.php?cat=$popunder
 24parik.*,parik24.*##+js(window-close-if, /adtag|creative_id/)
 dtf.ru,vc.ru##:matches-path(-erid-) .block-special-button
 dtf.ru,vc.ru##:matches-path(-erid-) a[href*="go.vc.ru"]:style(pointer-events: none !important; color: inherit !important)
@@ -29842,7 +29851,7 @@ smaxim.*##+js(set-constant, flashvars.protect_block, '')
 studizba.com,surl.*##+js(nano-setInterval-booster, #timer)
 ixbt.pro##style[id^="branding-"]:remove()
 translate.yandex.ru,translate.yandex.*##+js(set-constant, Object.prototype.dispatchSignalCallbacks, undefined)
-gofrag.ru,videobel.by##video:remove-attr(autoplay)
+embed.smotrim.ru,gofrag.ru,videobel.by##video:remove-attr(autoplay)
 3dnews.ru##video[autoplay="autoplay"]:remove-attr(autoplay)
 kino-teatr.ru,kinoafisha.info,kinonews.ru##videotronic-player:remove-attr(data-video-autoplay)
 wildberries.*##+js(set-constant, Object.prototype.prepareBannersList, noopFunc)

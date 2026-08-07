@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: EasyList – Newsletter Notices
-! Last modified: Thu, 06 Aug 2026 03:53:56 +0000
+! Last modified: Fri, 07 Aug 2026 03:38:15 +0000
 ! Expires: 7 days (update frequency)
 ! *** easylist:template_header.txt ***
 !
@@ -2885,6 +2885,7 @@ alsterrunde.com,beautifulpublicdata.com,codereliant.io,evinfocus.com,gardinerbry
 disconnect.blog,the-londoner.co.uk##.kg-signup-card-content
 digitalocean.com##.khfYvn
 betakit.com,govee.com##.kl-private-reset-css-Xuajs1.needsclick
+sporked.com##.klaviyo-signup
 klima101.rs##.klima-subscribe
 legit.ng,tuko.co.ke##.l-header__subscribe
 axios.com##.landing-page-cta
@@ -6436,7 +6437,7 @@ doctorofcredit.com#@#.wpdiscuz-subscribe-bar
 ! fanboy_newsletter_shopping_allowlist_general_hide.txt
 
 ! Title: uBlock filters – Other Annoyances
-! Last modified: Mon, 03 Aug 2026 00:38:57 +0000
+! Last modified: Fri, 07 Aug 2026 06:16:39 +0000
 ! Expires: 7 days
 ! Description: Filters optimized for uBlock Origin, to be used with EasyList's and/or Adguard's "Other Annoyances" list(s)
 ! License: https://github.com/uBlockOrigin/uAssets/blob/master/LICENSE
@@ -6667,6 +6668,13 @@ posturi.gov.ro##:root:style(user-select: unset !important)
 
 ! https://github.com/uBlockOrigin/uAssets/issues/33845
 canale-tv.net,cool-tv.net##+js(rmnt, script, .preventDefault(), includes, contextmenu)
+
+! https://github.com/uBlockOrigin/uAssets/issues/33999
+!#if env_firefox
+bandwagon.asia##.article[oncontextmenu]:remove-attr(/onmousedown|onselectstart|oncontextmenu/)
+!#else
+bandwagon.asia##+js(ra, onmousedown|onselectstart|oncontextmenu, .article, complete)
+!#endif
 
 ! END: Anti copy, right-click etc.
 
@@ -14624,3 +14632,6 @@ mail.yahoo.com##+js(trusted-click-element, #landshark .skip-link)
 
 ! t3.chat anti adblock annoyance
 t3.chat##+js(nostif, .abort();, 1000)
+
+! allow selecting text
+vitsienvitsit.fi##.vitsiUnselectable:style(user-select: text !important)
