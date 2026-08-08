@@ -17520,6 +17520,7 @@ floristics.info##.native-ads
 app-time.ru##.native-brand > div
 chistosex.org##.nav > .menu-part
 drive.ru##.nav-menu > li > a[href][target="_blank"]
+lifehacker.ru##.nav-menu__items .category-item__customized
 66.ru##.nav-wrapper iframe
 webmasters.ru##.nav_we > a:not([href^="http://webmasters.ru/"]):not([href^="/"]):not([href^="."])
 forum.soft4dle.com##.navbar > br
@@ -18649,6 +18650,7 @@ ukrlib.com.ua##.supertext2
 bilshe.com#?#.svejnov:-abp-has(> h2 > b:-abp-contains(/^Інші/))
 games-porno.net##.swfgame_banners
 ictv.ua#?#.swiper-slide:-abp-has(> a[href*="utm_campai"])
+lifehacker.ru##.swiper-wrapper .menu-item__link--colored
 iguides.ru#?#.swiper-wrapper > .swiper-slide:-abp-has(> article [href*="?erid="])
 igromania.ru#?#.swiper-wrapper > .swiper-slide:-abp-has(> div > .knb-card--footer > div > span:-abp-contains(Партнерский материал))
 moniheal.com##.swiper-wrapper > a:not([href*="moniheal.com/"])
@@ -27172,7 +27174,7 @@ culture.ru###page-error-modal
 forum.niiot.net###some_ad_block_key_popup
 uwupad.me###uwu-shield
 myshows.me##.CheatModal__modal
-rknweb.ru##.IsAdBlock
+rknweb.ru##.IsAfBlo
 usemind.org##.a-top
 delfi.ee##.ad-block-layer
 ogorod.ru##.adblock_popup_warning
@@ -27759,7 +27761,6 @@ factor.ua##body:style(overflow: auto !important)
 ! ---
 fastpic.org##.justify-content-center > .col[id]:style(max-width: max-content !important)
 fastpic.org##body > footer:style(background: none !important)
-fastpic.org##main#mainContainer:style(max-width: unset !important)
 ! ---
 fbsearch.ru###search_panel > .panel-body ~ div
 fbsearch.ru###search_panel > .panel-body:style(display: block !important)
@@ -29223,6 +29224,8 @@ rambler.ru###summary ~ div:has(> [id^="cluster-video-ad"]):remove()
 pronpic.org###vO5STmSLgNAkebzSluI8coxpDgsG97g:style(height: 1px !important; min-height: 1px !important)
 $doc,reason=malicious,domain=apad2.top|besplatnyeprogrammy.ru|byrut.org.ru|hdrip.info|mediagetguru.ru|mixsoft.org|monna2.top|torrent-music.ru|torrent-soft.ru
 */bens/vinos.js$popunder
+*/splash.php?$popunder,domain=fastpic.org
+*/u.php?$popunder,domain=fastpic.org
 kolizhanka.com.ua,miyzvuk.net,ozon.ru##*:style(-webkit-touch-callout: default !important; -webkit-user-select: text !important; -moz-user-select: text !important; -ms-user-select: text !important; user-select: text !important)
 captcha-api.yandex.ru,id.vk.ru,passport.yandex.ru,sso.dzen.ru,sso.ya.ru#@#+js()
 shaiba.kz##+js(abort-current-inline-script, $, 1xbet)
@@ -29262,8 +29265,7 @@ marieclaire.ua##+js(abort-current-inline-script, redram, /загрузка.../)
 livesport.ws##+js(abort-current-inline-script, setTimeout, adblockwarn)
 liga.net##+js(abort-current-inline-script, window.innerWidth, rcBuf)
 techmusic.ru##+js(abort-current-inline-script, window.onload, _uWnd)
-fastpic.org,~new.fastpic.org##+js(abort-current-script, document.addEventListener, 1e3)
-fastpic.org,~new.fastpic.org##+js(abort-current-script, document.addEventListener, location.href)
+fastpic.org,~new.fastpic.org##+js(abort-current-script, document.documentElement, Date.now)
 dynamo.kiev.ua##+js(abort-current-script, document.getElementById, document.body.style.overflow)
 lenta.news,lenta.ru##+js(abort-current-script, window._lentaData, url_for_scroll)
 htmlweb.ru##+js(abort-on-property-read, AdbBanner)
@@ -29527,7 +29529,6 @@ www.kinopoisk.ru##+js(prevent-addEventListener, /canplay|loadeddata|playing|time
 mem-hub.ru##+js(prevent-addEventListener, DOMContentLoaded, /adBlocks|adObserver|appPromoModal/)
 fastpic.org,~new.fastpic.org##+js(prevent-addEventListener, DOMContentLoaded, 0x)
 fastpic.org,~new.fastpic.org##+js(prevent-addEventListener, click, '', elements, html)
-fastpic.org,~new.fastpic.org##+js(prevent-addEventListener, click, '', elements, window)
 fastpic.org,~new.fastpic.org##+js(prevent-addEventListener, click, /0x|isTrusted/)
 rutube.ru##+js(prevent-addEventListener, click, showRedirectPopup)
 dumatv.ru##+js(prevent-addEventListener, message, AUTOPLAY)
@@ -29740,7 +29741,6 @@ lenta.news,lenta.ru##.vk-video-popup:remove()
 vk.com,vk.ru##.wall_module > div[id]:first-child > :matches-prop(innerHTML="/format_edit|mradx\.|media_on_/")
 /^https?://yastatic\.net\/www\/_\/[^\s]{150,}/$image,domain=yandex.by|yandex.kz|yandex.ru|yandex.uz
 /sm\.news/[^\s]{80,}/$script,xmlhttprequest,badfilter,domain=sm.news
-/splash.php?cat=$popunder
 24parik.*,parik24.*##+js(window-close-if, /adtag|creative_id/)
 dtf.ru,vc.ru##:matches-path(-erid-) .block-special-button
 dtf.ru,vc.ru##:matches-path(-erid-) a[href*="go.vc.ru"]:style(pointer-events: none !important; color: inherit !important)
@@ -29872,6 +29872,7 @@ ya.ru,yandex.*##.simple-popup__overlay:remove()
 ||dominantroute.com/bens/vinos.js$script,redirect=noop.js
 ||dzen.ru/embed/*autoplay=1$third-party,subdocument,removeparam=|
 ||dzen.ru/zen-partner/$third-party
+||fastpic.org/cz/$popunder
 ||footboom.com/dist/app/js/antiAdBlock-
 ||franecki.net/js/lib.js$important,script,redirect=noop.js
 ||frontend.vh.yandex.ru/player/*autoplay=1$subdocument,removeparam=|,domain=~music.yandex.*|~music.yandex.ru

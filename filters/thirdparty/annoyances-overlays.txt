@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: EasyList – Newsletter Notices
-! Last modified: Fri, 07 Aug 2026 03:38:15 +0000
+! Last modified: Fri, 07 Aug 2026 10:32:45 +0000
 ! Expires: 7 days (update frequency)
 ! *** easylist:template_header.txt ***
 !
@@ -1947,6 +1947,7 @@ sourcegraph.com##.CustomHubspotForm_blogForm__6LtFv
 popsugar.com,thedodo.com##.EmailAcquisitonstyles__EmailAcquisitionOuterContainer-sc-1b9duud-0
 dailymemphian.com,thekitchn.com##.EmailSignup
 zazzle.com##.EmailSignupForm
+sbs.com.au##.EmbeddedNewsletter-module__0KEHPq__container
 theglobeandmail.com##.EndOfArticleNewsletterstyles__MessageContainer-sc-v27y1d-0
 2-spyware.com##.EsolEmailSubscribeWidget
 cbssports.com##.EventPromoInline
@@ -1990,6 +1991,7 @@ aleteia.org##.NewsletterForm_container__CWjyJ
 laist.com##.NewsletterModule
 newscientist.com##.NewsletterPromotion
 marketplace.org##.NewsletterPrompt_newsletterSidebar__tYOqr
+sbs.com.au##.NewsletterShelf-module__4zLG-G__newsletterSection
 cltampa.com##.NewsletterSignup
 gamedeveloper.com,iotworldtoday.com##.NewsletterSignupButton
 themirror.com##.NewsletterSignup_container__UINqe
@@ -6437,7 +6439,7 @@ doctorofcredit.com#@#.wpdiscuz-subscribe-bar
 ! fanboy_newsletter_shopping_allowlist_general_hide.txt
 
 ! Title: uBlock filters – Other Annoyances
-! Last modified: Fri, 07 Aug 2026 06:16:39 +0000
+! Last modified: Fri, 07 Aug 2026 06:41:46 +0000
 ! Expires: 7 days
 ! Description: Filters optimized for uBlock Origin, to be used with EasyList's and/or Adguard's "Other Annoyances" list(s)
 ! License: https://github.com/uBlockOrigin/uAssets/blob/master/LICENSE
@@ -11099,14 +11101,6 @@ uemeds.cn##*:style(-webkit-touch-callout: default !important; -webkit-user-selec
 
 ! https://github.com/AdguardTeam/AdguardFilters/issues/84411
 secondlifetranslations.com##+js(aost, encodeURIComponent, inlineScript)
-
-! https://github.com/uBlockOrigin/uAssets/issues/10460#issuecomment-976250003
-miraculous.to##+js(aopr, debugchange)
-miraculous.to##+js(ra, oncontextmenu, body)
-miraculous.to##+js(aeld, contextmenu, preventDefault)
-miraculous.to##+js(aeld, /^(?:keyup|keydown)$/)
-miraculous.to##+js(set, console.clear, noopFunc)
-miraculous.to##+js(set, console.log, noopFunc)
 
 ! https://github.com/uBlockOrigin/uAssets/issues/10559
 criticalthinking.org##+js(nostif, donation-modal)
