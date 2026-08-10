@@ -17173,6 +17173,7 @@ allboxing.ru#?#.last-news:-abp-has(> .block_title ~ [id^="unit_"])
 footballhd.ru#?#.lastnewscat:-abp-has(> [id*="ScriptRoot"])
 rayon.in.ua#?#.latestNews__list > .latestNews__item:-abp-has(> a > div > .latestNewsCard__tag:-abp-contains(РЕКЛАМА))
 dsgners.ru##.layout > .overflow-hidden[style^="background"]
+eapteka.ru##.layout__banners
 eurointegration.com.ua##.layout_news > .separator::after
 ko.com.ua##.layout_right_column > p
 kirov.online##.layout_sidebar.content-card
@@ -19640,6 +19641,8 @@ kinokordon.net#?#[id^="oframevideoplayer"] > pjsdiv:-abp-has(> pjsdiv:-abp-conta
 allboxing.ru##[id^="popup-banner"]
 rst.ua##[id^="rst-page-banner-300x250"]
 novostivl.ru##[id^="rtb_"]
+eapteka.ru#?#[id^="single-spa-application:@front-office/app-marketing-system/Placement"]:-abp-has([src^="https://cdn.neon.click/"])
+eapteka.ru##[id^="single-spa-application:@front-office/app-marketing-system/Placement"][id$="One"]
 motovolg.com##[id^="slider"][id*="ontent"] span.right
 delpc.ru,parazitovnetu.ru##[id^="smartrotator_ad"]
 kriminal.net.ua,moyskelet.ru,myhairsalon.ru,progipertoniyu.ru,znachenieimenipro.ru##[id^="teaser_"]
@@ -20142,6 +20145,7 @@ uafix.net##a[href="/noads.html"]
 kinobaza.net##a[href="/out.php"]
 news29.ru##a[href="/reklama/"]
 windata.ru##a[href="/shorturl"]
+eapteka.ru##a[href="/~social_zen"]
 l2argument.ru##a[href="buy-ads.html"]
 forum.csmania.ru##a[href="http://autosteamgifts.ru/"]
 kinomonitor.ru##a[href="http://bike-centre.ru/"]
@@ -27759,6 +27763,7 @@ factor.ua##.b-access__auth
 factor.ua##.b-access__overlay
 factor.ua##body:style(overflow: auto !important)
 ! ---
+fastpic.org###picContainer > [style="position: relative;"]:style(background-image: none !important)
 fastpic.org##.justify-content-center > .col[id]:style(max-width: max-content !important)
 fastpic.org##body > footer:style(background: none !important)
 ! ---
@@ -28927,7 +28932,7 @@ dzen.ru##.news-secondary-layout-column__secondary div[id]
 dzen.ru##.news-sticky__inner > div > div[id]
 dzen.ru##.news-story-page div[id] > div:not([id]) > div[id]
 dzen.ru,sportsdzen.ru##[aria-label*="ница"][aria-label*="овост"] > div[class] > div > div[id] ~ div[id]
-dzen.ru,sportsdzen.ru##[aria-label*="ница"][aria-label*="овост"] > div[class] > div > div[id]:first-child + div[class^="news"]:not([class*="-rubric-"]):not(:last-child):not([aria-label])
+dzen.ru,sportsdzen.ru##[aria-label*="ница"][aria-label*="овост"] > div[class] > div > div[id]:first-child + div[class^="news"]:not([class*="MainPageTitle"]):not([class*="-rubric-"]):not(:last-child):not([aria-label])
 dzen.ru##[aria-label] div[id][class*="-desktop__ad-"]
 dzen.ru##div[class*="AdvertTsar"]
 dzen.ru##div[class*="BrandingAdvertLayoutColumn-"]
@@ -29264,7 +29269,7 @@ marieclaire.ua##+js(abort-current-inline-script, redram, /загрузка.../)
 livesport.ws##+js(abort-current-inline-script, setTimeout, adblockwarn)
 liga.net##+js(abort-current-inline-script, window.innerWidth, rcBuf)
 techmusic.ru##+js(abort-current-inline-script, window.onload, _uWnd)
-fastpic.org,~new.fastpic.org##+js(abort-current-script, document.documentElement, VIDEO)
+fastpic.org,~new.fastpic.org##+js(abort-current-script, document.documentElement, href.indexOf)
 dynamo.kiev.ua##+js(abort-current-script, document.getElementById, document.body.style.overflow)
 lenta.news,lenta.ru##+js(abort-current-script, window._lentaData, url_for_scroll)
 htmlweb.ru##+js(abort-on-property-read, AdbBanner)
@@ -29379,6 +29384,7 @@ fssp.gov.ru,southpark.su,turkcinema.org##+js(abort-on-property-write, document.o
 fssp.gov.ru,southpark.su,turkcinema.org##+js(abort-on-property-write, document.onselectstart)
 phys-kids.com##+js(abort-on-property-write, fetch)
 kakprosto.ru##+js(abort-on-property-write, window.yaProxy)
+fastpic.org,~new.fastpic.org##+js(abort-on-stack-trace, Math.round, inlineScript)
 tvzvezda.ru##+js(abort-on-stack-trace, Object.prototype.autoplay, assets)
 ya.ru##+js(abort-on-stack-trace, Object.prototype.loadAdvertScriptMode, /yastatic\.net/)
 shadowcore.ru##+js(abort-on-stack-trace, document.createElement, checkAboba)
