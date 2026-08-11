@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: EasyList – Newsletter Notices
-! Last modified: Fri, 07 Aug 2026 10:32:45 +0000
+! Last modified: Tue, 11 Aug 2026 04:53:20 +0000
 ! Expires: 7 days (update frequency)
 ! *** easylist:template_header.txt ***
 !
@@ -1650,7 +1650,7 @@ audioholics.com###mail-list-button
 steamdeckhq.com###mailerlite-form_1
 allkpop.com,happens.vip,snowbrains.com,tokyohive.com###mailing-list
 museumcrush.org###mc-signup-iframe
-cdispatch.com,times-herald.com###mc_embed_shell
+bmmagazine.co.uk,cdispatch.com,times-herald.com###mc_embed_shell
 moneyweb.co.za###mc_embed_signup1
 dot.la###mc_embed_signup_bar
 mobilesyrup.com###mc_newsletter_signup_article
@@ -3860,6 +3860,7 @@ hms.harvard.edu##.webform-submission-form
 theenergymix.com##.weekender-blue
 theenergymix.com##.weekender-green
 theenergymix.com##.weekender-white
+theconsensus.dev##.weekly-cta
 health.harvard.edu##.welcome-popup
 dictionary.com##.widget
 a16z.com##.widget--subscribe
@@ -6439,7 +6440,7 @@ doctorofcredit.com#@#.wpdiscuz-subscribe-bar
 ! fanboy_newsletter_shopping_allowlist_general_hide.txt
 
 ! Title: uBlock filters – Other Annoyances
-! Last modified: Sun, 09 Aug 2026 10:59:27 +0000
+! Last modified: Mon, 10 Aug 2026 08:43:30 +0000
 ! Expires: 7 days
 ! Description: Filters optimized for uBlock Origin, to be used with EasyList's and/or Adguard's "Other Annoyances" list(s)
 ! License: https://github.com/uBlockOrigin/uAssets/blob/master/LICENSE
@@ -14636,3 +14637,9 @@ t3.chat##+js(nostif, .abort();, 1000)
 
 ! allow selecting text
 vitsienvitsit.fi##.vitsiUnselectable:style(user-select: text !important)
+
+! anti devtools
+popcornmovies.io##+js(set, console.clear, trueFunc)
+popcornmovies.io##+js(set, console.log, trueFunc)
+popcornmovies.io##+js(set, console.table, trueFunc)
+popcornmovies.io##+js(aeld, keydown, 123===i)

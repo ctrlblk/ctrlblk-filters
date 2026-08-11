@@ -1,10 +1,10 @@
 ![Adblock Plus 2.0]
-! Checksum: swKbXuFxjQ15arAASGA/QA
-! Diff-Path: ../patches/13/13-s-1786336718-3600.patch
+! Checksum: Dk12xw5yy0s1v6ORltRuiQ
+! Diff-Path: ../patches/13/13-s-1786419528-3600.patch
 ! Title: AdGuard Turkish filter
 ! Description: Filter list that specifically removes ads on websites in Turkish language.
-! Version: 2.0.66.80
-! TimeUpdated: 2026-08-10T04:35:19+00:00
+! Version: 2.0.66.84
+! TimeUpdated: 2026-08-11T03:35:49+00:00
 ! Expires: 5 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -5986,6 +5986,11 @@ lovefilmizle.net,elzemfilm.org,dizicaps.*,erotikfilmtube.com,sexfilmleriizle.com
 ! Don't mix frequently changed domains with other rules, to make it easier to maintain,
 ! except some sites that use non-template domain names of mirror sites
 !
+! Frequently changed domains: porno*.shop
+! Source: porno28.shop
+/porno\d+\.shop$/##div[rel="sponsored"]
+porno28.shop##div[rel="sponsored"]
+!
 ! Frequently changed domains: papaztv*.live
 ! Source: papaztv7.live
 /papaztv\d+\.live$/##div[class^="reklam-"]
@@ -6157,8 +6162,8 @@ hdifsaizle18.com##div[style]:has(> a[href^="https://bit.ly/"])
 hdifsaizle18.com###prerollOverlay:style(display: none !important;)
 hdifsaizle18.com###mainVideo:style(display: block !important;)
 !
-! Frequently changed domains: turkifsa*.site; turkifsalar2.site
-! Source: turkifsa40.site; turkifsalar2.site
+! Frequently changed domains: turkifsa*.site; turkifsalar*.site; turkifsalar*.art
+! Source: turkifsa40.site; turkifsalar2.site; turkifsalar.art
 ||labvex.b-cdn.net/ads/
 ! aglint-disable no-invalid-modifiers
 !+ NOT_VALIDATE
@@ -6166,20 +6171,27 @@ hdifsaizle18.com###mainVideo:style(display: block !important;)
 ! aglint-enable no-invalid-modifiers
 ||turkifsa*.site/api/popunder-config
 ||turkifsa*.site/api/preroll-event
-/turkifsa(lar)?\d*\.site$/##div[class]:has(> a:is([href^="https://cutt.ly/"],[href="https://denemebonusumi.com/"]))
-/turkifsa(lar)?\d*\.site$/##video + div.absolute
-/turkifsa(lar)?\d*\.site$/##.ad-banner-frame
-/turkifsa(lar)?\d*\.site$/##div[class][style^="min-height:"][style*="calc("]
+/turkifsa(lar)?\d*\.(site\|art)$/##div[class]:has(> a:is([href^="https://cutt.ly/"],[href="https://denemebonusumi.com/"]))
+/turkifsa(lar)?\d*\.(site\|art)$/##video + div.absolute
+/turkifsa(lar)?\d*\.(site\|art)$/##.ad-banner-frame
+/turkifsa(lar)?\d*\.(site\|art)$/##div[class][style^="min-height:"][style*="calc("]
+/turkifsa(lar)?\d*\.(site\|art)$/##+js(set-session-storage-item, preroll_view_count, 4)
 ! turkifsa*.site
-turkifsa5.site,turkifsa41.site,turkifsa42.site,turkifsa44.site,turkifsa45.site,turkifsa32.site,turkifsa40.site,turkifsa31.site,turkifsa69.site,turkifsa27.site,turkifsa43.site##div[class]:has(> a:is([href^="https://cutt.ly/"],[href="https://denemebonusumi.com/"]))
-turkifsa5.site,turkifsa41.site,turkifsa42.site,turkifsa44.site,turkifsa45.site,turkifsa32.site,turkifsa40.site,turkifsa31.site,turkifsa69.site,turkifsa27.site,turkifsa43.site##video + div.absolute
-turkifsa5.site,turkifsa41.site,turkifsa42.site,turkifsa44.site,turkifsa45.site,turkifsa32.site,turkifsa40.site,turkifsa31.site,turkifsa69.site,turkifsa27.site,turkifsa43.site##.ad-banner-frame
-turkifsa5.site,turkifsa41.site,turkifsa42.site,turkifsa44.site,turkifsa45.site,turkifsa32.site,turkifsa40.site,turkifsa31.site,turkifsa69.site,turkifsa27.site,turkifsa43.site##div[class][style^="min-height:"][style*="calc("]
+turkifsa5.site,turkifsa41.site,turkifsa42.site,turkifsa44.site,turkifsa45.site,turkifsa32.site,turkifsa40.site,turkifsa27.site,turkifsa43.site##div[class]:has(> a:is([href^="https://cutt.ly/"],[href="https://denemebonusumi.com/"]))
+turkifsa5.site,turkifsa41.site,turkifsa42.site,turkifsa44.site,turkifsa45.site,turkifsa32.site,turkifsa40.site,turkifsa27.site,turkifsa43.site##video + div.absolute
+turkifsa5.site,turkifsa41.site,turkifsa42.site,turkifsa44.site,turkifsa45.site,turkifsa32.site,turkifsa40.site,turkifsa27.site,turkifsa43.site##.ad-banner-frame
+turkifsa5.site,turkifsa41.site,turkifsa42.site,turkifsa44.site,turkifsa45.site,turkifsa32.site,turkifsa40.site,turkifsa27.site,turkifsa43.site##div[class][style^="min-height:"][style*="calc("]
 ! turkifsalar*.site
 turkifsalar.site,turk-ifsa17.com,turk-ifsa18.com,turk-ifsa19.com,turk-ifsa20.com,turk-ifsa21.com,turk-ifsa22.com##div[class]:has(> a:is([href^="https://cutt.ly/"],[href="https://denemebonusumi.com/"]))
 turkifsalar.site,turk-ifsa17.com,turk-ifsa18.com,turk-ifsa19.com,turk-ifsa20.com,turk-ifsa21.com,turk-ifsa22.com##video + div.absolute
 turkifsalar.site,turk-ifsa17.com,turk-ifsa18.com,turk-ifsa19.com,turk-ifsa20.com,turk-ifsa21.com,turk-ifsa22.com##.ad-banner-frame
 turkifsalar.site,turk-ifsa17.com,turk-ifsa18.com,turk-ifsa19.com,turk-ifsa20.com,turk-ifsa21.com,turk-ifsa22.com##div[class][style^="min-height:"][style*="calc("]
+! turkifsalar.art
+turkifsalar.art##div[class]:has(> a:is([href^="https://cutt.ly/"],[href="https://denemebonusumi.com/"]))
+turkifsalar.art##video + div.absolute
+turkifsalar.art##.ad-banner-frame
+turkifsalar.art##div[class][style^="min-height:"][style*="calc("]
+turkifsalar.art##+js(set-session-storage-item, preroll_view_count, 4)
 !
 ! Frequently changed domains: turkifsa*.art
 ! Source: turk-ifsa11.com
@@ -6203,10 +6215,10 @@ turk-ifsa11.com,turk-ifsa12.com,turk-ifsa13.com,turk-ifsa14.com,turk-ifsa15.com,
 /turkifsa\d*\.com/##video + div.absolute
 /turkifsa\d*\.com/##.ad-banner-frame
 /turkifsa\d*\.com/##div[class][style^="min-height:"][style*="calc("]
-turkifsa73.com,turkifsa74.com##div[class]:has(> a:is([href^="https://cutt.ly/"],[href="https://denemebonusumi.com/"]))
-turkifsa73.com,turkifsa74.com##video + div.absolute
-turkifsa73.com,turkifsa74.com##.ad-banner-frame
-turkifsa73.com,turkifsa74.com##div[class][style^="min-height:"][style*="calc("]
+turkifsa73.com,turkifsa74.com,turkifsa75.com##div[class]:has(> a:is([href^="https://cutt.ly/"],[href="https://denemebonusumi.com/"]))
+turkifsa73.com,turkifsa74.com,turkifsa75.com##video + div.absolute
+turkifsa73.com,turkifsa74.com,turkifsa75.com##.ad-banner-frame
+turkifsa73.com,turkifsa74.com,turkifsa75.com##div[class][style^="min-height:"][style*="calc("]
 !
 ! Frequently changed domains: turkifsa*.art
 ! Source: turkifsa25.art
@@ -6245,8 +6257,12 @@ turkzzersifsa3.blog,turkzzersifsa4.blog,turkzzersifsa5.blog,turkzzersifsa6.blog,
 ! Source: turkifsalife16.blog
 /^turkifsalife\d+\.blog$/##+js(addEventListener-defuser, DOMContentLoaded, app_advert)
 /^turkifsalife\d+\.blog$/##+js(addEventListener-defuser, click, popUnder)
-turkifsalife16.blog,turkifsalife17.blog,turkifsalife18.blog,turkifsalife19.blog,turkifsalife20.blog,turkifsalife21.blog,turkifsalife22.blog,turkifsalife23.blog,turkifsalife24.blog,turkifsalife25.blog,turkifsalife26.blog##+js(addEventListener-defuser, DOMContentLoaded, app_advert)
-turkifsalife16.blog,turkifsalife17.blog,turkifsalife18.blog,turkifsalife19.blog,turkifsalife20.blog,turkifsalife21.blog,turkifsalife22.blog,turkifsalife23.blog,turkifsalife24.blog,turkifsalife25.blog,turkifsalife26.blog##+js(addEventListener-defuser, click, popUnder)
+/^turkifsalife\d+\.blog$/###block-2
+/^turkifsalife\d+\.blog$/##+js(addEventListener-defuser, click, tik_sayac)
+turkifsalife44.blog##+js(addEventListener-defuser, DOMContentLoaded, app_advert)
+turkifsalife44.blog##+js(addEventListener-defuser, click, popUnder)
+turkifsalife44.blog###block-2
+turkifsalife44.blog##+js(addEventListener-defuser, click, tik_sayac)
 !
 ! Frequently changed domains: sotweturkifsa*.blog
 ! Source: sotweturkifsa8.blog
@@ -6293,13 +6309,13 @@ turktube1.ink,turktube2.ink,turktube3.ink,turktube4.ink,turktube5.ink,turktube6.
 /hdturkifsa\d+\.com$/##div[style]:has(> a[href^="https://bit.ly/"])
 /hdturkifsa\d+\.com$/###prerollOverlay:style(display: none !important;)
 /hdturkifsa\d+\.com$/###mainVideo:style(display: block !important;)
-hdturkifsa57.com##a[rel="nofollow noopener noreferrer sponsored"]
-hdturkifsa57.com###tg-cta-container
-hdturkifsa57.com##.banner-grid-wrap
-hdturkifsa57.com##article[data-ad-pos]
-hdturkifsa57.com##div[style]:has(> a[href^="https://bit.ly/"])
-hdturkifsa57.com###prerollOverlay:style(display: none !important;)
-hdturkifsa57.com###mainVideo:style(display: block !important;)
+hdturkifsa58.com##a[rel="nofollow noopener noreferrer sponsored"]
+hdturkifsa58.com###tg-cta-container
+hdturkifsa58.com##.banner-grid-wrap
+hdturkifsa58.com##article[data-ad-pos]
+hdturkifsa58.com##div[style]:has(> a[href^="https://bit.ly/"])
+hdturkifsa58.com###prerollOverlay:style(display: none !important;)
+hdturkifsa58.com###mainVideo:style(display: block !important;)
 !
 ! Frequently changed domains: softtv*.com
 ! Source: softtv2.com
@@ -6424,8 +6440,8 @@ turkkizlar31.com,turkkizlar32.com,turkkizlar33.com,turkkizlar34.com,turkkizlar35
 ||dahahizli*.*/wp-content/uploads/*/Saha-468-in-60.jpg
 /dahahizli\d+\.(com\|live)$/###ads-inside-main
 /dahahizli\d+\.(com\|live)$/###video-player-ads
-dahahizli137.live###ads-inside-main
-dahahizli137.live###video-player-ads
+dahahizli138.live###ads-inside-main
+dahahizli138.live###video-player-ads
 !
 ! Frequently changed domains: hepbetspor*.cfd
 ! aglint-disable no-invalid-modifiers
@@ -6481,8 +6497,8 @@ turkifsaclub.org##.ads-grid
 turkifsaclub.org##main > h3:contains(Sponsor Bannerlar)
 /turkifsaclub\d+\.sbs/##.ads-grid
 /turkifsaclub\d+\.sbs/##main > h3:contains(Sponsor Bannerlar)
-turkifsaclub130.sbs,turkifsaclub176.sbs,turkifsaclub177.sbs,turkifsaclub131.sbs,turkifsaclub132.sbs,turkifsaclub133.sbs,turkifsaclub134.sbs,turkifsaclub135.sbs,turkifsaclub136.sbs,turkifsaclub137.sbs,turkifsaclub138.sbs,turkifsaclub139.sbs,turkifsaclub140.sbs,turkifsaclub141.sbs,turkifsaclub142.sbs,turkifsaclub143.sbs,turkifsaclub144.sbs,turkifsaclub145.sbs,turkifsaclub146.sbs,turkifsaclub147.sbs,turkifsaclub148.sbs,turkifsaclub149.sbs,turkifsaclub150.sbs,turkifsaclub151.sbs,turkifsaclub152.sbs,turkifsaclub153.sbs,turkifsaclub154.sbs,turkifsaclub155.sbs,turkifsaclub156.sbs,turkifsaclub157.sbs,turkifsaclub158.sbs,turkifsaclub159.sbs,turkifsaclub160.sbs,turkifsaclub161.sbs,turkifsaclub162.sbs,turkifsaclub163.sbs,turkifsaclub164.sbs,turkifsaclub165.sbs,turkifsaclub166.sbs,turkifsaclub167.sbs,turkifsaclub168.sbs,turkifsaclub169.sbs,turkifsaclub170.sbs,turkifsaclub171.sbs,turkifsaclub172.sbs,turkifsaclub173.sbs,turkifsaclub174.sbs,turkifsaclub175.sbs,turkifsaclub178.sbs,turkifsaclub179.sbs,turkifsaclub180.sbs,turkifsaclub181.sbs,turkifsaclub182.sbs##.ads-grid
-turkifsaclub130.sbs,turkifsaclub176.sbs,turkifsaclub177.sbs,turkifsaclub131.sbs,turkifsaclub132.sbs,turkifsaclub133.sbs,turkifsaclub134.sbs,turkifsaclub135.sbs,turkifsaclub136.sbs,turkifsaclub137.sbs,turkifsaclub138.sbs,turkifsaclub139.sbs,turkifsaclub140.sbs,turkifsaclub141.sbs,turkifsaclub142.sbs,turkifsaclub143.sbs,turkifsaclub144.sbs,turkifsaclub145.sbs,turkifsaclub146.sbs,turkifsaclub147.sbs,turkifsaclub148.sbs,turkifsaclub149.sbs,turkifsaclub150.sbs,turkifsaclub151.sbs,turkifsaclub152.sbs,turkifsaclub153.sbs,turkifsaclub154.sbs,turkifsaclub155.sbs,turkifsaclub156.sbs,turkifsaclub157.sbs,turkifsaclub158.sbs,turkifsaclub159.sbs,turkifsaclub160.sbs,turkifsaclub161.sbs,turkifsaclub162.sbs,turkifsaclub163.sbs,turkifsaclub164.sbs,turkifsaclub165.sbs,turkifsaclub166.sbs,turkifsaclub167.sbs,turkifsaclub168.sbs,turkifsaclub169.sbs,turkifsaclub170.sbs,turkifsaclub171.sbs,turkifsaclub172.sbs,turkifsaclub173.sbs,turkifsaclub174.sbs,turkifsaclub175.sbs,turkifsaclub178.sbs,turkifsaclub179.sbs,turkifsaclub180.sbs,turkifsaclub181.sbs,turkifsaclub182.sbs##main > h3:contains(Sponsor Bannerlar)
+turkifsaclub130.sbs,turkifsaclub176.sbs,turkifsaclub177.sbs,turkifsaclub131.sbs,turkifsaclub132.sbs,turkifsaclub133.sbs,turkifsaclub134.sbs,turkifsaclub135.sbs,turkifsaclub136.sbs,turkifsaclub137.sbs,turkifsaclub138.sbs,turkifsaclub139.sbs,turkifsaclub140.sbs,turkifsaclub141.sbs,turkifsaclub142.sbs,turkifsaclub143.sbs,turkifsaclub144.sbs,turkifsaclub145.sbs,turkifsaclub146.sbs,turkifsaclub147.sbs,turkifsaclub148.sbs,turkifsaclub149.sbs,turkifsaclub150.sbs,turkifsaclub151.sbs,turkifsaclub152.sbs,turkifsaclub153.sbs,turkifsaclub154.sbs,turkifsaclub155.sbs,turkifsaclub156.sbs,turkifsaclub157.sbs,turkifsaclub158.sbs,turkifsaclub159.sbs,turkifsaclub160.sbs,turkifsaclub161.sbs,turkifsaclub162.sbs,turkifsaclub163.sbs,turkifsaclub164.sbs,turkifsaclub165.sbs,turkifsaclub166.sbs,turkifsaclub167.sbs,turkifsaclub168.sbs,turkifsaclub169.sbs,turkifsaclub170.sbs,turkifsaclub171.sbs,turkifsaclub172.sbs,turkifsaclub173.sbs,turkifsaclub174.sbs,turkifsaclub175.sbs,turkifsaclub178.sbs,turkifsaclub179.sbs,turkifsaclub180.sbs,turkifsaclub181.sbs,turkifsaclub182.sbs,turkifsaclub183.sbs##.ads-grid
+turkifsaclub130.sbs,turkifsaclub176.sbs,turkifsaclub177.sbs,turkifsaclub131.sbs,turkifsaclub132.sbs,turkifsaclub133.sbs,turkifsaclub134.sbs,turkifsaclub135.sbs,turkifsaclub136.sbs,turkifsaclub137.sbs,turkifsaclub138.sbs,turkifsaclub139.sbs,turkifsaclub140.sbs,turkifsaclub141.sbs,turkifsaclub142.sbs,turkifsaclub143.sbs,turkifsaclub144.sbs,turkifsaclub145.sbs,turkifsaclub146.sbs,turkifsaclub147.sbs,turkifsaclub148.sbs,turkifsaclub149.sbs,turkifsaclub150.sbs,turkifsaclub151.sbs,turkifsaclub152.sbs,turkifsaclub153.sbs,turkifsaclub154.sbs,turkifsaclub155.sbs,turkifsaclub156.sbs,turkifsaclub157.sbs,turkifsaclub158.sbs,turkifsaclub159.sbs,turkifsaclub160.sbs,turkifsaclub161.sbs,turkifsaclub162.sbs,turkifsaclub163.sbs,turkifsaclub164.sbs,turkifsaclub165.sbs,turkifsaclub166.sbs,turkifsaclub167.sbs,turkifsaclub168.sbs,turkifsaclub169.sbs,turkifsaclub170.sbs,turkifsaclub171.sbs,turkifsaclub172.sbs,turkifsaclub173.sbs,turkifsaclub174.sbs,turkifsaclub175.sbs,turkifsaclub178.sbs,turkifsaclub179.sbs,turkifsaclub180.sbs,turkifsaclub181.sbs,turkifsaclub182.sbs,turkifsaclub183.sbs##main > h3:contains(Sponsor Bannerlar)
 !
 ! Frequently changed domains: yavasgir*.com
 ! Source: yavasgir136.live
@@ -6497,8 +6513,8 @@ yavasgir136.live##+js(addEventListener-defuser, DOMContentLoaded, openPopup)
 ||cimcime*.*/*.gif
 /cimcime\d+\.\w+$/###ads-inside-main
 /cimcime\d+\.\w+$/##+js(addEventListener-defuser, DOMContentLoaded, openPopup)
-cimcime147.live###ads-inside-main
-cimcime147.live##+js(addEventListener-defuser, DOMContentLoaded, openPopup)
+cimcime148.live###ads-inside-main
+cimcime148.live##+js(addEventListener-defuser, DOMContentLoaded, openPopup)
 !
 ! Frequently changed domains: askimyavas*.com
 ! Source: askimyavas.com
@@ -7148,10 +7164,10 @@ dizipal1555.com,dizipal1556.com,dizipal1557.com,dizipal1558.com,dizipal1559.com,
 dizipal1555.com,dizipal1556.com,dizipal1557.com,dizipal1558.com,dizipal1559.com,dizipal1560.com,dizipal1561.com,dizipal1562.com,dizipal1563.com,dizipal1564.com,dizipal1565.com,dizipal1566.com,dizipal1567.com,dizipal1568.com,dizipal1569.com,dizipal1570.com,dizipal1571.com,dizipal1572.com,dizipal1573.com,dizipal1574.com,dizipal1575.com,dizipal1576.com,dizipal1577.com,dizipal1578.com,dizipal1579.com,dizipal1580.com,dizipal1581.com,dizipal1582.com,dizipal1583.com,dizipal1584.com,dizipal1585.com,dizipal1586.com,dizipal1587.com,dizipal1588.com,dizipal1589.com,dizipal1590.com,dizipal1591.com,dizipal1592.com,dizipal1593.com,dizipal1594.com,dizipal1595.com,dizipal1596.com,dizipal1597.com,dizipal1598.com,dizipal1599.com,dizipal1600.com##div.banner-slot
 dizipal1555.com,dizipal1556.com,dizipal1557.com,dizipal1558.com,dizipal1559.com,dizipal1560.com,dizipal1561.com,dizipal1562.com,dizipal1563.com,dizipal1564.com,dizipal1565.com,dizipal1566.com,dizipal1567.com,dizipal1568.com,dizipal1569.com,dizipal1570.com,dizipal1571.com,dizipal1572.com,dizipal1573.com,dizipal1574.com,dizipal1575.com,dizipal1576.com,dizipal1577.com,dizipal1578.com,dizipal1579.com,dizipal1580.com,dizipal1581.com,dizipal1582.com,dizipal1583.com,dizipal1584.com,dizipal1585.com,dizipal1586.com,dizipal1587.com,dizipal1588.com,dizipal1589.com,dizipal1590.com,dizipal1591.com,dizipal1592.com,dizipal1593.com,dizipal1594.com,dizipal1595.com,dizipal1596.com,dizipal1597.com,dizipal1598.com,dizipal1599.com,dizipal1600.com##a.st-bg
 dizipal1555.com,dizipal1556.com,dizipal1557.com,dizipal1558.com,dizipal1559.com,dizipal1560.com,dizipal1561.com,dizipal1562.com,dizipal1563.com,dizipal1564.com,dizipal1565.com,dizipal1566.com,dizipal1567.com,dizipal1568.com,dizipal1569.com,dizipal1570.com,dizipal1571.com,dizipal1572.com,dizipal1573.com,dizipal1574.com,dizipal1575.com,dizipal1576.com,dizipal1577.com,dizipal1578.com,dizipal1579.com,dizipal1580.com,dizipal1581.com,dizipal1582.com,dizipal1583.com,dizipal1584.com,dizipal1585.com,dizipal1586.com,dizipal1587.com,dizipal1588.com,dizipal1589.com,dizipal1590.com,dizipal1591.com,dizipal1592.com,dizipal1593.com,dizipal1594.com,dizipal1595.com,dizipal1596.com,dizipal1597.com,dizipal1598.com,dizipal1599.com,dizipal1600.com###psContainer
-dizipal2089.com,dizipal2091.com,dizipal2096.com,dizipal2097.com,dizipal2098.com,dizipal2100.com,dizipal2101.com,dizipal2200.com,dizipal2203.com,dizipal2204.com,dizipal2205.com,dizipal2207.com,dizipal2107.com,dizipal2108.com,dizipal2109.com##body a[class^="pageskin-"]
-dizipal2089.com,dizipal2091.com,dizipal2096.com,dizipal2097.com,dizipal2098.com,dizipal2100.com,dizipal2101.com,dizipal2200.com,dizipal2203.com,dizipal2204.com,dizipal2205.com,dizipal2207.com,dizipal2107.com,dizipal2108.com,dizipal2109.com##a[target="_blank"][rel="nofollow"]
-dizipal2089.com,dizipal2091.com,dizipal2096.com,dizipal2097.com,dizipal2098.com,dizipal2100.com,dizipal2101.com,dizipal2200.com,dizipal2203.com,dizipal2204.com,dizipal2205.com,dizipal2207.com,dizipal2107.com,dizipal2108.com,dizipal2109.com##.video-wrapper > a[href][target="_blank"]
-||blogger.googleusercontent.com/img/$domain=dizipal2089.com|dizipal2091.com|dizipal2096.com|dizipal2097.com|dizipal2098.com|dizipal2100.com|dizipal2101.com|dizipal2200.com|dizipal2203.com|dizipal2204.com|dizipal2205.com|dizipal2207.com|dizipal2107.com|dizipal2108.com|dizipal2109.com
+dizipal2089.com,dizipal2091.com,dizipal2097.com,dizipal2098.com,dizipal2100.com,dizipal2101.com,dizipal2200.com,dizipal2203.com,dizipal2204.com,dizipal2205.com,dizipal2207.com,dizipal2107.com,dizipal2108.com,dizipal2109.com##body a[class^="pageskin-"]
+dizipal2089.com,dizipal2091.com,dizipal2097.com,dizipal2098.com,dizipal2100.com,dizipal2101.com,dizipal2200.com,dizipal2203.com,dizipal2204.com,dizipal2205.com,dizipal2207.com,dizipal2107.com,dizipal2108.com,dizipal2109.com##a[target="_blank"][rel="nofollow"]
+dizipal2089.com,dizipal2091.com,dizipal2097.com,dizipal2098.com,dizipal2100.com,dizipal2101.com,dizipal2200.com,dizipal2203.com,dizipal2204.com,dizipal2205.com,dizipal2207.com,dizipal2107.com,dizipal2108.com,dizipal2109.com##.video-wrapper > a[href][target="_blank"]
+||blogger.googleusercontent.com/img/$domain=dizipal2089.com|dizipal2091.com|dizipal2097.com|dizipal2098.com|dizipal2100.com|dizipal2101.com|dizipal2200.com|dizipal2203.com|dizipal2204.com|dizipal2205.com|dizipal2207.com|dizipal2107.com|dizipal2108.com|dizipal2109.com
 !
 ! dizipal*.com (probably another similar)
 ||wtsdde.cfd/player/jw8/vast.js
