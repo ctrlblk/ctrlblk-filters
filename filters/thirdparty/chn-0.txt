@@ -1,10 +1,10 @@
 ![Adblock Plus 2.0]
-! Checksum: 2uo/d4VRx+hs3cpAIoXdag
-! Diff-Path: ../patches/224/224-s-1786412302-3600.patch
+! Checksum: 5DxMGDOQsXL0YC2kGDWxyQ
+! Diff-Path: ../patches/224/224-s-1786509646-3600.patch
 ! Title: AdGuard Chinese filter
 ! Description: EasyList China + AdGuard Chinese filter. Filter list that specifically removes ads on websites in Chinese language.
-! Version: 2.1.63.18
-! TimeUpdated: 2026-08-11T01:35:41+00:00
+! Version: 2.1.63.29
+! TimeUpdated: 2026-08-12T04:38:09+00:00
 ! Expires: 5 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -1137,6 +1137,7 @@ ipv6.baidu.com,www.baidu.com,www1.baidu.com,xueshu.baidu.com###content_left > .r
 !
 ! NOTE: Specific rules
 !
+applealmond.com##.gam-frame
 twword.com##.gadBlock
 xgcartoon.com##+js(abort-on-stack-trace, document.createElement, mount_adsqrt_ad)
 .gif|$image,3p,domain=25img.com
@@ -1195,8 +1196,13 @@ haokan.baidu.com##div[class^="video_land_pageBottomGuesslike__"] ul[class^="Gues
 haokan.baidu.com##div[class^="guessLike_guess-like-index__"] ul[class^="guessLike_guess-list__"] > li[class^="guessLike_guess-item__"]:not([vid]):has(> div[class^="guessLike_guess-item-link__q"]:only-child)
 techorange.com##div.elementor-widget > div.elementor-widget-container:has(> a[href*="utm_campaign"] > img)
 techorange.com##a[href^="https://supr.link/"]
+||sdk.tvbs.com.tw/ad/v*/ad-sdk.min.js
 supertaste.tvbs.com.tw##.min-h-\[15\.625rem\]
-supertaste.tvbs.com.tw##div[class]:has(> div[id^="supertaste_"])
+supertaste.tvbs.com.tw##.min-h-\[250px\]
+supertaste.tvbs.com.tw###article-content > div[class^="py-"]:has(> div[id^="supertaste_"])
+supertaste.tvbs.com.tw##aside > div[id^="supertaste_"]
+supertaste.tvbs.com.tw##aside > section:has(> div[id^="taboola-"])
+supertaste.tvbs.com.tw##footer > section:has(> div[id^="taboola-"])
 ||pic.deueza.cn/*.gif$domain=mqoeomads.cc
 mqoeomads.cc##div.dx-banner-item
 mqoeomads.cc##.dx-recommend-icons
@@ -5439,10 +5445,22 @@ newduba.cn###jq_youxi
 .z.dkt-ib.com
 ||cnzz.trafficmanager.net^
 ||cupfox.app^$3p
+||nvb0nqwjif.com^
+||jxnwbnxslrjvds.com^
+||gfblaghzk2.com^
+||24jp8wjmho.com^
 ||95ktftpt6.com^
 ||dhrbpvqqoovnxm.com^
 ||ped146qez.com^
 ||54igqsjd9.com^
+||rn30y7u7h.com^
+||in5nx9xbd.com^
+||2p3ebtxsp.com^
+||lht8yhbbl.com^
+||u1g98fo6b.com^
+||yg6p1tskn.com^
+||cosiskkm.com^
+||rp9zb27jn1.com^
 ||7996epzfh.com^
 ||itm1yqknq.com^
 ||qnw0cru1i5.com^
@@ -14902,7 +14920,7 @@ meijutt.*/js/pcjs/
 ||ifeng.com/relateshare?
 ||lancdn.com/public/images/view/Tencent-
 ||5dm.*/ggjpg/
-||cdxyspa.com/js/e
+||yuntu68.com/imgcimo/
 ||layuion.com/get/showcase/
 ||xxir.com/static/images/ad.
 ||7wzx9.com/tbad.
@@ -22669,7 +22687,7 @@ wss://*.*.top/$3p
 .com/config/v7.js
 .org/config/v7.js
 ||mihoutao1868.github.io^
-||wanmeisxs.cc/js/m.
+||sj2xvswu3r.com^
 ||biqugie.com/js/wap.
 ||qingxinwx.*/static/xbiquge/js/wap.
 /static/fushuba/js/wap.js

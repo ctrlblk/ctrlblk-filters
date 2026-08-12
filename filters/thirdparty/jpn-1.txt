@@ -1,10 +1,10 @@
 ![Adblock Plus 2.0]
-! Checksum: kxiI1H9F8SOpITVVHcKukA
-! Diff-Path: ../patches/7/7-s-1786396947-3600.patch
+! Checksum: PrUN4DY2S7E70e93squ3/A
+! Diff-Path: ../patches/7/7-s-1786498786-3600.patch
 ! Title: AdGuard Japanese filter
 ! Description: Filter that enables ad blocking on websites in Japanese language.
-! Version: 2.0.75.51
-! TimeUpdated: 2026-08-10T21:19:02+00:00
+! Version: 2.0.75.54
+! TimeUpdated: 2026-08-12T01:36:22+00:00
 ! Expires: 5 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -561,7 +561,7 @@ chobirich.com##.Enquete:style(display: block !important;)
 ! https://github.com/AdguardTeam/AdguardFilters/issues/176057
 toyokeizai.net###tpModal
 ! hhttps://github.com/AdguardTeam/AdguardFilters/issues/209363
-shukatsubbs.com,localch.net,best-hit.tv,h178.com,j-baseball.club,j-basketball.club,j-rugby.club,j-volleyball.club,jukenbbs.com##.ad.ads.adsbygoogle.ad1.ad-space.adbox.imggif.ad-banner.amp_ad.file-display-area:style(display: block !important;)
+shukatsubbs.com,localch.net,best-hit.tv,h178.com,j-baseball.club,j-basketball.club,j-rugby.club,j-volleyball.club,jukenbbs.com##.ad.ads.adsbygoogle.ad-space.adbox.imggif.ad-banner.amp_ad.file-display-area:style(display: block !important;)
 ! https://github.com/AdguardTeam/AdguardFilters/issues/195303
 shukatsubbs.com,localch.net,best-hit.tv,h178.com,j-baseball.club,j-basketball.club,j-rugby.club,j-volleyball.club,jukenbbs.com#@#.ad-space:not(.textads)
 shukatsubbs.com,localch.net,best-hit.tv,h178.com,j-baseball.club,j-basketball.club,j-rugby.club,j-volleyball.club,jukenbbs.com#@#[class^="div-gpt-ad"]:not([style^="width: 1px; height: 1px;"], .div-gpt-ad_adblock_test)
@@ -581,7 +581,7 @@ best-hit.tv,h178.com,jukenbbs.com,j-baseball.club,j-basketball.club##body div[cl
 @@||j-rugby.club^$generichide
 @@||j-volleyball.club^$generichide
 @@||jukenbbs.com^$generichide
-shukatsubbs.com,localch.net,best-hit.tv,h178.com,j-baseball.club,j-basketball.club,j-rugby.club,j-volleyball.club,jukenbbs.com##+js(addEventListener-defuser, load, delayCheckA)
+shukatsubbs.com,localch.net,best-hit.tv,h178.com,j-baseball.club,j-basketball.club,j-rugby.club,j-volleyball.club,jukenbbs.com##+js(addEventListener-defuser, load, delayC)
 ! https://github.com/AdguardTeam/AdguardFilters/issues/193339
 lv73.net##div[id^="ad-blocker-"]
 ! https://github.com/AdguardTeam/AdguardFilters/issues/193283
@@ -1920,6 +1920,12 @@ gundamlog.com###more > iframe[src^="https://richlink.blogsys.jp"]
 !
 ! NOTE: Specific rules
 !
+||dempa-digital.com/wp-content/themes/*/template-parts/adsense/
+||jutaku-s.com/assets/header-banners/
+jutaku-s.com##div[class*="BannerSlot-module__"]
+||cdn.jutaku-s.com/banner-square-
+||cdn.jutaku-s.com/banner-oblong-
+wear.jp##div.flex:has(> button:only-child > svg > path[d^="M4.40143"])
 vid-snap-player.com###plScreen
 ||site.weathernews.jp/site/js/util/wniads/
 weathernews.jp###sticky_movie_pc
