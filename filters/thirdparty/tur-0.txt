@@ -1,10 +1,10 @@
 ![Adblock Plus 2.0]
-! Checksum: kmR2oVpjCBHg7smjzzj8HQ
-! Diff-Path: ../patches/13/13-s-1786676481-3600.patch
+! Checksum: bt/+iqLqKeH9dU7vki0wlg
+! Diff-Path: ../patches/13/13-s-1786721012-3600.patch
 ! Title: AdGuard Turkish filter
 ! Description: Filter list that specifically removes ads on websites in Turkish language.
-! Version: 2.0.66.98
-! TimeUpdated: 2026-08-14T02:57:49+00:00
+! Version: 2.0.67.5
+! TimeUpdated: 2026-08-14T15:20:18+00:00
 ! Expires: 5 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -747,6 +747,7 @@ r10.net##+js(abort-on-property-write, rInt)
 ##.fuck-ivr
 ##.fuck-ivr ~ p[style^="background-color:"]
 !
+##div[style="margin: 10px; text-align: center;"] img.ads-img
 ##div[data-free-banner]
 ###preRollBd
 ###footerFixedDivWrapper
@@ -1535,7 +1536,7 @@ gelirkapisi.com##div[id^="ad_"]
 indirin.co,maksatbilgi.com,bedavainternet.com.tr,turkedebiyati.org,frpnet.net,teknobh.com,begonya.com,egehaber.com,voleybolmagazin.com,kadinvekadin.net,savunmasanayist.com,aof.tc,m5dergi.com,sosyola.com,havadiskibris.com,unirehberi.com##.stream-item
 ! ##body .code-block
 techolay.net,havadiskibris.com,oyunindir.club,armoniscans.com,teknobh.com,yoldaolmak.com,aof.tc,sorumatik.co,andronova.net,koinfinans.com,hwp.com.tr,konupara.com,lafmacun.net,oyundunyasi.net,bilgenc.com,teknodiot.com,ruyashoujo.com,pchocasi.com.tr,dusuncekatalogu.com##body .code-block
-sierato.com,dizigom.love,cehennemizle.cc,cdnvexo.site,bingozade.com,ifsaciturksex99.site,99turkifsaizle.site,trkifsalariz.site,escobarvip.blog,dizipal.website,videojs.online,epikplayer.xyz,animeler.me,player.filmizle.in,tranimaci.com,izlekolik.org,4kfilmizlesene.*##+js(no-window-open-if)
+vegoltv981.com,sierato.com,dizigom.love,cehennemizle.cc,cdnvexo.site,bingozade.com,ifsaciturksex99.site,99turkifsaizle.site,trkifsalariz.site,escobarvip.blog,dizipal.website,videojs.online,epikplayer.xyz,animeler.me,player.filmizle.in,tranimaci.com,izlekolik.org,4kfilmizlesene.*##+js(no-window-open-if)
 !
 !
 ! For URL shorteners or simple sites with frequently changed ad servers.
@@ -1556,6 +1557,7 @@ dirilispostasi.com,turkuazgazetesi.net,yenialanya.com,bugunkocaeli.com.tr,cagdas
 !
 ! NOTE: Specific rules
 !
+||tuncaysports*.xyz/*.gif
 fanatik.com.tr##.adRenderer
 aspor.com.tr##.layout-slot-square
 aspor.com.tr##.aside-slot
@@ -2342,7 +2344,7 @@ siyahfilmizle.*###wrapper:style(margin-top: 0px !important;)
 herpet.net##.player-side-ad
 herpet.net##.footer-ad-container
 herpet.net##div[class^="rnd-"] > a[target="_blank"] > img
-||blogger.googleusercontent.com/img/$domain=herpet.net|buenosairesideal.com|inattvgiris.pro|selcuksports.*|selcuk-sports.com|taraftarium.*|selcuksportss.*|hudsonlegalblog.com|taraftariumlive.com|inatspor.xyz|utanmazkizlar.com|pasizle858.com
+||blogger.googleusercontent.com/img/$domain=herpet.net|buenosairesideal.com|inattvgiris.pro|selcuksports.*|selcuk-sports.com|taraftarium.*|selcuksportss.*|hudsonlegalblog.com|taraftariumlive.com|inatspor.xyz|utanmazkizlar.com
 hlktrpl.cfd###player > .jw-wrapper > .jw-logo
 hlktrpl.cfd###player > .jw-wrapper > .jw-title
 yatirimnedir.com##.container > div.mb-4:has(> div.col > a[href^="https://www.getmidas.com/"])
@@ -5115,8 +5117,6 @@ haberturk.com##a[href^="https://adsp.haberturk.com"]
 sahibinden.com##.header-banners
 ||webfilecloud.net/*/affbn/*.html
 yenisafak.com##.ads.dev-detail-ad-template
-||pasizle*.com/assets/uploads/banners/
-||pasizle*.com/assets/uploads/settings/player_bg_*.jpg
 forum.turkmmo.com,kadinlarkulubu.com,gezenbilir.com,isgfrm.com,forum.miuiturkiye.net,techolay.net##.samCodeUnit
 ||*mac24.tv/*.gif
 ||macizlee*.com/images/pia2/*.gif
@@ -5993,6 +5993,59 @@ lovefilmizle.net,elzemfilm.org,dizicaps.*,erotikfilmtube.com,sexfilmleriizle.com
 ! Don't mix frequently changed domains with other rules, to make it easier to maintain,
 ! except some sites that use non-template domain names of mirror sites
 !
+! Frequently changed domains: lionlinehd*.com
+! Source: lionlinehd165.com
+/lionlinehd\d+\.com$/##header > ul
+/lionlinehd\d+\.com$/##.odds-container
+/lionlinehd\d+\.com$/##.header-top > div.header-text
+/lionlinehd\d+\.com$/##.footer-links
+lionlinehd165.com##header > ul
+lionlinehd165.com##.odds-container
+lionlinehd165.com##.header-top > div.header-text
+lionlinehd165.com##.footer-links
+!
+! Frequently changed domains: kacakspor*.com
+! Source: kacakspor4.com
+||kacakspor*.com/assets/media/media_*.gif
+||kacakspor*.com/api/v*/*-ad$xhr
+/kacakspor\d+\.com$/##.pageskin-link
+/kacakspor\d+\.com$/###player-logo
+/kacakspor\d+\.com$/##.nav-menu > li:has(> a[href="https://bit.ly/BhsKa%C3%A7akspor"])
+/kacakspor\d+\.com$/###splash-banner
+www.kacakspor4.com##.pageskin-link
+www.kacakspor4.com###player-logo
+www.kacakspor4.com##.nav-menu > li:has(> a[href="https://bit.ly/BhsKa%C3%A7akspor"])
+www.kacakspor4.com###splash-banner
+!
+! Frequently changed domains: bahisligatv*.com
+! Source: bahisligatv2.com
+||bahisligatv*.com/view/theme/ultimate/img/*.gif
+||bahisligatv*.com/view/theme/ultimate/assets/js/rc.js
+/bahisligatv\d+\.com$/##div[class^="reklam-"]
+/bahisligatv\d+\.com$/##body > header
+/bahisligatv\d+\.com$/##.odds-container
+/bahisligatv\d+\.com$/##.footer-links
+/bahisligatv\d+\.com$/##.header-top > div.header-text
+bahisligatv2.com##div[class^="reklam-"]
+bahisligatv2.com##body > header
+bahisligatv2.com##.odds-container
+bahisligatv2.com##.footer-links
+bahisligatv2.com##.header-top > div.header-text
+!
+! Frequently changed domains: pasizle*.com
+! Source: pasizle859.com
+! aglint-disable no-invalid-modifiers
+!+ NOT_VALIDATE
+||blogger.googleusercontent.com/img/$domain=/pasizle\d+\.com$/
+! aglint-enable no-invalid-modifiers
+/pasizle\d+\.com$/##.background-link
+/pasizle\d+\.com$/##.banner-container
+/pasizle\d+\.com$/##.header-nav > a[href="/"] ~ a[href][target="_blank"]
+||blogger.googleusercontent.com/img/$domain=pasizle859.com
+pasizle859.com##.background-link
+pasizle859.com##.banner-container
+pasizle859.com##.header-nav > a[href="/"] ~ a[href][target="_blank"]
+!
 ! Frequently changed domains: milanotv*.shop
 ! Source: milanotv61.shop
 ||milanotv*.shop/Uploads/*_bckg.jpg
@@ -6039,6 +6092,7 @@ papaztv8.live##.footer-links
 !+ NOT_VALIDATE
 ||blogger.googleusercontent.com/img/$domain=/kralsportshd\d+\.xyz$/
 ! aglint-enable no-invalid-modifiers
+||kralsportshd*.xyz/arkaplan.webp
 /kralsportshd\d+\.xyz$/###splash-banner
 ||blogger.googleusercontent.com/img/$domain=kralsportshd3.xyz
 kralsportshd3.xyz###splash-banner
