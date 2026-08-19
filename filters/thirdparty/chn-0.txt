@@ -1,10 +1,10 @@
 ![Adblock Plus 2.0]
-! Checksum: fanx7DJvCipjD1gLd1t7yA
-! Diff-Path: ../patches/224/224-s-1786844173-3600.patch
+! Checksum: 15JQKTEQfxikjAW2fSUTww
+! Diff-Path: ../patches/224/224-s-1787098827-3600.patch
 ! Title: AdGuard Chinese filter
 ! Description: EasyList China + AdGuard Chinese filter. Filter list that specifically removes ads on websites in Chinese language.
-! Version: 2.1.63.53
-! TimeUpdated: 2026-08-16T01:33:37+00:00
+! Version: 2.1.63.74
+! TimeUpdated: 2026-08-19T00:17:48+00:00
 ! Expires: 5 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -1138,6 +1138,10 @@ ipv6.baidu.com,www.baidu.com,www1.baidu.com,xueshu.baidu.com###content_left > .r
 !
 ! NOTE: Specific rules
 !
+techbang.com##.content-top
+techbang.com##.ads-reserve
+||manhuaren.com/wx20190904.js
+digvps.com##aside[data-slot="right"][aria-label] > div > a[target="_blank"]
 applealmond.com##.gam-frame
 xgcartoon.com##+js(abort-on-stack-trace, document.createElement, mount_adsqrt_ad)
 .gif|$image,3p,domain=25img.com
@@ -5445,12 +5449,56 @@ newduba.cn###jq_youxi
 .z.dkt-ib.com
 ||cnzz.trafficmanager.net^
 ||cupfox.app^$3p
+||rkdyj4usf.com^
+||b11yn56zn.com^
+||stepladder46.top^
+||epalepnn55.com^
+||5wkni37mso.com^
+||ehh91kb6ic.com^
+||npzjrlkmmjjtxe.com^
+||riveter35.top^
+||bhx4vpuit9.com^
+||bnobmgl.icu^
+||pudppkqcs.icu^
+||i16vlgqdhh.com^
+||jnes2uutqu.com^
+||tva4k92u14.com^
+||m8ysv4ckls.com^
+||dp2c7quvk7.com^
+||qdqf7syrx0.com^
+||massivesalad.com^
+||xtjgtbzugy.com^
+||tcyudzjp.com^
+||syb8jon4zb.com^
+||t4s8t6p39.com^
+||hztrfbokggvlle.com^
+||qvijpi426.com^
+||crusher28.com^
+||qlscg0qnz.com^
+||dzihsqn.icu^
+||rvbavxtjy.icu^
+||gr8psejq9.com^
+||w9p70nort.com^
+||7qkm33t55.com^
+||rmt827wgr.com^
+||fezjga8y1.com^
+||xz6ogoi12.com^
+||6mdgv1kmj.com^
+||2pbskwnni.com^
 ||qab0m5irus.com^
 ||alnhfq9ov4.com^
 ||grinder15.top^
 ||jwxwvjsoadjlze.com^
 ||ehsf5afviv.com^
 ||pq8hypyajn.com^
+||hlq07cj71c.com^
+||xhayx4v25b.com^
+||fha7l0dvob.com^
+||jg8zueqa4e.com^
+||uflvaqq.com^
+||h4soqcsrp5.com^
+||h8pc8w5twc.com^
+||cjmrkbbc1i.com^
 ||5edrgrnqg.com^
 ||a78lx5fbd.com^
 ||diestock20.com^
@@ -15006,6 +15054,7 @@ meijutt.*/js/pcjs/
 ||teacher.php.cn/php/
 ||right.com.cn/forum/data/attachment/common/template/boardimg_20260602yahb3wsd.
 169bbs.com##.a_f
+techbang.com##.ads-reserve
 json.cn##.show-hide-adv
 heimamo.top###right-panel
 huaren.live##.pause-love
