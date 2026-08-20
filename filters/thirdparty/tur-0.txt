@@ -1,10 +1,10 @@
 ![Adblock Plus 2.0]
-! Checksum: Ae19LVhw6HuLW8/DiNM8MA
-! Diff-Path: ../patches/13/13-s-1787106819-3600.patch
+! Checksum: Xk5WnkMtPHh6B+/O61YzRg
+! Diff-Path: ../patches/13/13-s-1787199632-3600.patch
 ! Title: AdGuard Turkish filter
 ! Description: Filter list that specifically removes ads on websites in Turkish language.
-! Version: 2.0.67.19
-! TimeUpdated: 2026-08-19T02:29:53+00:00
+! Version: 2.0.67.25
+! TimeUpdated: 2026-08-20T04:17:16+00:00
 ! Expires: 5 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -1301,7 +1301,7 @@ mygaziantep.com##body.modal-open:style(overflow: visible!important; padding-righ
 tercihrobotu.com.tr##.Banner:style(border: none !important;)
 tercihrobotu.com.tr##a[href$="#ReklamRezervasyon"]:style(visibility:hidden !important;)
 ! https://github.com/AdguardTeam/AdguardFilters/issues/127676
-r10.net##body > main:style(padding-left: unset !important;)
+r10.net##body > main:style(padding-left: unset !important; padding-right: unset !important;)
 ! https://github.com/AdguardTeam/AdguardFilters/issues/54602
 esgundem26.com##body:style(overflow: visible !important; padding-right: 0 !important;)
 esgundem26.com###modal-ads:style(display: none !important;)
@@ -1557,6 +1557,9 @@ dirilispostasi.com,turkuazgazetesi.net,yenialanya.com,bugunkocaeli.com.tr,cagdas
 !
 ! NOTE: Specific rules
 !
+bloomberght.com##div[data-adv]
+habervitrini.com##div.mx-auto > a[rel*="sponsored"] img
+haber365.com##.site-ad-slot
 aktuel-urunler.com##.reklamyazi
 aktuel-urunler.com##.noktalireklamlar
 mynet.com##.sidebar > a[href^="https://www.youtube.com/@finansZone?"]
@@ -2208,8 +2211,6 @@ eurovizyon.co.uk##.article-text > p > a[rel="nofollow"]
 gazetevatan.com##.footerAdContainer
 ensonhaber.com##.hesapcomads
 ensonhaber.com##.article-res > .related:has(> div[id^="taboola-"])
-softonic.com.tr##div[data-meta="placeholder-slot"]
-||softonic.com.tr/publishers/softonic.js^
 bugunkibris.com##+js(remove-node-text, #text, reklam_linki)
 bugunkibris.com##p[class^="Adv-"]
 bugunkibris.com##p > a[href="https://dausen.org/"]
@@ -2665,7 +2666,6 @@ ahaber.com.tr,ntv.com.tr,tlctv.com.tr,dmax.com.tr,haberturk.com,bloomberght.com,
 ||cumhuriyet.com.tr/arc.dev.js
 ||cdn.yenicaggazetesi.com.tr/assets/hby.js
 haberler.com##.colPageRight > .hbBoxScope > .sidebox:has(> .sidebox-content > div[id^="div-gpt-ad-"])
-softonic.com.tr##.black-friday-ads
 sinefy3.com##.bg-cover-faker > div:not([class]):not([id]) > center
 ||storage.oyungezer.com.tr/ogz-public/ads/
 animeizlesene.com,webdramaturkey2.com,webdramaturkey.*##.ads-embed
@@ -2976,7 +2976,7 @@ tafdi3.com,tafdi4.com##div[class^="vid"][class*="-ads"]
 nedir.org##.empower
 nedir.org##.mobil[style^="min-width:300px;min-height:"]
 ||birgun.net/api/OfficialAds/
-bolgegundem.com.tr,dizipal.im,gazetepencere.com,ilkhaber-gazetesi.com,tigrishaber.com,iftarsaati.org,trendyol.com,ekoltv.com.tr,airporthaber2.com,tvnota.com,bayburtmanset.com,kartalgazetesi.com,sehirmedya.com,bursahayat.com.tr,yozgatcamlik.com##.banner
+superhaber.com,bolgegundem.com.tr,dizipal.im,gazetepencere.com,ilkhaber-gazetesi.com,tigrishaber.com,iftarsaati.org,trendyol.com,ekoltv.com.tr,airporthaber2.com,tvnota.com,bayburtmanset.com,kartalgazetesi.com,sehirmedya.com,bursahayat.com.tr,yozgatcamlik.com##.banner
 turkiyegazetesi.com.tr###dfp-detail-kare-container
 turkiyegazetesi.com.tr##div[class^="dfp-"]
 adonisfansub.com##div[id^="teaser"]
@@ -6319,10 +6319,10 @@ turk-ifsa11.com,turk-ifsa12.com,turk-ifsa13.com,turk-ifsa14.com,turk-ifsa15.com,
 /turkifsa\d*\.com/##video + div.absolute
 /turkifsa\d*\.com/##.ad-banner-frame
 /turkifsa\d*\.com/##div[class][style^="min-height:"][style*="calc("]
-turkifsa73.com,turkifsa74.com,turkifsa75.com,turkifsa76.com,turkifsa77.com,turkifsa78.com##div[class]:has(> a:is([href^="https://cutt.ly/"],[href="https://denemebonusumi.com/"]))
-turkifsa73.com,turkifsa74.com,turkifsa75.com,turkifsa76.com,turkifsa77.com,turkifsa78.com##video + div.absolute
-turkifsa73.com,turkifsa74.com,turkifsa75.com,turkifsa76.com,turkifsa77.com,turkifsa78.com##.ad-banner-frame
-turkifsa73.com,turkifsa74.com,turkifsa75.com,turkifsa76.com,turkifsa77.com,turkifsa78.com##div[class][style^="min-height:"][style*="calc("]
+turkifsa73.com,turkifsa74.com,turkifsa75.com,turkifsa76.com,turkifsa77.com,turkifsa78.com,turkifsa79.com##div[class]:has(> a:is([href^="https://cutt.ly/"],[href="https://denemebonusumi.com/"]))
+turkifsa73.com,turkifsa74.com,turkifsa75.com,turkifsa76.com,turkifsa77.com,turkifsa78.com,turkifsa79.com##video + div.absolute
+turkifsa73.com,turkifsa74.com,turkifsa75.com,turkifsa76.com,turkifsa77.com,turkifsa78.com,turkifsa79.com##.ad-banner-frame
+turkifsa73.com,turkifsa74.com,turkifsa75.com,turkifsa76.com,turkifsa77.com,turkifsa78.com,turkifsa79.com##div[class][style^="min-height:"][style*="calc("]
 !
 ! Frequently changed domains: turkifsa*.art
 ! Source: turkifsa25.art
@@ -6888,8 +6888,8 @@ www.sporcafe-0c2608ad69.xyz##header a[href]:not(.logo-link, [aria-label])
 /sporcafe\d+\.top/##.dbad
 !+ NOT_VALIDATE
 /sporcafe\d+\.top/##+js(set-constant, puShown, true)
-sporcafe74.top##+js(set-constant, puShown, true)
-sporcafe74.top##.dbad
+sporcafe79.top##+js(set-constant, puShown, true)
+sporcafe79.top##.dbad
 !
 ! Frequently changed domains: selcuksporthd*.com
 ||selcuksporthd*.com/dosya/*.gif
