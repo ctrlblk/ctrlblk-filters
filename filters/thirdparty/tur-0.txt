@@ -1,10 +1,10 @@
 ![Adblock Plus 2.0]
-! Checksum: Xk5WnkMtPHh6B+/O61YzRg
-! Diff-Path: ../patches/13/13-s-1787199632-3600.patch
+! Checksum: 4nr4NUCQxNOHOtAX56oREA
+! Diff-Path: ../patches/13/13-s-1787235597-3600.patch
 ! Title: AdGuard Turkish filter
 ! Description: Filter list that specifically removes ads on websites in Turkish language.
-! Version: 2.0.67.25
-! TimeUpdated: 2026-08-20T04:17:16+00:00
+! Version: 2.0.67.28
+! TimeUpdated: 2026-08-20T14:16:34+00:00
 ! Expires: 5 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -1557,9 +1557,15 @@ dirilispostasi.com,turkuazgazetesi.net,yenialanya.com,bugunkocaeli.com.tr,cagdas
 !
 ! NOTE: Specific rules
 !
+okatalog.com##div.w-full:has(> div.empower-ad)
+okatalog.com##body > header.mt-\[100px\]:style(margin-top: 0 !important;)
+sanayigazetesi.com.tr##.entry-header-ad-wrapper
+sanayigazetesi.com.tr##.cs-sidebar__inner
+sanayigazetesi.com.tr##.cs-banner
 bloomberght.com##div[data-adv]
 habervitrini.com##div.mx-auto > a[rel*="sponsored"] img
 haber365.com##.site-ad-slot
+aktuel-urunler.com##.reklammanset
 aktuel-urunler.com##.reklamyazi
 aktuel-urunler.com##.noktalireklamlar
 mynet.com##.sidebar > a[href^="https://www.youtube.com/@finansZone?"]
@@ -6888,8 +6894,8 @@ www.sporcafe-0c2608ad69.xyz##header a[href]:not(.logo-link, [aria-label])
 /sporcafe\d+\.top/##.dbad
 !+ NOT_VALIDATE
 /sporcafe\d+\.top/##+js(set-constant, puShown, true)
-sporcafe79.top##+js(set-constant, puShown, true)
-sporcafe79.top##.dbad
+sporcafe74.top##+js(set-constant, puShown, true)
+sporcafe74.top##.dbad
 !
 ! Frequently changed domains: selcuksporthd*.com
 ||selcuksporthd*.com/dosya/*.gif
@@ -6923,9 +6929,9 @@ hdselcuksports368.top##+js(no-window-open-if)
 ||video.twimg.com/amplify_video/*/vid/*.mp4$domain=/^belestepe\d+\.sbs/
 /belestepe\d+\.sbs/##div[data-isbd-main-container] > section > div.hidden-xs.text-center
 /belestepe\d+\.sbs/##+js(set-constant, config.advertisement.enabled, false)
-belestepe625.sbs##div[data-isbd-main-container] > section > div.hidden-xs.text-center
-belestepe625.sbs##+js(set-constant, config.advertisement.enabled, false)
-||video.twimg.com/amplify_video/*/vid/*.mp4$domain=belestepe625.sbs
+belestepe645.sbs##div[data-isbd-main-container] > section > div.hidden-xs.text-center
+belestepe645.sbs##+js(set-constant, config.advertisement.enabled, false)
+||video.twimg.com/amplify_video/*/vid/*.mp4$domain=belestepe645.sbs
 !
 ! Frequently changed domains: izlemac*.sbs
 ! Random numbers
@@ -6938,9 +6944,9 @@ belestepe625.sbs##+js(set-constant, config.advertisement.enabled, false)
 /mactanmaca\d+\.sbs/##+js(set-constant, config.advertisement.enabled, false)
 /mactanmaca\d+\.sbs/##div[data-isbd-main-container] > section > div.hidden-xs.text-center
 /mactanmaca\d+\.sbs/##+js(set-cookie, reklamgosterimx, ok)
-mactanmaca655.sbs##+js(set-constant, config.advertisement.enabled, false)
-mactanmaca655.sbs##div[data-isbd-main-container] > section > div.hidden-xs.text-center
-mactanmaca655.sbs##+js(set-cookie, reklamgosterimx, ok)
+mactanmaca645.sbs##+js(set-constant, config.advertisement.enabled, false)
+mactanmaca645.sbs##div[data-isbd-main-container] > section > div.hidden-xs.text-center
+mactanmaca645.sbs##+js(set-cookie, reklamgosterimx, ok)
 !
 ! Frequently changed domains: sultansportv*.com
 ! Randomized of too fast changing
@@ -7017,8 +7023,8 @@ selcuksports2.com,selcuksports3.com,selcuksports4.com,selcuksports5.com,selcuksp
 taraftarium3-24.online##a[href="https://wa.me/447347044673"]
 taraftarium3-24.online,taraftariumhd61.live,taraftarium2spor.top,selcuksports.cv,taraftariumcanli2.site,justintvizle1.my,taraftarium24live.plus,taraftariumtr.cv,netspor54.buzz##.pageskin-container
 taraftarium3-24.online,taraftariumhd61.live,taraftarium2spor.top,selcuksports.cv,taraftariumcanli2.site,justintvizle1.my,taraftarium24live.plus,taraftariumtr.cv,netspor54.buzz##.player-ad-banner
-taraftarium24bjk11.com###ad-pageskin
-taraftarium24bjk11.com##.listAd
+taraftarium24bjk12.com###ad-pageskin
+taraftarium24bjk12.com##.listAd
 ||taraftarium24pro*.site/*.gif
 /taraftarium24pro\d+\.site$/##.below-player-banner
 /taraftarium24pro\d+\.site$/##.t24-sq-overlay

@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: EasyList – Newsletter Notices
-! Last modified: Wed, 19 Aug 2026 13:30:23 +0000
+! Last modified: Thu, 20 Aug 2026 16:04:02 +0000
 ! Expires: 7 days (update frequency)
 ! *** easylist:template_header.txt ***
 !
@@ -2696,6 +2696,7 @@ nbr.co.nz##.free-news-alerts
 tomtop.com##.freePointWrap
 nutriciously.com##.freebie-opt-in-form
 farmersweekly.co.nz##.frm_form_fields
+stocktwits.com##.from-newsletter-widget-start
 amnesty.org.uk##.front-newsletter
 wearemitu.com##.frontpage-quiz
 amazonadviser.com,apptrigger.com,arrowheadaddict.com,bamsmackpow.com,fansided.com,gamesided.com,gojoebruin.com,hiddenremote.com,lastnighton.com,lawlessrepublic.com,mlsmultiplex.com,netflixlife.com,playingfor90.com,stormininnorman.com,winteriscoming.net##.fs-daily
@@ -5935,6 +5936,9 @@ sslazio.it##div[class^="Newsletter_"]
 ||quechoisir.org/push/
 ||rtl.be^*/box-newsletters.js
 ||sibforms.com/serve/$domain=leptidigital.fr
+||vlan.qualifioapp.com^
+! Hebrew
+||calcalist.co.il/mvc/long/2019/CtechNewsletter/Signup/
 ! Hungarian
 ||link.sportal.blikk.hu/join/
 ! Italian
@@ -6195,7 +6199,9 @@ hrpro.gr##.newsletter-wrapper
 ! Hebrew
 10dakot.co.il##.aside_subscribe
 jfc.org.il##.ays-pb-modals
+bizportal.co.il##.biz_newsletter_join_wrap
 mekomit.co.il##.newsletter-popup
+bizportal.co.il##.newsletter-register
 mekomit.co.il##.newsletter-subscribe
 mekomit.co.il##.newsletter_head
 mekomit.co.il##.page_lb_mask
@@ -6470,7 +6476,7 @@ doctorofcredit.com#@#.wpdiscuz-subscribe-bar
 ! fanboy_newsletter_shopping_allowlist_general_hide.txt
 
 ! Title: uBlock filters – Other Annoyances
-! Last modified: Wed, 19 Aug 2026 20:13:58 +0000
+! Last modified: Fri, 21 Aug 2026 04:16:43 +0000
 ! Expires: 7 days
 ! Description: Filters optimized for uBlock Origin, to be used with EasyList's and/or Adguard's "Other Annoyances" list(s)
 ! License: https://github.com/uBlockOrigin/uAssets/blob/master/LICENSE
@@ -6724,6 +6730,9 @@ camere-live.ro##+js(rmnt, script, "'contextmenu'")
 
 ! https://github.com/uBlockOrigin/uAssets/pull/34161/
 dlstreams.st,dollardescent.net,hamis.romponalis.st##+js(rmnt, script, "'contextmenu'")
+
+! https://github.com/uBlockOrigin/uAssets/issues/34181
+trucoon.com.br##*:style(-webkit-touch-callout: auto !important; -moz-touch-callout: auto !important; -ms-touch-callout: auto !important; -o-touch-callout: auto !important; touch-callout: auto !important; -webkit-user-select: auto !important; -moz-user-select: auto !important; -ms-user-select: auto !important; -o-user-select: auto !important; user-select: auto !important; -ms-touch-action: auto)
 
 ! END: Anti copy, right-click etc.
 
