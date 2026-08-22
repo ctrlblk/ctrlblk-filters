@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: EasyList – Newsletter Notices
-! Last modified: Thu, 20 Aug 2026 16:04:02 +0000
+! Last modified: Fri, 21 Aug 2026 13:31:41 +0000
 ! Expires: 7 days (update frequency)
 ! *** easylist:template_header.txt ***
 !
@@ -1563,6 +1563,7 @@ chemistryworld.com###eme-global-head
 bizpacreview.com###enhancedtextwidget-2
 epi.org###epi-email-signup-backdrop
 lokmat.com###evNotifier
+motherjones.com###exit-intent-overlay
 insights.globalspec.com###exit-intent-registration-modal
 altonbrown.com,itmunch.com###exitpopup-modal
 csmonitor.com###expanded-message
@@ -1856,6 +1857,7 @@ usrtk.org###subscribe-modal
 thefabricator.com###subscribe-pop-wrapper
 crisisgroup.org,every.to###subscribe-popup
 californiawaterblog.com###subscribe-submit
+githubstatus.com###subscribe-to-newsletter
 intomore.com###subscribe-wide-side
 fivebooks.com###subscribeButton
 gamcore.com###subscribeForm
@@ -2301,6 +2303,7 @@ the-express.com##.breakout
 fabriziovanmarciano.com,liber-net.org##.brx-popup
 bigthink.com##.bt-block__inner
 patch.com##.btn--follow
+githubstatus.com##.btn[href="https://resources.github.com/newsletter/"]
 venturebanc.com##.btn_footer_get_listed
 whowhatwhy.org##.button-floating
 legalfutures.co.uk##.button-wrap-large
@@ -2597,6 +2600,7 @@ goldderby.com##.expert-newslater
 freethink.com##.f-block--form-text
 factinate.com##.f-ssw
 factinate.com##.f-ssw-subscribe-hook
+githubstatus.com##.f5.color-fg-muted.mb-3
 metro.co.uk##.factbox
 edition.cnn.com##.factbox_inline-small
 jerseyvindicator.org,zmescience.com##.fb-inst
@@ -4019,6 +4023,7 @@ psyche.co##[data-ga-view-prompt="psyche_cta_pop_up_subscribe"]
 nytimes.com##[data-gtm-element="newsletter_loaf_form"]
 wsj.com##[data-inset_type="newsletterinset"]
 insideottawavalley.com##[data-lpos="headlines-newsletter"]
+theringer.com##[data-module="newsletter"]
 surrealdb.com##[data-newsletter-root="newsletter"]
 thisismoney.co.uk##[data-newsletter]
 goodrx.com##[data-qa="NewsletterSignUpAlert"]
@@ -4124,6 +4129,7 @@ medium.com##.am.j:has(> .e.bv)
 spin.com##.border-backgrounds.flex.flex-wrap.border-t:has(form-container)
 ign.com##.box-wrapper:has(> .promo-card)
 realpython.com##.card:has([action="/optins/process/"])
+404media.co##.col-xs-12.col-md-3:has(> .subscribe-form)
 reactormag.com##.desktop\:mb-\[27px\]:has(> hubspot-newsletter)
 ubuntu.com##.grid-col:has(> [data-ga-submit-category="Newsletter"])
 eposaudio.com##.grid__item:has(> .newsletter-sign-up)
@@ -6476,7 +6482,7 @@ doctorofcredit.com#@#.wpdiscuz-subscribe-bar
 ! fanboy_newsletter_shopping_allowlist_general_hide.txt
 
 ! Title: uBlock filters – Other Annoyances
-! Last modified: Fri, 21 Aug 2026 04:16:43 +0000
+! Last modified: Fri, 21 Aug 2026 13:07:36 +0000
 ! Expires: 7 days
 ! Description: Filters optimized for uBlock Origin, to be used with EasyList's and/or Adguard's "Other Annoyances" list(s)
 ! License: https://github.com/uBlockOrigin/uAssets/blob/master/LICENSE
@@ -6654,6 +6660,10 @@ straitstimes.com##.select-none:style(-webkit-touch-callout: default !important; 
 ! https://github.com/uBlockOrigin/uAssets/issues/33136
 bookto09.com##+js(rmnt, script, ctrlKey)
 bookto09.com##body:style(-webkit-touch-callout: default !important; -webkit-user-select: text !important; -khtml-user-select: text !important; -moz-user-select: text !important; -ms-user-select: text !important; user-select: text !important; -webkit-tap-highlight-color: revert !important; cursor: revert !important; -webkit-user-drag: auto !important; user-drag: auto !important;)
+
+! https://github.com/uBlockOrigin/uAssets/issues/33146
+canale-tv.net##+js(rmnt, script, preventDefault)
+||canale-tv.net/channel/disy.js^
 
 ! https://github.com/uBlockOrigin/uAssets/issues/33163
 hoyolab.com##+js(aeld, contextmenu, , elements, img[no-copy="true"])
@@ -14614,6 +14624,9 @@ dozaanimata.net##+js(trusted-create-html, html, <details open style='display:non
 
 ! https://github.com/uBlockOrigin/uAssets/issues/32731
 fontsquirrel.com###bottom_banner_ad_container
+
+! https://github.com/uBlockOrigin/uAssets/issues/32767
+aha-music.com##+js(adjust-setInterval, j.value--, 1000, 0.001)
 
 ! https://github.com/uBlockOrigin/uAssets/issues/32827
 docs.paloaltonetworks.com##+js(nostif, ad-block)
