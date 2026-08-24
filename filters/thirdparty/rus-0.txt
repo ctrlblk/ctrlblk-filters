@@ -11046,7 +11046,6 @@ igdz1.ru^$script,domain=igdz.ru
 ||acc.cv.ua/images/acc_rek/
 ||acc.cv.ua/images/bimg/
 ||actualtraffic.ru/uploads/promo/
-||ad.adriver.ru^$object,domain=onlineguru.ru|peers.tv|seasonvar.ru
 ||ad.cbonds.info/
 ||ad.cheatsbase.ru/
 ||ad.f1cd.ru^
@@ -15070,6 +15069,7 @@ delovoy-kirov.ru###uzhanina
 heregirl.ru,ledilana.ru###vgtrk_bottom
 virusinfo.info###vi_ad
 virusinfo.info###vi_adlink
+peers.tv###vid_vpaut_div
 ivi.ru###video-flack
 xv-ru.com###video-right
 videonews.club###video_bootom
@@ -15358,6 +15358,7 @@ football24.ua##.adv-insert
 football24.ua#?#.adv-insert + p:-abp-has(img)
 xn--c1acj.xn--p1ai##.adv-links
 sintetiki.net##.adv-sale
+peers.tv##.adv-wrap
 24tv.ua,pise4ka.net##.adv-wrapper
 education.ua##.advOnTop
 splkirov.ru##.adv_240x400
@@ -17490,6 +17491,7 @@ osobye.ru##.modulebody > table[style="width:200px"]
 zamena-podshipnikov.ru##.moduletabletimer-buf
 autogrodno.by##.mogo-link
 ritsatv.ru##.monetization-button
+openspeedtest.ru##.monitoring-promo-banner
 multiki-online.net##.more-teaser
 macosworld.ru##.morefoot_back
 serveradmin.ru##.mot
@@ -18018,6 +18020,7 @@ aromatmasla.ru,progrib.ru##.randomizer
 animemobi.ru##.randomnews > .videorek
 zakonia.ru##.randomtable
 www.zoneofgames.ru##.randshop > a:not([href^="https://forum.zoneofgames.ru/"])
+openspeedtest.ru##.rating-promo-block
 glas.ru##.rb
 kinozal.guru,kinozal.me,kinozal.tv,kinozaltv.life##.rb_new
 bashskazki.ru##.rblock
@@ -18586,6 +18589,7 @@ xxx-russian.ru##.speedbar ~ .rad5
 www.obozrevatel.com#?#.splide__list > .splide__slide:-abp-has(> article > .banner)
 alexua.tv,anilib.moe,anilib.one,anilib.top,anilibria.iss.one,anilibria.tv,avtovzglyad.ru,fco.com.ua,filmozavr.com,filmozavr.net,forexsystemsru.com,itc.ua,itweek.ru,medkrug.ru,must-see.top,womanhit.ru##.sponsor
 radioshanson.fm##.sponsor a[href][target="_blank"]
+openspeedtest.ru##.sponsor-info
 fbu.ua,stroimdom.com.ua##.sponsors
 zi.ua##.sponsors-holder
 stroimdom.com.ua##.sponsors_big
@@ -19183,6 +19187,7 @@ charter97.org##.wrapper-sponsors
 urank.ru##.wrapper-sticky
 tele.ru##.wrapper-sticky .wpb_content_element
 aldebaran.ru##.wrapper_ban
+peers.tv##.wrp-rklm-mid
 volnafm.com##.wsite-image-border-thin > a[target="_blank"]
 freehat.cc##.wtp-banner
 winzoro.net##.wzADS
@@ -29745,6 +29750,7 @@ ozon.ru##.layout-page > div:has(> div > p > a[href*="://docs.ozon.ru/common/prav
 lenta.news,lenta.ru##.layout__content > .js-topic:has(.topic-header__erid):remove()
 lenta.news,lenta.ru##.layout__content > [id^="newsBody_news-"] ~ [id^="articleBody_articles-"]:remove()
 inoreader.com##.leaderboard_ad:style(display: block !important; position: fixed !important; top: -10000px !important; left: -10000px !important)
+povarenok.ru##.m-img:has(> [href*="?erid="]):style(min-height: 0 !important)
 nrj.ua##.main__slider > a:not([href^="https://nrj.ua/"]):remove()
 dtf.ru,vc.ru##.media .andropov-video video:remove-attr(autoplay)
 hideip.me#@#.node-promoted
@@ -29949,11 +29955,13 @@ fastpic.org,~new.fastpic.org##+js(remove-node-text, script, )};)
 fastpic.org,~new.fastpic.org##+js(remove-node-text, script, /0\,window|a0_0x|ad-provider|AdProvider|adManager|atOptions|disconnect|document\,window|globalThis|isTrusted|parentNode\.removeChild|Math\.random|MAX_CLICKS|setTimeout/)
 fastpic.org,~new.fastpic.org##+js(remove-node-text, script, getElementById, includes, referrer)
 fastpic.org,~new.fastpic.org##+js(remove-node-text, style, /divExo|ex-over-top|214748364/)
+fastpic.org,~new.fastpic.org##+js(remove-node-text, title, /^/)
 fastpic.org,~new.fastpic.org##+js(set-constant, document.documentElement.onclick, noopFunc)
 ://fastpic.org^
 fastpic.org,~new.fastpic.org##:not(this-site-promotes-malware)
 fastpic.org##[srcdoc]:remove()
 fastpic.org,~new.fastpic.org##^a > script:not(:last-child)
+fastpic.org,~new.fastpic.org##^responseheader(location)
 fastpic.org,~new.fastpic.org##a[href*="/fullview/"] > img[src*="/preview/"]:style(clip-path: inset(0 0 38px 0) !important)
 fastpic.org,~new.fastpic.org##a[href="https://static.fastpic.ru/FastPicUploader.apk"]:remove-attr(target)
 !#if env_mv3
