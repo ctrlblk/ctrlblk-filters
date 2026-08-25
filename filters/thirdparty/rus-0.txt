@@ -9223,8 +9223,7 @@ me##td[background^="//cdn.livetv"] tr > td[valign="top"] + td[align="right"]
 ##div[style="width: 252px; height: 450px; position: fixed; right: 0px; top: 0px; overflow: hidden; z-index: 10000;"]
 
 ! - Частные правила -----------------------------------------------------------
-$popup,domain=176.114.0.126|176.114.0.132|37.220.36.15|assiatv.com|cdnpotok.com|cdntvpotok.com|fastpic.org|freescreens.ru|imgbase.ru|imgcach.ru|imgclick.ru|kolikbolik.top|oneliketv.com|payforpic.ru|picclick.ru|picclock.ru|picforall.ru|protonvideo.to|telecdn.net|tv-assia.org
-$third-party,popup,domain=2ip.ru
+$popup,domain=176.114.0.126|176.114.0.132|37.220.36.15|assiatv.com|cdnpotok.com|cdntvpotok.com|freescreens.ru|imgbase.ru|imgcach.ru|imgclick.ru|kolikbolik.top|oneliketv.com|payforpic.ru|picclick.ru|picclock.ru|picforall.ru|protonvideo.to|telecdn.net|tv-assia.org
 &utm_campaign=$popup,domain=itc.ua|sc2tv.ru|www.film.ru
 /*utm_$popup,domain=stratege.ru
 /go.php$popup,domain=piratca.net
@@ -11659,6 +11658,7 @@ igdz1.ru^$script,domain=igdz.ru
 ||fapl.ru/upload/fapl_$subdocument
 ||faspiic.ru/js/go_re.js
 ||fastpic.org/*provider.js$script
+||fastpic.org/fpv.js$script
 ||fastpic.org/p.js$script
 ||fastpic.org/view/$script
 ||fastpicc.ru^$third-party,script
@@ -20770,6 +20770,7 @@ realnoevremya.ru##body > div:not([id]):not([class])[style^="width: 350px;"]
 zarlit.com##body > div[align="center"]
 gamesisart.ru##body > div[align="left"][style^="position: fixed;"]
 siver.com.ua##body > div[align="right"] > span
+povarenok.ru##body > div[class*="202"] > img
 999.md,delo.ua##body > div[class*="branding"]
 progipertoniyu.ru##body > div[class*="modal"]
 povarenok.ru##body > div[class]:empty:not([style])
@@ -21175,6 +21176,7 @@ yarnovosti.com##div[class^="_5"]
 day.kyiv.ua##div[class^="_ads-"]
 games.pikabu.ru,t-j.ru##div[class^="_banner_"]
 tv.starhit.ru##div[class^="_partnerSlot_"]
+t-j.ru##div[class^="_skeleton_"]
 domashnie-zagotovki.ru##div[class^="a7-btns"]
 igdz.ru##div[class^="ab-"][class$="-text"]
 u24.ua##div[class^="ab_premium_"]
@@ -21477,6 +21479,7 @@ gitarist05.jimdo.com##div[data-container="sidebar"] div[class*="j-imageSubtitle"
 gitarist05.jimdo.com##div[data-container="sidebar"] div[class*="j-text"]
 oka.fm##div[data-element-id]
 tut.by##div[data-io-title="Новости компаний"]
+t-j.ru##div[data-level-type="personal-carousel"]
 softonic.ru##div[data-meta="placeholder-slot"]
 kinoafisha.info##div[data-modules="banner"]
 banki.ru##div[data-name="custom:advertising.block"]
@@ -21487,6 +21490,7 @@ hi-chef.ru##div[data-rb-slot]
 internet-technologies.ru##div[data-region][data-pending="true"]
 youla.ru##div[data-test-component="ProductOrAdCard"] > span[data-debug-info]
 olx.kz,olx.ua,olx.uz##div[data-testid="qa-advert-slot"]
+vk.com,vk.ru##div[data-testid="subscriptionbanner"]
 forbes.ru##div[data-title-deleted="Реклама на Forbes"]
 malagarusa.es##div[data-uk-slideshow]
 ozon.ru##div[data-widget="banner"]
@@ -29261,7 +29265,7 @@ inoreader.com###reader_pane:style(padding-right: unset !important)
 inoreader.com###sinner_container:style(display: block !important; z-index: 0 !important)
 rambler.ru###summary ~ div:has(> [id^="cluster-video-ad"]):remove()
 pronpic.org###vO5STmSLgNAkebzSluI8coxpDgsG97g:style(height: 1px !important; min-height: 1px !important)
-$doc,reason=malicious,domain=apad2.top|besplatnyeprogrammy.ru|dsazfk.com|fastpic.org|games-7.com|hdrip.info|mediagetguru.ru|mixsoft.org|monna2.top|~new.fastpic.org|torrent-muzic.ru|torrent-soft.ru
+$document,reason=malicious,domain=apad2.top|besplatnyeprogrammy.ru|dsazfk.com|games-7.com|hdrip.info|mediagetguru.ru|mixsoft.org|monna2.top|torrent-muzic.ru|torrent-soft.ru
 */bens/vinos.js$popunder
 kolizhanka.com.ua,miyzvuk.net,ozon.ru##*:style(-webkit-touch-callout: default !important; -webkit-user-select: text !important; -moz-user-select: text !important; -ms-user-select: text !important; user-select: text !important)
 captcha-api.yandex.ru,id.vk.ru,passport.yandex.ru,sso.dzen.ru,sso.ya.ru#@#+js()
@@ -29569,6 +29573,7 @@ dumatv.ru##+js(prevent-addEventListener, message, AUTOPLAY)
 news.rambler.ru##+js(prevent-fetch, &origin_type=rtb, url:/rutube.ru/api/tags/video/)
 dzen.ru,sportsdzen.ru##+js(prevent-fetch, /stats/bulk|stats/pixels|zen_audit/)
 progorod62.ru,ura.news##+js(prevent-fetch, _rsc=)
+reddit.com##+js(prevent-setTimeout, '{e(n,t,r)}', 30000)
 evribiont.xyz##+js(prevent-setTimeout, adTestElement)
 aigenda.ru##+js(prevent-setTimeout, combinedDetector)
 forum.ixbt.com##+js(prevent-setTimeout, count_banners)
@@ -29945,29 +29950,31 @@ ya.ru,yandex.*##.simple-popup__overlay:remove()
 ||youtube.com/embed/?enablejsapi=1&origin=*3dnews.*&widgetid=1$subdocument,badfilter,domain=3dnews.ru
 !
 ! FastPic
-*$popunder,domain=fastpic.org
 fastpic.org##+js(abort-on-property-read, Element.prototype.attachShadow)
 fastpic.org,~new.fastpic.org##+js(prevent-addEventListener, DOMContentLoaded, 0x)
 fastpic.org,~new.fastpic.org##+js(prevent-addEventListener, click, '', elements, html)
 fastpic.org,~new.fastpic.org##+js(prevent-window-open)
-fastpic.org,~new.fastpic.org##+js(remove-attr, src|style)
 fastpic.org,~new.fastpic.org##+js(remove-node-text, script, )};)
 fastpic.org,~new.fastpic.org##+js(remove-node-text, script, /0\,window|a0_0x|ad-provider|AdProvider|adManager|atOptions|disconnect|document\,window|globalThis|isTrusted|parentNode\.removeChild|Math\.random|MAX_CLICKS|setTimeout/)
 fastpic.org,~new.fastpic.org##+js(remove-node-text, script, getElementById, includes, referrer)
 fastpic.org,~new.fastpic.org##+js(remove-node-text, style, /divExo|ex-over-top|214748364/)
-fastpic.org,~new.fastpic.org##+js(remove-node-text, title, /^/)
 fastpic.org,~new.fastpic.org##+js(set-constant, document.documentElement.onclick, noopFunc)
-://fastpic.org^
-fastpic.org,~new.fastpic.org##:not(this-site-promotes-malware)
 fastpic.org##[srcdoc]:remove()
 fastpic.org,~new.fastpic.org##^a > script:not(:last-child)
-fastpic.org,~new.fastpic.org##^responseheader(location)
 fastpic.org,~new.fastpic.org##a[href*="/fullview/"] > img[src*="/preview/"]:style(clip-path: inset(0 0 38px 0) !important)
 fastpic.org,~new.fastpic.org##a[href="https://static.fastpic.ru/FastPicUploader.apk"]:remove-attr(target)
-!#if env_mv3
-://fastpic.org^$badfilter
-://fastpic.org^$doc
-!#endif
+! отключенные на время теста правила
+!*$popunder,domain=fastpic.org
+!://fastpic.org^
+!$document,reason=malicious,from=~new.fastpic.org|fastpic.org
+!fastpic.org,~new.fastpic.org##+js(remove-attr, src|style)
+!fastpic.org,~new.fastpic.org##+js(remove-node-text, title, /^/)
+!fastpic.org,~new.fastpic.org##:not(this-site-promotes-malware)
+!fastpic.org,~new.fastpic.org##^responseheader(location)
+!!#if env_mv3
+!://fastpic.org^$badfilter
+!://fastpic.org^$doc
+!!#endif
 !
 ! Mail.RU
 mail.ru###grid div[class^="feed__"]:remove()
