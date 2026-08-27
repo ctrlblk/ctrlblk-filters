@@ -1,10 +1,10 @@
 ![Adblock Plus 2.0]
-! Checksum: Fd/52avUyuy1diUiJ8Oqzg
-! Diff-Path: ../patches/13/13-s-1787695919-3600.patch
+! Checksum: CfN6o4BixmHD7KGEWa9s7A
+! Diff-Path: ../patches/13/13-s-1787842174-3600.patch
 ! Title: AdGuard Turkish filter
 ! Description: Filter list that specifically removes ads on websites in Turkish language.
-! Version: 2.0.67.43
-! TimeUpdated: 2026-08-25T22:08:57+00:00
+! Version: 2.0.67.49
+! TimeUpdated: 2026-08-27T14:45:45+00:00
 ! Expires: 5 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -1557,6 +1557,8 @@ dirilispostasi.com,turkuazgazetesi.net,yenialanya.com,bugunkocaeli.com.tr,cagdas
 !
 ! NOTE: Specific rules
 !
+rotaborsa.com##.sticky-top-ad
+rotaborsa.com##body:style(padding-top: 0 !important;)
 ||istanbulticaretgazetesi.com/api/v*/ads/slot/
 mynet.com##.mynet-feed-ad
 ||podbeemedia.com/api/ads/
@@ -6034,26 +6036,18 @@ pelitcanlitv.com###promoPopup
 pelitcanlitv.com##.bg-link
 pelitcanlitv.com##div[class^="ad-"]
 !
-! Frequently changed domains: gizlidepo*.com
-! Source: gizlidepo.com
-! aglint-disable no-invalid-modifiers
-!+ NOT_VALIDATE
-.gif|$domain=/gizlidepo\d*\.com$/
-! aglint-enable no-invalid-modifiers
-/gizlidepo\d*\.com$/##a[rel="nofollow noopener noreferrer sponsored"]
-/gizlidepo\d*\.com$/###tg-cta-container
-/gizlidepo\d*\.com$/##.banner-grid-wrap
-/gizlidepo\d*\.com$/###hcExit
-/gizlidepo\d*\.com$/##.pd-adbn
-/gizlidepo\d*\.com$/###offerBox:style(display: none !important;)
-/gizlidepo\d*\.com$/###mainVideo:style(display: block !important;)
-gizlikasa34.com##a[rel="nofollow noopener noreferrer sponsored"]
-gizlikasa34.com###tg-cta-container
-gizlikasa34.com##.banner-grid-wrap
-gizlikasa34.com###hcExit
-gizlikasa34.com##.pd-adbn
-gizlikasa34.com###offerBox:style(display: none !important;)
-gizlikasa34.com###mainVideo:style(display: block !important;)
+! Frequently changed domains: hazdolu.com
+! Source: hazdolu.com
+.gif|$domain=hazdolu.com
+hazdolu.com##.onwin-top-wrap
+hazdolu.com##a[href^="/tk/siteleriniz"]
+hazdolu.com##a[rel="nofollow noopener noreferrer sponsored"]
+hazdolu.com###tg-cta-container
+hazdolu.com##.banner-grid-wrap
+hazdolu.com###hcExit
+hazdolu.com##.pd-adbn
+hazdolu.com###offerBox:style(display: none !important;)
+hazdolu.com###mainVideo:style(display: block !important;)
 !
 ! Frequently changed domains: lionlinehd*.com
 ! Source: lionlinehd165.com
@@ -6178,8 +6172,8 @@ fixbettv84.com##.rnd-qwert
 ! aglint-enable no-invalid-modifiers
 /mahsunsports\d+\.xyz$/###openWheelBtn
 /mahsunsports\d+\.xyz$/###splash-banner
-mahsunsports80.xyz,mahsunsports50.xyz###openWheelBtn
-mahsunsports80.xyz,mahsunsports50.xyz###splash-banner
+mahsunsports80.xyz###openWheelBtn
+mahsunsports80.xyz###splash-banner
 mahsunsports.xyz###splash-banner
 mahsunsports.xyz###openWheelBtn
 ||blogger.googleusercontent.com/img/$domain=mahsunsports.xyz
@@ -6345,10 +6339,10 @@ turk-ifsa11.com,turk-ifsa12.com,turk-ifsa13.com,turk-ifsa14.com,turk-ifsa15.com,
 /turkifsa\d*\.com/##video + div.absolute
 /turkifsa\d*\.com/##.ad-banner-frame
 /turkifsa\d*\.com/##div[class][style^="min-height:"][style*="calc("]
-turkifsa73.com,turkifsa74.com,turkifsa75.com,turkifsa76.com,turkifsa77.com,turkifsa78.com,turkifsa79.com,turkifsa80.com,turkifsa81.com,turkifsa82.com,turkifsa83.com##div[class]:has(> a:is([href^="https://cutt.ly/"],[href="https://denemebonusumi.com/"]))
-turkifsa73.com,turkifsa74.com,turkifsa75.com,turkifsa76.com,turkifsa77.com,turkifsa78.com,turkifsa79.com,turkifsa80.com,turkifsa81.com,turkifsa82.com,turkifsa83.com##video + div.absolute
-turkifsa73.com,turkifsa74.com,turkifsa75.com,turkifsa76.com,turkifsa77.com,turkifsa78.com,turkifsa79.com,turkifsa80.com,turkifsa81.com,turkifsa82.com,turkifsa83.com##.ad-banner-frame
-turkifsa73.com,turkifsa74.com,turkifsa75.com,turkifsa76.com,turkifsa77.com,turkifsa78.com,turkifsa79.com,turkifsa80.com,turkifsa81.com,turkifsa82.com,turkifsa83.com##div[class][style^="min-height:"][style*="calc("]
+turkifsa73.com,turkifsa74.com,turkifsa75.com,turkifsa76.com,turkifsa77.com,turkifsa78.com,turkifsa79.com,turkifsa80.com,turkifsa81.com,turkifsa82.com,turkifsa83.com,turkifsa84.com,turkifsa85.com##div[class]:has(> a:is([href^="https://cutt.ly/"],[href="https://denemebonusumi.com/"]))
+turkifsa73.com,turkifsa74.com,turkifsa75.com,turkifsa76.com,turkifsa77.com,turkifsa78.com,turkifsa79.com,turkifsa80.com,turkifsa81.com,turkifsa82.com,turkifsa83.com,turkifsa84.com,turkifsa85.com##video + div.absolute
+turkifsa73.com,turkifsa74.com,turkifsa75.com,turkifsa76.com,turkifsa77.com,turkifsa78.com,turkifsa79.com,turkifsa80.com,turkifsa81.com,turkifsa82.com,turkifsa83.com,turkifsa84.com,turkifsa85.com##.ad-banner-frame
+turkifsa73.com,turkifsa74.com,turkifsa75.com,turkifsa76.com,turkifsa77.com,turkifsa78.com,turkifsa79.com,turkifsa80.com,turkifsa81.com,turkifsa82.com,turkifsa83.com,turkifsa84.com,turkifsa85.com##div[class][style^="min-height:"][style*="calc("]
 !
 ! Frequently changed domains: turkifsa*.art
 ! Source: turkifsa25.art
@@ -6493,10 +6487,10 @@ tvakin.live,tvakin1.live,tvakin2.live,tvakin3.live,tvakin4.live,tvakin5.live,tva
 !
 ! Frequently changed domains: patronlive*.cfd
 ! Source: patronspor.is
-patrongol34.cfd##a[href="https://x.com/patronsporis"] ~ a[href][target="_blank"]:not(#telegram-link)
-patrongol34.cfd##.background-link
-patrongol34.cfd##.top-banner-header
-||blogger.googleusercontent.com/img/$domain=patrongol34.cfd
+patrongol34.cfd,patrongol35.cfd##a[href="https://x.com/patronsporis"] ~ a[href][target="_blank"]:not(#telegram-link)
+patrongol34.cfd,patrongol35.cfd##.background-link
+patrongol34.cfd,patrongol35.cfd##.top-banner-header
+||blogger.googleusercontent.com/img/$domain=patrongol34.cfd|patrongol35.cfd
 !
 ! Frequently changed domains: patronlive*.cfd; patronfutbol*.cfd
 ! Source: patronspor.is
@@ -7174,11 +7168,11 @@ cinque.668a396e58bcbc27.click##+js(set-constant, config.advertisement.enabled, f
 /selcuksportshd[a-z0-9-]+\.click/##.container > aside.sidebar:has(> .banner)
 /selcuksportshd[a-z0-9-]+\.click/##.footer
 /selcuksportshd[a-z0-9-]+\.click/##.socials a:is(.meritroyal, .iptv, .streamradar)
-www.selcuksportshd0f9c045ffb.xyz##.banner
-www.selcuksportshd0f9c045ffb.xyz##.banners
-www.selcuksportshd0f9c045ffb.xyz##.container > aside.sidebar:has(> .banner)
-www.selcuksportshd0f9c045ffb.xyz##.footer
-www.selcuksportshd0f9c045ffb.xyz##.socials a:is(.meritroyal, .iptv, .streamradar)
+www.selcuksportshdbd813bd00f.xyz##.banner
+www.selcuksportshdbd813bd00f.xyz##.banners
+www.selcuksportshdbd813bd00f.xyz##.container > aside.sidebar:has(> .banner)
+www.selcuksportshdbd813bd00f.xyz##.footer
+www.selcuksportshdbd813bd00f.xyz##.socials a:is(.meritroyal, .iptv, .streamradar)
 ||blogger.googleusercontent.com/img/*/reklambanner.png
 ||blogger.googleusercontent.com/img/b/R29vZ2xl/*/s16000/crtswp-s-min.png
 ||selcuksportshd*.xyz/img/g/crtswp-s-min.png
@@ -7441,10 +7435,10 @@ hdfilmcehennemi27.org##body:style(background-image: none !important; cursor: aut
 ! Source: https://inattvgiris.one/ => https://inattv1298.xyz/
 /inattv\d+\.xyz/##.ads-container
 /inattv\d+\.xyz/##div[style="position:fixed; bottom:0px; left:0; width:100%; text-align:center; z-index:999999;"]
-inattv1321.xyz##.pageskin-wrapper > a[target="_blank"]
-||blogger.googleusercontent.com/img/$domain=inattv1321.xyz
-inattv1321.xyz##.ads-container
-inattv1321.xyz##div[style="position:fixed; bottom:0px; left:0; width:100%; text-align:center; z-index:999999;"]
+inattv1322.xyz##.pageskin-wrapper > a[target="_blank"]
+||blogger.googleusercontent.com/img/$domain=inattv1322.xyz
+inattv1322.xyz##.ads-container
+inattv1322.xyz##div[style="position:fixed; bottom:0px; left:0; width:100%; text-align:center; z-index:999999;"]
 ! aglint-disable no-invalid-modifiers
 !+ NOT_VALIDATE
 ||blogger.googleusercontent.com/img/$domain=/inattv\d+\.xyz/
