@@ -2,7 +2,7 @@
 ! Title: Adblock List for Finland
 ! Description: Finnish adblock list
 ! Expires: 4 days
-! Last modified: Sat, 29 Aug 2026 00:50:53 +0300
+! Last modified: Sun, 30 Aug 2026 00:33:52 +0300
 ! Homepage: https://github.com/finnish-easylist-addition/finnish-easylist-addition
 ! License: https://unlicense.org/
 ! Raportoi mainoksenestoon liittyvistä ongelmista tai estämättömistä mainoksista täällä / Please report adblocking related issues or unblocked ads at:
@@ -13,17 +13,13 @@
 
 ampparit.com##.ad-slot
 ap-cdn.sanomagames.com##.banner-slot-preroll
-finnkino.fi###layout-left.with-right-side:style(width: 100% !important)
-iijokiseutu.fi,ilkkapohjalainen.fi,jarviseutu-lehti.fi,jurvansanomat.fi,kaleva.fi,koillissanomat.fi,komiat.fi,lapinkansa.fi,pohjoisenpolut.fi,pyhajokiseutu.fi,raahenseutu.fi,rantalakeus.fi,siikajokilaakso.fi,suupohjansanomat.fi,viiskunta.fi##.m-managedListing__column.-ctx-index:has(.-commercial)
-iijokiseutu.fi,ilkkapohjalainen.fi,jarviseutu-lehti.fi,jurvansanomat.fi,kaleva.fi,koillissanomat.fi,komiat.fi,lapinkansa.fi,pohjoisenpolut.fi,pyhajokiseutu.fi,raahenseutu.fi,rantalakeus.fi,siikajokilaakso.fi,suupohjansanomat.fi,viiskunta.fi##.m-managedListing__row.-ctx-index:has(.-commercial) > .m-managedListing__column.-ctx-index:matches-css(display: flex) img[sizes]:remove-attr(sizes)
-iijokiseutu.fi,ilkkapohjalainen.fi,jarviseutu-lehti.fi,jurvansanomat.fi,kaleva.fi,koillissanomat.fi,komiat.fi,lapinkansa.fi,pohjoisenpolut.fi,pyhajokiseutu.fi,raahenseutu.fi,rantalakeus.fi,siikajokilaakso.fi,suupohjansanomat.fi,viiskunta.fi##.mdc-layout-grid__cell:has(+ .sidebar__column-container):style(grid-column: 3 / span 8 !important)
+iijokiseutu.fi,ilkkapohjalainen.fi,jarviseutu-lehti.fi,jurvansanomat.fi,kaleva.fi,koillissanomat.fi,komiat.fi,lapinkansa.fi,pohjoisenpolut.fi,pyhajokiseutu.fi,raahenseutu.fi,rantalakeus.fi,siikajokilaakso.fi,suupohjansanomat.fi,viiskunta.fi##.m-managedListing__column:has(.m-contentListItem__advertisement):remove()
+iijokiseutu.fi,ilkkapohjalainen.fi,jarviseutu-lehti.fi,jurvansanomat.fi,kaleva.fi,koillissanomat.fi,komiat.fi,lapinkansa.fi,pohjoisenpolut.fi,pyhajokiseutu.fi,raahenseutu.fi,rantalakeus.fi,siikajokilaakso.fi,suupohjansanomat.fi,viiskunta.fi##.m-managedListing__row.-cols-2 > .m-managedListing__column.-cols-2:only-child img:remove-attr(sizes)
 iijokiseutu.fi,ilkkapohjalainen.fi,jarviseutu-lehti.fi,jurvansanomat.fi,kaleva.fi,koillissanomat.fi,komiat.fi,lapinkansa.fi,pohjoisenpolut.fi,pyhajokiseutu.fi,raahenseutu.fi,rantalakeus.fi,siikajokilaakso.fi,suupohjansanomat.fi,viiskunta.fi##.mdc-layout-grid__cell:has(+ .sidebar__column-container) img[sizes]:remove-attr(sizes)
 kotiliesi.fi#?#.article-card-grid li:has(div[id^=dfp__]:not([id^=dfp__desk-1_1])):remove()
 metsastysjakalastus.fi,tekniikanmaailma.fi##.NoAdBlocker_main
-outlook.live.com##div[aria-label=Siirtymisruutu] ~ div[data-max-width="2400"] + div[class]
 proshop.fi##.container.site-container.hasTopBanner:style(top: 5px !important)
 proshop.fi##.site-container-fullwidth:style(background-image: none !important)
-puhelinvertailu.com##.index-wrap:style(left: 0px !important)
 seiska.fi##.jwplayer.column:has(.jw-video[src="https://seiska.b-cdn.net/Mainos.mp4"]):remove()
 
 ! HTML filters for browsers that support them e.g. Firefox
@@ -477,11 +473,14 @@ hymy.fi##.grid--dfp-slots
 hymy.fi##.sidebar-block a[href^="https://seura.fi/mainos/"]
 hymy.fi##.sidebar-block a[href^="https://tekniikanmaailma.fi/mainoslehti/"]
 hyvaterveys.fi##.pane-sbase-cts-native-native-front
+iijokiseutu.fi##.m-managedListing__column:has(.m-contentListItem__advertisement)
+iijokiseutu.fi##.m-managedListing__row:has(> .m-managedListing__column:has(.m-contentListItem__advertisement)) > .m-managedListing__column:not(:has(.m-contentListItem__advertisement)) { max-width: 410px !important; margin-left: auto !important; margin-right: auto !important; }
 iijokiseutu.fi,ilkkapohjalainen.fi,jarviseutu-lehti.fi,jurvansanomat.fi,kaleva.fi,koillissanomat.fi,komiat.fi,lapinkansa.fi,pohjoisenpolut.fi,pyhajokiseutu.fi,raahenseutu.fi,rantalakeus.fi,siikajokilaakso.fi,suupohjansanomat.fi,viiskunta.fi###paraati-ad-grid
-iijokiseutu.fi,ilkkapohjalainen.fi,jarviseutu-lehti.fi,jurvansanomat.fi,kaleva.fi,koillissanomat.fi,komiat.fi,lapinkansa.fi,pohjoisenpolut.fi,pyhajokiseutu.fi,raahenseutu.fi,rantalakeus.fi,siikajokilaakso.fi,suupohjansanomat.fi,viiskunta.fi##.m-contentListItemThumb.-ctx-frontpage-now:has(.-commercial)
-iijokiseutu.fi,ilkkapohjalainen.fi,jarviseutu-lehti.fi,jurvansanomat.fi,kaleva.fi,koillissanomat.fi,komiat.fi,lapinkansa.fi,pohjoisenpolut.fi,pyhajokiseutu.fi,raahenseutu.fi,rantalakeus.fi,siikajokilaakso.fi,suupohjansanomat.fi,viiskunta.fi##.m-managedListing__column.-ctx-index > .m-contentListItem.-ctx-index:has(.-commercial)
+iijokiseutu.fi,ilkkapohjalainen.fi,jarviseutu-lehti.fi,jurvansanomat.fi,kaleva.fi,koillissanomat.fi,komiat.fi,lapinkansa.fi,pohjoisenpolut.fi,pyhajokiseutu.fi,raahenseutu.fi,rantalakeus.fi,siikajokilaakso.fi,suupohjansanomat.fi,viiskunta.fi##.mdc-layout-grid__cell:has(+ .sidebar__column-container) { grid-column: 3 / span 8 !important }
 iijokiseutu.fi,ilkkapohjalainen.fi,jarviseutu-lehti.fi,jurvansanomat.fi,kaleva.fi,koillissanomat.fi,komiat.fi,lapinkansa.fi,pohjoisenpolut.fi,pyhajokiseutu.fi,raahenseutu.fi,rantalakeus.fi,siikajokilaakso.fi,suupohjansanomat.fi,viiskunta.fi##.sidebar__column-container:has(.-ad)
+iijokiseutu.fi,ilkkapohjalainen.fi,jarviseutu-lehti.fi,jurvansanomat.fi,kaleva.fi,koillissanomat.fi,komiat.fi,lapinkansa.fi,pohjoisenpolut.fi,pyhajokiseutu.fi,raahenseutu.fi,rantalakeus.fi,siikajokilaakso.fi,suupohjansanomat.fi,viiskunta.fi##[data-is-advertisment="true"]
 iijokiseutu.fi,ilkkapohjalainen.fi,jarviseutu-lehti.fi,jurvansanomat.fi,kaleva.fi,koillissanomat.fi,komiat.fi,lapinkansa.fi,pohjoisenpolut.fi,pyhajokiseutu.fi,raahenseutu.fi,rantalakeus.fi,siikajokilaakso.fi,suupohjansanomat.fi,viiskunta.fi##[data-placement-id]:has([data-ad-unit-id])
+iijokiseutu.fi,ilkkapohjalainen.fi,jarviseutu-lehti.fi,jurvansanomat.fi,kaleva.fi,koillissanomat.fi,komiat.fi,lapinkansa.fi,pohjoisenpolut.fi,pyhajokiseutu.fi,raahenseutu.fi,rantalakeus.fi,siikajokilaakso.fi,suupohjansanomat.fi,viiskunta.fi##a[rel="sponsored"]
 ilmastointilaitteet.com##.boxi
 iltalehti.fi##.card:has(.etua-widget-container)
 iltalehti.fi##.card:has(> .full-article .front-sponsored-heading)
@@ -544,13 +543,6 @@ kalastus.com###mini-panel-autodoc_150x50
 kalastus.com##.gam-holder
 kalastuslehti.fi##._ning_outer
 kalastuslehti.fi#?#.widget_media_image:has-text(– Mainos –)
-kaleva.fi###puff-container
-kaleva.fi##.m-contentListItemThumb:has(> div > div > div[class^=m-contentListItemThumb__advertisement])
-kaleva.fi##.m-managedListing__column:has(> div > div > div > div[class^=m-contentListItem__advertisement])
-kaleva.fi##aside.sidebar__column-container:has(.-ad)
-kaleva.fi##div[class=lyta-lazy-load]
-kaleva.fi#?#.media-site__widget-container:has( * .media-widget__title:has-text(Kaupallinen yhteistyö))
-kaleva.fi,lapinkansa.fi###outstream-container
 kamera-lehti.fi###sidebar .simple-image > [href]:not([href^="https://kamera-lehti.fi"])
 kamera-lehti.fi###sidebar .widget[id|="custom_html"]
 kamera-lehti.fi##.etusivu-mainos:not(:has([href^="https://kamera-lehti.fi"]))
@@ -827,6 +819,8 @@ puheenvuoro.uusisuomi.fi##.side-list.commercial-blog-studio
 puheenvuoro.uusisuomi.fi##a[class*=commercial-blog-card]
 puheenvuoro.uusisuomi.fi#?##leaderboard-1-desktop {remove: true}
 puheenvuoro.uusisuomi.fi#?##leaderboard-1-mobile {remove: true}
+puhelinvertailu.com##.advertisements
+puhelinvertailu.com##.index-wrap { left: 0px !important }
 puhelinvertailu.com##br:has(+ br + ins[class=adsbygoogle])
 puhelinvertailu.com##br:has(+ ins[class=adsbygoogle])
 puskaradio.net##.all-adds
@@ -1212,6 +1206,7 @@ _300x300_*.mp4$media,domain=futisfani.com|kiekkofani.com|penkkiurheilu.com|uutis
 ||vauva.fi/modules/custom/vauva_cts/modules/vauva_cts_native/js/vauva_cts_native.js$script,domain=vauva.fi
 ||vertaa.fi^*/showads.js$script,domain=vertaa.fi
 ||vg.is.fi/autotie-is-*/$subdocument
+||visx.net^$third-party
 ||ykkoslohja.fi/wp-content/uploads/*/ksupermarket$image
 ||ykkoslohja.fi/wp-content/uploads/*/lainaaverkossa$image
 
@@ -1231,6 +1226,7 @@ murha.info#@#.adsbygoogle
 @@||adform.net^$xmlhttprequest,domain=telsu.fi
 !#endif
 ||adform.net$xmlhttprequest,rewrite=abp-resource:blank-js,domain=telsu.fi
+@@||puhelinvertailu.com^$generichide
 
 
 ! Redirect resources
