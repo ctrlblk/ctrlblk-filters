@@ -1,10 +1,10 @@
 ![Adblock Plus 2.0]
-! Checksum: H2QGDqdtJpGYjGqabWUO9g
-! Diff-Path: ../patches/9/9-s-1788207510-3600.patch
+! Checksum: VMrfASExd3JdacpnJQFmQQ
+! Diff-Path: ../patches/9/9-s-1788330775-3600.patch
 ! Title: AdGuard Spanish/Portuguese filter
 ! Description: Filter list that specifically removes ads on websites in Spanish, Portuguese, and Brazilian Portuguese languages.
-! Version: 2.0.35.49
-! TimeUpdated: 2026-08-31T20:14:49+00:00
+! Version: 2.0.35.52
+! TimeUpdated: 2026-09-02T06:29:27+00:00
 ! Expires: 5 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -1558,6 +1558,9 @@ peru21.pe#@#.adstop
 !------- JS rules ---------------------!
 !--------------------------------------!
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/239913
+! Fixes time duration in MPD files for video playback when ads are removed
+!+ NOT_PLATFORM(ext_chromium_mv3, ext_ff)
 ! https://github.com/AdguardTeam/AdguardFilters/issues/238585
 saopaulosecreto.com##+js(href-sanitizer, a[href^="https://adesampa.com.br/"], [href], removeParam)
 ! https://github.com/AdguardTeam/AdguardFilters/issues/206798
@@ -2163,6 +2166,8 @@ lucrandoideias.com,proandroid.com,lusometeo.com,kltutors.com,eloutput.com,mundob
 !
 ! NOTE: Specific rules
 !
+olimpicastereo.com.co##+js(set-constant, Object.prototype.prerollShown, true)
+olimpicastereo.com.co##div[data-after="Publicidad"]
 jovempan.com.br##.fortytwo-ads-bg
 hardwarepremium.com##[id^="aswift_"]
 hardwarepremium.com##.a-wrap-base
