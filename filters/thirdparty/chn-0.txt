@@ -1,10 +1,10 @@
 ![Adblock Plus 2.0]
-! Checksum: 0HHjKp3UFGKZgxR1Tv1opw
-! Diff-Path: ../patches/224/224-s-1788326301-3600.patch
+! Checksum: jSVWBamTo3GFgOGCxdPwPg
+! Diff-Path: ../patches/224/224-s-1788420019-3600.patch
 ! Title: AdGuard Chinese filter
 ! Description: EasyList China + AdGuard Chinese filter. Filter list that specifically removes ads on websites in Chinese language.
-! Version: 2.1.64.57
-! TimeUpdated: 2026-09-02T05:15:23+00:00
+! Version: 2.1.64.62
+! TimeUpdated: 2026-09-03T07:17:09+00:00
 ! Expires: 5 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -773,7 +773,8 @@ popbee.com##.adblocker
 ! 17kp.vip
 icu##.banner-layout-box
 ! 91porny
-! https://github.com/AdguardTeam/AdguardFilters/issues/190664
+##html[lang="zh-cn"] > body  > header.Mobile-Header + main > div[id][class]
+##.videoPlayContainer > div#video-play + div[data-nosnippet]
 ##.row > div.colVideoList:has(> div.video-elem > a[target="_blank"])
 !---------------------------------------------------------------------------!
 !-------------- General javascript, CSS and HTML extensions ----------------!
@@ -1154,7 +1155,6 @@ flyert.com.cn##div[style^="width:300px;height:90px;"]
 91porny.com##body.modal-open:style(overflow: auto !important;)
 91porny.com##.modal-backdrop:style(display: none !important;)
 91porny.com###warningModal:style(display: none !important;)
-91porny.com###video-play + div[data-nosnippet]
 techbang.com##.content-top
 ||manhuaren.com/wx20190904.js
 digvps.com##aside[data-slot="right"][aria-label] > div > a[target="_blank"]
@@ -5448,7 +5448,7 @@ newduba.cn###jq_youxi
 ##.newsAD
 ##.art-layer-ad
 ##._v_ad_container
-###__nuxt > div > .footer
+###__nuxt > div > .footer > .floatWindow + div:not([class]):not([id])
 ##.kkb-href
 ##.kkm-href
 ##a[href*="/122.51.121.126:"]
@@ -5469,6 +5469,13 @@ newduba.cn###jq_youxi
 .z.dkt-ib.com
 ||cnzz.trafficmanager.net^
 ||cupfox.app^$3p
+||c2vodqlmy.com^
+||605abezk8.com^
+||rxzfhfmoegfvts.com^
+||zhifupaypay.com^
+||reflector19.com^
+||0mkeb9vth.com^
+||uj6i2bo3o.com^
 ||mi1pbnrk8d.com^
 ||3vvuu0z8ui.com^
 ||lhdkvvfmydrvhs.com^
@@ -5477,6 +5484,10 @@ newduba.cn###jq_youxi
 ||ez2q38b1ik.com^
 ||qwt9oyg741.com^
 ||11fkkw8h3i.com^
+||n7hnij4fah.com^
+||8poz7uwoho.com^
+||weiakbtck.com^
+||pincers55.com^
 ||or6p0f4i8.com^
 ||btm9uso7t.com^
 ||saddlebag32.com^
@@ -14940,6 +14951,8 @@ meijutt.*/js/pcjs/
 ||teacher.php.cn/php/
 ||right.com.cn/forum/data/attachment/common/template/boardimg_20260602yahb3wsd.
 169bbs.com##.a_f
+kanju.ai##.movie-player-info-ad-grid
+kanju.ai##.movie-player-info-ad-heading
 fuliba2023.net,fuliba2025.net,fuliba.net##.article-topbanner
 techbang.com##.ads-reserve
 json.cn##.show-hide-adv
@@ -14983,8 +14996,8 @@ iplark.com##div[style="position: relative;"]
 cngold.org##.w310:has(>.swiper-company)
 cngold.org##.headCompanys
 cngold.org##.mainRight > .border_top:first-child
-ping0.cc###adhright
-ping0.cc##.xceles
+ping0.cc##.xdeles
+ping0.cc###adiright
 cngold.org##.foot_megagame
 cngold.org##.fixed_jt
 hanime1.me##div[style*="text-align:"]:has(>div[style*="color: white"])
@@ -22767,6 +22780,11 @@ colamanga.com##iframe[style*="important"]
 qq.com#@#.side_ad
 ##.txp_ad_center
 !#Rewrite filters
+!#Rouman5.com
+||kelv47.xyz^*.gif
+||towm85.xyz^*.gif
+/_next/static/chunks/00zo5_naxp4vi.
+##a[href^="/api/jump/"] > img[src*=".xyz/m/"]
 !#Sejie.com
 173.192.147.21,sejie.com,sejie3.us,thesoccerline.com###wp > br
 173.192.147.21,sejie.com,sejie3.us,thesoccerline.com###wp > center > a
