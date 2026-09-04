@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: EasyList – Newsletter Notices
-! Last modified: Thu, 03 Sep 2026 05:05:05 +0000
+! Last modified: Fri, 04 Sep 2026 05:07:21 +0000
 ! Expires: 7 days (update frequency)
 ! *** easylist:template_header.txt ***
 !
@@ -1360,7 +1360,6 @@
 ||electricfencing.co.uk/prnewsletterpopup/
 ||ewnews.com/wp-content/themes/dw-focus/newsletter.png
 ||form.flodesk.com^$domain=stacker.com
-||form.jotform.com^$domain=premierchristian.news
 ||forms-content.sg-form.com^$domain=12tomatoes.com
 ||forms.aweber.com^$domain=thetruthaboutguns.com
 ||forms.blackhawks.com/newsletter-signup$subdocument
@@ -1371,6 +1370,7 @@
 ||inews.co.uk/wp-content/client-mu-plugins/piano/piano-loader.js
 ||insidesources.com/wp-content/themes/insidesources/js/jquery.fancybox.js
 ||irishstar.com/newsletter-preference-centre
+||jotform.com^$domain=discoverwildlife.com|premierchristian.news
 ||listrakbi.com^$script,domain=ruralking.com
 ||news.atptour.com/p/$subdocument
 ||nscreenmedia.com/wp-content/uploads/subscribe-nscreen-newsletter.jpg
@@ -3158,7 +3158,7 @@ gothamist.com##.newsletter-home
 mcknights.com,mcknightshomecare.com##.newsletter-html-asset
 ibtimes.co.uk,ibtimes.com,latintimes.com,musictimes.com##.newsletter-in-article
 almanac.com##.newsletter-incontent
-pbs.org##.newsletter-inline
+carbonbrief.org,pbs.org##.newsletter-inline
 forbes.com##.newsletter-inline-flex
 pressgazette.co.uk##.newsletter-inner-container
 vogue.com.au##.newsletter-light-registration
@@ -6505,7 +6505,7 @@ doctorofcredit.com#@#.wpdiscuz-subscribe-bar
 ! fanboy_newsletter_shopping_allowlist_general_hide.txt
 
 ! Title: uBlock filters – Other Annoyances
-! Last modified: Tue, 01 Sep 2026 06:31:01 +0000
+! Last modified: Fri, 04 Sep 2026 08:26:03 +0000
 ! Expires: 7 days
 ! Description: Filters optimized for uBlock Origin, to be used with EasyList's and/or Adguard's "Other Annoyances" list(s)
 ! License: https://github.com/uBlockOrigin/uAssets/blob/master/LICENSE
@@ -13545,7 +13545,7 @@ venturebeat.com##div.body-container:style(cursor: revert !important;)
 guildstats.eu##.gDiv
 
 ! admiral
-aboutchromebooks.com,comingsoon.net,daysoftheyear.com,edn.com,gearjunkie.com,harvardmagazine.com,lgbtqnation.com,majorgeeks.com,mangainn.net,medievalists.net,sherdog.com,sidereel.com,statesman.com,winhelponline.com##+js(aopr, googletag)
+aboutchromebooks.com,comingsoon.net,daysoftheyear.com,edn.com,harvardmagazine.com,lgbtqnation.com,majorgeeks.com,mangainn.net,medievalists.net,sherdog.com,sidereel.com,statesman.com,winhelponline.com##+js(aopr, googletag)
 boston.com,cattime.com,dogtime.com,download.mokeedev.com,freep.com,ijr.com,inquirer.net,knowyourmeme.com,nationalreview.com,nofilmschool.com,order-order.com,savvytime.com,techlicious.com,technicpack.net,thedraftnetwork.com,wrestlezone.com,xda-developers.com##+js(acs, document.createElement, admiral)
 majorgeeks.com##+js(acs, document.getElementById, undefined)
 legacy.com##+js(acs, document.getElementsByTagName, admiral)
@@ -13635,9 +13635,6 @@ vrcmods.com##.showfreemethod
 
 ! Daily upload limit of 2 images - Sign up now and enjoy monthly free credits
 www.watermarkremover.io##+js(set-local-storage-item, WkdGcGJIbEpiV0ZuWlVSaGRHRT0=, $remove$)
-
-! https://github.com/uBlockOrigin/uAssets/issues/20228
-uploadvr.com##.force-load-ad
 
 ! getemoji.com anti adblock annoyance
 getemoji.com##+js(set-session-storage-item, fs.adb.dis, 1)

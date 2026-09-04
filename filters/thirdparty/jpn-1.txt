@@ -1,10 +1,10 @@
 ![Adblock Plus 2.0]
-! Checksum: zk6k9PVZ1ka2EHdumSLvYg
-! Diff-Path: ../patches/7/7-s-1788414469-3600.patch
+! Checksum: HkdEo1ZDWIi5Uk547lu4Tw
+! Diff-Path: ../patches/7/7-s-1788503247-3600.patch
 ! Title: AdGuard Japanese filter
 ! Description: Filter that enables ad blocking on websites in Japanese language.
-! Version: 2.0.76.15
-! TimeUpdated: 2026-09-03T05:43:56+00:00
+! Version: 2.0.76.18
+! TimeUpdated: 2026-09-04T06:23:57+00:00
 ! Expires: 5 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -1588,6 +1588,7 @@ hostlove.com###index_nav > h1:style(padding-top: 30px!important;)
 /wp-content/uploads/2024/09/fanza_ad$image
 !
 ! Malware/Phishing
+/sch_*/MyJCB-POINT.apk$document
 .com/release0823.apk^$document
 .com/login/smbc-card/index.html/$document
 ://chat.*.com/gen_token.php?_=$xhr,~3p
@@ -1928,6 +1929,8 @@ gundamlog.com###more > iframe[src^="https://richlink.blogsys.jp"]
 !
 ! NOTE: Specific rules
 !
+play.rakuten.co.jp##div[data-gtm-ad-slot]
+news.tv-asahi.co.jp##aside.aside-container > div.aside-ranking:has(> div.ranking-container > a[href="/ranking/"]):style(min-height: auto !important;)
 cafe-cyakuero2.blog.jp##.sidetitlebody:has(+ div + div.side > a[href^="https://kingdom.vc/products/list.php"])
 cafe-cyakuero2.blog.jp##.sidetitlebody:has(+ div + div.side > a[href="https://www.idol-dvd.com/"])
 cafe-cyakuero2.blog.jp##.sidetitlebody:has(+ div + div.side > a[href^="http://otokogiya.com/index.html"])
