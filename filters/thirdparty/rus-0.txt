@@ -17447,6 +17447,7 @@ bookskeeper.ru##.mdl
 ximepa.ru##.mdwr
 gdz-putina.fun,gdz.fm,gdz.ninja,gdz.ru,gdzguru.com,gdzotputina.club,gdzputina.net,megaresheba.com,megaresheba.ru,resheba.me,reshebnik.com,spishi.fun,stavcur.ru,sumypost.com,xn--c1acj.xn--p1acf,xn--c1acj.xn--p1ai,zoobrilka.net##.media
 myslo.ru##.media-ads-block
+www.kinopoisk.ru##.media-post-page div[id] > style:first-child + div[id][style^="width:"][style*="height:"]:last-child
 shostka.info##.media:not([style="padding:0;"])
 auto43.ru##.media_aside_our-partners
 gazeta.spb.ru##.mediacartel
@@ -19738,6 +19739,7 @@ allboxing.ru##[onmouseenter="onClickPbButton()"]
 penzainform.ru##[pnz-ads]:not(eto-dlya-mob-ver)
 apteki.su##[poster^="http://static.apteki.su/img/banners/"]
 vk.com,vk.ru#?#[role="feed"] > article:-abp-has(> [data-post-id] [href*="utm_source=vk_ads"])
+vk.com,vk.ru#?#[role="feed"] > article:-abp-has(> [data-post-id] a[rel]:-abp-contains(onelink.me/))
 vk.com,vk.ru#?#[role="feed"] > article:-abp-has(> [data-post-id] a[rel]:-abp-contains(vk.cc/))
 vk.com,vk.ru#?#[role="feed"] > article:-abp-has(> [data-post-id] a[rel][href*="utm_campaign"])
 vk.com,vk.ru#?#[role="feed"] > article:-abp-has([aria-label="Реклама от автора"])
@@ -21109,6 +21111,7 @@ superjob.ru##div[class*="f-test-vacancy-ad-context-"]
 prokuzbass.ru#?#div[class*="flex-grow"]:-abp-has(> .sticky > .adv)
 fedpress.ru##div[class*="follows-channel_yandex"]
 lifehacker.ru##div[class*="footer-widgets__container"] > [data-key^="custom_html-"]
+sportsdaily.ru##div[class*="giftButton"]
 tm.ati.su,trucks.ati.su#?#div[class*="grid-user-data"]:-abp-has(> [class*="user-data-grid"] > :empty)
 prnt.sc##div[class*="grundik"]
 sravni.ru##div[class*="hero-section_branding_"]
@@ -21183,7 +21186,6 @@ point.md#?#div[class]:-abp-has(> a[href*="://sales.simpals.com/"][href*="banner"
 spafilms.me#?#div[class]:-abp-has(> a[title] > div[class])
 drive2.ru#?#div[class]:-abp-has(> div > .drom-logo)
 searchengines.guru#?#div[class]:-abp-has(> div[id][align="center"])
-www.kinopoisk.ru##div[class]:first-child > div[class*=" "] > div:first-child + :not(div) + div[class*=" "]:last-child
 ytvideo.ru##div[class][data-aid]
 mk.ru,prnt.sc##div[class][style*="important"]
 rlocman.ru##div[class][style="background-color:#fcfcee;padding:10px"]
@@ -21362,7 +21364,6 @@ otzywy.com##div[class^="goog"]
 gisher.org##div[class^="gov"]
 pipdecor.ru##div[class^="hairw-"]
 nsportal.ru##div[class^="header-top"] ~ *
-sportsdaily.ru##div[class^="header_headerGift"]
 hindcine.tv##div[class^="hind"]
 business-gazeta.ru##div[class^="holiday-carousel"]
 lolzteam.online##div[class^="homeBannersAds"]
@@ -21420,7 +21421,6 @@ tsn24.ru##div[class^="post-banner"]
 pln-pskov.ru##div[class^="pr__news"][style="padding-right: 0 !important;"]
 soft.sibnet.ru##div[class^="programm_block-ad"]
 sovsport.ru##div[class^="promo-menu"]
-sportsdaily.ru##div[class^="promoMenu_giftButton_"]
 all-sci.net,bib.social,economics.studio,economuch.com,finbook.news,lawbook.online,lawbooks.news,lib.sale,medinfo.live,myzooplanet.ru,pravo.studio,provse.news,psihologia.biz,sci-lib.biz,sci.house,scicenter.online,textbooks.studio,uchebnikfree.com,xn--80aaivjfyj3e.com##div[class^="r"][style*="height:"]
 glavred.info,glavred.net##div[class^="r"][style^="height"][style*="margin:"]
 all-sci.net,bib.social,economics.studio,economuch.com,finbook.news,lawbook.online,lawbooks.news,lib.sale,medinfo.live,myzooplanet.ru,pravo.studio,provse.news,psihologia.biz,sci-lib.biz,sci.house,scicenter.online,textbooks.studio,uchebnikfree.com,xn--80aaivjfyj3e.com##div[class^="r711"]
@@ -22460,6 +22460,7 @@ forum.abok.ru##span[style^="color: #4F4F4F; font-size: 6pt; text-align: left;"]
 flashscore.com.ua,flashscore.ru.com,flashscore.ua,flashscorekz.com,livescore.in,soccerstand.com##sport[name="soccer"]
 nuriknur.ucoz.com##strong > span[style="color:red"]
 onliner.by#?#strong:-abp-contains(нож блокировщику)
+fastpic.org##style:first-child + b:empty:last-child
 surl.*##.promo-block
 surl.*##.promo-title
 surl.*##.very-nice-button
@@ -25382,6 +25383,7 @@ zarulem.ws##td[style^="text-align:center;width:50%"]
 ||mostinfo.net/img/top/
 ||mostlv.com^$third-party,subdocument
 ||moviecash.ru^$third-party
+||movieweb.ru^$third-party,script
 ||mrringo.com/images/banners/$third-party
 ||multiclick.ru^
 ||multonly.ru^$third-party
