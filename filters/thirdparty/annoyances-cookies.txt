@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: EasyList – Cookie Notices
-! Last modified: Sat, 05 Sep 2026 04:57:25 +0000
+! Last modified: Sat, 05 Sep 2026 10:56:09 +0000
 ! Expires: 7 days (update frequency)
 ! *** easylist:template_header.txt ***
 !
@@ -19175,6 +19175,7 @@ maalot.co.il,stevemadden.com##.ot-sdk-container
 sinparty.com##.ot-sdk-row
 3dviewer.net##.ov_bottom_floating_panel
 hero-wars.com##.overlay--cookie_banner_without_icons
+ratchet-galaxy.com##.overlay-alert
 jackjones.com,mamalicious.com,only.com,onlyandsons.com,veromoda.com##.overlay-backdrop
 banjaran.com.sg##.overlay-mobile-styles-enabled
 hero-wars.com##.overlay-modals-wrapper
@@ -19735,6 +19736,7 @@ jdslabs.com##[data-component="cookieBanner"]
 koenigsegg.com##[data-component="n3-cookie-notice"]
 plasma.org##[data-cookie-consent-banner="true"]
 pixilart.com##[data-cookie-number]
+insider.razer.com##[data-css-anchor="cookie-banner"]
 iol.co.za##[data-dialog="true"]
 eurovision.com##[data-ev-component="CookieConsent"]
 wizards.com##[data-fetch-key="TheCookiePrompt:0"]
@@ -28876,7 +28878,7 @@ concursolutions.com,forbes.com,formula1.com,fortune.com,proximus.be,proximustv.b
 @@||zensus2022.de/SiteGlobals/Modules/CookieBanner/*/CookieBanner.json?$~third-party,xmlhttprequest
 
 ! Title: uBlock filters – Cookie Notices
-! Last modified: Wed, 02 Sep 2026 14:17:52 +0000
+! Last modified: Sat, 05 Sep 2026 22:51:39 +0000
 ! Expires: 7 days
 ! Description: Filters optimized for uBlock Origin, to be used with EasyList's and/or Adguard's "Cookie Notices" list(s)
 ! License: https://github.com/uBlockOrigin/uAssets/blob/master/LICENSE
@@ -34608,3 +34610,13 @@ gamescom.global##+js(trusted-set-cookie, OptanonAlertBoxClosed, $currentDate$)
 
 ! https://github.com/AdguardTeam/AdguardFilters/issues/239843
 zonerai.com##+js(trusted-set-local-storage-item, 'cookie_consent', '{"necessary":true,"analytics":false,"marketing":false}')
+
+! https://github.com/uBlockOrigin/uAssets/issues/22533#issuecomment-5553415130
+! Necessary + functional
+vpg.no##+js(trusted-click-element, #cookieConsentModal.show .js-cookie-configuration-button .btn-primary, , 2000)
+vpg.no##+js(trusted-click-element, input[id="cookie_ønskeliste-og-andre-funksjoner"]:not(:checked), , 2500)
+vpg.no##+js(trusted-click-element, 'xpath://button[@class="btn btn-primary js-offcanvas-cookie-submit"][normalize-space(.)="Lagre"]', , 3000)
+vpg.no##.modal-backdrop.fade
+vpg.no##.offcanvas-backdrop.fade
+vpg.no###cookieConsentModal
+vpg.no##.js-offcanvas-singleton.offcanvas-start
