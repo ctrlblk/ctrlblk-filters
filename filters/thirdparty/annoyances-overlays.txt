@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: EasyList – Newsletter Notices
-! Last modified: Sun, 06 Sep 2026 05:06:26 +0000
+! Last modified: Sun, 06 Sep 2026 15:48:06 +0000
 ! Expires: 7 days (update frequency)
 ! *** easylist:template_header.txt ***
 !
@@ -2579,7 +2579,7 @@ mirror.co.uk##.email__toaster-component
 stgeorgeutah.com##.email_popup
 staradvertiser.com##.emailbox
 cartercenter.org##.emailrightcol
-hillelwayne.com##.embeddable-buttondown-form
+hillelwayne.com,mylesmarino.com##.embeddable-buttondown-form
 lmtribune.com##.emphasis-h2
 butternutbakeryblog.com##.end-wrap
 newmexicomagazine.org##.enews
@@ -5784,6 +5784,7 @@ ringkestore.com##.section-footer__newsletter-block
 candywarehouse.com##.section-newsletter
 epomaker.com##.sf__newsletter-section
 penguinrandomhouse.com##.sgnup
+macys.com##.sign-up
 groceryoutlet.com##.sign-up-banner-inner
 gustorestaurants.com##.signup
 chemistwarehouse.co.nz##.signup-bar
@@ -6507,7 +6508,7 @@ doctorofcredit.com#@#.wpdiscuz-subscribe-bar
 ! fanboy_newsletter_shopping_allowlist_general_hide.txt
 
 ! Title: uBlock filters – Other Annoyances
-! Last modified: Fri, 04 Sep 2026 08:26:03 +0000
+! Last modified: Sun, 06 Sep 2026 13:43:38 +0000
 ! Expires: 7 days
 ! Description: Filters optimized for uBlock Origin, to be used with EasyList's and/or Adguard's "Other Annoyances" list(s)
 ! License: https://github.com/uBlockOrigin/uAssets/blob/master/LICENSE
@@ -13065,7 +13066,7 @@ scribd.com###sidebar div[data-testid="sticky-wrapper"]
 ! https://github.com/uBlockOrigin/uAssets/issues/15598
 ! https://github.com/uBlockOrigin/uAssets/issues/32278
 startpage.com###main > .support-banner
-startpage.com###main > div[class^="css-"]:has(> div:first-child + div > button:first-child + div[aria-label]:last-child > svg[aria-label="x-icon"])
+startpage.com###main > div[class^="css-"]:has(> div:first-child + div > button:first-child + [aria-label]:last-child > svg[width="12"] > path[d="M11 1 1 11M1 1l10 10"])
 startpage.com#@#.a-bg-result
 startpage.com##.a-bg-result:not(:empty)
 
