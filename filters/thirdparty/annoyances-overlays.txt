@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: EasyList – Newsletter Notices
-! Last modified: Sun, 06 Sep 2026 15:48:06 +0000
+! Last modified: Mon, 07 Sep 2026 13:01:52 +0000
 ! Expires: 7 days (update frequency)
 ! *** easylist:template_header.txt ***
 !
@@ -2683,7 +2683,7 @@ aspose.com##.footersubscribe
 highsnobiety.com##.forUnit___ixF4Y
 hntrbrk.com##.form-article
 devdiscourse.com,upi.com##.form-inline
-righto.com##.form-preview
+obliviousinvestor.com,righto.com##.form-preview
 tech.co##.form-simple
 ppc.land##.form-subscribe
 mychicagosteak.com##.form-version-cid-1
@@ -6508,7 +6508,7 @@ doctorofcredit.com#@#.wpdiscuz-subscribe-bar
 ! fanboy_newsletter_shopping_allowlist_general_hide.txt
 
 ! Title: uBlock filters – Other Annoyances
-! Last modified: Sun, 06 Sep 2026 13:43:38 +0000
+! Last modified: Mon, 07 Sep 2026 12:04:29 +0000
 ! Expires: 7 days
 ! Description: Filters optimized for uBlock Origin, to be used with EasyList's and/or Adguard's "Other Annoyances" list(s)
 ! License: https://github.com/uBlockOrigin/uAssets/blob/master/LICENSE
@@ -14743,3 +14743,6 @@ parsatv.com##+js(rmnt, script, .offsetHeight)
 firestream.to##+js(set, console.clear, trueFunc)
 firestream.to##+js(set, console.table, trueFunc)
 firestream.to##+js(set, console.log, trueFunc)
+
+! https://github.com/AdguardTeam/AdguardFilters/issues/240244#issuecomment-5531985521
+investidor10.com.br##+js(trusted-set-local-storage-item, guest_user_banner_aon_closed, $now$)
