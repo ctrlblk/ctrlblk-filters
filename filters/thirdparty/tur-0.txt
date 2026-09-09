@@ -1,10 +1,10 @@
 ![Adblock Plus 2.0]
-! Checksum: 3KtFKAoZGQwRd5ZivNctUA
-! Diff-Path: ../patches/13/13-s-1788834192-3600.patch
+! Checksum: +ctW+TMmnILext/Nb9aKyQ
+! Diff-Path: ../patches/13/13-s-1788942202-3600.patch
 ! Title: AdGuard Turkish filter
 ! Description: Filter list that specifically removes ads on websites in Turkish language.
-! Version: 2.0.67.81
-! TimeUpdated: 2026-09-08T02:19:46+00:00
+! Version: 2.0.67.87
+! TimeUpdated: 2026-09-09T08:20:06+00:00
 ! Expires: 5 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -327,6 +327,7 @@ haber3.com##+js(set-constant, App.detectAdBlock, noopFunc)
 ! https://github.com/AdguardTeam/AdguardFilters/issues/208754
 ! TODO: remove when this issues will be fixed - https://github.com/AdguardTeam/Scriptlets/issues/514
 ! https://github.com/AdguardTeam/AdguardFilters/issues/201678
+tabii.com##+js(google-ima)
 ||securepubads.g.doubleclick.net/tag/js/gpt.js$script,redirect=noop.js,domain=tabii.com,important
 @@||securepubads.g.doubleclick.net/tag/js/gpt.js$domain=tabii.com
 ||imasdk.googleapis.com/js/sdkloader/ima3.js$script,redirect=noop.js,domain=tabii.com,important
@@ -1542,7 +1543,7 @@ gelirkapisi.com##div[id^="ad_"]
 indirin.co,maksatbilgi.com,bedavainternet.com.tr,turkedebiyati.org,frpnet.net,teknobh.com,begonya.com,egehaber.com,voleybolmagazin.com,kadinvekadin.net,savunmasanayist.com,aof.tc,m5dergi.com,sosyola.com,havadiskibris.com,unirehberi.com##.stream-item
 ! ##body .code-block
 techolay.net,havadiskibris.com,oyunindir.club,armoniscans.com,teknobh.com,yoldaolmak.com,aof.tc,sorumatik.co,andronova.net,koinfinans.com,hwp.com.tr,konupara.com,lafmacun.net,oyundunyasi.net,bilgenc.com,teknodiot.com,ruyashoujo.com,pchocasi.com.tr,dusuncekatalogu.com##body .code-block
-keplersociety.com,vegoltv981.com,sierato.com,dizigom.love,cehennemizle.cc,cdnvexo.site,bingozade.com,ifsaciturksex99.site,99turkifsaizle.site,trkifsalariz.site,escobarvip.blog,dizipal.website,videojs.online,epikplayer.xyz,animeler.me,player.filmizle.in,tranimaci.com,izlekolik.org,4kfilmizlesene.*##+js(no-window-open-if)
+hboxcdn.xyz,keplersociety.com,vegoltv981.com,sierato.com,dizigom.love,cehennemizle.cc,cdnvexo.site,bingozade.com,ifsaciturksex99.site,99turkifsaizle.site,trkifsalariz.site,escobarvip.blog,dizipal.website,videojs.online,epikplayer.xyz,animeler.me,player.filmizle.in,tranimaci.com,izlekolik.org,4kfilmizlesene.*##+js(no-window-open-if)
 !
 !
 ! For URL shorteners or simple sites with frequently changed ad servers.
@@ -1563,6 +1564,12 @@ dirilispostasi.com,turkuazgazetesi.net,yenialanya.com,bugunkocaeli.com.tr,cagdas
 !
 ! NOTE: Specific rules
 !
+||itemci.com/api/modal-advert?
+itemci.com##a[title="Reklam"]
+itemci.com##body > div.fixed:has(> a[title="Reklam"])
+mardinlife.com##body > div.container:has(> div.row > div.col-md-6 > a[href="https://www.artukbey.com/"])
+||demolarim.sbs/popup.js
+youizleo.sbs##+js(addEventListener-defuser, click, window.open)
 ||plusizle.org/rek/road/*.js$script
 plusizle.org###video_under_banners_wrapper
 plusizle.org###hdr_all_banners_wrapper
@@ -1629,7 +1636,8 @@ polobettv.cc##header > ul > li:not(:has(> a[href="/"]))
 polobettv.cc##.odds-container
 ||30slotintv.live/view/theme/safir/img/pageskin0001.png
 30slotintv.live##a[href^="https://cutt.ly/"]
-ekonomist.com.tr,tureng.com##.nts-ad
+lezzet.com.tr##div[id^="doganBurdaAds_"]
+lezzet.com.tr,ekonomist.com.tr,tureng.com##.nts-ad
 hizlierotikizle.com##.player-top-ad
 cnnturk.com##.adv-container
 ||zerotik.space/maczer*.js
@@ -3492,7 +3500,7 @@ bolgegundem.com.tr,bolgegundem.com,yenihaberden.com##.fixed-pub
 fivemturk.net,720pizle.*,yetiskinfilmizle.xyz,burasiduzce.com,coin-turk.com,turkerotikfilm.com##center > a[target="_blank"] > img
 yeniakit.com.tr##.sticky-ads
 cehennemstream.click###adStop
-filmizle.in,yildizkisafilm.org,movietube32.xyz##.pppx
+hboxcdn.xyz,filmizle.in,yildizkisafilm.org,movietube32.xyz##.pppx
 buzz##:matches-path(|/video/) body > .play-button-outer ~ .pppx
 burdenfly.com###block-38
 haberturk.com##.zone-area
@@ -6044,6 +6052,30 @@ lovefilmizle.net,elzemfilm.org,dizicaps.*,erotikfilmtube.com,sexfilmleriizle.com
 ! Don't mix frequently changed domains with other rules, to make it easier to maintain,
 ! except some sites that use non-template domain names of mirror sites
 !
+! Frequently changed domains: harbitv*.live
+! Source: harbitv7.live
+/harbitv\d+\.live$/##div[class^="reklam-"]
+/harbitv\d+\.live$/##body > header
+/harbitv\d+\.live$/##.footer-links
+/harbitv\d+\.live$/###big-wins-ticker
+/harbitv\d+\.live$/##.odds-container
+/harbitv\d+\.live$/##.header-top > div.header-text
+harbitv7.live##div[class^="reklam-"]
+harbitv7.live##body > header
+harbitv7.live##.footer-links
+harbitv7.live###big-wins-ticker
+harbitv7.live##.odds-container
+harbitv7.live##.header-top > div.header-text
+!
+! Frequently changed domains: kodamantv*.com
+||kodamantv*.com/*.gif
+/kodamantv\d*\.com$/###splashAd
+/kodamantv\d*\.com$/###sabitFooter
+/kodamantv\d*\.com$/##+js(no-window-open-if)
+kodamantv21.com###splashAd
+kodamantv21.com###sabitFooter
+kodamantv21.com##+js(no-window-open-if)
+!
 ! Frequently changed domains: bahisotv*.com
 ! Source: bahisotv35.com
 /bahisotv\d+\.com$/##div[style^="margin:"]:has(> a[href][target="_blank"])
@@ -6052,13 +6084,6 @@ lovefilmizle.net,elzemfilm.org,dizicaps.*,erotikfilmtube.com,sexfilmleriizle.com
 bahisotv36.com##div[style^="margin:"]:has(> a[href][target="_blank"])
 bahisotv36.com##header > ul > li.blink:has(> a[href="/"]) ~ li.blink
 bahisotv36.com##.footer-links
-!
-! Frequently changed domains: sampiyontv*.com
-! Source: sampiyontv2.com
-/sampiyontv\d+\.com$/##.srail
-/sampiyontv\d+\.com$/##.sband
-sampiyontv2.com##.srail
-sampiyontv2.com##.sband
 !
 ! Frequently changed domains: gmatv*.live
 ! Source: gmatv61.live / https://t.me/guncelmacanaliz
@@ -6113,21 +6138,6 @@ www.kacakspor4.com###player-logo
 www.kacakspor4.com##.nav-menu > li:has(> a[href="https://bit.ly/BhsKa%C3%A7akspor"])
 www.kacakspor4.com###splash-banner
 !
-! Frequently changed domains: bahisligatv*.com
-! Source: bahisligatv2.com
-||bahisligatv*.com/view/theme/ultimate/img/*.gif
-||bahisligatv*.com/view/theme/ultimate/assets/js/rc.js
-/bahisligatv\d+\.com$/##div[class^="reklam-"]
-/bahisligatv\d+\.com$/##body > header
-/bahisligatv\d+\.com$/##.odds-container
-/bahisligatv\d+\.com$/##.footer-links
-/bahisligatv\d+\.com$/##.header-top > div.header-text
-bahisligatv3.com##div[class^="reklam-"]
-bahisligatv3.com##body > header
-bahisligatv3.com##.odds-container
-bahisligatv3.com##.footer-links
-bahisligatv3.com##.header-top > div.header-text
-!
 ! Frequently changed domains: pasizle*.com
 ! Source: pasizle859.com
 ! aglint-disable no-invalid-modifiers
@@ -6160,11 +6170,6 @@ milanotv61.shop##.pageskin-click
 taratv41.shop##+js(abort-on-property-read, initPu)
 taratv41.shop##.pageskin-click
 taratv41.shop##.nk-nav-table > ul
-!
-! Frequently changed domains: porno*.shop
-! Source: porno28.shop
-/porno\d+\.shop$/##div[rel="sponsored"]
-porno28.shop##div[rel="sponsored"]
 !
 ! Frequently changed domains: papaztv*.live
 ! Source: papaztv7.live
@@ -6412,10 +6417,10 @@ turkzzersifsa3.blog,turkzzersifsa4.blog,turkzzersifsa5.blog,turkzzersifsa6.blog,
 !
 ! Frequently changed domains: turkifsalife*.blog
 ! Source: turkifsalife16.blog
-/^turkifsalife\d+\.blog$/##+js(addEventListener-defuser, DOMContentLoaded, app_advert)
-/^turkifsalife\d+\.blog$/##+js(addEventListener-defuser, click, popUnder)
-/^turkifsalife\d+\.blog$/###block-2
-/^turkifsalife\d+\.blog$/##+js(addEventListener-defuser, click, tik_sayac)
+/^turkifsalife\d+\.(blog\|lat)$/##+js(addEventListener-defuser, DOMContentLoaded, app_advert)
+/^turkifsalife\d+\.(blog\|lat)$/##+js(addEventListener-defuser, click, popUnder)
+/^turkifsalife\d+\.(blog\|lat)$/###block-2
+/^turkifsalife\d+\.(blog\|lat)$/##+js(addEventListener-defuser, click, tik_sayac)
 turkifsalife52.lat##+js(addEventListener-defuser, DOMContentLoaded, app_advert)
 turkifsalife52.lat##+js(addEventListener-defuser, click, popUnder)
 turkifsalife52.lat###block-2
@@ -7059,8 +7064,6 @@ selcuksports2.com,selcuksports3.com,selcuksports4.com,selcuksports5.com,selcuksp
 24taraftarium12.xyz##div[style="position:fixed; bottom:0px; left:0; width:100%; text-align:center; z-index:999999;"]
 .gif|$domain=24taraftarium12.xyz
 taraftarium3-24.online##a[href="https://wa.me/447347044673"]
-taraftarium24bjk14.com###ad-pageskin
-taraftarium24bjk14.com##.listAd
 ||taraftarium24pro*.site/*.gif
 /taraftarium24pro\d+\.site$/##.below-player-banner
 /taraftarium24pro\d+\.site$/##.t24-sq-overlay

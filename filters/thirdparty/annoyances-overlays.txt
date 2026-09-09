@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: EasyList – Newsletter Notices
-! Last modified: Mon, 07 Sep 2026 13:01:52 +0000
+! Last modified: Wed, 09 Sep 2026 05:18:03 +0000
 ! Expires: 7 days (update frequency)
 ! *** easylist:template_header.txt ***
 !
@@ -2274,6 +2274,7 @@ om.co##.bod-block-popup-overlay
 om.co##.bod-block-popup-wrap
 billyparisi.com##.bodysection-subscribebar
 ntd.com##.border-\[\#000777\]
+mediaweek.com.au##.border-\[\#ff6bc5\]
 bookmundi.com##.border-neutral-200.border-b.bg-white
 mashable.com##.border-secondary-300
 nysun.com##.border-sunGolden
@@ -6508,7 +6509,7 @@ doctorofcredit.com#@#.wpdiscuz-subscribe-bar
 ! fanboy_newsletter_shopping_allowlist_general_hide.txt
 
 ! Title: uBlock filters – Other Annoyances
-! Last modified: Mon, 07 Sep 2026 12:04:29 +0000
+! Last modified: Tue, 08 Sep 2026 16:00:32 +0000
 ! Expires: 7 days
 ! Description: Filters optimized for uBlock Origin, to be used with EasyList's and/or Adguard's "Other Annoyances" list(s)
 ! License: https://github.com/uBlockOrigin/uAssets/blob/master/LICENSE
@@ -8484,6 +8485,9 @@ mostream.us##^script:has-text(/devtoolsDetector|keyCode|preventDefault/)
 !#else
 mostream.us##+js(rmnt, script, /devtoolsDetector|keyCode|preventDefault/)
 !#endif
+
+! https://github.com/uBlockOrigin/uAssets/issues/27080
+kwik.cx##+js(aeld, contextmenu, preventDefault)
 
 ! https://github.com/uBlockOrigin/uAssets/issues/27772
 kursnacukrzyce.pl##+js(acs, document.addEventListener, contextmenu)
@@ -13848,7 +13852,7 @@ movie-web.app##+js(noeval-if, debugger)
 
 ! https://github.com/uBlockOrigin/uAssets/pull/34296
 redecanais.*,redecanaistv.*,redisex.*,xn-----0b4asja7ccgu2b4b0gd0edbjm2jpa1b1e9zva7a0347s4da2797e8qri.xn--1ck2e1b,xn--90afacv0clj6ac0dxa.xn--p1ai,xn--90afacv0cu2a3cr.xn--p1ai##+js(rmnt, script, /ctrlKey|clickNS|disableselect/, quitAfter, 2000)
-redecanais.*,redecanaistv.*,redisex.*,xn-----0b4asja7ccgu2b4b0gd0edbjm2jpa1b1e9zva7a0347s4da2797e8qri.xn--1ck2e1b,xn--90afacv0clj6ac0dxa.xn--p1ai,xn--90afacv0cu2a3cr.xn--p1ai##+js(nostif, new.target===undefined, 700)
+redecanais.*,redecanaistv.*,redisex.*,xn-----0b4asja7ccgu2b4b0gd0edbjm2jpa1b1e9zva7a0347s4da2797e8qri.xn--1ck2e1b,xn--90afacv0clj6ac0dxa.xn--p1ai,xn--90afacv0cu2a3cr.xn--p1ai##+js(set, document.fullscreenElement, true)
 
 ! https://github.com/uBlockOrigin/uAssets/issues/21554
 lowcygier.pl##+js(aeld, error, browser-plugin)
