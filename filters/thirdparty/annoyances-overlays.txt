@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: EasyList – Newsletter Notices
-! Last modified: Wed, 09 Sep 2026 05:18:03 +0000
+! Last modified: Wed, 09 Sep 2026 11:53:04 +0000
 ! Expires: 7 days (update frequency)
 ! *** easylist:template_header.txt ***
 !
@@ -6487,7 +6487,7 @@ elplural.com##.btn-subscribe
 minfin.com.ua##.mail-subscribe-user
 !---------------------------------Allowlists----------------------------------!
 ! *** easylist:fanboy-addon/fanboy_newsletter_allowlist.txt ***
-@@||assets.mailerlite.com/js/universal.js$script,domain=player.real.gr
+@@||assets.mailerlite.com/js/universal.js$script,domain=real.gr
 @@||e24.no/cnp-assets/components-NewsletterWidget.$~third-party
 @@||el-vidas.nl^*/phpcuong_newsletter/$script
 @@||lightboxcdn.com/vendor/$script,domain=pgachampionship.com|rydercup.com
@@ -6509,7 +6509,7 @@ doctorofcredit.com#@#.wpdiscuz-subscribe-bar
 ! fanboy_newsletter_shopping_allowlist_general_hide.txt
 
 ! Title: uBlock filters – Other Annoyances
-! Last modified: Tue, 08 Sep 2026 16:00:32 +0000
+! Last modified: Wed, 09 Sep 2026 14:48:49 +0000
 ! Expires: 7 days
 ! Description: Filters optimized for uBlock Origin, to be used with EasyList's and/or Adguard's "Other Annoyances" list(s)
 ! License: https://github.com/uBlockOrigin/uAssets/blob/master/LICENSE
@@ -8721,6 +8721,14 @@ trucoon.com.br##*:style(-webkit-touch-callout: auto !important; -moz-touch-callo
 
 ! https://github.com/uBlockOrigin/uAssets/pull/34205
 orange.ro##+js(aeld, /^(?:pointerdown|mousedown)$/, , elements, .js-pachete-online-internet2)
+
+! https://github.com/uBlockOrigin/uAssets/issues/34432
+one.oregon.gov##+js(aeld, contextmenu, event.dispatch)
+!#if env_firefox
+one.oregon.gov##input[onpaste="return false"]:remove-attr(onpaste)
+!#else
+one.oregon.gov##+js(ra, onpaste, input[onpaste="return false"], complete)
+!#endif
 
 ! ================================================ END: Anti copy, right-click, devtools, text select etc. ==========================================================================
 

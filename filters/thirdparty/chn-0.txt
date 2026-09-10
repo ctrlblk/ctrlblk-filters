@@ -1,10 +1,10 @@
 ![Adblock Plus 2.0]
-! Checksum: 2DDEY9ZbQgEL/xafK+nFcQ
-! Diff-Path: ../patches/224/224-s-1788931078-3600.patch
+! Checksum: 3pqDEuL6txqA+cvad5jl8Q
+! Diff-Path: ../patches/224/224-s-1789007049-3600.patch
 ! Title: AdGuard Chinese filter
 ! Description: EasyList China + AdGuard Chinese filter. Filter list that specifically removes ads on websites in Chinese language.
-! Version: 2.1.65.4
-! TimeUpdated: 2026-09-09T05:15:38+00:00
+! Version: 2.1.65.11
+! TimeUpdated: 2026-09-10T02:21:14+00:00
 ! Expires: 5 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -1140,6 +1140,7 @@ ipv6.baidu.com,www.baidu.com,www1.baidu.com,xueshu.baidu.com###content_left > .r
 !
 ! NOTE: Specific rules
 !
+programme.tvb.com##.tvb-ads--empty
 mscw-guidebook.com##.plaza-ad-wrap
 adersaytech.com##.adersay-ad
 ||peachring.com/new-page/js/human-verify.js$script
@@ -3233,6 +3234,7 @@ banzhu1111111.com,banzhu2222222.com,banzhu3333333.com,banzhu4444444.com,banzhu55
 fxshu.top,360lele.cc,huoqwk.com,wap.biqugewx.info##+js(no-setTimeout-if, addEventListener("touchstart")
 enhuku.com##+js(set-constant, adObj, noopFunc)
 m.13xsw.com,wap.yushuwu.cloud##+js(addEventListener-defuser, touchend, clientheight)
+||m.1024txt.com/js/gd.js?v=$script
 *$script,xhr,image,3p,domain=360lele.cc|fxshu.top
 *$script,xhr,3p,domain=m.1024txt.com
 *$script,3p,domain=m.roushuwu.vip|xiaoaimh.com
@@ -5453,11 +5455,21 @@ newduba.cn###jq_youxi
 .z.dkt-ib.com
 ||cnzz.trafficmanager.net^
 ||cupfox.app^$3p
+||m30bh0coz2.com^
+||quarterdeck96.top^
+||tshnjvgecwtbzk.com^
+||xybrf8tcvf.com^
+||8h6whvlpnz.com^
+||qcwvmdi.com^
 ||propeller73.com^
 ||55nw8b63i.com^
 ||nplsxlziftfbnk.com^
 ||j12eaw9xs.com^
 ||43gu7zzn0.com^
+||axq9j15p0.com^
+||geav5man0.com^
+||xlx2ddw4f.com^
+||tlre4aso7.com^
 ||no99z05m4p.com^
 ||pmpantdgzvttbk.com^
 ||kowt80ufwg.com^
