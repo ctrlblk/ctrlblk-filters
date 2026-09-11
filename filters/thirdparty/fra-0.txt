@@ -1,10 +1,10 @@
 ![Adblock Plus 2.0]
-! Checksum: hX+ox8TAjvFMaJlgtwf7eQ
-! Diff-Path: ../patches/16/16-s-1789021709-3600.patch
+! Checksum: RaL5d4BF+5kIy1c8jpDsIA
+! Diff-Path: ../patches/16/16-s-1789078566-3600.patch
 ! Title: AdGuard French filter
 ! Description: Liste FR + AdGuard French filter. Filter list that specifically removes ads on websites in French language.
-! Version: 2.0.57.70
-! TimeUpdated: 2026-09-10T06:25:23+00:00
+! Version: 2.0.57.74
+! TimeUpdated: 2026-09-10T22:13:02+00:00
 ! Expires: 5 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -869,6 +869,9 @@ $xhr,3p,denyallow=mega.co.nz|mega.nz|libs.baidu.com|ilfcdn.li|bytecdntp.com|dood
 !
 !
 !
+femmeactuelle.fr##.article-outbrain
+femmeactuelle.fr##div[class]:has(>[data-placeholdertext] + div:last-child)
+femmeactuelle.fr##div[class*=" "]:has(>[data-introtext])
 ||alloschool.com/*assets/images/sponso-v
 alloschool.com##.position-relative > a[target="_blank"] > img
 opex360.com##.sidebar-content > div.widget_custom_html:has(div.ad-container)
@@ -891,7 +894,7 @@ zone-telechargement.*###dle-content > center > a[rel="nofollow noreferrer"] > im
 futura-sciences.com##.zone-insert
 futura-sciences.com##.section-interest
 usine-digitale.fr##div[style="width:100%;height:40px;background:#fff"]
-voici.fr##.coreads-skin-wrapper
+femmeactuelle.fr,voici.fr##.coreads-skin-wrapper
 ||exposure.api.redbee.live/*/customer/RTBF/businessunit/Auvio/entitlement/$xhr,removeparam=deviceType
 lematin.ch##section[class*="ad-content-wrapper"] > div[class*="-1"]:has(div[data-ad-unit-id])
 sudinfo.be##.r-immoweb
@@ -3612,7 +3615,6 @@ _werbebanner_
 ||drim.space^$3p
 ||drowmffuheovnr.com^$3p
 ||duapps.com^$3p
-||duporno.biz^$3p
 ||dustin5043.fr^$3p
 ||dvd-explorer.com^$3p
 ||dvetech.fr^$3p
@@ -4289,17 +4291,20 @@ voethrusts.cfd
 ||acceptedswordtomato.com^
 ||accessorydairy.com^
 ||accessorygraph.com^
+||accessoryreflections.com^
 ||accidentalcrownincredible.com^
 ||accidentallycopiespatted.com^
 ||acclaimbedtime.com^
 ||acclaimed-exchange.com^
 ||acclaimeddates.com^
+||acclaimreek.com^
 ||accoladetypesoasis.com^
 ||accommodateabject.com^
 ||accommodateautotrack.com^
 ||accommodationsubsided.com^
 ||accompanimentrealistic.com^
 ||accompanyingparameters.com^
+||accompanyingtoll.com^
 ||accomplicemiracle.com^
 ||accordancecaskmilk.com^
 ||accordancespotted.com^
@@ -4310,6 +4315,7 @@ voethrusts.cfd
 ||accountshierarchyprice.com^
 ||accountsmineralstretch.com^
 ||accountssticking.com^
+||accountsuffering.com^
 ||accreditedquite.com^
 ||accumulategrownupcasino.com^
 ||accusationdisquiet.com^
@@ -4317,6 +4323,8 @@ voethrusts.cfd
 ||accuseraccustomed.com^
 ||accustomcompact.com^
 ||accustomedmonth.com^
+||accustomedpronounced.com^
+||acerbityaisle.com^
 ||acerbityconvenience.com^
 ||acerbitylockdown.com^
 ||acermired.com^
@@ -4363,6 +4371,7 @@ voethrusts.cfd
 ||adaptedshake.com^
 ||adaptlipclamour.com^
 ||addingdetestable.com^
+||additionalselfportrait.com^
 ||additiongeneralization.com^
 ||additionspearlthaw.com^
 ||addressangelaoccasional.com^
@@ -4384,6 +4393,7 @@ voethrusts.cfd
 ||admirercape.com^
 ||admirernut.com^
 ||admissiblepedal.com^
+||admissibletracejuxtapose.com^
 ||admissiongrater.com^
 ||admithelperbusy.com^
 ||admonishmare.com^
@@ -4438,6 +4448,7 @@ voethrusts.cfd
 ||advisorhurtfulqueen.com^
 ||advisorquaint.com^
 ||aedilestarets.shop^
+||aegerjapygid.rest^
 ||aelionvel.com^
 ||aelwynvel.com^
 ||aenwynmist.com^
@@ -4455,6 +4466,7 @@ voethrusts.cfd
 ||affectionatedragon.com^
 ||affectionmagnify.com^
 ||affectionmountcrooked.com^
+||affectionsdesiredstatesman.com^
 ||affectionsinformantin.com^
 ||affectionsscuffle.com^
 ||affectsyntaxthousand.com^
@@ -4465,7 +4477,9 @@ voethrusts.cfd
 ||affirmwreathopportunity.com^
 ||afflatebog.top^
 ||afflictionevilorganized.com^
+||afflictionexasperate.com^
 ||afflictionrhythm.com^
+||affluenceethel.com^
 ||affluentcompere.com^
 ||affluentmirth.com^
 ||afikdvzf.com^
@@ -4492,6 +4506,7 @@ voethrusts.cfd
 ||agendacomedian.com^
 ||agendaorator.com^
 ||agenthomeless.com^
+||agentnewsinaccessible.com^
 ||agentpulp.com^
 ||agentspitecompulsive.com^
 ||agentweakermental.com^
@@ -4527,6 +4542,7 @@ voethrusts.cfd
 ||agreementstockings.com^
 ||agreementunfinished.com^
 ||agriaonethe.com^
+||agriculturalcoyhose.com^
 ||agriculturalhollow.com^
 ||agriculturenominate.com^
 ||agrophip.net^
@@ -4598,6 +4614,7 @@ voethrusts.cfd
 ||aldaugers.com^
 ||aldusmiskals.com^
 ||aleassbun.site^
+||alecmind.com^
 ||alecreapstrategic.com^
 ||alexisceilingrelease.com^
 ||alfredthwart.com^
@@ -4619,15 +4636,19 @@ voethrusts.cfd
 ||allegationmonks.com^
 ||allegationobtain.com^
 ||allegationpitfall.com^
+||allegiancegoldfish.com^
+||allergicboom.com^
 ||allergicguilty.com^
 ||allergicpocketanswered.com^
 ||alleviatedesignertheir.com^
 ||alleycranealoof.com^
+||alleymoreoverboring.com^
 ||alliedbiopsybroke.com^
 ||alllinear.com^
 ||allmobexpo.com^
 ||allnestinfinite.com^
 ||allocatefemaleshunger.com^
+||allocatetexturepronunciation.com^
 ||allodawakes.top^
 ||allotdiscussiondivision.com^
 ||allotshyoides.com^
@@ -4682,6 +4703,7 @@ voethrusts.cfd
 ||amazeprotectiveabonnement.com^
 ||amazinglyperception.com^
 ||amazingtoilalthough.com^
+||ambaryceded.qpon^
 ||ambassadorsecretion.com^
 ||ambeartictor.com^
 ||ambiguityhalfmoon.com^
@@ -4692,6 +4714,7 @@ voethrusts.cfd
 ||amebasravelin.shop^
 ||amelementsheartbroken.com^
 ||amendablecirculateporter.com^
+||amendebarkeasier.com^
 ||amiablelookssuspense.com^
 ||amidbow.com^
 ||amidinetrave.com^
@@ -4743,6 +4766,7 @@ voethrusts.cfd
 ||anasitting.com^
 ||anatomyassault.com^
 ||anbavidkids.shop^
+||anchorclimate.com^
 ||anchovyliversquirt.com^
 ||anchovytied.shop^
 ||anddomelevel.com^
@@ -4756,6 +4780,7 @@ voethrusts.cfd
 ||animateddanglediary.com^
 ||animeplaynow.com^
 ||animizefanweest.qpon^
+||animositylydia.com^
 ||anireneweasel.com^
 ||anjmaoagmnbkn.top^
 ||ankletomatoes.com^
@@ -5482,6 +5507,7 @@ voethrusts.cfd
 ||choubsebsu.com^
 ||chymasekilhigcoda.help^
 ||chymiaaxunge.top^
+||chymiatipple.rest^
 ||chytridaustral.com^
 ||cidreeth.com^
 ||cissiesserfismuproom.help^
@@ -5730,6 +5756,7 @@ voethrusts.cfd
 ||didmakingby.xyz^
 ||didspack.com^
 ||dielsahidic.shop^
+||diesesstrate.rest^
 ||difficultfog.com^
 ||digiads.tv^
 ||digueravi.cfd^
@@ -5812,6 +5839,7 @@ voethrusts.cfd
 ||drownerlinkboy.shop^
 ||drownshangar.com^
 ||droxvik.cfd^
+||drubbedaloed.cfd^
 ||drubpainch.com^
 ||druqkstwwvg.com^
 ||drydrum.com^
@@ -6036,13 +6064,13 @@ voethrusts.cfd
 ||fixehartal.com^
 ||fkehg.com^
 ||flakinggraces.rest^
-||flamechannel.com^
 ||flawedrelaxation.com^
 ||fleckedching.shop^
 ||flewherbert.qpon^
 ||flickeringchutney.com^
 ||flotasgallow.com^
 ||flowhot.info^
+||fluingegging.rest^
 ||flyeryodels.shop^
 ||flyoverchild.shop^
 ||flypepah.com^
@@ -6246,10 +6274,12 @@ voethrusts.cfd
 ||guhrbowie.help^
 ||guimpefesses.com^
 ||guindeencurl.com^
+||gullahfulvid.cfd^
 ||gullibleregulator.com^
 ||gulpiersqueaky.shop^
 ||gulsachbevil.com^
 ||gunningminerva.rest^
+||gunsterpokey.shop^
 ||gus.host^
 ||guserrivose.rest^
 ||gustierstrond.com^
@@ -6318,7 +6348,6 @@ voethrusts.cfd
 ||heloereister.top^
 ||helpfulcloister.com^
 ||hemnes.win^
-||hentheautumnca.org^
 ||henwisedug.top^
 ||herdethi.net^
 ||herdgrip.com^
@@ -6580,7 +6609,6 @@ voethrusts.cfd
 ||kankienapalm.rest^
 ||kansasgaslike.qpon^
 ||karakuloutmate.com^
-||karissavip.com^
 ||kasych.net^
 ||katogleecurie.qpon^
 ||katuhus.com^
@@ -6601,6 +6629,7 @@ voethrusts.cfd
 ||khanshabus.com^
 ||khedahsmimer.com^
 ||khedivacubical.com^
+||khulaexpense.rest^
 ||kieltonna.qpon^
 ||kiloh.ovh^
 ||kiltveritas.shop^
@@ -6686,6 +6715,7 @@ voethrusts.cfd
 ||lestaigames.com^
 ||lexintaria.com^
 ||lgbtrights.xyz^
+||lgthuphelya.qpon^
 ||lgxdwxzgfxvy.com^
 ||liardroun.shop^
 ||liasingmyxopod.com^
@@ -6929,6 +6959,7 @@ voethrusts.cfd
 ||mtssuddmanoc.cyou^
 ||muddishhagrode.help^
 ||mugglesskyfte.com^
+||mulchlamiid.qpon^
 ||muletascaconym.qpon^
 ||muletasyarr.rest^
 ||mulleyhoer.shop^
@@ -6943,6 +6974,7 @@ voethrusts.cfd
 ||muskurahat.com^
 ||muskurahatmusic.com^
 ||musselboist.com^
+||mustardbespy.shop^
 ||mutatesuet.com^
 ||mutedsquare.com^
 ||mutipugly.com^
@@ -7317,6 +7349,7 @@ voethrusts.cfd
 ||piecesbumpierfilched.qpon^
 ||pieclayton.com^
 ||pietismreddles.com^
+||pikeloxamic.qpon^
 ||pikiblurb.cfd^
 ||pilinshantih.com^
 ||piliscuddies.shop^
@@ -7453,6 +7486,7 @@ voethrusts.cfd
 ||purgergallium.com^
 ||purimtilsit.com^
 ||puscomosca.com^
+||pusgutreggae.cfd^
 ||pusherblight.com^
 ||pushinkaa.com^
 ||pushtrust.com^
@@ -7551,6 +7585,7 @@ voethrusts.cfd
 ||reatushaithal.com^
 ||rebsoapo.com^
 ||recharsemiarc.com^
+||recoctunquod.cfd^
 ||redebitapedom.com^
 ||redeedslubberairflow.qpon^
 ||redichat.com^
@@ -7562,6 +7597,7 @@ voethrusts.cfd
 ||reemebal.com^
 ||reesrhabdos.cfd^
 ||reffpa.com^
+||refixplained.cfd^
 ||reflexcash.com^
 ||reforgefuhrer.com^
 ||refpa47525.top^
@@ -7734,6 +7770,7 @@ voethrusts.cfd
 ||semenaonline.cz^
 ||semenaonline.sk^
 ||seminaloakweb.com^
+||seminaraileenreschedule.com^
 ||semitacense.cfd^
 ||semplicewebsites.com^
 ||sensismderog.com^
@@ -7819,6 +7856,7 @@ voethrusts.cfd
 ||sizablehazers.com^
 ||sjoukeexedral.com^
 ||skalnona.qpon^
+||skaterscatty.shop^
 ||skatistlollard.com^
 ||skeesisoxime.com^
 ||skiddootsine.qpon^
@@ -7913,6 +7951,7 @@ voethrusts.cfd
 ||ssuserau.qpon^
 ||stablesunflower.com^
 ||stacypigweed.cyou^
+||staffsiodic.qpon^
 ||staimpaissoy.net^
 ||staiwaich.net^
 ||staiwoob.xyz^
@@ -7962,6 +8001,7 @@ voethrusts.cfd
 ||sueivypeg.com^
 ||sufiunlust.qpon^
 ||sundhopen.site^
+||sunilsmokery.shop^
 ||sunliketaisch.com^
 ||superbendorse.qpon^
 ||superbportal.life^
@@ -7976,7 +8016,6 @@ voethrusts.cfd
 ||swailsrecoal.com^
 ||swcfbbvhvrlrh.com^
 ||sweeperpiltock.com^
-||swiftmining.win^
 ||swirlstousy.shop^
 ||swyleekish.qpon^
 ||swyvermont.qpon^
@@ -8427,7 +8466,6 @@ voethrusts.cfd
 ||wetnessscug.com^
 ||wettestspanemy.com^
 ||wexevoom.net^
-||wfajsrtijdvum.website^
 ||wgoto.xyz^
 ||whangamspriest.com^
 ||wharrownecia.com^
@@ -8596,13 +8634,11 @@ voethrusts.cfd
 ||afminer.com^$3p
 ||ajplugins.com^$3p
 ||altpool.pro^$3p
-||analytics.blue^$3p
 ||authedmine.com^$3p
 ||averoconnector.com^$3p
 ||bablace.com
 ||bestcoinsignals.com^$3p
 ||bestsrv.de^$3p
-||biberukalap.com
 ||binance.org^$3p
 ||binarybusiness.de^$3p
 ||bitclubnetwork.com^$3p
@@ -8613,7 +8649,6 @@ voethrusts.cfd
 ||cashbeet.com
 ||cdn1.pebx.pl^
 ||cfcdist.gdn^$3p
-||clgserv.pro^$3p
 ||cloud-miner.eu^$3p
 ||cloudcoins.co^$3p
 ||cnhv.co^$3p
@@ -8627,8 +8662,6 @@ voethrusts.cfd
 ||coinnebula.com^$3p
 ||coinpot.co^$3p
 ||cookiescript.info^$3p
-||cookiescriptcdn.pro^$3p
-||cpufan.club^$3p
 ||crypto-coins.club^$3p
 ||crypto-coins.com^$3p
 ||crypto-loot.com^$3p
@@ -8908,7 +8941,6 @@ voethrusts.cfd
 ||jsadapi.com^$popup,3p
 ||juicyads.rocks^$popup,3p
 ||justgetitfaster.com^$popup,3p
-||karissavip.com^$popup
 ||kastafor.com^$popup,3p
 ||katuhus.com^$popup,3p
 ||kfiopkln.com^$popup,3p
@@ -10408,7 +10440,6 @@ $stylesheet,3p,domain=1fichier.com|7-up.net|9xupload.me|allviid.xyz|dailyuploads
 ||d1k4bi32qf3nf2.cloudfront.net/*/habillage_
 ||d1k5qlz5hbz8am.cloudfront.net^
 ||d1liph191ya3ob.cloudfront.net/assets/banners/
-||d1lxz4vuik53pc.cloudfront.net^
 ||d1mgu8uq9tc68.cloudfront.net^
 ||d1mob6w0cdx3a7.cloudfront.net^
 ||d1mroptkfdxko5.cloudfront.net^
@@ -10453,7 +10484,6 @@ $stylesheet,3p,domain=1fichier.com|7-up.net|9xupload.me|allviid.xyz|dailyuploads
 ||d2k8yz7zlc0yyi.cloudfront.net^
 ||d2lxztepvo7ma1.cloudfront.net^
 ||d2mgk3zfd02vd2.cloudfront.net^
-||d2nje72ms8ylvb.cloudfront.net^
 ||d2nrdy2pg3k168.cloudfront.net^
 ||d2nzjxafm0iowq.cloudfront.net^
 ||d2od2b2huvmzuj.cloudfront.net^
@@ -10489,7 +10519,6 @@ $stylesheet,3p,domain=1fichier.com|7-up.net|9xupload.me|allviid.xyz|dailyuploads
 ||d3ciks47fhh9wv.cloudfront.net^
 ||d3cl7ldsgbm5qu.cloudfront.net^
 ||d3d52lhoy0sh2w.cloudfront.net^
-||d3dq75ilej3qlf.cloudfront.net^
 ||d3edizycpjjo07.cloudfront.net^
 ||d3elm8wezzwg42.cloudfront.net^
 ||d3f4u3khr0ycep.cloudfront.net^
@@ -10499,7 +10528,6 @@ $stylesheet,3p,domain=1fichier.com|7-up.net|9xupload.me|allviid.xyz|dailyuploads
 ||d3k68ig7ckr3r6.cloudfront.net^
 ||d3lidvwz6p81oz.cloudfront.net^
 ||d3mcf0n3hvvfk4.cloudfront.net^
-||d3ncat0syb6rim.cloudfront.net^
 ||d3oep4gb91kpuv.cloudfront.net^
 ||d3owq2fdwtdp2j.cloudfront.net^
 ||d3oyytf0n6db9a.cloudfront.net^
@@ -10518,7 +10546,6 @@ $stylesheet,3p,domain=1fichier.com|7-up.net|9xupload.me|allviid.xyz|dailyuploads
 ||d49z64r3ud4kq.cloudfront.net^
 ||d59gpuqareznf.cloudfront.net^
 ||d5em5plenp2k5.cloudfront.net^
-||d5z42oph1suk.cloudfront.net^
 ||d6swopgiplmy0.cloudfront.net^
 ||d7t3qhxxipimh.cloudfront.net^
 ||d9tnvwv7i2n85.cloudfront.net^
@@ -11001,6 +11028,7 @@ $stylesheet,3p,domain=1fichier.com|7-up.net|9xupload.me|allviid.xyz|dailyuploads
 ||cdn.betacie.com^*/autopromo/
 ||cdn.flvto.biz/js/*_popup_
 ||cdn.flvto.biz/push_app.js
+||cdn.jsdelivr.net/gh/anime-sama/*/eneba
 ||cdn.lechiffredaffaires.dz/wp-content/uploads/2022/03/investplus-300x201.png
 ||cdn.mgig.fr/2020/03/mg-955d46a3-59d5-462b-9a97-full.jpg
 ||cdn.ouedkniss.com/medias/okps/
@@ -14982,6 +15010,7 @@ lagazettedescommunes.com##.actus-case-pub
 lagazettedescommunes.com##.actus-home-right-pub
 aerobuzz.fr,allodocteurs.fr,auchan.fr,courrierinternational.com,directvelo.com,dna.fr,e-sante.fr,fabriquer-des-meubles.fr,freepik.com,gamer-network.fr,gqmagazine.fr,journalmetro.com,lachainemeteo.com,ladepeche.fr,lematin.ch,lequotidiendumedecin.fr,lopinion.fr,marques.expert,msn.com,p-nintendo.com,photo.fr,rue89lyon.fr,smail.fr,soundlightup.com,tetu.com,truecaller.com,ubergizmo.com,webtor.io,zapiks.fr##.ad
 midilibre.fr,sudouest.fr##.ad-box
+anime-sama.to##.ad-container
 basketusa.com##.ad-large
 eurosport.fr##.ad.mpu
 vinyculture.com##.ad2
@@ -15252,7 +15281,7 @@ semageek.com##.h300
 hitek.fr##.h_ad_970x250
 francetransactions.com##.hab
 homecinema-fr.com##.hab_link
-cbanque.com,clubpronostics.com,gratuiciel.com,lelogicielgratuit.com,logicielmac.com,logitheque.com,made-in-algeria.com,made-in-tunisia.net,maghrebex.com,mediscom.com,quetelecharger.com,toucharger.com##.habillage
+cbanque.com,clubpronostics.com,gratuiciel.com,lelogicielgratuit.com,logicielmac.com,logitheque.com,made-in-algeria.com,made-in-tunisia.net,maghrebex.com,mediscom.com,quetelecharger.com,sofoot.com,toucharger.com##.habillage
 le2minutes.com,senscritique.com##.habillage-left
 le2minutes.com,senscritique.com##.habillage-right
 le2minutes.com##.habillage-top

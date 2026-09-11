@@ -1,10 +1,10 @@
 ![Adblock Plus 2.0]
-! Checksum: goEkMhe93xSI576y+76VIQ
-! Diff-Path: ../patches/7/7-s-1789024806-3600.patch
+! Checksum: qw1yYvPk3wf5rfrIONIdKQ
+! Diff-Path: ../patches/7/7-s-1789108073-3600.patch
 ! Title: AdGuard Japanese filter
 ! Description: Filter that enables ad blocking on websites in Japanese language.
-! Version: 2.0.76.37
-! TimeUpdated: 2026-09-10T07:16:19+00:00
+! Version: 2.0.76.43
+! TimeUpdated: 2026-09-11T06:24:01+00:00
 ! Expires: 5 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -1596,7 +1596,6 @@ hostlove.com###index_nav > h1:style(padding-top: 30px!important;)
 /api/user/turnstile-config|$xhr,~3p
 .com/PayPaynew784310.apk$document
 /landers/api/integration/back.js
-.io/aes.js|$~3p
 .cn/svc/crypto/session|$xhr,~3p
 /DxOoykKhIT/api?token=$xhr
 .com/security/ap/loginlogout/login/creditlimit/inquirycreditlimit/D10203840^$document
@@ -1929,6 +1928,8 @@ gundamlog.com###more > iframe[src^="https://richlink.blogsys.jp"]
 !
 ! NOTE: Specific rules
 !
+bestcarweb.jp##article.js-article > p.center:has(> a[class^="goonet-ad-below-"]) + p:style(margin-top: 40px !important;)
+jetstream.blog##.jetstream-ad-lazy-placeholder
 nikkansports.com##.side_reco-box:has(> a[href^="https://amzn.to/"])
 bestcarweb.jp##article.js-article > p.center:has(> a[class^="goonet-ad-below-"])
 e-talentbank.co.jp##.etb-photo--item--ad
@@ -7473,6 +7474,8 @@ appllio.com##.ad-appllio-Title
 vague.style,bokete.jp,eroita.net,adacomi.com,mwed.jp,e-nenpi.com,egolf.jp##div[style^="min-height:250px"]
 merkmal-biz.jp##.box[style="min-height:900px"]
 lasisa.net##aside.box
+lasisa.net##li.swiper-slide-job-offer:remove()
+||lasisa.net/wp-json/mediavague/v1/jobs
 as-web.jp###imgUpperRectangle
 as-web.jp###topbillboard
 my-terrace.com###pc_big_ads_before_subfooter
@@ -9961,6 +9964,7 @@ kanaloco.jp##.top-head-bnr
 tktube.com##.fp-player > div[style*="z-index:"]
 tktube.com##.footer-margin
 tktube.com##.table
+friday.kodansha.co.jp##aside[class^="common_sideColumn"] > div[class^="detail_sideColumnItem"]:style(height: auto !important; padding-top: 0 !important;)
 friday.kodansha.co.jp##div[class^="detail_adContainer"]:style(display: none !important;)
 friday.kodansha.co.jp##div[class*="styles_sideColumnAd"]
 friday.kodansha.co.jp##div[class^="detail_adBillboard"]
@@ -12280,6 +12284,8 @@ adguard.info,adguard.com,adguard.app##.hello_from_adguard_japanese
 !
 !
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/240812
+adverts.ie#@#.my_ads
 ! www.cosme.net top images
 @@||img.ak.impact-ad.jp/fh/$image,script,domain=cosme.net
 @@||impact-ad.jp/ad?$domain=cosme.net
