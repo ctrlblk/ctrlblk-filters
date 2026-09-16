@@ -1,10 +1,10 @@
 ![Adblock Plus 2.0]
-! Checksum: M1xKDInYpBM2TwGUMWklQw
-! Diff-Path: ../patches/9/9-s-1789370949-3600.patch
+! Checksum: N3vpxp4I7zdZqNTZR7XgUA
+! Diff-Path: ../patches/9/9-s-1789532466-3600.patch
 ! Title: AdGuard Spanish/Portuguese filter
 ! Description: Filter list that specifically removes ads on websites in Spanish, Portuguese, and Brazilian Portuguese languages.
-! Version: 2.0.35.75
-! TimeUpdated: 2026-09-14T07:25:00+00:00
+! Version: 2.0.35.78
+! TimeUpdated: 2026-09-16T04:17:33+00:00
 ! Expires: 5 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -204,6 +204,8 @@
 !
 !
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/241468
+remedioscase.xyz##+js(prevent-fetch, adsbygoogle)
 ! https://github.com/AdguardTeam/AdguardFilters/issues/241284
 pastes.app###support-notice-modal
 ! https://github.com/uBlockOrigin/uAssets/issues/34454
@@ -2178,6 +2180,8 @@ actualidadiphone.com,lucrandoideias.com,proandroid.com,lusometeo.com,kltutors.co
 !
 ! NOTE: Specific rules
 !
+mercadobitcoin.com.br##a[href^="https://cripto.mb.com.br/"] > img
+mercadobitcoin.com.br##li.mb-sidebar-widget:has(> div[class^="create-account-widget"] a[href^="https://cripto.mb.com.br/"])
 pastes.app##section.relative > .bg-primary-50
 subsbr.net##.xbr-single-vast-wrap
 subsbr.net##+js(adjust-setTimeout, tick)
@@ -2190,6 +2194,8 @@ animegratis.org##.amazon-ep-card
 animegratis.org##.footer-ad-container
 animegratis.org##.preroll-overlay:style(display: none !important;)
 animegratis.org##+js(set-attr, iframe[data-src], src, [data-src])
+||animegratis.net/js/layout-deferred-loader.js
+animegratis.net##div[aria-label="Anuncio patrocinado"]
 statusinvest.com.br##.popup-fixed
 statusinvest.com.br##.ads-lazy-group
 statusinvest.com.br##.div.paper > div.cardFutureColor
@@ -3506,6 +3512,8 @@ avpasion.com##.avp-block
 avpasion.com##div[id^="ssm_"]
 diarioelsalvador.com##.diari-slider:has(> ul div > a.adv-link)
 laprensagrafica.com##div[class^="jsx-"] > div.border:has(> div > div > div#taboola-below-article-thumbnails-unit)
+mobills.com.br##div[id^="ads-block_"]
+mobills.com.br##div[data-ad-type="content"]:has(> .adsbygoogle)
 mobills.com.br##div[id^="container-ads-"]
 mobills.com.br##div[data-ad-type="top"]
 mobills.com.br##.adsgpt
