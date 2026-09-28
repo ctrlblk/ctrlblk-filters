@@ -1,10 +1,10 @@
 ![Adblock Plus 2.0]
-! Checksum: 4dN3NJKo8WgJC1Km3S+xfw
-! Diff-Path: ../patches/16/16-s-1790482219-3600.patch
+! Checksum: aMLegf9NwkR2R0DBi0idWQ
+! Diff-Path: ../patches/16/16-s-1790576010-3600.patch
 ! Title: AdGuard French filter
 ! Description: Liste FR + AdGuard French filter. Filter list that specifically removes ads on websites in French language.
-! Version: 2.0.57.81
-! TimeUpdated: 2026-09-27T04:07:05+00:00
+! Version: 2.0.57.83
+! TimeUpdated: 2026-09-28T06:10:54+00:00
 ! Expires: 5 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -295,7 +295,9 @@ dhnet.be##+js(set-constant, bAdBlocker, false)
 @@||service.videoplaza.tv/proxy/pulse-sdk-html5^$domain=lesoir.be
 ! https://github.com/AdguardTeam/AdguardFilters/issues/125968
 radio.fr##+js(abort-on-property-read, Object.prototype.autoRecov)
+! https://github.com/AdguardTeam/AdguardFilters/issues/242769
 ! https://github.com/AdguardTeam/AdguardFilters/issues/125261
+animationdigitalnetwork.com,animationdigitalnetwork.fr##+js(no-setTimeout-if, getComputedStyle)
 animationdigitalnetwork.com,animationdigitalnetwork.fr##+js(prevent-fetch, pagead2.googlesyndication.com)
 ||imasdk.googleapis.com/js/sdkloader/ima3.js$script,redirect=google-ima.js,important,domain=animationdigitalnetwork.fr|animationdigitalnetwork.com
 ! pianoweb.fr
@@ -870,6 +872,11 @@ $xhr,3p,denyallow=mega.co.nz|mega.nz|libs.baidu.com|ilfcdn.li|bytecdntp.com|dood
 !
 !
 !
+kami-labs.fr##div[id^="kl-ad-"]
+kami-labs.fr##div[class^="kl-fs-ad-"]
+||kami-labs.fr/wp-content/uploads/*/ad-
+||kami-labs.fr/wp-content/plugins/autoarticle-receiver/assets/js/house-ads.js
+||kami-labs.fr/wp-content/plugins/autoarticle-receiver/assets/js/ads-widget.js
 footmercato.net##.article__iframe--dailymotion-sticky
 femmeactuelle.fr##.article-outbrain
 femmeactuelle.fr##div[class]:has(>[data-placeholdertext] + div:last-child)
