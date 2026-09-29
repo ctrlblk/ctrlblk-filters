@@ -9277,6 +9277,7 @@ $popup,domain=176.114.0.126|176.114.0.132|37.220.36.15|assiatv.com|cdnpotok.com|
 ||catcut.net^$popup,domain=mobile-4at-obshenie.chatovod.ru|mobile-chat-obshenie.jimdo.com
 ||clck.ru^$popup,domain=playground.ru
 ||com/?id=*&t=direct^$popup
+||fon.bet/promo/$popup
 ||gemius.pl^$popup,domain=terrikon.com
 ||getitbit.net/ads/$popup
 ||goo.gl^$popup,domain=gamegpu.com|vsofte.biz
@@ -9321,6 +9322,7 @@ $popup,domain=176.114.0.126|176.114.0.132|37.220.36.15|assiatv.com|cdnpotok.com|
 /adv_clk_redirect.php?$popup
 /bens/vinos.js$popup
 /click/body.php?id=*&hash=$popup
+/click?utm_source=var&offer_id=*={partner}$popup
 /clicks/*==.php$popup
 /code/click.php?id=$popup
 /fcgi-bin/dispatch.fcgi?$popup
@@ -9572,6 +9574,7 @@ $popup,domain=176.114.0.126|176.114.0.132|37.220.36.15|assiatv.com|cdnpotok.com|
 ||mobilecontents.mobi^$popup
 ||molot-tora.com^$third-party,popup
 ||molot-toras.com^$third-party,popup
+||monoclick.top^$popup
 ||mxttrf.com^$popup
 ||my.id/help/?$third-party,popup
 ||myoctotracker.com^$popup
@@ -12338,6 +12341,7 @@ igdz1.ru^$script,domain=igdz.ru
 ||lostfilm.tv/pereP/?a=
 ||lostpix.com/pic_lospix/radeika_$image
 ||lottielab.com^$third-party,domain=nnm-club.me|nnmclub.ro|nnmclub.to
+||love-games1.net/distribution.
 ||love-games1.net/yb2.
 ||love4str.ru^$script
 ||loveradio.ru/background/$image
@@ -14696,6 +14700,7 @@ litres.ru###partnerLine
 footballua.tv###partner_title
 sibmama.info,sibmama.ru###partners
 dofiga.net###pbie_25
+sportcsat.ru###pc-container
 poleno.net###pddk221
 onyxgame.com###pegination ~ a
 sportrecs.com###player .MuiButton-containedPrimary
@@ -15362,7 +15367,7 @@ sravni.ru##.adfox_placeholder
 libertycity.net,libertycity.ru,vgtimes.com,vgtimes.ru##.adfshift
 wintech.net.ru##.adgoogle
 onlinetestpad.com##.adleft
-rutv.pw##.adlook-pc-wrapper
+rutv.pw,sportcsat.ru##.adlook-pc-wrapper
 ua.today##.admix
 promigren.ru##.adp-block
 asiaplustj.info,news.tj##.adredirector
@@ -16611,6 +16616,7 @@ teleprogramma.org##.dna-adfox-block
 good73.net##.dns_banner
 gtk.tv##.document-advertising
 tatler.ru##.dog
+sportcsat.ru##.donat
 griffiny.ru##.dopoln
 gamestracker.org##.down-mg
 slo.ru##.download-box > div:not([class="download"])
@@ -22868,7 +22874,7 @@ livetvstream.pro,me,online##body[bgcolor] > div[id^="iframe-container"]
 !
 ! Плеер VeoVeo
 $popup,domain=rstprgapipt.com|temp2cdn.link|temptcdn.com
-.link/$third-party,domain=tazaromikaz.link
+.link/$third-party,domain=gorodyshka.link|player.temptcdn.com|tazaromikaz.link
 /ad-rotator/ad-list.json
 /ad-rotator/vast.xml
 /api-integration/*?unique=$third-party,xmlhttprequest
@@ -22887,6 +22893,7 @@ $popup,domain=rstprgapipt.com|temp2cdn.link|temptcdn.com
 ||krasnomaga.link^$third-party
 ||leningrib.org^$third-party
 ||morozovnya.link^$third-party
+||myagkotela.link^$third-party
 ||nevalyashka.link^$third-party
 ||pfdzbcmost.com^$popup
 ||pizzahuizza.org^$third-party
@@ -28794,6 +28801,9 @@ sport-tv.by##.main:style(padding-top: 0 !important)
 ! ---
 sport.ua###outer-top:style(padding-top: initial !important)
 ! ---
+sportcsat.ru,vitalsport1.ru##div[style^="position:"][style*=" top: 0px; left: 0px; width: 100%; height: 100%;"][style*="z-index:"][style*="cursor: pointer;"]
+sportcsat.ru,vitalsport1.ru##iframe[src]:style(pointer-events: auto !important)
+! ---
 sportkp.ru##.header-middle-wrapper:style(height: auto !important)
 ! ---
 sports.ru###branding-layout > * > *:style(pointer-events: auto !important)
@@ -29037,6 +29047,7 @@ dzen.ru##[data-testid*="-ad-block"]
 dzen.ru##[id*="card-rtb"]
 dzen.ru##a[href*="://yandex.ru/an/count/"]
 dzen.ru##a[href*="://yandex.ru/an/count/"] ~ a[href*="://yandex.ru/an/count/"] ~ div
+dzen.ru##article[class*="_trendsEntry-"]
 dzen.ru##article[data-card-type*="-promo"]
 dzen.ru##body:style(overflow-y: unset !important)
 dzen.ru##div[class*="-top-of-the-day-ad"]:style(opacity: 0 !important)
@@ -29980,6 +29991,7 @@ dzen.ru,sportsdzen.ru##div:matches-attr(/./=/meta-channel-pinner/) > div > div
 dzen.ru,sportsdzen.ru##div:matches-attr(/./=/meta-channel-pinner/) > div[id]
 dzen.ru##div:matches-attr(/./=dzenpro-banner)
 dzen.ru##div:matches-attr(/[a-z0-9]/=/_ad-yp/)
+dzen.ru##div:matches-attr(/[a-z0-9]/=trends-entry-desktop)
 dzen.ru##div:matches-attr(/data-[a-z0-9]/=/-ad$/)
 dzen.ru##div:matches-attr(/data-is-/="false")
 dzen.ru##div:matches-path(/news/search?query=) [aria-label="Страница с новостями"] > div:only-child > div > div:first-child:not([style]):not([aria-label])
