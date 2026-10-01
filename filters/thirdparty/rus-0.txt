@@ -21159,7 +21159,7 @@ niscu.ru##div[class*="iw-modal"]
 7days.ru##div[class*="js-banner_ad_"]
 esports.ru##div[class*="js-present-"]
 kingisepp-today.ru,xn----etbbecbrbp5ahkja1ae7v.xn--p1ai##div[class*="ks-banner-news"]
-maxdash.ru#?#div[class*="lot_"]:-abp-has(> article > [class*="_adMarker_"])
+mydash.ru#?#div[class*="lot_"]:-abp-has(> article > [class*="_adMarker_"])
 sport-express.net,sport-express.ru##div[class*="matchcenter"][class$="links"]
 vprognoze.ru##div[class*="menu-bar__gift"]
 ts.kg##div[class*="oops-"]
@@ -21262,7 +21262,7 @@ vk.com,vk.ru##div[class^="YandexBrowserBanner"]
 yarnovosti.com##div[class^="_5"]
 day.kyiv.ua##div[class^="_ads-"]
 games.pikabu.ru,t-j.ru##div[class^="_banner_"]
-maxdash.ru##div[class^="_exchangeArea_"]
+mydash.ru##div[class^="_exchangeArea_"]
 tv.starhit.ru##div[class^="_partnerSlot_"]
 t-j.ru##div[class^="_skeleton_"]
 domashnie-zagotovki.ru##div[class^="a7-btns"]
@@ -21625,8 +21625,8 @@ infobank.by##div[id*="swiffycontainer"]
 flowtation.ru##div[id*="tizer"]
 1tv.ru,4pda.to,artem-kashkanov.ru,astrakhan-24.ru,baraholka.onliner.by,bigpicture.ru,energyfm.ru,galya.ru,gotovim-doma.ru,qip.ru,vputilkovo.ru##div[id*="yandex_ad"]
 www.sibnet.ru##div[id="head-links"]
-www.kinopoisk.ru##div[id] > .banner-fullscreen ~ #kebab
-www.kinopoisk.ru##div[id] > .banner-fullscreen ~ div[style^="display"][style*="pointer-events:"]
+www.kinopoisk.ru##div[id] > .anim-on ~ #kebab
+www.kinopoisk.ru##div[id] > .anim-on ~ div[style^="display"][style*="pointer-events:"]
 mivmeste.info#?#div[id]:-abp-has(> wix-iframe)
 gorodrabot.ru##div[id]:not([class]):not([style])[aria-hidden="true"]
 allgames.zone,bestgamer.su##div[id][align="center"]
@@ -22710,8 +22710,7 @@ ictv.ua,vikna.tv##div[id^="div-gpt-ad-"]
 !#if ext_abp
 ! запросы
 ! ловушка для обфускации дзена: главная, статьи, новости, погода
-/^https:\/\/static\.dzeninfra\.ru\/s3\/zen-apps\/[^?]*\/[^/?]*[a-zA-Z0-9]{20,}[^/?]*\.js(?:\?.*)?$/$script
-/^https:\/\/static\.dzeninfra\.ru\/s3\/zen-apps\/[^?]+(?:[^u]....|.[^n]...|..[^d]..|...[^l].|....[^e])\.js(?:\?.*)?$/$script
+/^https:\/\/static\.dzeninfra\.ru\/s3\/zen-apps\/[^?]*\/[^/?]*[a-zA-Z0-9]{20,}/$script
 ||dzen.ru/a/$csp=script-src 'unsafe-inline' 'unsafe-eval' data: static.dzeninfra.ru/react/ static.dzeninfra.ru/s3/zen-apps/ static.dzeninfra.ru/s3/zen-lib/ yandex.ru/ads/ vk.com/dist/ vk.com/js/api/videoplayer.js vk.com/dist/public/api/
 ||dzen.ru/articles$csp=script-src 'unsafe-inline' 'unsafe-eval' data: static.dzeninfra.ru/react/ static.dzeninfra.ru/s3/zen-apps/ static.dzeninfra.ru/s3/zen-lib/ yandex.ru/ads/ vk.com/dist/ vk.com/js/api/videoplayer.js vk.com/dist/public/api/
 ||dzen.ru/news$csp=script-src 'unsafe-inline' 'unsafe-eval' data: static.dzeninfra.ru/react/ static.dzeninfra.ru/s3/zen-apps/ static.dzeninfra.ru/s3/zen-lib/ yandex.ru/ads/ vk.com/dist/ vk.com/js/api/videoplayer.js vk.com/dist/public/api/
@@ -22746,7 +22745,7 @@ https://*adtech_uid=$~third-party,xmlhttprequest,domain=livejournal.com|olegmaka
 ||newsyou.info/wp-content/plugins/gtranslate/
 ||newsyou.info^$csp=script-src-elem 'self' https:
 ||ng72.ru^$csp=script-src 'self' 'unsafe-eval' https:
-||pikabu.ru/ajax/*?w6Vmw=$xmlhttprequest
+||pikabu.ru/ajax/*?w5Vmw=$xmlhttprequest
 ||ritsatv.ru^$csp=script-src
 ||ritsatv.ru^$popup
 ||ritsatv.ru^$~document
@@ -22875,7 +22874,7 @@ livetvstream.pro,me,online##body[bgcolor] > div[id^="iframe-container"]
 !
 ! Плеер VeoVeo
 $popup,domain=rstprgapipt.com|temp2cdn.link|temptcdn.com
-.link/$third-party,domain=gorodyshka.link|player.temptcdn.com|tazaromikaz.link
+.link/$third-party,domain=gorodyshka.link|perepolokha.link|player.temptcdn.com|tazaromikaz.link
 /ad-rotator/ad-list.json
 /ad-rotator/vast.xml
 /api-integration/*?unique=$third-party,xmlhttprequest
@@ -22890,12 +22889,14 @@ $popup,domain=rstprgapipt.com|temp2cdn.link|temptcdn.com
 ||eugeniy.org^$third-party
 ||evropidar.org^$third-party
 ||greatekran.org^$third-party
+||imgkcdn.com^$third-party
 ||kinzazaza.org^$third-party
 ||krasnomaga.link^$third-party
 ||leningrib.org^$third-party
 ||morozovnya.link^$third-party
 ||myagkotela.link^$third-party
 ||nevalyashka.link^$third-party
+||pepyakanew.link^$third-party
 ||pfdzbcmost.com^$popup
 ||pizzahuizza.org^$third-party
 ||rstprgapipt.com/*.xml?$xmlhttprequest
@@ -22912,8 +22913,12 @@ $popup,domain=rstprgapipt.com|temp2cdn.link|temptcdn.com
 ||temptcdn.com/api-integration/
 ||temptcdn.com^$third-party,xmlhttprequest
 ||vertiguzha.link^$third-party
+||veselchaga.link^$third-party
+||viieqcjw.com^$third-party
 ||vveu.*.link/$third-party,media
 ||vvru.*.link/$third-party,media
+||yankimanki.org^$third-party
+||yaropolka.link^$third-party
 ||ykoza.com^$popup
 !
 ! Плеер venom, в основном для ua-юзеров, примеры >
@@ -24244,10 +24249,10 @@ ya.ru##.i-mini-bem[class*="banner"]
 ya.ru##[style*="feed"][style*="min-height:"]
 ya.ru##body > div[data-hydration-id] > [href^="https://yabs.yandex.ru/count/"] + div
 ya.ru##body > div[data-hydration-id] > div > [src^="https://yabs.yandex.ru/count/"] + div
-ya.ru##html[class*="secktian_top"] aside + div
-ya.ru##html[class*="secktian_top"] main > div[class*="__"] ~ div[class*="__"] ~ div[class*="__"] > div
+ya.ru##html[class*="seckcian_top"] aside + div
+ya.ru##html[class*="seckcian_top"] main > div[class*="__"] ~ div[class*="__"] ~ div[class*="__"] > div
 ya.ru##section[class^="reaso"]
-ya.ru##section[style*="secktian-items-count:"]
+ya.ru##section[style*="seckcian-items-count:"]
 ya.ru##ul[class*="-section__list"]
 ya.ru,yandex.ru,yandex.*##.AdvProductGallery
 ya.ru,yandex.ru,yandex.*##.Bno_isPromoSnippet
@@ -29096,8 +29101,7 @@ dzen.ru##.news-rubric-desktop__news > section > div > div[id]
 dzen.ru##.news-secondary-layout-column__secondary div[id]
 dzen.ru##.news-sticky__inner > div > div[id]
 dzen.ru##.news-story-page div[id] > div:not([id]) > div[id]
-dzen.ru,sportsdzen.ru##[aria-label] > div[class*="_content_"] > div > div > div[style^="--height"] > div > div[id]
-dzen.ru,sportsdzen.ru##[aria-label] > div[class*="_content_"] > div > div > div[style^="height:"] > div > div[id]
+dzen.ru,sportsdzen.ru##[aria-label] > div[class*="_content_"] > div > div > div[style^="--"][style*="height:"] > div > div[id]
 dzen.ru##[aria-label] div[id][class*="-desktop__ad-"]
 dzen.ru##div[class*="AdvertTsar"]
 dzen.ru##div[class*="BrandingAdvertLayoutColumn-"]
@@ -29126,7 +29130,7 @@ dzen.ru,sportsdzen.ru##html:style(scroll-snap-type: none !important)
 dzen.ru##.adv-ecom
 dzen.ru##.b-page_type_maps div[class$="__content"] > [class$="__ad"] > div:style(width: unset !important)
 dzen.ru##.climate-calendar__cell:style(width: 13.8% !important; -webkit-flex-basis: 13.8% !important; flex-basis: 13.8% !important)
-dzen.ru##.forecast-details > article[class^="card "] ~ div:last-child
+dzen.ru##[data-bem*="segment-details"] > article[class^="card "] ~ div:last-child
 dzen.ru##div[class*="dzen-wrapper-with-top-content-desktop__topContent-"]:style(grid-template-columns: inherit !important)
 ! ---
 ! игры
