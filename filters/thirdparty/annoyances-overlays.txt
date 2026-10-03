@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: EasyList – Newsletter Notices
-! Last modified: Thu, 01 Oct 2026 10:27:49 +0000
+! Last modified: Sat, 03 Oct 2026 05:46:43 +0000
 ! Expires: 7 days (update frequency)
 ! *** easylist:template_header.txt ***
 !
@@ -3022,7 +3022,7 @@ landline.media##.mc-embed
 stripes.com##.mc-modal
 stripes.com##.mc-modal-bg
 ganjapreneur.com##.mc-signup
-deltiasgaming.com,gizmodo.com,helpnetsecurity.com,news.usni.org,the-berliner.com,thedriven.io##.mc4wp-form
+deltiasgaming.com,gizmodo.com,helpnetsecurity.com,news.usni.org,orissapost.com,the-berliner.com,thedriven.io##.mc4wp-form
 tedium.co##.md-colorbox
 elespanol.com##.md-suscription
 digg.com##.md\:p-4.p-2.rounded-md
@@ -6531,7 +6531,7 @@ doctorofcredit.com#@#.wpdiscuz-subscribe-bar
 ! fanboy_newsletter_shopping_allowlist_general_hide.txt
 
 ! Title: uBlock filters – Other Annoyances
-! Last modified: Fri, 02 Oct 2026 07:16:08 +0000
+! Last modified: Sat, 03 Oct 2026 03:52:22 +0000
 ! Expires: 7 days
 ! Description: Filters optimized for uBlock Origin, to be used with EasyList's and/or Adguard's "Other Annoyances" list(s)
 ! License: https://github.com/uBlockOrigin/uAssets/blob/master/LICENSE
@@ -8909,6 +8909,9 @@ metacritic.com##+js(trusted-set-session-storage-item, BT_AM_SOFTWALL_DISMISSED, 
 
 ! https://github.com/uBlockOrigin/uAssets/pull/34169
 hymnary.org##div#blockbanner
+
+! https://github.com/uBlockOrigin/uAssets/issues/34187
+igorslab.de###herald-module-0-1 > .herald-txt-module > span[style="color: #ff0000;"]:has(> a[href$="/why-i-am-ending-the-arms-race-with-ad-blockers/"])
 
 ! ================================================== END: Anti-adblock ==================================================================================
 
