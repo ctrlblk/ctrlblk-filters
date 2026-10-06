@@ -1,10 +1,10 @@
 ![Adblock Plus 2.0]
-! Checksum: DSFkqJwaDb+lD9wRpz1N0Q
-! Diff-Path: ../patches/16/16-s-1791185478-3600.patch
+! Checksum: L+hYbqCVFKXu7A6zGj7//Q
+! Diff-Path: ../patches/16/16-s-1791227448-3600.patch
 ! Title: AdGuard French filter
 ! Description: Liste FR + AdGuard French filter. Filter list that specifically removes ads on websites in French language.
-! Version: 2.0.57.86
-! TimeUpdated: 2026-10-05T07:27:59+00:00
+! Version: 2.0.57.89
+! TimeUpdated: 2026-10-05T19:08:13+00:00
 ! Expires: 5 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -195,7 +195,6 @@ cyclismactu.net##+js(addEventListener-defuser, DOMContentLoaded, isAdblock)
 cyclismactu.net##+js(addEventListener-defuser, load, isAdblock)
 ! https://github.com/AdguardTeam/AdguardFilters/issues/234430
 ! https://github.com/AdguardTeam/AdguardFilters/issues/168555
-rmcbfmplay.com#@##adsbox
 rmcbfmplay.com##+js(no-setTimeout-if, .offsetParent||0===)
 rmcbfmplay.com##+js(prevent-fetch, /www3\.doubleclick\.net|tagger\.opecloud\.com|fwmrm\.net|imasdk\.googleapis\.com/, emptyArr)
 !#safari_cb_affinity(general,privacy)
@@ -872,6 +871,7 @@ $xhr,3p,denyallow=mega.co.nz|mega.nz|libs.baidu.com|ilfcdn.li|bytecdntp.com|dood
 !
 !
 !
+flemmix.eu##.newmenu-double-stack
 marmiton.org##.adslot__container
 kami-labs.fr##div[id^="kl-ad-"]
 kami-labs.fr##div[class^="kl-fs-ad-"]
@@ -1702,6 +1702,11 @@ adguard.info,adguard.com,adguard.app##.hello_from_adguard_french
 ! TEMPORARY
 ! ---
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/243434
+dl-accompagnementpro.fr#@#.ad-card
+dl-accompagnementpro.fr#@#.ad-btn
+dl-accompagnementpro.fr#@#.ad-display
+dl-accompagnementpro.fr#@#.ad-tag
 ! https://github.com/AdguardTeam/AdguardFilters/issues/239516#issuecomment-5964068669
 youtube.com#@##offer-module
 ! https://github.com/AdguardTeam/AdguardFilters/issues/243038

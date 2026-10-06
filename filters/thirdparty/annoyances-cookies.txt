@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: EasyList – Cookie Notices
-! Last modified: Mon, 05 Oct 2026 00:10:08 +0000
+! Last modified: Tue, 06 Oct 2026 06:52:08 +0000
 ! Expires: 7 days (update frequency)
 ! *** easylist:template_header.txt ***
 !
@@ -19548,7 +19548,7 @@ tokeninsight.com##.ti-cookie-container
 tonic.com##.ti-pastry--banner
 tiktok.com##.tiktok-sdk-cookie-banner
 tastedive.com##.tk-Footer
-sparhamster.at,stratcann.com##.tm-consent
+lacasadipeppe.com,sparhamster.at,stratcann.com##.tm-consent
 truemoney.com##.tmn-cookie
 thenew.institute##.tni-trackers
 thenaturallovecompany.com##.tnlc-gdpr-wrapper
@@ -23600,6 +23600,10 @@ gesundheitsmanufaktur.de,open24.ee##+js(set-local-storage-item, df-cookies-allow
 bozponline.sk,dashofer.hu,dashofer.sk,enviro.sk,gdpr-2018.hr,kalkulator.hu,muszakiforum.hu,onlineuciliste.hr,osenioroch.sk,pamprofi.cz,ppn.sk,retel.sk,skolaefektivne.sk,szcoportal.sk,ucinkovitasola.si,varstvo-podatkov.si###cookiesConsentDialog
 bozponline.sk,dashofer.hu,dashofer.sk,enviro.sk,gdpr-2018.hr,kalkulator.hu,muszakiforum.hu,onlineuciliste.hr,osenioroch.sk,pamprofi.cz,ppn.sk,retel.sk,skolaefektivne.sk,szcoportal.sk,ucinkovitasola.si,varstvo-podatkov.si##.modal-backdrop
 bozponline.sk,dashofer.hu,dashofer.sk,enviro.sk,gdpr-2018.hr,kalkulator.hu,muszakiforum.hu,onlineuciliste.hr,osenioroch.sk,pamprofi.cz,ppn.sk,retel.sk,skolaefektivne.sk,szcoportal.sk,ucinkovitasola.si,varstvo-podatkov.si##body,html:style(overflow: auto !important; position: initial !important;)
+! ridan.ru
+ridan.ru###modal-cookie
+ridan.ru##.modal-backdrop
+ridan.ru##body.modal-open:style(overflow-y: auto !important)
 ! puzzleyou cookies
 puzzleyou.at##+js(set-cookie, puzzleyou-at_cookies_consent_allowlist, 0, , reload, 1)
 puzzleyou.be##+js(set-cookie, puzzleyou-be_cookies_consent_allowlist, 0, , reload, 1)
@@ -28041,6 +28045,7 @@ fptshop.com.vn##[data-cookie-consent-modal="true"]
 ||fewostay.de/ccm/public/index.php/app.js
 ||flvw.de/media/plugins/ConsentManager/ConsentManager.min.js
 ||gedk-consent.he-webpack.de/public/app.js
+||glockenklang.de/wp-content/plugins/cookiez/
 ||henryschein.at^*/CookieList.aspx
 ||howatherm.de/frontend/media/cm/
 ||jaloucity.de/skin/frontend/default/jaloucity_rwd/js/jcitycookiepopup.js
@@ -29014,7 +29019,7 @@ concursolutions.com,forbes.com,formula1.com,fortune.com,proximus.be,proximustv.b
 @@||zensus2022.de/SiteGlobals/Modules/CookieBanner/*/CookieBanner.json?$~third-party,xmlhttprequest
 
 ! Title: uBlock filters – Cookie Notices
-! Last modified: Thu, 01 Oct 2026 10:37:24 +0000
+! Last modified: Mon, 05 Oct 2026 15:31:48 +0000
 ! Expires: 7 days
 ! Description: Filters optimized for uBlock Origin, to be used with EasyList's and/or Adguard's "Cookie Notices" list(s)
 ! License: https://github.com/uBlockOrigin/uAssets/blob/master/LICENSE
@@ -30924,6 +30929,7 @@ ignboards.com##+js(trusted-set-cookie, boards-eu-gdpr, eu, , , domain, ignboards
 
 ! https://web.de/ - accept
 web.de##+js(trusted-click-element, button[data-id="save-all-pur"], , 1000)
+plus.web.de##+js(trusted-click-element, when-visible:button#save-all-pur)
 ! consent wall
 web.de##+js(trusted-click-element, a[aria-label="Abonnieren Sie ein Postfach ohne Fremdwerbung"], , 1000)
 
