@@ -1,10 +1,10 @@
 ![Adblock Plus 2.0]
-! Checksum: 8d6Fw9b3zOWBQtOuPVAxkQ
-! Diff-Path: ../patches/13/13-s-1791220181-3600.patch
+! Checksum: x3eHNVAIDo1wG5WnoIjsZw
+! Diff-Path: ../patches/13/13-s-1791360642-3600.patch
 ! Title: AdGuard Turkish filter
 ! Description: Filter list that specifically removes ads on websites in Turkish language.
-! Version: 2.0.68.72
-! TimeUpdated: 2026-10-05T17:05:52+00:00
+! Version: 2.0.68.76
+! TimeUpdated: 2026-10-07T08:08:05+00:00
 ! Expires: 5 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -690,6 +690,7 @@ r10.net##+js(abort-on-property-write, rInt)
 ! Bad: example.org##.adv (should be in specific.txt)
 !
 ! Streaming sites with casino ads
+##.background-link > a[target="_blank"]
 ##.channel-area ~ div.popup-overlay
 ##a[class="current-address-link"]
 ##header > ul > li.blink > a[target]
@@ -1575,6 +1576,7 @@ dirilispostasi.com,turkuazgazetesi.net,yenialanya.com,bugunkocaeli.com.tr,cagdas
 !
 ! NOTE: Specific rules
 !
+proje724.com##aside:has(> div > a[data-ad-link])
 turkifsa.blog##.center-overlay
 ||cdn.okiksdelivery.com^$script,domain=turkifsa.blog
 ||get.atechspace.live/pops-request
@@ -6088,11 +6090,18 @@ lovefilmizle.net,elzemfilm.org,dizicaps.*,erotikfilmtube.com,sexfilmleriizle.com
 ! except some sites that use non-template domain names of mirror sites
 !
 !
+! Frequently changed domains: patronlig*.cfd
+! Source: patronspor.is
+! aglint-disable no-invalid-modifiers
+!+ NOT_VALIDATE
+||blogger.googleusercontent.com/img/$domain=/patronlig\d+\.cfd$/
+! aglint-enable no-invalid-modifiers
+patronlig20.cfd##.footer-links
 ! Frequently changed domains: hadibettv*.com
 ! Source: hadibettv6.com
 /hadibettv\d+\.com$/##.footer-links
 ||hadibettv*.com/view/theme/ultimate/img/*.gif
-hadibettv6.com##.footer-links
+hadibettv7.com##.footer-links
 !
 ! Frequently changed domains: pornocudayi*.com
 ! Source: pornocudayi39.com
@@ -6108,9 +6117,9 @@ pornocudayi43.com##a[href][aria-label^="Bu alana reklam"]
 videoplays.cfd##.vast-ad-overlay
 /rek.xml|$domain=videoplays.cfd
 videoplays.cfd##+js(abort-on-stack-trace, document.createElement, getAdMountPoint)
-dizipalorjinal12.com##body > a[class^="pageskin-"]
-dizipalorjinal12.com##[aria-label="Reklam"]
-dizipalorjinal12.com##.has-pageskin:style(background-image: none !important;)
+dizipalorjinal13.com##body > a[class^="pageskin-"]
+dizipalorjinal13.com##[aria-label="Reklam"]
+dizipalorjinal13.com##.has-pageskin:style(background-image: none !important;)
 !
 ! Frequently changed domains: golbettv*.com
 ! Source: golbettv6.com
@@ -6461,10 +6470,10 @@ turkifsa5.site,turkifsa32.site,turkifsa40.site,turkifsa42.site,turkifsa45.site##
 turkifsa5.site,turkifsa32.site,turkifsa40.site,turkifsa42.site,turkifsa45.site##.ad-banner-frame
 turkifsa5.site,turkifsa32.site,turkifsa40.site,turkifsa42.site,turkifsa45.site##div[class][style^="min-height:"][style*="calc("]
 ! turkifsalar*.site
-turkifsalar.site,turk-ifsa17.com,turk-ifsa18.com,turk-ifsa19.com,turk-ifsa20.com,turk-ifsa21.com,turk-ifsa22.com##div[class]:has(> a:is([href^="https://cutt.ly/"],[href="https://denemebonusumi.com/"]))
-turkifsalar.site,turk-ifsa17.com,turk-ifsa18.com,turk-ifsa19.com,turk-ifsa20.com,turk-ifsa21.com,turk-ifsa22.com##video + div.absolute
-turkifsalar.site,turk-ifsa17.com,turk-ifsa18.com,turk-ifsa19.com,turk-ifsa20.com,turk-ifsa21.com,turk-ifsa22.com##.ad-banner-frame
-turkifsalar.site,turk-ifsa17.com,turk-ifsa18.com,turk-ifsa19.com,turk-ifsa20.com,turk-ifsa21.com,turk-ifsa22.com##div[class][style^="min-height:"][style*="calc("]
+turkifsalar.site,turk-ifsa17.com,turk-ifsa18.com,turk-ifsa19.com,turk-ifsa20.com,turk-ifsa21.com,turk-ifsa22.com,turk-ifsa25.com,turk-ifsa23.com##div[class]:has(> a:is([href^="https://cutt.ly/"],[href="https://denemebonusumi.com/"]))
+turkifsalar.site,turk-ifsa17.com,turk-ifsa18.com,turk-ifsa19.com,turk-ifsa20.com,turk-ifsa21.com,turk-ifsa22.com,turk-ifsa25.com,turk-ifsa23.com##video + div.absolute
+turkifsalar.site,turk-ifsa17.com,turk-ifsa18.com,turk-ifsa19.com,turk-ifsa20.com,turk-ifsa21.com,turk-ifsa22.com,turk-ifsa25.com,turk-ifsa23.com##.ad-banner-frame
+turkifsalar.site,turk-ifsa17.com,turk-ifsa18.com,turk-ifsa19.com,turk-ifsa20.com,turk-ifsa21.com,turk-ifsa22.com,turk-ifsa25.com,turk-ifsa23.com##div[class][style^="min-height:"][style*="calc("]
 ! turkifsalar.art
 turkifsalar.art##div[class]:has(> a:is([href^="https://cutt.ly/"],[href="https://denemebonusumi.com/"]))
 turkifsalar.art##video + div.absolute
@@ -6481,10 +6490,10 @@ turkifsalar.art##+js(set-session-storage-item, preroll_view_count, 4)
 /turk-ifsa\d+\.com/##video + div.absolute
 /turk-ifsa\d+\.com/##.ad-banner-frame
 /turk-ifsa\d+\.com/##div[class][style^="min-height:"][style*="calc("]
-turk-ifsa11.com,turk-ifsa13.com,turk-ifsa14.com,turk-ifsa16.com,turk-ifsa17.com,turk-ifsa18.com,turk-ifsa19.com,turk-ifsa20.com,turk-ifsa21.com,turk-ifsa22.com##div[class]:has(> a:is([href^="https://cutt.ly/"],[href="https://denemebonusumi.com/"]))
-turk-ifsa11.com,turk-ifsa13.com,turk-ifsa14.com,turk-ifsa16.com,turk-ifsa17.com,turk-ifsa18.com,turk-ifsa19.com,turk-ifsa20.com,turk-ifsa21.com,turk-ifsa22.com##video + div.absolute
-turk-ifsa11.com,turk-ifsa13.com,turk-ifsa14.com,turk-ifsa16.com,turk-ifsa17.com,turk-ifsa18.com,turk-ifsa19.com,turk-ifsa20.com,turk-ifsa21.com,turk-ifsa22.com##.ad-banner-frame
-turk-ifsa11.com,turk-ifsa13.com,turk-ifsa14.com,turk-ifsa16.com,turk-ifsa17.com,turk-ifsa18.com,turk-ifsa19.com,turk-ifsa20.com,turk-ifsa21.com,turk-ifsa22.com##div[class][style^="min-height:"][style*="calc("]
+turk-ifsa11.com,turk-ifsa13.com,turk-ifsa14.com,turk-ifsa16.com,turk-ifsa17.com,turk-ifsa18.com,turk-ifsa19.com,turk-ifsa20.com,turk-ifsa21.com,turk-ifsa22.com,turk-ifsa25.com,turk-ifsa23.com##div[class]:has(> a:is([href^="https://cutt.ly/"],[href="https://denemebonusumi.com/"]))
+turk-ifsa11.com,turk-ifsa13.com,turk-ifsa14.com,turk-ifsa16.com,turk-ifsa17.com,turk-ifsa18.com,turk-ifsa19.com,turk-ifsa20.com,turk-ifsa21.com,turk-ifsa22.com,turk-ifsa25.com,turk-ifsa23.com##video + div.absolute
+turk-ifsa11.com,turk-ifsa13.com,turk-ifsa14.com,turk-ifsa16.com,turk-ifsa17.com,turk-ifsa18.com,turk-ifsa19.com,turk-ifsa20.com,turk-ifsa21.com,turk-ifsa22.com,turk-ifsa25.com,turk-ifsa23.com##.ad-banner-frame
+turk-ifsa11.com,turk-ifsa13.com,turk-ifsa14.com,turk-ifsa16.com,turk-ifsa17.com,turk-ifsa18.com,turk-ifsa19.com,turk-ifsa20.com,turk-ifsa21.com,turk-ifsa22.com,turk-ifsa25.com,turk-ifsa23.com##div[class][style^="min-height:"][style*="calc("]
 !
 ! Frequently changed domains: turkifsa*.com
 ! Source: turkifsa73.com
@@ -6494,10 +6503,10 @@ turk-ifsa11.com,turk-ifsa13.com,turk-ifsa14.com,turk-ifsa16.com,turk-ifsa17.com,
 /turkifsa\d*\.com/##video + div.absolute
 /turkifsa\d*\.com/##.ad-banner-frame
 /turkifsa\d*\.com/##div[class][style^="min-height:"][style*="calc("]
-turkifsa73.com,turkifsa74.com,turkifsa75.com,turkifsa76.com,turkifsa77.com,turkifsa78.com,turkifsa79.com,turkifsa80.com,turkifsa81.com,turkifsa82.com,turkifsa83.com,turkifsa84.com,turkifsa85.com,turkifsa86.com##div[class]:has(> a:is([href^="https://cutt.ly/"],[href="https://denemebonusumi.com/"]))
-turkifsa73.com,turkifsa74.com,turkifsa75.com,turkifsa76.com,turkifsa77.com,turkifsa78.com,turkifsa79.com,turkifsa80.com,turkifsa81.com,turkifsa82.com,turkifsa83.com,turkifsa84.com,turkifsa85.com,turkifsa86.com##video + div.absolute
-turkifsa73.com,turkifsa74.com,turkifsa75.com,turkifsa76.com,turkifsa77.com,turkifsa78.com,turkifsa79.com,turkifsa80.com,turkifsa81.com,turkifsa82.com,turkifsa83.com,turkifsa84.com,turkifsa85.com,turkifsa86.com##.ad-banner-frame
-turkifsa73.com,turkifsa74.com,turkifsa75.com,turkifsa76.com,turkifsa77.com,turkifsa78.com,turkifsa79.com,turkifsa80.com,turkifsa81.com,turkifsa82.com,turkifsa83.com,turkifsa84.com,turkifsa85.com,turkifsa86.com##div[class][style^="min-height:"][style*="calc("]
+turkifsa73.com,turkifsa74.com,turkifsa75.com,turkifsa76.com,turkifsa77.com,turkifsa78.com,turkifsa79.com,turkifsa80.com,turkifsa81.com,turkifsa82.com,turkifsa83.com,turkifsa84.com,turkifsa85.com,turkifsa86.com,turkifsa90.com##div[class]:has(> a:is([href^="https://cutt.ly/"],[href="https://denemebonusumi.com/"]))
+turkifsa73.com,turkifsa74.com,turkifsa75.com,turkifsa76.com,turkifsa77.com,turkifsa78.com,turkifsa79.com,turkifsa80.com,turkifsa81.com,turkifsa82.com,turkifsa83.com,turkifsa84.com,turkifsa85.com,turkifsa86.com,turkifsa90.com##video + div.absolute
+turkifsa73.com,turkifsa74.com,turkifsa75.com,turkifsa76.com,turkifsa77.com,turkifsa78.com,turkifsa79.com,turkifsa80.com,turkifsa81.com,turkifsa82.com,turkifsa83.com,turkifsa84.com,turkifsa85.com,turkifsa86.com,turkifsa90.com##.ad-banner-frame
+turkifsa73.com,turkifsa74.com,turkifsa75.com,turkifsa76.com,turkifsa77.com,turkifsa78.com,turkifsa79.com,turkifsa80.com,turkifsa81.com,turkifsa82.com,turkifsa83.com,turkifsa84.com,turkifsa85.com,turkifsa86.com,turkifsa90.com##div[class][style^="min-height:"][style*="calc("]
 !
 ! Frequently changed domains: turkifsa*.art
 ! Source: turkifsa25.art
