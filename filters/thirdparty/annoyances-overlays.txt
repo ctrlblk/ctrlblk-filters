@@ -6532,7 +6532,7 @@ doctorofcredit.com#@#.wpdiscuz-subscribe-bar
 ! fanboy_newsletter_shopping_allowlist_general_hide.txt
 
 ! Title: uBlock filters – Other Annoyances
-! Last modified: Tue, 06 Oct 2026 13:39:58 +0000
+! Last modified: Fri, 09 Oct 2026 11:03:20 +0000
 ! Expires: 7 days
 ! Description: Filters optimized for uBlock Origin, to be used with EasyList's and/or Adguard's "Other Annoyances" list(s)
 ! License: https://github.com/uBlockOrigin/uAssets/blob/master/LICENSE
@@ -8913,6 +8913,9 @@ hymnary.org##div#blockbanner
 
 ! https://github.com/uBlockOrigin/uAssets/issues/5112#issuecomment-5981295582
 tarnkappe.info###article .entry-content section[data-nosnippet][class$="-only"]
+
+! https://github.com/uBlockOrigin/uAssets/issues/34187
+igorslab.de##.ilab-adblocker-notice
 
 ! ================================================== END: Anti-adblock ==================================================================================
 
@@ -14803,4 +14806,7 @@ snowcrows.com##+js(rmnt, script, .onerror)
 dokkandb.com##+js(trusted-set-local-storage-item, adBlockPromptDismissedAt, $now$)
 
 ! flixnetwork.is/streamsource.ws bot check
-flickzone.org,sflix.gd##+js(trusted-click-element, button#b, ,100)
+flickzone.org,sflix.gd##+js(trusted-click-element, button#b, '', 750)
+
+! https://github.com/uBlockOrigin/uAssets/issues/34786
+alensat.com##+js(aeld, contextmenu, preventDefault)
