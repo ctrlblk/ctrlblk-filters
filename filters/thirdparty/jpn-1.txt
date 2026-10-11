@@ -1,10 +1,10 @@
 ![Adblock Plus 2.0]
-! Checksum: A2PAjCz+Vwh1ev67h9ZAiw
-! Diff-Path: ../patches/7/7-s-1791612698-3600.patch
+! Checksum: nI3gq8pTclcOyi1/1wyawA
+! Diff-Path: ../patches/7/7-s-1791706327-3600.patch
 ! Title: AdGuard Japanese filter
 ! Description: Filter that enables ad blocking on websites in Japanese language.
-! Version: 2.0.77.34
-! TimeUpdated: 2026-10-10T06:08:22+00:00
+! Version: 2.0.77.37
+! TimeUpdated: 2026-10-11T08:07:41+00:00
 ! Expires: 5 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -472,6 +472,7 @@ mangaruu.com,rawfree.top,soraraw.*##+js(prevent-fetch, ?abg=)
 mangaruu.com,rawfree.top,soraraw.*##+js(set-constant, navigator.brave, undefined)
 ! https://github.com/AdguardTeam/AdguardFilters/issues/233289
 /yamiisoku-anti-adblock/*$domain=genshin-soku.com|monhan-soku.com|xn--gckdevd5myivf.site|yamiisoku.com
+genshin-soku.com,monhan-soku.com,xn--gckdevd5myivf.site,yamiisoku.com##+js(remove-node-text, script, adsbygoogle)
 genshin-soku.com,monhan-soku.com,xn--gckdevd5myivf.site,yamiisoku.com##+js(set-constant, YAAB, undefined)
 genshin-soku.com,monhan-soku.com,xn--gckdevd5myivf.site,yamiisoku.com#@#.ad-wrapper
 genshin-soku.com,monhan-soku.com,xn--gckdevd5myivf.site,yamiisoku.com#@#.adsense_top
@@ -1571,6 +1572,8 @@ hostlove.com###index_nav > h1:style(padding-top: 30px!important;)
 /wp-content/uploads/2024/09/fanza_ad$image
 !
 ! Malware/Phishing
+://*.*.com/*/e-tax%E3%82%BD%E3%83%95%E3%83%88|$document
+://*.*.com/*/rakuten%E3%83%9D%E3%82%A4%E3%83%B3%E3%83%88|$document
 ://*.*.com/*/%E6%A5%BD%E5%A4%A9%E3%82%A2%E3%82%AB%E3%82%A6%E3%83%B3%E3%83%88%E4%BF%9D%E8%AD%B7|$document
 /api/common/access-grant?token=go&originalUrl=$xhr
 _googlePlayNenkin_nenkin.apk.$document
@@ -1745,7 +1748,7 @@ n.lat/login|$document
 ://www.etc.*.*.club/$document
 .cn/WebDesk/www/index.php$document
 /\.com\/(?:[a-z]{2,}-)+p-\d{4,6}\.html\?(?:page_source|prevRef|re[fl])=/$document,match-case
-/^https:\/\/(?:(?!www)[a-z]{3,}\.)?[0-9a-z\-]{3,}\.(?:com|net|org)\/index\.php\?main_page=product_info(&stl=\d)?&(?:cPath|products_id)=/$document
+/^https:\/\/(?:(?!www)[a-z]{3,}\.)?[0-9a-z\-]{3,}\.(?:com|net|org)\/index\.php\?main_page=product_info&?(?:stl=\d|referer=[0-9a-f]+)?&(?:cPath|products_id)=/$document
 ://www2.etc-*.com/$document
 ://www2.etc-*.net/$document
 ://www2.etc-*.icu/$document
@@ -1841,8 +1844,7 @@ _co_jp.*.php$document,to=cc|com
 .asp?AC=*&IC=$document,to=com|fun|online|site
 /ap/signin/openid.pape.max_auth_age=0&openid.return_to=https%3A%2F%2Fwww.amazon.co.jp$document,to=cn|top|xyz
 /index.php?route=product/product&product_id=$document,to=cyou|life|live|shop|xyz|~ocam.live
-/index.php?main_page=product_info*&cPath=$document,to=agency|asia|baby|bar|beauty|best|biz|blog|bond|buzz|cam|cards|casa|cfd|click|cloud|club|cyou|design|dev|digital|email|fashion|fit|forum|fun|gay|hair|help|homes|icu|info|ink|kids|lat|life|live|lol|love|ltd|luxe|makeup|me|media|mom|monster|my|news|one|online|pics|pro|qpon|quest|rent|rest|ru.com|run|sa.com|sale|sbs|shop|site|skin|space|store|studio|team|today|tokyo|top|vip|vu|website|wiki|work|works|world|xyz|yachts|yoga|za.com
-/index.php?main_page=product_info&products_id=$document,to=agency|asia|baby|bar|beauty|best|biz|blog|bond|buzz|cam|cards|casa|cfd|click|cloud|club|cyou|design|dev|digital|email|fashion|fit|forum|fun|gay|hair|help|homes|icu|info|ink|kids|lat|life|live|lol|love|ltd|luxe|makeup|me|media|mom|monster|my|news|one|online|pics|pro|qpon|quest|rent|rest|ru.com|run|sa.com|sale|sbs|shop|site|skin|space|store|studio|team|today|tokyo|top|vip|vu|website|wiki|work|works|world|xyz|yachts|yoga|za.com
+/index.php?main_page=product_info&$document,to=agency|asia|baby|bar|beauty|best|biz|blog|bond|buzz|cam|cards|casa|cfd|click|cloud|club|cyou|design|dev|digital|email|fashion|fit|forum|fun|gay|hair|help|homes|icu|info|ink|kids|lat|life|live|lol|love|ltd|luxe|makeup|me|media|mom|monster|my|news|one|online|pics|pro|qpon|quest|rent|rest|ru.com|run|sa.com|sale|sbs|shop|site|skin|space|store|studio|team|today|tokyo|top|vip|vu|website|wiki|work|works|world|xyz|yachts|yoga|za.com
 /\.(?:club|cn|icu|top|pro|site|work)\/Personal\/member\/Login\/index\.php\?oneTimeAccessID=/$document,to=club|cn|icu|top|pro|site|work
 ! https://github.com/AdguardTeam/FiltersCompiler/issues/254
 /^https:\/\/(?:(?!www)[a-z]{3,5}|[ej][ac])\.[a-z]{4,10}\.[a-z]{2,6}\/item-(?:[0-9A-Za-z]{10}|\d{8}|[0-9a-f]{32})\.html$/$document,match-case,to=art|autos|baby|best|biz|blog|boats|buzz|cards|cc|cfd|click|cloud|club|cyou|eu|fit|fun|guru|hair|homes|info|ink|lat|life|live|lol|me|mom|my|one|online|pics|qpon|quest|rest|sale|sbs|shop|site|skin|space|store|today|top|wiki|work|world|xyz
@@ -1914,6 +1916,8 @@ gundamlog.com###more > iframe[src^="https://richlink.blogsys.jp"]
 !
 ! NOTE: Specific rules
 !
+volleyballking.jp##.free-input-container:has(a[href^="https://www.video.unext.jp/lp/"])
+||zion-its.com/sankei-api/public/api
 emogram.sankei.com##div.area-kyujinbox
 matsukiyococokara-online.com##.p-section__inner[class$="-000"]:has(> div.p-contentblock > div.p-bgc div.p-contentblock__box > div.p-bnrlist > div[id^="div-gpt-ad"])
 ! aglint-disable no-invalid-modifiers
@@ -2157,7 +2161,8 @@ fo76db.com##body > div#toast ~ *:not(div, link, script)
 genshin-soku.com,monhan-soku.com,xn--gckdevd5myivf.site,yamiisoku.com##+js(prevent-fetch, method:POST)
 genshin-soku.com,monhan-soku.com,xn--gckdevd5myivf.site,yamiisoku.com##+js(json-prune, html)
 genshin-soku.com,monhan-soku.com,xn--gckdevd5myivf.site,yamiisoku.com##+js(prevent-innerHTML)
-genshin-soku.com,monhan-soku.com,xn--gckdevd5myivf.site,yamiisoku.com##.catalog-content
+genshin-soku.com,monhan-soku.com,xn--gckdevd5myivf.site,yamiisoku.com##.rkx-product-groups
+genshin-soku.com,monhan-soku.com,xn--gckdevd5myivf.site,yamiisoku.com##.ypc-product-widget
 genshin-soku.com,monhan-soku.com,xn--gckdevd5myivf.site,yamiisoku.com##[class*="pdx-"]
 genshin-soku.com,monhan-soku.com,xn--gckdevd5myivf.site,yamiisoku.com##a:matches-attr("href"="/=[0-9a-f]{32}$/")
 genshin-soku.com,monhan-soku.com,xn--gckdevd5myivf.site,yamiisoku.com##a:not(.yrss-list__a):matches-attr("href"="/^.{100,}/")
