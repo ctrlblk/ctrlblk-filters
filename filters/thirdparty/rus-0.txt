@@ -9450,6 +9450,7 @@ $popup,domain=176.114.0.126|176.114.0.132|37.220.36.15|assiatv.com|cdnpotok.com|
 ||exponderle.pro^$popup
 ||ext-load.net^$third-party,popup
 ||extlinka.ru^$popup
+||eykek.com^$popup
 ||fastvk.com^$popup
 ||fclmnews.ru^$third-party,popup
 ||finetrack.ru^$popup
@@ -9635,6 +9636,7 @@ $popup,domain=176.114.0.126|176.114.0.132|37.220.36.15|assiatv.com|cdnpotok.com|
 ||ska4at.ru^$popup
 ||skiles.link^$third-party,popup
 ||social-leads.ru^$third-party,popup
+||sparksvale.com^$popup
 ||spiderbig.info^$popup
 ||starcrowd.ru^$popup
 ||starinform.ru^$third-party,popup
@@ -10255,8 +10257,8 @@ fit4brain.com###welcomepopup_window
 stalker-gsc.ru###win > .podps
 technoavia.ru##.Agreement
 glavbukh.ru##.GbShadow
+2gis.by,2gis.kz,2gis.ru##._1nhfz2
 2gis.by,2gis.kz,2gis.ru##._1nnq5pzj
-2gis.by,2gis.kz,2gis.ru##._fh8krf5
 all.biz##.ab-fade
 radio1.ru##.alertw
 esetnod32.ru##.b-fade
@@ -13737,6 +13739,7 @@ igdz1.ru^$script,domain=igdz.ru
 ||watch.ru/bp/
 ||watchcine.ru/templates/HDKINOMAX/images/bg.jpg
 ||wbbasket.ru/*/crm-bnrs/
+||wbbasket.ru/*/FullscreenBannerOnboardingViewModel.
 ||wdomain.ru/*.php|$script,domain=wdomain.ru
 ||weacom.ru/abrakadabra/
 ||weather7.ru/wp-content/uploads/*bonka*.jpg
@@ -20739,6 +20742,7 @@ ukrfootball.ua#?#aside > section:-abp-has(> .colum_widget_block_pp)
 jooble.org##aside > section[class^="ad"]
 stankiexpert.ru##aside a[id][href][target="_blank"]
 riwkus.pro##aside a[onclick^="yaCounter"]
+esports.ru##aside a[target="_blank"][rel="noindex nofollow"]
 bessarabiainform.com##aside div[class^="a-single"]
 adme.media##aside div[style^="min-height:"]
 magtimes.info##aside img[src^="http://magtimes.info/wp-content/uploads/"]
@@ -22726,7 +22730,7 @@ https://*adtech_uid=$~third-party,xmlhttprequest,domain=livejournal.com|olegmaka
 ||newsyou.info/wp-content/plugins/gtranslate/
 ||newsyou.info^$csp=script-src-elem 'self' https:
 ||ng72.ru^$csp=script-src 'self' 'unsafe-eval' https:
-||pikabu.ru/ajax/*?w3Vmw=$xmlhttprequest
+||pikabu.ru/ajax/*?w2Vmw=$xmlhttprequest
 ||ritsatv.ru^$csp=script-src
 ||ritsatv.ru^$popup
 ||ritsatv.ru^$~document
@@ -22814,6 +22818,7 @@ vk.com,vk.ru##[id^="post-"] > ._post_content > :only-child
 livejournal.com,olegmakarenko.ru,periskop.su,shakko.ru,shiro-kino.ru,vadimrazumov.ru##[role="banner"] > .s-header-extra + div[class]
 livejournal.com#?#a:-abp-has(span:-abp-contains(Реклама))
 pikabu.ru#?#article:-abp-has(> .story__left .story__pin)
+pikabu.ru#?#article:-abp-has(> .story__left > .story__scroll-btn)
 pikabu.ru#?#article:-abp-has(> .story__left > div:not([class]):only-child)
 pikabu.ru#?#article:-abp-has(> .story__left > span:first-child)
 pikabu.ru#?#article:-abp-has(> .story__left > span:only-child)
@@ -27135,6 +27140,7 @@ gbsmp.ru#@#img[width="728"][height="90"]
 @@||cdn.vidyomani.com^*/showads.js|$script,domain=vidyomani.com|webeyo.com
 @@||cdn.webeyo.com^*/showads.js|$script,domain=vidyomani.com|webeyo.com
 @@||chess-samara.ru/js/adsbygoogle.js$script,domain=chess-samara.ru
+@@||code.moviead55.ru/ovpaid.php?v=*&position=pre|$xmlhttprequest,domain=~ani5.top|~ani7.top|imasdk.googleapis.com|~jut-su.online
 @@||com^$script,domain=videomega.tv
 @@||contextual.media.net/dmedianet.js|$object,domain=tests24.su
 @@||debfile.com/ads/adframe.js$script,domain=debfile.com
@@ -27156,6 +27162,8 @@ gbsmp.ru#@#img[width="728"][height="90"]
 @@||gwss.ru^$xmlhttprequest,domain=gwss.ru
 @@||hack-master.ru^*AdblockDetected$script,domain=hack-master.ru
 @@||ictv.ua/wp-content/themes/ictv/includes/js/cnads.js|$script,domain=ictv.ua
+@@||imasdk.googleapis.com/js/sdkloader/ima3.js|$script,domain=ani5.top|ani7.top|jut-su.online
+@@||imasdk.googleapis.com/js/sdkloader/loader.js|$script,domain=ani5.top|ani7.top|jut-su.online
 @@||it-like.ru/ads_load/*.js|$domain=it-like.ru
 @@||ivbt.ru^$elemhide
 @@||knigilub.ru/*.js|$script,domain=knigilub.ru
@@ -27314,6 +27322,7 @@ usemind.org##.a-top
 delfi.ee##.ad-block-layer
 ogorod.ru##.adblock_popup_warning
 wowjp.net##.adblocker-notification
+ani5.top,ani7.top,jut-su.online##.agp-ad > [class]
 ani5.top,ani7.top,jut-su.online##.agp-err > b
 ani5.top,ani7.top,jut-su.online##.agp-err > div > [data-ab="reload"]
 ani5.top,ani7.top,jut-su.online##.agp-err > p
@@ -30058,7 +30067,7 @@ ya.ru,yandex.*##.simple-popup__overlay:remove()
 ||franecki.net/js/lib.js$important,script,redirect=noop.js
 ||frontend.vh.yandex.ru/player/*autoplay=1$subdocument,removeparam=|,domain=~music.yandex.*|~music.yandex.ru
 ||googletagmanager.com/gtag/js?id=UA-$important,script,domain=inforesist.org
-||imasdk.googleapis.com/js/sdkloader/ima3.js$script,redirect=google-ima.js,domain=ani5.top|ani7.top|jut-su.online
+||imasdk.googleapis.com/js/sdkloader/ima3.js$important,script,redirect=google-ima.js,domain=ani5.top|ani7.top|jut-su.online
 ||ipcamlive.com/player/player.php?*autoplay=true$subdocument,removeparam=autoplay
 ||loadercdn.com^$important,script,redirect=noopjs
 ||m.mixadvert.com/show/$important,script
@@ -33297,7 +33306,7 @@ kinoafisha.ua##.turn-off-add-block-text
 stalkerportaal.ru##.video_adsense
 bookskeeper.ru,e-xecutive.ru##.warning
 forum.bestflowers.ru##.xenOverlay
-/^https?:\/\/pikabu\.ru\/ajax\/{1,2}[^?]+\?[A-Za-z0-9]+=_*[0-9a-f]{22,}_[a-z0-9_]+/$xmlhttprequest,domain=pikabu.ru
+/^https?:\/\/pikabu\.ru\/ajax\/{1,2}[^?]+\?[A-Za-z0-9]+=_*(?:%20)?[0-9a-f]{22,}_[a-z0-9_]+/$xmlhttprequest,domain=pikabu.ru
 /cookie_check.min.js$domain=acetv.me
 /gogl_detector$script,domain=meddaily.ru|newsru.com
 @@||anidub.com/ads.js|$script,domain=anidub.com

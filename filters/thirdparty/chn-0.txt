@@ -1,10 +1,10 @@
 ![Adblock Plus 2.0]
-! Checksum: eSa0Th3uQCt2XZkDqEX7eA
-! Diff-Path: ../patches/224/224-s-1791796873-3600.patch
+! Checksum: fh7dCBawf7GNSepk0jbYEg
+! Diff-Path: ../patches/224/224-s-1791882836-3600.patch
 ! Title: AdGuard Chinese filter
 ! Description: EasyList China + AdGuard Chinese filter. Filter list that specifically removes ads on websites in Chinese language.
-! Version: 2.1.67.28
-! TimeUpdated: 2026-10-12T09:17:57+00:00
+! Version: 2.1.67.35
+! TimeUpdated: 2026-10-13T09:11:42+00:00
 ! Expires: 5 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -1144,8 +1144,6 @@ ipv6.baidu.com,www.baidu.com,www1.baidu.com,xueshu.baidu.com###content_left > .r
 !
 ! NOTE: Specific rules
 !
-findprice.com.tw##.fsa__promo
-findprice.com.tw##.divAD2
 gh-proxy.com##section.z-10 > div.w-full:has(> a[rel*="sponsored"])
 global.hk01.com##div[class^="placeholder-ad-"]:style(min-height: 0 !important;)
 global.hk01.com##div[class*="_.js-ad-slot]"]
@@ -1172,7 +1170,6 @@ ikanbot.com##+js(no-window-open-if, _blank)
 ||ikanbot.com/resources/common.js?v=$script
 huangguoai.com##.hg-ssp-slot
 programme.tvb.com##.tvb-ads--empty
-mscw-guidebook.com##.plaza-ad-wrap
 adersaytech.com##.adersay-ad
 ||peachring.com/new-page/js/human-verify.js$script
 peachring.com##+js(remove-class, hv-pending, html)
@@ -3753,6 +3750,7 @@ bmvc2020-conference.com#@#div[id][style="width: 100%;"] > iframe[scrolling="no"]
 -*-*-*-*.alpha^$script,3p
 /jameson_manhua/template/ads/*
 /static/tb/kyqp.gif
+/hao123/card/fill
 ://ads-img2026.
 :866/o.js$script,3p
 /phoenix-share/js/code.123.bg.
@@ -4095,7 +4093,6 @@ bmvc2020-conference.com#@#div[id][style="width: 100%;"] > iframe[scrolling="no"]
 /ggpic/*
 /ggtp/*
 /ggvip/*.js
-/gh/91porny/*
 /gmu-download.oss-
 /guang/5liao.me.gif
 /guang/guang*.js
@@ -4650,7 +4647,6 @@ newduba.cn###jq_youxi
 ###mv_float_layer
 ###my-adsFPR
 ###nav + .slider-spons
-###nav-home > .coment-bottom
 ###navcontainer + .moneyarea
 ###netease_mail_footer
 ###news_top_advert
@@ -4665,7 +4661,6 @@ newduba.cn###jq_youxi
 ###piao_div_4[style*="width:140px;"]
 ###piao_div_5[style*="width:140px;"]
 ###player-bottom-ads
-###playerAdvLayer
 ###player_banner[style*="fixed;"]
 ###player_pause > .tip + a[target="_blank"]
 ###player_pause[style^="position"] > a[target="_blank"]
@@ -4813,7 +4808,6 @@ newduba.cn###jq_youxi
 ##.adsoho
 ##.adv-6park
 ##.adv-couplets
-##.adv-g1
 ##.advInfoElem
 ##.advert-short
 ##.advertising_lightbox
@@ -4852,7 +4846,6 @@ newduba.cn###jq_youxi
 ##.bottomads + .leftd
 ##.bottomd > .closebox2
 ##.broadcastMe[style="width: 1200px;"]
-##.btn.btn-success.text-white[href*=".com:"]
 ##.bus_adsbox
 ##.cari-ads
 ##.chat-ad
@@ -4978,8 +4971,6 @@ newduba.cn###jq_youxi
 ##.jq_mediav_ad_report
 ##.jqrp_infoflow_ad
 ##.js-cui-pt-item[data-qhb]
-##.jsv > .mobile-adv
-##.jsv-layer > .image > a[href^="http"]
 ##.ksads
 ##.leftadv
 ##.leftd + .rightd
@@ -5320,6 +5311,7 @@ newduba.cn###jq_youxi
 ##.component-advertises
 ##.hg-ssp-slot
 ###main > .nv-ad
+###adFloat
 ##a[href*="/122.51.121.126:"]
 ##a[href*="/137.220.194.105:"]
 ##a[href*="/137.220.194.123:"]
@@ -5333,6 +5325,14 @@ newduba.cn###jq_youxi
 .z.dkt-ib.com
 ||cnzz.trafficmanager.net^
 ||cupfox.app^$3p
+||3tv4botiq.com^
+||bphzzzguoqrnxu.com^
+||mq82ovaqu.com^
+||conjuror45.com^
+||jq5ls14m0.com^
+||051ss3usg.com^
+||ma9gqw1l4.com^
+||awp8r0f7q.com^
 ||6px1vsaq0h.com^
 ||2mlt7jkbob.com^
 ||dmlenpksrndflu.com^
@@ -5342,6 +5342,8 @@ newduba.cn###jq_youxi
 ||hrmwxu.com^
 ||csom844jkc.com^
 ||rt36a6gqfk.com^
+||bn067lnkrb.com^
+||s17uqjk39o.com^
 ||7istqn6fh.com^
 ||1736js66.com^
 ||xwpmbxdwlkrfzo.com^
@@ -10374,7 +10376,6 @@ $popup,3p,domain=76fengyun.com|avsdown.com|downdv.com|downdvs.com|downhhh.com|im
 /BadwebRemindPage.aspx?param=$popup,3p
 /hndxweb/push$popup,3p
 /htmm/20*.php$popup
-/indexpc.html?agent=$popup,3p
 /portalwlanad/pages/*$popup
 /pushportal/PushPortalServer$popup,3p
 /pushstart.aspx?$popup,3p
@@ -14567,7 +14568,9 @@ meijutt.*/js/pcjs/
 ||jinbaodm.com/public/system
 ||peachring.com/new-page/js/human-verify.
 ||peachring.com/popunder$popup
+||91porna.com/static/web/js/ad-sdk-
 xc6b.com##.cHeadImg
+chigua.com##.recommend-layer
 mscw-guidebook.com##.qiyou-ad
 mscw-guidebook.com##.plaza-ad-wrap
 xfastest.com###xfastestWide385
@@ -14654,11 +14657,11 @@ twkan.com###mobile-ad
 axiang.cc###achang-related-adsense
 hcbbs.com##.plc > .pct + :last-child
 mysteel.com###float-adv
-91porna.com,evgpopxb.cc##.dx-banner-item
+91porna.com##.dx-banner-item
 91porna.com##.checkNum[target="_blank"]:not([href*="91porna.com"])
 91porna.com##.h-full.swiper
-91porna.com,evgpopxb.cc##.ad-dialog
-91porna.com,evgpopxb.cc##.modal-backdrop
+91porna.com##.ad-dialog
+91porna.com##.modal-backdrop
 avbebe.com##.footer_column:nth-child(n+2)
 xchina.co##.block-overlay
 baozimh.org##.relative:has(>.bg-red-500)
@@ -20708,17 +20711,9 @@ jm18c-oec.club,18comic.org,18comic.vip,18comic.ink##div[data-group]:has(>.group-
 !#7
 !#8
 !#91porny.com
-91porny.com,91porn.fans,91porny.org###main > div[class][id]:has(.video-elem>a[rel="noopener nofollow"])
-91porny.com,91porn.fans,91porny.org##.colVideoList:has(>.video-elem>.display[href^="http"])
-91porny.com,91porn.fans,91porny.org###main > div[class][id]:has(>div>style)
-###playerJsvLayer.jsv-layer
-91porny.com##.container-fluid.p-0[class*="mb-"]
-##.fixed-bottom.jsv.jsv-g1
-91porny.com##.jsv-g1
-##header + #main:nth-child(n+4) .container-fluid.mb-0.p-0
-##header + #main:nth-child(n+4) .container-fluid.mb-3.p-0
-##header + #main:nth-child(n+4) > div[id^="po-s"]:not(#po-shd)
-||27gh.cc^$popup,3p
+91porny.com,91porn.fans,91porny.org,jiuse704.com,jiuse705.com,xn--sjqr38j.com###main > div[class][id]:has(.video-elem>a[rel="noopener nofollow"])
+91porny.com,91porn.fans,91porny.org,jiuse704.com,jiuse705.com,xn--sjqr38j.com##.colVideoList:has(>.video-elem>.display[href^="http"])
+91porny.com,91porn.fans,91porny.org,jiuse704.com,jiuse705.com,xn--sjqr38j.com###main > div[class][id]:has(>div>style)
 !#99re.com
 .gif|$domain=99re.com
 /99rejs/js/adv
