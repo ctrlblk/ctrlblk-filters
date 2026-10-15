@@ -1,10 +1,10 @@
 ![Adblock Plus 2.0]
-! Checksum: /7hWozIK7Rzkat06EeW43g
-! Diff-Path: ../patches/13/13-s-1791947465-3600.patch
+! Checksum: hmACk/1LSqAc464JYm4Yrg
+! Diff-Path: ../patches/13/13-s-1792044764-3600.patch
 ! Title: AdGuard Turkish filter
 ! Description: Filter list that specifically removes ads on websites in Turkish language.
-! Version: 2.0.68.98
-! TimeUpdated: 2026-10-14T03:07:12+00:00
+! Version: 2.0.69.2
+! TimeUpdated: 2026-10-15T06:09:05+00:00
 ! Expires: 5 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -1577,6 +1577,9 @@ dirilispostasi.com,turkuazgazetesi.net,yenialanya.com,bugunkocaeli.com.tr,cagdas
 !
 ! NOTE: Specific rules
 !
+||media.cumhuriyet.com.tr/assets/js/cmhads.js
+tgrthaber.com##div[id^="taboola-slot"]
+tgrthaber.com##.cozen-kazanir-banner
 sporx.com##div[style*="width: 100%;"][style*="height: 250px;"]
 turizmguncel.com##body > div.fixed:has(> div[data-ad-slot])
 turizmguncel.com##aside[data-side-rail]
@@ -6131,9 +6134,9 @@ pornocudayi56.com##a[href][aria-label^="Bu alana reklam"]
 videoplays.cfd##.vast-ad-overlay
 /rek.xml|$domain=videoplays.cfd
 videoplays.cfd##+js(abort-on-stack-trace, document.createElement, getAdMountPoint)
-dizipalorjinal14.com##body > a[class^="pageskin-"]
-dizipalorjinal14.com##[aria-label="Reklam"]
-dizipalorjinal14.com##.has-pageskin:style(background-image: none !important;)
+dizipalorjinal15.com##body > a[class^="pageskin-"]
+dizipalorjinal15.com##[aria-label="Reklam"]
+dizipalorjinal15.com##.has-pageskin:style(background-image: none !important;)
 !
 ! Frequently changed domains: golbettv*.com
 ! Source: golbettv6.com
@@ -6147,9 +6150,9 @@ golbettv6.com##.bnr
 /bahsinetv\d+\.site$/##body > a[target="_blank"]
 /bahsinetv\d+\.site$/##body > div[class^="reklam-"]
 /bahsinetv\d+\.site$/##.footer-links
-bahsinetv12.site##body > a[target="_blank"]
-bahsinetv12.site##body > div[class^="reklam-"]
-bahsinetv12.site##.footer-links
+bahsinetv13.site##body > a[target="_blank"]
+bahsinetv13.site##body > div[class^="reklam-"]
+bahsinetv13.site##.footer-links
 !
 ! Frequently changed domains: piatv*.site
 ! Source: piatv2.site
@@ -6223,12 +6226,12 @@ restizle858.com##.header-nav > a[href="/"] ~ a[href][target="_blank"]
 /harbitv\d+\.live$/###big-wins-ticker
 /harbitv\d+\.live$/##.odds-container
 /harbitv\d+\.live$/##.header-top > div.header-text
-harbitv8.live##div[class^="reklam-"]
-harbitv8.live##body > header
-harbitv8.live##.footer-links
-harbitv8.live###big-wins-ticker
-harbitv8.live##.odds-container
-harbitv8.live##.header-top > div.header-text
+harbitv9.live##div[class^="reklam-"]
+harbitv9.live##body > header
+harbitv9.live##.footer-links
+harbitv9.live###big-wins-ticker
+harbitv9.live##.odds-container
+harbitv9.live##.header-top > div.header-text
 !
 ! Frequently changed domains: kodamantv*.com
 ||kodamantv*.com/*.gif
@@ -7521,9 +7524,9 @@ sinefy3.com,sinefy4.com,sinefy5.com,sinefy6.com,sinefy7.com,sinefy8.com,sinefy9.
 /sporligtv\d+\.live/##div[id^="binxell"]
 /sporligtv\d+\.live/###ustbanner
 /sporligtv\d+\.live/###superderbi
-sporligtv629.live##div[id^="binxell"]
-sporligtv629.live###ustbanner
-sporligtv629.live###superderbi
+sporligtv630.live##div[id^="binxell"]
+sporligtv630.live###ustbanner
+sporligtv630.live###superderbi
 !
 ! Frequently changed domains: avrupabettv*.com
 ! Source: https://avrupabettv997.com/
