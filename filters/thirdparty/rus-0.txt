@@ -19672,6 +19672,7 @@ lifehacker.ru##[href^="/tag/rasprodazha"]
 phpbbguru.net##[href^="go.php?to="]
 nntt.org##[href^="http://numbuster.com"]
 nntt.org##[href^="http://www.cenam.net"]
+sovsport.ru##[href^="https://np.plat.services/"]
 game2day.ru##[href^="https://p2d.ru/"]
 smi2.ru##[href^="https://smi2.ru/newdata/adpreview?ad="]
 link.softoroom.org##[href^="https://softoroom.org/link/jump.php"]
@@ -22831,10 +22832,10 @@ vk.com,vk.ru##[id^="post-"] > ._post_content > :only-child
 livejournal.com,olegmakarenko.ru,periskop.su,shakko.ru,shiro-kino.ru,vadimrazumov.ru##[role="banner"] > .s-header-extra + div[class]
 livejournal.com#?#a:-abp-has(span:-abp-contains(Реклама))
 pikabu.ru#?#article:-abp-has(> .story__left .story__pin)
-pikabu.ru#?#article:-abp-has(> .story__left > .story__scroll-btn)
-pikabu.ru#?#article:-abp-has(> .story__left > div:not([class]):only-child)
+pikabu.ru#?#article:-abp-has(> .story__left > div:not([class]))
 pikabu.ru#?#article:-abp-has(> .story__left > span:first-child)
 pikabu.ru#?#article:-abp-has(> .story__left > span:only-child)
+pikabu.ru#?#article:-abp-has(> .story__main > div:not(:-abp-has(*)))
 pikabu.ru#?#article:-abp-has(> .story__main > div:only-child)
 pikabu.ru#?#article:-abp-has(> .story__main:not(:-abp-has(*)))
 kp.kg,kp.kz,kp.ru,md.kp.media#?#body > #app div:-abp-properties(background-color: rgb(225, 231, 235))
@@ -23795,7 +23796,6 @@ rambler.ru#?#article div:-abp-has(> rambler-info-banner)
 rambler.ru#?#aside:-abp-has(> div > [class^="banner--native-partner_widget"])
 finance.rambler.ru##body[data-finance_media-desktop="main"] .commercial-branding > nav ~ div > div > script ~ div > div:last-child
 gazeta.press,gazeta.ru#?#div:-abp-has(> .b_telegram)
-www.rambler.ru#?#div:-abp-has(> div > [data-cerber^="widgets-carousel:"]) + div > div > div > div:-abp-has(> div a[href^="https://ads.adfox.ru/"])
 rambler.ru#?#div:-abp-has(> div[id*=":_adfox_"])
 rambler.ru#?#div:-abp-has(> div[id^="adfox-"][id*="rambler"])
 mail.rambler.ru##div[class*="Ad-direct"]
@@ -30348,7 +30348,6 @@ ya.ru##div[style]:matches-prop(innerText="/РЕКЛАМА/")
 ya.ru##div[style]:matches-prop(innerText="/РЕКЛАМА/"):remove()
 gazeta.press,gazeta.ru,lenta.news,lenta.ru,secretmag.ru,wmj.ru##iframe[src^="https://vp.rambler.ru/player/"] ~ svg
 gazeta.press,gazeta.ru,lenta.news,lenta.ru,secretmag.ru,wmj.ru##iframe[src^="https://vp.rambler.ru/player/"]:style(position: relative !important)
-rutube.ru/play/embed##+js(json-prune-fetch-response, appearance.auto_start)
 ||vp.rambler.ru/player/$csp=media-src 'self',domain=championat.com|championat.ru|lenta.news|lenta.ru|gazeta.press|gazeta.ru|rambler.ru|~vp.rambler.ru|secretmag.ru|wmj.ru
 !#endif
 !
