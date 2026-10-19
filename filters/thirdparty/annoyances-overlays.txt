@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: EasyList – Newsletter Notices
-! Last modified: Sat, 17 Oct 2026 11:10:55 +0000
+! Last modified: Sun, 18 Oct 2026 21:02:34 +0000
 ! Expires: 7 days (update frequency)
 ! *** easylist:template_header.txt ***
 !
@@ -3467,8 +3467,10 @@ therealmediang.com##.rm-newsletter-banner
 aol.com##.rmp-module__newsletter-signup
 religionnews.com##.rns-newsletter-embed-content
 religionnews.com##.rns-pop-up-wrapper
+niemanlab.org##.roscoe-newsletter-box
 notthebee.com##.rounded-lg.px-6
 kqed.org##.routes-Site-routes-Post-EmailSignup-__EmailSignup__postEmailSignup
+niemanlab.org##.rsc-header-subscribe
 recipetips.com##.rtJqibox
 readwrite.com##.rw-subscribe-sec
 niemanlab.org##.s2-bottom-emailpromo
@@ -3507,7 +3509,7 @@ searchenginejournal.com##.sej-subscribe-form
 searchenginejournal.com##.sej-widget
 iphoneincanada.ca##.send-footer
 ianvisits.co.uk##.sendysubscribe
-1000logos.net,ambitiouskitchen.com,cookincanuck.com,groovypost.com,jxnl.co,leadingsapiens.com,notthathardtohomeschool.com,passiveincomemd.com,retrogamecoders.com,sallysbakingaddiction.com,sofx.com,sundaysuppermovement.com,theconsciousplantkitchen.com,theroastedroot.net,troypoint.com,wholefully.com,wyseguide.com##.seva-form
+1000logos.net,ambitiouskitchen.com,cookincanuck.com,groovypost.com,jxnl.co,leadingsapiens.com,notthathardtohomeschool.com,passiveincomemd.com,retrogamecoders.com,righto.com,sallysbakingaddiction.com,sofx.com,sundaysuppermovement.com,theconsciousplantkitchen.com,theroastedroot.net,troypoint.com,wholefully.com,wyseguide.com##.seva-form
 alldayidreamaboutfood.com,inspiredtaste.net,laurenslatest.com##.seva-overlay
 startupfortune.com##.sf-newsletter
 webmd.com##.sf-nls-wrapper
@@ -5130,6 +5132,9 @@ afterbabel.com,americafirstreport.com,americasvoice.news,antiracismnewsletter.co
 afterbabel.com,americafirstreport.com,americasvoice.news,antiracismnewsletter.com,aporiamagazine.com,asiasentinel.com,blog.codingconfessions.com,computerenhance.com,construction-physics.com,dkb.blog,dossier.today,duffelblog.com,elysian.press,engineeringleadership.xyz,eugyppius.com,experimental-history.com,flowstate.fm,forkingpaths.co,friendlyatheist.com,fullstackeconomics.com,gamefile.news,garbageday.email,goto10retro.com,hamiltonnolan.com,henrikkarlsson.xyz,honest-broker.com,kunstler.com,latent.space,michaelmoore.com,moreisdifferent.blog,newsletter.banklesshq.com,newsletter.eng-leadership.com,newsletter.maartengrootendorst.com,noahpinion.blog,persuasion.community,piratewires.com,platformer.news,popular.info,publicnotice.co,racket.news,read.perspectiveship.com,sambowman.co,secretsofprivacy.com,semianalysis.com,slowboring.com,statsignificant.com,strangeloopcanon.com,substack.com,techemails.com,theankler.com,thebignewsletter.com,thebulwark.com,theclimatebrink.com,thedebriefnetwork.com,theintrinsicperspective.com,unchartedterritories.tomaspueyo.com,understandingai.org,webworm.co,wonkette.com,zeteo.com##div[class^="background-"]
 ! thefederalist.com
 thefederalist.com##+js(set-cookie, pum-276000, true)
+! niemanlab.org
+niemanlab.org###nlep
+niemanlab.org##body:style(overflow: auto !important; position: initial !important;)
 ! jezebel.com
 avclub.com,jezebel.com,pastemagazine.com##+js(set-cookie, pm_email_popup_status, 1)
 ! tweaktown.com
@@ -6541,7 +6546,7 @@ doctorofcredit.com#@#.wpdiscuz-subscribe-bar
 ! fanboy_newsletter_shopping_allowlist_general_hide.txt
 
 ! Title: uBlock filters – Other Annoyances
-! Last modified: Sun, 18 Oct 2026 02:22:06 +0000
+! Last modified: Sun, 18 Oct 2026 12:16:27 +0000
 ! Expires: 7 days
 ! Description: Filters optimized for uBlock Origin, to be used with EasyList's and/or Adguard's "Other Annoyances" list(s)
 ! License: https://github.com/uBlockOrigin/uAssets/blob/master/LICENSE
@@ -8773,6 +8778,14 @@ tvtun.com##+js(aeld, contextmenu)
 ! https://github.com/uBlockOrigin/uAssets/pull/34647
 agerpres.ro##+js(aeld, contextmenu, preventDefault)
 
+! https://github.com/uBlockOrigin/uAssets/issues/34915
+radnuk.com.ua##+js(set, document.oncopy, undefined)
+!#if env_firefox
+radnuk.com.ua##.articles-content[oncopy]:remove-attr(oncopy)
+!#else
+radnuk.com.ua##+js(ra, oncopy, .articles-content[oncopy], complete)
+!#endif
+
 ! ================================================ END: Anti copy, right-click, devtools, text select etc. ==========================================================================
 
 ! ================================================================START: Anti-adblock ===============================================================================================
@@ -8932,7 +8945,7 @@ igorslab.de##.ilab-adblocker-notice
 ! https://github.com/uBlockOrigin/uAssets/issues/34880
 ! https://github.com/uBlockOrigin/uAssets/issues/34881
 ! https://github.com/uBlockOrigin/uAssets/issues/26042
-forums.hfboards.com,icy-veins.com,tapology.com,thesimsresource.com,time.is,tracklock.gg,tvpassport.com,tvtv.ca##+js(rmnt, script, reviveScroll, excludes, self.__next)
+forums.hfboards.com,icy-veins.com,royaleapi.com,tapology.com,thesimsresource.com,time.is,tracklock.gg,tvpassport.com,tvtv.ca##+js(rmnt, script, reviveScroll, excludes, self.__next)
 
 ! ================================================== END: Anti-adblock ==================================================================================
 
