@@ -1,10 +1,10 @@
 ![Adblock Plus 2.0]
-! Checksum: kRYWxuFNK4SmrO6wvkZyMQ
-! Diff-Path: ../patches/9/9-s-1792415873-3600.patch
+! Checksum: elzZs+1+IAcpkq1Eqb/9jw
+! Diff-Path: ../patches/9/9-s-1792567355-3600.patch
 ! Title: AdGuard Spanish/Portuguese filter
 ! Description: Filter list that specifically removes ads on websites in Spanish, Portuguese, and Brazilian Portuguese languages.
-! Version: 2.0.36.11
-! TimeUpdated: 2026-10-19T13:14:29+00:00
+! Version: 2.0.36.15
+! TimeUpdated: 2026-10-21T07:18:08+00:00
 ! Expires: 5 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -205,6 +205,11 @@
 !
 !
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/244958
+nexusmangas.com##+js(no-setTimeout-if, {x()})
+nexusmangas.com##+js(no-setInterval-if, {x()})
+nexusmangas.com##+js(addEventListener-defuser, , {x()})
+nexusmangas.com##+js(prevent-fetch, googlesyndication)
 ! https://github.com/AdguardTeam/AdguardFilters/issues/244705
 novelaocs.top##+js(no-setTimeout-if, revisarPublicidad)
 novelaocs.top##+js(abort-on-stack-trace, Element.prototype.removeAttribute, Publicidad)
@@ -254,6 +259,8 @@ hardwarepremium.com#@#.sponsored-ad
 ! https://github.com/AdguardTeam/AdguardFilters/issues/238502
 otakufilmes.org##body:style(overflow: auto !important;)
 otakufilmes.org###adblock-overlay:style(display: none !important;)
+otakufilmes.org##+js(remove-attr, inert, body > [inert])
+otakufilmes.org##+js(prevent-fetch, /(?:a-ads|freitarriver)\.com/)
 otakufilmes.org##+js(addEventListener-defuser, DOMContentLoaded, adblock)
 ! https://github.com/uBlockOrigin/uAssets/issues/34810
 ! https://www.reddit.com/r/uBlockOrigin/comments/1vj17s5/adblock_detection_on_httpsdarkmahouio/
@@ -2201,6 +2208,7 @@ actualidadiphone.com,lucrandoideias.com,proandroid.com,lusometeo.com,kltutors.co
 !
 ! NOTE: Specific rules
 !
+animegratis.org##.amazon-showcase-container
 ggmax.com.br##div[class]:has(> .announcement__ad)
 estadao.com.br##div:has(> .ads-container:only-child)
 estadao.com.br##div:has(> div[class*="BlueStudio__Container"])

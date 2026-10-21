@@ -19088,7 +19088,7 @@ prgazeta.ru##.vk-group
 gdz-putina.fun##.vk_show
 vk.com,vk.ru#?#.vkitInternalGroupCard > [role="feed"] > article:-abp-has(> [data-post-id] [data-testid="post-header"] > div:nth-child(2) > div + div > div span[data-role])
 vk.com,vk.ru#?#.vkitInternalGroupCard > [role="feed"] > article:-abp-has(> [data-post-id] a[rel]:-abp-contains(vk.cc/))
-vk.com,vk.ru,vkvideo.ru##.vkuiBanner__host
+~id.vk.ru,vk.com,vk.ru,vkvideo.ru##.vkuiBanner__host
 vkvideo.ru##.vkuiBanner__host + div[style^="--vkit_internal--spacing_gap_size:"]
 yapx.ru##.vlDxyyFUTdjDdXmIBPxWDa
 spletnik.ru##.vms_article_parent a[href*="utm_"]
@@ -21101,7 +21101,7 @@ adblockbench.com##div[class*="ad-"][id][style*="height:"]
 rg.ru##div[class*="adBox"]
 rg.ru##div[class*="adFox"]
 agroxxi.ru##div[class*="adagro"]
-yummy-ani.me,yummy-anime.ru,yummyani.me##div[class*="adfinity_block"]
+knigavuhe.org,yummy-ani.me,yummy-anime.ru,yummyani.me##div[class*="adfinity_block"]
 mayaksbor.ru,rg.ru,ruwiki.ru##div[class*="adfox"]
 svpressa.ru##div[class*="adfox_banner"]
 glavnoe.net,infotime.co##div[class*="ads-fixed"]
@@ -22745,6 +22745,8 @@ $csp=script-src-attr 'none',domain=eurointegration.com.ua|sportanalytic.com|note
 @@||statika.mpsuadv.ru/scripts/*.js|$script,domain=trychatgpt.ru
 @@||stravers.live^$third-party,subdocument
 @@||stravers.live^$~third-party
+@@||thealloha.club^$third-party,subdocument
+@@||thealloha.club^$~third-party
 https://*adtech_uid=$~third-party,xmlhttprequest,domain=livejournal.com|olegmakarenko.ru|periskop.su|shakko.ru|shiro-kino.ru|vadimrazumov.ru
 ||captcha-api.yandex.ru^$domain=drive2.ru
 ||eg.ru^$csp=script-src 'self' 'unsafe-eval' https:
@@ -22755,7 +22757,7 @@ https://*adtech_uid=$~third-party,xmlhttprequest,domain=livejournal.com|olegmaka
 ||newsyou.info/wp-content/plugins/gtranslate/
 ||newsyou.info^$csp=script-src-elem 'self' https:
 ||ng72.ru^$csp=script-src 'self' 'unsafe-eval' https:
-||pikabu.ru/ajax/*?hB9Hk=$xmlhttprequest
+||pikabu.ru/ajax/*?hB8Hk=$xmlhttprequest
 ||ritsatv.ru^$csp=script-src
 ||ritsatv.ru^$popup
 ||ritsatv.ru^$~document
@@ -22804,10 +22806,6 @@ vk.com,vk.ru###feed_rows > div[class="feed_row "] > div[id]:not([id^="feed_repos
 vk.com,vk.ru###main_feed:not(.feed_submit_only_shown) div:first-child:not(.page_block) ~ .feed_row > [data-post-id][id^="post"][post_view_hash]:not([data-post-track-code])
 vk.com,vk.ru##._feed_rows > div:not([id]):not([class])
 vk.com,vk.ru##._post_content > .post
-vk.com,vk.ru#?#._post_content:-abp-has(.Efxztiz1tCs6S5IDhTuN)
-vk.com,vk.ru#?#._post_content:-abp-has(.g03FJ4dTToqroympKAMc)
-vk.com,vk.ru#?#._post_content:-abp-has(.l2Q63U68RkAXQkXEoJnJ)
-vk.com,vk.ru#?#._post_content:-abp-has(.r4jouGh_Hfn9c5AzpbJg)
 vk.com,vk.ru#?#._post_content:-abp-has([src*="mradx."])
 aigenda.ru#@#.ad-placeholder
 aigenda.ru#@#.ad-slot
@@ -22891,6 +22889,7 @@ $popup,domain=rstprgapipt.com|temp2cdn.link|temptcdn.com
 /vast/ad-rotator/*
 ?utm_source=veoveo$popup
 ||balamutka.link^$third-party
+||beloboka.link^$third-party
 ||cdn-global-mb.com^$third-party
 ||cdn-global-mst.com^$third-party
 ||cdn-mst-ru.com^$third-party
@@ -22916,7 +22915,9 @@ $popup,domain=rstprgapipt.com|temp2cdn.link|temptcdn.com
 ||rubakaka.org^$third-party
 ||samograyka.link^$third-party
 ||shaloburda.link^$third-party
+||skorobeyka.link^$third-party
 ||skovorodnya.link^$third-party
+||sosilapu.org^$third-party
 ||strashnokrivo.org^$third-party
 ||temp2cdn.link/*.xml?$xmlhttprequest
 ||temp2cdn.link/api-integration/
@@ -22924,6 +22925,7 @@ $popup,domain=rstprgapipt.com|temp2cdn.link|temptcdn.com
 ||temptcdn.com/*.xml?$xmlhttprequest
 ||temptcdn.com/api-integration/
 ||temptcdn.com^$third-party,xmlhttprequest
+||tikhomira.link^$third-party
 ||vertiguzha.link^$third-party
 ||veselchaga.link^$third-party
 ||viieqcjw.com^$third-party
@@ -22932,6 +22934,7 @@ $popup,domain=rstprgapipt.com|temp2cdn.link|temptcdn.com
 ||yankimanki.org^$third-party
 ||yaropolka.link^$third-party
 ||ykoza.com^$popup
+||zhenivalka.link^$third-party
 !
 ! Плеер venom, в основном для ua-юзеров, примеры >
 ! https://lord.livesx.online/118464-kostjum-2022-i8-e1.html
@@ -23592,8 +23595,9 @@ fontanka.ru##aside ~ div aside > div[class]:first-child
 fontanka.ru##aside:empty
 fontanka.ru#?#div[class]:-abp-has(> div > button + [href="/pressrelease/"])
 fontanka.ru##div[class^="newsFeedBlock_"] > div[class^="news_"] > a[href^="https://doctorpiter.ru/"]
-116.ru,14.ru,161.ru,164.ru,173.ru,178.ru,26.ru,29.ru,35.ru,43.ru,45.ru,48.ru,51.ru,53.ru,56.ru,59.ru,60.ru,63.ru,68.ru,71.ru,72.ru,74.ru,76.ru,86.ru,89.ru,93.ru,chita.ru,e1.ru,ircity.ru,izh1.ru,mgorsk.ru,msk1.ru,ngs.ru,ngs22.ru,ngs24.ru,ngs42.ru,ngs55.ru,ngs70.ru,nn.ru,sochi1.ru,sterlitamak1.ru,tolyatty.ru,ufa1.ru,v1.ru,vladivostok1.ru,voronezh1.ru,ya62.ru#?#div[class^="newsFeedBlock_"] > div[class^="news_"]:-abp-has(> a[href*="?erid="])
+116.ru,14.ru,161.ru,164.ru,173.ru,178.ru,26.ru,29.ru,35.ru,43.ru,45.ru,48.ru,51.ru,53.ru,56.ru,59.ru,60.ru,63.ru,68.ru,71.ru,72.ru,74.ru,76.ru,86.ru,89.ru,93.ru,chita.ru,e1.ru,fontanka.ru,ircity.ru,izh1.ru,mgorsk.ru,msk1.ru,ngs.ru,ngs22.ru,ngs24.ru,ngs42.ru,ngs55.ru,ngs70.ru,nn.ru,sochi1.ru,sterlitamak1.ru,tolyatty.ru,ufa1.ru,v1.ru,vladivostok1.ru,voronezh1.ru,ya62.ru#?#div[class^="newsFeedBlock_"] > div[class^="news_"]:-abp-has(> a[href*="?erid="])
 fontanka.ru#?#div[class^="newsFeedBlock_"] > div[class^="news_"]:-abp-has(> a[href^="https://doctorpiter.ru/"])
+116.ru,14.ru,161.ru,164.ru,173.ru,178.ru,26.ru,29.ru,35.ru,43.ru,45.ru,48.ru,51.ru,53.ru,56.ru,59.ru,60.ru,63.ru,68.ru,71.ru,72.ru,74.ru,76.ru,86.ru,89.ru,93.ru,chita.ru,e1.ru,fontanka.ru,ircity.ru,izh1.ru,mgorsk.ru,msk1.ru,ngs.ru,ngs22.ru,ngs24.ru,ngs42.ru,ngs55.ru,ngs70.ru,nn.ru,sochi1.ru,sterlitamak1.ru,tolyatty.ru,ufa1.ru,v1.ru,vladivostok1.ru,voronezh1.ru,ya62.ru#?#div[class^="newsFeedBlock_"] > div[class^="news_"]:-abp-has(> div[class*=" advMark_"])
 116.ru,14.ru,161.ru,164.ru,173.ru,178.ru,26.ru,29.ru,35.ru,43.ru,45.ru,48.ru,51.ru,53.ru,56.ru,59.ru,60.ru,63.ru,68.ru,71.ru,72.ru,74.ru,76.ru,86.ru,89.ru,93.ru,chita.ru,e1.ru,fontanka.ru,ircity.ru,izh1.ru,mgorsk.ru,msk1.ru,ngs.ru,ngs22.ru,ngs24.ru,ngs42.ru,ngs55.ru,ngs70.ru,nn.ru,sochi1.ru,sterlitamak1.ru,tolyatty.ru,ufa1.ru,v1.ru,vladivostok1.ru,voronezh1.ru,ya62.ru#?#div[class^="news_"]:-abp-has(> a[href*="/longread"])
 72.ru,74.ru,chita.ru,ngs.ru,ufa1.ru,www.e1.ru##div[data-test="header-sticky"] > div > section ~ div
 fontanka.ru##div[style*="--creative-height:"]
@@ -28991,6 +28995,7 @@ cdn.viqeo.tv##[data-video_status="paused"] .buttonContainer[data-name="play"][st
 ! Фикс для VK-плеера во фреймах VIQEO
 club,com,kg,kz,md,media,net,org,ru,su,tv##[data-video_status][data-adapter="vk"] .mediaContainer:style(display: unset !important)
 club,com,kg,kz,md,media,net,org,ru,su,tv##[data-video_status][data-adapter="vk"] .previewContainer
+club,com,kg,kz,md,media,net,org,ru,su,tv##[data-video_status][data-adapter="vk"] .spinnerContainer
 ! ---
 virtualbrest.ru##body > div[id][class] > .header > div > div:not([class^="header"]) > *
 virtualbrest.ru##body > div[id][class] > .header ~ div[class] > ul > li[class]:not(.ttyyuu)
@@ -30307,6 +30312,7 @@ vkvideo.ru/video_ext.php##+js(set-constant, Object.prototype.autoplay, undefined
 ||vk.com/video_ext.php?$third-party,subdocument,removeparam=autoplay,domain=~mediahope.ru
 ||vk.ru/clip_ext.php?$third-party,subdocument,removeparam=autoplay
 ||vk.ru/video_ext.php?$third-party,subdocument,removeparam=autoplay
+||vk.ru/video_ext.php?*partner_name=viqeo$third-party,subdocument,removeparam=js_api
 ||vkvideo.ru/video_ext.php?$third-party,subdocument,removeparam=autoplay
 ! ---
 tsargrad.tv##.video-aside
