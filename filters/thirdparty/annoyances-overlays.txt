@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: EasyList – Newsletter Notices
-! Last modified: Thu, 29 Oct 2026 10:25:17 +0000
+! Last modified: Thu, 29 Oct 2026 22:58:52 +0000
 ! Expires: 7 days (update frequency)
 ! *** easylist:template_header.txt ***
 !
@@ -3447,6 +3447,7 @@ igeeksblog.com##.quick-tips
 independent.ie##.quick_subscribe
 allthatsinteresting.com##.r-klde5a.r-1awozwy.css-175oi2r
 prdaily.com##.ragansdaily
+designboom.com##.rail--nlsticky
 theparisreview.org##.rail-enews
 news.osu.edu##.raw-html-embed
 oregonlive.com##.rawhtml
@@ -4220,6 +4221,7 @@ calgaryherald.com,edmontonjournal.com,montrealgazette.com,ottawacitizen.com,thes
 chaser.com.au#?#.is-layout-constrained.sticky-sidebar:has-text(The Chaser Weakly)
 cheknews.ca#?#div.wp-block-cover:has-text(Be the first to know)
 christiantoday.com#?#.p-3.border-0:has-text(Stay up to date)
+chron.com#?#.mb32.sy32:has-text(free newsletter)
 chron.com,sfgate.com#?#.col1span3:has-text(Newsletters)
 cjr.org#?#.row > .entry-content > p:has-text(daily newsletter)
 cknxnewstoday.ca#?#.widgets_widgetWrapper__XqJPi:has-text(Join our community)
@@ -6560,7 +6562,7 @@ doctorofcredit.com#@#.wpdiscuz-subscribe-bar
 ! fanboy_newsletter_shopping_allowlist_general_hide.txt
 
 ! Title: uBlock filters – Other Annoyances
-! Last modified: Thu, 29 Oct 2026 09:31:54 +0000
+! Last modified: Thu, 29 Oct 2026 16:47:02 +0000
 ! Expires: 7 days
 ! Description: Filters optimized for uBlock Origin, to be used with EasyList's and/or Adguard's "Other Annoyances" list(s)
 ! License: https://github.com/uBlockOrigin/uAssets/blob/master/LICENSE
@@ -8818,6 +8820,13 @@ vidara.*,gasobni.com,vidmoly.*,bysezejataos.com,n1mwq.org,firestream.*##+js(aopr
 ! https://github.com/uBlockOrigin/uAssets/pull/35023
 ! https://github.com/uBlockOrigin/uAssets/pull/35057
 b98.tv,supercartoons.net,funniermoments.net,toontales.net,megacartoons.net##+js(set, HTMLDivElement.prototype.oncontextmenu, null)
+
+! https://github.com/uBlockOrigin/uAssets/pull/35066
+fileditchvids.st##+js(aeld, contextmenu)
+
+! https://github.com/uBlockOrigin/uAssets/issues/35080
+fiio.com##+js(aeld, /dragstart|selectstart|touchstart|mouse/, , elements, .w-slide)
+fiio.com##.w-slide div[ctype="text"]:style(cursor: auto !important; height: auto !important;)
 
 ! ================================================ END: Anti copy, right-click, devtools, text select etc. ==========================================================================
 
