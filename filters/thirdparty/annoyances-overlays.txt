@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: EasyList – Newsletter Notices
-! Last modified: Sat, 31 Oct 2026 17:21:43 +0000
+! Last modified: Sun, 01 Nov 2026 22:26:33 +0000
 ! Expires: 7 days (update frequency)
 ! *** easylist:template_header.txt ***
 !
@@ -3899,6 +3899,7 @@ nscale.com##.uui-blogpost05_newsletter
 aarp.org##.uxdia-c-widget--newsletter
 itweb.co.za##.v-alert
 gurufocus.com##.v-modal
+cybersecuritynews.com##.vc_raw_html
 techguide.com.au##.vc_single_image-wrapper
 techguide.com.au##.vc_wp_text
 minimalistbaker.com##.vertical-subscribe
@@ -6575,7 +6576,7 @@ doctorofcredit.com#@#.wpdiscuz-subscribe-bar
 ! fanboy_newsletter_shopping_allowlist_general_hide.txt
 
 ! Title: uBlock filters – Other Annoyances
-! Last modified: Sun, 01 Nov 2026 02:06:16 +0000
+! Last modified: Mon, 02 Nov 2026 12:15:58 +0000
 ! Expires: 7 days
 ! Description: Filters optimized for uBlock Origin, to be used with EasyList's and/or Adguard's "Other Annoyances" list(s)
 ! License: https://github.com/uBlockOrigin/uAssets/blob/master/LICENSE
@@ -8843,6 +8844,9 @@ fiio.com##.w-slide div[ctype="text"]:style(cursor: auto !important; height: auto
 
 ! https://github.com/uBlockOrigin/uAssets/pull/35118
 historicaerials.com##+js(alert-buster)
+
+! https://github.com/uBlockOrigin/uAssets/issues/35139
+||cdn.jsdelivr.net/npm/disable-devtool$domain=streamcorner.st
 
 ! ================================================ END: Anti copy, right-click, devtools, text select etc. ==========================================================================
 
