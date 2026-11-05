@@ -6366,6 +6366,7 @@
 ||trunderka.ru^$third-party
 ||truned.com^$third-party
 ||trunex.info^$third-party
+||trust-id.ru^$third-party
 ||trusthalloween.com^$third-party
 ||trustjs.net^$third-party
 ||trustrevievvs.info^$third-party
@@ -11421,7 +11422,7 @@ igdz1.ru^$script,domain=igdz.ru
 ||buzines.net/banner/
 ||bw.myjob.by^$object
 ||bycard.by/uploads/branding/
-||byrutgame.org/templates/byrut_upd/js/ip-check.js
+||byrutgame.org/templates/byrut_upd/modules/game-window/
 ||c-inform.info/images/*banner/
 ||c.hqq.tv/js/betterjs/
 ||c5l.ru^$domain=leroymerlin-jeb.ru
@@ -16860,6 +16861,7 @@ travelask.ru##.gallery-sidead__ad
 rbkgames.com##.game-description-text a[class][href][target="_blank"]:not([href^="/"]):not([href^="https://rbkgames.com/"])
 shaiba.kz##.game-info__bottom
 gamasexual.com,gamasexual.ru##.game-preview-wrap > :not([class="game-preview"])
+byrutgame.org##.game-window__open
 myfin.by##.game__label
 myfin.by##.game__partner-logo
 myplaycity.ru##.gamepage_download_left
@@ -19093,6 +19095,7 @@ kino-teatr.ru##.view_online_block
 lektsii.org##.viewinfo ~ center > .link1
 lektsii.org##.viewinfo ~ center > .link2
 teleport2001.ru##.views-row-banner
+oper.ru##.vip-banner
 l2argument.ru##.vipblock.container
 baby.ru##.viqeo-embed
 virus-stop.com.ua##.virus-widget
@@ -22786,7 +22789,7 @@ https://*adtech_uid=$~third-party,xmlhttprequest,domain=livejournal.com|olegmaka
 ||newsyou.info/wp-content/plugins/gtranslate/
 ||newsyou.info^$csp=script-src-elem 'self' https:
 ||ng72.ru^$csp=script-src 'self' 'unsafe-eval' https:
-||pikabu.ru/ajax/*?rXu1p=$xmlhttprequest
+||pikabu.ru/ajax/*?rXu2p=$xmlhttprequest
 ||ritsatv.ru^$csp=script-src
 ||ritsatv.ru^$popup
 ||ritsatv.ru^$~document
@@ -23313,6 +23316,7 @@ dzen.ru,sportsdzen.ru##.news-ad-swap-root
 dzen.ru##.news-rubricator [href="https://dzen.ru/news/rubric/chronologic"]
 dzen.ru##[aria-label="Контент страницы сюжета"] > [class*="discrete"] > div > div > div[id]
 dzen.ru#?#[aria-label="Контент страницы сюжета"] > [class*="discrete"] > div > div:-abp-has(> div[id])
+dzen.ru,sportsdzen.ru##[id*="_R-B-"]
 dzen.ru,sportsdzen.ru##[id*="_R-I-"]
 dzen.ru,sportsdzen.ru##[id*="_R-N-"]
 dzen.ru,sportsdzen.ru##[id*="_R-Q-"]
@@ -23972,6 +23976,7 @@ gazeta.press,gazeta.ru##div[class^="gazeta-dynamic-ban-"]
 gazeta.press,gazeta.ru##div[id^="block_pad_id"]
 !
 ! RBC (РБК)
+rbc.ru###js_anons_container_rbc:empty
 cnews.ru,utro.ru##.banner
 rbc.ru##.branding-block
 rbc.ru##.central-publisher-item[data-name^="CommercialAnons"]
@@ -24353,9 +24358,9 @@ ya.ru##.i-mini-bem[class*="banner"]
 ya.ru##[style*="feed"][style*="min-height:"]
 ya.ru##body > div[data-hydration-id] > [href^="https://yabs.yandex.ru/count/"] + div
 ya.ru##body > div[data-hydration-id] > div > [src^="https://yabs.yandex.ru/count/"] + div
-ya.ru##html[class*="secctsslan_top"] main > div[class*="__"] ~ div[class*="__"] ~ div[class*="__"] > div
+ya.ru##html[class*="secctslan_top"] main > div[class*="__"] ~ div[class*="__"] ~ div[class*="__"] > div
 ya.ru##section[class^="reaso"]
-ya.ru##section[style*="secctsslan-items-count:"]
+ya.ru##section[style*="secctslan-items-count:"]
 ya.ru##ul[class*="-section__list"]
 ya.ru,yandex.ru,yandex.*##.AdvProductGallery
 ya.ru,yandex.ru,yandex.*##.Bno_isPromoSnippet
