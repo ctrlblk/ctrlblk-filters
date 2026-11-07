@@ -1,10 +1,10 @@
 ![Adblock Plus 2.0]
-! Checksum: siWyFdjKrrxZeH77jmpbfQ
-! Diff-Path: ../patches/13/13-s-1793963484-3600.patch
+! Checksum: p6LbnhzP0pnwmSixYG3ceQ
+! Diff-Path: ../patches/13/13-s-1794017608-3600.patch
 ! Title: AdGuard Turkish filter
 ! Description: Filter list that specifically removes ads on websites in Turkish language.
-! Version: 2.0.69.55
-! TimeUpdated: 2026-11-06T11:08:10+00:00
+! Version: 2.0.69.61
+! TimeUpdated: 2026-11-07T02:10:12+00:00
 ! Expires: 5 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -704,6 +704,10 @@ r10.net##+js(abort-on-property-write, rInt)
 ! https://github.com/AdguardTeam/AdguardFilters/issues/218312
 ##center > a[target="_blank"][style="color: red;"] > font[style="font-size: 15pt"]
 ! Sport streaming sites
+##.odds-container
+##.header-top > div.header-text
+##.footer-links
+##div[class^="reklam-"]
 ##.pageskin-container
 ##.player-ad-banner
 ##.ads_single_font
@@ -973,7 +977,7 @@ r10.net##+js(abort-on-property-write, rInt)
 !*****
 ! START: Clickunders
 ! puShown
-www.filmmolly.cc,onlinefilmizlee.com,hdfilmcixx.com,filmcus.org,safirfilm.vip,onlinedizi.sbs,sinemakolix.net,zerotik.com,filmifullizlet.com,filmseyretizlet.net,sinemadafilmizle.net,hdfilm.us,erotikjam.com,erotikkizle.com,kelebekfilmm1.com,tekparthdfilmizle.cc,yavuzfilmm.com,sinekolikk.com,kuzufilmizle1.com,yabancidizivip.com,ediziizle.com,tekparthdfilmizlesene.*,filmcusx.com,cristal.guru,vizyon18tv.com,korkuseli.com,sinemadafilmizle.org,erotikfimm.com,erotikgo.com,fullhdfilmcenneti.pro,filmgo1.com,puffytr.com,anizle.*,anizm.*,dizimore.com,dizirex.com,maxfilmizle.*,turkifsa.xyz,fullhdfilmizlesene.*,royalfilmizle.com,sinetiktok.com,uzaymanga.com,filmifullizle.online,sinemakolik.org,filmerotixxx.com,filmfc.com,filmizletv18.com,onlinefilmizle.site,playerzz.xyz,filmjr.org,asfilmizle.com,filmhe.com,tranimaci.*,hdfilmizle.org,siyahfilmizle.*,tafdi4.com,elzemfilm.org,tafdi3.com,hdfilmizle.in,dizicaps.*,filmizletv1.*,diziyou.co,fullhdfilmizle.*,fullfilmizle.*,sinepal.*,dizimag.eu,bumfilmizle1.com,yabancidizilertv.*,1080hdfilmizle.com,yabancidizibax.com,sinemangoo.org,sexfilmleriizle.com,fullhdfilm.*,geziforumu.com,efendim.xyz,dizipaltv.net,fluffcore.com,hdfilmcehennemizle.com,netfullfilmizle3.com,izlekolik.*,arrowizle.com,filmcus.com,sinemakolik.net,zarize.com,burdenfly.com,zzerotik.com,sinemafilmizle.net,filmkuzusu1.com,hdfilmcix.*,sinemadelisi.com,erotikfilmtube.com,dizipal.*,filmizletv.*,pornoanne.com,dizikorea.*,diziyo.*,diziboxx.com,dafflix.*,turkaliz.com,vkfilmizle.net,dizimov.*,shirl.club,turkcealtyazilipornom.com,fullhdfilmmodu2.*,hdfilmizletv.net,pembetv18.*,sinemaizle.co,hdfilmcehennem.live,efullizle.com,asyafanatiklerim.com,tranimeizle.*,volsex.com##+js(set-constant, puShown, true)
+www.filmoley.cc,onlinefilmizlee.com,hdfilmcixx.com,filmcus.org,safirfilm.vip,onlinedizi.sbs,sinemakolix.net,zerotik.com,filmifullizlet.com,filmseyretizlet.net,sinemadafilmizle.net,hdfilm.us,erotikjam.com,erotikkizle.com,kelebekfilmm1.com,tekparthdfilmizle.cc,yavuzfilmm.com,sinekolikk.com,kuzufilmizle1.com,yabancidizivip.com,ediziizle.com,tekparthdfilmizlesene.*,filmcusx.com,cristal.guru,vizyon18tv.com,korkuseli.com,sinemadafilmizle.org,erotikfimm.com,erotikgo.com,fullhdfilmcenneti.pro,filmgo1.com,puffytr.com,anizle.*,anizm.*,dizimore.com,dizirex.com,maxfilmizle.*,turkifsa.xyz,fullhdfilmizlesene.*,royalfilmizle.com,sinetiktok.com,uzaymanga.com,filmifullizle.online,sinemakolik.org,filmerotixxx.com,filmfc.com,filmizletv18.com,onlinefilmizle.site,playerzz.xyz,filmjr.org,asfilmizle.com,filmhe.com,tranimaci.*,hdfilmizle.org,siyahfilmizle.*,tafdi4.com,elzemfilm.org,tafdi3.com,hdfilmizle.in,dizicaps.*,filmizletv1.*,diziyou.co,fullhdfilmizle.*,fullfilmizle.*,sinepal.*,dizimag.eu,bumfilmizle1.com,yabancidizilertv.*,1080hdfilmizle.com,yabancidizibax.com,sinemangoo.org,sexfilmleriizle.com,fullhdfilm.*,geziforumu.com,efendim.xyz,dizipaltv.net,fluffcore.com,hdfilmcehennemizle.com,netfullfilmizle3.com,izlekolik.*,arrowizle.com,filmcus.com,sinemakolik.net,zarize.com,burdenfly.com,zzerotik.com,sinemafilmizle.net,filmkuzusu1.com,hdfilmcix.*,sinemadelisi.com,erotikfilmtube.com,dizipal.*,filmizletv.*,pornoanne.com,dizikorea.*,diziyo.*,diziboxx.com,dafflix.*,turkaliz.com,vkfilmizle.net,dizimov.*,shirl.club,turkcealtyazilipornom.com,fullhdfilmmodu2.*,hdfilmizletv.net,pembetv18.*,sinemaizle.co,hdfilmcehennem.live,efullizle.com,asyafanatiklerim.com,tranimeizle.*,volsex.com##+js(set-constant, puShown, true)
 ! isShow
 tekfullfilmizle5.com##+js(set-constant, isShow, true)
 ! initPu
@@ -1967,7 +1971,7 @@ tempestmangas.com##+js(addEventListener-defuser, DOMContentLoaded, reklam)
 onedio.com##.layout__main > div.max-w-\[1100px\] > div.flex > a[href] ~ div.u-center.w-\[352px\]
 utanmazkizlar.com##.k-between-buttons-banner
 ifsagram6.com##.banner-wrap
-www.filmmolly.cc,filmgo2.org,filmmolly.com##.sayfa-sol > a[target="_blank"]
+www.filmoley.cc,filmgo2.org,filmmolly.com##.sayfa-sol > a[target="_blank"]
 turkifsahub.com##a[href^="https://go.aff.teslaaffilate.com/"]
 *$script,3p,domain=turkifsalifetr1.blog
 ifsagram6.com###promoPopup
@@ -6126,6 +6130,14 @@ lovefilmizle.net,elzemfilm.org,dizicaps.*,erotikfilmtube.com,sexfilmleriizle.com
 ! except some sites that use non-template domain names of mirror sites
 !
 !
+! Frequently changed domains: kazansanatv*.com
+! Source: kazansanatv3.com
+||kazansanatv*.com/view/theme/ultimate/img/NEWgif*.webp
+||kazansanatv*.com/KazansanaTV_AD*.mp4
+||kazansanatv*.com/view/theme/ultimate/assets/js/rc.js
+/kazansanatv\d+\.com$/##header > ul
+kazansanatv3.com##header > ul
+!
 ! Frequently changed domains: intersportv*.live
 ! Source: intersportv1.live
 /intersportv\d+\.live$/##header > ul
@@ -6160,11 +6172,11 @@ tulipbettv117.com##.odds-container
 tulipbettv117.com##.header-top > div.header-text
 tulipbettv117.com##.footer-links
 !
-! Frequently changed domains: patronlig*.cfd; patronsaha*.cfd
+! Frequently changed domains: patronlig*.cfd; patronsaha*.cfd; patronizle*.cfd
 ! Source: patronspor.is
 ! aglint-disable no-invalid-modifiers
 !+ NOT_VALIDATE
-||blogger.googleusercontent.com/img/$domain=/patron(lig\|saha)\d+\.cfd$/
+||blogger.googleusercontent.com/img/$domain=/patron(lig\|saha\|izle)\d+\.cfd$/
 ! aglint-enable no-invalid-modifiers
 /patron(lig\|saha)\d+\.cfd$/##.footer-links
 patronlig22.cfd,patronsaha1.cfd##.footer-links
@@ -6205,6 +6217,7 @@ dizipalorjinal19.com##.has-pageskin:style(background-image: none !important;)
 ! Source: golbettv6.com
 /golbettv\d+\.com$/##body > a[target="_blank"]
 /golbettv\d+\.com$/##.bnr
+/golbettv\d+\.com$/##.popup-overlay
 golbettv6.com##.popup-overlay
 golbettv6.com##.bnr
 !
@@ -6383,8 +6396,8 @@ www.kacakspor5.com###splash-banner
 ||blogger.googleusercontent.com/img/$domain=/pasizle\d+\.com$/
 ! aglint-enable no-invalid-modifiers
 /pasizle\d+\.com$/##.banner-container
-||blogger.googleusercontent.com/img/$domain=pasizle864.com
-pasizle864.com##.banner-container
+||blogger.googleusercontent.com/img/$domain=pasizle865.com
+pasizle865.com##.banner-container
 !
 ! Frequently changed domains: milanotv*.shop
 ! Source: milanotv61.shop
@@ -6828,8 +6841,8 @@ turkifsaclub130.sbs,turkifsaclub176.sbs,turkifsaclub177.sbs,turkifsaclub131.sbs,
 ||yavasgir*.*/*.gif
 /yavasgir\d+\.(com\|live)/###ads-inside-main
 /yavasgir\d+\.(com\|live)/##+js(addEventListener-defuser, DOMContentLoaded, openPopup)
-yavasgir136.live,yavasgir137.live,yavasgir138.live,yavasgir139.live,yavasgir140.live,yavasgir141.live,yavasgir142.live,yavasgir143.live,yavasgir144.live,yavasgir145.live,yavasgir146.live,yavasgir147.live,yavasgir148.live,yavasgir149.live,yavasgir150.live,yavasgir151.live,yavasgir152.live,yavasgir153.live,yavasgir154.live,yavasgir155.live,yavasgir156.live,yavasgir157.live,yavasgir158.live,yavasgir159.live,yavasgir160.live,yavasgir161.live,yavasgir162.live,yavasgir163.live,yavasgir164.live,yavasgir165.live,yavasgir166.live,yavasgir167.live,yavasgir168.live,yavasgir169.live,yavasgir170.live,yavasgir171.live,yavasgir172.live,yavasgir173.live,yavasgir174.live,yavasgir175.live,yavasgir176.live,yavasgir177.live###ads-inside-main
-yavasgir136.live,yavasgir137.live,yavasgir138.live,yavasgir139.live,yavasgir140.live,yavasgir141.live,yavasgir142.live,yavasgir143.live,yavasgir144.live,yavasgir145.live,yavasgir146.live,yavasgir147.live,yavasgir148.live,yavasgir149.live,yavasgir150.live,yavasgir151.live,yavasgir152.live,yavasgir153.live,yavasgir154.live,yavasgir155.live,yavasgir156.live,yavasgir157.live,yavasgir158.live,yavasgir159.live,yavasgir160.live,yavasgir161.live,yavasgir162.live,yavasgir163.live,yavasgir164.live,yavasgir165.live,yavasgir166.live,yavasgir167.live,yavasgir168.live,yavasgir169.live,yavasgir170.live,yavasgir171.live,yavasgir172.live,yavasgir173.live,yavasgir174.live,yavasgir175.live,yavasgir176.live,yavasgir177.live##+js(addEventListener-defuser, DOMContentLoaded, openPopup)
+yavasgir136.live,yavasgir137.live,yavasgir138.live,yavasgir139.live,yavasgir140.live,yavasgir141.live,yavasgir142.live,yavasgir144.live,yavasgir145.live,yavasgir146.live,yavasgir147.live,yavasgir148.live,yavasgir149.live,yavasgir150.live,yavasgir151.live,yavasgir152.live,yavasgir153.live,yavasgir154.live,yavasgir156.live,yavasgir157.live,yavasgir158.live,yavasgir159.live,yavasgir160.live,yavasgir161.live,yavasgir162.live,yavasgir163.live,yavasgir164.live,yavasgir165.live,yavasgir166.live,yavasgir167.live,yavasgir168.live,yavasgir169.live,yavasgir170.live,yavasgir171.live,yavasgir172.live,yavasgir173.live,yavasgir174.live,yavasgir175.live,yavasgir176.live,yavasgir177.live,yavasgir143.live,yavasgir155.live###ads-inside-main
+yavasgir136.live,yavasgir137.live,yavasgir138.live,yavasgir139.live,yavasgir140.live,yavasgir141.live,yavasgir142.live,yavasgir144.live,yavasgir145.live,yavasgir146.live,yavasgir147.live,yavasgir148.live,yavasgir149.live,yavasgir150.live,yavasgir151.live,yavasgir152.live,yavasgir153.live,yavasgir154.live,yavasgir156.live,yavasgir157.live,yavasgir158.live,yavasgir159.live,yavasgir160.live,yavasgir161.live,yavasgir162.live,yavasgir163.live,yavasgir164.live,yavasgir165.live,yavasgir166.live,yavasgir167.live,yavasgir168.live,yavasgir169.live,yavasgir170.live,yavasgir171.live,yavasgir172.live,yavasgir173.live,yavasgir174.live,yavasgir175.live,yavasgir176.live,yavasgir177.live,yavasgir143.live,yavasgir155.live##+js(addEventListener-defuser, DOMContentLoaded, openPopup)
 !
 ! Frequently changed domains: cimcime*.*
 ! Source: cimcime141.live

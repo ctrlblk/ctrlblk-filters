@@ -16278,6 +16278,7 @@ drive2.com,drive2.ru#?#.c-header:-abp-contains(/Ads|Реклама/)
 telegraf.com.ua,telegraf.ua#?#.c-post__content > div:-abp-has(> [id^="_vidverto-"])
 delo.ua,dsnews.ua,focus.ua##.c-r
 medvestnik.ru##.c-recommendations-widget
+drive2.ru#?#.c-user-section:-abp-has(> .drom-grid)
 5-tv.ru##.cFadeDark
 nashamama.com#?#.cN-linkList:-abp-has(> h3:only-child)
 tomat-pomidor.com##.cPost + script + center
@@ -21156,6 +21157,7 @@ securitylab.ru,sia.ru,voxpopuli.kz##div[class*="banner_"]
 ecology.md##div[class*="bannerplace"]
 apteka.ru,forum.krasmama.ru,mycity.by##div[class*="banners"]
 vprognoze.ru##div[class*="best-bookmakers"]
+sovsport.ru##div[class*="betInfo"]
 grazia.ru,mentoday.ru,novochag.ru,pravilamag.ru,robb.report,techinsider.ru,thesymbol.ru,thevoicemag.ru##div[class*="billboard"]
 gazetaby.com,gazetaby.info,gazetaby.media##div[class*="block-articles-"][class*="-native"]
 mamaplus.md##div[class*="block-mplus"]
@@ -21461,6 +21463,7 @@ sovsport.ru##div[class^="marquee_wrapper_"]
 sovsport.ru##div[class^="match-card-module-scss-module_"][class$="_coefficient"]
 sovsport.ru##div[class^="match-day_advBlock"]
 sovsport.ru##div[class^="match-day_footer_"]
+sovsport.ru##div[class^="match-of-the-day-widget-"]
 sovsport.ru##div[class^="matches-by-id_bkRating"]
 sovsport.ru##div[class^="matches-by-id_seo_text_"]
 itc.ua,mc.today##div[class^="max-"]
@@ -22881,6 +22884,7 @@ pikabu.ru#?#article:-abp-has(> .story__main > div:not([class]))
 pikabu.ru#?#article:-abp-has(> .story__main > div:only-child)
 pikabu.ru#?#article:-abp-has(> .story__main > div[class] + div[class])
 pikabu.ru#?#article:-abp-has(> .story__main > div[class] ~ :empty ~ div[class])
+pikabu.ru#?#article:-abp-has(> .story__main > div[class] ~ span)
 pikabu.ru#?#article:-abp-has(> .story__main:not(:-abp-has(*)))
 kp.kg,kp.kz,kp.ru,md.kp.media#?#body > #app div:-abp-properties(background-color: rgb(225, 231, 235))
 sdamgia.ru##center > div[id][style]
