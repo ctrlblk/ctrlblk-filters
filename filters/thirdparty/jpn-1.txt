@@ -1,10 +1,10 @@
 ![Adblock Plus 2.0]
-! Checksum: q3m1YXlmxwDZTi5eoOsoiw
-! Diff-Path: ../patches/7/7-s-1794201242-3600.patch
+! Checksum: p1+KvJoDnOugzeljqOxwqg
+! Diff-Path: ../patches/7/7-s-1794302003-3600.patch
 ! Title: AdGuard Japanese filter
 ! Description: Filter that enables ad blocking on websites in Japanese language.
-! Version: 2.0.78.30
-! TimeUpdated: 2026-11-09T05:09:21+00:00
+! Version: 2.0.78.33
+! TimeUpdated: 2026-11-10T09:09:23+00:00
 ! Expires: 5 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -1989,6 +1989,10 @@ gundamlog.com###more > iframe[src^="https://richlink.blogsys.jp"]
 !
 ! NOTE: Specific rules
 !
+hamusoku.com##.article-body-more > span[style]:has(b > a[href^="https://www.amazon.co.jp/"])
+phileweb.com###sp_article_header
+phileweb.com###sp_article_undertitle_wrapper
+response.jp##div[class^="aside-box-ifad"]
 eigachannel.jp###main_content > div[style^="width:100%; min-height:3"]:has(> div[id^="ats_"])
 f1-gate.com##.ad-flex-group
 soraraw.com##section[class^="home-v2_adsSection"]
@@ -2035,6 +2039,8 @@ dengekionline.com##div[class^="InLead-"]
 !+ NOT_VALIDATE
 ||socialxup.com/go/$urltransform=/go\/.*//
 ! aglint-enable no-invalid-modifiers
+socialxup.com##+js(addEventListener-defuser, click, [native code])
+socialxup.com##:not(a):matches-css(cursor:pointer):xpath(div[not(ancestor::a)])
 socialxup.com##.cursor-pointer
 socialxup.com##[style*="cursor:"]
 socialxup.com##a:not([href])
@@ -8438,7 +8444,7 @@ cidresweet.com,5app-ch.com##.sidebar_content > div.widget_custom_html
 msn.com###main > div[data-section-id="stripe.special"]
 recochoku.jp##.ranking-tower-records-music-bnr
 kindou.info##.adad2
-s.cinemacafe.net,rbbtoday.com##.aside-box-ad
+response.jp,s.cinemacafe.net,rbbtoday.com##.aside-box-ad
 ga-m.com##.entry-content > p > a[href^="https://hb.afl.rakuten.co.jp/hgc/"]
 ga-m.com##.entry-content > p > a[href^="https://www.amazon.co.jp/gp/search"]
 ||faq.gigafile.nu/wp-content/uploads/2023/02/rrd2.jpg
@@ -9917,7 +9923,7 @@ shinmai.co.jp###hs-web-interactives-bottom-anchor
 shinmai.co.jp##.h-\[250px\].w-\[300px\]
 shinmai.co.jp##.max-w-\[1100px\] > div.pt-6.pb-8.border-app-text
 gaming-city.com###top-video-list-header-block
-mangaraw24.net,city.kagoshima-izumi.lg.jp,kk-bestsellers.com,gaming-city.com,shimotsuke.co.jp,gunma-kanko.jp##.top-banner
+response.jp,mangaraw24.net,city.kagoshima-izumi.lg.jp,kk-bestsellers.com,gaming-city.com,shimotsuke.co.jp,gunma-kanko.jp##.top-banner
 the-miyanichi.co.jp##.sidebox > ul > div[style="display:block;margin-top:1em;"]
 the-miyanichi.co.jp##.ad_world > div
 minyu-net.com##div[id^="main"] > aside > table:only-child
@@ -11039,7 +11045,7 @@ hatena.ne.jp##div[class^="entry-ad-"]
 2ch.logpo.jp##.SaleInfo
 2ch.logpo.jp##.DetectRed
 2ch.logpo.jp##.KindleBooks
-poweruse.seesaa.net,2ch.logpo.jp,mt-soft.sakura.ne.jp,hiroburo.com,xn--w8jtkjf8c570x.com,cg-method.com##a[href^="https://www.amazon.co.jp/"]
+hamusoku.com,poweruse.seesaa.net,2ch.logpo.jp,mt-soft.sakura.ne.jp,hiroburo.com,xn--w8jtkjf8c570x.com,cg-method.com##a[href^="https://www.amazon.co.jp/"]
 bukknas.hatenablog.com,komykomy7.hatenablog.jp,cofure.hatenablog.com,fireyoshida.com,comic11.hatenablog.com,blog.munieru.jp,anou4649.hatenablog.com,nomolk.hatenablog.com,moognyk.jp,noaboutsnote.hatenablog.com##.hatena-asin-detail
 ogeji.hatenablog.com##.entry-content > .code ~ table[style*="width:300px"]
 wiki.seesaa.jp##.ad-boomapp
