@@ -1,10 +1,10 @@
 ![Adblock Plus 2.0]
-! Checksum: p1+KvJoDnOugzeljqOxwqg
-! Diff-Path: ../patches/7/7-s-1794302003-3600.patch
+! Checksum: rnb12RE1I5V85ejp2xkkQA
+! Diff-Path: ../patches/7/7-s-1794327266-3600.patch
 ! Title: AdGuard Japanese filter
 ! Description: Filter that enables ad blocking on websites in Japanese language.
-! Version: 2.0.78.33
-! TimeUpdated: 2026-11-10T09:09:23+00:00
+! Version: 2.0.78.35
+! TimeUpdated: 2026-11-10T16:09:32+00:00
 ! Expires: 5 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -1635,6 +1635,7 @@ hostlove.com###index_nav > h1:style(padding-top: 30px!important;)
 /wp-content/uploads/2024/09/fanza_ad$image
 !
 ! Malware/Phishing
+/api/download.php?action=init|$xhr
 /download/cloud/c9_googlePlayCashBack_*.apk$document
 ||amazonaws.com/Tiktok18.apk?$document
 ||amazonaws.com/*/e-Tax%E$document
@@ -1989,7 +1990,9 @@ gundamlog.com###more > iframe[src^="https://richlink.blogsys.jp"]
 !
 ! NOTE: Specific rules
 !
-hamusoku.com##.article-body-more > span[style]:has(b > a[href^="https://www.amazon.co.jp/"])
+hamusoku.com##div[class^="article-body"] > span[style="font-size: 150%;"]:has(> b > a[href^="https://www.amazon.co.jp/"])
+hamusoku.com##div[class^="article-body"] > span[style="color: #3300FF;"]:has(+ br + span[style="font-size: 150%;"] > b > a[href^="https://www.amazon.co.jp/"])
+hamusoku.com##div[class^="article-body"] > span[style="color: #3300FF;"]:has(> span[style="font-size: 150%;"] > b > a[href^="https://www.amazon.co.jp/"])
 phileweb.com###sp_article_header
 phileweb.com###sp_article_undertitle_wrapper
 response.jp##div[class^="aside-box-ifad"]
@@ -2039,8 +2042,9 @@ dengekionline.com##div[class^="InLead-"]
 !+ NOT_VALIDATE
 ||socialxup.com/go/$urltransform=/go\/.*//
 ! aglint-enable no-invalid-modifiers
-socialxup.com##+js(addEventListener-defuser, click, [native code])
-socialxup.com##:not(a):matches-css(cursor:pointer):xpath(div[not(ancestor::a)])
+socialxup.com##+js(addEventListener-defuser, click, /\[native code\]|^\s*e\s*=>\s*.+\(\s*e\s*\)\s*$/)
+socialxup.com##span:matches-css(cursor:pointer):empty
+socialxup.com##:not(a):matches-css(cursor:pointer):upward(1):xpath(div[not(ancestor::a)])
 socialxup.com##.cursor-pointer
 socialxup.com##[style*="cursor:"]
 socialxup.com##a:not([href])
@@ -6402,7 +6406,8 @@ muuu.jp##.entry-content-wrapper > div.avia-builder-widget-area
 ufret.jp##div[style="text-align: center;margin:20px auto 400px auto;width :685px;"]
 ufret.jp###showAdPosition
 otona-life.com##.ad_minh_sp
-||response.jp/base/scripts/cx-fbq.js
+/feature/adb/*$domain=animeanime.jp|cinemacafe.net|inside-games.jp|manetatsu.com|rbbtoday.com|response.jp
+/cx-fbq.js$domain=animeanime.jp|cinemacafe.net|gamespark.jp|inside-games.jp|manetatsu.com|response.jp
 response.jp###ad10
 sponichi.co.jp##.recruitment-list-header
 sponichi.co.jp##.recruitment-list-header + ul

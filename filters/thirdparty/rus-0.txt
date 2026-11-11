@@ -7850,6 +7850,7 @@ _verified.php?code=*&server=runetki.com
 .*/video/get/?userId*&sig=*&vbmuid=*&data=$third-party,script
 .bannerbank.
 .bannerbank_
+.bid/vast/$third-party,xmlhttprequest
 .biz/next.html?$third-party,script
 .braun634.com^
 .com/next.html?$third-party,script
@@ -17416,6 +17417,7 @@ ska.ru##.main-section-adfox
 salonav.com##.main-sidebar > .mom_custom_text ~ .mom_custom_text
 vedomosti-ua.com#?#.main-sidebar > .row > div:-abp-has(.active:-abp-contains(Реклама))
 vg-news.ru##.main-small-right-block
+nv.ua##.main-wrapper .container > .row > a[target="_blank"] > picture
 autostat.ru##.mainBannerBlockCenter
 polosedan-club.com##.mainContent > #Notices
 vuzopedia.ru##.mainReclame
@@ -24213,6 +24215,7 @@ sports.ru##[data-content-name="banner-static"][data-content-piece^="SALES-"]
 sports.ru#?#[data-control*="Common.CarouselOfCards"]:-abp-has(a[href^="https://sirena.world/"])
 sports.ru##[data-control*="Videonow"]
 sports.ru##[data-control*="adblock"]
+sports.ru##[data-control="Common.RbPromo"]
 sports.ru##[data-control="Stat.KinopoiskButton"]
 sports.ru##[data-control="Stat.OkkoButton"]
 sports.ru##[data-control^="Aliens."]
@@ -30124,7 +30127,7 @@ rutube.ru##body.wdp-scroll .wdp-popup-overlay-module__overlay [class*=" wdp-onbo
 rutube.ru##body.wdp-scroll .wdp-popup-overlay-module__overlay [class*="-view-trigger-popup"]
 rutube.ru##body.wdp-scroll .wdp-popup-overlay-module__overlay:has(> [class*=" wdp-onboardings-inventory-"][class*="-module__popup "])
 rutube.ru##body.wdp-scroll .wdp-popup-overlay-module__overlay:has(> [class*="-view-trigger-popup"])
-rutube.ru##body.wdp-scroll:style(overflow-y: auto !important)
+rutube.ru##body.wdp-scroll:style(overflow-y: auto !important; touch-action: auto !important)
 tapochek.net##body:has(#register_link) > canvas
 tapochek.net##body:has(#register_link) > canvas:remove()
 rusport.live##body:has(header > .is-fixed):style(padding-top: 65px !important)
@@ -30514,6 +30517,11 @@ ya.ru##section li > a.home-link2
 ||rsv.today/promo/2ipchange$document
 ||st.top100.ru/top100/top100.js$domain=www.rambler.ru
 !#endif
+!
+! Временные фиксы для ELC
+evroopt.by##+js(prevent-addEventListener, /^(?:click|scroll|keydown|touchstart|mouseenter)$/, cookies)
+igra.evroopt.by##body:style(overflow: auto !important)
+myfin.by##html,body:style(overflow: auto !important; padding-right: 0 !important)
 
 !
 ! --- AWRL-non-sync---
