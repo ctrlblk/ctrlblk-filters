@@ -11862,6 +11862,7 @@ igdz1.ru^$script,domain=igdz.ru
 ||gazeta.bo/api/banner/
 ||gazetabalakovo.ru/wp-content/uploads/*/rek.$image
 ||gazetametro.ru/commercial/banners/
+||gc.onliner.by/js/growthbook-*.js
 ||gcmsite.ru/img/nostromo-x.jpg
 ||gde.ru/img/*320x1
 ||gdz-putina.info/*.swf
@@ -13395,7 +13396,7 @@ igdz1.ru^$script,domain=igdz.ru
 ||streamapps.ru^$script
 ||streamguard.cc^*.js|$script
 ||strikes.ru/steamtrade_net$image
-||strm.yandex.*/vh-adfox-converted/$media
+||strm.yandex.*/vh-adfo*-converted/$media
 ||strm.yandex.ru^$domain=1tv.ru|drive2.ru|karaoke.ru|livejournal.com|mediavitrina.ru
 ||stroitel-lab.ru/js_content/
 ||stroy-podskazka.ru/adfallback/
@@ -14476,6 +14477,7 @@ pravo-porada.com.ua###jm-right .bannergroup
 metanit.com###jma
 joker.ykt.ru###jok-banner-affix
 interface31.ru###js-dynamic-ad-container
+www.onliner.by###js-pm > header [class]
 autoua.net###js-preload-banner
 vkfaces.com###js-slider-1
 nur.kz###js-widget-pm
@@ -14692,7 +14694,6 @@ promebelclub.ru,xn----btbdkbsogebtjq6bm4g5b.xn--p1ai###pagenav_menu ~ div[style*
 freescreens.ru,imgbase.ru,imgcach.ru,imgclick.ru,payforpic.ru,picclick.ru,picclock.ru,picforall.ru###pai_thumbz_hider
 best-soft.npps.biz###parent-erocritic
 ipadus.ru,joomlatown.net,klanwin.ru,ruspicbox.ru,sportnet.live###parent_popup
-www.onliner.by###parimatch-widget .b-main-page-result__list
 clip2net.com###partbn
 hostingkartinok.com###partner
 lux.fm###partner-block
@@ -16304,6 +16305,7 @@ programy.com.ua##.cars2
 echosevera.ru##.cartoon
 livejournal.com##.cat-widget__adv-container
 livejournal.com##.cat-widget__card-wrap--adv
+catalog.onliner.by##.catalog-banner
 rozetka.com.ua#?#.catalog-grid > .catalog-grid__cell:-abp-has(> rz-catalog-tile [aria-label*=" про рекламу"])
 hotline.ua##.catalog-three-products
 yamart.ru##.catalogElAd
@@ -19625,6 +19627,7 @@ news.soundex.ru##[data-original^="http://news.soundex.ru/images/banners/"]
 studopedia.ru,studopedia.su##[data-partner]
 iz.ru##[data-partners-block-id]
 satellitetvforum.info##[data-phpbb-ads-id]
+onliner.by##[data-placement]
 litnet.com##[data-popmechanic-embed]
 odds.ru##[data-popup="bonus"]
 cheezu.ru##[data-provider="yandex"]
@@ -20121,6 +20124,7 @@ forum.mista.ru##a[href*="banners.php?click="] + a
 minecraft15.my1.ru##a[href*="barbarisnews.ru"]
 all-sci.net,bib.social,economics.studio,economuch.com,finbook.news,lawbook.online,lawbooks.news,lib.sale,medinfo.live,myzooplanet.ru,pravo.studio,provse.news,psihologia.biz,sci-lib.biz,sci.house,scicenter.online,textbooks.studio,uchebnikfree.com,xn--80aaivjfyj3e.com##a[href*="bear"]
 cybersport.ru,dltv.org,prodota.ru##a[href*="betboom.bet"]
+onliner.by##a[href*="betera-promo.by"]
 okrain.net.ua##a[href*="billing.hostpro.ua"]
 allsport-live.ru,allsport-news.net##a[href*="binance.com"]
 aacalc.ru,agronews.ua,ain.ua,ampercar.com,argumenti.ru,arminfo.info,autogeek.com.ua,bib.bz,blizzardheroes.ru,csgo-guides.ru,daxshat.site,for-ua.info,gameinside.ua,games-vam.ru,goal24.live,ilenta.com,img2txt.com,kontrolnaya-rabota.ru,korsars.pro,kritka.su,kurkul.com,mezha.ua,modsfire.com,mt.today,newstudio.tv,onliner.by,onlinevideoconverter.com,photoshop-besplatno.org,prosportua.com,psm7.com,real-game.net,rutracker-2017.org,soft-windows.info,stopgame.ru,tochka.net,torrent-shyter.net,ua.news,vc.ru,vgtimes.com,vgtimes.ru,windows-soft.info,xn--80ac9aeh6f.xn--p1ai,z-music.org,zbirna.com,zoneofgames.ru##a[href*="bit.ly"]
@@ -22764,7 +22768,8 @@ ictv.ua,vikna.tv##div[id^="div-gpt-ad-"]
 ! запросы
 ! ловушка для обфускации дзена: главная, статьи, новости, погода
 /^https:\/\/static\.dzeninfra\.ru\/s3\/zen-apps\/[^?]*\/(?:[^/?0-9]*[0-9]){5}[^/?]*(?:\?.*)?$/$script
-/^https:\/\/static\.dzeninfra\.ru\/s3\/zen-apps\/[^?]*\/[^/?]*\.d\.bundle\./$script
+/^https:\/\/static\.dzeninfra\.ru\/s3\/zen-apps\/[^?]*\/[^/?]*\.[a-zA-Z]{1,3}\.bundle\.(?:js|jsx)(?:\?.*)?$/$script
+/^https:\/\/static\.dzeninfra\.ru\/s3\/zen-apps\/[^?]*\/[^/?]*\.d\.bundle\..*$/$script
 ||dzen.ru/a/$csp=script-src 'unsafe-inline' 'unsafe-eval' data: static.dzeninfra.ru/react/ static.dzeninfra.ru/s3/zen-apps/ static.dzeninfra.ru/s3/zen-lib/ yandex.ru/ads/ vk.com/dist/ vk.com/js/api/videoplayer.js vk.com/dist/public/api/
 ||dzen.ru/articles$csp=script-src 'unsafe-inline' 'unsafe-eval' data: static.dzeninfra.ru/react/ static.dzeninfra.ru/s3/zen-apps/ static.dzeninfra.ru/s3/zen-lib/ yandex.ru/ads/ vk.com/dist/ vk.com/js/api/videoplayer.js vk.com/dist/public/api/
 ||dzen.ru/news$csp=script-src 'unsafe-inline' 'unsafe-eval' data: static.dzeninfra.ru/react/ static.dzeninfra.ru/s3/zen-apps/ static.dzeninfra.ru/s3/zen-lib/ yandex.ru/ads/ vk.com/dist/ vk.com/js/api/videoplayer.js vk.com/dist/public/api/
@@ -22803,7 +22808,7 @@ https://*adtech_uid=$~third-party,xmlhttprequest,domain=livejournal.com|olegmaka
 ||newsyou.info/wp-content/plugins/gtranslate/
 ||newsyou.info^$csp=script-src-elem 'self' https:
 ||ng72.ru^$csp=script-src 'self' 'unsafe-eval' https:
-||pikabu.ru/ajax/*?rXu3p=$xmlhttprequest
+||pikabu.ru/ajax/*?rXu4p=$xmlhttprequest
 ||ritsatv.ru^$csp=script-src
 ||ritsatv.ru^$popup
 ||ritsatv.ru^$~document
@@ -22895,6 +22900,7 @@ pikabu.ru#?#article:-abp-has(> .story__main > div:not([class]))
 pikabu.ru#?#article:-abp-has(> .story__main > div:only-child)
 pikabu.ru#?#article:-abp-has(> .story__main > div[class] + div[class])
 pikabu.ru#?#article:-abp-has(> .story__main > div[class] ~ :empty ~ div[class])
+pikabu.ru#?#article:-abp-has(> .story__main > div[class] ~ :not([class]))
 pikabu.ru#?#article:-abp-has(> .story__main > div[class] ~ span)
 pikabu.ru#?#article:-abp-has(> .story__main:not(:-abp-has(*)))
 kp.kg,kp.kz,kp.ru,md.kp.media#?#body > #app div:-abp-properties(background-color: rgb(225, 231, 235))
@@ -26278,6 +26284,7 @@ zarulem.ws##td[style^="text-align:center;width:50%"]
 ||xn--b1aygfn8d.xn--p1ai/informer/$third-party
 ||xstats.in^
 ||xxx-news.$third-party
+||ya.ru/adfox/
 ||yandex-games.ru/ok/banners/
 ||yandex.*/adfox/
 ||yandex.*/ads/adfox/$third-party
@@ -28829,7 +28836,7 @@ rezkahd.life##.have-brand .wrap:style(margin-top: 0 !important)
 ! ---
 rg.ru###cookie-consent
 rg.ru###cookie-consent ~ [class*="_root_"]:style(top: unset !important)
-rg.ru##div[class*="_spiegelWrapper"]:style(padding-top: 0 !important)
+rg.ru##div[class*="_"][class*="piegel"][class*="rapper"]:style(padding-top: 0 !important)
 rg.ru##div[class^="PageMediaContentVideo_mainContent"]:style(min-height: 0 !important)
 rg.ru##div[class^="Page_main"][style*="min-height:"]:style(min-height: 0 !important)
 rg.ru##html[style*="overflow:"] > body:style(padding-right: 0 !important)

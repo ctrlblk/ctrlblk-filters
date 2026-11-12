@@ -1,10 +1,10 @@
 ![Adblock Plus 2.0]
-! Checksum: mWyM5llPl7FRY+zOreQerw
-! Diff-Path: ../patches/13/13-s-1794395557-3600.patch
+! Checksum: mvY9oLrlWDEvlyt0POOAcw
+! Diff-Path: ../patches/13/13-s-1794485755-3600.patch
 ! Title: AdGuard Turkish filter
 ! Description: Filter list that specifically removes ads on websites in Turkish language.
-! Version: 2.0.69.75
-! TimeUpdated: 2026-11-11T11:08:40+00:00
+! Version: 2.0.69.82
+! TimeUpdated: 2026-11-12T12:11:53+00:00
 ! Expires: 5 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -21,6 +21,7 @@
 ! Bad: ||adssubdomain.legitwebsite.com^ (should be in adservers_firstparty.txt)
 !
 !
+||certainlywhen.com^
 ||apk-2.online^$3p
 ||geniusclickad.cc^
 ||remotedesk.life^
@@ -276,6 +277,15 @@
 ankarakampkafasi.com,zamaninvarken.com,kriptoradar.com,bakimlikadin.net,korsanedebiyat.com,genelpara.com,azbuz.org,mustafabukulmez.com##+js(no-setTimeout-if, 0===o.offsetLeft&&0===o.offsetTop)
 teknop.net,ozgunbilgi.com##+js(set-constant, adblock.check, noopFunc)
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/246975
+dramadizilerim1.com##+js(remove-attr, inert)
+dramadizilerim1.com##.access-screen:style(display: none !important;)
+! https://github.com/AdguardTeam/AdguardFilters/issues/246957
+bilgisayarbilisim.net##+js(abort-current-script, document.getElementById, /adblock/i)
+bilgisayarbilisim.net#@#ins.adsbygoogle[data-ad-client]
+bilgisayarbilisim.net#@#[id^="google_ads_iframe_"]
+bilgisayarbilisim.net#@#.AdContainer
+bilgisayarbilisim.net#@#.ad-slot
 ! https://github.com/AdguardTeam/AdguardFilters/issues/244639
 dramadunyam.com##.engel-duvar
 ! https://github.com/AdguardTeam/AdguardFilters/issues/243039
@@ -680,6 +690,7 @@ r10.net##+js(abort-on-property-write, rInt)
 ! START: Yandex
 !
 ! Yandex.Mail
+!
 ! END: Yandex
 !
 !
@@ -1584,6 +1595,7 @@ dirilispostasi.com,turkuazgazetesi.net,yenialanya.com,bugunkocaeli.com.tr,cagdas
 !
 ! NOTE: Specific rules
 !
+ceptemod.com##+js(remove-attr, href, div.flex > a.inline-flex[target="_blank"][href])
 ||yenisafak.com/_astro/AdsRuntime.*.js
 emlakjet.com##section[aria-label="Sponsorlu"]
 emlakjet.com##div[data-listing-ad-host]
@@ -6203,7 +6215,7 @@ tulipbettv117.com##.footer-links
 ||blogger.googleusercontent.com/img/$domain=/patron(lig\|saha\|izle)\d+\.cfd$/
 ! aglint-enable no-invalid-modifiers
 /patron(lig\|saha)\d+\.cfd$/##.footer-links
-patronlig22.cfd,patronsaha1.cfd##.footer-links
+patronlig23.cfd,patronsaha1.cfd##.footer-links
 !
 ! Frequently changed domains: hadibettv*.com
 ! Source: hadibettv10.com
@@ -6255,11 +6267,11 @@ golbettv6.com##.bnr
 /bahsinetv\d+\.site$/##.footer-links
 /bahsinetv\d+\.site$/##.odds-container
 /bahsinetv\d+\.site$/##.header-top > div.header-text
-bahsinetv17.site##div[class^="reklam-"]
-bahsinetv17.site##body > header
-bahsinetv17.site##.footer-links
-bahsinetv17.site##.odds-container
-bahsinetv17.site##.header-top > div.header-text
+bahsinetv18.site##div[class^="reklam-"]
+bahsinetv18.site##body > header
+bahsinetv18.site##.footer-links
+bahsinetv18.site##.odds-container
+bahsinetv18.site##.header-top > div.header-text
 !
 ! Frequently changed domains: piatv*.site
 ! Source: piatv2.site
@@ -6483,8 +6495,8 @@ fixbettv84.com##.rnd-qwert
 ! aglint-enable no-invalid-modifiers
 /mahsunsports\d+\.xyz$/###openWheelBtn
 /mahsunsports\d+\.xyz$/###splash-banner
-mahsunsports51.xyz,mahsunsports52.xyz,mahsunsports58.xyz###openWheelBtn
-mahsunsports51.xyz,mahsunsports52.xyz,mahsunsports58.xyz###splash-banner
+mahsunsports51.xyz,mahsunsports52.xyz,mahsunsports59.xyz###openWheelBtn
+mahsunsports51.xyz,mahsunsports52.xyz,mahsunsports59.xyz###splash-banner
 mahsunsports.xyz###splash-banner
 mahsunsports.xyz###openWheelBtn
 ||blogger.googleusercontent.com/img/$domain=mahsunsports.xyz
@@ -6767,12 +6779,12 @@ patrongol42.cfd##.top-banner-header
 /patron(live\|futbol\|hd)\d+\.cfd$/##.top-banner-header
 /patron(live\|futbol\|hd)\d+\.cfd$/##a[href="https://x.com/patronsporis"] ~ a[href][target="_blank"]:not(#telegram-link)
 ! patronlive*.cfd
-patronlive59.cfd##.top-banner-header
-patronlive59.cfd##a[href="https://x.com/patronsporis"] ~ a[href][target="_blank"]:not(#telegram-link)
+patronlive60.cfd##.top-banner-header
+patronlive60.cfd##a[href="https://x.com/patronsporis"] ~ a[href][target="_blank"]:not(#telegram-link)
 ! patronfutbol*.cfd
-patronfutbol64.cfd##.channel-ad-item
-patronfutbol64.cfd##.top-banner-header
-patronfutbol64.cfd##a[href="https://x.com/patronsporis"] ~ a[href][target="_blank"]:not(#telegram-link)
+patronfutbol65.cfd##.channel-ad-item
+patronfutbol65.cfd##.top-banner-header
+patronfutbol65.cfd##a[href="https://x.com/patronsporis"] ~ a[href][target="_blank"]:not(#telegram-link)
 ! patronhd8.cfd
 patronhd10.cfd##.channel-ad-item
 patronhd10.cfd##.top-banner-header
