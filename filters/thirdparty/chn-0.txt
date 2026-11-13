@@ -1,10 +1,10 @@
 ![Adblock Plus 2.0]
-! Checksum: +OMXjfiGujrHFOg8F2LWgA
-! Diff-Path: ../patches/224/224-s-1794471205-3600.patch
+! Checksum: wqUSVzodn1MjSu7vYJqfJQ
+! Diff-Path: ../patches/224/224-s-1794557677-3600.patch
 ! Title: AdGuard Chinese filter
 ! Description: EasyList China + AdGuard Chinese filter. Filter list that specifically removes ads on websites in Chinese language.
-! Version: 2.1.69.41
-! TimeUpdated: 2026-11-12T08:11:07+00:00
+! Version: 2.1.69.47
+! TimeUpdated: 2026-11-13T08:11:03+00:00
 ! Expires: 5 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -1149,6 +1149,7 @@ ipv6.baidu.com,www.baidu.com,www1.baidu.com,xueshu.baidu.com###content_left > .r
 !
 ! NOTE: Specific rules
 !
+cars.tvbs.com.tw##div[class]:has(> div[class^="min-h-"] > div[id^="car_"][id*="_read_"])
 ||sudugu.cc/scripts/yuedu.js
 ||ksou.tv/api/v1/ad/
 huavod.net##.hr-slot-box
@@ -5106,12 +5107,21 @@ newduba.cn###jq_youxi
 ||cnzz.trafficmanager.net^
 ||hash.trafficmanager.net^
 ||trafficmanager.net/o.js
+||intercede77.com^
+||lzcr41vbp.com^
+||pfh01c50p.com^
+||mikasang.xyz^
+||pos23t6jw.com^
+||jdzxdlmc3.com^
+||atl0g02nj.com^
 ||3pq0vah1e0.com^
 ||eraf2uzhji.com^
 ||multiplicator98.com^
 ||waj301k9sb.com^
 ||4ae8xsq18s.com^
 ||bb5uxk0dfa.com^
+||r44r4l5na1.com^
+||ldxxawzpy9.com^
 ||g4dgp989f.com^
 ||parallelepiped48.com^
 ||ke8me98qh.com^
@@ -20011,10 +20021,10 @@ guailie.com#@#.google-ad
 ##body > meta[name="robots"] + script + #__nuxt + #teleports ~ div[class] > span[aria-hidden="true"] + div[class] + div[class]
 ##body > meta[name="robots"] + script + #__nuxt + #teleports ~ div[class] > span[aria-hidden="true"] + div[class]
 ##body > meta[name="robots"] + script + #__nuxt > div > .container > div[class^="menu-"] + div + div[class^="pg-v-sec-"][style*="important"]
-##body > #__nuxt:first-child > div > .container > .top-menu + div[class]
 ##body > #__nuxt:first-child > div > .container > div[class^="pg-"] > div[style*="important"]
-##body > #__nuxt:first-child > div > .footer > .floatWindow + div[data-tag]
 ##body > #__nuxt:first-child ~ div[class] > div > div > button[aria-label] + div[class]
+##body > meta[name="robots"] + script + #__nuxt > div > .container > .top-menu + div[class]
+##body > meta[name="robots"] + script + #__nuxt > div > .footer > .floatWindow + div[data-tag]
 ||cszpra.com^*.gif
 !#58.com
 58.com###rightRetui
