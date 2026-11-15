@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: EasyList – Cookie Notices
-! Last modified: Sat, 14 Nov 2026 01:48:13 +0000
+! Last modified: Sat, 14 Nov 2026 18:29:52 +0000
 ! Expires: 7 days (update frequency)
 ! *** easylist:template_header.txt ***
 !
@@ -19739,7 +19739,7 @@ askethos.com,hintoai.com,k2think.ai,lemonade.com##[aria-describedby="cookie-cons
 ticketmaster.com##[aria-describedby="mobileMobileTOUMessage"]
 anexia.com##[aria-describedby="privacy-settings-description"]
 kstp.com,lucidchart.com,scribd.com,whec.com##[aria-label="Cookie Consent Banner"]
-1password.com,shirtspace.com##[aria-label="Cookie Consent"]
+1password.com,quantpedia.com,shirtspace.com##[aria-label="Cookie Consent"]
 pretense.ai##[aria-label="Cookie and privacy notice"]
 dictionary.cambridge.org,lovable.dev##[aria-label="Cookie banner"]
 the-fence.com##[aria-label="Cookie choices"]
@@ -29136,7 +29136,7 @@ concursolutions.com,forbes.com,formula1.com,fortune.com,proximus.be,proximustv.b
 @@||zensus2022.de/SiteGlobals/Modules/CookieBanner/*/CookieBanner.json?$~third-party,xmlhttprequest
 
 ! Title: uBlock filters – Cookie Notices
-! Last modified: Sun, 08 Nov 2026 05:47:57 +0000
+! Last modified: Sat, 14 Nov 2026 13:05:16 +0000
 ! Expires: 7 days
 ! Description: Filters optimized for uBlock Origin, to be used with EasyList's and/or Adguard's "Cookie Notices" list(s)
 ! License: https://github.com/uBlockOrigin/uAssets/blob/master/LICENSE
@@ -29248,6 +29248,9 @@ metro-cc.hr##body:style(overflow: auto !important;)
 ! https://github.com/uBlockOrigin/uAssets/pull/35108
 home-appliances.philips##vers-anonymous-consent-management-banner
 home-appliances.philips##body.modal-open:style(overflow: auto !important;)
+! https://www.akkupojat.fi/
+akkupojat.fi###cookiesModal
+akkupojat.fi##html:style(overflow: auto !important)
 
 !!! Trusted scriptlets------------------------------------------------------------
 
