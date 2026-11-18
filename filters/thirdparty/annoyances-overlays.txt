@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: EasyList – Newsletter Notices
-! Last modified: Tue, 17 Nov 2026 04:10:55 +0000
+! Last modified: Wed, 18 Nov 2026 12:15:39 +0000
 ! Expires: 7 days (update frequency)
 ! *** easylist:template_header.txt ***
 !
@@ -3328,6 +3328,7 @@ missionlocal.org##.np-campaign--newsletter--mid-post
 audubon.org##.np-search-form-widget
 thepeoplesvoice.tv##.np_signup_container
 theglossarymagazine.com##.ns-buttons
+ai-tldr.dev##.ns-sub
 nowtoronto.com##.nt-sidebar-newsletter
 advisor.ca##.nua-newsletter
 the-ken.com##.nudge-band-container
@@ -3536,6 +3537,8 @@ startupfortune.com##.sf-newsletter
 webmd.com##.sf-nls-wrapper
 delacortereview.org,floridianpress.com,marktechpost.com,mediaplaynews.com,reasonstobecheerful.world,thefullpint.com##.sgpb-popup-dialog-main-div-wrapper
 asianjournal.com,delacortereview.org,floridianpress.com,marktechpost.com,mediaplaynews.com,prescouter.com,reasonstobecheerful.world,thefullpint.com##.sgpb-popup-overlay
+shattered.io##.sh-bar
+shattered.io##.sh-nl
 airdriecityview.com,cochraneeagle.ca,lakelandtoday.ca,rmoutlook.com,stalbertgazette.com,thealbertan.com,timescolonist.com,westernwheel.ca##.share-mailing
 jvns.ca##.sharing
 sciencehistory.org##.shi-subscribe
@@ -3712,7 +3715,7 @@ bolavip.com##.subs-block
 unherd.com##.subs-modal
 holyrood.com##.subs-popup
 live-adexchanger.pantheonsite.io##.subsciption
-advocate.com,artisancanvas.com,businessairnews.com,thesuburbansoapbox.com##.subscribe
+advocate.com,artisancanvas.com,businessairnews.com,the-ai-beat.com,thesuburbansoapbox.com##.subscribe
 3dprint.com##.subscribe--sidebar
 bookforum.com##.subscribe-ad__corner
 countynewscenter.com,vallejosun.com##.subscribe-area
@@ -6589,7 +6592,7 @@ doctorofcredit.com#@#.wpdiscuz-subscribe-bar
 ! fanboy_newsletter_shopping_allowlist_general_hide.txt
 
 ! Title: uBlock filters – Other Annoyances
-! Last modified: Mon, 16 Nov 2026 09:58:05 +0000
+! Last modified: Wed, 18 Nov 2026 12:21:18 +0000
 ! Expires: 7 days
 ! Description: Filters optimized for uBlock Origin, to be used with EasyList's and/or Adguard's "Other Annoyances" list(s)
 ! License: https://github.com/uBlockOrigin/uAssets/blob/master/LICENSE
@@ -9082,6 +9085,11 @@ lesoleil.com##.leader-board-container
 
 ! https://github.com/uBlockOrigin/uAssets/issues/35173
 adult-tv-channels.click##+js(set-session-storage-item, adp-closed, 1)
+
+! https://github.com/uBlockOrigin/uAssets/issues/18641
+! https://github.com/uBlockOrigin/uAssets/issues/30967
+neoseeker.com##+js(nostif, whetherdo)
+neoseeker.com##+js(rmnt, script, raptiveAdblockDetected)
 
 ! ================================================== END: Anti-adblock ==================================================================================
 
@@ -13645,9 +13653,6 @@ khou.com##+js(aeld, mouseout)
 ! https://www.reddit.com/r/uBlockOrigin/comments/14gghvf/
 ! https://github.com/easylist/easylist/issues/16421
 ||pagead2.googlesyndication.com/pagead/show_ads.js$script,redirect=noopjs,domain=ageofconsent.net
-
-! https://github.com/uBlockOrigin/uAssets/issues/18641
-neoseeker.com##+js(nostif, whetherdo)
 
 ! https://erotikflix.com/movies/annemle-sirrimiz/ devtools
 forplayx.ink##+js(aopr, devtoolsDetector.addListener)
