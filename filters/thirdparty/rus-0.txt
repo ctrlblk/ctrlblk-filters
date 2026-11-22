@@ -10380,6 +10380,7 @@ bs-life.ru##body > .ui-widget.ui-dialog
 dowlatow.ru##body > .wid-fb
 frankmedia.ru##body > div:not([id]):not([class]) > .modal
 gosvopros.ru##body > div[class$="-subscr"]
+t-j.ru##body > div[class^="_popup_"][aria-modal]
 factroom.ru##body > div[class^="facebook-"]
 bomba.co##body > div[class^="remodal"]
 ladyclub.org##body > div[class^="revelation"]
@@ -20112,7 +20113,7 @@ softpir.com##a[href*="azbukasofta.xyz"]
 koob.ru##a[href*="b17.ru/"]
 beremennost.net##a[href*="babyitalia.ru"]
 2ip.ua,agro-business.com.ua,agronomy.com.ua,alcogolizm.com,anekdot.ru,bitpump.ru,blisch.by,glavagronom.ru,gomel-sat.bz,gre4ka.info,legkopolezno.ru,maw.ru,ozersk74.ru,post-tracker.ru,pravda.if.ua,threatpost.ru,topfile.tj,uamotors.com.ua,yaizakon.com.ua,zhacker.net##a[href*="banner"]
-alltor.me,backup.menu,beremennost.net,buhgalter911.com,dead-serial.com,dedicated.menu,domohozayki.com,dsgners.ru,electricalschool.info,elementarno-tv.com,fishki.net,forum-profit.ru,hosting.cafe,https.menu,kopilkaurokov.ru,kosti-tv.com,license.menu,multiurok.ru,ogribax.ru,openssource.biz,palantinbest.ru,php.ru,shared.menu,traktorist.ua,uvelir.info,uvelir.net,vds.menu,vorozheya.org,vskazke-tv.com,www.pesticidy.ru##a[href*="banner"][target="_blank"]
+alltor.me,backup.menu,beremennost.net,buhgalter911.com,dead-serial.com,dedicated.menu,domohozayki.com,dsgners.ru,electricalschool.info,elementarno-tv.com,fishki.net,forum-profit.ru,hosting.cafe,https.menu,kopilkaurokov.ru,kosti-tv.com,license.menu,multiurok.ru,ogribax.ru,openssource.biz,palantinbest.ru,php.ru,shared.menu,shazoo.ru,traktorist.ua,uvelir.info,uvelir.net,vds.menu,vorozheya.org,vskazke-tv.com,www.pesticidy.ru##a[href*="banner"][target="_blank"]
 forum.mista.ru##a[href*="banners.php?click="]
 forum.mista.ru##a[href*="banners.php?click="] + a
 minecraft15.my1.ru##a[href*="barbarisnews.ru"]
@@ -21038,6 +21039,7 @@ forumhouse.ru#?#div:-abp-has(> [class$="relap-block"])
 podarkus.ru#?#div:-abp-has(> [class^="G-work-podarkus"] > a[href*="erid="])
 liveresult.ru#?#div:-abp-has(> [data-has-bookmaker-odds])
 gdzguru.com,reshebnik.com#?#div:-abp-has(> [href*="://gdz-ru.work/"])
+ixbt.games#?#div:-abp-has(> [href*="utm_campaign"] ~ button)
 7themes.su,yakutsk.ru#?#div:-abp-has(> [id^="adfox_"])
 ura.news#?#div:-abp-has(> [id^="adv-"])
 blitzfoxhub.com,draug.ru,emdigital.ru,enthub.it,modsforwot.ru,pogodavtomske.ru#?#div:-abp-has(> [id^="yandex_rtb"])
@@ -23814,6 +23816,7 @@ rambler.ru##.ad_branding_site div[style*="background-image:"][style*="rambler.ru
 rambler.ru##.adfox-background-container
 championat.com,championat.ru##.adv-mark
 lenta.news,lenta.ru##.advertisable-plate__erid
+championat.com,championat.ru#?#.article-preview-list > .article-preview:-abp-has(a[href^="https://gglead.org/"])
 championat.com,championat.ru#?#.article-preview._video:-abp-has(> div > a[href*="okko.sport"])
 gazeta.press,gazeta.ru##.b_custom_logo
 gazeta.press,gazeta.ru##.b_promo_twz
@@ -29736,6 +29739,7 @@ ai-next.ru##+js(abort-on-stack-trace, document.getElementById, /723-|ai-2-/)
 doramatv.ru,mintmanga.com##+js(abort-on-stack-trace, document.getElementById, /createAdblockBlock|createBlock/)
 forums.rusmedserv.com##+js(abort-on-stack-trace, fetch, eval)
 7days.ru##+js(addEventListener-defuser, /^(?:contextmenu|keydown)$/)
+drive2.ru,shedevrum.ai##+js(addEventListener-defuser, /beforeunload|pagehide/, /setCookies|srcElement|this/)
 biqle.org,biqle.ru##+js(addEventListener-defuser, /click|mousedown/, popunder)
 lrepacks.net##+js(addEventListener-defuser, /click|mousedown/, setClickedUrl)
 ~id.rambler.ru,rambler.ru,~vp.rambler.ru##+js(addEventListener-defuser, DOMContentLoaded, .j-mini-player__video)
@@ -29746,7 +29750,6 @@ doramaland.plus##+js(addEventListener-defuser, DOMContentLoaded, _Modal)
 xv-ru.com##+js(addEventListener-defuser, DOMContentLoaded, exo_tracker)
 litnet.com##+js(addEventListener-defuser, DOMContentLoaded, feedback)
 allboxing.ru##+js(addEventListener-defuser, DOMContentLoaded, popup)
-drive2.ru,shedevrum.ai##+js(addEventListener-defuser, beforeunload, /setCookies|srcElement|this/)
 vedomosti.ru##+js(addEventListener-defuser, click, '', elements, a[href*="?from="])
 magnit.ru,regnum.ru##+js(addEventListener-defuser, click, '', elements, a[href*="utm_campaign"])
 forbes.ru##+js(addEventListener-defuser, click, '', elements, a[href*="utm_campaign="])
