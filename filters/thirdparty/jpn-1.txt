@@ -1,10 +1,10 @@
 ![Adblock Plus 2.0]
-! Checksum: BtuHTZp/ReqF2uaSuDh2NQ
-! Diff-Path: ../patches/7/7-s-1795320703-3600.patch
+! Checksum: HI+jyNOxOTehKcflqN9SRw
+! Diff-Path: ../patches/7/7-s-1795443193-3600.patch
 ! Title: AdGuard Japanese filter
 ! Description: Filter that enables ad blocking on websites in Japanese language.
-! Version: 2.0.78.66
-! TimeUpdated: 2026-11-22T04:09:11+00:00
+! Version: 2.0.78.70
+! TimeUpdated: 2026-11-23T14:09:15+00:00
 ! Expires: 5 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -1951,9 +1951,9 @@ _co_jp.*.php$document,to=cc|com
 !
 ! For URL shorteners or simple sites with frequently changed ad servers.
 ! Incorrectly blocked domains can be excluded using regex(synchronize this regexp in all filters)
-/^(?!.*(mega.co.nz|mega.nz|libs.baidu.com|ilfcdn.li|bytecdntp.com|doodcdn.io|intensedebate.com|vixcloud.co|cdn.plyr.io|rsc.cdn77.org|linkvertise.com|fastly.net|statically.io|sharecast.ws|b-cdn.net|bunnycdn.ru|bootstrapcdn.com|cdn.ampproject.org|cloudflare.com|cdn.staticfile.org|disqus.com|disquscdn.com|dmca.com|ebacdn.com|facebook.net|fastlylb.net|fbcdn.net|fluidplayer.com|fontawesome.com|github.io|google.com|googleapis.com|googletagmanager.com|gstatic.com|jquery.com|jsdelivr.net|jwpcdn.com|jwplatform.com|recaptcha.net|shrink.pe|twitter.com|ulogin.ru|unpkg.com|userapi.com|vidazoo.com|(\/\/|\.)vk\.com|yandex.|yastatic.net|ytimg.com|zencdn.net|player|youtube.com|cackle.me|googleoptimize.com|vuukle.com|chatango.com|twimg.com|google-analytics.com|hcaptcha.com|media-imdb.com|blogger.com|hwcdn.net|instagram.com|wp.com|fastcomments.com|plyr.io|imgsmail.ru|cloudflare.net|rabbitstream.net|alicdn.com|(\/\/|\.)x\.com)).*$/$3p,script,_,domain=viki.ja-jp.nina.az|klmanga.dev
+/^(?!.*(mega.co.nz|mega.nz|libs.baidu.com|ilfcdn.li|bytecdntp.com|doodcdn.io|intensedebate.com|vixcloud.co|cdn.plyr.io|rsc.cdn77.org|linkvertise.com|fastly.net|statically.io|sharecast.ws|b-cdn.net|bunnycdn.ru|bootstrapcdn.com|cdn.ampproject.org|cloudflare.com|cdn.staticfile.org|disqus.com|disquscdn.com|dmca.com|ebacdn.com|facebook.net|fastlylb.net|fbcdn.net|fluidplayer.com|fontawesome.com|github.io|google.com|googleapis.com|googletagmanager.com|gstatic.com|jquery.com|jsdelivr.net|jwpcdn.com|jwplatform.com|recaptcha.net|shrink.pe|twitter.com|ulogin.ru|unpkg.com|userapi.com|vidazoo.com|(\/\/|\.)vk\.com|yandex.|yastatic.net|ytimg.com|zencdn.net|player|youtube.com|cackle.me|googleoptimize.com|vuukle.com|chatango.com|twimg.com|google-analytics.com|hcaptcha.com|media-imdb.com|blogger.com|hwcdn.net|instagram.com|wp.com|fastcomments.com|plyr.io|imgsmail.ru|cloudflare.net|rabbitstream.net|alicdn.com|(\/\/|\.)x\.com)).*$/$3p,script,_,domain=viki.ja-jp.nina.az|klmanga.dev|spoilerplus.sc
 ! Similar to regexp above, but using the denyallow modifier
-*$script,3p,denyallow=mega.co.nz|mega.nz|libs.baidu.com|ilfcdn.li|bytecdntp.com|doodcdn.io|intensedebate.com|vixcloud.co|cdn.plyr.io|rsc.cdn77.org|linkvertise.com|fastly.net|statically.io|sharecast.ws|b-cdn.net|bunnycdn.ru|bootstrapcdn.com|cdn.ampproject.org|cloudflare.com|cdn.staticfile.org|disqus.com|disquscdn.com|dmca.com|ebacdn.com|facebook.net|fastlylb.net|fbcdn.net|fluidplayer.com|fontawesome.com|github.io|google.com|googleapis.com|googletagmanager.com|gstatic.com|jquery.com|jsdelivr.net|jwpcdn.com|jwplatform.com|recaptcha.net|shrink.pe|twitter.com|ulogin.ru|unpkg.com|userapi.com|vidazoo.com|vk.com|yastatic.net|ytimg.com|zencdn.net|youtube.com|cackle.me|googleoptimize.com|vuukle.com|chatango.com|twimg.com|google-analytics.com|hcaptcha.com|media-imdb.com|blogger.com|hwcdn.net|instagram.com|wp.com|fastcomments.com|plyr.io|imgsmail.ru|cloudflare.net|rabbitstream.net|x.com|alicdn.com|zeala.link,_,domain=viki.ja-jp.nina.az|rawkuma.net|rawjx.net|rawmiu.net|rawkuro.net|momon-ga.com|klmanga.dev
+*$script,3p,denyallow=mega.co.nz|mega.nz|libs.baidu.com|ilfcdn.li|bytecdntp.com|doodcdn.io|intensedebate.com|vixcloud.co|cdn.plyr.io|rsc.cdn77.org|linkvertise.com|fastly.net|statically.io|sharecast.ws|b-cdn.net|bunnycdn.ru|bootstrapcdn.com|cdn.ampproject.org|cloudflare.com|cdn.staticfile.org|disqus.com|disquscdn.com|dmca.com|ebacdn.com|facebook.net|fastlylb.net|fbcdn.net|fluidplayer.com|fontawesome.com|github.io|google.com|googleapis.com|googletagmanager.com|gstatic.com|jquery.com|jsdelivr.net|jwpcdn.com|jwplatform.com|recaptcha.net|shrink.pe|twitter.com|ulogin.ru|unpkg.com|userapi.com|vidazoo.com|vk.com|yastatic.net|ytimg.com|zencdn.net|youtube.com|cackle.me|googleoptimize.com|vuukle.com|chatango.com|twimg.com|google-analytics.com|hcaptcha.com|media-imdb.com|blogger.com|hwcdn.net|instagram.com|wp.com|fastcomments.com|plyr.io|imgsmail.ru|cloudflare.net|rabbitstream.net|x.com|alicdn.com|zeala.link,_,domain=viki.ja-jp.nina.az|rawkuma.net|rawjx.net|rawmiu.net|rawkuro.net|momon-ga.com|klmanga.dev|spoilerplus.sc
 !
 ! ###banner
 town.inawashiro.fukushima.jp,city.buzen.lg.jp,nanbbs.jp,eroita.net,city.hirosaki.aomori.jp,iyasiya.com,adacomi.com,pref.shimane.lg.jp,pref.osaka.lg.jp,illust-ai.com,nan-net.com,radiolife.com,keimei.ne.jp,bbspink.com,crank-in.net###banner
@@ -2003,6 +2003,8 @@ gundamlog.com###more > iframe[src^="https://richlink.blogsys.jp"]
 !
 ! NOTE: Specific rules
 !
+||po-kaki-to.com/pkads/
+po-kaki-to.com##.sp-post-shita > .widget_block > a[target="_blank"]> img
 225225.jp###adsBtm
 225225.jp###adsMid
 livecombs.com##[class^="m"]:has(> div.md\:h-\[280px\])
@@ -2034,8 +2036,10 @@ eigachannel.jp###main_content > div[style^="width:100%; min-height:3"]:has(> div
 f1-gate.com##.ad-flex-group
 soraraw.com##section[class^="home-v2_adsSection"]
 doumori.com,mario2-3ds.net,mario-wiiu.net,mario3d-wiiu.net##.splink
-famitsu.com##div[class^="ArticleDetail-"][class$="column"]:has(> div > div > h2 > a[href="/ranking/amazon"])
-famitsu.com##div[class^="CommonParts-"][class$="_underArticle"]:has(a[href^="https://link.amazon"])
+famitsu.com##div[class$="_adContentItem"]
+famitsu.com##div[class$="_container"]:has(> div[class$="_largeRectangle"] > div[id^="ftc_"][id$="_gam"])
+famitsu.com##div[class*="undefined"] > section[class$="_section"]:has(> div > div > h2 > a[href="/ranking/amazon"])
+famitsu.com##div[class$="_articleMainFooter"] > div[class$="_underArticle"]:has(a[href^="https://link.amazon"])
 famitsu.com##div[class^="TopHeaderBanner"]
 famitsu.com##li[class^="SecondaryCardList-"]:has(> div.ad-native-campaign)
 famitsu.com##section[class^="SecondRightColumn-module-"][class$="_section"]:has(> ol[class^="AmazonRanking-"])
@@ -10749,7 +10753,6 @@ w.atwiki.jp###wikibody > h3[id^="id_"] + br + hr
 w.atwiki.jp###imobile_adspotdiv2
 ||atwiki.jp/common/dist/js/atwiki_autoads.js
 ||atwiki.jp/common/dist/js/moveads.js
-||daily.jp/Koukoku/$image
 daily.co.jp###dspc-relation_img
 daily.co.jp###nativeRecommend
 daily.co.jp##aside[class^="aside-"][class*="-ad"]
