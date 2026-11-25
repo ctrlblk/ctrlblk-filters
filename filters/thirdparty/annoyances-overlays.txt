@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: EasyList – Newsletter Notices
-! Last modified: Sat, 21 Nov 2026 02:50:36 +0000
+! Last modified: Wed, 25 Nov 2026 00:07:02 +0000
 ! Expires: 7 days (update frequency)
 ! *** easylist:template_header.txt ***
 !
@@ -3576,6 +3576,7 @@ online-tech-tips.com##.sidebar-signup-form
 techerati.com##.sidebar-signup-form-container
 thesaturdaypaper.com.au##.sidebar-sticky--briefing
 coincodex.com,halfbakedharvest.com##.sidebar-subscribe
+greynoise.io##.sidebar-subscribe-box
 fortune.com##.sidebarPlea
 evinfocus.com,pbs.org,readtangle.com,wheresyoured.at##.sidebar__subscribe
 therecord.media##.sidebar__widget--newsletter
@@ -3879,7 +3880,7 @@ digitimes.com##.tp-banner
 hbr.org,heraldscotland.com,nationalpost.com,scotsman.com,vancouversun.com##.tp-container-inner
 tp-link.com##.tp-follow-container
 independent.co.uk,nationalobserver.com##.tp-modal
-theblast.com##.tpd-newsletter-card
+justjared.com,theblast.com##.tpd-newsletter-card
 tweaktown.com##.tt-daily-inline
 tweaktown.com##.tt-rail-daily
 crypto-news-flash.com##.tve-leads-shortcode
@@ -6597,7 +6598,7 @@ doctorofcredit.com#@#.wpdiscuz-subscribe-bar
 ! fanboy_newsletter_shopping_allowlist_general_hide.txt
 
 ! Title: uBlock filters – Other Annoyances
-! Last modified: Tue, 24 Nov 2026 14:27:10 +0000
+! Last modified: Wed, 25 Nov 2026 04:47:43 +0000
 ! Expires: 7 days
 ! Description: Filters optimized for uBlock Origin, to be used with EasyList's and/or Adguard's "Other Annoyances" list(s)
 ! License: https://github.com/uBlockOrigin/uAssets/blob/master/LICENSE
@@ -14642,3 +14643,6 @@ stadt-bremerhaven.de##+js(rmnt, script, Adblocker)
 liddread.com##+js(rmnt, script, /wpcp|contextmenu|unselectable/)
 liddread.com##*:style(-webkit-touch-callout: default !important; -webkit-user-select: text !important; -khtml-user-select: text !important; -moz-user-select: text !important; -ms-user-select: text !important; user-select: text !important; -webkit-tap-highlight-color: revert !important; cursor: revert !important;)
 /wp-content/plugins/content-shield-pro/assets/csp-front.min.js$script
+
+! https://github.com/uBlockOrigin/uAssets/issues/35461
+||cinevid.sbs/protect.js
