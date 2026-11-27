@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: EasyList – Newsletter Notices
-! Last modified: Wed, 25 Nov 2026 00:07:02 +0000
+! Last modified: Fri, 27 Nov 2026 09:05:26 +0000
 ! Expires: 7 days (update frequency)
 ! *** easylist:template_header.txt ***
 !
@@ -1955,6 +1955,7 @@ startrek.com##.Article_newsletterPromo__YXJkV
 fatherly.com,mic.com,romper.com##.BMP
 jpl.nasa.gov##.BlockNewsletterSignup
 axial.acs.org##.Button_button__dSklw
+london.edu##.C270_CtaContainer_cta-container__content___JdA6
 cnbc.com##.CNBCFooter-info
 kcrw.com##.CTAnewsletter
 declassifieduk.org,retailwire.com,wlrn.org##.Campaign
@@ -6598,7 +6599,7 @@ doctorofcredit.com#@#.wpdiscuz-subscribe-bar
 ! fanboy_newsletter_shopping_allowlist_general_hide.txt
 
 ! Title: uBlock filters – Other Annoyances
-! Last modified: Thu, 26 Nov 2026 07:22:42 +0000
+! Last modified: Fri, 27 Nov 2026 10:38:28 +0000
 ! Expires: 7 days
 ! Description: Filters optimized for uBlock Origin, to be used with EasyList's and/or Adguard's "Other Annoyances" list(s)
 ! License: https://github.com/uBlockOrigin/uAssets/blob/master/LICENSE
@@ -8745,6 +8746,9 @@ canale-tv.net,tvron.*##+js(set, HTMLDivElement.prototype.oncontextmenu, null)
 
 ! https://github.com/uBlockOrigin/uAssets/pull/35365
 iplayerhls.com,morencius.com,hanerix.com,vibuxer.com,audinifer.com##+js(set, HTMLDivElement.prototype.oncontextmenu, null)
+
+! https://github.com/uBlockOrigin/uAssets/pull/35460
+kwik.cx##+js(aeld, contextmenu, preventDefault)
 
 ! ================================================ END: Anti copy, right-click, devtools, text select etc. ==========================================================================
 
@@ -14648,3 +14652,7 @@ liddread.com##*:style(-webkit-touch-callout: default !important; -webkit-user-se
 
 ! https://github.com/uBlockOrigin/uAssets/issues/35461
 ||cinevid.sbs/protect.js
+
+! https://github.com/uBlockOrigin/uAssets/issues/35515
+way2movies.vip##+js(aeld, /contextmenu|keydown/, preventDefault)
+way2movies.vip##+js(nostif, 'ie,250')
